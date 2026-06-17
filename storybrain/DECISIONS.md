@@ -36,3 +36,13 @@ for Sam to review. Newest entries appended at the bottom of each section.
 - 2026-06-17: Wrote DESIGN.md v1. Surveyed gbrain (136 ops, schema-pack YAML
   format, self-wiring graph, relational retrieval, salience/anomaly/trajectory).
   Read Karpathy gist. Starting 5-round self-review.
+
+- 2026-06-17: Completed 5-round self-review (game-designer, systems-engineer,
+  narrative-director, skeptic, player/QA). Findings in reviews/self-review.md.
+  DESIGN v1→v2. Biggest reframe (R4): PHASE-SPLIT recommendation — gbrain for
+  prototype+reference-impl, embedded SQLite/libSQL store for ship (specified by
+  a 10-query Query Catalog). Added: arcs-as-attractors w/ lifecycle, valence,
+  rumor/foreshadow, player-choice fate edges, graph+BM25-first (vector scoped),
+  async batched writes + durable journal, chapter compaction,
+  find_contradictions for lore, cold-start + fixation guards, modding via packs.
+  Next: 3 rounds adversarial Opus review.
