@@ -288,3 +288,92 @@ B took the identical concept and let a numbered procgen template overwrite it �
 events, copy-pasted artifact boilerplate, and a fatally incoherent mystery (active factions that
 "fell" to a self-declared non-collapse). B's one inspired node (the fabricator that asked why) isn't
 enough to offset a broken spine.
+
+---
+
+## Theme 5: time-war
+
+**Premise both share (independently, near-identical):** a war fought across tense — an aggressor that
+strikes from downstream of its own defeats (Aelthar / Erevan), a retroactive counterforce whose only
+weapon is editing the enemy's past (the Cessation / the Undated), and precognitive neutral archivists
+who catalogue the war's endings (Witnesses / Oncewill). The war is UNRESOLVED; the human expedition's
+act of sequencing the relics IS a move that decides the winner — and whether the aggressor ever
+existed. Both use `order_relation: "precedes"` with a deliberately reversed `order` array (later-
+revealed-first, matching backward `precedes` edges — internally consistent in BOTH).
+
+### World A (Aelthar / Cessation / Witnesses)
+- Both worlds' spines are clean; A's 5-fragment chain: `the-war-is-still-being-decided` →
+  `the-witnesses-archived-every-ending` → `the-tenses-collapsed` → `the-cessation-revised-the-opening`
+  → `the-aelthar-struck-from-downstream`, with `precedes` edges and a `seq` field on each fragment
+  (1–5) that matches. The reverse order is a deliberate, coherent choice (you uncover the verdict
+  before the opening shot). Excellent.
+- Superbly NAMED, distinct artifacts — the single biggest craft gap over B: `the-medal-for-a-battle-
+  not-yet-fought` ("a promise the timeline is obligated to keep"), `the-treaty-signed-by-the-dead`
+  ("a peace that was edited away"), `the-first-shot-that-came-last` (opening blow recovered last),
+  `the-envoys-older-skull` (the bootstrap-paradox envoy "sent before his senders existed"). Each is a
+  specific paradox-object, not a templated type.
+- The meta-conceit is razor-sharp and fully wired: `the-first-shot-is-the-last-find` / `the-war-is-
+  still-being-decided` — "the relic you place last picks the winner — and whether the Aelthar were
+  ever real. The expedition has joined the war by sorting it." Plus `the-ledger-is-not-neutral` ("to
+  keep records is already to take a side") — the catalogue itself becomes a battlefield.
+- Live present arc `arcs/the-verdict` (phase climax, holds 5 of 6 finds, the sixth decides) with two
+  causal NOW events and three present colonists (Okonkwo re-pinning the wall-chart, Dane remembering
+  the expedition's own ending). Zero numbered-seer filler.
+
+### World B (Erevan / Undated / Oncewill)
+- Equally clean 5-fragment `precedes` spine with matching `seq` (1–5): `the-war-runs-backward` →
+  `the-undated-answered-by-editing` → `cause-and-effect-came-unpinned` → `the-oncewill-archived-the-
+  endings` → `the-war-has-not-finished-happening`. Structurally on par with A.
+- B's standout — the deepest single paradox across BOTH worlds: `anachronism-predates-its-maker` →
+  "The Undated may have authored the Erevan to have an enemy worth editing." The counterforce may have
+  CREATED its own aggressor to have something to fight. That's a tighter, nastier loop than A's
+  bootstrap-envoy. Also excellent: `the-reply-fits-no-question` (an answer-relic that only resolves
+  once a later find supplies the question — "in the right order they are a confession").
+- Nice flourishes: colony "Palindrome" (the war reads the same forward and backward), the chronon-silt
+  flats where "deja-vu arrives BEFORE the event it copies," `the-colony-is-a-move` ("whichever ending
+  they reconstruct first becomes the one the relics 'always' remembered").
+- BUT B pays the template tax A avoids: two inert `figures/the-undated-seer-1/27` (one-edge filler),
+  and the artifacts are GENERICALLY named by type+number — `the-oncewill-effect-before-cause-10`,
+  `the-undated-anachronism-37`, `the-oncewill-relic-that-remembers-a-future-4`. The objects are
+  conceptually fine but the naming is procgen-flavored where A's are bespoke. B also has a smaller
+  distinct relic/location set feeding the spine.
+
+### A vs B
+
+| Axis | A | B | Note |
+|---|---|---|---|
+| Coherence | 9 | 9 | Both: matching `precedes` + `seq` chains, deliberate reverse order, no contradictions. Dead heat — the two best-formed mysteries in the half |
+| Causal/Structural depth | 9 | 8 | Both spines clean; A has more distinct spine-bearing relics and the ledger-as-battlefield layer; B carries two inert seers |
+| Thematic richness | 9 | 9 | A: medal/treaty/first-shot/skull quartet of bespoke paradox-objects. B: palindrome + self-authored-enemy. Toss-up |
+| Novelty/surprise | 8 | 9 | B's "the Undated authored the Erevan to have an enemy worth editing" is the single deepest twist in the theme; edges A's bootstrap-envoy |
+| Dramatic potential | 9 | 8 | A's climax-phase verdict (holds 5/6, the 6th decides, Cessation reaching back) + Dane remembering the expedition's OWN ending is a hair tenser and better-staged than B's rising-phase last-relic race |
+
+**Totals: A = 44, B = 43. WINNER: A (by one point).**
+
+The closest call after first-contact. Both are top-tier time-war artifacts with identically clean,
+seq-matched `precedes` spines. B owns the deepest single idea (the counterforce that invented its own
+enemy). A wins on craft: bespoke, evocatively-named paradox-relics versus B's type+number procgen
+naming, the extra ledger-as-battlefield layer, a better-staged climax, and zero inert-seer filler.
+
+---
+
+## Summary — A-total vs B-total per theme
+
+| Theme | A total | B total | Winner |
+|---|---|---|---|
+| the-living-marrow | 41 | 40 | A |
+| first-contact-diplomacy | 43 | 44 | B |
+| bio-symbiosis-horror | 43 | 41 | A |
+| machine-successor | 43 | 34 | A |
+| time-war | 44 | 43 | A |
+| **TOTAL** | **214** | **202** | **A (4 of 5 themes)** |
+
+**Cross-cutting pattern:** World A entries consistently ship cleaner mystery spines (the `order` array
+matches the underlying causal/prerequisite/precedes edge graph), bespoke node naming, and almost no
+filler. World B entries are frequently more dramatically alive (live OPEN arcs with countdowns, present
+ensembles) and sometimes carry the single deepest idea per theme — but repeatedly pay a numbered-
+procgen-template tax: inert `*-seer-N` figures, discovery→over-extracts→war event cycles, copy-pasted
+artifact boilerplate, and (twice — living-marrow, machine-successor) a mystery `order` that contradicts
+its own node facts (`fell_to` a non-collapse; parallel civ-fates chained as fake sequential reveals).
+The one theme B wins (first-contact) is the one where B's template tax is lightest and its live-clock
+drama is sharpest.

@@ -190,3 +190,14 @@ for Sam to review. Newest entries appended at the bottom of each section.
   Stage-D live stakes (finding 10) -> SQLite store (finding 06). Procgen hybrid NOT
   validated at scale; fix-list if revisited = generalize procgen per-spine + prune
   scaffolding in Stage C.
+
+- 2026-06-17 (clean re-judge): Sonnet half-1 re-ran and CONTRADICTED its first run
+  (5-pure vs 3-hybrid/2-pure) -> Sonnet too high-variance to count. Plus the _arm
+  blinding leak. Ran a CLEAN Opus re-judge (leak-free files, stable judge).
+  AUTHORITATIVE RESULT: pure 9 / hybrid 1 of 10 (clean Opus). The leak did NOT
+  change the aggregate (leaky-Opus also 9/1); it only shuffled which 1-point-wash
+  theme the lone hybrid win landed on. Pure wins decisively (>=6 pts) on 5 themes;
+  hybrid never wins by >1 pt. Corrected finding 12's inflated "19/20" -> 9/10.
+  Conclusion stands and is now leak-robust: pure-LLM beats the procgen hybrid for
+  these ~40-node worlds. Recommended stack unchanged: pure-LLM fact-skeleton
+  (f08) + Stage D (f10) + SQLite store (f06).

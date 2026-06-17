@@ -1,4 +1,41 @@
-# Finding 12 — Full-corpus cross-model judge eval REVERSES finding 09
+# Finding 12 — Full-corpus judge eval REVERSES finding 09
+
+> ## ⚠️ AUTHORITATIVE CORRECTION (clean re-judge) — read this first
+>
+> The original headline below said "19/20." That number was **inflated** — it
+> counted a Sonnet run that proved unreliable. After a Sonnet half-1 re-run gave a
+> **contradictory** result (one run all-pure, the other 3-hybrid/2-pure → Sonnet is
+> too high-variance to count here) AND the disclosed `_arm` blinding leak, I ran a
+> **clean re-judge with Opus (the stable judge — two prior passes agreed) on
+> leak-free files**. Authoritative result:
+>
+> **Clean Opus, leak-free: PURE 9, HYBRID 1 of 10 themes.**
+>
+> | Theme | Winner | Margin |
+> |---|---|---|
+> | the-living-marrow (#0) | PURE | 41–40 (wash) |
+> | first-contact-diplomacy | HYBRID | 44–43 (wash) |
+> | bio-symbiosis-horror | PURE | 43–41 |
+> | machine-successor | PURE | 43–34 |
+> | time-war | PURE | 44–43 (wash) |
+> | generation-ship-identity | PURE | 44–32 |
+> | megastructure-absent-architects | PURE | 43–39 |
+> | extinction-plague-vector | PURE | 44–29 |
+> | crowded-trade-federation | PURE | 42–34 |
+> | uplift-nursery-world | PURE | 45–34 |
+>
+> **The leak did NOT change the verdict.** Leaky-Opus and clean-Opus both give
+> **9 pure / 1 hybrid**; the leak only *shuffled which near-tie theme* the lone
+> hybrid win landed on (#0 under leaky, first-contact under clean — both 1-point
+> washes). Pure wins **decisively** (margin ≥6) on 5 themes (machine, gen-ship,
+> plague, trade, uplift); hybrid never wins by more than 1 point. **Conclusion
+> unchanged and now leak-robust: pure-LLM beats the hybrid; the honest number is
+> 9/10 (clean Opus), not 19/20.** Sonnet is reported below as directionally
+> pure-leaning but too variable to count. Everything below is the original
+> (contested) write-up, preserved for the record.
+
+---
+
 
 The hardening run the user asked for: generalize the pipeline (finding 11 / commit
 71e7cfa), generate all 10 themes × {hybrid, pure}, and blind-judge with TWO models.
