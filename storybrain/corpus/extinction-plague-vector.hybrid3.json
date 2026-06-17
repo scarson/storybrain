@@ -60,7 +60,6 @@
         "note": "the buried vault-fields packed in dormancy-salt that keeps a sleeper under; the salt is thinning and no one is replenishing it"
       }
     },
-
     {
       "slug": "events/the-first-breach",
       "type": "event",
@@ -112,7 +111,6 @@
         "is_pivot": true
       }
     },
-
     {
       "slug": "artifacts/the-failed-trial-deck",
       "type": "artifact",
@@ -173,7 +171,6 @@
         "note": "opens a salt vault; whether the sleeper inside wakes as a maker who knows the recipe or as a carrier depends on reading the cold-glyph first"
       }
     },
-
     {
       "slug": "lore/proof-the-vector-is-real-and-lethal",
       "type": "lore",
@@ -229,7 +226,6 @@
         "text": "With proof, nature, trigger and keystone in hand and in order, the seal assembles and finishes the containment the makers never closed, after which a vault can finally be opened safely."
       }
     },
-
     {
       "slug": "lore/the-wired-sample-chamber",
       "type": "lore",
@@ -290,7 +286,6 @@
         "text": "The vault-key's ledger is deliberately scrambled: no entry records whether a given vault holds a maker who knows the recipe or a carrier who is the outbreak."
       }
     },
-
     {
       "slug": "colonists/mara-okonkwo",
       "type": "colonist",
@@ -300,9 +295,20 @@
         "species": "human",
         "stance": "refuses to crack any relic before the recipe-shard is read and the steps are confirmed in order",
         "live": true,
-        "skills": { "research": 16, "social": 14, "medicine": 11, "crafting": 9, "shooting": 6, "melee": 5 },
-        "passions": ["research", "social"],
-        "want": "to assemble the seal in the makers' exact order before the carrier wakes, and to be the one who decides when a vault is opened"
+        "skills": {
+          "research": 16,
+          "social": 14,
+          "medicine": 11,
+          "crafting": 9,
+          "shooting": 6,
+          "melee": 5
+        },
+        "passions": [
+          "research",
+          "social"
+        ],
+        "want": "to assemble the seal in the makers' exact order before the carrier wakes, and to be the one who decides when a vault is opened",
+        "skill_profile": "colonist"
       }
     },
     {
@@ -314,9 +320,20 @@
         "species": "human",
         "stance": "already cracked the marrow-assay out of order to win the race early; may already be exposed",
         "live": true,
-        "skills": { "shooting": 15, "melee": 13, "crafting": 12, "research": 7, "medicine": 4, "social": 6 },
-        "passions": ["shooting", "crafting"],
-        "want": "to outrun the salt-clock and reach the keystone first, proving speed beats Mara's caution even if it cost him his own blood"
+        "skills": {
+          "shooting": 15,
+          "melee": 13,
+          "crafting": 12,
+          "research": 7,
+          "medicine": 4,
+          "social": 6
+        },
+        "passions": [
+          "shooting",
+          "crafting"
+        ],
+        "want": "to outrun the salt-clock and reach the keystone first, proving speed beats Mara's caution even if it cost him his own blood",
+        "skill_profile": "colonist"
       }
     },
     {
@@ -328,9 +345,19 @@
         "species": "human",
         "stance": "the only one who can read the cold-glyph, and therefore the most exposed to a vector that travels through meaning",
         "live": true,
-        "skills": { "research": 18, "social": 10, "crafting": 8, "medicine": 7, "shooting": 3, "melee": 2 },
-        "passions": ["research"],
-        "want": "to read the cold-glyph cleanly enough to hold the dormancy condition, without letting its meaning take root in her"
+        "skills": {
+          "research": 18,
+          "social": 10,
+          "crafting": 8,
+          "medicine": 7,
+          "shooting": 3,
+          "melee": 2
+        },
+        "passions": [
+          "research"
+        ],
+        "want": "to read the cold-glyph cleanly enough to hold the dormancy condition, without letting its meaning take root in her",
+        "skill_profile": "colonist"
       }
     },
     {
@@ -342,9 +369,20 @@
         "species": "human",
         "stance": "believes a maker can be woken safely as an ally and is quietly preparing to open the host-vault",
         "live": true,
-        "skills": { "research": 14, "social": 15, "medicine": 12, "crafting": 6, "shooting": 4, "melee": 3 },
-        "passions": ["social", "medicine"],
-        "want": "to wake a Cradlekeeper as a living ally who can teach the seal by heart, before the colony has to guess it alone"
+        "skills": {
+          "research": 14,
+          "social": 15,
+          "medicine": 12,
+          "crafting": 6,
+          "shooting": 4,
+          "melee": 3
+        },
+        "passions": [
+          "social",
+          "medicine"
+        ],
+        "want": "to wake a Cradlekeeper as a living ally who can teach the seal by heart, before the colony has to guess it alone",
+        "skill_profile": "colonist"
       }
     },
     {
@@ -356,12 +394,22 @@
         "species": "human",
         "stance": "guards the salt vaults and replenishes the dormancy-salt by hand, the last brake on a stirring sleeper",
         "live": true,
-        "skills": { "crafting": 16, "melee": 14, "medicine": 10, "shooting": 11, "research": 6, "social": 7 },
-        "passions": ["crafting", "melee"],
-        "want": "to keep every vault salted and shut until Mara says otherwise, and to never let Soren open one on a hunch"
+        "skills": {
+          "crafting": 16,
+          "melee": 14,
+          "medicine": 10,
+          "shooting": 11,
+          "research": 6,
+          "social": 7
+        },
+        "passions": [
+          "crafting",
+          "melee"
+        ],
+        "want": "to keep every vault salted and shut until Mara says otherwise, and to never let Soren open one on a hunch",
+        "skill_profile": "colonist"
       }
     },
-
     {
       "slug": "colonists/the-sleeper-vael",
       "type": "colonist",
@@ -374,9 +422,20 @@
         "live": false,
         "dormant": true,
         "wakeable": true,
-        "skills": { "research": 20, "crafting": 17, "medicine": 15, "social": 12, "melee": 4, "shooting": 2 },
-        "passions": ["research", "crafting"],
-        "want": "to wake into hands that read the cold-glyph first, so she can finish the seal she sealed herself behind, not breach it"
+        "skills": {
+          "research": 20,
+          "crafting": 17,
+          "medicine": 15,
+          "social": 12,
+          "melee": 4,
+          "shooting": 2
+        },
+        "passions": [
+          "research",
+          "crafting"
+        ],
+        "want": "to wake into hands that read the cold-glyph first, so she can finish the seal she sealed herself behind, not breach it",
+        "skill_profile": "colonist"
       }
     },
     {
@@ -392,12 +451,21 @@
         "dormant": true,
         "wakeable": true,
         "danger": "waking him is the breach",
-        "skills": { "medicine": 13, "research": 11, "melee": 9, "social": 8, "crafting": 7, "shooting": 5 },
-        "passions": ["medicine"],
-        "want": "to be let sleep — every stir toward consciousness is the strain reaching for a body, and he knows it"
+        "skills": {
+          "medicine": 13,
+          "research": 11,
+          "melee": 9,
+          "social": 8,
+          "crafting": 7,
+          "shooting": 5
+        },
+        "passions": [
+          "medicine"
+        ],
+        "want": "to be let sleep — every stir toward consciousness is the strain reaching for a body, and he knows it",
+        "skill_profile": "colonist"
       }
     },
-
     {
       "slug": "locations/threshold-landing",
       "type": "location",
@@ -418,7 +486,6 @@
         "live": true
       }
     },
-
     {
       "slug": "arc/the-containment-race",
       "type": "arc",
@@ -436,108 +503,498 @@
     }
   ],
   "edges": [
-    ["events/the-first-breach", "involves", "factions/the-cradlekeepers", 100],
-    ["factions/the-cradlekeepers", "rival_of", "factions/the-vector", 100],
-
-    ["events/the-naming-of-the-strain", "involves", "factions/the-stillborn-host", 200],
-    ["events/the-naming-of-the-strain", "caused_by", "events/the-first-breach", 200],
-
-    ["events/the-dormancy-discovery", "involves", "factions/the-cradlekeepers", 300],
-    ["events/the-dormancy-discovery", "caused_by", "events/the-naming-of-the-strain", 300],
-    ["factions/the-cradlekeepers", "settled", "locations/the-salt-vaults", 300],
-
-    ["events/the-keystone-cast", "involves", "factions/the-cradlekeepers", 500],
-    ["events/the-keystone-cast", "caused_by", "events/the-dormancy-discovery", 500],
-    ["factions/the-cradlekeepers", "settled", "locations/the-foam-fields", 500],
-
-    ["events/the-quarantine-sleep", "caused_by", "events/the-keystone-cast", 800],
-    ["factions/the-cradlekeepers", "involved_in", "events/the-quarantine-sleep", 800],
-    ["factions/the-stillborn-host", "involved_in", "events/the-quarantine-sleep", 800],
-    ["factions/the-vector", "involved_in", "events/the-quarantine-sleep", 800],
-    ["factions/the-stillborn-host", "carries", "factions/the-vector", 800],
-
-    ["artifacts/the-failed-trial-deck", "forged_by", "factions/the-cradlekeepers", 100],
-    ["artifacts/the-marrow-assay", "forged_by", "factions/the-stillborn-host", 200],
-    ["artifacts/the-cold-glyph", "forged_by", "factions/the-cradlekeepers", 300],
-    ["artifacts/the-keystone-relic", "forged_by", "factions/the-cradlekeepers", 500],
-    ["artifacts/the-sealwrights-recipe", "forged_by", "factions/the-cradlekeepers", 500],
-    ["artifacts/the-host-vault-key", "forged_by", "factions/the-stillborn-host", 800],
-
-    ["artifacts/the-failed-trial-deck", "drops", "lore/proof-the-vector-is-real-and-lethal", 800],
-    ["artifacts/the-failed-trial-deck", "drops", "lore/the-wired-sample-chamber", 800],
-    ["artifacts/the-failed-trial-deck", "drops", "lore/the-host-lines-confession", 800],
-
-    ["artifacts/the-marrow-assay", "drops", "lore/proof-the-vector-is-real-and-lethal", 800],
-    ["artifacts/the-marrow-assay", "drops", "lore/identify-the-vectors-nature", 800],
-    ["artifacts/the-marrow-assay", "drops", "lore/the-host-lines-confession", 800],
-
-    ["artifacts/the-cold-glyph", "drops", "lore/identify-the-vectors-nature", 800],
-    ["artifacts/the-cold-glyph", "drops", "lore/find-the-dormancy-trigger", 800],
-    ["artifacts/the-cold-glyph", "drops", "lore/the-held-condition", 800],
-
-    ["artifacts/the-keystone-relic", "drops", "lore/locate-the-keystone-relic", 800],
-    ["artifacts/the-keystone-relic", "drops", "lore/assemble-the-seal", 800],
-    ["artifacts/the-keystone-relic", "drops", "lore/the-unset-lattice", 800],
-
-    ["artifacts/the-sealwrights-recipe", "drops", "lore/locate-the-keystone-relic", 800],
-    ["artifacts/the-sealwrights-recipe", "drops", "lore/assemble-the-seal", 800],
-    ["artifacts/the-sealwrights-recipe", "drops", "lore/the-out-of-order-clause", 800],
-
-    ["artifacts/the-host-vault-key", "drops", "lore/find-the-dormancy-trigger", 800],
-    ["artifacts/the-host-vault-key", "drops", "lore/assemble-the-seal", 800],
-    ["artifacts/the-host-vault-key", "drops", "lore/which-vault-holds-which", 800],
-
-    ["lore/identify-the-vectors-nature", "prerequisite", "lore/proof-the-vector-is-real-and-lethal", 800],
-    ["lore/find-the-dormancy-trigger", "prerequisite", "lore/identify-the-vectors-nature", 800],
-    ["lore/locate-the-keystone-relic", "prerequisite", "lore/find-the-dormancy-trigger", 800],
-    ["lore/assemble-the-seal", "prerequisite", "lore/locate-the-keystone-relic", 800],
-
-    ["lore/proof-the-vector-is-real-and-lethal", "reveals", "factions/the-cradlekeepers", 800],
-    ["lore/identify-the-vectors-nature", "reveals", "factions/the-vector", 800],
-    ["lore/find-the-dormancy-trigger", "reveals", "factions/the-stillborn-host", 800],
-    ["lore/locate-the-keystone-relic", "reveals", "factions/the-cradlekeepers", 800],
-    ["lore/assemble-the-seal", "reveals", "factions/the-cradlekeepers", 800],
-
-    ["colonists/mara-okonkwo", "leads", "factions/humans", 800],
-    ["colonists/devrant-isk", "member_of", "factions/humans", 800],
-    ["colonists/ilse-vantar", "member_of", "factions/humans", 800],
-    ["colonists/the-archivist-soren", "member_of", "factions/humans", 800],
-    ["colonists/halden-ree", "member_of", "factions/humans", 800],
-
-    ["colonists/the-sleeper-vael", "member_of", "factions/the-cradlekeepers", 800],
-    ["colonists/the-quarantined-tsenn", "member_of", "factions/the-stillborn-host", 800],
-    ["colonists/the-sleeper-vael", "sealed_in", "locations/the-salt-vaults", 800],
-    ["colonists/the-quarantined-tsenn", "sealed_in", "locations/drift-carrier-ninth", 800],
-
-    ["factions/humans", "settled", "locations/threshold-landing", 800],
-    ["locations/threshold-landing", "inside_range_of", "locations/drift-carrier-ninth", 800],
-    ["factions/the-vector", "stirs_in", "locations/drift-carrier-ninth", 800],
-    ["factions/the-stillborn-host", "sealed_in", "locations/drift-carrier-ninth", 800],
-
-    ["colonists/devrant-isk", "cracked_out_of_order", "artifacts/the-marrow-assay", 800],
-    ["colonists/ilse-vantar", "sought_by", "factions/the-vector", 800],
-    ["colonists/the-archivist-soren", "owns", "artifacts/the-host-vault-key", 800],
-
-    ["colonists/devrant-isk", "rival_of", "colonists/mara-okonkwo", 800],
-    ["colonists/mara-okonkwo", "ally_of", "colonists/ilse-vantar", 800],
-    ["colonists/mara-okonkwo", "rival_of", "colonists/the-archivist-soren", 800],
-    ["colonists/halden-ree", "ally_of", "colonists/mara-okonkwo", 800],
-    ["colonists/halden-ree", "grudge_against", "colonists/the-archivist-soren", 800],
-    ["colonists/devrant-isk", "lover_of", "colonists/ilse-vantar", 800],
-    ["colonists/devrant-isk", "owes", "colonists/halden-ree", 800],
-    ["colonists/the-archivist-soren", "kin_of", "colonists/ilse-vantar", 800],
-
-    ["colonists/the-archivist-soren", "ally_of", "colonists/the-sleeper-vael", 800],
-    ["colonists/mara-okonkwo", "rival_of", "colonists/the-sleeper-vael", 800],
-    ["colonists/halden-ree", "grudge_against", "colonists/the-quarantined-tsenn", 800],
-
-    ["arc/the-containment-race", "begins", "factions/humans", 800],
-    ["colonists/mara-okonkwo", "races_to_assemble", "arc/the-containment-race", 800],
-    ["arc/the-containment-race", "threatens", "locations/threshold-landing", 800],
-    ["arc/the-containment-race", "threatened_by", "locations/drift-carrier-ninth", 800],
-    ["arc/the-containment-race", "won_by", "lore/assemble-the-seal", 800],
-    ["factions/the-vector", "threatens", "colonists/ilse-vantar", 800],
-    ["artifacts/the-host-vault-key", "threatens", "arc/the-containment-race", 800]
+    [
+      "events/the-first-breach",
+      "involves",
+      "factions/the-cradlekeepers",
+      100
+    ],
+    [
+      "factions/the-cradlekeepers",
+      "rival_of",
+      "factions/the-vector",
+      100
+    ],
+    [
+      "events/the-naming-of-the-strain",
+      "involves",
+      "factions/the-stillborn-host",
+      200
+    ],
+    [
+      "events/the-naming-of-the-strain",
+      "caused_by",
+      "events/the-first-breach",
+      200
+    ],
+    [
+      "events/the-dormancy-discovery",
+      "involves",
+      "factions/the-cradlekeepers",
+      300
+    ],
+    [
+      "events/the-dormancy-discovery",
+      "caused_by",
+      "events/the-naming-of-the-strain",
+      300
+    ],
+    [
+      "factions/the-cradlekeepers",
+      "settled",
+      "locations/the-salt-vaults",
+      300
+    ],
+    [
+      "events/the-keystone-cast",
+      "involves",
+      "factions/the-cradlekeepers",
+      500
+    ],
+    [
+      "events/the-keystone-cast",
+      "caused_by",
+      "events/the-dormancy-discovery",
+      500
+    ],
+    [
+      "factions/the-cradlekeepers",
+      "settled",
+      "locations/the-foam-fields",
+      500
+    ],
+    [
+      "events/the-quarantine-sleep",
+      "caused_by",
+      "events/the-keystone-cast",
+      800
+    ],
+    [
+      "factions/the-cradlekeepers",
+      "involved_in",
+      "events/the-quarantine-sleep",
+      800
+    ],
+    [
+      "factions/the-stillborn-host",
+      "involved_in",
+      "events/the-quarantine-sleep",
+      800
+    ],
+    [
+      "factions/the-vector",
+      "involved_in",
+      "events/the-quarantine-sleep",
+      800
+    ],
+    [
+      "factions/the-stillborn-host",
+      "carries",
+      "factions/the-vector",
+      800
+    ],
+    [
+      "artifacts/the-failed-trial-deck",
+      "forged_by",
+      "factions/the-cradlekeepers",
+      100
+    ],
+    [
+      "artifacts/the-marrow-assay",
+      "forged_by",
+      "factions/the-stillborn-host",
+      200
+    ],
+    [
+      "artifacts/the-cold-glyph",
+      "forged_by",
+      "factions/the-cradlekeepers",
+      300
+    ],
+    [
+      "artifacts/the-keystone-relic",
+      "forged_by",
+      "factions/the-cradlekeepers",
+      500
+    ],
+    [
+      "artifacts/the-sealwrights-recipe",
+      "forged_by",
+      "factions/the-cradlekeepers",
+      500
+    ],
+    [
+      "artifacts/the-host-vault-key",
+      "forged_by",
+      "factions/the-stillborn-host",
+      800
+    ],
+    [
+      "artifacts/the-failed-trial-deck",
+      "drops",
+      "lore/proof-the-vector-is-real-and-lethal",
+      800
+    ],
+    [
+      "artifacts/the-failed-trial-deck",
+      "drops",
+      "lore/the-wired-sample-chamber",
+      800
+    ],
+    [
+      "artifacts/the-failed-trial-deck",
+      "drops",
+      "lore/the-host-lines-confession",
+      800
+    ],
+    [
+      "artifacts/the-marrow-assay",
+      "drops",
+      "lore/proof-the-vector-is-real-and-lethal",
+      800
+    ],
+    [
+      "artifacts/the-marrow-assay",
+      "drops",
+      "lore/identify-the-vectors-nature",
+      800
+    ],
+    [
+      "artifacts/the-marrow-assay",
+      "drops",
+      "lore/the-host-lines-confession",
+      800
+    ],
+    [
+      "artifacts/the-cold-glyph",
+      "drops",
+      "lore/identify-the-vectors-nature",
+      800
+    ],
+    [
+      "artifacts/the-cold-glyph",
+      "drops",
+      "lore/find-the-dormancy-trigger",
+      800
+    ],
+    [
+      "artifacts/the-cold-glyph",
+      "drops",
+      "lore/the-held-condition",
+      800
+    ],
+    [
+      "artifacts/the-keystone-relic",
+      "drops",
+      "lore/locate-the-keystone-relic",
+      800
+    ],
+    [
+      "artifacts/the-keystone-relic",
+      "drops",
+      "lore/assemble-the-seal",
+      800
+    ],
+    [
+      "artifacts/the-keystone-relic",
+      "drops",
+      "lore/the-unset-lattice",
+      800
+    ],
+    [
+      "artifacts/the-sealwrights-recipe",
+      "drops",
+      "lore/locate-the-keystone-relic",
+      800
+    ],
+    [
+      "artifacts/the-sealwrights-recipe",
+      "drops",
+      "lore/assemble-the-seal",
+      800
+    ],
+    [
+      "artifacts/the-sealwrights-recipe",
+      "drops",
+      "lore/the-out-of-order-clause",
+      800
+    ],
+    [
+      "artifacts/the-host-vault-key",
+      "drops",
+      "lore/find-the-dormancy-trigger",
+      800
+    ],
+    [
+      "artifacts/the-host-vault-key",
+      "drops",
+      "lore/assemble-the-seal",
+      800
+    ],
+    [
+      "artifacts/the-host-vault-key",
+      "drops",
+      "lore/which-vault-holds-which",
+      800
+    ],
+    [
+      "lore/identify-the-vectors-nature",
+      "prerequisite",
+      "lore/proof-the-vector-is-real-and-lethal",
+      800
+    ],
+    [
+      "lore/find-the-dormancy-trigger",
+      "prerequisite",
+      "lore/identify-the-vectors-nature",
+      800
+    ],
+    [
+      "lore/locate-the-keystone-relic",
+      "prerequisite",
+      "lore/find-the-dormancy-trigger",
+      800
+    ],
+    [
+      "lore/assemble-the-seal",
+      "prerequisite",
+      "lore/locate-the-keystone-relic",
+      800
+    ],
+    [
+      "lore/proof-the-vector-is-real-and-lethal",
+      "reveals",
+      "factions/the-cradlekeepers",
+      800
+    ],
+    [
+      "lore/identify-the-vectors-nature",
+      "reveals",
+      "factions/the-vector",
+      800
+    ],
+    [
+      "lore/find-the-dormancy-trigger",
+      "reveals",
+      "factions/the-stillborn-host",
+      800
+    ],
+    [
+      "lore/locate-the-keystone-relic",
+      "reveals",
+      "factions/the-cradlekeepers",
+      800
+    ],
+    [
+      "lore/assemble-the-seal",
+      "reveals",
+      "factions/the-cradlekeepers",
+      800
+    ],
+    [
+      "colonists/mara-okonkwo",
+      "leads",
+      "factions/humans",
+      800
+    ],
+    [
+      "colonists/devrant-isk",
+      "member_of",
+      "factions/humans",
+      800
+    ],
+    [
+      "colonists/ilse-vantar",
+      "member_of",
+      "factions/humans",
+      800
+    ],
+    [
+      "colonists/the-archivist-soren",
+      "member_of",
+      "factions/humans",
+      800
+    ],
+    [
+      "colonists/halden-ree",
+      "member_of",
+      "factions/humans",
+      800
+    ],
+    [
+      "colonists/the-sleeper-vael",
+      "member_of",
+      "factions/the-cradlekeepers",
+      800
+    ],
+    [
+      "colonists/the-quarantined-tsenn",
+      "member_of",
+      "factions/the-stillborn-host",
+      800
+    ],
+    [
+      "colonists/the-sleeper-vael",
+      "sealed_in",
+      "locations/the-salt-vaults",
+      800
+    ],
+    [
+      "colonists/the-quarantined-tsenn",
+      "sealed_in",
+      "locations/drift-carrier-ninth",
+      800
+    ],
+    [
+      "factions/humans",
+      "settled",
+      "locations/threshold-landing",
+      800
+    ],
+    [
+      "locations/threshold-landing",
+      "inside_range_of",
+      "locations/drift-carrier-ninth",
+      800
+    ],
+    [
+      "factions/the-vector",
+      "stirs_in",
+      "locations/drift-carrier-ninth",
+      800
+    ],
+    [
+      "factions/the-stillborn-host",
+      "sealed_in",
+      "locations/drift-carrier-ninth",
+      800
+    ],
+    [
+      "colonists/devrant-isk",
+      "cracked_out_of_order",
+      "artifacts/the-marrow-assay",
+      800
+    ],
+    [
+      "colonists/ilse-vantar",
+      "sought_by",
+      "factions/the-vector",
+      800
+    ],
+    [
+      "colonists/the-archivist-soren",
+      "owns",
+      "artifacts/the-host-vault-key",
+      800
+    ],
+    [
+      "colonists/devrant-isk",
+      "rival_of",
+      "colonists/mara-okonkwo",
+      800
+    ],
+    [
+      "colonists/mara-okonkwo",
+      "ally_of",
+      "colonists/ilse-vantar",
+      800
+    ],
+    [
+      "colonists/mara-okonkwo",
+      "rival_of",
+      "colonists/the-archivist-soren",
+      800
+    ],
+    [
+      "colonists/halden-ree",
+      "ally_of",
+      "colonists/mara-okonkwo",
+      800
+    ],
+    [
+      "colonists/halden-ree",
+      "grudge_against",
+      "colonists/the-archivist-soren",
+      800
+    ],
+    [
+      "colonists/devrant-isk",
+      "lover_of",
+      "colonists/ilse-vantar",
+      800
+    ],
+    [
+      "colonists/devrant-isk",
+      "owes",
+      "colonists/halden-ree",
+      800
+    ],
+    [
+      "colonists/the-archivist-soren",
+      "kin_of",
+      "colonists/ilse-vantar",
+      800
+    ],
+    [
+      "colonists/the-archivist-soren",
+      "ally_of",
+      "colonists/the-sleeper-vael",
+      800
+    ],
+    [
+      "colonists/mara-okonkwo",
+      "rival_of",
+      "colonists/the-sleeper-vael",
+      800
+    ],
+    [
+      "colonists/halden-ree",
+      "grudge_against",
+      "colonists/the-quarantined-tsenn",
+      800
+    ],
+    [
+      "arc/the-containment-race",
+      "begins",
+      "factions/humans",
+      800
+    ],
+    [
+      "colonists/mara-okonkwo",
+      "races_to_assemble",
+      "arc/the-containment-race",
+      800
+    ],
+    [
+      "arc/the-containment-race",
+      "threatens",
+      "locations/threshold-landing",
+      800
+    ],
+    [
+      "arc/the-containment-race",
+      "threatened_by",
+      "locations/drift-carrier-ninth",
+      800
+    ],
+    [
+      "arc/the-containment-race",
+      "won_by",
+      "lore/assemble-the-seal",
+      800
+    ],
+    [
+      "factions/the-vector",
+      "threatens",
+      "colonists/ilse-vantar",
+      800
+    ],
+    [
+      "artifacts/the-host-vault-key",
+      "threatens",
+      "arc/the-containment-race",
+      800
+    ]
   ],
   "mystery": {
     "fragments": [

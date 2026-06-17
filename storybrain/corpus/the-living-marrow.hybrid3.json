@@ -46,7 +46,6 @@
         "note": "winged seer-traders who read the coming catastrophe in the marrow's first tremors and sold tickets to it; their last ships scattered into the void-glass dark and never reported home"
       }
     },
-
     {
       "slug": "locations/the-marrow-vein",
       "type": "location",
@@ -83,7 +82,6 @@
         "note": "the human landing-town, built atop the largest unbroken marrow seam left on the world without anyone reading what lay beneath"
       }
     },
-
     {
       "slug": "figures/velt-deepwright-kael",
       "type": "figure",
@@ -102,7 +100,6 @@
         "note": "the single node of the gestalt that survived long enough to record a warning instead of a song"
       }
     },
-
     {
       "slug": "events/the-first-bore",
       "type": "event",
@@ -164,7 +161,6 @@
         "is_pivot": true
       }
     },
-
     {
       "slug": "artifacts/kaels-bore-codex",
       "type": "artifact",
@@ -235,7 +231,6 @@
         "note": "Kael's deathbed dampener, built to mute the wound; it works once, then returns what it swallowed twice as loud"
       }
     },
-
     {
       "slug": "lore/the-marrow-was-alive",
       "type": "lore",
@@ -291,7 +286,6 @@
         "text": "The amplified wave reached the seams under every city at once. The Velt vitrified mid-thought, the Choir dissolved into the song, the Pale Wing fled into the dark, and three empires ended in a single shared instant of the planet's pain."
       }
     },
-
     {
       "slug": "lore/velt-thought-in-stone",
       "type": "lore",
@@ -392,7 +386,6 @@
         "text": "The Silence Engine buys quiet by storing the wound's song. Its capacity is finite, and what it holds it eventually returns, louder than it took."
       }
     },
-
     {
       "slug": "colonists/director-imre-vask",
       "type": "colonist",
@@ -402,9 +395,20 @@
         "stance": "wants the deep drill to reach the rich seam on schedule and dismisses the humming shard on his desk as superstition, even as it teaches him to dream the planet's pain",
         "live": true,
         "species": "human",
-        "skills": { "shooting": 6, "medicine": 4, "social": 17, "research": 9, "crafting": 5, "melee": 7 },
-        "passions": ["social", "research"],
-        "want": "to hit the marrow-seam quota on schedule and post the colony's first profit before the charter board recalls him"
+        "skills": {
+          "shooting": 6,
+          "medicine": 4,
+          "social": 17,
+          "research": 9,
+          "crafting": 5,
+          "melee": 7
+        },
+        "passions": [
+          "social",
+          "research"
+        ],
+        "want": "to hit the marrow-seam quota on schedule and post the colony's first profit before the charter board recalls him",
+        "skill_profile": "colonist"
       }
     },
     {
@@ -416,9 +420,20 @@
         "stance": "has half-decoded Kael's codex and now knows the ore is nerve-tissue; cannot get the director to halt the drill in time",
         "live": true,
         "species": "human",
-        "skills": { "shooting": 3, "medicine": 8, "social": 11, "research": 18, "crafting": 9, "melee": 2 },
-        "passions": ["research", "medicine"],
-        "want": "to finish decoding Kael's bore-codex and force Vask to halt the drill before the bit touches living marrow"
+        "skills": {
+          "shooting": 3,
+          "medicine": 8,
+          "social": 11,
+          "research": 18,
+          "crafting": 9,
+          "melee": 2
+        },
+        "passions": [
+          "research",
+          "medicine"
+        ],
+        "want": "to finish decoding Kael's bore-codex and force Vask to halt the drill before the bit touches living marrow",
+        "skill_profile": "colonist"
       }
     },
     {
@@ -430,9 +445,20 @@
         "stance": "following orders toward the vein on a quota he was promised was safe; the one whose bit will actually break the seam",
         "live": true,
         "species": "human",
-        "skills": { "shooting": 10, "medicine": 5, "social": 8, "research": 6, "crafting": 16, "melee": 12 },
-        "passions": ["crafting", "shooting"],
-        "want": "to clear the debt he owes Vask by driving the deep drill to the seam, even as Soln's warnings start to reach him"
+        "skills": {
+          "shooting": 10,
+          "medicine": 5,
+          "social": 8,
+          "research": 6,
+          "crafting": 16,
+          "melee": 12
+        },
+        "passions": [
+          "crafting",
+          "shooting"
+        ],
+        "want": "to clear the debt he owes Vask by driving the deep drill to the seam, even as Soln's warnings start to reach him",
+        "skill_profile": "colonist"
       }
     },
     {
@@ -444,9 +470,20 @@
         "stance": "has begun to hear the wound the way the Choir did and is the only human who can read the Cantor's loop; racing to reach the amphitheater before the drill reaches the seam",
         "live": true,
         "species": "human",
-        "skills": { "shooting": 4, "medicine": 6, "social": 9, "research": 13, "crafting": 7, "melee": 3 },
-        "passions": ["research", "social"],
-        "want": "to reach the silent amphitheater and decode the Cantor's final warning in time to stop Bren's drill"
+        "skills": {
+          "shooting": 4,
+          "medicine": 6,
+          "social": 9,
+          "research": 13,
+          "crafting": 7,
+          "melee": 3
+        },
+        "passions": [
+          "research",
+          "social"
+        ],
+        "want": "to reach the silent amphitheater and decode the Cantor's final warning in time to stop Bren's drill",
+        "skill_profile": "colonist"
       }
     },
     {
@@ -459,9 +496,20 @@
         "live": true,
         "species": "alien",
         "faction": "civs/the-velt",
-        "skills": { "shooting": 0, "medicine": 2, "social": 5, "research": 20, "crafting": 14, "melee": 0 },
-        "passions": ["research", "crafting"],
-        "want": "to finish the sentence it was vitrified mid-thought — the warning Kael never got to carve — by speaking it through Soln before the second waking"
+        "skills": {
+          "shooting": 0,
+          "medicine": 2,
+          "social": 5,
+          "research": 20,
+          "crafting": 14,
+          "melee": 0
+        },
+        "passions": [
+          "research",
+          "crafting"
+        ],
+        "want": "to finish the sentence it was vitrified mid-thought — the warning Kael never got to carve — by speaking it through Soln before the second waking",
+        "skill_profile": "colonist"
       }
     },
     {
@@ -474,12 +522,22 @@
         "live": true,
         "species": "alien",
         "faction": "civs/the-choir",
-        "skills": { "shooting": 0, "medicine": 3, "social": 19, "research": 12, "crafting": 0, "melee": 0 },
-        "passions": ["social", "research"],
-        "want": "to teach Yuki the three-word warning and pull her back from the frequency before the wound learns her voice the way it learned the Choir's"
+        "skills": {
+          "shooting": 0,
+          "medicine": 3,
+          "social": 19,
+          "research": 12,
+          "crafting": 0,
+          "melee": 0
+        },
+        "passions": [
+          "social",
+          "research"
+        ],
+        "want": "to teach Yuki the three-word warning and pull her back from the frequency before the wound learns her voice the way it learned the Choir's",
+        "skill_profile": "colonist"
       }
     },
-
     {
       "slug": "arc/the-second-waking",
       "type": "arc",
@@ -495,127 +553,554 @@
       }
     }
   ],
-
   "edges": [
-    ["civs/the-velt", "located_at", "locations/glasshalls-of-velt"],
-    ["civs/the-velt", "located_at", "locations/the-marrow-vein"],
-    ["civs/the-choir", "located_at", "locations/the-silent-amphitheater"],
-    ["factions/humans", "located_at", "locations/colony-drosselmeyer"],
-    ["figures/velt-deepwright-kael", "owned_by", "civs/the-velt"],
-    ["figures/the-last-cantor", "owned_by", "civs/the-choir"],
-
-    ["events/the-first-bore", "involves", "civs/the-velt", 100],
-    ["events/the-golden-quickening", "involves", "civs/the-velt", 200],
-    ["events/the-golden-quickening", "caused_by", "events/the-first-bore", 200],
-    ["events/the-golden-quickening", "concerns", "locations/the-marrow-vein", 200],
-    ["events/the-wound-begins-to-sing", "involves", "civs/the-choir", 300],
-    ["events/the-wound-begins-to-sing", "caused_by", "events/the-first-bore", 300],
-    ["events/the-pale-wing-sells-the-doom", "involves", "civs/the-pale-wing", 400],
-    ["events/the-pale-wing-sells-the-doom", "caused_by", "events/the-wound-begins-to-sing", 400],
-    ["events/the-choir-sings-it-down", "involves", "civs/the-choir", 600],
-    ["events/the-choir-sings-it-down", "caused_by", "events/the-wound-begins-to-sing", 600],
-    ["events/the-waking-of-the-wounded-world", "caused_by", "events/the-choir-sings-it-down", 700],
-    ["civs/the-velt", "involved_in", "events/the-waking-of-the-wounded-world", 700],
-    ["civs/the-choir", "involved_in", "events/the-waking-of-the-wounded-world", 700],
-    ["civs/the-pale-wing", "involved_in", "events/the-waking-of-the-wounded-world", 700],
-
-    ["artifacts/kaels-bore-codex", "forged_by", "figures/velt-deepwright-kael"],
-    ["artifacts/the-silence-engine", "forged_by", "figures/velt-deepwright-kael"],
-    ["artifacts/cantors-final-loop", "forged_by", "figures/the-last-cantor"],
-    ["artifacts/the-still-tuning-fork", "forged_by", "civs/the-choir"],
-    ["artifacts/the-vitrified-map", "forged_by", "civs/the-velt"],
-    ["artifacts/the-pale-wing-ledger", "forged_by", "civs/the-pale-wing"],
-    ["artifacts/the-marrow-shard", "forged_by", "civs/the-velt"],
-
-    ["artifacts/kaels-bore-codex", "hidden_at", "locations/the-marrow-vein"],
-    ["artifacts/the-marrow-shard", "hidden_at", "locations/the-marrow-vein"],
-    ["artifacts/cantors-final-loop", "hidden_at", "locations/the-silent-amphitheater"],
-    ["artifacts/the-still-tuning-fork", "hidden_at", "locations/the-silent-amphitheater"],
-    ["artifacts/the-vitrified-map", "hidden_at", "locations/glasshalls-of-velt"],
-    ["artifacts/the-silence-engine", "hidden_at", "locations/glasshalls-of-velt"],
-
-    ["artifacts/kaels-bore-codex", "drops", "lore/the-marrow-was-alive"],
-    ["artifacts/kaels-bore-codex", "drops", "lore/velt-thought-in-stone"],
-    ["artifacts/kaels-bore-codex", "drops", "lore/marrow-quickened-the-velt"],
-    ["artifacts/kaels-bore-codex", "drops", "lore/extraction-was-amputation"],
-
-    ["artifacts/the-marrow-shard", "drops", "lore/extraction-was-amputation"],
-    ["artifacts/the-marrow-shard", "drops", "lore/the-marrow-remembers-the-cut"],
-    ["artifacts/the-marrow-shard", "drops", "lore/the-shard-wants-reunion"],
-
-    ["artifacts/cantors-final-loop", "drops", "lore/the-wound-sang"],
-    ["artifacts/cantors-final-loop", "drops", "lore/the-last-warning"],
-    ["artifacts/cantors-final-loop", "drops", "lore/the-choir-tried-to-sing-it-down"],
-
-    ["artifacts/the-still-tuning-fork", "drops", "lore/the-choir-tried-to-sing-it-down"],
-    ["artifacts/the-still-tuning-fork", "drops", "lore/the-counter-wave-failed"],
-    ["artifacts/the-still-tuning-fork", "drops", "lore/the-wound-sang"],
-
-    ["artifacts/the-vitrified-map", "drops", "lore/the-psychic-cascade"],
-    ["artifacts/the-vitrified-map", "drops", "lore/every-city-sat-on-a-seam"],
-    ["artifacts/the-vitrified-map", "drops", "lore/the-seams-run-under-the-colony"],
-
-    ["artifacts/the-pale-wing-ledger", "drops", "lore/the-wound-sang"],
-    ["artifacts/the-pale-wing-ledger", "drops", "lore/the-pale-wing-knew-and-sold-it"],
-    ["artifacts/the-pale-wing-ledger", "drops", "lore/the-psychic-cascade"],
-
-    ["artifacts/the-silence-engine", "drops", "lore/the-psychic-cascade"],
-    ["artifacts/the-silence-engine", "drops", "lore/silence-is-borrowed"],
-    ["artifacts/the-silence-engine", "drops", "lore/the-choir-tried-to-sing-it-down"],
-
-    ["lore/the-marrow-was-alive", "reveals", "civs/the-velt"],
-    ["lore/velt-thought-in-stone", "reveals", "civs/the-velt"],
-    ["lore/marrow-quickened-the-velt", "reveals", "civs/the-velt"],
-    ["lore/extraction-was-amputation", "reveals", "locations/the-marrow-vein"],
-    ["lore/the-wound-sang", "reveals", "civs/the-choir"],
-    ["lore/the-choir-tried-to-sing-it-down", "reveals", "civs/the-choir"],
-    ["lore/the-counter-wave-failed", "reveals", "civs/the-choir"],
-    ["lore/the-last-warning", "reveals", "figures/the-last-cantor"],
-    ["lore/the-marrow-remembers-the-cut", "reveals", "artifacts/the-marrow-shard"],
-    ["lore/the-shard-wants-reunion", "reveals", "locations/the-marrow-vein"],
-    ["lore/the-pale-wing-knew-and-sold-it", "reveals", "civs/the-pale-wing"],
-    ["lore/every-city-sat-on-a-seam", "reveals", "civs/the-velt"],
-    ["lore/the-seams-run-under-the-colony", "reveals", "locations/colony-drosselmeyer"],
-    ["lore/silence-is-borrowed", "reveals", "artifacts/the-silence-engine"],
-    ["lore/the-psychic-cascade", "reveals", "events/the-waking-of-the-wounded-world"],
-
-    ["lore/extraction-was-amputation", "caused_by", "lore/the-marrow-was-alive"],
-    ["lore/the-wound-sang", "caused_by", "lore/extraction-was-amputation"],
-    ["lore/the-choir-tried-to-sing-it-down", "caused_by", "lore/the-wound-sang"],
-    ["lore/the-psychic-cascade", "caused_by", "lore/the-choir-tried-to-sing-it-down"],
-
-    ["colonists/director-imre-vask", "member_of", "factions/humans", 800],
-    ["colonists/archivist-soln", "member_of", "factions/humans", 800],
-    ["colonists/drill-chief-bren-okafor", "member_of", "factions/humans", 800],
-    ["colonists/the-listener-yuki", "member_of", "factions/humans", 800],
-    ["colonists/the-velt-remnant-thauma", "member_of", "civs/the-velt", 800],
-    ["colonists/the-choir-echo-vohn", "member_of", "civs/the-choir", 800],
-
-    ["colonists/archivist-soln", "kin_of", "colonists/the-listener-yuki", 800],
-    ["colonists/drill-chief-bren-okafor", "owes", "colonists/director-imre-vask", 800],
-    ["colonists/director-imre-vask", "betrayed", "colonists/drill-chief-bren-okafor", 800],
-    ["colonists/drill-chief-bren-okafor", "grudge_against", "colonists/director-imre-vask", 800],
-    ["colonists/drill-chief-bren-okafor", "lover_of", "colonists/the-listener-yuki", 800],
-    ["colonists/the-listener-yuki", "lover_of", "colonists/drill-chief-bren-okafor", 800],
-    ["colonists/archivist-soln", "ally_of", "colonists/the-listener-yuki", 800],
-    ["colonists/the-velt-remnant-thauma", "ally_of", "colonists/archivist-soln", 800],
-    ["colonists/the-choir-echo-vohn", "kin_of", "colonists/the-listener-yuki", 800],
-
-    ["colonists/director-imre-vask", "owns", "artifacts/the-marrow-shard", 800],
-    ["colonists/archivist-soln", "owns", "artifacts/kaels-bore-codex", 800],
-    ["colonists/the-listener-yuki", "sought_by", "civs/the-choir", 800],
-    ["colonists/archivist-soln", "rival_of", "colonists/director-imre-vask", 800],
-
-    ["factions/humans", "located_at", "locations/colony-drosselmeyer", 800],
-    ["locations/colony-drosselmeyer", "located_at", "locations/the-marrow-vein", 800],
-    ["artifacts/the-marrow-shard", "threatens", "locations/colony-drosselmeyer", 800],
-    ["arc/the-second-waking", "threatens", "locations/colony-drosselmeyer", 800],
-    ["arc/the-second-waking", "begins", "factions/humans", 800],
-    ["colonists/the-listener-yuki", "races_to_stop", "arc/the-second-waking", 800],
-    ["colonists/director-imre-vask", "drives", "arc/the-second-waking", 800],
-    ["arc/the-second-waking", "next_beat", "events/the-waking-of-the-wounded-world", 800]
+    [
+      "civs/the-velt",
+      "located_at",
+      "locations/glasshalls-of-velt"
+    ],
+    [
+      "civs/the-velt",
+      "located_at",
+      "locations/the-marrow-vein"
+    ],
+    [
+      "civs/the-choir",
+      "located_at",
+      "locations/the-silent-amphitheater"
+    ],
+    [
+      "factions/humans",
+      "located_at",
+      "locations/colony-drosselmeyer"
+    ],
+    [
+      "figures/velt-deepwright-kael",
+      "owned_by",
+      "civs/the-velt"
+    ],
+    [
+      "figures/the-last-cantor",
+      "owned_by",
+      "civs/the-choir"
+    ],
+    [
+      "events/the-first-bore",
+      "involves",
+      "civs/the-velt",
+      100
+    ],
+    [
+      "events/the-golden-quickening",
+      "involves",
+      "civs/the-velt",
+      200
+    ],
+    [
+      "events/the-golden-quickening",
+      "caused_by",
+      "events/the-first-bore",
+      200
+    ],
+    [
+      "events/the-golden-quickening",
+      "concerns",
+      "locations/the-marrow-vein",
+      200
+    ],
+    [
+      "events/the-wound-begins-to-sing",
+      "involves",
+      "civs/the-choir",
+      300
+    ],
+    [
+      "events/the-wound-begins-to-sing",
+      "caused_by",
+      "events/the-first-bore",
+      300
+    ],
+    [
+      "events/the-pale-wing-sells-the-doom",
+      "involves",
+      "civs/the-pale-wing",
+      400
+    ],
+    [
+      "events/the-pale-wing-sells-the-doom",
+      "caused_by",
+      "events/the-wound-begins-to-sing",
+      400
+    ],
+    [
+      "events/the-choir-sings-it-down",
+      "involves",
+      "civs/the-choir",
+      600
+    ],
+    [
+      "events/the-choir-sings-it-down",
+      "caused_by",
+      "events/the-wound-begins-to-sing",
+      600
+    ],
+    [
+      "events/the-waking-of-the-wounded-world",
+      "caused_by",
+      "events/the-choir-sings-it-down",
+      700
+    ],
+    [
+      "civs/the-velt",
+      "involved_in",
+      "events/the-waking-of-the-wounded-world",
+      700
+    ],
+    [
+      "civs/the-choir",
+      "involved_in",
+      "events/the-waking-of-the-wounded-world",
+      700
+    ],
+    [
+      "civs/the-pale-wing",
+      "involved_in",
+      "events/the-waking-of-the-wounded-world",
+      700
+    ],
+    [
+      "artifacts/kaels-bore-codex",
+      "forged_by",
+      "figures/velt-deepwright-kael"
+    ],
+    [
+      "artifacts/the-silence-engine",
+      "forged_by",
+      "figures/velt-deepwright-kael"
+    ],
+    [
+      "artifacts/cantors-final-loop",
+      "forged_by",
+      "figures/the-last-cantor"
+    ],
+    [
+      "artifacts/the-still-tuning-fork",
+      "forged_by",
+      "civs/the-choir"
+    ],
+    [
+      "artifacts/the-vitrified-map",
+      "forged_by",
+      "civs/the-velt"
+    ],
+    [
+      "artifacts/the-pale-wing-ledger",
+      "forged_by",
+      "civs/the-pale-wing"
+    ],
+    [
+      "artifacts/the-marrow-shard",
+      "forged_by",
+      "civs/the-velt"
+    ],
+    [
+      "artifacts/kaels-bore-codex",
+      "hidden_at",
+      "locations/the-marrow-vein"
+    ],
+    [
+      "artifacts/the-marrow-shard",
+      "hidden_at",
+      "locations/the-marrow-vein"
+    ],
+    [
+      "artifacts/cantors-final-loop",
+      "hidden_at",
+      "locations/the-silent-amphitheater"
+    ],
+    [
+      "artifacts/the-still-tuning-fork",
+      "hidden_at",
+      "locations/the-silent-amphitheater"
+    ],
+    [
+      "artifacts/the-vitrified-map",
+      "hidden_at",
+      "locations/glasshalls-of-velt"
+    ],
+    [
+      "artifacts/the-silence-engine",
+      "hidden_at",
+      "locations/glasshalls-of-velt"
+    ],
+    [
+      "artifacts/kaels-bore-codex",
+      "drops",
+      "lore/the-marrow-was-alive"
+    ],
+    [
+      "artifacts/kaels-bore-codex",
+      "drops",
+      "lore/velt-thought-in-stone"
+    ],
+    [
+      "artifacts/kaels-bore-codex",
+      "drops",
+      "lore/marrow-quickened-the-velt"
+    ],
+    [
+      "artifacts/kaels-bore-codex",
+      "drops",
+      "lore/extraction-was-amputation"
+    ],
+    [
+      "artifacts/the-marrow-shard",
+      "drops",
+      "lore/extraction-was-amputation"
+    ],
+    [
+      "artifacts/the-marrow-shard",
+      "drops",
+      "lore/the-marrow-remembers-the-cut"
+    ],
+    [
+      "artifacts/the-marrow-shard",
+      "drops",
+      "lore/the-shard-wants-reunion"
+    ],
+    [
+      "artifacts/cantors-final-loop",
+      "drops",
+      "lore/the-wound-sang"
+    ],
+    [
+      "artifacts/cantors-final-loop",
+      "drops",
+      "lore/the-last-warning"
+    ],
+    [
+      "artifacts/cantors-final-loop",
+      "drops",
+      "lore/the-choir-tried-to-sing-it-down"
+    ],
+    [
+      "artifacts/the-still-tuning-fork",
+      "drops",
+      "lore/the-choir-tried-to-sing-it-down"
+    ],
+    [
+      "artifacts/the-still-tuning-fork",
+      "drops",
+      "lore/the-counter-wave-failed"
+    ],
+    [
+      "artifacts/the-still-tuning-fork",
+      "drops",
+      "lore/the-wound-sang"
+    ],
+    [
+      "artifacts/the-vitrified-map",
+      "drops",
+      "lore/the-psychic-cascade"
+    ],
+    [
+      "artifacts/the-vitrified-map",
+      "drops",
+      "lore/every-city-sat-on-a-seam"
+    ],
+    [
+      "artifacts/the-vitrified-map",
+      "drops",
+      "lore/the-seams-run-under-the-colony"
+    ],
+    [
+      "artifacts/the-pale-wing-ledger",
+      "drops",
+      "lore/the-wound-sang"
+    ],
+    [
+      "artifacts/the-pale-wing-ledger",
+      "drops",
+      "lore/the-pale-wing-knew-and-sold-it"
+    ],
+    [
+      "artifacts/the-pale-wing-ledger",
+      "drops",
+      "lore/the-psychic-cascade"
+    ],
+    [
+      "artifacts/the-silence-engine",
+      "drops",
+      "lore/the-psychic-cascade"
+    ],
+    [
+      "artifacts/the-silence-engine",
+      "drops",
+      "lore/silence-is-borrowed"
+    ],
+    [
+      "artifacts/the-silence-engine",
+      "drops",
+      "lore/the-choir-tried-to-sing-it-down"
+    ],
+    [
+      "lore/the-marrow-was-alive",
+      "reveals",
+      "civs/the-velt"
+    ],
+    [
+      "lore/velt-thought-in-stone",
+      "reveals",
+      "civs/the-velt"
+    ],
+    [
+      "lore/marrow-quickened-the-velt",
+      "reveals",
+      "civs/the-velt"
+    ],
+    [
+      "lore/extraction-was-amputation",
+      "reveals",
+      "locations/the-marrow-vein"
+    ],
+    [
+      "lore/the-wound-sang",
+      "reveals",
+      "civs/the-choir"
+    ],
+    [
+      "lore/the-choir-tried-to-sing-it-down",
+      "reveals",
+      "civs/the-choir"
+    ],
+    [
+      "lore/the-counter-wave-failed",
+      "reveals",
+      "civs/the-choir"
+    ],
+    [
+      "lore/the-last-warning",
+      "reveals",
+      "figures/the-last-cantor"
+    ],
+    [
+      "lore/the-marrow-remembers-the-cut",
+      "reveals",
+      "artifacts/the-marrow-shard"
+    ],
+    [
+      "lore/the-shard-wants-reunion",
+      "reveals",
+      "locations/the-marrow-vein"
+    ],
+    [
+      "lore/the-pale-wing-knew-and-sold-it",
+      "reveals",
+      "civs/the-pale-wing"
+    ],
+    [
+      "lore/every-city-sat-on-a-seam",
+      "reveals",
+      "civs/the-velt"
+    ],
+    [
+      "lore/the-seams-run-under-the-colony",
+      "reveals",
+      "locations/colony-drosselmeyer"
+    ],
+    [
+      "lore/silence-is-borrowed",
+      "reveals",
+      "artifacts/the-silence-engine"
+    ],
+    [
+      "lore/the-psychic-cascade",
+      "reveals",
+      "events/the-waking-of-the-wounded-world"
+    ],
+    [
+      "lore/extraction-was-amputation",
+      "caused_by",
+      "lore/the-marrow-was-alive"
+    ],
+    [
+      "lore/the-wound-sang",
+      "caused_by",
+      "lore/extraction-was-amputation"
+    ],
+    [
+      "lore/the-choir-tried-to-sing-it-down",
+      "caused_by",
+      "lore/the-wound-sang"
+    ],
+    [
+      "lore/the-psychic-cascade",
+      "caused_by",
+      "lore/the-choir-tried-to-sing-it-down"
+    ],
+    [
+      "colonists/director-imre-vask",
+      "member_of",
+      "factions/humans",
+      800
+    ],
+    [
+      "colonists/archivist-soln",
+      "member_of",
+      "factions/humans",
+      800
+    ],
+    [
+      "colonists/drill-chief-bren-okafor",
+      "member_of",
+      "factions/humans",
+      800
+    ],
+    [
+      "colonists/the-listener-yuki",
+      "member_of",
+      "factions/humans",
+      800
+    ],
+    [
+      "colonists/the-velt-remnant-thauma",
+      "member_of",
+      "civs/the-velt",
+      800
+    ],
+    [
+      "colonists/the-choir-echo-vohn",
+      "member_of",
+      "civs/the-choir",
+      800
+    ],
+    [
+      "colonists/archivist-soln",
+      "kin_of",
+      "colonists/the-listener-yuki",
+      800
+    ],
+    [
+      "colonists/drill-chief-bren-okafor",
+      "owes",
+      "colonists/director-imre-vask",
+      800
+    ],
+    [
+      "colonists/director-imre-vask",
+      "betrayed",
+      "colonists/drill-chief-bren-okafor",
+      800
+    ],
+    [
+      "colonists/drill-chief-bren-okafor",
+      "grudge_against",
+      "colonists/director-imre-vask",
+      800
+    ],
+    [
+      "colonists/drill-chief-bren-okafor",
+      "lover_of",
+      "colonists/the-listener-yuki",
+      800
+    ],
+    [
+      "colonists/the-listener-yuki",
+      "lover_of",
+      "colonists/drill-chief-bren-okafor",
+      800
+    ],
+    [
+      "colonists/archivist-soln",
+      "ally_of",
+      "colonists/the-listener-yuki",
+      800
+    ],
+    [
+      "colonists/the-velt-remnant-thauma",
+      "ally_of",
+      "colonists/archivist-soln",
+      800
+    ],
+    [
+      "colonists/the-choir-echo-vohn",
+      "kin_of",
+      "colonists/the-listener-yuki",
+      800
+    ],
+    [
+      "colonists/director-imre-vask",
+      "owns",
+      "artifacts/the-marrow-shard",
+      800
+    ],
+    [
+      "colonists/archivist-soln",
+      "owns",
+      "artifacts/kaels-bore-codex",
+      800
+    ],
+    [
+      "colonists/the-listener-yuki",
+      "sought_by",
+      "civs/the-choir",
+      800
+    ],
+    [
+      "colonists/archivist-soln",
+      "rival_of",
+      "colonists/director-imre-vask",
+      800
+    ],
+    [
+      "factions/humans",
+      "located_at",
+      "locations/colony-drosselmeyer",
+      800
+    ],
+    [
+      "locations/colony-drosselmeyer",
+      "located_at",
+      "locations/the-marrow-vein",
+      800
+    ],
+    [
+      "artifacts/the-marrow-shard",
+      "threatens",
+      "locations/colony-drosselmeyer",
+      800
+    ],
+    [
+      "arc/the-second-waking",
+      "threatens",
+      "locations/colony-drosselmeyer",
+      800
+    ],
+    [
+      "arc/the-second-waking",
+      "begins",
+      "factions/humans",
+      800
+    ],
+    [
+      "colonists/the-listener-yuki",
+      "races_to_stop",
+      "arc/the-second-waking",
+      800
+    ],
+    [
+      "colonists/director-imre-vask",
+      "drives",
+      "arc/the-second-waking",
+      800
+    ],
+    [
+      "arc/the-second-waking",
+      "next_beat",
+      "events/the-waking-of-the-wounded-world",
+      800
+    ]
   ],
-
   "mystery": {
     "fragments": [
       "lore/the-marrow-was-alive",
