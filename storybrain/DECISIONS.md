@@ -172,3 +172,21 @@ for Sam to review. Newest entries appended at the bottom of each section.
   which is theme-agnostic) coerces toward #0; generalize the mystery order_relation
   + reconstructFall to unlock all 10. Queued next: pipeline generalization +
   multi-seed cross-model blind re-judge.
+
+- 2026-06-17 (corpus eval): Generalized the generator (order_relation +
+  reconstructMystery; schema/load/procgen; new theme-driven prompt). Generated all
+  10 themes × {hybrid, pure} (~40-node worlds, all validated), blinded, judged by
+  Opus + Sonnet (cross-model). RESULT (finding 12): PURE-LLM wins 19/20 blind
+  judgments; hybrid wins only an Opus tiebreak on #0 (Sonnet gave #0 to pure). This
+  REVERSES finding 09 — the hybrid's win there was a favorable special case (one
+  theme, one judge, pre-Stage-D, weaker pure baseline) that did NOT generalize.
+  Mechanism (judges, graph-level): fall-specific procgen forced onto non-fall
+  themes leaves FILLER (numbered seers, templated war/over-extract events, wound:0
+  scaffolding) + meta-leakage that dilutes the world; pure's tighter authored
+  integration wins. DISCLOSED LIMITATION: judged files leaked _arm/_pipeline fields
+  (sanitize too narrow); judges flagged+ignored; mechanism is graph-structural
+  (leak-independent); clean re-blind committed for a future clean re-judge.
+  DECISION: recommended generation stack = PURE-LLM fact-skeleton (finding 08) +
+  Stage-D live stakes (finding 10) -> SQLite store (finding 06). Procgen hybrid NOT
+  validated at scale; fix-list if revisited = generalize procgen per-spine + prune
+  scaffolding in Stage C.
