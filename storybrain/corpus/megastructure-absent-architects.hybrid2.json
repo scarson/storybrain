@@ -1,0 +1,182 @@
+{
+  "nodes": [
+    { "slug": "factions/humans", "type": "faction", "tension": 0.45, "facts": { "role": "late-arrivals", "live_status": "exploring the inhabited machine NOW", "note": "the colony fleet limped into the Inheritance and made camp inside a working megastructure whose builders were already gone" } },
+
+    { "slug": "civs/the-architects", "type": "faction", "tension": 0.6, "facts": { "alien_type": "absent-builders-no-corpse", "trait": "the vanished makers; raised the shell around their star, left no body, no grave, no war-scar", "status": "absent", "fate": "departed — they finished the structure and went somewhere through it, not down into it" } },
+    { "slug": "civs/the-keepers", "type": "faction", "tension": 0.58, "facts": { "alien_type": "absent-caretaker-order", "trait": "a successor caste who tended the rings after the makers were gone, then darkened the structure in deliberate sequence", "status": "absent", "fate": "vanished — followed the makers out the same door once the last ring was banked; their quarters left tidy and empty" } },
+    { "slug": "civs/the-listeners", "type": "faction", "tension": 0.57, "facts": { "alien_type": "absent-inheritor-pilgrims", "trait": "an earlier inheritor species that found the dark shell before humans, woke part of it, read part of its aim", "status": "absent", "fate": "departed — they reached the final key, understood what turning it meant, and chose to leave it unturned and go home" } },
+
+    { "slug": "locations/shell-lumen-seam", "type": "location", "tension": 0.4, "facts": { "subject": "shell-lumen", "danger": 0.3, "live_state": "lit and warm; the outermost ring, free power to whoever holds a key" } },
+    { "slug": "locations/ring-current-seam", "type": "location", "tension": 0.5, "facts": { "subject": "ring-current", "danger": 0.5, "live_state": "throttled to a trickle; the mid-rings the Keepers banked last" } },
+    { "slug": "locations/core-matter-seam", "type": "location", "tension": 0.62, "facts": { "subject": "core-matter", "danger": 0.75, "live_state": "warded and dark; the firing chamber at the shell's heart, sealed deepest of all" } },
+    { "slug": "locations/the-empty-cradles", "type": "location", "tension": 0.55, "facts": { "live_state": "swept clean, beds made, no remains; the Architects' own living-quarters", "note": "the human survey camp is pitched here, sleeping in the makers' empty rooms" } },
+    { "slug": "locations/the-listening-spire", "type": "location", "tension": 0.52, "facts": { "live_state": "half-woken by the Listeners; still catching a faint, periodic return-signal from wherever the builders went" } },
+
+    { "slug": "figures/the-keepers-stewardvoice", "type": "figure", "tension": 0.45, "facts": { "role": "the Keeper steward whose recorded voice annotates every shutdown step", "civ": "the-keepers", "note": "a voiceprint in the banking-logs, not a body" } },
+    { "slug": "figures/the-listeners-firstear", "type": "figure", "tension": 0.45, "facts": { "role": "the Listener who first decoded the structure's outward aim at the spire", "civ": "the-listeners" } },
+    { "slug": "figures/the-listeners-last-pilgrim", "type": "figure", "tension": 0.48, "facts": { "role": "the Listener who held the final access-codex and chose to depart rather than fire the core", "civ": "the-listeners" } },
+
+    { "slug": "figures/captain-mara-okonjo", "type": "colonist", "tension": 0.58, "facts": { "role": "human expedition captain", "live": true, "drive": "keep the colony alive AND understand what we are standing inside before anyone forces the question" } },
+    { "slug": "figures/keyfinder-rust", "type": "colonist", "tension": 0.65, "facts": { "role": "human key-hunter and salvage lead", "live": true, "drive": "light every dark ring; the makers left this ON for whoever came next and we are next" } },
+    { "slug": "figures/archivist-sole", "type": "colonist", "tension": 0.6, "facts": { "role": "human xeno-archivist", "live": true, "drive": "read the whole purpose-chain before the last key is ever turned; the Listeners walked away for a reason" } },
+    { "slug": "figures/engineer-davies", "type": "colonist", "tension": 0.55, "facts": { "role": "human power-systems engineer", "live": true, "drive": "the colony is freezing in the outer dark; get the ring-current online or we lose the winter-side modules" } },
+
+    { "slug": "beliefs/the-inheritance-creed", "type": "belief", "tension": 0.55, "facts": { "held_by": "keyfinder-rust", "claim": "the machine was deliberately left running for its inheritors; completing the activation order is accepting a gift" } },
+    { "slug": "beliefs/the-unturned-key-creed", "type": "belief", "tension": 0.58, "facts": { "held_by": "archivist-sole", "claim": "the Listeners stood exactly here with the final key in hand and chose to leave; the wisdom is in NOT finishing it" } },
+
+    { "slug": "artifacts/keepers-region-key-of-the-outer-ring", "type": "artifact", "tension": 0.55, "facts": { "archetype": "region-key", "maker": "the-keepers", "wakes": "shell-lumen-seam", "note": "the first banking-step in reverse; relights the outermost ring" } },
+    { "slug": "artifacts/keepers-access-sigil-of-the-cradles", "type": "artifact", "tension": 0.58, "facts": { "archetype": "access-sigil", "maker": "the-keepers", "wakes": "the-empty-cradles", "note": "opens the makers' sealed living-quarters" } },
+    { "slug": "artifacts/keepers-control-key-of-the-mid-rings", "type": "artifact", "tension": 0.62, "facts": { "archetype": "control-key", "maker": "the-keepers", "wakes": "ring-current-seam", "note": "restores throttled mid-ring power" } },
+    { "slug": "artifacts/listeners-access-sigil-of-the-spire", "type": "artifact", "tension": 0.62, "facts": { "archetype": "access-sigil", "maker": "the-listeners", "wakes": "the-listening-spire", "note": "the Listeners' own key into the receiving-spire they half-woke" } },
+    { "slug": "artifacts/architects-purpose-codex", "type": "artifact", "tension": 0.78, "facts": { "archetype": "purpose-fragment", "maker": "the-architects", "note": "the makers' own encoded statement of what the shell was built to DO" } },
+    { "slug": "artifacts/keepers-ward-sigil-of-the-core", "type": "artifact", "tension": 0.7, "facts": { "archetype": "ward-sigil", "maker": "the-keepers", "wakes": "core-matter-seam", "note": "the Keepers' seal on the firing chamber; lifting it exposes the core" } },
+    { "slug": "artifacts/listeners-final-activation-codex", "type": "artifact", "tension": 0.85, "facts": { "archetype": "activation-codex", "maker": "the-listeners", "note": "the Listeners' reconstruction of the full activation order; the last entry is the core", "live_risk": "turning the final entry aims and fires the structure a single time" } },
+
+    { "slug": "lore/frag-banked-not-abandoned", "type": "lore", "tension": 0.72, "facts": { "subtype": "fragment", "revealed": false, "claim": "this is not a ruin: the rings were powered DOWN in a deliberate, reversible sequence, not lost in any fall" } },
+    { "slug": "lore/frag-keepers-darkened-after-makers-gone", "type": "lore", "tension": 0.76, "facts": { "subtype": "fragment", "revealed": false, "claim": "the Keepers banked the rings AFTER the Architects had already vanished; there was no war and no plague between the two — only inheritance and tidy departure" } },
+    { "slug": "lore/frag-the-shell-aims-outward", "type": "lore", "tension": 0.8, "facts": { "subtype": "fragment", "revealed": false, "claim": "the Listeners woke the spire and learned the shell is an EMITTER pointed outward, not a habitat turned inward" } },
+    { "slug": "lore/frag-the-purpose-was-departure", "type": "lore", "tension": 0.85, "facts": { "subtype": "fragment", "revealed": false, "claim": "the completed function was a DEPARTURE: the structure was built to send its makers somewhere it could not follow, and they took it" } },
+    { "slug": "lore/frag-the-core-fires-once", "type": "lore", "tension": 0.9, "facts": { "subtype": "fragment", "revealed": false, "claim": "the warded core holds the firing-charge; completing the activation order aims and fires that departure exactly once, and cannot be undone" } },
+
+    { "slug": "lore/cradles-left-tidy", "type": "lore", "tension": 0.5, "facts": { "claim": "every cradle and Keeper quarter was found swept and made up — these are rooms left on purpose, not rooms fled" } },
+    { "slug": "lore/holding-a-key-is-free-power", "type": "lore", "tension": 0.42, "facts": { "claim": "holding any region- or control-key grants the colony effectively unlimited shell-power for as long as it is held" } },
+    { "slug": "lore/spire-still-receives", "type": "lore", "tension": 0.56, "facts": { "claim": "the listening-spire still catches a faint periodic return-signal — proof something is on the far side of wherever the builders went" } },
+    { "slug": "lore/core-matter-is-single-use", "type": "lore", "tension": 0.6, "facts": { "claim": "core-matter is the firing-charge itself; once spent it cannot be remade with anything left inside the structure" } },
+    { "slug": "lore/codex-ends-on-the-core", "type": "lore", "tension": 0.7, "facts": { "claim": "the activation codex terminates on the core: every other key is a deliberate step toward turning that final one" } },
+    { "slug": "lore/listeners-stopped-at-the-last-key", "type": "lore", "tension": 0.65, "facts": { "claim": "the Listeners assembled the full order, reached the final entry, and chose to leave it unturned and go home" } },
+
+    { "slug": "events/discovery", "type": "event", "tension": 0.45, "facts": { "title": "the colony wakes its first ring", "live": true, "note": "humans turn a salvaged region-key and the outer shell lights for the first time in an age" } },
+    { "slug": "events/the-completion", "type": "event", "tension": 0.92, "facts": { "title": "the shell completed and the makers departed", "note": "the finished, reconstructed culmination: the Architects ran the order to its end and were gone, no body left behind" } },
+
+    { "slug": "arc/turn-the-last-key", "type": "arc", "tension": 0.93, "facts": { "phase": "rising", "live": true, "stakes": "completing the activation order either gifts the colony a working star-engine or fires a one-time departure into the dark that nothing can recall", "present_tension": "the final codex is already in human hands and the colony is splitting over whether to use it", "next_beat_if_pressed": "Rust assembles the order and lifts the core ward; the chamber begins to charge", "next_beat_if_held": "Sole publishes the Listeners' refusal and the colony votes to leave the key unturned", "resolution": "open" } }
+  ],
+  "edges": [
+    ["factions/humans", "explores", "locations/the-empty-cradles"],
+    ["factions/humans", "exploits", "locations/shell-lumen-seam"],
+    ["factions/humans", "surveys", "locations/ring-current-seam"],
+
+    ["civs/the-architects", "built", "locations/shell-lumen-seam"],
+    ["civs/the-architects", "built", "locations/core-matter-seam"],
+    ["civs/the-keepers", "succeeded", "civs/the-architects"],
+    ["civs/the-keepers", "darkened", "locations/ring-current-seam"],
+    ["civs/the-keepers", "warded", "locations/core-matter-seam"],
+    ["civs/the-listeners", "woke", "locations/the-listening-spire"],
+    ["civs/the-listeners", "came_before", "factions/humans"],
+
+    ["figures/the-keepers-stewardvoice", "member_of", "civs/the-keepers"],
+    ["figures/the-listeners-firstear", "member_of", "civs/the-listeners"],
+    ["figures/the-listeners-last-pilgrim", "member_of", "civs/the-listeners"],
+    ["figures/the-keepers-stewardvoice", "annotated", "artifacts/keepers-ward-sigil-of-the-core"],
+    ["figures/the-listeners-last-pilgrim", "assembled", "artifacts/listeners-final-activation-codex"],
+    ["figures/the-listeners-firstear", "decoded", "artifacts/listeners-access-sigil-of-the-spire"],
+
+    ["figures/captain-mara-okonjo", "leads", "factions/humans"],
+    ["figures/keyfinder-rust", "member_of", "factions/humans"],
+    ["figures/archivist-sole", "member_of", "factions/humans"],
+    ["figures/engineer-davies", "member_of", "factions/humans"],
+    ["figures/keyfinder-rust", "found", "artifacts/listeners-final-activation-codex"],
+    ["figures/archivist-sole", "investigates", "artifacts/architects-purpose-codex"],
+    ["figures/engineer-davies", "operates", "artifacts/keepers-control-key-of-the-mid-rings"],
+
+    ["artifacts/keepers-region-key-of-the-outer-ring", "wakes", "locations/shell-lumen-seam"],
+    ["artifacts/keepers-access-sigil-of-the-cradles", "wakes", "locations/the-empty-cradles"],
+    ["artifacts/keepers-control-key-of-the-mid-rings", "wakes", "locations/ring-current-seam"],
+    ["artifacts/listeners-access-sigil-of-the-spire", "wakes", "locations/the-listening-spire"],
+    ["artifacts/keepers-ward-sigil-of-the-core", "wakes", "locations/core-matter-seam"],
+    ["artifacts/listeners-final-activation-codex", "guards", "locations/core-matter-seam"],
+
+    ["artifacts/keepers-region-key-of-the-outer-ring", "forged_by", "civs/the-keepers"],
+    ["artifacts/keepers-access-sigil-of-the-cradles", "forged_by", "civs/the-keepers"],
+    ["artifacts/keepers-control-key-of-the-mid-rings", "forged_by", "civs/the-keepers"],
+    ["artifacts/keepers-ward-sigil-of-the-core", "forged_by", "civs/the-keepers"],
+    ["artifacts/listeners-access-sigil-of-the-spire", "forged_by", "civs/the-listeners"],
+    ["artifacts/listeners-final-activation-codex", "forged_by", "civs/the-listeners"],
+    ["artifacts/architects-purpose-codex", "forged_by", "civs/the-architects"],
+
+    ["artifacts/keepers-region-key-of-the-outer-ring", "enables", "artifacts/keepers-access-sigil-of-the-cradles"],
+    ["artifacts/keepers-access-sigil-of-the-cradles", "enables", "artifacts/keepers-control-key-of-the-mid-rings"],
+    ["artifacts/keepers-control-key-of-the-mid-rings", "enables", "artifacts/listeners-access-sigil-of-the-spire"],
+    ["artifacts/listeners-access-sigil-of-the-spire", "enables", "artifacts/architects-purpose-codex"],
+    ["artifacts/architects-purpose-codex", "enables", "artifacts/keepers-ward-sigil-of-the-core"],
+    ["artifacts/keepers-ward-sigil-of-the-core", "enables", "artifacts/listeners-final-activation-codex"],
+
+    ["artifacts/keepers-region-key-of-the-outer-ring", "drops", "lore/frag-banked-not-abandoned"],
+    ["artifacts/keepers-region-key-of-the-outer-ring", "drops", "lore/holding-a-key-is-free-power"],
+    ["artifacts/keepers-region-key-of-the-outer-ring", "drops", "lore/cradles-left-tidy"],
+
+    ["artifacts/keepers-access-sigil-of-the-cradles", "drops", "lore/frag-banked-not-abandoned"],
+    ["artifacts/keepers-access-sigil-of-the-cradles", "drops", "lore/cradles-left-tidy"],
+    ["artifacts/keepers-access-sigil-of-the-cradles", "drops", "lore/frag-keepers-darkened-after-makers-gone"],
+
+    ["artifacts/keepers-control-key-of-the-mid-rings", "drops", "lore/frag-keepers-darkened-after-makers-gone"],
+    ["artifacts/keepers-control-key-of-the-mid-rings", "drops", "lore/holding-a-key-is-free-power"],
+    ["artifacts/keepers-control-key-of-the-mid-rings", "drops", "lore/cradles-left-tidy"],
+
+    ["artifacts/listeners-access-sigil-of-the-spire", "drops", "lore/frag-the-shell-aims-outward"],
+    ["artifacts/listeners-access-sigil-of-the-spire", "drops", "lore/spire-still-receives"],
+    ["artifacts/listeners-access-sigil-of-the-spire", "drops", "lore/listeners-stopped-at-the-last-key"],
+
+    ["artifacts/architects-purpose-codex", "drops", "lore/frag-the-purpose-was-departure"],
+    ["artifacts/architects-purpose-codex", "drops", "lore/frag-the-shell-aims-outward"],
+    ["artifacts/architects-purpose-codex", "drops", "lore/cradles-left-tidy"],
+
+    ["artifacts/keepers-ward-sigil-of-the-core", "drops", "lore/frag-the-core-fires-once"],
+    ["artifacts/keepers-ward-sigil-of-the-core", "drops", "lore/core-matter-is-single-use"],
+    ["artifacts/keepers-ward-sigil-of-the-core", "drops", "lore/frag-keepers-darkened-after-makers-gone"],
+
+    ["artifacts/listeners-final-activation-codex", "drops", "lore/frag-the-core-fires-once"],
+    ["artifacts/listeners-final-activation-codex", "drops", "lore/codex-ends-on-the-core"],
+    ["artifacts/listeners-final-activation-codex", "drops", "lore/listeners-stopped-at-the-last-key"],
+
+    ["lore/frag-banked-not-abandoned", "enables", "lore/frag-keepers-darkened-after-makers-gone"],
+    ["lore/frag-keepers-darkened-after-makers-gone", "enables", "lore/frag-the-shell-aims-outward"],
+    ["lore/frag-the-shell-aims-outward", "enables", "lore/frag-the-purpose-was-departure"],
+    ["lore/frag-the-purpose-was-departure", "enables", "lore/frag-the-core-fires-once"],
+
+    ["lore/frag-banked-not-abandoned", "reveals", "locations/shell-lumen-seam"],
+    ["lore/frag-keepers-darkened-after-makers-gone", "reveals", "civs/the-keepers"],
+    ["lore/frag-the-shell-aims-outward", "reveals", "civs/the-listeners"],
+    ["lore/frag-the-purpose-was-departure", "reveals", "civs/the-architects"],
+    ["lore/frag-the-core-fires-once", "reveals", "locations/core-matter-seam"],
+    ["lore/listeners-stopped-at-the-last-key", "reveals", "figures/the-listeners-last-pilgrim"],
+    ["lore/spire-still-receives", "reveals", "figures/the-listeners-firstear"],
+
+    ["events/discovery", "involves", "factions/humans"],
+    ["events/the-completion", "involves", "civs/the-architects"],
+    ["civs/the-architects", "departed_at", "events/the-completion"],
+    ["civs/the-keepers", "departed_after", "events/the-completion"],
+    ["civs/the-listeners", "declined_at", "events/the-completion"],
+
+    ["artifacts/listeners-final-activation-codex", "enables", "arc/turn-the-last-key"],
+    ["figures/keyfinder-rust", "wants", "arc/turn-the-last-key"],
+    ["figures/engineer-davies", "wants", "arc/turn-the-last-key"],
+    ["figures/archivist-sole", "resists", "arc/turn-the-last-key"],
+    ["figures/captain-mara-okonjo", "must_decide", "arc/turn-the-last-key"],
+    ["lore/frag-the-core-fires-once", "raises", "arc/turn-the-last-key"],
+
+    ["figures/keyfinder-rust", "rival_of", "figures/archivist-sole"],
+    ["figures/keyfinder-rust", "owns", "artifacts/listeners-final-activation-codex"],
+    ["figures/archivist-sole", "sought_by", "figures/keyfinder-rust"],
+    ["arc/turn-the-last-key", "threatens", "factions/humans"],
+    ["beliefs/the-inheritance-creed", "held_by", "figures/keyfinder-rust"],
+    ["beliefs/the-unturned-key-creed", "held_by", "figures/archivist-sole"],
+    ["beliefs/the-inheritance-creed", "opposes", "beliefs/the-unturned-key-creed"]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/frag-banked-not-abandoned",
+      "lore/frag-keepers-darkened-after-makers-gone",
+      "lore/frag-the-shell-aims-outward",
+      "lore/frag-the-purpose-was-departure",
+      "lore/frag-the-core-fires-once"
+    ],
+    "order": [
+      "lore/frag-banked-not-abandoned",
+      "lore/frag-keepers-darkened-after-makers-gone",
+      "lore/frag-the-shell-aims-outward",
+      "lore/frag-the-purpose-was-departure",
+      "lore/frag-the-core-fires-once"
+    ],
+    "order_relation": "enables"
+  }
+}
