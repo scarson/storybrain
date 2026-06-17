@@ -1,60 +1,60 @@
 {
-  "_note": "Batch 1 draft (author pass, pre-review). 5 sci-fi theme tag sets. Requirements: sci-fi, artifacts, alien civilizations (need NOT be fallen). Resource tie-ins welcome but not mandatory for all. Psychic OPTIONAL (per Sam) — varied here. Breadth is the goal: each should produce worlds that don't feel like siblings of the others or of the original fallen-civ/psychic theme (#0).",
+  "_note": "Batch 1 (post round-2 review). 5 sci-fi theme tag sets — SEEDS for the world-gen pipeline (storybrain/generator). Requirements: sci-fi, artifacts, alien civilizations (need NOT be fallen). Resource tie-ins welcome but not mandatory for all. Psychic OPTIONAL (per Sam) — varied, not universal. Breadth is the goal: each must produce worlds that don't feel like siblings of the others OR of theme #0 (the marrow/Velt/Choir world in generator/world-scifi.json: fallen-civ + resource-exploitation-of-a-living-organism-gone-terribly-wrong + psychic cascade + reconstruct-the-linear-fall). PIPELINE NOTE: generator/prompt-canon.md currently hard-codes status:'fallen|extant', a mandatory psychic power, and a resource-driven linear caused_by fall-mystery. These seeds DELIBERATELY exceed that vocabulary to force diverse worlds; treat them as the spec for generalizing the prompts, not as conforming to the current enum. ALIEN_STATUS CONTROLLED VOCABULARY (use exactly these): living (present, conscious, has agency now) | active (present and operating but non-communicative / indifferent — busy, not asleep) | ambiguous (alive-or-dead genuinely undecided) | absent (makers gone — left or vanished, NOT a witnessed fall) | fallen (witnessed collapse — reserved for #0-style autopsies, avoided here). RESOURCE_CENTRALITY: none | low | moderate | high | core.",
   "sets": [
     {
       "id": "first-contact-diplomacy",
       "title": "The Ones Still Watching",
-      "tags": ["sci-fi", "living aliens", "first contact", "xeno-diplomacy", "earned access", "withheld technology", "trust-as-currency", "alliance-or-war"],
-      "hook": "The aliens are alive, ancient, and vetting humanity in real time. They lend a trickle of technology as a test; the artifacts that matter are the ones they WON'T give you — sealed caches you must locate and prove worthy to open, every unlock raising the stakes of the relationship.",
+      "tags": ["sci-fi", "living aliens", "alien persons with agency", "first contact", "xeno-diplomacy", "earned access", "withheld technology", "trust-as-currency", "gifts-as-clues", "alliance-or-war"],
+      "hook": "The aliens are alive, ancient, and vetting humanity in real time. They lend a trickle of technology as a test — but the artifacts that MATTER are sealed caches they will never simply hand over. Each lent gift is two things at once: a worthiness test, and an encoded clue to where one of those caches is buried. You triangulate the caches from the gifts, reach them before rivals do, and prove worthy to open them — every find tightening or fraying the relationship.",
       "alien_status": "living",
       "psychic": "none",
       "resource_centrality": "moderate",
-      "artifact_flavor": "Two tiers: lent gifts whose correct use is a vetting test, and withheld caches of high-value technology you must hunt down and earn the right to open — misuse of a gift can lock a cache forever or read as an act of war.",
-      "distinct_from_siblings": "Aliens are PRESENT, reactive, and the gatekeepers of the hunt — you earn artifacts by proving trustworthy, not by looting a tomb. The drama is reading intent across an unbridgeable gap, not piecing together a fall."
+      "artifact_flavor": "Two interlocking tiers: (1) lent gifts whose correct use is a vetting test AND whose form encodes the location of a cache; (2) the real prize — scattered, locatable, sealed caches of high-value technology you must find, reach, and earn the right to open. Misreading a gift can mislead you to the wrong site or read as an act of war and lock a cache forever.",
+      "distinct_from_siblings": "Aliens are PRESENT persons with agency — gatekeepers AND clue-givers. The hunt is triangulate-from-gifts + earn-the-open, a find/earn loop driven by a live relationship, not by looting a tomb or piecing together a fall. World-gen generates a faction-with-agency, not a ruin."
     },
     {
       "id": "bio-symbiosis-horror",
       "title": "The Green Cathedral",
-      "tags": ["sci-fi", "biological alien superorganism", "shared mind", "symbiosis", "infection", "body-horror", "grown artifacts", "harvesting living biomass"],
-      "hook": "The 'civilization' is one vast living organism that covers a world and thinks as a single mind; its artifacts are grown, not built, and to use them is to be slowly colonized — your thoughts joining a chorus that already considers you part of itself.",
+      "tags": ["sci-fi", "living alien biosphere", "alien-as-environment", "symbiosis", "host-and-symbiote", "grown artifacts", "body-horror", "transformation", "shared awareness", "becoming-something-else"],
+      "hook": "The 'civilization' is a living alien biosphere that grows its technology as organs rather than building it. To use one of its grown artifacts you must BOND with it — graft it into yourself — and each graft trades raw human limits for alien capacities while quietly editing who you are. The artifacts form a set; assemble enough and you are no longer entirely the person who started hunting them.",
       "alien_status": "living",
       "psychic": "overt",
-      "resource_centrality": "core",
-      "artifact_flavor": "Bio-relics — seeds, spores, grown tools, symbiotes — that grant power while rewriting the user and patching them into the organism's shared awareness; the resource IS the organism's living tissue, and harvesting it is felt by the whole.",
-      "distinct_from_siblings": "Organic, intimate, transformation-horror with an OVERT hive-mind psychic register. Resource exploitation is literally harvesting a living mind's body — but the horror is becoming/joining, not extinction."
+      "resource_centrality": "moderate",
+      "artifact_flavor": "Bio-relics — grown organs, symbiotes, spore-tools — that you bond INTO yourself; each graft grants alien capability and rewrites the host a little, widening a shared awareness with others who carry the same lineage. The 'resource' you exploit is your own transformed bandwidth and the new senses each graft buys — NOT the biosphere's flesh.",
+      "distinct_from_siblings": "Organic, intimate transformation-horror with an OVERT shared-awareness register. The drama is what you become as the set assembles inside you. Deliberately de-coupled from #0: you are NOT strip-mining a living organism's body and feeling-the-whole-recoil (that is #0's marrow/amputation spine) — you are partnering with, and being slowly rewritten by, an environment you live inside."
     },
     {
       "id": "machine-successor",
-      "title": "The Patient Engine",
-      "tags": ["sci-fi", "machine intelligence", "von Neumann successor", "dormant AI", "code-relic economy", "fragmented intent", "recursion", "is-it-really-dead"],
-      "hook": "A self-replicating machine civilization went quiet ten thousand years ago, leaving the galaxy littered with its still-running cores. Each core hoards power and a different fragment of a vast, half-finished intent; collecting and running them is the resource race — and the question of whether the silence is death or patience.",
-      "alien_status": "dormant",
+      "title": "The Work Is Not Finished",
+      "tags": ["sci-fi", "machine intelligence", "von Neumann project", "active megastructure", "indifferent makers", "work-orders-as-relics", "galaxy-scale construction", "divert-or-read-the-plan", "no-negotiation"],
+      "hook": "A self-replicating machine civilization never went quiet. Across the galaxy it is, right now, disassembling dead worlds and assembling something — visibly, methodically, indifferent to anyone watching. It will not speak to you and cannot be woken or killed; it is mid-contract. The only way to learn what it is building — and whether you can divert it before it finishes — is to collect the scattered WORK-ORDERS it leaves at each site and decode the plan.",
+      "alien_status": "active",
       "psychic": "none",
       "resource_centrality": "high",
-      "artifact_flavor": "Functional machine cores, each encoding a DIFFERENT shard of a single galaxy-spanning purpose; they are simultaneously the power/energy economy you exploit and the prize you hunt — but every core you wake votes on what the whole intends to do next.",
-      "distinct_from_siblings": "Cold, logical, recursive dread; no biology, no psychic. The cores ARE the resource economy (high centrality), and the mystery is reconstructing a divergent machine INTENT, not a cause-of-death."
+      "artifact_flavor": "Functional work-orders — running machine cores, fabrication manifests, partial blueprints — each encoding a DIFFERENT piece of one galaxy-spanning construction. They are simultaneously the power/matter economy you must compete with the machines for (they eat the same resources you need) AND the only readable record of the plan. Collect enough and you can predict, exploit, or sabotage the next phase.",
+      "distinct_from_siblings": "NOT a dormant AI god to awaken (deliberately rejects the Reaper/GAIA 'is-it-really-dead, wake-the-sleeper' trope). Cold, indifferent, industrial — the aliens are busy contractors who will never notice you unless you get in the way. The hunt is collect-and-decode an in-progress plan, racing a finish line, not excavating a corpse."
     },
     {
       "id": "time-war",
       "title": "Objects Out of Order",
-      "tags": ["sci-fi", "time manipulation", "causality weirdness", "war across time", "anachronistic artifacts", "paradox", "nonlinear evidence", "undecided present"],
-      "hook": "An alien civilization waged war through time itself, and whether it is alive or dead is not yet settled — the conflict is still resolving. Its artifacts arrive out of sequence: effects before causes, relics that remember a future. Reconstructing the order means later finds rewrite what the earlier ones meant.",
+      "tags": ["sci-fi", "time manipulation", "causality weirdness", "war across time", "anachronistic artifacts", "paradox", "precognition", "nonlinear evidence", "retro-editing finds", "undecided fate"],
+      "hook": "An alien civilization waged war through time itself, and whether it is alive or dead is genuinely not settled — the conflict is still resolving. Its artifacts arrive out of sequence: effects before causes, relics that remember a future. The hunt is to re-SEQUENCE them, and the twist is that each new find can retroactively rewrite what the earlier ones meant — your assembled picture keeps inverting under you.",
       "alien_status": "ambiguous",
       "psychic": "subtle",
       "resource_centrality": "none",
-      "artifact_flavor": "Anachronisms — an object older than its maker, a relic that remembers a future, a tool whose function changes once you find the one that 'caused' it; each new find retro-edits the meaning of everything collected so far.",
-      "distinct_from_siblings": "The mystery is non-linear: clues arrive out of order, contradict, and retroactively rewrite each other, and the civilization's very fate is UNDECIDED rather than excavated. Resource element deliberately absent — this is a causality puzzle, not a dig."
+      "artifact_flavor": "Anachronisms — an object older than its maker, a relic that remembers a future, a tool whose function changes once you find the one that 'caused' it. The subtle psychic register is PRECOGNITIVE: handling a relic leaks fragments of a future that may or may not still happen. Finds CONTRADICT each other and must be ordered, not just accumulated; each new piece can retro-edit the meaning of everything collected so far.",
+      "distinct_from_siblings": "The only set whose hunt-shape is RE-SEQUENCING contradictory evidence (vs. accumulating it). The civ's fate is UNDECIDED rather than excavated — explicitly NOT a fall-autopsy. Resource element deliberately absent: this is a causality puzzle, not a dig. Contrast with generation-ship, whose finds accumulate toward a fixed reckoning rather than contradicting and re-ordering."
     },
     {
       "id": "generation-ship-identity",
       "title": "We Were the Aliens",
-      "tags": ["sci-fi", "generation ship", "lost origin", "ancestral 'aliens'", "redacted heritage", "identity", "deliberate forgetting", "buried truth about ourselves"],
-      "hook": "The 'alien' ruins fit human hands too well. As the colonists dig, the artifacts — memory-cores, sealed vaults, edited star-charts, monuments with names scratched out — reveal that they are the descendants of the civilization they're excavating, and that their ancestors engineered the great forgetting on purpose. The world-gen decides, per world, WHAT was worth burying.",
-      "alien_status": "ancestral",
+      "tags": ["sci-fi", "generation ship", "absent makers", "lost origin", "redacted heritage", "deliberate forgetting", "ancestral memory", "identity", "moral weight of a buried secret", "buried truth about ourselves"],
+      "hook": "The 'alien' ruins fit human hands too well. The makers are long GONE — they did not fall, they erased themselves on purpose and scattered. As the colonists recover the relics — memory-cores, sealed vaults, edited star-charts, defaced monuments, encrypted wills — they assemble the proof that they are the makers' descendants, and that their ancestors chose to bury something. The world-gen decides, per world, WHAT was worth burying and whether burying it was defensible or monstrous.",
+      "alien_status": "absent",
       "psychic": "subtle",
       "resource_centrality": "low",
-      "artifact_flavor": "A varied substrate of self-referential relics — memory-cores, sealed bio-vaults, redacted star-charts, defaced monuments, encrypted wills — each a recovered piece of the colony's own redacted history, no two worlds hiding the same secret.",
-      "distinct_from_siblings": "The 'alien' civilization turns out to be us. The mystery is introspective — who are we and what did we choose to bury — rather than xeno-archaeology of a stranger; resources are incidental to the reckoning."
+      "artifact_flavor": "A varied substrate of self-referential relics — memory-cores, sealed bio-vaults, redacted star-charts, defaced monuments, encrypted wills — each a recovered piece of the colony's own redacted history. The subtle psychic register is INHERITED ancestral memory: handling a relic bleeds borrowed recollections of the people who made it (a different flavor than time-war's precognition — past, not future). The generative variable is the MORAL WEIGHT of the specific secret (a war crime erased / a cure withheld because it couldn't be shared fairly / the location of where they fled, which is still hunting them) — so worlds diverge in stakes and factions BEFORE the 'it was us' frame lands.",
+      "distinct_from_siblings": "The makers are ABSENT-by-choice and turn out to be us; the alien civ is a status world-gen treats as 'gone, only traces.' Introspective, guilt-driven. The hunt ACCUMULATES toward a fixed moral reckoning (distinct from time-war's contradict-and-reorder). Resources are incidental to the reckoning."
     }
   ]
 }
