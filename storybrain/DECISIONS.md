@@ -258,3 +258,22 @@ for Sam to review. Newest entries appended at the bottom of each section.
   clothe/prune/live-layer -> Stage E characters & frame-correct skills -> SQLite
   store. Caveats: single judge model (Codex pending); v3-vs-pure confirming pass
   not re-run (v3 should extend the f14 6-4 lead since pure lacks the cast layer).
+
+- 2026-06-17 (artifact<->character bonds — Sam's ask): Designed + built a
+  RESONANCE-GATED bond roller (bond-roller.ts). Principle: never roll flat — score
+  (character, relation) candidates by FIT to concrete signals (provenance via the
+  graph = strongest; skill/role; passion/power; want-text; curse/valence), form a
+  bond ONLY if fit>=threshold, else DECLINE (item stays unbonded). That gate is
+  what makes links earned, not forced. Dials: rarity (not every fit bonds),
+  per-char cap (spread), dramatic bonus for rival-claim/arc-advance (interesting,
+  not just sensible). Determinism: seeded; "why" templated (LLM-render next).
+  Relation verbs: heir_to/vendetta_over/recognizes/denies_to/decoded/wields/
+  operates/attuned_to/covets/haunted_by. Demo (finding 18) on 4 worlds: sensible
+  bonds (heir_to by provenance "made by their own people"; decoded/operates by
+  skill; covets by want; denies_to by faction-rivalry) AND correct abstention
+  (first-contact's alien gifts find no human-crew resonance -> 5 left unbonded).
+  Closes the loop: bonds -> tension spike -> Director callback_strength -> beats
+  about the bonded character. Two-layer (worldgen Stage E seeds defining bonds;
+  runtime roller bonds newly-discovered items) + deepening progression. Next:
+  LLM semantic want-match + cached why-prose; playtest-tune thresholds; wire into
+  runtime/Director; add bond verbs to lint.
