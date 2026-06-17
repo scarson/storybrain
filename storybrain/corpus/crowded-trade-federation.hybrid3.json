@@ -351,8 +351,10 @@
         "species": "human",
         "role": "human stall-trader who bought the leaked Khariti route-log off a desperate caravaner",
         "stake": "holds the one record that proves the real source; every house wants it and she can only sell it once",
-        "skills": { "social": 17, "research": 14, "crafting": 9, "shooting": 6, "medicine": 4, "melee": 5 },
-        "passions": ["social", "research"],
+        "skills": { "command": 17, "navigation": 14, "sensors": 9, "gunnery": 6, "piloting": 5, "life_support": 4 },
+        "passions": ["command", "navigation"],
+        "crew_role": "trader",
+        "skill_profile": "ship-crew",
         "want": "to sell the route-log once, for enough to buy her own provenance seat — without ending up dead before the deal closes"
       }
     },
@@ -366,8 +368,10 @@
         "species": "human",
         "role": "rival human broker on Melun's quiet payroll, peddling the Cartel's counterfeits as bargains",
         "stake": "wants Mara's log destroyed before the truth craters the value of the fakes he is fencing",
-        "skills": { "social": 16, "crafting": 11, "shooting": 12, "research": 8, "medicine": 3, "melee": 10 },
-        "passions": ["social", "shooting"],
+        "skills": { "command": 16, "gunnery": 12, "engineering": 11, "sensors": 8, "piloting": 10, "navigation": 6 },
+        "passions": ["command", "gunnery"],
+        "crew_role": "trader",
+        "skill_profile": "ship-crew",
         "want": "to find and burn Mara's route-log, then walk away as the only honest-seeming broker left standing"
       }
     },
@@ -381,8 +385,10 @@
         "species": "human",
         "role": "fixer who smuggled out the dissident Assayer's confession cylinder",
         "stake": "marked by the Cartel and sold out by Haldane; trades the confession for protection she may not get",
-        "skills": { "social": 13, "melee": 14, "shooting": 13, "crafting": 7, "research": 6, "medicine": 8 },
-        "passions": ["melee", "shooting"],
+        "skills": { "gunnery": 16, "eva": 14, "piloting": 13, "sensors": 7, "engineering": 6, "life_support": 8 },
+        "passions": ["gunnery", "eva"],
+        "crew_role": "gunner",
+        "skill_profile": "ship-crew",
         "want": "to trade the confession cylinder for safe passage off the Bazaar before the Cartel collects on her"
       }
     },
@@ -396,8 +402,10 @@
         "species": "human",
         "role": "the Rho heir's estranged agent, holding the clean-chain relic and tempted to sell it honest",
         "stake": "can complete the true chain by giving up the relic — but doing so ruins the house that raised him",
-        "skills": { "social": 12, "research": 15, "crafting": 13, "shooting": 5, "medicine": 7, "melee": 4 },
-        "passions": ["research", "crafting"],
+        "skills": { "sensors": 15, "engineering": 13, "command": 12, "navigation": 7, "life_support": 6, "piloting": 5 },
+        "passions": ["sensors", "engineering"],
+        "crew_role": "quartermaster",
+        "skill_profile": "ship-crew",
         "want": "to put the relic's true chain in the open, even if it burns the Rho house — and to do it before Sable is killed for the matching half"
       }
     },
@@ -413,8 +421,10 @@
         "faction": "civs/the-khariti-drift",
         "role": "Khariti Drift navigator — the caravaner who broke custom, wrote the songs down as a route-log, and sold the leaked copy to Mara to fund a debt",
         "stake": "her own caste will brand her for writing the log; she needs Mara's deal to pay back the Drift elders before they reclaim the original",
-        "skills": { "research": 16, "social": 12, "crafting": 10, "shooting": 9, "medicine": 6, "melee": 7 },
-        "passions": ["research", "social"],
+        "skills": { "navigation": 19, "piloting": 14, "sensors": 12, "xeno": 10, "eva": 7, "command": 6 },
+        "passions": ["navigation", "piloting"],
+        "crew_role": "navigator",
+        "skill_profile": "ship-crew",
         "want": "to settle her debt to the Drift elders with Mara's payment before the caste reclaims the original log and erases her name from the songs"
       }
     },
@@ -429,8 +439,10 @@
         "faction": "civs/the-oseni-assayers",
         "role": "the dissident Oseni assayer whose voice is on the confession cylinder — hunted by her own caste for offering to read the true chain",
         "stake": "the only living hand that can re-strike the seal honestly; if the caste silences her, the truth dies with her even if every fragment surfaces",
-        "skills": { "research": 18, "social": 11, "crafting": 14, "shooting": 4, "medicine": 9, "melee": 3 },
-        "passions": ["research", "crafting"],
+        "skills": { "engineering": 18, "sensors": 14, "xeno": 11, "life_support": 9, "navigation": 6, "eva": 4 },
+        "passions": ["engineering", "sensors"],
+        "crew_role": "engineer",
+        "skill_profile": "ship-crew",
         "want": "to re-strike the master seal on the TRUE chain just once before her caste catches her — to die having told the truth in metal"
       }
     },

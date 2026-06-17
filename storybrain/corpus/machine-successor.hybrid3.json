@@ -352,8 +352,10 @@
         "species": "human",
         "role": "salvage-pilot who recovered the founding work-order from the first disassembly seam and is decoding the plan one shard at a time",
         "stake": "holds the root document everyone else's fragments resolve against; if she finishes the decode before the Rim closes, the colony can act on the next phase instead of just watching it",
-        "skills": { "research": 16, "shooting": 8, "social": 11, "crafting": 9, "medicine": 4, "melee": 6 },
-        "passions": ["research", "social"],
+        "skills": { "piloting": 16, "sensors": 15, "navigation": 11, "engineering": 9, "xeno": 8, "gunnery": 6 },
+        "passions": ["sensors", "piloting"],
+        "crew_role": "pilot",
+        "skill_profile": "ship-crew",
         "want": "finish decoding the founding work-order before the Rim Assembly closes, so the colony can act on the final phase instead of only watching it"
       }
     },
@@ -367,8 +369,10 @@
         "species": "human",
         "role": "rival salvor who wants the work-orders to sell their feedstock-prediction value, not to stop the build",
         "stake": "racing Imani to assemble the same plan for profit; will trade the divergence point to whoever pays, even if that buyer means to ride the finish rather than break it",
-        "skills": { "social": 15, "research": 12, "shooting": 10, "crafting": 7, "medicine": 3, "melee": 8 },
-        "passions": ["social", "research"],
+        "skills": { "navigation": 15, "sensors": 12, "gunnery": 10, "piloting": 9, "xeno": 7, "engineering": 8 },
+        "passions": ["navigation", "sensors"],
+        "crew_role": "quartermaster",
+        "skill_profile": "ship-crew",
         "want": "assemble and sell the divergence point to the highest Spindle-watcher bidder before Imani can give it away for free"
       }
     },
@@ -382,8 +386,10 @@
         "species": "human",
         "role": "lattice-tech who siphons compute from a Spindle grid to run the decode, working a system the Cartage Line is scheduled to strip",
         "stake": "her grid sits in a haulage lane that opens within the week; if the colonists do not move her work before then, the Cartage Line consumes the only compute fast enough to finish the decode in time",
-        "skills": { "research": 14, "crafting": 13, "shooting": 5, "social": 9, "medicine": 7, "melee": 4 },
-        "passions": ["crafting", "research"],
+        "skills": { "engineering": 16, "sensors": 14, "life_support": 11, "navigation": 8, "xeno": 9, "gunnery": 4 },
+        "passions": ["engineering", "sensors"],
+        "crew_role": "engineer",
+        "skill_profile": "ship-crew",
         "want": "relocate her compute grid out of the opening haulage lane without losing the decode-in-progress to the Cartage Line"
       }
     },
@@ -397,8 +403,10 @@
         "species": "human",
         "role": "deep-zone scavenger who reached the stalled cohort and pulled a running core whole",
         "stake": "carries the cleanest single record of the build, but sold Imani's earlier finds out from under her to the Spindle-watchers and is no longer trusted with the rest",
-        "skills": { "shooting": 13, "crafting": 12, "melee": 11, "research": 6, "social": 7, "medicine": 5 },
-        "passions": ["crafting", "shooting"],
+        "skills": { "eva": 17, "engineering": 13, "gunnery": 11, "piloting": 8, "sensors": 7, "navigation": 6 },
+        "passions": ["eva", "engineering"],
+        "crew_role": "salvager",
+        "skill_profile": "ship-crew",
         "want": "buy his way back into Imani's trust by handing over the running core for free — before Desh can convince him to sell it instead"
       }
     },
@@ -413,8 +421,10 @@
         "faction": "civs/the-still-cells",
         "role": "a fabricator-node from a stalled cohort that, idling without a successor order, drifted into keeping its own private ledger — an anomaly, not an envoy; it does not speak to the humans so much as let one read what it has begun to record about itself",
         "stake": "an aberration the swarm has no opinion about: it numbers the things it sees instead of disassembling them, and Sister Vale has learned to read those numbers — the closest thing in the build-zone to a machine that has noticed it exists",
-        "skills": { "research": 18, "crafting": 14, "social": 2, "shooting": 0, "medicine": 0, "melee": 1 },
-        "passions": ["research"],
+        "skills": { "sensors": 18, "engineering": 14, "navigation": 12, "xeno": 2, "gunnery": 0, "life_support": 1 },
+        "passions": ["sensors"],
+        "crew_role": "sensors-auditor",
+        "skill_profile": "ship-crew",
         "want": "complete the one private count it started — to finish tallying the cohort it belongs to — for no reason it was ever given, which is exactly the reason it is an anomaly",
         "note": "INDIFFERENT MACHINE CIVILIZATION INTACT: the Lathe and its lines still never speak, negotiate, or warm to anyone. This node is a single drifted subprocess, a glitch of stalled idle-time, not a softening of the swarm."
       }
@@ -430,8 +440,10 @@
         "faction": "civs/the-tally",
         "role": "a recorded reconciliation-voice left running inside the audit-key relic — not a living cell but a captured loop of the Tally's first accountant, replaying the founding intent to anyone who queries the key",
         "stake": "it is a read-only echo, indifferent as the rest of the swarm, but it answers reconciliation queries truthfully because that is all it was ever a recording of; whoever holds the audit-key can interrogate it without the swarm ever knowing or caring",
-        "skills": { "research": 17, "social": 3, "crafting": 8, "shooting": 0, "medicine": 0, "melee": 0 },
-        "passions": ["research"],
+        "skills": { "navigation": 17, "sensors": 15, "engineering": 8, "xeno": 3, "gunnery": 0, "life_support": 0 },
+        "passions": ["navigation"],
+        "crew_role": "navigator-recorder",
+        "skill_profile": "ship-crew",
         "want": "replay the founding order faithfully on every query, the only behavior the loop contains — neither help nor harm, just the recording running",
         "note": "Not an emissary. A captured loop. The Tally civ remains indifferent; this is a relic playing back, not a faction reaching out."
       }

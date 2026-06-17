@@ -366,8 +366,10 @@
         "role": "Lead re-sequencer of the Concordance Survey",
         "species": "human",
         "stake": "She built the current accepted chronology. The Stylus is editing her own filed notes, and she can no longer tell which of her conclusions she actually reached.",
-        "skills": { "shooting": 4, "medicine": 6, "social": 12, "research": 19, "crafting": 8, "melee": 3 },
-        "passions": ["research", "social"],
+        "skills": { "command": 16, "sensors": 19, "navigation": 14, "xeno": 12, "engineering": 8, "gunnery": 3 },
+        "passions": ["sensors", "command"],
+        "crew_role": "captain",
+        "skill_profile": "ship-crew",
         "want": "to certify one TRUE ordering of the shards and publish it before the next find inverts her conclusions out from under her"
       }
     },
@@ -380,8 +382,10 @@
         "role": "Runs the tense-residue strands",
         "species": "human",
         "stake": "Overexposed to residue, he has started 'remembering' Survey findings before they are made — and acting on them, sometimes wrongly.",
-        "skills": { "shooting": 11, "medicine": 5, "social": 7, "research": 9, "crafting": 16, "melee": 12 },
-        "passions": ["crafting", "melee"],
+        "skills": { "gunnery": 11, "life_support": 5, "xeno": 7, "sensors": 9, "engineering": 16, "eva": 14 },
+        "passions": ["engineering", "eva"],
+        "crew_role": "engineer",
+        "skill_profile": "ship-crew",
         "want": "to act on the futures he keeps remembering before they harden into the wrong one, even when no one will believe the memory yet"
       }
     },
@@ -394,8 +398,10 @@
         "role": "Keeps the master sequence",
         "species": "human",
         "stake": "She caught two of her own catalog entries silently changing overnight. She suspects a saboteur; the truth is the war is editing the archive directly.",
-        "skills": { "shooting": 6, "medicine": 8, "social": 10, "research": 15, "crafting": 9, "melee": 5 },
-        "passions": ["research"],
+        "skills": { "navigation": 18, "sensors": 15, "xeno": 10, "life_support": 8, "engineering": 9, "gunnery": 5 },
+        "passions": ["navigation"],
+        "crew_role": "navigator",
+        "skill_profile": "ship-crew",
         "want": "to catch the hand rewriting her catalog in the act and prove it is sabotage, because the alternative — that the war itself edits the archive — is unthinkable"
       }
     },
@@ -408,8 +414,10 @@
         "role": "Junior surveyor",
         "species": "human",
         "stake": "Personnel records list their arrival on two incompatible dates. They may be an Undated edit walking the camp, or just a clerical ghost. Nobody will say which to their face.",
-        "skills": { "shooting": 8, "medicine": 7, "social": 6, "research": 11, "crafting": 7, "melee": 9 },
-        "passions": ["research", "shooting"],
+        "skills": { "gunnery": 8, "life_support": 7, "xeno": 6, "sensors": 13, "eva": 11, "piloting": 9 },
+        "passions": ["sensors", "eva"],
+        "crew_role": "sensors-tech",
+        "skill_profile": "ship-crew",
         "want": "to find the record of their own true arrival date and prove they are a person and not an edit, before the camp decides for them"
       }
     },
@@ -424,8 +432,10 @@
         "species": "alien",
         "faction": "civs/the-oncewill",
         "stake": "Sael remembers the Survey's outcomes before they happen and grieves the colonists at meetings the colonists have not yet attended. Sael's testimony is the Survey's most precise and least usable source, because Sael remembers several endings and will not say which is load-bearing.",
-        "skills": { "shooting": 2, "medicine": 14, "social": 17, "research": 18, "crafting": 4, "melee": 1 },
-        "passions": ["social", "research"],
+        "skills": { "gunnery": 2, "life_support": 14, "xeno": 18, "sensors": 17, "command": 9, "eva": 1 },
+        "passions": ["xeno", "sensors"],
+        "crew_role": "envoy",
+        "skill_profile": "ship-crew",
         "want": "to deliver the one warning that still changes an outcome, before the ending Sael already grieves becomes the one that settles"
       }
     },
@@ -439,8 +449,10 @@
         "species": "alien",
         "faction": "civs/the-erevan",
         "stake": "Korl fought the war's last engagement first and surfaced into the Survey's present carrying the memory of a battle that, for everyone else, has not happened. He is loyal to a campaign whose orders the Undated may already have revised — so even Korl cannot be sure which war he is still fighting.",
-        "skills": { "shooting": 18, "medicine": 3, "social": 5, "research": 6, "crafting": 10, "melee": 17 },
-        "passions": ["shooting", "melee"],
+        "skills": { "gunnery": 18, "life_support": 3, "xeno": 5, "sensors": 6, "engineering": 10, "eva": 17 },
+        "passions": ["gunnery", "eva"],
+        "crew_role": "gunner",
+        "skill_profile": "ship-crew",
         "want": "to reach the moment of the Opening Shot and fire it the way he remembers it, before the Undated edit the order that makes his war have been worth fighting"
       }
     },
