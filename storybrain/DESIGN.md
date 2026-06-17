@@ -1,37 +1,41 @@
 # StoryBrain — an AI storyteller knowledgebase on gbrain
 
-> Status: **v2** (post 5-round self-review; pre adversarial review). Review
-> records in `storybrain/reviews/`. Decision log in `storybrain/DECISIONS.md`.
-> Findings from executed experiments in `storybrain/findings/`.
+> Status: **v3** (post 5-round self-review + adversarial round 1, with an
+> EMPIRICAL prototype run against a live PGLite brain). Review records in
+> `storybrain/reviews/`. Decisions in `storybrain/DECISIONS.md`. Hard evidence in
+> `storybrain/findings/` — read findings 01–02 before trusting any gbrain claim
+> here; they are measured, not asserted.
 
-This document evaluates and designs the use of **gbrain** (this repo, an
-unmodified fork of "brain") as the persistent world-memory layer for a
-**Rimworld-style AI storyteller and lore generator** in a video game, with
-**artifact-hunting** as a major story-driving mechanic.
-
-Written for two readers: the game designer (my friend) deciding whether this is
-worth building, and the engineer who would build it.
+Evaluates and designs **gbrain** (this repo) as the persistent world-memory layer
+for a **Rimworld-style AI storyteller + lore generator**, with **artifact-hunting**
+as the headline story mechanic and **emergent** (history-driven) narrative.
 
 ---
 
-## 0. The one-paragraph answer
+## 0. The one-paragraph answer (revised after measurement)
 
-A Rimworld storyteller is really **two machines**: a *Director* (a control loop
-that decides what event fires and when, modulated by a tension budget) and a
-*World-Memory* (persistent, queryable continuity of who did what, who hates whom,
-what was found where). **gbrain is the World-Memory half — a genuinely strong fit
-for it — but it is not the Director.** Its self-wiring typed-edge knowledge graph
-turns gameplay history into queryable structure with *zero LLM cost per write*,
-which is exactly what emergent, callback-rich narrative needs and what a flat lore
-file (Karpathy's "llm wiki") cannot do. The recommendation is **phase-split**: use
-gbrain to *prototype and validate the fun* and as the **reference implementation**
-of the schema + query set (you can drive the whole thing by talking to an agent,
-no engine code); then **port the proven query set to an embedded in-process store**
-(SQLite+FTS5 / libSQL) for the shipped game, because bundling a Bun+PGLite sidecar
-with a retail title is heavy. Throughout, make **artifacts first-class entities
-whose discovery spills lore the Director reads as high-value callback material** —
-closing an artifact → rumor → hunt → lore → event → artifact spiral that is the
-engine of the game's story.
+A Rimworld storyteller is two machines: a **Director** (decides what happens next,
+on a tension budget — you build this) and a **World-Memory** (remembers everything,
+queryably — this is the gbrain question). The emergent half needs to ask
+*relational questions about the past at decision time* ("does anyone hold a grudge
+against the raiders who just appeared, and do we own something they want?"), which
+a flat lore file cannot do and a **typed graph** can. **Measured result
+(finding 02): gbrain's typed graph genuinely delivers this — custom relationship
+verbs, multi-hop, zero LLM — but ONLY via explicit `add_link` edge writes, NOT via
+the advertised "self-wiring from `[[wikilinks]]`," which is hardcoded to
+VC-domain directories and does nothing for game namespaces.** That correction
+matters: the mechanism is the game engine *emitting explicit edges it already
+knows* (better for a game — deterministic, no NLP guessing), not prose extraction.
+Once that's true, gbrain's remaining unique value is **instant stand-up + an
+agent-drivable CLI/MCP surface you can prototype against by talking to it** — not
+its retrieval intelligence, most of which this use case discards. So the honest
+recommendation is a **graduated bet**: the *real artifact you need either way* is a
+small SQLite/libSQL `edges` table + FTS + the 9-query catalog in §6.6;
+**gbrain earns its place only as a fast design-REPL to validate the fun before you
+commit engine code** — and if you're comfortable in SQL, building that store
+first and exploring with an LLM agent against *it* is a defensible alternative.
+Artifacts are the spine throughout: rumor → hunt → find → lore drop → the Director
+turns the drop into the next threat.
 
 ---
 
@@ -40,321 +44,314 @@ engine of the game's story.
 | | **Director** | **World-Memory** |
 |---|---|---|
 | Job | Decide *what happens next* and *when* | Remember *everything that happened* |
-| Shape | Control loop + tension budget + scoring | Knowledge store + retrieval + graph |
-| Determinism | Must be deterministic (save/load, replay) | Reads deterministic; writes append-only |
+| Shape | Control loop + tension budget + scoring | Typed-edge store + text search |
+| Determinism | Must be deterministic (save/load) | Reads deterministic; writes append-only |
 | Latency | Real-time (per tick) | Sub-second reads; writes async/batched |
-| LLM in loop? | **No** (arithmetic + graph queries) | Only for narration & overnight summaries |
-| Who builds it | **You** (game code) | gbrain (prototype) → embedded store (ship) |
+| LLM in loop? | **No** (arithmetic + graph queries) | Only for narration & overnight recaps |
+| Who builds it | **You** (game code) | gbrain (prototype) → SQLite store (ship) |
 
-Rimworld's Cassandra/Phoebe/Randy are *Directors*, not knowledgebases. gbrain and
-llm-wiki are *World-Memories*, not Directors. Evaluating gbrain "as a storyteller"
-is a category error; evaluate it as the memory the storyteller reads from.
-
----
-
-## 2. Why "emergent" forces a graph (and rules out the flat wiki)
-
-The designer has committed to **emergent** narrative: story that arises from
-gameplay history, not a hand-authored tree. Emergence has one hard requirement —
-the Director must ask **relational questions about the past** at decision time:
-
-- "Does any colonist have an unresolved `rival_of` / `betrayed_by` edge to
-  someone in the incoming raider faction?"
-- "Who last `owned` the artifact the player just dug up, and how did they die?"
-- "What chain `caused_by` the famine three winters ago?"
-
-A flat markdown wiki (llm-wiki: `index.md` + pages, no graph, no search index)
-**cannot answer these** without an LLM re-reading the corpus every tick — too
-slow, too costly, non-deterministic. A graph answers them directly. gbrain's graph
-**builds itself from `[[type/slug]]` wikilinks on every write, with no LLM calls**
-— that zero-cost self-wiring is the property that makes emergence affordable at
-tick rates. The flat wiki still wins for a *small, hand-curated lore bible*; it
-loses the moment story must compound from play. The designer wants the latter.
+Cassandra/Phoebe/Randy are *Directors*, not knowledgebases. Evaluating gbrain "as
+a storyteller" is a category error. (Survived every review round; foundational.)
 
 ---
 
-## 3. The `storybrain-base` schema pack
+## 2. Why "emergent" forces a typed graph
 
-gbrain packs are YAML: `page_types` (each with a `primitive`, `path_prefixes`,
-optional `subtypes`, `extractable`, `expert_routing`) plus `link_types` (with an
-`inverse`). Edges auto-wire from wikilinks. Authored pack:
-`storybrain/schema/storybrain-base.yaml`; rationale below.
+Emergence requires answering **relational questions about the past at decision
+time**: "who has an unresolved `rival_of`/`betrayed_by`/`killed_by` edge into the
+incoming faction?", "who last `owned` the artifact we just dug up?", "what
+`caused_by`-chains back to the famine?" A flat wiki (llm-wiki: `index.md` + pages)
+cannot without an LLM re-reading the corpus every tick (slow, costly,
+non-deterministic). A typed graph answers in microseconds. **This is the whole
+reason to prefer a graph store over a flat wiki** — and it is verified to work
+(finding 02). What is NOT true is that the graph builds itself for free from prose;
+see §3.3.
+
+---
+
+## 3. The `storybrain-base` schema pack — VALIDATED & ACTIVE
+
+Authored at `storybrain/schema/storybrain-base.yaml`; **loaded, validated, and
+activated against a live PGLite brain** (finding 02: 12 page types, 31 link verbs).
 
 ### 3.1 Page types
 
-| Type | primitive | Why |
-|---|---|---|
-| `colonist` | entity | Dramatis personae. `expert_routing: true` ("who knows surgery"). |
-| `faction` | entity | Raiders, tribes, empires; reputation/standing in frontmatter. |
-| `location` | entity | Rooms, biomes, ruins, dungeon/hunt sites, the map. |
-| `artifact` | entity | **First-class McGuffin.** See §4 — the story engine. |
-| `lore` | media | World-building + dropped fragments. Subtypes: `rumor`, `fragment`, `myth`, `codex`, `prophecy`. `extractable: true`. |
-| `belief` | concept | Ideoligion / deity / meme a faction or colonist `worships`. |
-| `event` | temporal | Workhorse: every incident becomes one. `temporal` ⇒ `timeline`+`find_trajectory`. Subtypes: `raid`,`social`,`disaster`,`quest`,`discovery`. `extractable: true`. |
-| `arc` | temporal | An **active plot** the Director steers (see §5). Lifecycle in frontmatter. |
-| `chapter` | temporal | Arc/era recap, LLM-written overnight (the "Legends" view, also compaction target). |
-| `power` | concept | Boon an artifact `grants`; a page so it carries lore + balance notes. |
-| `curse` | concept | The dark side an artifact `bears`; drives risk/reward in hunts. |
-
-We author `storybrain-base` as a **standalone pack** (`extends: null`), not an
-extension of gbrain's VC-flavored `gbrain-base-v2`, so we own the whole taxonomy.
+`colonist` (entity, `expert_routing`), `faction` (entity), `location` (entity;
+subtypes settlement/ruin/huntsite), **`artifact`** (entity; the McGuffin, §4),
+`lore` (media; subtypes rumor/fragment/myth/codex/prophecy), `belief` (concept),
+`event` (temporal; subtypes raid/social/disaster/quest/discovery), `arc`
+(temporal; an active plot, §5), `chapter` (temporal; recap/compaction target),
+`power` (concept), `curse` (concept), `note` (concept catch-all).
 
 ### 3.2 Link types (the relationship graph)
 
-- **Social:** `kin_of`↔`kin_of`, `rival_of`↔`rival_of`, `ally_of`↔`ally_of`,
-  `lover_of`↔`lover_of`, `member_of`↔`has_member`.
-- **Action/history:** `killed`↔`killed_by`, `betrayed`↔`betrayed_by`,
-  `saved`↔`saved_by`, `involves`↔`involved_in` (event→colonist),
-  `caused_by`↔`caused` (**event→event causal chains**).
-- **Spatial:** `located_at`↔`location_of`, `occurred_at`↔`site_of`.
-- **Artifact spine (§4):** `hidden_at`↔`hides`, `sought_by`↔`seeks`,
-  `guarded_by`↔`guards`, `grants`↔`granted_by`, `bears`↔`borne_by` (curse),
-  `fragment_of`↔`has_fragment`, `forged_by`↔`forged`, `owned_by`↔`owns`,
-  `reveals`↔`revealed_by` (lore→figure/event), `drops`↔`dropped_by`
-  (artifact→lore), `rumored_at`↔`rumor_of` (foreshadow).
-- **Player-choice fate (agency feeds the graph):** `destroyed`↔`destroyed_by`,
-  `sold`↔`sold_by`, `sealed`↔`sealed_by`, `ignored`↔`ignored_by`.
-- **Arc wiring:** `advances`↔`advanced_by` (event→arc), `resolves`↔`resolved_by`.
+31 verbs across: social (`kin_of`, `rival_of`, `ally_of`, `lover_of`,
+`member_of`), action/history (`killed`, `betrayed`, `saved`, `involves`,
+`caused_by`), spatial (`located_at`, `occurred_at`), the **artifact spine**
+(`hidden_at`, `rumored_at`, `sought_by`, `guarded_by`, `grants`, `bears`,
+`fragment_of`, `forged_by`, `owned_by`, `lost_in`, `drops`, `reveals`),
+**player-choice fate** (`destroyed`, `sold`, `sealed`, `ignored`), and arc wiring
+(`advances`, `resolves`, `worships`).
+
+### 3.3 How edges actually form (corrected — see finding 02)
+
+- ✅ **Explicit `gbrain link <from> <to> --link-type <verb>` works for ALL custom
+  verbs**, persists, traverses multi-hop in both directions, zero LLM. *This is
+  the mechanism the game uses.* The engine knows "Vera now rivals the Empire" and
+  writes that edge directly.
+- ❌ **Prose `[[colonist/vera]]` wikilinks wire ZERO edges** for our dirs. The
+  extractor's `DIR_PATTERN` (`src/core/link-extraction.ts:86`) is hardcoded to VC
+  dirs; the pack does not retarget it; `inferLinkType` only emits VC verbs. Getting
+  prose extraction would require a ~5-line fork (regenerate `DIR_PATTERN` from the
+  active pack's `path_prefixes`) — unnecessary for a game and contrary to
+  "unmodified fork."
+- ⚠️ **`inverse:` in the pack is NOT auto-materialized on write.** Writing
+  `ashmark --owned_by--> vera` does not create a `vera --owns--> ashmark` row.
+  Reverse queries use **directional traversal** (`backlinks`, `graph-query
+  --direction in`), which works (finding 02). If the game wants both as outgoing
+  edges, it writes both (cheap).
+
+**Net:** drop all "self-wiring from wikilinks" language. The graph is real,
+typed, zero-LLM, and **engine-emitted**.
 
 ---
 
-## 4. Artifacts: the story engine (the designer's headline feature)
+## 4. Artifacts: the story engine (the headline feature)
 
-The designer's centerpiece: **hunting artifacts that drop lore and drive the
-story.** Not a cosmetic item system — the primary narrative pump. StoryBrain
-models it as a self-reinforcing spiral *with a closeable arc* (so it builds
-tension and then pays off, instead of escalating forever):
+Hunting artifacts that drop lore and drive the story — the primary narrative pump,
+modeled as a self-reinforcing spiral *with a closeable arc*:
 
 ```
-  RUMOR ──rumored_at──► LOCATION        (foreshadow: a torn map, a dying
-    │  partial lore, seeds desire        trader's hint — the *approach*)
+  RUMOR ──rumored_at──► LOCATION         (foreshadow: a torn map, a dying
+    │  partial lore, seeds desire         trader's hint — the *approach*)
     ▼
   HUNT (quest event) ──occurred_at──► LOCATION ──guarded_by──► FACTION/beast
-    │
     ▼
-  ARTIFACT  ──grants──► POWER   ──bears──► CURSE   (the find is a *decision*:
-    │  fragment_of ► greater relic (collect arcs)   boon vs. risk vs. who wants it)
+  ARTIFACT ──grants──► POWER  ──bears──► CURSE   (the find is a *decision*:
+    │  fragment_of ► greater relic         boon vs. risk vs. who else wants it)
     │  drops
     ▼
   LORE FRAGMENT ──reveals──► FIGURE / ERA / past EVENT
     │  Director reads freshly-revealed, high-tension lore as callback fuel
     ▼
   NEW EVENT / NEXT RUMOR ──advances──► ARC ──(eventually)──► RESOLUTION
-    (descendants seek revenge; the prophecy must be stopped; the rival faction
-     races you to the last shard) — then the arc CLOSES (catharsis, downtime)
+    (descendants seek revenge; the prophecy must be stopped; a rival races you
+     to the last shard) — then the arc CLOSES (catharsis, downtime)
     │
     └──► often points at the next artifact: spiral repeats, richer each loop
 ```
 
-### 4.1 Anatomy of an artifact (frontmatter + graph)
+### 4.1 Anatomy of an artifact
 
-- `lore_fragments: [slug, …]` — revealed **progressively**: found → fragment 1;
-  studied at a bench → fragment 2; *used in a crisis* → fragment 3. Each reveal
-  flips the fragment page's `revealed: true` and lights its `drops`/`dropped_by`
-  edge.
-- `power` / `curse` edges — a boon and a risk. The risk makes the hunt a
-  *decision*, not a pickup.
-- `fragment_of` — collect-them-all arcs: shards `hidden_at` different sites,
-  `sought_by` a rival faction; assembly is a multi-chapter arc.
-- provenance — `forged_by` an ancient figure, `owned_by` a chain of past owners
-  (each death a lore beat), `lost_in` a past `event`.
-- **fate** — once the player acts, a `destroyed`/`sold`/`sealed`/`ignored` edge
-  records the *choice*, which the Director respects (a faction avenges a
-  *destroyed* relic differently than a *stolen* one).
+Frontmatter: `tier` (relic/mundane), `fragment_of_set`, `lore_fragments: [...]`
+(revealed progressively: found → 1; studied → 2; used-in-crisis → 3). Edges:
+`grants`→power, `bears`→curse, `fragment_of`→greater relic, `forged_by`→figure,
+`owned_by`→owner chain, `lost_in`→past event, `sought_by`→faction, `hidden_at`→
+site, plus player-choice `destroyed`/`sold`/`sealed`/`ignored`.
 
-### 4.2 The lore-drop mechanic, concretely
+### 4.2 The lore-drop mechanic (measured end-to-end)
 
-On discovery/study the engine writes a `lore` page (subtype `fragment`):
-
-```markdown
----
-type: lore
-subtype: fragment
-revealed: true
-revealed_on_day: 412
-tension: 0.7
-valence: -1            # ominous reveal
-arc: arcs/iron-empire-reckoning
----
-# The Ashmark Was Forged to Kill a King
-
-The blade [[artifact/ashmark]] bears old imperial script. [[colonist/vera]]
-translated it: [[lore/the-grey-smith|the Grey Smith]] forged it to end the line
-of [[faction/iron-empire]]. The Empire still hunts every shard. They will know
-it has surfaced.
-```
-
-That one write: (1) **wires the graph** (edges to artifact, colonist, smith,
-faction — no LLM); (2) **becomes searchable** (BM25 now, vector optionally); (3)
-**raises a flag the Director sees next tick** — a fresh, high-`tension` lore page
-naming a live faction is prime `callback_strength`/`arc_advance` fuel, so the next
-Iron-Empire raid arrives *with a reason the player can read*.
-
-### 4.3 Why this beats a flat file
-
-The payoff is **continuity the player feels was authored but wasn't.** Because
-provenance and seekers are *edges*, the Director can ask at raid time: "is the
-incoming faction `sought_by`-linked to any artifact the colony now `owns`?" If
-yes, the raid is *about the artifact*, narration cites the fragment, and the
-player experiences a plot. A flat wiki has the text but cannot query the
-relationship *at decision time*, so the connection never fires mechanically.
-
----
-
-## 5. The Director (the piece you build)
-
-gbrain is the sensorium; the Director is the will. Loop, each stage bound to a
-real query:
+On discovery/study the engine writes a `lore` (subtype `fragment`) page AND emits
+the edges explicitly. From the live brain (finding 02), after writing the Ashmark
+fragment + edges, `graph-query factions/iron-empire --direction in` returns:
 
 ```
-  ── every game-day tick (or incident slot) ─────────────────────────────────
-  1. READ PACING STATE          (pure game code; no gbrain, no LLM)
-       tension_budget = f(wealth, #colonists, days-since-hardship, avg mood,
-                          active-arc phase)
-       choose: fire? how hard? which VALENCE (relief vs. dread)? which register?
+factions/iron-empire
+  <-sought_by-- artifacts/ashmark
+    <-reveals-- lore/ashmark-forged
+  <-rival_of-- colonists/vera
+    <-owned_by-- artifacts/ashmark
+```
 
-  2. SENSE DRAMATIC POTENTIAL   (gbrain reads — fast, deterministic, cheap)
-       • active arcs           → which open plots can advance now
-       • traverse_graph        → open grudges/debts/bonds; owned-vs-sought
-                                 artifacts; freshly-revealed lore
-       • find_trajectory       → arcs ripe to pay off
-       • search(tension-sorted)/find_anomalies → hot or surprising state
+That is the Director's raid-time question answered for real: the Iron Empire is
+`sought_by`-linked to an artifact the colony holds, and `colonist/vera`
+`rival_of`s them. A raid now arrives *with a reason the player can read*. This is
+the payoff a flat wiki can't produce — the relationship is queryable at decision
+time.
 
-  3. GENERATE + SCORE CANDIDATES   (game code; arithmetic over query results)
-       resonance = w1·arc_advance       (moves an OPEN active plot — primary)
-                 + w2·callback_strength  (cites real graph history)
-                 + w3·character_stakes   (hits high-salience pawns)
-                 + w4·valence_fit        (matches the pacing target sign)
-                 + w5·tension_fit        (matches the budget magnitude)
-                 − w6·repetition         (semantic dup of recent events)
-                 − w7·fixation           (over-used faction/arc penalty)
+---
 
-  4. FIRE → engine resolves the chosen event in-game
+## 5. The Director (the piece you build) — with one term specified
 
-  5. WRITE BACK → put_page events/… with [[…]] mentions; advances/resolves arc
-       graph self-wires → step 2 next tick sees it.  EMERGENT.
+gbrain is the sensorium; the Director is the will.
 
-  (overnight / chapter break) think → chapter recap + COMPACT old events;
-       find_contradictions → flag lore conflicts (mystery beat or author fix)
+```
+  ── per incident slot ──────────────────────────────────────────────────────
+  1. READ PACING STATE      (pure game code; no store, no LLM)
+       tension_budget, target VALENCE (relief vs dread), register
+  2. SENSE                  (store reads — fast, deterministic, cheap)
+       • arc_candidates()   → open arcs in {rising,climax}, stale-since-advance
+       • graph-query --direction in on live factions/artifacts → grudges,
+         owned-but-sought, provenance (finding 02 shows these work)
+       • recent_events(n)   → for repetition/fixation scoring
+  3. SCORE CANDIDATES       (game code; arithmetic over query results)
+       resonance = w1·arc_advance + w2·callback_strength + w3·character_stakes
+                 + w4·valence_fit + w5·tension_fit − w6·repetition − w7·fixation
+  4. FIRE → engine resolves; 5. WRITE BACK event page + emit edges + advance arc
+  (overnight) think → chapter recap; compaction (§6, edge-safe)
   ────────────────────────────────────────────────────────────────────────────
 ```
 
-- **Arcs as attractors.** The Director holds 1–3 open `arc`s and biases toward
-  `arc_advance` — this is what turns "stuff happening that references the past"
-  into a *story with throughline*. Arcs have a lifecycle
-  (`seed→rumor→rising→climax→resolution→dormant`) and *must* progress or be
-  force-closed.
-- **Valence.** Alternate relief and dread; don't only ramp magnitude.
-- **Cold-start guard.** Until the graph crosses a density threshold, draw from a
-  hand-authored baseline event pool; blend in resonance as history accrues.
-- **Fixation/diversity guards.** Per-faction/per-arc cooldowns; a max-share cap
-  so no single thread dominates.
-- **Tension model** (step 1): pure Rimworld, ~200 lines, no LLM, no gbrain — you
-  own it.
+**One term specified end-to-end (per R1-07).** The fear is that maximizing local
+callbacks yields non-sequiturs. Concrete definition that ties callbacks to the
+*active plot* and to *dramatic charge*:
+
+```
+callback_strength(candidate) =
+    Σ over edges e that the candidate's narration would cite of
+        tension(target(e)) · recency_decay(e.day) · arc_bonus(e)
+  where tension(node)   = node.frontmatter.tension ∈ [0,1]   (engine-stamped)
+        recency_decay(d)= 0.5 ^ ((today − d) / HALF_LIFE_DAYS)
+        arc_bonus(e)    = ARC_W if e advances an OPEN arc else 1.0
+```
+
+Worked example over §4.2: a candidate "Iron Empire raid" would cite
+`vera --rival_of--> iron-empire` (tension 0.6, recent) and `ashmark --sought_by-->
+iron-empire` (tension 0.7, recent, advances the open `iron-empire-reckoning` arc).
+Its callback_strength is high *and* concentrated on one arc → coherent, not
+word-salad. A candidate "random toolbox theft" cites nothing high-tension → scores
+low. `arc_advance` is then defined as `max over open arcs of (does this candidate
+satisfy that arc's next beat predicate)` — the arc page's frontmatter declares
+its `next_beat` (e.g. `kind: raid, faction: iron-empire`); a candidate matching it
+advances the arc. `repetition` uses the small scoped vector index (§6) OR a cheap
+type+faction+location key match if you skip vectors entirely.
+
+**Falsifiable success metric** (replaces "feels authored"): show a human rater 10
+Director picks interleaved with 10 hand-authored beats, blind; success = rater
+cannot beat chance at telling them apart (≤ ~60% accuracy).
+
+Plus: **arcs as attractors** (1–3 open arcs, lifecycle
+seed→rumor→rising→climax→resolution→dormant, must progress or force-close);
+**valence** (alternate relief/dread); **cold-start baseline pool** until the graph
+is dense; **fixation/diversity guards** (per-faction/arc cooldowns, max-share cap).
 
 ---
 
 ## 6. Integration architecture
 
-- **Phase 1 (prototype): gbrain sidecar.** `gbrain serve` as a child process;
-  drive it from an agent or a thin client. The PGLite dir is per-save state. This
-  is where you *validate the fun* with near-zero engine code.
-- **Keep the LLM out of the tick loop.** Steps 1–3 are retrieval + graph +
-  arithmetic. LLM (`think`) only for *narration text* after selection and
-  overnight `chapter` recaps. Narration is presentation — cached in save,
-  seeded, regenerable — never authoritative save state. Sidesteps LLM
-  non-determinism.
-- **Graph + BM25 first; vector scoped.** The graph needs no model; BM25 needs no
-  model. Reserve embeddings for a *small* index — recent-event dedup +
-  lore-contradiction (a few hundred rows) — not full-corpus retrieval. Removes the
-  biggest cost/latency objection. (Local Ollama/llama.cpp recipe if you do want
-  vectors; or defer entirely.)
-- **Async batched writes.** Game owns an in-memory authoritative ring of recent
-  history + a durable append-only journal; flushes event pages to gbrain in
-  batches off the hot path. Respects PGLite's single-writer constraint.
-- **Chapter compaction.** Periodically fold old raw events into a `chapter`
-  summary and soft-delete the raw events. Bounds save size.
-- **Determinism / save-load.** Graph queries + resonance math are deterministic;
-  PGLite dir + brain git repo *are* the save. Pin the embedding model per save so
-  ranking doesn't drift across versions.
+- **Phase-1 prototype = gbrain sidecar.** `gbrain init --pglite --no-embedding`
+  (verified: brain up in seconds, no API key); `gbrain serve` for MCP. The PGLite
+  dir is per-save state. Value here is *validating the fun with near-zero engine
+  code*, driving the brain from an agent or thin client.
+- **Keep the LLM out of the tick loop.** Steps 1–3 are graph + arithmetic. LLM
+  (`think`) only for narration after selection + overnight recaps. Narration is
+  presentation — cached in save, seeded, regenerable — never authoritative state.
+- **Graph + BM25 first; vectors optional & scoped.** Confirmed: embeddings are
+  optional in gbrain. Graph needs no model; keyword needs no model. Reserve a
+  small vector index (few hundred rows) only for recent-event dedup. Local
+  Ollama/llama.cpp if you want vectors at all.
+- **Async batched writes.** Game owns an in-memory authoritative ring + a durable
+  append-only journal; flushes pages+edges to the store in batches off the hot
+  path. Respects PGLite single-writer. (Throughput unmeasured at game rates — a
+  step-1 prototype TODO, R1-10; the ship store removes the constraint.)
+- **Compaction must be EDGE-SAFE (corrected per R1-05).** gbrain soft-delete is a
+  72h staging area; `purge_deleted_pages` then HARD-deletes and **cascades through
+  `page_links`** — which would sever the `caused_by`/`owned_by`/`involves`
+  provenance the Director walks. So: (a) NEVER call `purge_deleted_pages` on
+  edge-bearing event pages; (b) before compacting an old event, **re-home its
+  load-bearing edges onto durable entity pages** (move `owned_by`/`caused_by` onto
+  the artifact/colonist) so they survive; (c) compaction folds event *prose* into
+  a `chapter` and may delete the prose, but the edge rows persist. In the SQLite
+  ship store, compaction = "delete event body blob, keep edge rows" (trivial; no
+  cascade).
+- **Determinism.** Graph + resonance math are deterministic; pin the embedding
+  model per save if vectors are on.
 
-### What to strip from gbrain (≈80% is overhead for a single-player game)
+### What gbrain ops are actually usable (corrected per R1-02/03/06/09)
 
-Auth/OAuth, company-brain multi-user scoping + access control, skillpacks, eval
-framework, cron dream-cycle (replace with your overnight chapter job), the MCP
-client matrix. You need ~12 of 136 ops: `put_page`, `get_page`, `search`,
-`traverse_graph`/`graph`, `find_trajectory`, `get_timeline`, `add_link`,
-`get_links`, `find_contradictions`, schema-pack load, `think` (narration).
+USE: `put`/`put_page`, `get_page`, `search` (BM25/hybrid), `link`/`add_link`
+(the workhorse), `graph`/`graph-query`/`backlinks` (traversal, both directions),
+`get_links`, `get_timeline`, schema-pack load, `think` (narration only).
 
-### 6.5 Alternative: roll your own (the shipped-game target)
+DO **NOT** rely on (they do something other than the design needs):
+- `find_contradictions` — a cached reader of an offline **LLM-judged** eval probe
+  (`anthropic:claude-haiku-4-5`), non-deterministic, costs money, batch-only, does
+  NOT port. Lore-consistency is an optional overnight LLM job, not a free query.
+- `find_trajectory` — a numeric VC-metric time-series engine (MRR/ARR/team_size),
+  unrelated to "arcs ripe to pay off." Arc readiness = read `arc` frontmatter
+  (`phase`, `days_since_advance`), a trivial query you own.
+- `whoknows` — its ranking multiplies in built-in `salience` (emotional_weight +
+  take_count), which is ~uniform for game pages, degenerating to keyword+recency.
+  "Who's the best surgeon" is a colonist **skill-stat lookup in game code**, not a
+  retrieval problem. Drop it.
 
-Everything the Director needs is, at bottom, a relations table + a text index:
+### 6.5 The honest re-costing: gbrain vs. SQLite-from-day-one (R1-08)
 
-- `edges(src, type, dst, day, weight)` — the graph
-- FTS5 (SQLite) / equivalent — keyword search
-- a tiny vector index (optional) — dedup + contradiction
-- markdown blobs — the lore/event bodies
+Finding 02 changes the calculus. The single hardest-to-replicate gbrain feature —
+prose→typed-graph extraction — *doesn't work for this domain anyway*. Walking the
+catalog (§6.6): 8 of 9 queries are **plain SQL over `edges(src,type,dst,day)` + a
+recursive CTE** — gbrain's `traverse_graph` IS a recursive CTE; you'd write the
+same in SQLite in an afternoon. FTS handles `fresh_lore`. The genuinely
+gbrain-only differentiators (hybrid RRF ranking, contradiction-via-LLM, salience,
+trajectory, synthesis) are all things this design **deprioritized or discarded**.
 
-That is embeddable **in-process** in any engine, no Bun, no WASM Postgres, no
-sidecar — which matters because **shipping a Bun+PGLite+HTTP sidecar with a retail
-title is a real footprint/support/AV liability.** So: **gbrain for the prototype +
-as the reference implementation**; **embedded store (SQLite/libSQL) for the ship**,
-specified by the **Query Catalog** below. The schema pack (YAML) + the catalog are
-the spec the embedded store must satisfy.
+So gbrain's real, honest value here is narrow but not zero: **a zero-setup,
+agent-drivable design REPL** — you can stand up a world and interrogate the graph
+*by talking to an agent*, no engine code, today. That is worth real money *if* your
+validation loop is agent-driven. If you're fluent in SQL, writing the `edges`
+table + 9 queries first (you need them for ship regardless) and exploring with an
+LLM agent against *that* is a defensible — arguably leaner — path, because the
+prototype becomes the ship artifact instead of throwaway.
 
-### 6.6 Query Catalog (the ~10 queries the Director issues — the port spec)
+**Recommendation:** treat gbrain as an optional accelerator for the design-REPL
+phase, not as the World-Memory you build on. Build the SQLite `edges` store as the
+durable artifact. Use gbrain (already stood up — findings 01/02) to *keep
+prototyping the artifact spiral cheaply while the store is written*.
 
-1. `open_grudges(faction)` → colonists with `rival_of`/`betrayed_by`/`killed_by`
-   edges into `faction`.
-2. `owned_but_sought()` → artifacts the colony `owns` that some faction `seeks`.
-3. `fresh_lore(since_day, min_tension)` → recently `revealed` fragments.
-4. `arc_candidates()` → open `arc`s + their next advanceable beat.
-5. `causal_chain(event)` → `caused_by`* walk.
-6. `relationship_between(a, b)` → shortest typed path.
-7. `who_knows(topic)` → `expert_routing` over colonists (`whoknows`).
-8. `recent_events(n)` for repetition/fixation scoring.
-9. `artifact_provenance(artifact)` → `forged_by`/`owned_by`/`lost_in` chain.
-10. `contradictions(scope)` → conflicting lore (`find_contradictions`).
+### 6.6 Query Catalog (the port spec — the real deliverable)
 
-If the embedded store answers these, the Director is portable. gbrain answers all
-ten today; that's the value of building the prototype on it.
+1. `open_grudges(faction)` — colonists with `rival_of`/`betrayed_by`/`killed_by`
+   into faction. *(verified via `graph-query --direction in` + `backlinks`)*
+2. `owned_but_sought()` — artifacts colony `owns` that a faction `seeks`. *(verified)*
+3. `fresh_lore(since_day, min_tension)` — recent `revealed` fragments (FTS+filter).
+4. `arc_candidates()` — open `arc`s where `phase∈{rising,climax}` and
+   `days_since_advance>θ` (arc frontmatter; NOT find_trajectory).
+5. `causal_chain(event)` — `caused_by`* recursive walk.
+6. `relationship_between(a,b)` — shortest typed path. *(verified multi-hop)*
+7. `recent_events(n)` — repetition/fixation scoring input.
+8. `artifact_provenance(artifact)` — `forged_by`/`owned_by`/`lost_in` chain. *(verified)*
+9. `who_has_skill(skill)` — colonist skill-stat lookup in **game code** (replaces
+   whoknows).
+
+(`contradictions` is intentionally NOT here — it's an optional LLM batch, not a
+deterministic query; R1-02.)
 
 ---
 
-## 7. Honest risks & gaps (status after self-review)
+## 7. Risks & gaps — status
 
-1. **gbrain `salience` ≠ dramatic salience.** *Resolved:* define our own
-   `tension`/`valence` frontmatter and query it; don't lean on built-in salience.
-2. **Write throughput vs tick rate.** *Mitigated:* async batched writes + durable
-   journal + graph/BM25-first (no hot-path embedding).
-3. **PGLite single-writer.** *Mitigated:* serialized batched flush; in the
-   shipped phase the embedded store removes the constraint.
-4. **The Director is unbuilt.** *By design:* gbrain gives memory, not will. The
-   resonance scorer is the real game-design work.
-5. **Retrieval-ranking determinism.** *Mitigated:* pin embedding model per save;
-   graph/BM25 paths are deterministic regardless.
-6. **Shipping a sidecar.** *Resolved via phase-split:* prototype on gbrain, port
-   to embedded store for ship (§6.5).
-7. **Emergent lore self-contradiction.** *Mitigated:* `find_contradictions` pass;
-   contradictions can be *used* as mystery beats.
-8. **Cold start / fixation.** *Mitigated:* baseline pool + diversity guards (§5).
+1. Dramatic salience ≠ gbrain salience → define `tension`/`valence` frontmatter;
+   don't use `whoknows`/built-in salience. **Resolved.**
+2. Write throughput at game rates → async batch + journal; **unmeasured**, step-1
+   TODO (R1-10). Ship store removes PGLite constraint.
+3. Compaction severs edges → edge-safe compaction, never purge edge-bearing pages
+   (R1-05). **Resolved in design; needs prototype confirmation.**
+4. The Director is unbuilt → by design; §5 now specifies `callback_strength` +
+   `arc_advance` + a falsifiable metric (R1-07). The scorer is the real work.
+5. Prose self-wiring false → edges are engine-emitted via `add_link` (R1-01,
+   finding 02). **Resolved.**
+6. `find_contradictions`/`find_trajectory`/`whoknows` misapplied → dropped/
+   reframed (R1-02/03/06). **Resolved.**
+7. gbrain-vs-SQLite → honest re-cost (R1-08): SQLite `edges` store is the
+   deliverable; gbrain is an optional agent-REPL accelerator. **Resolved.**
 
 ---
 
-## 8. Recommendation (phase-split)
+## 8. Recommendation (graduated)
 
-1. **Validate the fun cheaply (gbrain, days not weeks).** Author
-   `storybrain-base.yaml`, stand up a PGLite brain, seed a tiny world (a few
-   colonists, two factions, one artifact arc), and drive *one full spiral* —
-   rumor → hunt → artifact → lore drop → Director fires the payoff raid — by
-   issuing the Query Catalog calls. Confirm the resonance pick *feels authored*.
-2. **If it's fun, harden it.** Build the real Director (tension model + scorer) as
-   game code against the gbrain sidecar. Add arcs, valence, guards.
-3. **For ship, port the memory** to an embedded store satisfying §6.6, keeping
-   gbrain as the reference + the design/agent-operable tool.
+1. **Validate the fun (now, cheaply).** The brain + pack are already up
+   (findings 01/02). Build a thin Director harness that issues the §6.6 catalog
+   and runs ONE full artifact spiral (rumor → hunt → find → lore drop → payoff
+   raid). Apply the §5 `callback_strength` formula. Judge with the blind-rater
+   metric. *(Next executed task — see findings/03+.)*
+2. **Decide the substrate from evidence.** If agent-driven prototyping is fast and
+   valuable, keep gbrain for exploration; in parallel write the SQLite `edges`
+   store (the ship artifact) against the §6.6 spec. If you're SQL-fluent, you may
+   skip straight to the store.
+3. **Build the real Director** (tension model + scorer + arcs + guards) as game
+   code against whichever store, LLM out of the tick loop.
 
-Artifacts are the spine throughout (§4): rumor foreshadows, the hunt is the
-gameplay, the lore drop is the reward, the Director turns the reward into the next
-threat. That spiral — affordable only because the graph self-wires for free — is
-the case for building this on a brain instead of a flat wiki.
+The artifact spiral (§4) — affordable because typed edges are free to write and
+fast to traverse — is the case for a graph store over a flat wiki. gbrain proves
+the model quickly; SQLite ships it.
 </content>

@@ -63,3 +63,17 @@ for Sam to review. Newest entries appended at the bottom of each section.
 - Per Sam's instruction: use /writing-plans-enhanced for plans and /brainstorming
   to think through ideas, but ANSWER ALL QUESTIONS MYSELF (no AskUserQuestion —
   Sam is asleep; blocking would stall everything).
+
+- 2026-06-17: Adversarial round 1 (Opus subagent) — 1 FATAL, 4 HIGH, 2 MEDIUM,
+  2 LOW. Stood up a REAL PGLite brain + activated the pack + ran the graph
+  experiment (findings 01, 02) to resolve the FATAL finding empirically.
+  Key correction (D2 revised): the typed graph is real/zero-LLM/multi-hop BUT
+  edges are ENGINE-EMITTED via explicit `link` (add_link), NOT self-wired from
+  prose wikilinks (DIR_PATTERN is VC-only). For a game this is better.
+  DESIGN v2→v3: dropped find_contradictions/find_trajectory/whoknows as relied-on
+  ops (they do other things); fixed compaction to be edge-safe (purge cascades
+  through page_links); specified callback_strength formula + falsifiable
+  blind-rater metric; honest re-cost (R1-08) → SQLite edges-table is the real
+  ship deliverable, gbrain is an agent-REPL accelerator for the prototype.
+  D-revised: recommendation is now GRADUATED, leaning toward "SQLite store is the
+  artifact; gbrain validates fun cheaply."
