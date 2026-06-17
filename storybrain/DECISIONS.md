@@ -201,3 +201,19 @@ for Sam to review. Newest entries appended at the bottom of each section.
   Conclusion stands and is now leak-robust: pure-LLM beats the procgen hybrid for
   these ~40-node worlds. Recommended stack unchanged: pure-LLM fact-skeleton
   (f08) + Stage D (f10) + SQLite store (f06).
+
+- 2026-06-17 (abstract procgen — Sam's fix): Rebuilt procgen as ABSTRACT
+  (procgen-abstract.ts: neutral causal topology, configured order_relation,
+  guaranteed climax, ZERO fall-forcing/leak fields) + a CLOTHE prompt that renames
+  + PRUNES the skeleton. Regenerated hybrid-v2 for the 4 themes pure won worst in
+  f12; re-judged blind clean Opus vs the same pure baselines. RESULT (finding 13):
+  abstract procgen closed the gap from avg pure +11.5 -> +1.25; hybrid-v2 WON
+  uplift (43-40) and the other 3 are washes (<=4 pts). Hybrid scores rose 7-11 pts
+  each. Filler signature largely gone; remaining nits split across BOTH arms (pure
+  leaked 'STEP 1..', hybrid a placeholder) -> Stage-C quality, not procgen-
+  structural. CONCLUSION: Sam's diagnosis correct — f12's "pure wins" was the
+  fall-forcing procgen, not an inherent hybrid defect. Abstract-hybrid is now AT
+  PARITY with pure (~35-node scale); preferred if you want deterministic/seedable
+  causal scaffolding or larger worlds. Updated recommendation supersedes f12's
+  "procgen not validated." Next: full 10-theme + cross-model re-judge; add a
+  clothe-output lint (reject 'STEP n', '(Per this world)', 'owns factions/*').
