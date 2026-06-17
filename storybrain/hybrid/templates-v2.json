@@ -1,0 +1,46 @@
+{
+  "setting": "Humans wake from cold-sleep on a salvaged world where three incompatible elder civilizations annihilated one another fighting over a substance that thinks back, and the only survivors are the dreams it left behind.",
+  "civs": [
+    {
+      "name": "the-tessellate",
+      "archetype": "fractal-hive-architecture",
+      "trait": "a single organism that grew cities as its own recursive body",
+      "greed": 0.72
+    },
+    {
+      "name": "the-pale-cartographers",
+      "archetype": "time-folding-navigators",
+      "trait": "mapped futures and mined the ones they liked best",
+      "greed": 0.88
+    },
+    {
+      "name": "the-nullborn",
+      "archetype": "anti-psychic-ascetics",
+      "trait": "evolved to silence thought, blind to the danger they unleashed",
+      "greed": 0.35
+    },
+    {
+      "name": "the-glasswrights",
+      "archetype": "symbiotic-bioforge-collective",
+      "trait": "wove living machinery from their own grown organs",
+      "greed": 0.91
+    }
+  ],
+  "resources": [
+    { "name": "soultide", "danger": 0.95 },
+    { "name": "wakeglass", "danger": 0.55 },
+    { "name": "tideclay", "danger": 0.18 },
+    { "name": "starmoss", "danger": 0.3 }
+  ],
+  "artifactKinds": [
+    "weapon-relic",
+    "lost-codex",
+    "dream-engine",
+    "covenant-seal",
+    "grief-loom",
+    "wayfinding-stone",
+    "hollow-crown"
+  ],
+  "epochs": 8,
+  "cascadeThreshold": 1.5
+}

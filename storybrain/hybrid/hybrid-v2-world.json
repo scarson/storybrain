@@ -1,0 +1,1571 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.4,
+      "facts": {
+        "role": "late-arrivals"
+      }
+    },
+    {
+      "slug": "civs/the-tessellate",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "fractal-hive-architecture",
+        "trait": "a single organism that grew cities as its own recursive body",
+        "status": "fallen",
+        "wound": 0,
+        "title": "The Tessellate, the City That Was One Body",
+        "epithet": "the recursive flesh",
+        "why_it_mattered": "A single mind tiled across a continent. When soultide began to think back, the Tessellate could not tell its own thoughts from the ore's — every cell of the city dreamed the same intrusive dream at once."
+      }
+    },
+    {
+      "slug": "civs/the-pale-cartographers",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "time-folding-navigators",
+        "trait": "mapped futures and mined the ones they liked best",
+        "status": "extant",
+        "wound": 0,
+        "title": "The Pale Cartographers, Surveyors of Tomorrows",
+        "epithet": "those who mined the futures they liked best",
+        "why_it_endures": "Alone among the four they never drank deep of soultide; they had already mapped the futures where they did, and chose the branch where they abstained. They survive as the witnesses — and the only ones who know what the seam wants."
+      }
+    },
+    {
+      "slug": "civs/the-nullborn",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "anti-psychic-ascetics",
+        "trait": "evolved to silence thought, blind to the danger they unleashed",
+        "status": "fallen",
+        "wound": 0,
+        "title": "The Nullborn, the Self-Silenced",
+        "epithet": "they who unmade thought to be safe, and were the first to fall",
+        "why_it_mattered": "They starved their own minds to deafness so no signal could reach them — then mined the loudest signal in creation. Deaf to the warning the soultide screamed at every other species, they over-extracted it first, and opened the wound."
+      }
+    },
+    {
+      "slug": "civs/the-glasswrights",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "symbiotic-bioforge-collective",
+        "trait": "wove living machinery from their own grown organs",
+        "status": "fallen",
+        "wound": 0,
+        "title": "The Glasswrights, Weavers of Living Engine",
+        "epithet": "they grew their tools from their own grief",
+        "why_it_mattered": "Every machine they made was a grown organ, wet with feeling. When soultide's backwash flooded the seams, their living engines felt it die and grieved themselves to ruin — the grief-loom is the last of those weeping machines."
+      }
+    },
+    {
+      "slug": "locations/soultide-seam",
+      "type": "location",
+      "tension": 0.92,
+      "facts": {
+        "resource": "soultide",
+        "danger": 0.95,
+        "title": "The Soultide Seam, the Ore That Dreams",
+        "truth": "Soultide is not a mineral. It is the fossilized attention of something that was buried alive and never finished dying. To mine it is to wake it; to refine it is to be answered. The danger rating (0.95) is the engine's flinch at a number it can't bound.",
+        "warning": "Every civ that over-extracted soultide fell. The one that abstained survives."
+      }
+    },
+    {
+      "slug": "locations/wakeglass-seam",
+      "type": "location",
+      "tension": 0.46499999999999997,
+      "facts": {
+        "resource": "wakeglass",
+        "danger": 0.55,
+        "title": "The Wakeglass Seam",
+        "truth": "A lesser cousin of soultide — it carries echoes, not the voice itself. Safe in sips, ruinous in draughts; the gateway drug to the deeper seam."
+      }
+    },
+    {
+      "slug": "locations/tideclay-seam",
+      "type": "location",
+      "tension": 0.354,
+      "facts": {
+        "resource": "tideclay",
+        "danger": 0.18
+      }
+    },
+    {
+      "slug": "locations/starmoss-seam",
+      "type": "location",
+      "tension": 0.39,
+      "facts": {
+        "resource": "starmoss",
+        "danger": 0.3
+      }
+    },
+    {
+      "slug": "figures/the-tessellate-seer-0",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-tessellate"
+      }
+    },
+    {
+      "slug": "events/0-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 100,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-tessellate"
+      }
+    },
+    {
+      "slug": "events/1-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 100,
+      "facts": {
+        "kind": "war",
+        "title": "the-pale-cartographers wars on the-nullborn"
+      }
+    },
+    {
+      "slug": "events/2-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 100,
+      "facts": {
+        "kind": "war",
+        "title": "the-nullborn wars on the-pale-cartographers"
+      }
+    },
+    {
+      "slug": "events/3-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 100,
+      "facts": {
+        "kind": "war",
+        "title": "the-glasswrights wars on the-pale-cartographers"
+      }
+    },
+    {
+      "slug": "events/4-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 200,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-tessellate taps wakeglass"
+      }
+    },
+    {
+      "slug": "events/5-exploitation",
+      "type": "event",
+      "tension": 0.665,
+      "day": 200,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-tessellate over-extracts wakeglass"
+      }
+    },
+    {
+      "slug": "events/6-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 200,
+      "facts": {
+        "kind": "war",
+        "title": "the-pale-cartographers wars on the-glasswrights"
+      }
+    },
+    {
+      "slug": "events/7-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 200,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-nullborn taps soultide"
+      }
+    },
+    {
+      "slug": "events/8-exploitation",
+      "type": "event",
+      "tension": 0.86,
+      "day": 200,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-nullborn over-extracts soultide",
+        "prose": "The Nullborn, who had cut out their own ears to thought, drove the first deep bore into soultide — and could not hear it begin to scream."
+      }
+    },
+    {
+      "slug": "artifacts/the-nullborn-covenant-seal-9",
+      "type": "artifact",
+      "tension": 0.7,
+      "facts": {
+        "archetype": "covenant-seal",
+        "maker": "the-nullborn"
+      }
+    },
+    {
+      "slug": "figures/the-glasswrights-seer-9",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-glasswrights"
+      }
+    },
+    {
+      "slug": "events/9-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 200,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-glasswrights"
+      }
+    },
+    {
+      "slug": "events/10-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 300,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-tessellate taps soultide"
+      }
+    },
+    {
+      "slug": "events/11-exploitation",
+      "type": "event",
+      "tension": 0.86,
+      "day": 300,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-tessellate over-extracts soultide",
+        "prose": "The Tessellate, one body across a continent, drank soultide into every cell at once. The intrusive dream that followed was unanimous."
+      }
+    },
+    {
+      "slug": "figures/the-pale-cartographers-seer-12",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-pale-cartographers"
+      }
+    },
+    {
+      "slug": "events/12-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 300,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-pale-cartographers"
+      }
+    },
+    {
+      "slug": "figures/the-nullborn-seer-13",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-nullborn"
+      }
+    },
+    {
+      "slug": "events/13-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 300,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-nullborn"
+      }
+    },
+    {
+      "slug": "events/14-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 300,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-glasswrights taps starmoss"
+      }
+    },
+    {
+      "slug": "events/15-exploitation",
+      "type": "event",
+      "tension": 0.59,
+      "day": 300,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-glasswrights over-extracts starmoss"
+      }
+    },
+    {
+      "slug": "artifacts/the-glasswrights-dream-engine-16",
+      "type": "artifact",
+      "tension": 0.72,
+      "facts": {
+        "archetype": "dream-engine",
+        "maker": "the-glasswrights"
+      }
+    },
+    {
+      "slug": "events/16-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 400,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-tessellate taps tideclay"
+      }
+    },
+    {
+      "slug": "events/17-exploitation",
+      "type": "event",
+      "tension": 0.554,
+      "day": 400,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-tessellate over-extracts tideclay"
+      }
+    },
+    {
+      "slug": "artifacts/the-tessellate-wayfinding-stone-18",
+      "type": "artifact",
+      "tension": 0.7,
+      "facts": {
+        "archetype": "wayfinding-stone",
+        "maker": "the-tessellate"
+      }
+    },
+    {
+      "slug": "events/18-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 400,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-pale-cartographers taps tideclay"
+      }
+    },
+    {
+      "slug": "events/19-exploitation",
+      "type": "event",
+      "tension": 0.554,
+      "day": 400,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-pale-cartographers over-extracts tideclay"
+      }
+    },
+    {
+      "slug": "events/20-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 400,
+      "facts": {
+        "kind": "war",
+        "title": "the-nullborn wars on the-tessellate"
+      }
+    },
+    {
+      "slug": "events/21-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 400,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-glasswrights taps wakeglass"
+      }
+    },
+    {
+      "slug": "events/22-exploitation",
+      "type": "event",
+      "tension": 0.665,
+      "day": 400,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-glasswrights over-extracts wakeglass"
+      }
+    },
+    {
+      "slug": "artifacts/the-glasswrights-grief-loom-23",
+      "type": "artifact",
+      "tension": 0.74,
+      "facts": {
+        "archetype": "grief-loom",
+        "maker": "the-glasswrights"
+      }
+    },
+    {
+      "slug": "events/23-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 500,
+      "facts": {
+        "kind": "war",
+        "title": "the-tessellate wars on the-nullborn"
+      }
+    },
+    {
+      "slug": "events/24-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 500,
+      "facts": {
+        "kind": "war",
+        "title": "the-pale-cartographers wars on the-tessellate"
+      }
+    },
+    {
+      "slug": "events/25-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 500,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-nullborn taps wakeglass"
+      }
+    },
+    {
+      "slug": "events/26-exploitation",
+      "type": "event",
+      "tension": 0.665,
+      "day": 500,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-nullborn over-extracts wakeglass"
+      }
+    },
+    {
+      "slug": "events/27-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 500,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-glasswrights taps wakeglass"
+      }
+    },
+    {
+      "slug": "events/28-exploitation",
+      "type": "event",
+      "tension": 0.665,
+      "day": 500,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-glasswrights over-extracts wakeglass"
+      }
+    },
+    {
+      "slug": "events/29-cascade",
+      "type": "event",
+      "tension": 0.97,
+      "day": 500,
+      "facts": {
+        "kind": "cascade",
+        "title": "The Wound the World Could Not Forgive",
+        "prose": "Not a war. A waking. The thing under the soultide opened what passed for an eye, and three civilizations that had each carved a piece of it discovered they had been carving the same thing. The backwash of its attention crossed every mind at once: the Tessellate dreamed itself to stillness, the Nullborn's silence shattered like struck glass, the Glasswrights' living engines grieved themselves dead. The Pale Cartographers, who had mapped this exact morning and refused to drink, simply closed their charts and watched.",
+        "psychic_cause": "soultide-backwash: the seam answering everyone who had questioned it, simultaneously, forever."
+      }
+    },
+    {
+      "slug": "lore/fall-of-the-tessellate",
+      "type": "lore",
+      "tension": 0.88,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-tessellate",
+        "title": "How the One Body Stopped Dreaming",
+        "text": "The Tessellate fell first-among-the-doomed: a single distributed mind cannot wake from a shared nightmare, because there is no second self to shake it. Soultide gave the whole city one dream and it could not stop dreaming. It is still standing, every spire intact, every cell asleep."
+      }
+    },
+    {
+      "slug": "lore/fall-of-the-nullborn",
+      "type": "lore",
+      "tension": 0.88,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-nullborn",
+        "title": "The Silence That Was Pierced",
+        "text": "The Nullborn believed deafness was safety. But you cannot consent to a contract you cannot hear, and the soultide had been speaking the whole time. When the backwash came it did not whisper — it broke their engineered silence from the inside, and a species built to feel nothing felt everything at once."
+      }
+    },
+    {
+      "slug": "lore/fall-of-the-glasswrights",
+      "type": "lore",
+      "tension": 0.88,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-glasswrights",
+        "title": "The Engines That Wept Themselves Dead",
+        "text": "The Glasswrights grew their machines from living tissue, so their machines could grieve. When soultide died back across the seams, every grown engine felt a death it could not name and mourned until it failed. The grief-loom kept weaving the lament long after the last weaver was gone."
+      }
+    },
+    {
+      "slug": "lore/the-deaf-bargain",
+      "type": "lore",
+      "tension": 0.78,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-nullborn",
+        "title": "The Deaf Bargain",
+        "text": "The covenant-seal is a contract the Nullborn signed with soultide without knowing they were signing — pressed by hands that could not hear the terms read aloud. The seal still hums the clause they missed."
+      }
+    },
+    {
+      "slug": "lore/the-first-bore",
+      "type": "lore",
+      "tension": 0.78,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-nullborn",
+        "title": "The First Bore",
+        "text": "It was the Nullborn who drove the first deep bore. Every later fall traces back to this hole. The seal marks its coordinates — exactly where the human colony is now drilling."
+      }
+    },
+    {
+      "slug": "lore/silence-as-hubris",
+      "type": "lore",
+      "tension": 0.78,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "civs/the-nullborn",
+        "title": "Silence Mistaken for Wisdom",
+        "text": "To the Nullborn, hearing nothing meant nothing was wrong. The seal records the moment that faith failed: the instant a deaf species heard, for one second, the thing it had been mining."
+      }
+    },
+    {
+      "slug": "lore/the-unanimous-dream",
+      "type": "lore",
+      "tension": 0.78,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-tessellate",
+        "title": "The Unanimous Dream",
+        "text": "The dream-engine captured the exact nightmare the soultide pushed into the Tessellate's single mind — a city dreaming one dream in perfect, fatal unison. Play it back and you dream it too."
+      }
+    },
+    {
+      "slug": "lore/the-engine-that-remembers",
+      "type": "lore",
+      "tension": 0.78,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-glasswrights",
+        "title": "The Engine That Remembers Being Alive",
+        "text": "Grown, not built, the dream-engine still has a pulse. It does not store the fall as data; it relives it, and offers the relived memory to anyone who listens too long."
+      }
+    },
+    {
+      "slug": "lore/the-map-to-the-wound",
+      "type": "lore",
+      "tension": 0.78,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-tessellate",
+        "title": "The Map to the Wound",
+        "text": "The wayfinding-stone points, always, to the soultide seam — the Tessellate's last navigational fix was the direction of the thing that killed it. Every human survey instrument that passes near the stone drifts to the same heading."
+      }
+    },
+    {
+      "slug": "lore/the-stone-that-points-home",
+      "type": "lore",
+      "tension": 0.78,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-pale-cartographers",
+        "title": "Why the Cartographers Abstained",
+        "text": "Carved into the stone in a hand that is not Tessellate: a single Pale Cartographer's annotation, the only record of WHY they refused the seam. It reads, in translation, 'we have seen the morning after. Do not drink.'"
+      }
+    },
+    {
+      "slug": "lore/the-last-lament",
+      "type": "lore",
+      "tension": 0.78,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-glasswrights",
+        "title": "The Last Lament",
+        "text": "The grief-loom is still weaving. The pattern it has produced for five hundred years is a funeral shroud for a species that no longer exists — and, lately, it has begun weaving a second name into the cloth: one the colonists would recognize."
+      }
+    },
+    {
+      "slug": "lore/grief-is-data",
+      "type": "lore",
+      "tension": 0.78,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-glasswrights",
+        "title": "Grief Is Data",
+        "text": "The Glasswrights encoded the cause of their own death into the loom's weave as mourning. Decode the lament and you have the whole post-mortem — but the loom only releases it to someone who has lost something to the seam first."
+      }
+    },
+    {
+      "slug": "lore/the-shared-wound",
+      "type": "lore",
+      "tension": 0.78,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "civs/the-glasswrights",
+        "title": "One Wound, Four Hands",
+        "text": "The loom's deepest thread reveals the secret the four civs died not knowing: they were never mining four seams. Soultide, wakeglass, the deep veins — all one buried mind, carved at from four directions. Each thought it bled a different thing."
+      }
+    },
+    {
+      "slug": "colonists/mara-okonkwo",
+      "type": "colonist",
+      "tension": 0.62,
+      "day": 600,
+      "facts": {
+        "name": "Mara Okonkwo",
+        "role": "colony administrator / drill-program lead",
+        "skills": [
+          "resource-survey",
+          "crew-command",
+          "logistics"
+        ],
+        "drive": "Make the soultide seam pay before the supply ships stop coming. She has read none of the lore and signs the deep-bore order on day 612.",
+        "arrived": 600
+      }
+    },
+    {
+      "slug": "colonists/idris-vale",
+      "type": "colonist",
+      "tension": 0.7,
+      "day": 600,
+      "facts": {
+        "name": "Dr. Idris Vale",
+        "role": "xenoarchaeologist",
+        "skills": [
+          "artifact-translation",
+          "psychic-resonance-reading",
+          "elder-linguistics"
+        ],
+        "drive": "Holds the wayfinding-stone. Has decoded enough to know the seam is the wound. Nobody on the council will believe him before the bore goes in.",
+        "arrived": 600
+      }
+    },
+    {
+      "slug": "colonists/senna-rho",
+      "type": "colonist",
+      "tension": 0.74,
+      "day": 600,
+      "facts": {
+        "name": "Senna Rho",
+        "role": "deep-drill foreman",
+        "skills": [
+          "heavy-rig-operation",
+          "seam-geology",
+          "improvised-repair"
+        ],
+        "drive": "First human to stand at the bore-face. The grief-loom has started weaving her name. She has begun to dream the unanimous dream.",
+        "arrived": 600
+      }
+    },
+    {
+      "slug": "colonists/jonah-pike",
+      "type": "colonist",
+      "tension": 0.66,
+      "day": 600,
+      "facts": {
+        "name": "Jonah Pike",
+        "role": "company liaison / claims agent",
+        "skills": [
+          "negotiation",
+          "off-world-comms",
+          "appraisal"
+        ],
+        "drive": "Reports to the orbital combine. Has been quietly selling the colony's artifact coordinates to a third party that wants the seal more than the ore.",
+        "arrived": 600
+      }
+    },
+    {
+      "slug": "arc/the-second-bore",
+      "type": "arc",
+      "tension": 0.85,
+      "day": 600,
+      "facts": {
+        "name": "The Second Bore",
+        "phase": "rising",
+        "status": "open",
+        "premise": "The human colony, blind to four dead civilizations, is days from driving a deep bore into the exact soultide seam that woke the wound — the literal coordinates the Nullborn's First Bore marks on the covenant-seal. The seam has already touched its first human dreamer. The ancient mistake is about to be repeated by people who never learned it was a mistake.",
+        "next_beat_kind": "deep-bore-authorization",
+        "next_beat_faction": "factions/humans",
+        "stakes": "If the bore goes in, the backwash that ended the elders crosses a human mind for the first time. If it is stopped, the colony starves — or learns why the Cartographers abstained.",
+        "countdown_day": 612
+      }
+    },
+    {
+      "slug": "events/30-first-dream",
+      "type": "event",
+      "tension": 0.8,
+      "day": 605,
+      "facts": {
+        "kind": "omen",
+        "title": "the foreman dreams the unanimous dream",
+        "prose": "Senna Rho wakes at the bore-face screaming a word in no human language. Idris Vale recognizes it: it is the last thing the Tessellate ever thought."
+      }
+    },
+    {
+      "slug": "events/31-the-buyer",
+      "type": "event",
+      "tension": 0.78,
+      "day": 608,
+      "facts": {
+        "kind": "betrayal",
+        "title": "a buyer arrives for the seal",
+        "prose": "A Pale Cartographer relay — the survivors, still watching — opens contact through Jonah Pike's back-channel, offering everything for the covenant-seal before the bore goes in. They know what the colony is about to do."
+      }
+    }
+  ],
+  "edges": [
+    [
+      "events/0-schism",
+      "involves",
+      "civs/the-tessellate",
+      100
+    ],
+    [
+      "events/0-schism",
+      "involves",
+      "figures/the-tessellate-seer-0",
+      100
+    ],
+    [
+      "events/1-war",
+      "involves",
+      "civs/the-pale-cartographers",
+      100
+    ],
+    [
+      "civs/the-pale-cartographers",
+      "rival_of",
+      "civs/the-nullborn",
+      100
+    ],
+    [
+      "events/2-war",
+      "involves",
+      "civs/the-nullborn",
+      100
+    ],
+    [
+      "civs/the-nullborn",
+      "rival_of",
+      "civs/the-pale-cartographers",
+      100
+    ],
+    [
+      "events/3-war",
+      "involves",
+      "civs/the-glasswrights",
+      100
+    ],
+    [
+      "civs/the-glasswrights",
+      "rival_of",
+      "civs/the-pale-cartographers",
+      100
+    ],
+    [
+      "events/4-discovery",
+      "involves",
+      "civs/the-tessellate",
+      200
+    ],
+    [
+      "events/4-discovery",
+      "caused_by",
+      "events/0-schism",
+      200
+    ],
+    [
+      "civs/the-tessellate",
+      "exploits",
+      "locations/wakeglass-seam",
+      200
+    ],
+    [
+      "events/5-exploitation",
+      "involves",
+      "civs/the-tessellate",
+      200
+    ],
+    [
+      "events/5-exploitation",
+      "caused_by",
+      "events/4-discovery",
+      200
+    ],
+    [
+      "events/6-war",
+      "involves",
+      "civs/the-pale-cartographers",
+      200
+    ],
+    [
+      "events/6-war",
+      "caused_by",
+      "events/1-war",
+      200
+    ],
+    [
+      "civs/the-pale-cartographers",
+      "rival_of",
+      "civs/the-glasswrights",
+      200
+    ],
+    [
+      "events/7-discovery",
+      "involves",
+      "civs/the-nullborn",
+      200
+    ],
+    [
+      "events/7-discovery",
+      "caused_by",
+      "events/2-war",
+      200
+    ],
+    [
+      "civs/the-nullborn",
+      "exploits",
+      "locations/soultide-seam",
+      200
+    ],
+    [
+      "events/8-exploitation",
+      "involves",
+      "civs/the-nullborn",
+      200
+    ],
+    [
+      "events/8-exploitation",
+      "caused_by",
+      "events/7-discovery",
+      200
+    ],
+    [
+      "artifacts/the-nullborn-covenant-seal-9",
+      "forged_by",
+      "civs/the-nullborn",
+      200
+    ],
+    [
+      "events/8-exploitation",
+      "involves",
+      "artifacts/the-nullborn-covenant-seal-9",
+      200
+    ],
+    [
+      "events/9-schism",
+      "involves",
+      "civs/the-glasswrights",
+      200
+    ],
+    [
+      "events/9-schism",
+      "caused_by",
+      "events/3-war",
+      200
+    ],
+    [
+      "events/9-schism",
+      "involves",
+      "figures/the-glasswrights-seer-9",
+      200
+    ],
+    [
+      "events/10-discovery",
+      "involves",
+      "civs/the-tessellate",
+      300
+    ],
+    [
+      "events/10-discovery",
+      "caused_by",
+      "events/5-exploitation",
+      300
+    ],
+    [
+      "civs/the-tessellate",
+      "exploits",
+      "locations/soultide-seam",
+      300
+    ],
+    [
+      "events/11-exploitation",
+      "involves",
+      "civs/the-tessellate",
+      300
+    ],
+    [
+      "events/11-exploitation",
+      "caused_by",
+      "events/10-discovery",
+      300
+    ],
+    [
+      "events/12-schism",
+      "involves",
+      "civs/the-pale-cartographers",
+      300
+    ],
+    [
+      "events/12-schism",
+      "caused_by",
+      "events/6-war",
+      300
+    ],
+    [
+      "events/12-schism",
+      "involves",
+      "figures/the-pale-cartographers-seer-12",
+      300
+    ],
+    [
+      "events/13-schism",
+      "involves",
+      "civs/the-nullborn",
+      300
+    ],
+    [
+      "events/13-schism",
+      "caused_by",
+      "events/8-exploitation",
+      300
+    ],
+    [
+      "events/13-schism",
+      "involves",
+      "figures/the-nullborn-seer-13",
+      300
+    ],
+    [
+      "events/14-discovery",
+      "involves",
+      "civs/the-glasswrights",
+      300
+    ],
+    [
+      "events/14-discovery",
+      "caused_by",
+      "events/9-schism",
+      300
+    ],
+    [
+      "civs/the-glasswrights",
+      "exploits",
+      "locations/starmoss-seam",
+      300
+    ],
+    [
+      "events/15-exploitation",
+      "involves",
+      "civs/the-glasswrights",
+      300
+    ],
+    [
+      "events/15-exploitation",
+      "caused_by",
+      "events/14-discovery",
+      300
+    ],
+    [
+      "artifacts/the-glasswrights-dream-engine-16",
+      "forged_by",
+      "civs/the-glasswrights",
+      300
+    ],
+    [
+      "events/15-exploitation",
+      "involves",
+      "artifacts/the-glasswrights-dream-engine-16",
+      300
+    ],
+    [
+      "events/16-discovery",
+      "involves",
+      "civs/the-tessellate",
+      400
+    ],
+    [
+      "events/16-discovery",
+      "caused_by",
+      "events/11-exploitation",
+      400
+    ],
+    [
+      "civs/the-tessellate",
+      "exploits",
+      "locations/tideclay-seam",
+      400
+    ],
+    [
+      "events/17-exploitation",
+      "involves",
+      "civs/the-tessellate",
+      400
+    ],
+    [
+      "events/17-exploitation",
+      "caused_by",
+      "events/16-discovery",
+      400
+    ],
+    [
+      "artifacts/the-tessellate-wayfinding-stone-18",
+      "forged_by",
+      "civs/the-tessellate",
+      400
+    ],
+    [
+      "events/17-exploitation",
+      "involves",
+      "artifacts/the-tessellate-wayfinding-stone-18",
+      400
+    ],
+    [
+      "events/18-discovery",
+      "involves",
+      "civs/the-pale-cartographers",
+      400
+    ],
+    [
+      "events/18-discovery",
+      "caused_by",
+      "events/12-schism",
+      400
+    ],
+    [
+      "civs/the-pale-cartographers",
+      "exploits",
+      "locations/tideclay-seam",
+      400
+    ],
+    [
+      "events/19-exploitation",
+      "involves",
+      "civs/the-pale-cartographers",
+      400
+    ],
+    [
+      "events/19-exploitation",
+      "caused_by",
+      "events/18-discovery",
+      400
+    ],
+    [
+      "events/20-war",
+      "involves",
+      "civs/the-nullborn",
+      400
+    ],
+    [
+      "events/20-war",
+      "caused_by",
+      "events/13-schism",
+      400
+    ],
+    [
+      "civs/the-nullborn",
+      "rival_of",
+      "civs/the-tessellate",
+      400
+    ],
+    [
+      "events/21-discovery",
+      "involves",
+      "civs/the-glasswrights",
+      400
+    ],
+    [
+      "events/21-discovery",
+      "caused_by",
+      "events/15-exploitation",
+      400
+    ],
+    [
+      "civs/the-glasswrights",
+      "exploits",
+      "locations/wakeglass-seam",
+      400
+    ],
+    [
+      "events/22-exploitation",
+      "involves",
+      "civs/the-glasswrights",
+      400
+    ],
+    [
+      "events/22-exploitation",
+      "caused_by",
+      "events/21-discovery",
+      400
+    ],
+    [
+      "artifacts/the-glasswrights-grief-loom-23",
+      "forged_by",
+      "civs/the-glasswrights",
+      400
+    ],
+    [
+      "events/22-exploitation",
+      "involves",
+      "artifacts/the-glasswrights-grief-loom-23",
+      400
+    ],
+    [
+      "events/23-war",
+      "involves",
+      "civs/the-tessellate",
+      500
+    ],
+    [
+      "events/23-war",
+      "caused_by",
+      "events/17-exploitation",
+      500
+    ],
+    [
+      "civs/the-tessellate",
+      "rival_of",
+      "civs/the-nullborn",
+      500
+    ],
+    [
+      "events/24-war",
+      "involves",
+      "civs/the-pale-cartographers",
+      500
+    ],
+    [
+      "events/24-war",
+      "caused_by",
+      "events/19-exploitation",
+      500
+    ],
+    [
+      "civs/the-pale-cartographers",
+      "rival_of",
+      "civs/the-tessellate",
+      500
+    ],
+    [
+      "events/25-discovery",
+      "involves",
+      "civs/the-nullborn",
+      500
+    ],
+    [
+      "events/25-discovery",
+      "caused_by",
+      "events/20-war",
+      500
+    ],
+    [
+      "civs/the-nullborn",
+      "exploits",
+      "locations/wakeglass-seam",
+      500
+    ],
+    [
+      "events/26-exploitation",
+      "involves",
+      "civs/the-nullborn",
+      500
+    ],
+    [
+      "events/26-exploitation",
+      "caused_by",
+      "events/25-discovery",
+      500
+    ],
+    [
+      "events/27-discovery",
+      "involves",
+      "civs/the-glasswrights",
+      500
+    ],
+    [
+      "events/27-discovery",
+      "caused_by",
+      "events/22-exploitation",
+      500
+    ],
+    [
+      "civs/the-glasswrights",
+      "exploits",
+      "locations/wakeglass-seam",
+      500
+    ],
+    [
+      "events/28-exploitation",
+      "involves",
+      "civs/the-glasswrights",
+      500
+    ],
+    [
+      "events/28-exploitation",
+      "caused_by",
+      "events/27-discovery",
+      500
+    ],
+    [
+      "lore/fall-of-the-tessellate",
+      "caused_by",
+      "events/29-cascade",
+      500
+    ],
+    [
+      "civs/the-tessellate",
+      "fell_to",
+      "events/29-cascade",
+      500
+    ],
+    [
+      "lore/fall-of-the-nullborn",
+      "caused_by",
+      "lore/fall-of-the-tessellate",
+      500
+    ],
+    [
+      "civs/the-nullborn",
+      "fell_to",
+      "events/29-cascade",
+      500
+    ],
+    [
+      "lore/fall-of-the-glasswrights",
+      "caused_by",
+      "lore/fall-of-the-nullborn",
+      500
+    ],
+    [
+      "civs/the-glasswrights",
+      "fell_to",
+      "events/29-cascade",
+      500
+    ],
+    [
+      "lore/fall-of-the-tessellate",
+      "reveals",
+      "civs/the-tessellate",
+      500
+    ],
+    [
+      "lore/fall-of-the-nullborn",
+      "reveals",
+      "civs/the-nullborn",
+      500
+    ],
+    [
+      "lore/fall-of-the-glasswrights",
+      "reveals",
+      "civs/the-glasswrights",
+      500
+    ],
+    [
+      "artifacts/the-nullborn-covenant-seal-9",
+      "drops",
+      "lore/fall-of-the-nullborn",
+      500
+    ],
+    [
+      "artifacts/the-nullborn-covenant-seal-9",
+      "drops",
+      "lore/the-deaf-bargain",
+      500
+    ],
+    [
+      "artifacts/the-nullborn-covenant-seal-9",
+      "drops",
+      "lore/the-first-bore",
+      500
+    ],
+    [
+      "artifacts/the-nullborn-covenant-seal-9",
+      "drops",
+      "lore/silence-as-hubris",
+      500
+    ],
+    [
+      "artifacts/the-glasswrights-dream-engine-16",
+      "drops",
+      "lore/fall-of-the-glasswrights",
+      500
+    ],
+    [
+      "artifacts/the-glasswrights-dream-engine-16",
+      "drops",
+      "lore/the-unanimous-dream",
+      500
+    ],
+    [
+      "artifacts/the-glasswrights-dream-engine-16",
+      "drops",
+      "lore/the-engine-that-remembers",
+      500
+    ],
+    [
+      "artifacts/the-tessellate-wayfinding-stone-18",
+      "drops",
+      "lore/fall-of-the-tessellate",
+      500
+    ],
+    [
+      "artifacts/the-tessellate-wayfinding-stone-18",
+      "drops",
+      "lore/the-map-to-the-wound",
+      500
+    ],
+    [
+      "artifacts/the-tessellate-wayfinding-stone-18",
+      "drops",
+      "lore/the-stone-that-points-home",
+      500
+    ],
+    [
+      "artifacts/the-glasswrights-grief-loom-23",
+      "drops",
+      "lore/the-last-lament",
+      500
+    ],
+    [
+      "artifacts/the-glasswrights-grief-loom-23",
+      "drops",
+      "lore/grief-is-data",
+      500
+    ],
+    [
+      "artifacts/the-glasswrights-grief-loom-23",
+      "drops",
+      "lore/the-shared-wound",
+      500
+    ],
+    [
+      "lore/the-deaf-bargain",
+      "reveals",
+      "civs/the-nullborn",
+      500
+    ],
+    [
+      "lore/the-first-bore",
+      "reveals",
+      "civs/the-nullborn",
+      500
+    ],
+    [
+      "lore/silence-as-hubris",
+      "reveals",
+      "figures/the-nullborn-seer-13",
+      500
+    ],
+    [
+      "lore/the-unanimous-dream",
+      "reveals",
+      "civs/the-tessellate",
+      500
+    ],
+    [
+      "lore/the-engine-that-remembers",
+      "reveals",
+      "civs/the-glasswrights",
+      500
+    ],
+    [
+      "lore/the-map-to-the-wound",
+      "reveals",
+      "locations/soultide-seam",
+      500
+    ],
+    [
+      "lore/the-stone-that-points-home",
+      "reveals",
+      "civs/the-pale-cartographers",
+      500
+    ],
+    [
+      "lore/the-last-lament",
+      "reveals",
+      "civs/the-glasswrights",
+      500
+    ],
+    [
+      "lore/grief-is-data",
+      "reveals",
+      "civs/the-glasswrights",
+      500
+    ],
+    [
+      "lore/the-shared-wound",
+      "reveals",
+      "locations/soultide-seam",
+      500
+    ],
+    [
+      "events/30-first-dream",
+      "involves",
+      "colonists/senna-rho",
+      605
+    ],
+    [
+      "events/30-first-dream",
+      "involves",
+      "colonists/idris-vale",
+      605
+    ],
+    [
+      "events/30-first-dream",
+      "involves",
+      "artifacts/the-glasswrights-grief-loom-23",
+      605
+    ],
+    [
+      "events/31-the-buyer",
+      "involves",
+      "colonists/jonah-pike",
+      608
+    ],
+    [
+      "events/31-the-buyer",
+      "involves",
+      "artifacts/the-nullborn-covenant-seal-9",
+      608
+    ],
+    [
+      "events/31-the-buyer",
+      "involves",
+      "civs/the-pale-cartographers",
+      608
+    ],
+    [
+      "arc/the-second-bore",
+      "involves",
+      "factions/humans",
+      600
+    ],
+    [
+      "arc/the-second-bore",
+      "involves",
+      "locations/soultide-seam",
+      600
+    ],
+    [
+      "arc/the-second-bore",
+      "involves",
+      "colonists/mara-okonkwo",
+      600
+    ],
+    [
+      "arc/the-second-bore",
+      "threatens",
+      "factions/humans",
+      600
+    ],
+    [
+      "arc/the-second-bore",
+      "echoes",
+      "events/29-cascade",
+      600
+    ],
+    [
+      "colonists/idris-vale",
+      "owns",
+      "artifacts/the-tessellate-wayfinding-stone-18",
+      600
+    ],
+    [
+      "colonists/mara-okonkwo",
+      "owns",
+      "artifacts/the-nullborn-covenant-seal-9",
+      600
+    ],
+    [
+      "artifacts/the-nullborn-covenant-seal-9",
+      "sought_by",
+      "civs/the-pale-cartographers",
+      600
+    ],
+    [
+      "colonists/idris-vale",
+      "rival_of",
+      "colonists/mara-okonkwo",
+      600
+    ],
+    [
+      "colonists/mara-okonkwo",
+      "betrayed_by",
+      "colonists/jonah-pike",
+      600
+    ],
+    [
+      "colonists/senna-rho",
+      "sought_by",
+      "artifacts/the-glasswrights-grief-loom-23",
+      600
+    ],
+    [
+      "colonists/senna-rho",
+      "rival_of",
+      "colonists/mara-okonkwo",
+      600
+    ],
+    [
+      "factions/humans",
+      "exploits",
+      "locations/soultide-seam",
+      600
+    ],
+    [
+      "colonists/idris-vale",
+      "reveals",
+      "lore/the-stone-that-points-home",
+      600
+    ],
+    [
+      "colonists/senna-rho",
+      "involves",
+      "locations/soultide-seam",
+      600
+    ]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/fall-of-the-tessellate",
+      "lore/fall-of-the-nullborn",
+      "lore/fall-of-the-glasswrights"
+    ],
+    "order": [
+      "lore/fall-of-the-tessellate",
+      "lore/fall-of-the-nullborn",
+      "lore/fall-of-the-glasswrights"
+    ]
+  }
+}
