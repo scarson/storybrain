@@ -1,0 +1,27 @@
+{
+  "today": 430,
+  "half_life_days": 30,
+  "arc_weight": 1.8,
+  "tension": {
+    "colonists/vera": 0.5,
+    "colonists/bjorn": 0.4,
+    "colonists/mira": 0.3,
+    "factions/iron-empire": 0.6,
+    "factions/ash-clan": 0.4,
+    "artifacts/ashmark": 0.7,
+    "artifacts/weeping-crown": 0.5,
+    "lore/ashmark-forged": 0.7,
+    "arcs/iron-empire-reckoning": 0.8
+  },
+  "edge_day": {
+    "lore/ashmark-forged->factions/iron-empire": 412,
+    "colonists/vera->factions/iron-empire": 405,
+    "artifacts/ashmark->factions/iron-empire": 415,
+    "colonists/bjorn->factions/ash-clan": 360
+  },
+  "open_arcs": [
+    {"slug": "arcs/iron-empire-reckoning", "phase": "rising",
+     "days_since_advance": 18, "next_beat_kind": "raid",
+     "next_beat_faction": "factions/iron-empire", "tension": 0.8}
+  ]
+}
