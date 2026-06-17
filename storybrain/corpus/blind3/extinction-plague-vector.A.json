@@ -1,0 +1,1016 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.5,
+      "facts": {
+        "role": "containment-colony",
+        "note": "settlers who made planetfall inside the vector's range before the makers' beacons were read, now committed to finishing a seal they did not build"
+      }
+    },
+    {
+      "slug": "factions/the-cradlekeepers",
+      "type": "faction",
+      "tension": 0.62,
+      "facts": {
+        "alien_type": "dormant-xeno-sleepers",
+        "trait": "the makers themselves, who sealed into quarantine-sleep behind their own unfinished containment rather than die",
+        "status": "dormant",
+        "note": "wakeable as allies who know the recipe by heart, or already turned carriers; no record says which vault holds which sleeper"
+      }
+    },
+    {
+      "slug": "factions/the-stillborn-host",
+      "type": "faction",
+      "tension": 0.68,
+      "facts": {
+        "alien_type": "dormant-xeno-carriers",
+        "trait": "the sleepers the vector reached before the vaults closed, sealed beside the makers they can no longer be told apart from",
+        "status": "dormant",
+        "note": "their waking is itself the outbreak; every stir on a drifting hulk is one of them surfacing toward consciousness"
+      }
+    },
+    {
+      "slug": "factions/the-vector",
+      "type": "faction",
+      "tension": 0.78,
+      "facts": {
+        "alien_type": "dormant-self-replicating-plague",
+        "trait": "the engineered pathogen that hides in the carriers' marrow and rides the makers' own lore-glyphs, sleeping until a seal is broken",
+        "status": "dormant",
+        "note": "this world's strain is biological-memetic: it spreads first through the meaning of a cracked relic, then through the body that read it"
+      }
+    },
+    {
+      "slug": "locations/the-foam-fields",
+      "type": "location",
+      "tension": 0.36,
+      "facts": {
+        "resource": "quarantine-foam",
+        "note": "the salt flats where the makers cast their last setting foam, the only substance that still holds a fresh breach for an hour"
+      }
+    },
+    {
+      "slug": "locations/the-salt-vaults",
+      "type": "location",
+      "tension": 0.45,
+      "facts": {
+        "resource": "dormancy-salt",
+        "note": "the buried vault-fields packed in dormancy-salt that keeps a sleeper under; the salt is thinning and no one is replenishing it"
+      }
+    },
+    {
+      "slug": "events/the-first-breach",
+      "type": "event",
+      "tension": 0.62,
+      "day": 100,
+      "facts": {
+        "title": "The makers confirm the vector is real and lethal",
+        "text": "The Cradlekeepers' own assay decks record the moment a containment trial failed and the engineered strain proved it could rewrite a body from the marrow out. It is the proof the colony will later need that this is no ruin to autopsy."
+      }
+    },
+    {
+      "slug": "events/the-naming-of-the-strain",
+      "type": "event",
+      "tension": 0.6,
+      "day": 200,
+      "facts": {
+        "title": "The makers name what they are fighting",
+        "text": "The host-line that would become the Stillborn Host catalogs the strain's nature: it travels first through read meaning, then through flesh. Naming it is the only reason a seal was ever conceivable."
+      }
+    },
+    {
+      "slug": "events/the-dormancy-discovery",
+      "type": "event",
+      "tension": 0.66,
+      "day": 300,
+      "facts": {
+        "title": "The makers learn what holds it asleep",
+        "text": "In the salt vaults the makers find that dormancy-salt and a held cold-glyph keep the vector under. They learn the exact condition a seal must hold and, with it, the exact mistake that wakes the thing."
+      }
+    },
+    {
+      "slug": "events/the-keystone-cast",
+      "type": "event",
+      "tension": 0.7,
+      "day": 500,
+      "facts": {
+        "title": "The makers cast the keystone the seal was built around",
+        "text": "A single load-bearing relic is forged to anchor the whole containment lattice. The Cradlekeepers build everything else around it, then run out of time before they can set it."
+      }
+    },
+    {
+      "slug": "events/the-quarantine-sleep",
+      "type": "event",
+      "tension": 0.95,
+      "day": 800,
+      "facts": {
+        "title": "The makers seal themselves into quarantine-sleep beside the thing that hunted them",
+        "text": "With the seal unfinished, the Cradlekeepers chose dormancy over death: they sealed into the salt vaults alongside the carriers they could no longer separate from their own, gambling that someone would one day read the beacons and finish the lattice. This is the moment the whole world hinges on, the seal that was never finished.",
+        "is_pivot": true
+      }
+    },
+    {
+      "slug": "artifacts/the-failed-trial-deck",
+      "type": "artifact",
+      "tension": 0.62,
+      "facts": {
+        "archetype": "quarantine-relic",
+        "maker": "the-cradlekeepers",
+        "note": "a sealed assay deck from the first breach; reading it is safe, but it is wired to a live sample chamber"
+      }
+    },
+    {
+      "slug": "artifacts/the-marrow-assay",
+      "type": "artifact",
+      "tension": 0.7,
+      "facts": {
+        "archetype": "cure-fragment",
+        "maker": "the-stillborn-host",
+        "note": "an analysis core that names the strain's nature; cracked out of order it aerosolizes a dormant sample"
+      }
+    },
+    {
+      "slug": "artifacts/the-cold-glyph",
+      "type": "artifact",
+      "tension": 0.68,
+      "facts": {
+        "archetype": "dormancy-trigger",
+        "maker": "the-cradlekeepers",
+        "note": "the held condition that keeps a sleeper under; misread, it is also the precise gesture that wakes one"
+      }
+    },
+    {
+      "slug": "artifacts/the-keystone-relic",
+      "type": "artifact",
+      "tension": 0.74,
+      "facts": {
+        "archetype": "containment-keystone",
+        "maker": "the-cradlekeepers",
+        "note": "the load-bearing piece the makers' lattice was cast around and never set; inert alone, decisive in sequence"
+      }
+    },
+    {
+      "slug": "artifacts/the-sealwrights-recipe",
+      "type": "artifact",
+      "tension": 0.76,
+      "facts": {
+        "archetype": "recipe-shard",
+        "maker": "the-cradlekeepers",
+        "note": "the makers' own ordered protocol for assembling the seal, written so the steps cannot be done out of order without reseeding the strain"
+      }
+    },
+    {
+      "slug": "artifacts/the-host-vault-key",
+      "type": "artifact",
+      "tension": 0.72,
+      "facts": {
+        "archetype": "sealed-vault-key",
+        "maker": "the-stillborn-host",
+        "note": "opens a salt vault; whether the sleeper inside wakes as a maker who knows the recipe or as a carrier depends on reading the cold-glyph first"
+      }
+    },
+    {
+      "slug": "lore/proof-the-vector-is-real-and-lethal",
+      "type": "lore",
+      "tension": 0.85,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "step": "0-proof",
+        "text": "The makers' record proves the extinction-vector is real, self-replicating and lethal, and that they SEALED rather than died. There is no corpse-civ here; there are sleepers and a clock."
+      }
+    },
+    {
+      "slug": "lore/identify-the-vectors-nature",
+      "type": "lore",
+      "tension": 0.85,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "step": "1-identify",
+        "text": "The assay identifies this world's strain as a biological-memetic pathogen that spreads first through the meaning of a read relic and then through the marrow, so any seal must hold both lore and bodies."
+      }
+    },
+    {
+      "slug": "lore/find-the-dormancy-trigger",
+      "type": "lore",
+      "tension": 0.85,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "step": "2-trigger",
+        "text": "The cold-glyph reveals exactly what keeps the vector asleep, naming the condition the seal must hold and the single misreading that wakes a carrier."
+      }
+    },
+    {
+      "slug": "lore/locate-the-keystone-relic",
+      "type": "lore",
+      "tension": 0.85,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "step": "3-keystone",
+        "text": "The keystone is located: the load-bearing relic the makers' lattice was cast around and abandoned, useless until the prior steps are in hand."
+      }
+    },
+    {
+      "slug": "lore/assemble-the-seal",
+      "type": "lore",
+      "tension": 0.9,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "step": "4-assemble",
+        "text": "With proof, nature, trigger and keystone in hand and in order, the seal assembles and finishes the containment the makers never closed, after which a vault can finally be opened safely."
+      }
+    },
+    {
+      "slug": "lore/the-wired-sample-chamber",
+      "type": "lore",
+      "tension": 0.6,
+      "facts": {
+        "subtype": "flavor",
+        "revealed": false,
+        "text": "A footnote in the trial deck warns that the deck is tethered to a live sample chamber: read the record, but never pry the housing, or the chamber vents."
+      }
+    },
+    {
+      "slug": "lore/the-host-lines-confession",
+      "type": "lore",
+      "tension": 0.62,
+      "facts": {
+        "subtype": "flavor",
+        "revealed": false,
+        "text": "The host-line that became the Stillborn Host left a confession in the assay core: they volunteered to be the carriers so the makers could study the strain without dying first."
+      }
+    },
+    {
+      "slug": "lore/the-held-condition",
+      "type": "lore",
+      "tension": 0.64,
+      "facts": {
+        "subtype": "flavor",
+        "revealed": false,
+        "text": "The cold-glyph encodes a held condition — a temperature, a cadence, a refusal to read aloud — that must never lapse while a vault stands open."
+      }
+    },
+    {
+      "slug": "lore/the-unset-lattice",
+      "type": "lore",
+      "tension": 0.66,
+      "facts": {
+        "subtype": "flavor",
+        "revealed": false,
+        "text": "Survey glyphs show the lattice cast around the keystone but never set: every strut points inward at an empty socket where the load-bearing piece was meant to lock."
+      }
+    },
+    {
+      "slug": "lore/the-out-of-order-clause",
+      "type": "lore",
+      "tension": 0.68,
+      "facts": {
+        "subtype": "flavor",
+        "revealed": false,
+        "text": "The sealwrights' protocol opens with a clause in the makers' hand: do the steps out of order and you do not fail the seal, you reseed the strain."
+      }
+    },
+    {
+      "slug": "lore/which-vault-holds-which",
+      "type": "lore",
+      "tension": 0.7,
+      "facts": {
+        "subtype": "flavor",
+        "revealed": false,
+        "text": "The vault-key's ledger is deliberately scrambled: no entry records whether a given vault holds a maker who knows the recipe or a carrier who is the outbreak."
+      }
+    },
+    {
+      "slug": "colonists/mara-okonkwo",
+      "type": "colonist",
+      "tension": 0.6,
+      "facts": {
+        "role": "containment lead",
+        "species": "human",
+        "stance": "refuses to crack any relic before the recipe-shard is read and the steps are confirmed in order",
+        "live": true,
+        "skills": {
+          "research": 16,
+          "social": 14,
+          "medicine": 11,
+          "crafting": 9,
+          "shooting": 6,
+          "melee": 5
+        },
+        "passions": [
+          "research",
+          "social"
+        ],
+        "want": "to assemble the seal in the makers' exact order before the carrier wakes, and to be the one who decides when a vault is opened",
+        "skill_profile": "colonist"
+      }
+    },
+    {
+      "slug": "colonists/devrant-isk",
+      "type": "colonist",
+      "tension": 0.7,
+      "facts": {
+        "role": "relic-runner",
+        "species": "human",
+        "stance": "already cracked the marrow-assay out of order to win the race early; may already be exposed",
+        "live": true,
+        "skills": {
+          "shooting": 15,
+          "melee": 13,
+          "crafting": 12,
+          "research": 7,
+          "medicine": 4,
+          "social": 6
+        },
+        "passions": [
+          "shooting",
+          "crafting"
+        ],
+        "want": "to outrun the salt-clock and reach the keystone first, proving speed beats Mara's caution even if it cost him his own blood",
+        "skill_profile": "colonist"
+      }
+    },
+    {
+      "slug": "colonists/ilse-vantar",
+      "type": "colonist",
+      "tension": 0.55,
+      "facts": {
+        "role": "glyph-translator",
+        "species": "human",
+        "stance": "the only one who can read the cold-glyph, and therefore the most exposed to a vector that travels through meaning",
+        "live": true,
+        "skills": {
+          "research": 18,
+          "social": 10,
+          "crafting": 8,
+          "medicine": 7,
+          "shooting": 3,
+          "melee": 2
+        },
+        "passions": [
+          "research"
+        ],
+        "want": "to read the cold-glyph cleanly enough to hold the dormancy condition, without letting its meaning take root in her",
+        "skill_profile": "colonist"
+      }
+    },
+    {
+      "slug": "colonists/the-archivist-soren",
+      "type": "colonist",
+      "tension": 0.5,
+      "facts": {
+        "role": "beacon-archivist",
+        "species": "human",
+        "stance": "believes a maker can be woken safely as an ally and is quietly preparing to open the host-vault",
+        "live": true,
+        "skills": {
+          "research": 14,
+          "social": 15,
+          "medicine": 12,
+          "crafting": 6,
+          "shooting": 4,
+          "melee": 3
+        },
+        "passions": [
+          "social",
+          "medicine"
+        ],
+        "want": "to wake a Cradlekeeper as a living ally who can teach the seal by heart, before the colony has to guess it alone",
+        "skill_profile": "colonist"
+      }
+    },
+    {
+      "slug": "colonists/halden-ree",
+      "type": "colonist",
+      "tension": 0.58,
+      "facts": {
+        "role": "vault-warden",
+        "species": "human",
+        "stance": "guards the salt vaults and replenishes the dormancy-salt by hand, the last brake on a stirring sleeper",
+        "live": true,
+        "skills": {
+          "crafting": 16,
+          "melee": 14,
+          "medicine": 10,
+          "shooting": 11,
+          "research": 6,
+          "social": 7
+        },
+        "passions": [
+          "crafting",
+          "melee"
+        ],
+        "want": "to keep every vault salted and shut until Mara says otherwise, and to never let Soren open one on a hunch",
+        "skill_profile": "colonist"
+      }
+    },
+    {
+      "slug": "colonists/the-sleeper-vael",
+      "type": "colonist",
+      "tension": 0.8,
+      "facts": {
+        "role": "sealed maker-sleeper",
+        "species": "alien",
+        "faction": "factions/the-cradlekeepers",
+        "stance": "a Cradlekeeper sealed mid-protocol who carries the seal-order by heart; if woken clean she is the colony's best ally, if woken wrong she surfaces as a carrier",
+        "live": false,
+        "dormant": true,
+        "wakeable": true,
+        "skills": {
+          "research": 20,
+          "crafting": 17,
+          "medicine": 15,
+          "social": 12,
+          "melee": 4,
+          "shooting": 2
+        },
+        "passions": [
+          "research",
+          "crafting"
+        ],
+        "want": "to wake into hands that read the cold-glyph first, so she can finish the seal she sealed herself behind, not breach it",
+        "skill_profile": "colonist"
+      }
+    },
+    {
+      "slug": "colonists/the-quarantined-tsenn",
+      "type": "colonist",
+      "tension": 0.85,
+      "facts": {
+        "role": "quarantined host-survivor",
+        "species": "alien",
+        "faction": "factions/the-stillborn-host",
+        "stance": "a Stillborn Host survivor sealed beside the makers, no longer separable from the carriers; his waking is itself the outbreak the salt is holding back",
+        "live": false,
+        "dormant": true,
+        "wakeable": true,
+        "danger": "waking him is the breach",
+        "skills": {
+          "medicine": 13,
+          "research": 11,
+          "melee": 9,
+          "social": 8,
+          "crafting": 7,
+          "shooting": 5
+        },
+        "passions": [
+          "medicine"
+        ],
+        "want": "to be let sleep — every stir toward consciousness is the strain reaching for a body, and he knows it",
+        "skill_profile": "colonist"
+      }
+    },
+    {
+      "slug": "locations/threshold-landing",
+      "type": "location",
+      "tension": 0.5,
+      "facts": {
+        "kind": "human-colony",
+        "note": "the colony dome, the nearest unsealed habitat to a stirring carrier",
+        "live": true
+      }
+    },
+    {
+      "slug": "locations/drift-carrier-ninth",
+      "type": "location",
+      "tension": 0.75,
+      "facts": {
+        "kind": "drifting-carrier-hulk",
+        "note": "a derelict whose sealed sleeper has begun to stir; its salt is failing on its own schedule",
+        "live": true
+      }
+    },
+    {
+      "slug": "arc/the-containment-race",
+      "type": "arc",
+      "tension": 0.95,
+      "facts": {
+        "phase": "rising",
+        "state": "open",
+        "present_stakes": "the sleeper on drift-carrier-ninth is stirring as its dormancy-salt fails, and threshold-landing sits inside its range; the makers' half-finished seal is the only thing that can hold it",
+        "win_condition": "read the recipe and assemble the seal in order (proof -> identify -> trigger -> keystone -> assemble) before the carrier fully wakes, after which a maker can be woken safely as an ally",
+        "fail_state": "cracking a relic out of order or opening the host-vault before the cold-glyph is read reseeds the strain inside the colony NOW or wakes the Stillborn Host carrier; extinction by the colonists' own hand",
+        "next_beat_trigger": "Devrant's out-of-order crack of the marrow-assay starts showing in the foam fields, forcing Mara to choose between quarantining him and losing a runner mid-race",
+        "next_beat_stakes": "if the cold-glyph is not read before Soren opens the host-vault, the woken sleeper is a carrier and the dome breaches",
+        "note": "a forward containment protocol racing a present sleeping threat, not an autopsy of how the makers fell"
+      }
+    }
+  ],
+  "edges": [
+    [
+      "events/the-first-breach",
+      "involves",
+      "factions/the-cradlekeepers",
+      100
+    ],
+    [
+      "factions/the-cradlekeepers",
+      "rival_of",
+      "factions/the-vector",
+      100
+    ],
+    [
+      "events/the-naming-of-the-strain",
+      "involves",
+      "factions/the-stillborn-host",
+      200
+    ],
+    [
+      "events/the-naming-of-the-strain",
+      "caused_by",
+      "events/the-first-breach",
+      200
+    ],
+    [
+      "events/the-dormancy-discovery",
+      "involves",
+      "factions/the-cradlekeepers",
+      300
+    ],
+    [
+      "events/the-dormancy-discovery",
+      "caused_by",
+      "events/the-naming-of-the-strain",
+      300
+    ],
+    [
+      "factions/the-cradlekeepers",
+      "settled",
+      "locations/the-salt-vaults",
+      300
+    ],
+    [
+      "events/the-keystone-cast",
+      "involves",
+      "factions/the-cradlekeepers",
+      500
+    ],
+    [
+      "events/the-keystone-cast",
+      "caused_by",
+      "events/the-dormancy-discovery",
+      500
+    ],
+    [
+      "factions/the-cradlekeepers",
+      "settled",
+      "locations/the-foam-fields",
+      500
+    ],
+    [
+      "events/the-quarantine-sleep",
+      "caused_by",
+      "events/the-keystone-cast",
+      800
+    ],
+    [
+      "factions/the-cradlekeepers",
+      "involved_in",
+      "events/the-quarantine-sleep",
+      800
+    ],
+    [
+      "factions/the-stillborn-host",
+      "involved_in",
+      "events/the-quarantine-sleep",
+      800
+    ],
+    [
+      "factions/the-vector",
+      "involved_in",
+      "events/the-quarantine-sleep",
+      800
+    ],
+    [
+      "factions/the-stillborn-host",
+      "carries",
+      "factions/the-vector",
+      800
+    ],
+    [
+      "artifacts/the-failed-trial-deck",
+      "forged_by",
+      "factions/the-cradlekeepers",
+      100
+    ],
+    [
+      "artifacts/the-marrow-assay",
+      "forged_by",
+      "factions/the-stillborn-host",
+      200
+    ],
+    [
+      "artifacts/the-cold-glyph",
+      "forged_by",
+      "factions/the-cradlekeepers",
+      300
+    ],
+    [
+      "artifacts/the-keystone-relic",
+      "forged_by",
+      "factions/the-cradlekeepers",
+      500
+    ],
+    [
+      "artifacts/the-sealwrights-recipe",
+      "forged_by",
+      "factions/the-cradlekeepers",
+      500
+    ],
+    [
+      "artifacts/the-host-vault-key",
+      "forged_by",
+      "factions/the-stillborn-host",
+      800
+    ],
+    [
+      "artifacts/the-failed-trial-deck",
+      "drops",
+      "lore/proof-the-vector-is-real-and-lethal",
+      800
+    ],
+    [
+      "artifacts/the-failed-trial-deck",
+      "drops",
+      "lore/the-wired-sample-chamber",
+      800
+    ],
+    [
+      "artifacts/the-failed-trial-deck",
+      "drops",
+      "lore/the-host-lines-confession",
+      800
+    ],
+    [
+      "artifacts/the-marrow-assay",
+      "drops",
+      "lore/proof-the-vector-is-real-and-lethal",
+      800
+    ],
+    [
+      "artifacts/the-marrow-assay",
+      "drops",
+      "lore/identify-the-vectors-nature",
+      800
+    ],
+    [
+      "artifacts/the-marrow-assay",
+      "drops",
+      "lore/the-host-lines-confession",
+      800
+    ],
+    [
+      "artifacts/the-cold-glyph",
+      "drops",
+      "lore/identify-the-vectors-nature",
+      800
+    ],
+    [
+      "artifacts/the-cold-glyph",
+      "drops",
+      "lore/find-the-dormancy-trigger",
+      800
+    ],
+    [
+      "artifacts/the-cold-glyph",
+      "drops",
+      "lore/the-held-condition",
+      800
+    ],
+    [
+      "artifacts/the-keystone-relic",
+      "drops",
+      "lore/locate-the-keystone-relic",
+      800
+    ],
+    [
+      "artifacts/the-keystone-relic",
+      "drops",
+      "lore/assemble-the-seal",
+      800
+    ],
+    [
+      "artifacts/the-keystone-relic",
+      "drops",
+      "lore/the-unset-lattice",
+      800
+    ],
+    [
+      "artifacts/the-sealwrights-recipe",
+      "drops",
+      "lore/locate-the-keystone-relic",
+      800
+    ],
+    [
+      "artifacts/the-sealwrights-recipe",
+      "drops",
+      "lore/assemble-the-seal",
+      800
+    ],
+    [
+      "artifacts/the-sealwrights-recipe",
+      "drops",
+      "lore/the-out-of-order-clause",
+      800
+    ],
+    [
+      "artifacts/the-host-vault-key",
+      "drops",
+      "lore/find-the-dormancy-trigger",
+      800
+    ],
+    [
+      "artifacts/the-host-vault-key",
+      "drops",
+      "lore/assemble-the-seal",
+      800
+    ],
+    [
+      "artifacts/the-host-vault-key",
+      "drops",
+      "lore/which-vault-holds-which",
+      800
+    ],
+    [
+      "lore/identify-the-vectors-nature",
+      "prerequisite",
+      "lore/proof-the-vector-is-real-and-lethal",
+      800
+    ],
+    [
+      "lore/find-the-dormancy-trigger",
+      "prerequisite",
+      "lore/identify-the-vectors-nature",
+      800
+    ],
+    [
+      "lore/locate-the-keystone-relic",
+      "prerequisite",
+      "lore/find-the-dormancy-trigger",
+      800
+    ],
+    [
+      "lore/assemble-the-seal",
+      "prerequisite",
+      "lore/locate-the-keystone-relic",
+      800
+    ],
+    [
+      "lore/proof-the-vector-is-real-and-lethal",
+      "reveals",
+      "factions/the-cradlekeepers",
+      800
+    ],
+    [
+      "lore/identify-the-vectors-nature",
+      "reveals",
+      "factions/the-vector",
+      800
+    ],
+    [
+      "lore/find-the-dormancy-trigger",
+      "reveals",
+      "factions/the-stillborn-host",
+      800
+    ],
+    [
+      "lore/locate-the-keystone-relic",
+      "reveals",
+      "factions/the-cradlekeepers",
+      800
+    ],
+    [
+      "lore/assemble-the-seal",
+      "reveals",
+      "factions/the-cradlekeepers",
+      800
+    ],
+    [
+      "colonists/mara-okonkwo",
+      "leads",
+      "factions/humans",
+      800
+    ],
+    [
+      "colonists/devrant-isk",
+      "member_of",
+      "factions/humans",
+      800
+    ],
+    [
+      "colonists/ilse-vantar",
+      "member_of",
+      "factions/humans",
+      800
+    ],
+    [
+      "colonists/the-archivist-soren",
+      "member_of",
+      "factions/humans",
+      800
+    ],
+    [
+      "colonists/halden-ree",
+      "member_of",
+      "factions/humans",
+      800
+    ],
+    [
+      "colonists/the-sleeper-vael",
+      "member_of",
+      "factions/the-cradlekeepers",
+      800
+    ],
+    [
+      "colonists/the-quarantined-tsenn",
+      "member_of",
+      "factions/the-stillborn-host",
+      800
+    ],
+    [
+      "colonists/the-sleeper-vael",
+      "sealed_in",
+      "locations/the-salt-vaults",
+      800
+    ],
+    [
+      "colonists/the-quarantined-tsenn",
+      "sealed_in",
+      "locations/drift-carrier-ninth",
+      800
+    ],
+    [
+      "factions/humans",
+      "settled",
+      "locations/threshold-landing",
+      800
+    ],
+    [
+      "locations/threshold-landing",
+      "inside_range_of",
+      "locations/drift-carrier-ninth",
+      800
+    ],
+    [
+      "factions/the-vector",
+      "stirs_in",
+      "locations/drift-carrier-ninth",
+      800
+    ],
+    [
+      "factions/the-stillborn-host",
+      "sealed_in",
+      "locations/drift-carrier-ninth",
+      800
+    ],
+    [
+      "colonists/devrant-isk",
+      "cracked_out_of_order",
+      "artifacts/the-marrow-assay",
+      800
+    ],
+    [
+      "colonists/ilse-vantar",
+      "sought_by",
+      "factions/the-vector",
+      800
+    ],
+    [
+      "colonists/the-archivist-soren",
+      "owns",
+      "artifacts/the-host-vault-key",
+      800
+    ],
+    [
+      "colonists/devrant-isk",
+      "rival_of",
+      "colonists/mara-okonkwo",
+      800
+    ],
+    [
+      "colonists/mara-okonkwo",
+      "ally_of",
+      "colonists/ilse-vantar",
+      800
+    ],
+    [
+      "colonists/mara-okonkwo",
+      "rival_of",
+      "colonists/the-archivist-soren",
+      800
+    ],
+    [
+      "colonists/halden-ree",
+      "ally_of",
+      "colonists/mara-okonkwo",
+      800
+    ],
+    [
+      "colonists/halden-ree",
+      "grudge_against",
+      "colonists/the-archivist-soren",
+      800
+    ],
+    [
+      "colonists/devrant-isk",
+      "lover_of",
+      "colonists/ilse-vantar",
+      800
+    ],
+    [
+      "colonists/devrant-isk",
+      "owes",
+      "colonists/halden-ree",
+      800
+    ],
+    [
+      "colonists/the-archivist-soren",
+      "kin_of",
+      "colonists/ilse-vantar",
+      800
+    ],
+    [
+      "colonists/the-archivist-soren",
+      "ally_of",
+      "colonists/the-sleeper-vael",
+      800
+    ],
+    [
+      "colonists/mara-okonkwo",
+      "rival_of",
+      "colonists/the-sleeper-vael",
+      800
+    ],
+    [
+      "colonists/halden-ree",
+      "grudge_against",
+      "colonists/the-quarantined-tsenn",
+      800
+    ],
+    [
+      "arc/the-containment-race",
+      "begins",
+      "factions/humans",
+      800
+    ],
+    [
+      "colonists/mara-okonkwo",
+      "races_to_assemble",
+      "arc/the-containment-race",
+      800
+    ],
+    [
+      "arc/the-containment-race",
+      "threatens",
+      "locations/threshold-landing",
+      800
+    ],
+    [
+      "arc/the-containment-race",
+      "threatened_by",
+      "locations/drift-carrier-ninth",
+      800
+    ],
+    [
+      "arc/the-containment-race",
+      "won_by",
+      "lore/assemble-the-seal",
+      800
+    ],
+    [
+      "factions/the-vector",
+      "threatens",
+      "colonists/ilse-vantar",
+      800
+    ],
+    [
+      "artifacts/the-host-vault-key",
+      "threatens",
+      "arc/the-containment-race",
+      800
+    ]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/proof-the-vector-is-real-and-lethal",
+      "lore/identify-the-vectors-nature",
+      "lore/find-the-dormancy-trigger",
+      "lore/locate-the-keystone-relic",
+      "lore/assemble-the-seal"
+    ],
+    "order": [
+      "lore/proof-the-vector-is-real-and-lethal",
+      "lore/identify-the-vectors-nature",
+      "lore/find-the-dormancy-trigger",
+      "lore/locate-the-keystone-relic",
+      "lore/assemble-the-seal"
+    ],
+    "order_relation": "prerequisite"
+  }
+}

@@ -1,0 +1,756 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.45,
+      "facts": {
+        "role": "newcomers",
+        "live_status": "homesteading a world that keeps helping them NOW",
+        "note": "landed on a planet that is too kind to be wild; began to suspect they are being tended"
+      }
+    },
+    {
+      "slug": "civs/the-gardeners",
+      "type": "faction",
+      "tension": 0.6,
+      "facts": {
+        "alien_type": "hidden-stewards",
+        "trait": "present and acting this very season — they tilt rivers, answer blights, steer lineages by hand and watch the result; felt as an aimed-ness in the land and a pressure of attention whenever a tool is used, never once seen",
+        "status": "hidden",
+        "fate": "still working the garden; the colony's arrival is simply the newest row planted"
+      }
+    },
+    {
+      "slug": "civs/the-loam-tenders",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "hidden-undercaste",
+        "trait": "the lesser hands that keep the soil-shrines fed and the gene-looms threaded between the Gardeners' great workings; closer to the surface, more often half-glimpsed",
+        "status": "hidden",
+        "fate": "still tending; sometimes leave a shrine warm so a clever guest will find it"
+      }
+    },
+    {
+      "slug": "civs/the-first-cultivars",
+      "type": "faction",
+      "tension": 0.7,
+      "facts": {
+        "alien_type": "earlier-uplifted-lineage",
+        "trait": "the people the Gardeners grew to mind here before the colony came — the precedent the colony is unknowingly repeating",
+        "status": "ascended",
+        "fate": "harvested: grown until ready, then lifted off the world entire and carried inward to whatever the garden feeds; not killed — completed and taken up"
+      }
+    },
+    {
+      "slug": "locations/the-aimed-biosphere",
+      "type": "location",
+      "tension": 0.55,
+      "facts": {
+        "subject": "the engineered living world itself",
+        "danger": 0.9,
+        "live_state": "self-enriching, blight-answering, almost solicitous; the prize and possibly the trap"
+      }
+    },
+    {
+      "slug": "locations/the-gene-loam-beds",
+      "type": "location",
+      "tension": 0.5,
+      "facts": {
+        "subject": "the gene-loam where lineages are quietly steered",
+        "danger": 0.55,
+        "live_state": "warm, fertile, and watched; what you plant here grows toward something"
+      }
+    },
+    {
+      "slug": "locations/the-soil-shrines",
+      "type": "location",
+      "tension": 0.4,
+      "facts": {
+        "subject": "the shrine-sap wells the Tenders keep",
+        "danger": 0.3,
+        "live_state": "sap rises on a schedule no season explains; drinking it is gratitude, theft, or bait"
+      }
+    },
+    {
+      "slug": "locations/the-empty-cultivar-terraces",
+      "type": "location",
+      "tension": 0.6,
+      "facts": {
+        "live_state": "perfect abandoned farm-terraces of the people who were here before; tools laid down mid-row, no graves",
+        "note": "the human survey camp is pitched at the edge of them"
+      }
+    },
+    {
+      "slug": "figures/the-first-cultivar-elder",
+      "type": "colonist",
+      "tension": 0.5,
+      "facts": {
+        "role": "a voice of the harvested lineage, recovered from a shrine-record",
+        "civ": "the-first-cultivars",
+        "note": "a song pressed into sap, not a body"
+      }
+    },
+    {
+      "slug": "figures/the-loam-tender-near-hand",
+      "type": "colonist",
+      "tension": 0.45,
+      "facts": {
+        "role": "the under-caste hand that keeps the terrace shrines and once let itself be half-seen",
+        "civ": "the-loam-tenders"
+      }
+    },
+    {
+      "slug": "figures/steward-imani-bayode",
+      "type": "colonist",
+      "tension": 0.6,
+      "facts": {
+        "role": "human colony steward",
+        "live": true,
+        "drive": "keep the colony fed AND find out what is feeding us back"
+      }
+    },
+    {
+      "slug": "figures/seedwright-cole-vance",
+      "type": "colonist",
+      "tension": 0.65,
+      "facts": {
+        "role": "human agronomist and tool-hunter",
+        "live": true,
+        "drive": "use every shaping-tool we can dig up; this world wants to give and we should take"
+      }
+    },
+    {
+      "slug": "figures/reader-noor-haddad",
+      "type": "colonist",
+      "tension": 0.6,
+      "facts": {
+        "role": "human xeno-archivist",
+        "live": true,
+        "drive": "read the whole of what the Gardeners are doing TO US before we plant another row"
+      }
+    },
+    {
+      "slug": "figures/midwife-tomas-reyes",
+      "type": "colonist",
+      "tension": 0.55,
+      "facts": {
+        "role": "human gene-loam midwife who tends the colony's first native-born children",
+        "live": true,
+        "drive": "the children born here are changing; I need to know if that is a blessing or a breeding"
+      }
+    },
+    {
+      "slug": "beliefs/the-grateful-guest-creed",
+      "type": "belief",
+      "tension": 0.5,
+      "facts": {
+        "held_by": "seedwright-cole-vance",
+        "claim": "the garden was made welcoming on purpose; accepting its gifts is the only honest answer to a host"
+      }
+    },
+    {
+      "slug": "beliefs/the-fallow-creed",
+      "type": "belief",
+      "tension": 0.55,
+      "facts": {
+        "held_by": "reader-noor-haddad",
+        "claim": "the ones before us were tended exactly this gently, right up until they were taken; we should lie fallow and refuse to ripen"
+      }
+    },
+    {
+      "slug": "artifacts/terraforming-seed-of-the-tenders",
+      "type": "artifact",
+      "tension": 0.55,
+      "facts": {
+        "archetype": "terraforming-seed",
+        "maker": "the-loam-tenders",
+        "shapes": "the-aimed-biosphere",
+        "found": "pressed into the soil at the edge of the terraces, still viable"
+      }
+    },
+    {
+      "slug": "artifacts/the-gene-loom",
+      "type": "artifact",
+      "tension": 0.7,
+      "facts": {
+        "archetype": "gene-loom",
+        "maker": "the-gardeners",
+        "shapes": "the-gene-loam-beds",
+        "note": "threads a lineage toward a shape its keeper did not choose; using it tilts your own children"
+      }
+    },
+    {
+      "slug": "artifacts/the-listening-soil-shrine",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "soil-shrine",
+        "maker": "the-loam-tenders",
+        "shapes": "the-soil-shrines",
+        "note": "drink and you feel the attention turn toward you"
+      }
+    },
+    {
+      "slug": "artifacts/the-cultivar-lineage-key",
+      "type": "artifact",
+      "tension": 0.65,
+      "facts": {
+        "archetype": "lineage-key",
+        "maker": "the-first-cultivars",
+        "note": "the harvested people's own record of how they were grown; reads like a diary and a recipe at once"
+      }
+    },
+    {
+      "slug": "artifacts/the-gardeners-shaping-tool",
+      "type": "artifact",
+      "tension": 0.75,
+      "facts": {
+        "archetype": "shaping-tool",
+        "maker": "the-gardeners",
+        "note": "the makers' own hand-tool for steering a world; the most attention-drawing object on the planet"
+      }
+    },
+    {
+      "slug": "artifacts/the-attention-bell",
+      "type": "artifact",
+      "tension": 0.8,
+      "facts": {
+        "archetype": "attention-bell",
+        "maker": "the-gardeners",
+        "note": "rings only the Gardeners can hear; the last step that tells them a row is ripe",
+        "live_risk": "sounding it deliberately calls a harvest"
+      }
+    },
+    {
+      "slug": "lore/frag-the-world-is-aimed-not-wild",
+      "type": "lore",
+      "tension": 0.7,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "claim": "this biosphere was not found, it was MADE convenient — rivers, soils, and blight-answers are placed by hand, not by chance"
+      }
+    },
+    {
+      "slug": "lore/frag-tenders-keep-it-between-workings",
+      "type": "lore",
+      "tension": 0.74,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "claim": "a lesser hidden caste maintains the shrines and looms in the long quiet between the Gardeners' great workings; the upkeep is constant and deliberate"
+      }
+    },
+    {
+      "slug": "lore/frag-a-lineage-was-grown-before-us",
+      "type": "lore",
+      "tension": 0.78,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "claim": "a people was cultivated to sapience on these terraces before the colony arrived, by the same gentle steering we are feeling now"
+      }
+    },
+    {
+      "slug": "lore/frag-they-were-harvested-not-killed",
+      "type": "lore",
+      "tension": 0.85,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "claim": "the ones before us did not fall; when they were ripe they were lifted off the world whole and carried inward — taken UP, not cut down"
+      }
+    },
+    {
+      "slug": "lore/frag-we-are-the-next-row",
+      "type": "lore",
+      "tension": 0.9,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "claim": "the colony is being grown toward the same readiness; what we are being shaped INTO is the still-unfolding answer, and a bell decides when the row is reaped"
+      }
+    },
+    {
+      "slug": "lore/cultivars-left-no-graves",
+      "type": "lore",
+      "tension": 0.5,
+      "facts": {
+        "claim": "every terrace of the people-before was found tidy and bodiless; tools laid down mid-row as if they simply rose and went"
+      }
+    },
+    {
+      "slug": "lore/the-gifts-are-free-but-watched",
+      "type": "lore",
+      "tension": 0.45,
+      "facts": {
+        "claim": "the world's bounty costs nothing in scarcity and everything in notice; each tool used turns more of the unseen attention toward its user"
+      }
+    },
+    {
+      "slug": "lore/the-loom-tilts-the-user",
+      "type": "lore",
+      "tension": 0.6,
+      "facts": {
+        "claim": "the gene-loom does not only shape crops; lineages worked near it bend, and the colony's native-born children are already not quite their parents"
+      }
+    },
+    {
+      "slug": "lore/sap-carries-the-cultivar-song",
+      "type": "lore",
+      "tension": 0.55,
+      "facts": {
+        "claim": "the shrine-sap holds a recorded voice of the harvested elders, repeating the steps of their own growing like a lullaby"
+      }
+    },
+    {
+      "slug": "lore/the-bell-calls-the-harvest",
+      "type": "lore",
+      "tension": 0.7,
+      "facts": {
+        "claim": "the attention-bell is the harvest signal; ringing it tells the Gardeners a lineage has reached the shape they were growing it toward"
+      }
+    },
+    {
+      "slug": "events/colony-first-tilling",
+      "type": "event",
+      "tension": 0.45,
+      "facts": {
+        "kind": "arrival",
+        "title": "the colony breaks ground and the world answers too kindly",
+        "live": true
+      }
+    },
+    {
+      "slug": "events/the-harvest-the-gardeners-wait-for",
+      "type": "event",
+      "tension": 0.95,
+      "facts": {
+        "kind": "harvest",
+        "title": "the harvest the Gardeners have patiently waited for",
+        "note": "not a fall but a reaping-up; reconstructed in the present as the colony nears the same ripeness",
+        "climax": true
+      }
+    },
+    {
+      "slug": "arc/should-we-ring-the-bell",
+      "type": "arc",
+      "tension": 0.92,
+      "facts": {
+        "phase": "rising",
+        "live": true,
+        "stakes": "ringing the attention-bell may complete us into whatever the Gardeners grow guests into — a gift, or the moment a ripe row is reaped",
+        "next_beat_event": "events/the-harvest-the-gardeners-wait-for",
+        "next_beat_note": "the colony's first native-born children are testing ripe and the bell sits within reach",
+        "present_tension": "the colony is split between accepting the harvest and going deliberately fallow",
+        "resolution": "undecided"
+      }
+    }
+  ],
+  "edges": [
+    [
+      "factions/humans",
+      "homesteads",
+      "locations/the-aimed-biosphere"
+    ],
+    [
+      "factions/humans",
+      "works",
+      "locations/the-gene-loam-beds"
+    ],
+    [
+      "factions/humans",
+      "camps_at",
+      "locations/the-empty-cultivar-terraces"
+    ],
+    [
+      "civs/the-gardeners",
+      "shaped",
+      "locations/the-aimed-biosphere"
+    ],
+    [
+      "civs/the-gardeners",
+      "steers",
+      "locations/the-gene-loam-beds"
+    ],
+    [
+      "civs/the-loam-tenders",
+      "tends",
+      "locations/the-soil-shrines"
+    ],
+    [
+      "civs/the-loam-tenders",
+      "serves",
+      "civs/the-gardeners"
+    ],
+    [
+      "civs/the-first-cultivars",
+      "grew_on",
+      "locations/the-empty-cultivar-terraces"
+    ],
+    [
+      "civs/the-first-cultivars",
+      "came_before",
+      "factions/humans"
+    ],
+    [
+      "figures/the-first-cultivar-elder",
+      "member_of",
+      "civs/the-first-cultivars"
+    ],
+    [
+      "figures/the-loam-tender-near-hand",
+      "member_of",
+      "civs/the-loam-tenders"
+    ],
+    [
+      "figures/the-first-cultivar-elder",
+      "recorded_in",
+      "artifacts/the-cultivar-lineage-key"
+    ],
+    [
+      "figures/steward-imani-bayode",
+      "leads",
+      "factions/humans"
+    ],
+    [
+      "figures/seedwright-cole-vance",
+      "member_of",
+      "factions/humans"
+    ],
+    [
+      "figures/reader-noor-haddad",
+      "member_of",
+      "factions/humans"
+    ],
+    [
+      "figures/midwife-tomas-reyes",
+      "member_of",
+      "factions/humans"
+    ],
+    [
+      "figures/seedwright-cole-vance",
+      "found",
+      "artifacts/the-attention-bell"
+    ],
+    [
+      "figures/reader-noor-haddad",
+      "investigates",
+      "artifacts/the-cultivar-lineage-key"
+    ],
+    [
+      "figures/midwife-tomas-reyes",
+      "fears",
+      "artifacts/the-gene-loom"
+    ],
+    [
+      "artifacts/terraforming-seed-of-the-tenders",
+      "shapes",
+      "locations/the-aimed-biosphere"
+    ],
+    [
+      "artifacts/the-gene-loom",
+      "shapes",
+      "locations/the-gene-loam-beds"
+    ],
+    [
+      "artifacts/the-listening-soil-shrine",
+      "shapes",
+      "locations/the-soil-shrines"
+    ],
+    [
+      "artifacts/the-gardeners-shaping-tool",
+      "shapes",
+      "locations/the-aimed-biosphere"
+    ],
+    [
+      "artifacts/terraforming-seed-of-the-tenders",
+      "forged_by",
+      "civs/the-loam-tenders"
+    ],
+    [
+      "artifacts/the-gene-loom",
+      "forged_by",
+      "civs/the-gardeners"
+    ],
+    [
+      "artifacts/the-listening-soil-shrine",
+      "forged_by",
+      "civs/the-loam-tenders"
+    ],
+    [
+      "artifacts/the-cultivar-lineage-key",
+      "forged_by",
+      "civs/the-first-cultivars"
+    ],
+    [
+      "artifacts/the-gardeners-shaping-tool",
+      "forged_by",
+      "civs/the-gardeners"
+    ],
+    [
+      "artifacts/the-attention-bell",
+      "forged_by",
+      "civs/the-gardeners"
+    ],
+    [
+      "artifacts/terraforming-seed-of-the-tenders",
+      "enables",
+      "artifacts/the-listening-soil-shrine"
+    ],
+    [
+      "artifacts/the-listening-soil-shrine",
+      "enables",
+      "artifacts/the-cultivar-lineage-key"
+    ],
+    [
+      "artifacts/the-cultivar-lineage-key",
+      "enables",
+      "artifacts/the-gene-loom"
+    ],
+    [
+      "artifacts/the-gene-loom",
+      "enables",
+      "artifacts/the-gardeners-shaping-tool"
+    ],
+    [
+      "artifacts/the-gardeners-shaping-tool",
+      "enables",
+      "artifacts/the-attention-bell"
+    ],
+    [
+      "artifacts/terraforming-seed-of-the-tenders",
+      "drops",
+      "lore/frag-the-world-is-aimed-not-wild"
+    ],
+    [
+      "artifacts/terraforming-seed-of-the-tenders",
+      "drops",
+      "lore/the-gifts-are-free-but-watched"
+    ],
+    [
+      "artifacts/terraforming-seed-of-the-tenders",
+      "drops",
+      "lore/cultivars-left-no-graves"
+    ],
+    [
+      "artifacts/the-listening-soil-shrine",
+      "drops",
+      "lore/frag-tenders-keep-it-between-workings"
+    ],
+    [
+      "artifacts/the-listening-soil-shrine",
+      "drops",
+      "lore/sap-carries-the-cultivar-song"
+    ],
+    [
+      "artifacts/the-listening-soil-shrine",
+      "drops",
+      "lore/the-gifts-are-free-but-watched"
+    ],
+    [
+      "artifacts/the-cultivar-lineage-key",
+      "drops",
+      "lore/frag-a-lineage-was-grown-before-us"
+    ],
+    [
+      "artifacts/the-cultivar-lineage-key",
+      "drops",
+      "lore/cultivars-left-no-graves"
+    ],
+    [
+      "artifacts/the-cultivar-lineage-key",
+      "drops",
+      "lore/sap-carries-the-cultivar-song"
+    ],
+    [
+      "artifacts/the-gene-loom",
+      "drops",
+      "lore/frag-they-were-harvested-not-killed"
+    ],
+    [
+      "artifacts/the-gene-loom",
+      "drops",
+      "lore/the-loom-tilts-the-user"
+    ],
+    [
+      "artifacts/the-gene-loom",
+      "drops",
+      "lore/frag-a-lineage-was-grown-before-us"
+    ],
+    [
+      "artifacts/the-gardeners-shaping-tool",
+      "drops",
+      "lore/frag-they-were-harvested-not-killed"
+    ],
+    [
+      "artifacts/the-gardeners-shaping-tool",
+      "drops",
+      "lore/frag-the-world-is-aimed-not-wild"
+    ],
+    [
+      "artifacts/the-gardeners-shaping-tool",
+      "drops",
+      "lore/the-loom-tilts-the-user"
+    ],
+    [
+      "artifacts/the-attention-bell",
+      "drops",
+      "lore/frag-we-are-the-next-row"
+    ],
+    [
+      "artifacts/the-attention-bell",
+      "drops",
+      "lore/the-bell-calls-the-harvest"
+    ],
+    [
+      "artifacts/the-attention-bell",
+      "drops",
+      "lore/frag-they-were-harvested-not-killed"
+    ],
+    [
+      "lore/frag-the-world-is-aimed-not-wild",
+      "reveals",
+      "lore/frag-tenders-keep-it-between-workings"
+    ],
+    [
+      "lore/frag-tenders-keep-it-between-workings",
+      "reveals",
+      "lore/frag-a-lineage-was-grown-before-us"
+    ],
+    [
+      "lore/frag-a-lineage-was-grown-before-us",
+      "reveals",
+      "lore/frag-they-were-harvested-not-killed"
+    ],
+    [
+      "lore/frag-they-were-harvested-not-killed",
+      "reveals",
+      "lore/frag-we-are-the-next-row"
+    ],
+    [
+      "lore/frag-the-world-is-aimed-not-wild",
+      "reveals",
+      "locations/the-aimed-biosphere"
+    ],
+    [
+      "lore/frag-tenders-keep-it-between-workings",
+      "reveals",
+      "civs/the-loam-tenders"
+    ],
+    [
+      "lore/frag-a-lineage-was-grown-before-us",
+      "reveals",
+      "civs/the-first-cultivars"
+    ],
+    [
+      "lore/frag-they-were-harvested-not-killed",
+      "reveals",
+      "events/the-harvest-the-gardeners-wait-for"
+    ],
+    [
+      "lore/frag-we-are-the-next-row",
+      "reveals",
+      "civs/the-gardeners"
+    ],
+    [
+      "events/colony-first-tilling",
+      "involves",
+      "factions/humans"
+    ],
+    [
+      "events/the-harvest-the-gardeners-wait-for",
+      "involves",
+      "civs/the-gardeners"
+    ],
+    [
+      "civs/the-first-cultivars",
+      "taken_up_at",
+      "events/the-harvest-the-gardeners-wait-for"
+    ],
+    [
+      "civs/the-gardeners",
+      "reaps_at",
+      "events/the-harvest-the-gardeners-wait-for"
+    ],
+    [
+      "civs/the-loam-tenders",
+      "prepares",
+      "events/the-harvest-the-gardeners-wait-for"
+    ],
+    [
+      "artifacts/the-attention-bell",
+      "raises",
+      "arc/should-we-ring-the-bell"
+    ],
+    [
+      "figures/seedwright-cole-vance",
+      "wants",
+      "arc/should-we-ring-the-bell"
+    ],
+    [
+      "figures/reader-noor-haddad",
+      "resists",
+      "arc/should-we-ring-the-bell"
+    ],
+    [
+      "figures/steward-imani-bayode",
+      "must_decide",
+      "arc/should-we-ring-the-bell"
+    ],
+    [
+      "figures/midwife-tomas-reyes",
+      "threatened_by",
+      "arc/should-we-ring-the-bell"
+    ],
+    [
+      "lore/frag-we-are-the-next-row",
+      "raises",
+      "arc/should-we-ring-the-bell"
+    ],
+    [
+      "beliefs/the-grateful-guest-creed",
+      "held_by",
+      "figures/seedwright-cole-vance"
+    ],
+    [
+      "beliefs/the-fallow-creed",
+      "held_by",
+      "figures/reader-noor-haddad"
+    ],
+    [
+      "beliefs/the-grateful-guest-creed",
+      "opposes",
+      "beliefs/the-fallow-creed"
+    ],
+    [
+      "figures/seedwright-cole-vance",
+      "rival_of",
+      "figures/reader-noor-haddad"
+    ],
+    [
+      "figures/midwife-tomas-reyes",
+      "sought_by",
+      "civs/the-loam-tenders"
+    ]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/frag-the-world-is-aimed-not-wild",
+      "lore/frag-tenders-keep-it-between-workings",
+      "lore/frag-a-lineage-was-grown-before-us",
+      "lore/frag-they-were-harvested-not-killed",
+      "lore/frag-we-are-the-next-row"
+    ],
+    "order": [
+      "lore/frag-the-world-is-aimed-not-wild",
+      "lore/frag-tenders-keep-it-between-workings",
+      "lore/frag-a-lineage-was-grown-before-us",
+      "lore/frag-they-were-harvested-not-killed",
+      "lore/frag-we-are-the-next-row"
+    ],
+    "order_relation": "reveals"
+  }
+}

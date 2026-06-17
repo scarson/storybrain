@@ -1,0 +1,1010 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.4,
+      "facts": {
+        "role": "re-sequencers",
+        "title": "The Concordance Survey",
+        "why_it_matters": "Humans did not dig the Erevan war up; it surfaced into them. The Survey's job is not to excavate but to ORDER — to decide which find caused which, knowing each new piece can retro-edit the meaning of all the ones already shelved."
+      }
+    },
+    {
+      "slug": "civs/the-erevan",
+      "type": "faction",
+      "tension": 0.6,
+      "facts": {
+        "alien_type": "tense-aligned-xeno-belligerent",
+        "trait": "fought from a future toward its own past",
+        "status": "ambiguous",
+        "title": "The Erevan, the Army That Marched Backward",
+        "epithet": "soldiers of a war read right-to-left",
+        "fate": "undecided",
+        "why_undecided": "The Erevan are neither dead nor alive in any tense we can fix. Their last campaign is aimed at a moment that, from our vantage, has not happened yet. Whether they win it — and so whether they ever existed in the form we've reconstructed — is the open question the Survey keeps re-answering and un-answering with every new shard."
+      }
+    },
+    {
+      "slug": "civs/the-undated",
+      "type": "faction",
+      "tension": 0.62,
+      "facts": {
+        "alien_type": "acausal-xeno-counterforce",
+        "trait": "edits the war's earlier moves after they have already happened",
+        "status": "ambiguous",
+        "title": "The Undated, the Hand That Revises",
+        "epithet": "the enemy with no date of birth",
+        "fate": "undecided",
+        "why_undecided": "The Undated cannot be said to have fallen because they were never fixed to a 'when'. Each shard the Survey orders is a move the Undated may yet reach back and rewrite; the picture inverts because they are still editing it. Their survival is identical to the instability of our own reconstruction."
+      }
+    },
+    {
+      "slug": "civs/the-oncewill",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "precognitive-xeno-witnesses",
+        "trait": "remember outcomes that have not occurred yet",
+        "status": "ambiguous",
+        "title": "The Oncewill, Who Mourn in Advance",
+        "epithet": "neutrals who grieve the not-yet-dead",
+        "fate": "undecided",
+        "why_undecided": "The Oncewill took no side; they only watched, and remembered the war's end before its beginning. Their testimony is the most trustworthy and the most useless thing the Survey owns — they remember several endings, and refuse to say which is load-bearing, because to them none has settled."
+      }
+    },
+    {
+      "slug": "locations/chronon-silt-field",
+      "type": "location",
+      "tension": 0.4,
+      "facts": {
+        "subject": "chronon-silt",
+        "title": "The Chronon Silt, Sediment of Spent Moments",
+        "truth": "Where a temporal engagement was fought and then un-fought, the discarded seconds settle as silt. It is not a resource to mine but a record to read: the deeper the layer, the more times that instant was rewritten. The Survey reads silt the way geologists read strata, except the strata reorder themselves while you watch."
+      }
+    },
+    {
+      "slug": "locations/tense-residue-strand",
+      "type": "location",
+      "tension": 0.42,
+      "facts": {
+        "subject": "tense-residue",
+        "title": "The Tense Residue, Where Verbs Will-Have-Been",
+        "truth": "A film left on any object that has been pulled across its own causal order. Handling it leaks the grammar of a future that may or may not still happen — the precognitive bleed. Survey crews are rotated off residue-heavy strands before the leaked memories start arriving as their own."
+      }
+    },
+    {
+      "slug": "events/opening-shot",
+      "type": "event",
+      "tension": 0.52,
+      "facts": {
+        "title": "The Opening Shot, Fired Last",
+        "actor": "the-erevan",
+        "detail": "The first Erevan action the Survey can date — and, by the reconstructed TRUE order, the last one they took. An assault aimed not at territory but at an earlier instant of the war, to make it have gone differently.",
+        "true_position": "latest in the war; earliest to surface"
+      }
+    },
+    {
+      "slug": "events/first-revision",
+      "type": "event",
+      "tension": 0.55,
+      "facts": {
+        "title": "The First Revision",
+        "actor": "the-undated",
+        "detail": "The Undated reach back and edit the Opening Shot's antecedent, so the Erevan strike now lands on a moment that no longer contains its target. The first proof to the Survey that the record is being changed under them."
+      }
+    },
+    {
+      "slug": "events/the-witnessing",
+      "type": "event",
+      "tension": 0.5,
+      "facts": {
+        "title": "The Witnessing",
+        "actor": "the-oncewill",
+        "detail": "The Oncewill log the revision before it occurs, filing a memory of a war-move that the Undated have not yet made. The earliest Oncewill testimony — and, in true order, the seed from which the Survey's whole reconstruction grows."
+      }
+    },
+    {
+      "slug": "events/counter-march",
+      "type": "event",
+      "tension": 0.58,
+      "facts": {
+        "title": "The Counter-March",
+        "actor": "the-erevan",
+        "detail": "Discovering their strike disarmed, the Erevan march further back still, escalating the war into deeper past. Each step backward makes the front harder for the Survey to order."
+      }
+    },
+    {
+      "slug": "events/severance-edit",
+      "type": "event",
+      "tension": 0.6,
+      "facts": {
+        "title": "The Severance Edit",
+        "actor": "the-undated",
+        "detail": "The Undated cut the causal thread joining two Erevan campaigns, so that the later one no longer remembers why it was launched. This is the edit that makes finds CONTRADICT: two shards that should chain now disagree about their own cause."
+      }
+    },
+    {
+      "slug": "events/the-second-memory",
+      "type": "event",
+      "tension": 0.56,
+      "facts": {
+        "title": "The Second Memory",
+        "actor": "the-oncewill",
+        "detail": "The Oncewill remember a SECOND ending, incompatible with the first they filed. Their archive forks. This is the in-fiction reason the Survey's picture inverts: the witnesses themselves hold contradictory outcomes."
+      }
+    },
+    {
+      "slug": "events/the-fold-back",
+      "type": "event",
+      "tension": 0.7,
+      "facts": {
+        "title": "The Fold-Back",
+        "actor": "the-erevan",
+        "detail": "The Erevan succeed, briefly, in folding their war's end onto its beginning — closing a loop in which they have always already won. The Undated answer by un-deciding it. The two states coexist in the residue, neither settled.",
+        "penultimate": true
+      }
+    },
+    {
+      "slug": "events/the-war-that-has-not-finished-happening",
+      "type": "event",
+      "tension": 0.95,
+      "facts": {
+        "title": "The War That Has Not Finished Happening",
+        "actor": "the-erevan",
+        "detail": "The culminating moment, and the only one the Survey cannot date: an engagement that is simultaneously won, lost, and never-begun, held open by the Undated's editing and the Oncewill's forked memory. It bleeds forward — into the present, into the Concordance Survey's own instruments. This is the live wound the colonists are standing in.",
+        "is_culmination": true
+      }
+    },
+    {
+      "slug": "lore/testimony-of-the-mourners",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-oncewill",
+        "title": "Testimony of the Mourners",
+        "truth": "In TRUE order this comes FIRST: the Oncewill witnessed and filed the war's revisions before they happened. Every later shard is, in some sense, a footnote to a memory the Oncewill already held. The reconstruction begins here — until a deeper find proves the witnessing itself was edited, and the order inverts."
+      }
+    },
+    {
+      "slug": "lore/the-backward-march-ordered",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-erevan",
+        "title": "The Backward March, Ordered",
+        "truth": "In TRUE order this comes SECOND: the Erevan campaign read in its real sequence — last shot fired first, opening move struck last. Placing this fragment is what lets the Survey read the whole war right-to-left. It directly contradicts any chronology built from surface dates."
+      }
+    },
+    {
+      "slug": "lore/the-hand-behind-the-edits",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-undated",
+        "title": "The Hand Behind the Edits",
+        "truth": "In TRUE order this comes THIRD and last: the Undated are the agency that has been revising both prior fragments. Surfacing this shard retro-edits the meaning of the Oncewill testimony and the Erevan march at once — which is why the Survey's assembled picture keeps inverting the moment this piece is added or removed."
+      }
+    },
+    {
+      "slug": "lore/silt-reads-right-to-left",
+      "type": "lore",
+      "tension": 0.55,
+      "facts": {
+        "subtype": "context",
+        "revealed": false,
+        "about": "chronon-silt",
+        "title": "The Silt Reads Right-to-Left",
+        "truth": "Supporting find, not a spine fragment: the chronon silt deposits in reverse, the newest second at the bottom. Crews who read it top-down build a chronology that is exactly backward — the first systemic error the Survey had to unlearn."
+      }
+    },
+    {
+      "slug": "lore/the-beacon-was-a-grave",
+      "type": "lore",
+      "tension": 0.6,
+      "facts": {
+        "subtype": "context",
+        "revealed": false,
+        "about": "the-erevan",
+        "title": "The Beacon Was a Grave",
+        "truth": "Supporting find: the markers the Survey first read as navigation beacons are Erevan war-graves that record their own future recovery. Provenance flavor for the Arriving Relic; it does not move the mystery order."
+      }
+    },
+    {
+      "slug": "lore/the-stylus-edits-the-reader",
+      "type": "lore",
+      "tension": 0.65,
+      "facts": {
+        "subtype": "context",
+        "revealed": false,
+        "about": "the-undated",
+        "title": "The Stylus Edits the Reader",
+        "truth": "Supporting find: the Undated implements do not only revise the archive — they revise the surveyor holding them, swapping a filed conviction for a different, equally certain one. The in-camp source of the 'I never wrote that' incidents."
+      }
+    },
+    {
+      "slug": "lore/the-witnesses-fork",
+      "type": "lore",
+      "tension": 0.62,
+      "facts": {
+        "subtype": "context",
+        "revealed": false,
+        "about": "the-oncewill",
+        "title": "The Witnesses Fork",
+        "truth": "Supporting find: the Oncewill remember more than one ending and will not collapse them. Their forked archive is why the Precognitive Shard names two next-finds, only one of which is dug. Atmosphere, not spine."
+      }
+    },
+    {
+      "slug": "lore/the-anachronism-has-no-when",
+      "type": "lore",
+      "tension": 0.58,
+      "facts": {
+        "subtype": "context",
+        "revealed": false,
+        "about": "the-undated",
+        "title": "The Thing With No When",
+        "truth": "Supporting find: certain Undated objects refuse to sediment in any layer, contemporary with every find and none. Placing them anywhere is valid, which is why they break the sequence. The signature of an edit, not a dated event."
+      }
+    },
+    {
+      "slug": "lore/the-loop-shows-both",
+      "type": "lore",
+      "tension": 0.64,
+      "facts": {
+        "subtype": "context",
+        "revealed": false,
+        "about": "the-erevan",
+        "title": "The Loop Shows Both at Once",
+        "truth": "Supporting find: the Fold-Back stratum yields engravings that depict the war's loop closed AND open in the same image. The closest the Survey has to a verdict — and it refuses to pick. Flavor for the Fold-Loop Ring."
+      }
+    },
+    {
+      "slug": "lore/some-of-it-always-comes-true",
+      "type": "lore",
+      "tension": 0.6,
+      "facts": {
+        "subtype": "context",
+        "revealed": false,
+        "about": "the-oncewill",
+        "title": "A Sliver Always Comes True",
+        "truth": "Supporting find: of every leaked future the Oncewill memory-flakes carry, most is noise and a thin sliver is exact. The Survey cannot tell which sliver in advance, only after. Why they both depend on and distrust the precognitive shards."
+      }
+    },
+    {
+      "slug": "artifacts/the-arriving-relic",
+      "type": "artifact",
+      "tension": 0.78,
+      "facts": {
+        "title": "The Arriving Relic",
+        "archetype": "relic-that-remembers-a-future",
+        "found_as": "A sealed Erevan marker that records, in its own grammar, the moment of its own future recovery by the Survey — it remembered being found before it was found.",
+        "function_changed": "Reads as a navigation beacon until the Severance shard is placed, after which it reads as a war-grave."
+      }
+    },
+    {
+      "slug": "artifacts/object-older-than-its-maker",
+      "type": "artifact",
+      "tension": 0.8,
+      "facts": {
+        "title": "The Object Older Than Its Maker",
+        "archetype": "object-older-than-its-maker",
+        "found_as": "An Oncewill instrument whose material predates the Oncewill themselves by an order the silt cannot square — a tool that existed before the hands that built it.",
+        "function_changed": "Whatever fragment you place last, this object turns out to have been measuring it all along."
+      }
+    },
+    {
+      "slug": "artifacts/the-effect-before-cause",
+      "type": "artifact",
+      "tension": 0.82,
+      "facts": {
+        "title": "The Effect Before Cause",
+        "archetype": "effect-before-cause",
+        "found_as": "A scorched Erevan standard whose burn pattern matches an attack the Survey has not yet excavated. The wound exists; its weapon is still buried.",
+        "function_changed": "Inert until the matching strike is found; then it becomes the keystone that orders that whole layer — or contradicts it, if the Undated edited it first."
+      }
+    },
+    {
+      "slug": "artifacts/the-retro-editing-stylus",
+      "type": "artifact",
+      "tension": 0.85,
+      "facts": {
+        "title": "The Retro-Editing Stylus",
+        "archetype": "retro-editing-find",
+        "found_as": "An Undated implement. Handling it, a Survey reader's already-filed notes silently change to a different but internally consistent account. The only artifact that edits the archive that holds it.",
+        "function_changed": "It is the physical proof that the picture inverts because something is still rewriting it — not because the Survey reads it wrong."
+      }
+    },
+    {
+      "slug": "artifacts/the-precognitive-shard",
+      "type": "artifact",
+      "tension": 0.8,
+      "facts": {
+        "title": "The Precognitive Shard",
+        "archetype": "precognitive-shard",
+        "found_as": "An Oncewill memory-flake. Held to the temple it leaks a fragment of the holder's own near future — most of which does not come true, and a sliver of which always does.",
+        "function_changed": "The leaked future names the next find before it is dug; the Survey both depends on it and distrusts it."
+      }
+    },
+    {
+      "slug": "artifacts/the-undated-anachronism",
+      "type": "artifact",
+      "tension": 0.83,
+      "facts": {
+        "title": "The Undated Anachronism",
+        "archetype": "anachronism",
+        "found_as": "A device that carries no date in any layer — the silt refuses to sediment around it. It is contemporary with every find and with none.",
+        "function_changed": "Placing it anywhere in the sequence is valid, which is precisely why it breaks the sequence: it is the Undated's signature, the gap where a 'when' should be."
+      }
+    },
+    {
+      "slug": "artifacts/the-fold-loop-ring",
+      "type": "artifact",
+      "tension": 0.86,
+      "facts": {
+        "title": "The Fold-Loop Ring",
+        "archetype": "relic-that-remembers-a-future",
+        "found_as": "An Erevan torus recovered from the Fold-Back stratum. Its inner face is engraved with its outer face's future erosion — a relic remembering its own decay.",
+        "function_changed": "The closest thing the Survey has to a verdict on the war; it shows the loop closed AND open in the same engraving, and will not pick one."
+      }
+    },
+    {
+      "slug": "colonists/dr-ileana-cross",
+      "type": "colonist",
+      "tension": 0.7,
+      "facts": {
+        "title": "Dr. Ileana Cross, Chief Sequencer",
+        "role": "Lead re-sequencer of the Concordance Survey",
+        "species": "human",
+        "stake": "She built the current accepted chronology. The Stylus is editing her own filed notes, and she can no longer tell which of her conclusions she actually reached.",
+        "skills": {
+          "command": 16,
+          "sensors": 19,
+          "navigation": 14,
+          "xeno": 12,
+          "engineering": 8,
+          "gunnery": 3
+        },
+        "passions": [
+          "sensors",
+          "command"
+        ],
+        "crew_role": "captain",
+        "skill_profile": "ship-crew",
+        "want": "to certify one TRUE ordering of the shards and publish it before the next find inverts her conclusions out from under her"
+      }
+    },
+    {
+      "slug": "colonists/tobias-renn",
+      "type": "colonist",
+      "tension": 0.65,
+      "facts": {
+        "title": "Tobias Renn, Residue Foreman",
+        "role": "Runs the tense-residue strands",
+        "species": "human",
+        "stake": "Overexposed to residue, he has started 'remembering' Survey findings before they are made — and acting on them, sometimes wrongly.",
+        "skills": {
+          "gunnery": 11,
+          "life_support": 5,
+          "xeno": 7,
+          "sensors": 9,
+          "engineering": 16,
+          "eva": 14
+        },
+        "passions": [
+          "engineering",
+          "eva"
+        ],
+        "crew_role": "engineer",
+        "skill_profile": "ship-crew",
+        "want": "to act on the futures he keeps remembering before they harden into the wrong one, even when no one will believe the memory yet"
+      }
+    },
+    {
+      "slug": "colonists/mara-okonkwo",
+      "type": "colonist",
+      "tension": 0.68,
+      "facts": {
+        "title": "Mara Okonkwo, Archive Warden",
+        "role": "Keeps the master sequence",
+        "species": "human",
+        "stake": "She caught two of her own catalog entries silently changing overnight. She suspects a saboteur; the truth is the war is editing the archive directly.",
+        "skills": {
+          "navigation": 18,
+          "sensors": 15,
+          "xeno": 10,
+          "life_support": 8,
+          "engineering": 9,
+          "gunnery": 5
+        },
+        "passions": [
+          "navigation"
+        ],
+        "crew_role": "navigator",
+        "skill_profile": "ship-crew",
+        "want": "to catch the hand rewriting her catalog in the act and prove it is sabotage, because the alternative — that the war itself edits the archive — is unthinkable"
+      }
+    },
+    {
+      "slug": "colonists/the-quiet-recruit",
+      "type": "colonist",
+      "tension": 0.72,
+      "facts": {
+        "title": "The Recruit Who Arrived Twice",
+        "role": "Junior surveyor",
+        "species": "human",
+        "stake": "Personnel records list their arrival on two incompatible dates. They may be an Undated edit walking the camp, or just a clerical ghost. Nobody will say which to their face.",
+        "skills": {
+          "gunnery": 8,
+          "life_support": 7,
+          "xeno": 6,
+          "sensors": 13,
+          "eva": 11,
+          "piloting": 9
+        },
+        "passions": [
+          "sensors",
+          "eva"
+        ],
+        "crew_role": "sensors-tech",
+        "skill_profile": "ship-crew",
+        "want": "to find the record of their own true arrival date and prove they are a person and not an edit, before the camp decides for them"
+      }
+    },
+    {
+      "slug": "colonists/the-oncewill-envoy-sael",
+      "type": "colonist",
+      "tension": 0.74,
+      "facts": {
+        "title": "Sael, the Envoy Who Mourns You Already",
+        "role": "Oncewill envoy attached to the Survey",
+        "species": "alien",
+        "faction": "civs/the-oncewill",
+        "stake": "Sael remembers the Survey's outcomes before they happen and grieves the colonists at meetings the colonists have not yet attended. Sael's testimony is the Survey's most precise and least usable source, because Sael remembers several endings and will not say which is load-bearing.",
+        "skills": {
+          "gunnery": 2,
+          "life_support": 14,
+          "xeno": 18,
+          "sensors": 17,
+          "command": 9,
+          "eva": 1
+        },
+        "passions": [
+          "xeno",
+          "sensors"
+        ],
+        "crew_role": "envoy",
+        "skill_profile": "ship-crew",
+        "want": "to deliver the one warning that still changes an outcome, before the ending Sael already grieves becomes the one that settles"
+      }
+    },
+    {
+      "slug": "colonists/the-erevan-revenant-korl",
+      "type": "colonist",
+      "tension": 0.78,
+      "facts": {
+        "title": "Korl, the Soldier Who Remembers a Future Battle",
+        "role": "Stranded Erevan rear-guard, out of his own sequence",
+        "species": "alien",
+        "faction": "civs/the-erevan",
+        "stake": "Korl fought the war's last engagement first and surfaced into the Survey's present carrying the memory of a battle that, for everyone else, has not happened. He is loyal to a campaign whose orders the Undated may already have revised — so even Korl cannot be sure which war he is still fighting.",
+        "skills": {
+          "gunnery": 18,
+          "life_support": 3,
+          "xeno": 5,
+          "sensors": 6,
+          "engineering": 10,
+          "eva": 17
+        },
+        "passions": [
+          "gunnery",
+          "eva"
+        ],
+        "crew_role": "gunner",
+        "skill_profile": "ship-crew",
+        "want": "to reach the moment of the Opening Shot and fire it the way he remembers it, before the Undated edit the order that makes his war have been worth fighting"
+      }
+    },
+    {
+      "slug": "arc/the-inverting-verdict",
+      "type": "arc",
+      "tension": 0.9,
+      "facts": {
+        "title": "The Inverting Verdict",
+        "phase": "rising",
+        "open": true,
+        "question": "Did the Erevan win the war that has not finished happening — and is the Survey's act of ordering the shards the very move that decides it?",
+        "next_beat_event": "events/the-war-that-has-not-finished-happening",
+        "next_beat_detail": "Cross must publish a sequence. Whichever order she certifies as TRUE may be the move that closes the Erevan loop or hands the Undated the final edit — and the Fold-Loop Ring shows both at once.",
+        "why_open": "AMBIGUOUS by construction: the war is still resolving, in-fiction and in-archive. No certified verdict survives the next find."
+      }
+    }
+  ],
+  "edges": [
+    [
+      "events/opening-shot",
+      "involves",
+      "civs/the-erevan",
+      100
+    ],
+    [
+      "events/first-revision",
+      "involves",
+      "civs/the-undated",
+      200
+    ],
+    [
+      "events/first-revision",
+      "caused_by",
+      "events/opening-shot",
+      200
+    ],
+    [
+      "events/the-witnessing",
+      "involves",
+      "civs/the-oncewill",
+      200
+    ],
+    [
+      "events/the-witnessing",
+      "caused_by",
+      "events/first-revision",
+      200
+    ],
+    [
+      "events/counter-march",
+      "involves",
+      "civs/the-erevan",
+      300
+    ],
+    [
+      "events/counter-march",
+      "caused_by",
+      "events/first-revision",
+      300
+    ],
+    [
+      "events/severance-edit",
+      "involves",
+      "civs/the-undated",
+      400
+    ],
+    [
+      "events/severance-edit",
+      "caused_by",
+      "events/counter-march",
+      400
+    ],
+    [
+      "events/severance-edit",
+      "concerns",
+      "locations/chronon-silt-field",
+      400
+    ],
+    [
+      "events/the-second-memory",
+      "involves",
+      "civs/the-oncewill",
+      500
+    ],
+    [
+      "events/the-second-memory",
+      "caused_by",
+      "events/severance-edit",
+      500
+    ],
+    [
+      "events/the-second-memory",
+      "concerns",
+      "locations/tense-residue-strand",
+      500
+    ],
+    [
+      "events/the-fold-back",
+      "involves",
+      "civs/the-erevan",
+      600
+    ],
+    [
+      "events/the-fold-back",
+      "caused_by",
+      "events/counter-march",
+      600
+    ],
+    [
+      "events/the-fold-back",
+      "caused_by",
+      "events/severance-edit",
+      600
+    ],
+    [
+      "events/the-war-that-has-not-finished-happening",
+      "involves",
+      "civs/the-erevan",
+      700
+    ],
+    [
+      "events/the-war-that-has-not-finished-happening",
+      "caused_by",
+      "events/the-fold-back",
+      700
+    ],
+    [
+      "events/the-war-that-has-not-finished-happening",
+      "caused_by",
+      "events/the-second-memory",
+      700
+    ],
+    [
+      "civs/the-erevan",
+      "involved_in",
+      "events/the-war-that-has-not-finished-happening",
+      700
+    ],
+    [
+      "civs/the-undated",
+      "involved_in",
+      "events/the-war-that-has-not-finished-happening",
+      700
+    ],
+    [
+      "civs/the-oncewill",
+      "involved_in",
+      "events/the-war-that-has-not-finished-happening",
+      700
+    ],
+    [
+      "lore/the-hand-behind-the-edits",
+      "precedes",
+      "events/the-war-that-has-not-finished-happening",
+      700
+    ],
+    [
+      "lore/the-backward-march-ordered",
+      "precedes",
+      "lore/the-hand-behind-the-edits",
+      700
+    ],
+    [
+      "lore/testimony-of-the-mourners",
+      "precedes",
+      "lore/the-backward-march-ordered",
+      700
+    ],
+    [
+      "artifacts/the-arriving-relic",
+      "drops",
+      "lore/testimony-of-the-mourners",
+      700
+    ],
+    [
+      "artifacts/the-arriving-relic",
+      "drops",
+      "lore/the-beacon-was-a-grave",
+      700
+    ],
+    [
+      "artifacts/the-arriving-relic",
+      "drops",
+      "lore/silt-reads-right-to-left",
+      700
+    ],
+    [
+      "artifacts/object-older-than-its-maker",
+      "drops",
+      "lore/testimony-of-the-mourners",
+      700
+    ],
+    [
+      "artifacts/object-older-than-its-maker",
+      "drops",
+      "lore/the-witnesses-fork",
+      700
+    ],
+    [
+      "artifacts/object-older-than-its-maker",
+      "drops",
+      "lore/silt-reads-right-to-left",
+      700
+    ],
+    [
+      "artifacts/the-effect-before-cause",
+      "drops",
+      "lore/the-backward-march-ordered",
+      700
+    ],
+    [
+      "artifacts/the-effect-before-cause",
+      "drops",
+      "lore/the-beacon-was-a-grave",
+      700
+    ],
+    [
+      "artifacts/the-effect-before-cause",
+      "drops",
+      "lore/the-loop-shows-both",
+      700
+    ],
+    [
+      "artifacts/the-retro-editing-stylus",
+      "drops",
+      "lore/the-hand-behind-the-edits",
+      700
+    ],
+    [
+      "artifacts/the-retro-editing-stylus",
+      "drops",
+      "lore/the-stylus-edits-the-reader",
+      700
+    ],
+    [
+      "artifacts/the-retro-editing-stylus",
+      "drops",
+      "lore/the-anachronism-has-no-when",
+      700
+    ],
+    [
+      "artifacts/the-precognitive-shard",
+      "drops",
+      "lore/the-witnesses-fork",
+      700
+    ],
+    [
+      "artifacts/the-precognitive-shard",
+      "drops",
+      "lore/some-of-it-always-comes-true",
+      700
+    ],
+    [
+      "artifacts/the-precognitive-shard",
+      "drops",
+      "lore/the-backward-march-ordered",
+      700
+    ],
+    [
+      "artifacts/the-undated-anachronism",
+      "drops",
+      "lore/the-hand-behind-the-edits",
+      700
+    ],
+    [
+      "artifacts/the-undated-anachronism",
+      "drops",
+      "lore/the-anachronism-has-no-when",
+      700
+    ],
+    [
+      "artifacts/the-undated-anachronism",
+      "drops",
+      "lore/the-stylus-edits-the-reader",
+      700
+    ],
+    [
+      "artifacts/the-fold-loop-ring",
+      "drops",
+      "lore/the-loop-shows-both",
+      700
+    ],
+    [
+      "artifacts/the-fold-loop-ring",
+      "drops",
+      "lore/some-of-it-always-comes-true",
+      700
+    ],
+    [
+      "artifacts/the-fold-loop-ring",
+      "drops",
+      "lore/the-beacon-was-a-grave",
+      700
+    ],
+    [
+      "lore/testimony-of-the-mourners",
+      "reveals",
+      "civs/the-oncewill",
+      700
+    ],
+    [
+      "lore/the-backward-march-ordered",
+      "reveals",
+      "civs/the-erevan",
+      700
+    ],
+    [
+      "lore/the-hand-behind-the-edits",
+      "reveals",
+      "civs/the-undated",
+      700
+    ],
+    [
+      "artifacts/the-arriving-relic",
+      "echoes",
+      "events/opening-shot",
+      700
+    ],
+    [
+      "artifacts/the-effect-before-cause",
+      "echoes",
+      "events/counter-march",
+      700
+    ],
+    [
+      "artifacts/the-retro-editing-stylus",
+      "echoes",
+      "events/severance-edit",
+      700
+    ],
+    [
+      "artifacts/the-precognitive-shard",
+      "echoes",
+      "events/the-second-memory",
+      700
+    ],
+    [
+      "artifacts/the-fold-loop-ring",
+      "echoes",
+      "events/the-fold-back",
+      700
+    ],
+    [
+      "artifacts/object-older-than-its-maker",
+      "echoes",
+      "events/the-witnessing",
+      700
+    ],
+    [
+      "artifacts/the-undated-anachronism",
+      "echoes",
+      "events/first-revision",
+      700
+    ],
+    [
+      "colonists/dr-ileana-cross",
+      "owns",
+      "artifacts/the-retro-editing-stylus",
+      800
+    ],
+    [
+      "colonists/mara-okonkwo",
+      "owns",
+      "artifacts/the-undated-anachronism",
+      800
+    ],
+    [
+      "colonists/dr-ileana-cross",
+      "sought_by",
+      "civs/the-undated",
+      800
+    ],
+    [
+      "colonists/tobias-renn",
+      "threatens",
+      "colonists/dr-ileana-cross",
+      800
+    ],
+    [
+      "colonists/the-quiet-recruit",
+      "betrayed_by",
+      "civs/the-undated",
+      800
+    ],
+    [
+      "civs/the-undated",
+      "threatens",
+      "factions/humans",
+      800
+    ],
+    [
+      "colonists/tobias-renn",
+      "sought_by",
+      "civs/the-oncewill",
+      800
+    ],
+    [
+      "colonists/mara-okonkwo",
+      "rival_of",
+      "colonists/dr-ileana-cross",
+      800
+    ],
+    [
+      "colonists/tobias-renn",
+      "kin_of",
+      "colonists/mara-okonkwo",
+      800
+    ],
+    [
+      "colonists/dr-ileana-cross",
+      "ally_of",
+      "colonists/the-quiet-recruit",
+      800
+    ],
+    [
+      "colonists/the-quiet-recruit",
+      "owes",
+      "colonists/tobias-renn",
+      800
+    ],
+    [
+      "colonists/tobias-renn",
+      "grudge_against",
+      "colonists/dr-ileana-cross",
+      800
+    ],
+    [
+      "colonists/mara-okonkwo",
+      "lover_of",
+      "colonists/the-oncewill-envoy-sael",
+      800
+    ],
+    [
+      "colonists/the-oncewill-envoy-sael",
+      "ally_of",
+      "colonists/dr-ileana-cross",
+      800
+    ],
+    [
+      "colonists/the-erevan-revenant-korl",
+      "rival_of",
+      "colonists/tobias-renn",
+      800
+    ],
+    [
+      "colonists/the-erevan-revenant-korl",
+      "saved",
+      "colonists/the-quiet-recruit",
+      800
+    ],
+    [
+      "colonists/the-oncewill-envoy-sael",
+      "owns",
+      "artifacts/the-precognitive-shard",
+      800
+    ],
+    [
+      "colonists/the-erevan-revenant-korl",
+      "owns",
+      "artifacts/the-effect-before-cause",
+      800
+    ],
+    [
+      "arc/the-inverting-verdict",
+      "threatens",
+      "factions/humans",
+      800
+    ],
+    [
+      "arc/the-inverting-verdict",
+      "involves",
+      "colonists/dr-ileana-cross",
+      800
+    ],
+    [
+      "arc/the-inverting-verdict",
+      "involves",
+      "artifacts/the-fold-loop-ring",
+      800
+    ],
+    [
+      "arc/the-inverting-verdict",
+      "caused_by",
+      "events/the-war-that-has-not-finished-happening",
+      800
+    ]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/the-hand-behind-the-edits",
+      "lore/the-backward-march-ordered",
+      "lore/testimony-of-the-mourners"
+    ],
+    "order": [
+      "lore/testimony-of-the-mourners",
+      "lore/the-backward-march-ordered",
+      "lore/the-hand-behind-the-edits"
+    ],
+    "order_relation": "precedes"
+  }
+}

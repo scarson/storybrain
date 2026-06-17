@@ -1,0 +1,1025 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.45,
+      "facts": {
+        "role": "newcomers",
+        "live_status": "a young colony being vetted in real time by neighbors who are alive, watching, and lending just enough",
+        "note": "every tool the colony accepts is graded; the colony has only begun to suspect the gifts also point somewhere"
+      }
+    },
+    {
+      "slug": "civs/the-irenni",
+      "type": "faction",
+      "tension": 0.62,
+      "facts": {
+        "alien_type": "living-elder-xeno-persons",
+        "trait": "ancient, patient gatekeepers who lend a trickle of technology as worthiness-tests and read every human choice; each gift's very form encodes the buried location of a sealed cache",
+        "status": "living",
+        "fate": "still here, still deciding; the verdict at the vault did not end them — it opened the relationship to its first real test"
+      }
+    },
+    {
+      "slug": "civs/the-saalvane",
+      "type": "faction",
+      "tension": 0.7,
+      "facts": {
+        "alien_type": "living-rival-xeno-faction",
+        "trait": "an Irenni splinter convinced humanity must be denied, not vetted; they corrupt the lent gifts so a misread points to the wrong site or reads as an act of war",
+        "status": "active",
+        "fate": "openly racing humanity to the first cache now, gifts sabotaged, prepared to seal it forever rather than let humans earn it"
+      }
+    },
+    {
+      "slug": "civs/the-mendicant-tier",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "living-xeno-mediators",
+        "trait": "a neutral caste that brokers access between Irenni and newcomers and adjudicates worthiness disputes; they hold the only honest reading of a gift",
+        "status": "ambiguous",
+        "fate": "still mediating, but strained — their neutrality is the thread the whole relationship now hangs on"
+      }
+    },
+    {
+      "slug": "locations/the-lattice-fuel-vault",
+      "type": "location",
+      "tension": 0.6,
+      "facts": {
+        "subject": "the first sealed cache, a vault of lattice-fuel the Irenni will never simply hand over",
+        "danger": 0.7,
+        "live_state": "buried where three lent gifts triangulate; sealed, locatable, and contested this season"
+      }
+    },
+    {
+      "slug": "locations/the-seal-foundry-deep",
+      "type": "location",
+      "tension": 0.5,
+      "facts": {
+        "subject": "the deep where cache-seals are still being grown and set by living hands",
+        "danger": 0.55,
+        "live_state": "active; the Irenni reseal what the unworthy reach, and the Saalvane steal seals to lock caches away"
+      }
+    },
+    {
+      "slug": "locations/the-mendicant-court",
+      "type": "location",
+      "tension": 0.45,
+      "facts": {
+        "subject": "the neutral hall where worthiness is argued and gifts are read aloud",
+        "danger": 0.3,
+        "live_state": "in session; the colony's worthiness is being weighed here right now"
+      }
+    },
+    {
+      "slug": "figures/the-irenni-gift-warden",
+      "type": "colonist",
+      "tension": 0.55,
+      "facts": {
+        "role": "the living Irenni elder who chooses which gift to lend the colony next and watches how it is used",
+        "civ": "the-irenni",
+        "faction": "civs/the-irenni",
+        "species": "alien",
+        "live": true,
+        "want": "lend the colony exactly enough rope to reveal who they truly are before any cache is breached",
+        "skills": {
+          "command": 18,
+          "xeno": 17,
+          "sensors": 14,
+          "engineering": 11,
+          "navigation": 8,
+          "gunnery": 4
+        },
+        "passions": [
+          "command",
+          "xeno"
+        ],
+        "crew_role": "captain",
+        "skill_profile": "ship-crew",
+        "note": "speaks to the colony in person; their patience is the only thing keeping a cache reachable"
+      }
+    },
+    {
+      "slug": "figures/the-mendicant-broker",
+      "type": "colonist",
+      "tension": 0.5,
+      "facts": {
+        "role": "the neutral mediator who can read a gift honestly and certify a worthy open",
+        "civ": "the-mendicant-tier",
+        "faction": "civs/the-mendicant-tier",
+        "species": "alien",
+        "live": true,
+        "want": "keep the court honest long enough to certify a worthy open before either side forces the vault",
+        "skills": {
+          "xeno": 18,
+          "command": 15,
+          "sensors": 12,
+          "navigation": 9,
+          "engineering": 7,
+          "gunnery": 3
+        },
+        "passions": [
+          "xeno"
+        ],
+        "crew_role": "translator",
+        "skill_profile": "ship-crew",
+        "note": "the one alien who will tell the colony when a clue has been corrupted"
+      }
+    },
+    {
+      "slug": "figures/the-saalvane-saboteur",
+      "type": "colonist",
+      "tension": 0.7,
+      "facts": {
+        "role": "the rival splinter's agent racing humanity to the lattice-fuel vault and falsifying its clues",
+        "civ": "the-saalvane",
+        "faction": "civs/the-saalvane",
+        "species": "alien",
+        "live": true,
+        "want": "reach the lattice-fuel vault first and seal it forever rather than let an unworthy species earn it",
+        "skills": {
+          "gunnery": 16,
+          "engineering": 15,
+          "piloting": 13,
+          "sensors": 11,
+          "eva": 9,
+          "xeno": 6
+        },
+        "passions": [
+          "gunnery",
+          "engineering"
+        ],
+        "crew_role": "gunner",
+        "skill_profile": "ship-crew",
+        "note": "wants the cache sealed forever; treats any human approach as proof of unworthiness"
+      }
+    },
+    {
+      "slug": "figures/the-irenni-sleeper-vael",
+      "type": "colonist",
+      "tension": 0.6,
+      "facts": {
+        "role": "an Irenni cache-keeper woken early from the seal-foundry deep — the living memory of who sealed the lattice-fuel vault and why",
+        "civ": "the-irenni",
+        "faction": "civs/the-irenni",
+        "species": "alien",
+        "live": true,
+        "want": "judge for herself whether humanity is the worthy open her gift-warden insists on, and break with the warden if not",
+        "skills": {
+          "engineering": 19,
+          "sensors": 14,
+          "xeno": 11,
+          "life_support": 9,
+          "navigation": 7,
+          "gunnery": 6
+        },
+        "passions": [
+          "engineering",
+          "sensors"
+        ],
+        "crew_role": "engineer",
+        "skill_profile": "ship-crew",
+        "note": "she set the seal that now answers the opener; her testimony can certify or condemn the colony"
+      }
+    },
+    {
+      "slug": "figures/the-saalvane-defector-corin",
+      "type": "colonist",
+      "tension": 0.66,
+      "facts": {
+        "role": "a Saalvane gift-forger who fled the splinter and now warns humanity which lent gifts are corrupted",
+        "civ": "the-saalvane",
+        "faction": "civs/the-saalvane",
+        "species": "alien",
+        "live": true,
+        "want": "atone for the corrupted gift he forged by helping the colony reach the vault before his old faction can seal it",
+        "skills": {
+          "engineering": 18,
+          "sensors": 15,
+          "gunnery": 10,
+          "xeno": 12,
+          "eva": 8,
+          "piloting": 9
+        },
+        "passions": [
+          "engineering",
+          "sensors"
+        ],
+        "crew_role": "engineer",
+        "skill_profile": "ship-crew",
+        "note": "he forged the corrupted gift himself; the saboteur counts him a traitor and hunts him"
+      }
+    },
+    {
+      "slug": "figures/envoy-mara-okonkwo",
+      "type": "colonist",
+      "tension": 0.62,
+      "facts": {
+        "role": "human first-contact envoy and lead diplomat",
+        "species": "human",
+        "live": true,
+        "drive": "earn the open honestly — keep the relationship alive even if it costs us the cache",
+        "want": "earn a certified-worthy open at the vault and keep the Irenni alliance intact even if it costs the colony the cache",
+        "skills": {
+          "xeno": 19,
+          "command": 14,
+          "sensors": 10,
+          "navigation": 8,
+          "life_support": 7,
+          "gunnery": 5
+        },
+        "passions": [
+          "xeno"
+        ],
+        "crew_role": "envoy",
+        "skill_profile": "ship-crew"
+      }
+    },
+    {
+      "slug": "figures/decoder-jonas-rhee",
+      "type": "colonist",
+      "tension": 0.65,
+      "facts": {
+        "role": "human cryptographer triangulating cache sites from the form of the lent gifts",
+        "species": "human",
+        "live": true,
+        "drive": "solve the triangulation before the Saalvane do; reach the vault first",
+        "want": "crack the triangulation and open the cache himself before any rival can seal it, treaty or no treaty",
+        "skills": {
+          "navigation": 20,
+          "sensors": 17,
+          "xeno": 9,
+          "engineering": 11,
+          "piloting": 8,
+          "gunnery": 6
+        },
+        "passions": [
+          "navigation",
+          "sensors"
+        ],
+        "crew_role": "navigator",
+        "skill_profile": "ship-crew"
+      }
+    },
+    {
+      "slug": "figures/quartermaster-lena-vasquez",
+      "type": "colonist",
+      "tension": 0.58,
+      "facts": {
+        "role": "human quartermaster who catalogs every lent gift and its correct use",
+        "species": "human",
+        "live": true,
+        "drive": "never misuse a gift; one wrong move reads as an act of war and locks a cache",
+        "want": "catch the forged gift in the catalog before anyone uses it and triggers a war she would be blamed for",
+        "skills": {
+          "life_support": 17,
+          "engineering": 14,
+          "sensors": 12,
+          "xeno": 11,
+          "navigation": 9,
+          "gunnery": 6
+        },
+        "passions": [
+          "life_support",
+          "engineering"
+        ],
+        "crew_role": "quartermaster",
+        "skill_profile": "ship-crew"
+      }
+    },
+    {
+      "slug": "figures/scout-ade-balogun",
+      "type": "colonist",
+      "tension": 0.6,
+      "facts": {
+        "role": "human field scout sent ahead to the triangulated vault",
+        "species": "human",
+        "live": true,
+        "drive": "get to the lattice-fuel vault and hold it long enough for an honest open",
+        "want": "reach the vault alive and hold it long enough for the envoy to bring a certified-worthy open",
+        "skills": {
+          "piloting": 18,
+          "gunnery": 16,
+          "eva": 13,
+          "sensors": 9,
+          "navigation": 10,
+          "life_support": 7
+        },
+        "passions": [
+          "piloting",
+          "gunnery"
+        ],
+        "crew_role": "pilot",
+        "skill_profile": "ship-crew"
+      }
+    },
+    {
+      "slug": "beliefs/the-earned-open-creed",
+      "type": "belief",
+      "tension": 0.55,
+      "facts": {
+        "held_by": "envoy-mara-okonkwo",
+        "claim": "the caches are tests of who we are, not loot; the only open that keeps the aliens our allies is the one we earn"
+      }
+    },
+    {
+      "slug": "beliefs/the-take-it-creed",
+      "type": "belief",
+      "tension": 0.6,
+      "facts": {
+        "held_by": "decoder-jonas-rhee",
+        "claim": "worthiness is a leash; if we can triangulate and reach a cache we should crack it before a rival seals it forever"
+      }
+    },
+    {
+      "slug": "artifacts/the-lattice-lantern",
+      "type": "artifact",
+      "tension": 0.55,
+      "facts": {
+        "archetype": "lent-gift",
+        "maker": "the-irenni",
+        "encodes": "the-lattice-fuel-vault",
+        "found": "lent to the colony at first contact; its facets bend light into a bearing on a buried site",
+        "use_test": "lighting it correctly is itself the first vetting"
+      }
+    },
+    {
+      "slug": "artifacts/the-worthiness-stylus",
+      "type": "artifact",
+      "tension": 0.5,
+      "facts": {
+        "archetype": "vetting-test",
+        "maker": "the-irenni",
+        "found": "a writing tool that grades the hand that holds it",
+        "note": "records every choice the colony makes with a gift and reports it back to living watchers"
+      }
+    },
+    {
+      "slug": "artifacts/the-triangulating-token",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "encoded-clue",
+        "maker": "the-irenni",
+        "encodes": "the-lattice-fuel-vault",
+        "note": "a second lent gift; cross-read against the lantern it fixes a cache to a single point"
+      }
+    },
+    {
+      "slug": "artifacts/the-mendicant-seal-key",
+      "type": "artifact",
+      "tension": 0.65,
+      "facts": {
+        "archetype": "cache-key",
+        "maker": "the-mendicant-tier",
+        "opens": "the-lattice-fuel-vault",
+        "note": "the only honest key to a sealed cache; the Mendicant broker grants it only to the certified-worthy"
+      }
+    },
+    {
+      "slug": "artifacts/the-sealed-lattice-cache",
+      "type": "artifact",
+      "tension": 0.75,
+      "facts": {
+        "archetype": "sealed-cache",
+        "maker": "the-irenni",
+        "located_in": "the-lattice-fuel-vault",
+        "note": "the real prize: high-value technology behind a living seal, never simply handed over",
+        "live_risk": "forcing it without an earned open reads as theft and frays the relationship"
+      }
+    },
+    {
+      "slug": "artifacts/the-corrupted-gift",
+      "type": "artifact",
+      "tension": 0.7,
+      "facts": {
+        "archetype": "diplomatic-token",
+        "maker": "the-saalvane",
+        "miscodes": "the-lattice-fuel-vault",
+        "note": "a Saalvane forgery slipped into the lent gifts; its false bearing points to the wrong site and its misuse reads as an act of war",
+        "live_risk": "trusting it can lock a cache forever"
+      }
+    },
+    {
+      "slug": "lore/frag-the-gifts-are-clues",
+      "type": "lore",
+      "tension": 0.7,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "claim": "every lent gift is two things at once — a worthiness test and an encoded bearing; the form of the gift is itself a buried cache's location"
+      }
+    },
+    {
+      "slug": "lore/frag-the-caches-are-sealed",
+      "type": "lore",
+      "tension": 0.74,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "claim": "the technology that matters is not lent; it sits in scattered sealed caches the living Irenni will never simply hand over"
+      }
+    },
+    {
+      "slug": "lore/frag-the-vetting-is-live",
+      "type": "lore",
+      "tension": 0.78,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "claim": "the aliens are present and reading every choice in real time; how a gift is used decides whether a cache opens or locks"
+      }
+    },
+    {
+      "slug": "lore/frag-the-saalvane-sabotage",
+      "type": "lore",
+      "tension": 0.82,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "claim": "a rival splinter is corrupting the gifts so a misread points to the wrong site or reads as war, and is racing to seal the cache before humanity can earn it"
+      }
+    },
+    {
+      "slug": "lore/frag-earn-the-open",
+      "type": "lore",
+      "tension": 0.9,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "claim": "a sealed cache opens for the certified-worthy and locks forever for the thief; the open we choose at the vault is the open the whole relationship turns on"
+      }
+    },
+    {
+      "slug": "lore/the-stylus-grades-the-hand",
+      "type": "lore",
+      "tension": 0.5,
+      "facts": {
+        "claim": "the worthiness-stylus reports every use of a gift back to the watching Irenni; nothing the colony does with a lent tool goes unread"
+      }
+    },
+    {
+      "slug": "lore/two-bearings-fix-a-cache",
+      "type": "lore",
+      "tension": 0.55,
+      "facts": {
+        "claim": "no single gift names a site; only two lent gifts cross-read against each other triangulate a cache to one point"
+      }
+    },
+    {
+      "slug": "lore/the-honest-key-is-mendicant",
+      "type": "lore",
+      "tension": 0.6,
+      "facts": {
+        "claim": "the Mendicant tier holds the only honest cache-key and grants it solely to those their court certifies worthy"
+      }
+    },
+    {
+      "slug": "lore/a-forged-gift-walks-among-them",
+      "type": "lore",
+      "tension": 0.7,
+      "facts": {
+        "claim": "a Saalvane forgery sits in the colony's gift-catalog; its false bearing has already nearly sent a scout to a site that would read as invasion"
+      }
+    },
+    {
+      "slug": "lore/the-seal-answers-the-opener",
+      "type": "lore",
+      "tension": 0.72,
+      "facts": {
+        "claim": "a cache-seal is alive to intent; it reads who reaches it and whether they were sent or certified, and answers an earned open or a theft accordingly"
+      }
+    },
+    {
+      "slug": "events/first-contact-the-first-gift-lent",
+      "type": "event",
+      "tension": 0.5,
+      "facts": {
+        "kind": "first-contact",
+        "title": "the Irenni lend the colony its first gift and begin to watch",
+        "live": true
+      }
+    },
+    {
+      "slug": "events/the-first-cache-earned-open",
+      "type": "event",
+      "tension": 0.95,
+      "facts": {
+        "kind": "earned-open",
+        "title": "the first cache earned open",
+        "note": "not a fall but a verdict: at the triangulated vault the colony's choice of how to open decides whether the living relationship deepens or fractures",
+        "culmination": true
+      }
+    },
+    {
+      "slug": "arc/the-race-to-the-lattice-vault",
+      "type": "arc",
+      "tension": 0.92,
+      "facts": {
+        "phase": "rising",
+        "live": true,
+        "stakes": "humanity has triangulated the first sealed cache, but a Saalvane saboteur is racing for it with a corrupted clue; reach it and earn the open and the Irenni alliance holds — force it, or be tricked into war, and the cache locks forever and the relationship frays",
+        "next_beat_event": "events/the-first-cache-earned-open",
+        "next_beat_note": "the scout is closing on the vault, the corrupted gift is still unflagged in the catalog, and the Mendicant court has not yet certified the colony worthy",
+        "present_tension": "the colony is split between earning the open and simply cracking the cache before the rival seals it",
+        "resolution": "undecided"
+      }
+    }
+  ],
+  "edges": [
+    [
+      "factions/humans",
+      "colonizes",
+      "locations/the-mendicant-court"
+    ],
+    [
+      "factions/humans",
+      "races_to",
+      "locations/the-lattice-fuel-vault"
+    ],
+    [
+      "factions/humans",
+      "vetted_by",
+      "civs/the-irenni"
+    ],
+    [
+      "civs/the-irenni",
+      "lends_to",
+      "factions/humans"
+    ],
+    [
+      "civs/the-irenni",
+      "seals",
+      "locations/the-lattice-fuel-vault"
+    ],
+    [
+      "civs/the-irenni",
+      "grows_seals_at",
+      "locations/the-seal-foundry-deep"
+    ],
+    [
+      "civs/the-saalvane",
+      "splintered_from",
+      "civs/the-irenni"
+    ],
+    [
+      "civs/the-saalvane",
+      "sabotages",
+      "locations/the-seal-foundry-deep"
+    ],
+    [
+      "civs/the-saalvane",
+      "races_to",
+      "locations/the-lattice-fuel-vault"
+    ],
+    [
+      "civs/the-mendicant-tier",
+      "brokers_at",
+      "locations/the-mendicant-court"
+    ],
+    [
+      "civs/the-mendicant-tier",
+      "adjudicates",
+      "factions/humans"
+    ],
+    [
+      "figures/the-irenni-gift-warden",
+      "member_of",
+      "civs/the-irenni"
+    ],
+    [
+      "figures/the-mendicant-broker",
+      "member_of",
+      "civs/the-mendicant-tier"
+    ],
+    [
+      "figures/the-saalvane-saboteur",
+      "member_of",
+      "civs/the-saalvane"
+    ],
+    [
+      "figures/the-irenni-sleeper-vael",
+      "member_of",
+      "civs/the-irenni"
+    ],
+    [
+      "figures/the-saalvane-defector-corin",
+      "member_of",
+      "civs/the-saalvane"
+    ],
+    [
+      "figures/the-irenni-gift-warden",
+      "lends",
+      "artifacts/the-lattice-lantern"
+    ],
+    [
+      "figures/the-mendicant-broker",
+      "holds",
+      "artifacts/the-mendicant-seal-key"
+    ],
+    [
+      "figures/the-saalvane-saboteur",
+      "planted",
+      "artifacts/the-corrupted-gift"
+    ],
+    [
+      "figures/the-irenni-sleeper-vael",
+      "set_seal_of",
+      "artifacts/the-sealed-lattice-cache"
+    ],
+    [
+      "figures/envoy-mara-okonkwo",
+      "leads",
+      "factions/humans"
+    ],
+    [
+      "figures/decoder-jonas-rhee",
+      "member_of",
+      "factions/humans"
+    ],
+    [
+      "figures/quartermaster-lena-vasquez",
+      "member_of",
+      "factions/humans"
+    ],
+    [
+      "figures/scout-ade-balogun",
+      "member_of",
+      "factions/humans"
+    ],
+    [
+      "figures/decoder-jonas-rhee",
+      "triangulates",
+      "artifacts/the-triangulating-token"
+    ],
+    [
+      "figures/quartermaster-lena-vasquez",
+      "catalogs",
+      "artifacts/the-corrupted-gift"
+    ],
+    [
+      "figures/scout-ade-balogun",
+      "approaches",
+      "locations/the-lattice-fuel-vault"
+    ],
+    [
+      "figures/envoy-mara-okonkwo",
+      "petitions",
+      "figures/the-mendicant-broker"
+    ],
+    [
+      "artifacts/the-lattice-lantern",
+      "encodes",
+      "locations/the-lattice-fuel-vault"
+    ],
+    [
+      "artifacts/the-triangulating-token",
+      "encodes",
+      "locations/the-lattice-fuel-vault"
+    ],
+    [
+      "artifacts/the-corrupted-gift",
+      "miscodes",
+      "locations/the-lattice-fuel-vault"
+    ],
+    [
+      "artifacts/the-mendicant-seal-key",
+      "opens",
+      "artifacts/the-sealed-lattice-cache"
+    ],
+    [
+      "artifacts/the-sealed-lattice-cache",
+      "buried_in",
+      "locations/the-lattice-fuel-vault"
+    ],
+    [
+      "artifacts/the-lattice-lantern",
+      "lent_by",
+      "civs/the-irenni"
+    ],
+    [
+      "artifacts/the-worthiness-stylus",
+      "lent_by",
+      "civs/the-irenni"
+    ],
+    [
+      "artifacts/the-triangulating-token",
+      "lent_by",
+      "civs/the-irenni"
+    ],
+    [
+      "artifacts/the-mendicant-seal-key",
+      "forged_by",
+      "civs/the-mendicant-tier"
+    ],
+    [
+      "artifacts/the-sealed-lattice-cache",
+      "sealed_by",
+      "civs/the-irenni"
+    ],
+    [
+      "artifacts/the-corrupted-gift",
+      "forged_by",
+      "civs/the-saalvane"
+    ],
+    [
+      "artifacts/the-lattice-lantern",
+      "drops",
+      "lore/frag-the-gifts-are-clues"
+    ],
+    [
+      "artifacts/the-lattice-lantern",
+      "drops",
+      "lore/two-bearings-fix-a-cache"
+    ],
+    [
+      "artifacts/the-lattice-lantern",
+      "drops",
+      "lore/the-stylus-grades-the-hand"
+    ],
+    [
+      "artifacts/the-worthiness-stylus",
+      "drops",
+      "lore/frag-the-vetting-is-live"
+    ],
+    [
+      "artifacts/the-worthiness-stylus",
+      "drops",
+      "lore/the-stylus-grades-the-hand"
+    ],
+    [
+      "artifacts/the-worthiness-stylus",
+      "drops",
+      "lore/frag-the-gifts-are-clues"
+    ],
+    [
+      "artifacts/the-triangulating-token",
+      "drops",
+      "lore/two-bearings-fix-a-cache"
+    ],
+    [
+      "artifacts/the-triangulating-token",
+      "drops",
+      "lore/frag-the-caches-are-sealed"
+    ],
+    [
+      "artifacts/the-triangulating-token",
+      "drops",
+      "lore/the-honest-key-is-mendicant"
+    ],
+    [
+      "artifacts/the-mendicant-seal-key",
+      "drops",
+      "lore/frag-earn-the-open"
+    ],
+    [
+      "artifacts/the-mendicant-seal-key",
+      "drops",
+      "lore/the-honest-key-is-mendicant"
+    ],
+    [
+      "artifacts/the-mendicant-seal-key",
+      "drops",
+      "lore/the-seal-answers-the-opener"
+    ],
+    [
+      "artifacts/the-sealed-lattice-cache",
+      "drops",
+      "lore/frag-the-caches-are-sealed"
+    ],
+    [
+      "artifacts/the-sealed-lattice-cache",
+      "drops",
+      "lore/frag-earn-the-open"
+    ],
+    [
+      "artifacts/the-sealed-lattice-cache",
+      "drops",
+      "lore/the-seal-answers-the-opener"
+    ],
+    [
+      "artifacts/the-corrupted-gift",
+      "drops",
+      "lore/frag-the-saalvane-sabotage"
+    ],
+    [
+      "artifacts/the-corrupted-gift",
+      "drops",
+      "lore/a-forged-gift-walks-among-them"
+    ],
+    [
+      "artifacts/the-corrupted-gift",
+      "drops",
+      "lore/frag-the-vetting-is-live"
+    ],
+    [
+      "lore/frag-the-gifts-are-clues",
+      "reveals",
+      "lore/frag-the-caches-are-sealed"
+    ],
+    [
+      "lore/frag-the-caches-are-sealed",
+      "reveals",
+      "lore/frag-the-vetting-is-live"
+    ],
+    [
+      "lore/frag-the-vetting-is-live",
+      "reveals",
+      "lore/frag-the-saalvane-sabotage"
+    ],
+    [
+      "lore/frag-the-saalvane-sabotage",
+      "reveals",
+      "lore/frag-earn-the-open"
+    ],
+    [
+      "lore/frag-the-gifts-are-clues",
+      "reveals",
+      "artifacts/the-lattice-lantern"
+    ],
+    [
+      "lore/frag-the-caches-are-sealed",
+      "reveals",
+      "artifacts/the-sealed-lattice-cache"
+    ],
+    [
+      "lore/frag-the-vetting-is-live",
+      "reveals",
+      "civs/the-irenni"
+    ],
+    [
+      "lore/frag-the-saalvane-sabotage",
+      "reveals",
+      "civs/the-saalvane"
+    ],
+    [
+      "lore/frag-earn-the-open",
+      "reveals",
+      "events/the-first-cache-earned-open"
+    ],
+    [
+      "events/first-contact-the-first-gift-lent",
+      "involves",
+      "civs/the-irenni"
+    ],
+    [
+      "events/first-contact-the-first-gift-lent",
+      "involves",
+      "factions/humans"
+    ],
+    [
+      "events/the-first-cache-earned-open",
+      "involves",
+      "factions/humans"
+    ],
+    [
+      "civs/the-irenni",
+      "decides_at",
+      "events/the-first-cache-earned-open"
+    ],
+    [
+      "civs/the-saalvane",
+      "contests_at",
+      "events/the-first-cache-earned-open"
+    ],
+    [
+      "civs/the-mendicant-tier",
+      "certifies_at",
+      "events/the-first-cache-earned-open"
+    ],
+    [
+      "artifacts/the-sealed-lattice-cache",
+      "raises",
+      "arc/the-race-to-the-lattice-vault"
+    ],
+    [
+      "lore/frag-earn-the-open",
+      "raises",
+      "arc/the-race-to-the-lattice-vault"
+    ],
+    [
+      "figures/decoder-jonas-rhee",
+      "wants",
+      "arc/the-race-to-the-lattice-vault"
+    ],
+    [
+      "figures/envoy-mara-okonkwo",
+      "must_decide",
+      "arc/the-race-to-the-lattice-vault"
+    ],
+    [
+      "figures/scout-ade-balogun",
+      "races_in",
+      "arc/the-race-to-the-lattice-vault"
+    ],
+    [
+      "figures/the-saalvane-saboteur",
+      "threatens",
+      "arc/the-race-to-the-lattice-vault"
+    ],
+    [
+      "beliefs/the-earned-open-creed",
+      "held_by",
+      "figures/envoy-mara-okonkwo"
+    ],
+    [
+      "beliefs/the-take-it-creed",
+      "held_by",
+      "figures/decoder-jonas-rhee"
+    ],
+    [
+      "beliefs/the-earned-open-creed",
+      "opposes",
+      "beliefs/the-take-it-creed"
+    ],
+    [
+      "figures/decoder-jonas-rhee",
+      "rival_of",
+      "figures/envoy-mara-okonkwo"
+    ],
+    [
+      "figures/envoy-mara-okonkwo",
+      "ally_of",
+      "figures/scout-ade-balogun"
+    ],
+    [
+      "figures/scout-ade-balogun",
+      "lover_of",
+      "figures/quartermaster-lena-vasquez"
+    ],
+    [
+      "figures/quartermaster-lena-vasquez",
+      "owes",
+      "figures/decoder-jonas-rhee"
+    ],
+    [
+      "figures/decoder-jonas-rhee",
+      "kin_of",
+      "figures/scout-ade-balogun"
+    ],
+    [
+      "figures/quartermaster-lena-vasquez",
+      "ally_of",
+      "figures/envoy-mara-okonkwo"
+    ],
+    [
+      "figures/the-saalvane-saboteur",
+      "rival_of",
+      "figures/scout-ade-balogun"
+    ],
+    [
+      "figures/the-saalvane-saboteur",
+      "grudge_against",
+      "figures/the-saalvane-defector-corin"
+    ],
+    [
+      "figures/the-saalvane-defector-corin",
+      "ally_of",
+      "figures/quartermaster-lena-vasquez"
+    ],
+    [
+      "figures/the-irenni-gift-warden",
+      "ally_of",
+      "figures/envoy-mara-okonkwo"
+    ],
+    [
+      "figures/the-irenni-sleeper-vael",
+      "rival_of",
+      "figures/the-irenni-gift-warden"
+    ],
+    [
+      "figures/the-mendicant-broker",
+      "ally_of",
+      "figures/the-irenni-sleeper-vael"
+    ],
+    [
+      "figures/decoder-jonas-rhee",
+      "owes",
+      "figures/the-saalvane-defector-corin"
+    ],
+    [
+      "figures/scout-ade-balogun",
+      "sought_by",
+      "civs/the-saalvane"
+    ]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/frag-the-gifts-are-clues",
+      "lore/frag-the-caches-are-sealed",
+      "lore/frag-the-vetting-is-live",
+      "lore/frag-the-saalvane-sabotage",
+      "lore/frag-earn-the-open"
+    ],
+    "order": [
+      "lore/frag-the-gifts-are-clues",
+      "lore/frag-the-caches-are-sealed",
+      "lore/frag-the-vetting-is-live",
+      "lore/frag-the-saalvane-sabotage",
+      "lore/frag-earn-the-open"
+    ],
+    "order_relation": "reveals"
+  }
+}
