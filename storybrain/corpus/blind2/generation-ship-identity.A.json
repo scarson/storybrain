@@ -1,0 +1,888 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/the-foundlings",
+      "type": "faction",
+      "tension": 0.45,
+      "facts": {
+        "title": "The Foundlings",
+        "detail": "The present colony. They named themselves for orphans because the world they woke to was already furnished — cradles their infants fit, latches their thumbs found in the dark. They believe they are the first people here. The relics are starting to disagree.",
+        "role": "present descendants"
+      }
+    },
+    {
+      "slug": "factions/the-quiet-makers",
+      "type": "faction",
+      "tension": 0.6,
+      "facts": {
+        "alien_type": "absent-self-erased-makers",
+        "status": "absent",
+        "title": "The Quiet Makers",
+        "detail": "Gone, not fallen. They left no graves because they did not die — they unmade their own names, scattered their bloodlines down a thousand years of dispersal, and arranged for their descendants to return blind. The 'alien' world is their world, kept warm for children who would not know whose it was.",
+        "psychic_signature": "a held breath in every empty room",
+        "ancestral_memory": "subtle — their relics bleed first-person recollection into any descendant's hands"
+      }
+    },
+    {
+      "slug": "factions/the-mourners",
+      "type": "faction",
+      "tension": 0.7,
+      "facts": {
+        "alien_type": "absent-penitent-faction",
+        "status": "absent",
+        "title": "The Mourners",
+        "detail": "The maker-faction that wanted the crime remembered and atoned for, not erased. They lost the argument and complied with the forgetting — but salted the relics with confessions, betting a descendant would one day read them and finish the mourning they were forbidden to begin.",
+        "psychic_signature": "grief with nowhere to put itself",
+        "ancestral_memory": "subtle — their work bleeds guilt that is not yours until you touch it"
+      }
+    },
+    {
+      "slug": "factions/the-cleaners",
+      "type": "faction",
+      "tension": 0.65,
+      "facts": {
+        "alien_type": "absent-archivist-faction",
+        "status": "absent",
+        "title": "The Cleaners",
+        "detail": "The maker-faction who carried out the erasure, convinced that a clean inheritance was the only gift worth leaving. They did not deny the crime; they decided no child should be born already guilty of it. Every defaced surface is their signature, and their mercy.",
+        "psychic_signature": "the smell of a wound dressed too well",
+        "ancestral_memory": "subtle — their relics bleed the steady calm of people deleting what they loved"
+      }
+    },
+    {
+      "slug": "figures/the-silenced",
+      "type": "figure",
+      "tension": 0.85,
+      "facts": {
+        "title": "The Silenced",
+        "detail": "A second colony the makers seeded and then could not feed — a sibling settlement that would have starved the parent world if both were kept alive. The makers chose. The Silenced are who they chose against: a whole people quietly let die so this one could live. This is the thing worth burying.",
+        "status": "extinct-by-omission"
+      }
+    },
+    {
+      "slug": "locations/the-still-archive",
+      "type": "location",
+      "tension": 0.5,
+      "facts": {
+        "title": "The Still Archive",
+        "detail": "A subterranean hall where the makers stored the relics they meant to be found. Not a vault to keep things out — a waiting-room, arranged so a returning hand would recover the memories in roughly the right order. The colony mines its lower galleries for cistern-stone, never asking why the walls feel like they are listening."
+      }
+    },
+    {
+      "slug": "locations/cistern-stone-cut",
+      "type": "location",
+      "tension": 0.3,
+      "facts": {
+        "resource": "cistern-stone",
+        "centrality": "low",
+        "title": "The Cistern-Stone Cut",
+        "detail": "An ordinary quarry of an ordinary building material. Its only strangeness: the deeper you cut, the more the dust gives you dreams that aren't yours. The colony needs the stone and tolerates the dreams. Resources here are scenery, not stakes."
+      }
+    },
+    {
+      "slug": "figures/the-last-witness",
+      "type": "figure",
+      "tension": 0.7,
+      "facts": {
+        "title": "The Last Witness",
+        "role": "Mourner founder",
+        "detail": "The maker who refused to let the choice go unrecorded. She wrote the confession the Cleaners spent a generation trying to erase, then hid it inside the one relic she knew a descendant would have to open to survive."
+      }
+    },
+    {
+      "slug": "figures/the-first-cleaner",
+      "type": "figure",
+      "tension": 0.65,
+      "facts": {
+        "title": "The First Cleaner",
+        "role": "Cleaner founder",
+        "detail": "The maker who proposed the forgetting and made it total — then spent his last years carving a single flaw into the seals, a door only inherited memory could open, as if some part of him could not bear to be obeyed completely."
+      }
+    },
+    {
+      "slug": "artifacts/the-fitting-cradle",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "memory-core",
+        "title": "The Fitting Cradle",
+        "detail": "A maker memory-core shaped like an infant's cradle. A returnee who lifts it remembers, in the first person, rocking a child who has the colony's own faces — proof, felt before understood, that the makers were us."
+      }
+    },
+    {
+      "slug": "artifacts/the-edited-monument",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "defaced-monument",
+        "title": "The Edited Monument",
+        "detail": "A memorial with one panel scoured blank. The blank is not empty to a descendant's hand — the absence has a shape, and the shape is a second settlement that no chart admits."
+      }
+    },
+    {
+      "slug": "artifacts/the-mourners-will",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "encrypted-will",
+        "title": "The Mourners' Will",
+        "detail": "An encrypted will keyed to grief — it opens only for a reader whose ancestral memory already aches. Inside: the confession the Cleaners could not delete because the Mourners hid it in feeling, not text."
+      }
+    },
+    {
+      "slug": "artifacts/the-starved-chart",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "redacted-chart",
+        "title": "The Starved Chart",
+        "detail": "A star-chart with one world burned off it. The scorch marks resolve, to inherited sight, into a famine ledger: two colonies, one ration, a decision."
+      }
+    },
+    {
+      "slug": "artifacts/the-warm-vault",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "sealed-vault",
+        "title": "The Warm Vault",
+        "detail": "The relic the whole Still Archive is arranged to lead toward. Sealed by the First Cleaner with the flaw he left on purpose — it opens only to a hand that has recovered every earlier memory, and it holds the last one: the full reckoning."
+      }
+    },
+    {
+      "slug": "lore/the-cradle-fits",
+      "type": "lore",
+      "tension": 0.85,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": true,
+        "about": "factions/the-quiet-makers",
+        "title": "The Cradle Fits",
+        "detail": "First recovered memory: the makers were human. Their cradles, their latches, their grips are sized to the Foundlings because the Foundlings are their children. The colony did not discover this world. It inherited it."
+      }
+    },
+    {
+      "slug": "lore/the-blank-panel",
+      "type": "lore",
+      "tension": 0.85,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "factions/the-cleaners",
+        "title": "The Blank Panel",
+        "detail": "Second memory: the makers erased themselves on purpose, and erased something else first. A defaced monument names, by the shape of its absence, a place the charts deny — a second colony."
+      }
+    },
+    {
+      "slug": "lore/the-two-colonies",
+      "type": "lore",
+      "tension": 0.85,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "figures/the-silenced",
+        "title": "The Two Colonies",
+        "detail": "Third memory: there were two seeded settlements and food for one. The Starved Chart is a famine ledger. The makers stood at a fork where one people would live only if the other did not."
+      }
+    },
+    {
+      "slug": "lore/the-choice-made",
+      "type": "lore",
+      "tension": 0.85,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-silenced",
+        "title": "The Choice Made",
+        "detail": "Fourth memory: they chose. They let the sibling colony — the Silenced — quietly die, and let this one live."
+      }
+    },
+    {
+      "slug": "lore/the-self-erasure",
+      "type": "lore",
+      "tension": 0.85,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "factions/the-quiet-makers",
+        "title": "The Self-Erasure",
+        "detail": "Fifth memory: unable to live as the people who had done it, the makers sentenced themselves — unmaking their names and scattering their lines so their children would inherit the world but not the guilt."
+      }
+    },
+    {
+      "slug": "lore/it-was-us",
+      "type": "lore",
+      "tension": 0.85,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "factions/the-foundlings",
+        "title": "It Was Us",
+        "detail": "Final memory, assembled in the Warm Vault: the Foundlings are the survivors of that choice and the descendants of the people who made it. The makers buried the crime so their children could be innocent. Now the children know — and must decide whether innocence kept by forgetting is worth keeping."
+      }
+    },
+    {
+      "slug": "colonists/dr-anwen-cole",
+      "type": "colonist",
+      "tension": 0.75,
+      "day": 40,
+      "facts": {
+        "title": "Dr. Anwen Cole",
+        "role": "relic-reader",
+        "skills": [
+          "ancestral-memory channeling",
+          "epigraphy"
+        ],
+        "present": true,
+        "detail": "The first Foundling whose inherited memories surfaced clearly. She has assembled four of the five fragments and is one vault from the whole truth. She believes the Silenced are owed remembrance no matter the cost to the colony's peace."
+      }
+    },
+    {
+      "slug": "colonists/governor-rhys-tan",
+      "type": "colonist",
+      "tension": 0.75,
+      "day": 40,
+      "facts": {
+        "title": "Governor Rhys Tan",
+        "role": "colony governor",
+        "skills": [
+          "administration",
+          "crisis-control"
+        ],
+        "present": true,
+        "detail": "Watched the Cradle's memory break three of his surveyors and concluded the makers were right to forget. He wants the Still Archive sealed and the relic program ended before the Warm Vault opens."
+      }
+    },
+    {
+      "slug": "colonists/sister-imo",
+      "type": "colonist",
+      "tension": 0.65,
+      "day": 40,
+      "facts": {
+        "title": "Sister Imo",
+        "role": "settlement chaplain",
+        "skills": [
+          "ritual",
+          "grief-tending"
+        ],
+        "present": true,
+        "detail": "Tends the colony's faith that they are a new, clean people. Anwen's fragments are unmaking that faith. Imo must decide whether a people can mourn a crime they only just learned they inherited."
+      }
+    },
+    {
+      "slug": "colonists/jax-ferro",
+      "type": "colonist",
+      "tension": 0.7,
+      "day": 40,
+      "facts": {
+        "title": "Jax Ferro",
+        "role": "deep-quarry foreman",
+        "skills": [
+          "excavation",
+          "vault-mechanics"
+        ],
+        "present": true,
+        "detail": "The hand that can physically open the Warm Vault. His ancestral dreams have sharpened to the point where the First Cleaner's flawed seal answers him. He has not told the Governor it is ready."
+      }
+    },
+    {
+      "slug": "arc/the-reckoning",
+      "type": "arc",
+      "tension": 0.95,
+      "day": 50,
+      "facts": {
+        "phase": "climax",
+        "next_beat_kind": "vault-opening",
+        "next_beat_faction": "factions/the-foundlings",
+        "title": "The Reckoning",
+        "detail": "Four memories recovered, the fifth sealed in the Warm Vault, and Jax able to open it. The colony stands where the makers once stood: choose to know the crime and carry it, or seal the Archive and forget again — repeating, exactly, the choice that damned them. UNRESOLVED."
+      }
+    },
+    {
+      "slug": "events/now-1-fracture",
+      "type": "event",
+      "tension": 0.85,
+      "day": 45,
+      "facts": {
+        "kind": "schism",
+        "title": "Anwen publishes the Starved Chart; the colony fractures"
+      }
+    },
+    {
+      "slug": "events/now-2-order",
+      "type": "event",
+      "tension": 0.9,
+      "day": 50,
+      "facts": {
+        "kind": "standoff",
+        "title": "The Governor orders the Still Archive sealed; Jax stalls at the Warm Vault"
+      }
+    },
+    {
+      "slug": "beliefs/the-clean-inheritance",
+      "type": "belief",
+      "tension": 0.55,
+      "facts": {
+        "title": "The Clean Inheritance",
+        "detail": "The Cleaners' doctrine: that love for one's descendants is measured by what you spare them from knowing. A child born without the crime in their record is a child who cannot be made to carry it."
+      }
+    },
+    {
+      "slug": "beliefs/the-owed-truth",
+      "type": "belief",
+      "tension": 0.55,
+      "facts": {
+        "title": "The Owed Truth",
+        "detail": "The Mourners' doctrine: that a truth this heavy belongs to the people it is about, and that mercy bought with forgetting is just the crime, committed a second time against your own children."
+      }
+    },
+    {
+      "slug": "figures/the-quartermaster",
+      "type": "figure",
+      "tension": 0.7,
+      "facts": {
+        "title": "The Quartermaster",
+        "role": "ration-keeper of the makers",
+        "detail": "The maker who tallied the famine ledger and confirmed that two colonies could not both live. She did no harm with her own hands; she only made the arithmetic undeniable. The Starved Chart is, in part, her work."
+      }
+    },
+    {
+      "slug": "figures/the-ferryman",
+      "type": "figure",
+      "tension": 0.7,
+      "facts": {
+        "title": "The Ferryman",
+        "role": "keeper of the second seeding",
+        "detail": "The maker sent to tend the sibling colony — the Silenced — and then ordered home as the rations were cut. He returned and never spoke again. The Mourners' Will is addressed, in part, to him."
+      }
+    },
+    {
+      "slug": "figures/the-scatterer",
+      "type": "figure",
+      "tension": 0.6,
+      "facts": {
+        "title": "The Scatterer",
+        "role": "architect of dispersal",
+        "detail": "The maker who designed the great dispersal — the thousand-year scattering of bloodlines that would return as the Foundlings, blind to whose children they were."
+      }
+    },
+    {
+      "slug": "events/m1-the-second-seeding",
+      "type": "event",
+      "tension": 0.5,
+      "day": -3000,
+      "facts": {
+        "kind": "founding",
+        "title": "The makers seed a sibling colony"
+      }
+    },
+    {
+      "slug": "events/m2-the-famine-ledger",
+      "type": "event",
+      "tension": 0.7,
+      "day": -2900,
+      "facts": {
+        "kind": "reckoning",
+        "title": "The Quartermaster confirms: food for one"
+      }
+    },
+    {
+      "slug": "events/m3-the-silence",
+      "type": "event",
+      "tension": 0.9,
+      "day": -2880,
+      "facts": {
+        "kind": "atrocity",
+        "title": "The rations to the sibling colony are cut"
+      }
+    },
+    {
+      "slug": "events/m4-the-vote-to-forget",
+      "type": "event",
+      "tension": 0.85,
+      "day": -2800,
+      "facts": {
+        "kind": "schism",
+        "title": "The makers vote to erase the crime and themselves"
+      }
+    },
+    {
+      "slug": "events/m5-the-dispersal",
+      "type": "event",
+      "tension": 0.7,
+      "day": -2700,
+      "facts": {
+        "kind": "exodus",
+        "title": "The bloodlines are scattered to return blind"
+      }
+    },
+    {
+      "slug": "locations/the-sibling-coast",
+      "type": "location",
+      "tension": 0.6,
+      "facts": {
+        "title": "The Sibling Coast",
+        "detail": "The far shoreline the charts pretend is open water. It is where the Silenced settled, and where their unmarked dwellings still stand under the dunes — the one place a relic-blind colonist might stumble on the crime before the memories explain it."
+      }
+    },
+    {
+      "slug": "figures/the-cartographer",
+      "type": "figure",
+      "tension": 0.55,
+      "facts": {
+        "title": "The Cartographer",
+        "role": "maker who edited the sky",
+        "detail": "The Cleaner who burned the sibling colony off every chart and replaced its coordinates with open sea. The Starved Chart is her confession, hidden in the precision of the lie."
+      }
+    }
+  ],
+  "edges": [
+    [
+      "artifacts/the-fitting-cradle",
+      "made_by",
+      "factions/the-quiet-makers"
+    ],
+    [
+      "artifacts/the-fitting-cradle",
+      "found_in",
+      "locations/the-still-archive"
+    ],
+    [
+      "artifacts/the-edited-monument",
+      "made_by",
+      "factions/the-cleaners"
+    ],
+    [
+      "artifacts/the-edited-monument",
+      "found_in",
+      "locations/the-still-archive"
+    ],
+    [
+      "artifacts/the-mourners-will",
+      "made_by",
+      "factions/the-mourners"
+    ],
+    [
+      "artifacts/the-mourners-will",
+      "found_in",
+      "locations/the-still-archive"
+    ],
+    [
+      "artifacts/the-starved-chart",
+      "made_by",
+      "factions/the-cleaners"
+    ],
+    [
+      "artifacts/the-starved-chart",
+      "found_in",
+      "locations/the-still-archive"
+    ],
+    [
+      "artifacts/the-warm-vault",
+      "made_by",
+      "factions/the-quiet-makers"
+    ],
+    [
+      "artifacts/the-warm-vault",
+      "found_in",
+      "locations/the-still-archive"
+    ],
+    [
+      "lore/the-blank-panel",
+      "reveals",
+      "lore/the-cradle-fits"
+    ],
+    [
+      "lore/the-two-colonies",
+      "reveals",
+      "lore/the-blank-panel"
+    ],
+    [
+      "lore/the-choice-made",
+      "reveals",
+      "lore/the-two-colonies"
+    ],
+    [
+      "lore/the-self-erasure",
+      "reveals",
+      "lore/the-choice-made"
+    ],
+    [
+      "lore/it-was-us",
+      "reveals",
+      "lore/the-self-erasure"
+    ],
+    [
+      "artifacts/the-fitting-cradle",
+      "drops",
+      "lore/the-cradle-fits"
+    ],
+    [
+      "artifacts/the-edited-monument",
+      "drops",
+      "lore/the-blank-panel"
+    ],
+    [
+      "artifacts/the-starved-chart",
+      "drops",
+      "lore/the-two-colonies"
+    ],
+    [
+      "artifacts/the-mourners-will",
+      "drops",
+      "lore/the-choice-made"
+    ],
+    [
+      "artifacts/the-warm-vault",
+      "drops",
+      "lore/it-was-us"
+    ],
+    [
+      "artifacts/the-warm-vault",
+      "drops",
+      "lore/the-self-erasure"
+    ],
+    [
+      "artifacts/the-fitting-cradle",
+      "drops",
+      "lore/the-blank-panel"
+    ],
+    [
+      "artifacts/the-fitting-cradle",
+      "drops",
+      "lore/the-two-colonies"
+    ],
+    [
+      "artifacts/the-edited-monument",
+      "drops",
+      "lore/the-two-colonies"
+    ],
+    [
+      "artifacts/the-edited-monument",
+      "drops",
+      "lore/the-choice-made"
+    ],
+    [
+      "artifacts/the-mourners-will",
+      "drops",
+      "lore/the-two-colonies"
+    ],
+    [
+      "artifacts/the-mourners-will",
+      "drops",
+      "lore/the-self-erasure"
+    ],
+    [
+      "artifacts/the-starved-chart",
+      "drops",
+      "lore/the-choice-made"
+    ],
+    [
+      "artifacts/the-starved-chart",
+      "drops",
+      "lore/the-self-erasure"
+    ],
+    [
+      "artifacts/the-starved-chart",
+      "drops",
+      "lore/it-was-us"
+    ],
+    [
+      "artifacts/the-warm-vault",
+      "drops",
+      "lore/the-cradle-fits"
+    ],
+    [
+      "lore/the-cradle-fits",
+      "reveals",
+      "factions/the-quiet-makers"
+    ],
+    [
+      "lore/the-blank-panel",
+      "reveals",
+      "factions/the-cleaners"
+    ],
+    [
+      "lore/the-two-colonies",
+      "reveals",
+      "figures/the-silenced"
+    ],
+    [
+      "lore/the-choice-made",
+      "reveals",
+      "figures/the-silenced"
+    ],
+    [
+      "lore/the-self-erasure",
+      "reveals",
+      "factions/the-quiet-makers"
+    ],
+    [
+      "lore/it-was-us",
+      "reveals",
+      "factions/the-foundlings"
+    ],
+    [
+      "colonists/dr-anwen-cole",
+      "rival_of",
+      "colonists/governor-rhys-tan",
+      50
+    ],
+    [
+      "colonists/governor-rhys-tan",
+      "betrayed_by",
+      "colonists/jax-ferro",
+      50
+    ],
+    [
+      "colonists/dr-anwen-cole",
+      "owns",
+      "artifacts/the-starved-chart",
+      45
+    ],
+    [
+      "colonists/jax-ferro",
+      "sought_by",
+      "colonists/governor-rhys-tan",
+      50
+    ],
+    [
+      "artifacts/the-warm-vault",
+      "sought_by",
+      "colonists/dr-anwen-cole",
+      45
+    ],
+    [
+      "arc/the-reckoning",
+      "involves",
+      "factions/the-foundlings",
+      50
+    ],
+    [
+      "arc/the-reckoning",
+      "involves",
+      "lore/it-was-us",
+      50
+    ],
+    [
+      "arc/the-reckoning",
+      "involves",
+      "artifacts/the-warm-vault",
+      50
+    ],
+    [
+      "events/now-1-fracture",
+      "involves",
+      "colonists/dr-anwen-cole",
+      45
+    ],
+    [
+      "events/now-1-fracture",
+      "involves",
+      "artifacts/the-starved-chart",
+      45
+    ],
+    [
+      "events/now-1-fracture",
+      "reveals",
+      "lore/the-two-colonies",
+      45
+    ],
+    [
+      "events/now-2-order",
+      "involves",
+      "colonists/governor-rhys-tan",
+      50
+    ],
+    [
+      "events/now-2-order",
+      "involves",
+      "colonists/jax-ferro",
+      50
+    ],
+    [
+      "events/now-2-order",
+      "involves",
+      "locations/the-still-archive",
+      50
+    ],
+    [
+      "factions/the-mourners",
+      "rival_of",
+      "factions/the-cleaners"
+    ],
+    [
+      "factions/the-cleaners",
+      "made",
+      "figures/the-silenced"
+    ],
+    [
+      "figures/the-last-witness",
+      "founded",
+      "factions/the-mourners"
+    ],
+    [
+      "figures/the-first-cleaner",
+      "founded",
+      "factions/the-cleaners"
+    ],
+    [
+      "figures/the-first-cleaner",
+      "made",
+      "artifacts/the-warm-vault"
+    ],
+    [
+      "factions/the-quiet-makers",
+      "made",
+      "factions/the-foundlings"
+    ],
+    [
+      "factions/the-foundlings",
+      "exploits",
+      "locations/cistern-stone-cut"
+    ],
+    [
+      "factions/the-cleaners",
+      "holds",
+      "beliefs/the-clean-inheritance"
+    ],
+    [
+      "factions/the-mourners",
+      "holds",
+      "beliefs/the-owed-truth"
+    ],
+    [
+      "events/m1-the-second-seeding",
+      "involves",
+      "figures/the-ferryman",
+      -3000
+    ],
+    [
+      "events/m1-the-second-seeding",
+      "involves",
+      "figures/the-silenced",
+      -3000
+    ],
+    [
+      "events/m2-the-famine-ledger",
+      "involves",
+      "figures/the-quartermaster",
+      -2900
+    ],
+    [
+      "events/m2-the-famine-ledger",
+      "caused_by",
+      "events/m1-the-second-seeding",
+      -2900
+    ],
+    [
+      "events/m3-the-silence",
+      "caused_by",
+      "events/m2-the-famine-ledger",
+      -2880
+    ],
+    [
+      "events/m3-the-silence",
+      "involves",
+      "figures/the-silenced",
+      -2880
+    ],
+    [
+      "events/m3-the-silence",
+      "involves",
+      "figures/the-ferryman",
+      -2880
+    ],
+    [
+      "events/m4-the-vote-to-forget",
+      "caused_by",
+      "events/m3-the-silence",
+      -2800
+    ],
+    [
+      "events/m4-the-vote-to-forget",
+      "involves",
+      "factions/the-cleaners",
+      -2800
+    ],
+    [
+      "events/m4-the-vote-to-forget",
+      "involves",
+      "factions/the-mourners",
+      -2800
+    ],
+    [
+      "events/m5-the-dispersal",
+      "caused_by",
+      "events/m4-the-vote-to-forget",
+      -2700
+    ],
+    [
+      "events/m5-the-dispersal",
+      "involves",
+      "figures/the-scatterer",
+      -2700
+    ],
+    [
+      "events/m5-the-dispersal",
+      "involves",
+      "factions/the-quiet-makers",
+      -2700
+    ],
+    [
+      "artifacts/the-starved-chart",
+      "records",
+      "events/m2-the-famine-ledger"
+    ],
+    [
+      "artifacts/the-edited-monument",
+      "records",
+      "events/m3-the-silence"
+    ],
+    [
+      "artifacts/the-mourners-will",
+      "records",
+      "events/m4-the-vote-to-forget"
+    ],
+    [
+      "locations/the-sibling-coast",
+      "site_of",
+      "figures/the-silenced"
+    ],
+    [
+      "events/m3-the-silence",
+      "occurred_at",
+      "locations/the-sibling-coast",
+      -2880
+    ],
+    [
+      "figures/the-cartographer",
+      "made",
+      "artifacts/the-starved-chart"
+    ],
+    [
+      "figures/the-cartographer",
+      "holds",
+      "beliefs/the-clean-inheritance"
+    ]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/the-cradle-fits",
+      "lore/the-blank-panel",
+      "lore/the-two-colonies",
+      "lore/the-choice-made",
+      "lore/the-self-erasure",
+      "lore/it-was-us"
+    ],
+    "order": [
+      "lore/the-cradle-fits",
+      "lore/the-blank-panel",
+      "lore/the-two-colonies",
+      "lore/the-choice-made",
+      "lore/the-self-erasure",
+      "lore/it-was-us"
+    ],
+    "order_relation": "reveals"
+  }
+}

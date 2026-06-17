@@ -1,0 +1,18 @@
+{
+  "uplift-nursery-world": {
+    "A": "pure",
+    "B": "hybrid2"
+  },
+  "extinction-plague-vector": {
+    "A": "pure",
+    "B": "hybrid2"
+  },
+  "crowded-trade-federation": {
+    "A": "pure",
+    "B": "hybrid2"
+  },
+  "generation-ship-identity": {
+    "A": "pure",
+    "B": "hybrid2"
+  }
+}

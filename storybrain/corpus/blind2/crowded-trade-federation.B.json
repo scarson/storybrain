@@ -85,7 +85,6 @@
         "desc": "the mundane salt that greases every certified sale — plentiful, taxed, never worth lying about, and so the one good every faction's books agree on"
       }
     },
-
     {
       "slug": "events/vossan-first-amber",
       "type": "event",
@@ -177,7 +176,6 @@
         "is_climax": true
       }
     },
-
     {
       "slug": "artifacts/vossan-first-provenance-scroll",
       "type": "artifact",
@@ -238,7 +236,6 @@
         "desc": "a wax cylinder hidden by the dissident appraiser, on which she reads aloud what the true chain actually is"
       }
     },
-
     {
       "slug": "lore/the-amber-was-never-mined",
       "type": "lore",
@@ -279,7 +276,6 @@
         "text": "The Khariti route-log names the unmarked station — and what it really is. Ghostlight-amber is not a mineral at all but the slow-cooled residue of a living thing the Drift has been quietly harvesting; the 'source' everyone fights over is alive."
       }
     },
-
     {
       "slug": "colonists/mara-osei-vance",
       "type": "colonist",
@@ -341,88 +337,407 @@
     }
   ],
   "edges": [
-    ["events/vossan-first-amber", "involves", "civs/the-vossan-syndics", 100],
-    ["events/vossan-first-amber", "concerns", "locations/ghostlight-amber-seam", 100],
-    ["events/khariti-carry-the-truth", "involves", "civs/the-khariti-drift", 100],
-    ["events/khariti-carry-the-truth", "concerns", "locations/ghostlight-amber-seam", 100],
-
-    ["events/oseni-seal-the-lie", "involves", "civs/the-oseni-assayers", 200],
-    ["events/oseni-seal-the-lie", "caused_by", "events/vossan-first-amber", 200],
-    ["events/melun-corner-the-supply", "involves", "civs/the-melun-cartel", 200],
-    ["events/melun-corner-the-supply", "caused_by", "events/khariti-carry-the-truth", 200],
-    ["events/melun-corner-the-supply", "concerns", "locations/ghostlight-amber-seam", 200],
-    ["events/rho-buy-the-story", "involves", "civs/the-rho-collectors", 200],
-    ["events/rho-buy-the-story", "caused_by", "events/oseni-seal-the-lie", 200],
-
-    ["events/oseni-schism", "involves", "civs/the-oseni-assayers", 300],
-    ["events/oseni-schism", "caused_by", "events/rho-buy-the-story", 300],
-    ["events/khariti-leak-the-log", "involves", "civs/the-khariti-drift", 300],
-    ["events/khariti-leak-the-log", "caused_by", "events/melun-corner-the-supply", 300],
-
-    ["events/melun-flood-the-fakes", "involves", "civs/the-melun-cartel", 400],
-    ["events/melun-flood-the-fakes", "caused_by", "events/khariti-leak-the-log", 400],
-    ["events/melun-flood-the-fakes", "concerns", "locations/ghostlight-amber-seam", 400],
-
-    ["events/the-contested-deal", "involves", "civs/the-vossan-syndics", 400],
-    ["events/the-contested-deal", "caused_by", "events/oseni-schism", 400],
-    ["events/the-contested-deal", "caused_by", "events/melun-flood-the-fakes", 400],
-
-    ["civs/the-vossan-syndics", "involved_in", "events/the-contested-deal", 400],
-    ["civs/the-melun-cartel", "involved_in", "events/the-contested-deal", 400],
-    ["civs/the-rho-collectors", "involved_in", "events/the-contested-deal", 400],
-    ["civs/the-khariti-drift", "involved_in", "events/the-contested-deal", 400],
-
-    ["artifacts/vossan-first-provenance-scroll", "drops", "lore/the-amber-was-never-mined", 100],
-    ["artifacts/vossan-first-provenance-scroll", "drops", "lore/the-relic-is-honest-the-paper-is-not", 100],
-    ["artifacts/vossan-first-provenance-scroll", "drops", "lore/the-seal-can-be-unmade", 100],
-
-    ["artifacts/oseni-true-seal-die", "drops", "lore/the-seal-can-be-unmade", 200],
-    ["artifacts/oseni-true-seal-die", "drops", "lore/the-amber-was-never-mined", 200],
-    ["artifacts/oseni-true-seal-die", "drops", "lore/the-relic-is-honest-the-paper-is-not", 200],
-
-    ["artifacts/khariti-route-log", "drops", "lore/the-drift-knows-the-real-source", 300],
-    ["artifacts/khariti-route-log", "drops", "lore/the-amber-was-never-mined", 300],
-    ["artifacts/khariti-route-log", "drops", "lore/the-relic-is-honest-the-paper-is-not", 300],
-
-    ["artifacts/rho-clean-chain-relic", "drops", "lore/the-relic-is-honest-the-paper-is-not", 200],
-    ["artifacts/rho-clean-chain-relic", "drops", "lore/the-amber-was-never-mined", 200],
-    ["artifacts/rho-clean-chain-relic", "drops", "lore/the-drift-knows-the-real-source", 200],
-
-    ["artifacts/melun-counterfeit-token", "drops", "lore/the-seal-can-be-unmade", 400],
-    ["artifacts/melun-counterfeit-token", "drops", "lore/the-amber-was-never-mined", 400],
-    ["artifacts/melun-counterfeit-token", "drops", "lore/the-drift-knows-the-real-source", 400],
-
-    ["artifacts/dissident-assayer-confession", "drops", "lore/the-drift-knows-the-real-source", 300],
-    ["artifacts/dissident-assayer-confession", "drops", "lore/the-seal-can-be-unmade", 300],
-    ["artifacts/dissident-assayer-confession", "drops", "lore/the-relic-is-honest-the-paper-is-not", 300],
-
-    ["lore/the-amber-was-never-mined", "reveals", "civs/the-vossan-syndics", 100],
-    ["lore/the-seal-can-be-unmade", "reveals", "civs/the-oseni-assayers", 200],
-    ["lore/the-relic-is-honest-the-paper-is-not", "reveals", "civs/the-rho-collectors", 200],
-    ["lore/the-drift-knows-the-real-source", "reveals", "civs/the-khariti-drift", 300],
-
-    ["lore/the-amber-was-never-mined", "precedes", "lore/the-seal-can-be-unmade", 200],
-    ["lore/the-seal-can-be-unmade", "precedes", "lore/the-relic-is-honest-the-paper-is-not", 300],
-    ["lore/the-relic-is-honest-the-paper-is-not", "precedes", "lore/the-drift-knows-the-real-source", 400],
-    ["lore/the-drift-knows-the-real-source", "precedes", "events/the-contested-deal", 400],
-
-    ["colonists/mara-osei-vance", "owns", "factions/humans", 500],
-    ["colonists/mara-osei-vance", "sought_by", "civs/the-rho-collectors", 500],
-    ["colonists/mara-osei-vance", "owns", "artifacts/khariti-route-log", 500],
-    ["colonists/dev-haldane", "rival_of", "colonists/mara-osei-vance", 500],
-    ["colonists/dev-haldane", "owns", "artifacts/melun-counterfeit-token", 500],
-    ["colonists/sable-ferreira", "betrayed_by", "colonists/dev-haldane", 500],
-    ["colonists/sable-ferreira", "owns", "artifacts/dissident-assayer-confession", 500],
-    ["civs/the-melun-cartel", "threatens", "colonists/sable-ferreira", 500],
-    ["civs/the-vossan-syndics", "rival_of", "civs/the-melun-cartel", 500],
-    ["colonists/quen-arden", "owns", "artifacts/rho-clean-chain-relic", 500],
-    ["civs/the-rho-collectors", "sought_by", "colonists/quen-arden", 500],
-
-    ["arcs/the-deal-nobody-dares-close", "concerns", "events/the-contested-deal", 500],
-    ["arcs/the-deal-nobody-dares-close", "concerns", "artifacts/rho-clean-chain-relic", 500],
-    ["arcs/the-deal-nobody-dares-close", "involves", "colonists/mara-osei-vance", 500],
-    ["arcs/the-deal-nobody-dares-close", "involves", "colonists/sable-ferreira", 500],
-    ["arcs/the-deal-nobody-dares-close", "involves", "colonists/quen-arden"]
+    [
+      "events/vossan-first-amber",
+      "involves",
+      "civs/the-vossan-syndics",
+      100
+    ],
+    [
+      "events/vossan-first-amber",
+      "concerns",
+      "locations/ghostlight-amber-seam",
+      100
+    ],
+    [
+      "events/khariti-carry-the-truth",
+      "involves",
+      "civs/the-khariti-drift",
+      100
+    ],
+    [
+      "events/khariti-carry-the-truth",
+      "concerns",
+      "locations/ghostlight-amber-seam",
+      100
+    ],
+    [
+      "events/oseni-seal-the-lie",
+      "involves",
+      "civs/the-oseni-assayers",
+      200
+    ],
+    [
+      "events/oseni-seal-the-lie",
+      "caused_by",
+      "events/vossan-first-amber",
+      200
+    ],
+    [
+      "events/melun-corner-the-supply",
+      "involves",
+      "civs/the-melun-cartel",
+      200
+    ],
+    [
+      "events/melun-corner-the-supply",
+      "caused_by",
+      "events/khariti-carry-the-truth",
+      200
+    ],
+    [
+      "events/melun-corner-the-supply",
+      "concerns",
+      "locations/ghostlight-amber-seam",
+      200
+    ],
+    [
+      "events/rho-buy-the-story",
+      "involves",
+      "civs/the-rho-collectors",
+      200
+    ],
+    [
+      "events/rho-buy-the-story",
+      "caused_by",
+      "events/oseni-seal-the-lie",
+      200
+    ],
+    [
+      "events/oseni-schism",
+      "involves",
+      "civs/the-oseni-assayers",
+      300
+    ],
+    [
+      "events/oseni-schism",
+      "caused_by",
+      "events/rho-buy-the-story",
+      300
+    ],
+    [
+      "events/khariti-leak-the-log",
+      "involves",
+      "civs/the-khariti-drift",
+      300
+    ],
+    [
+      "events/khariti-leak-the-log",
+      "caused_by",
+      "events/melun-corner-the-supply",
+      300
+    ],
+    [
+      "events/melun-flood-the-fakes",
+      "involves",
+      "civs/the-melun-cartel",
+      400
+    ],
+    [
+      "events/melun-flood-the-fakes",
+      "caused_by",
+      "events/khariti-leak-the-log",
+      400
+    ],
+    [
+      "events/melun-flood-the-fakes",
+      "concerns",
+      "locations/ghostlight-amber-seam",
+      400
+    ],
+    [
+      "events/the-contested-deal",
+      "involves",
+      "civs/the-vossan-syndics",
+      400
+    ],
+    [
+      "events/the-contested-deal",
+      "caused_by",
+      "events/oseni-schism",
+      400
+    ],
+    [
+      "events/the-contested-deal",
+      "caused_by",
+      "events/melun-flood-the-fakes",
+      400
+    ],
+    [
+      "civs/the-vossan-syndics",
+      "involved_in",
+      "events/the-contested-deal",
+      400
+    ],
+    [
+      "civs/the-melun-cartel",
+      "involved_in",
+      "events/the-contested-deal",
+      400
+    ],
+    [
+      "civs/the-rho-collectors",
+      "involved_in",
+      "events/the-contested-deal",
+      400
+    ],
+    [
+      "civs/the-khariti-drift",
+      "involved_in",
+      "events/the-contested-deal",
+      400
+    ],
+    [
+      "artifacts/vossan-first-provenance-scroll",
+      "drops",
+      "lore/the-amber-was-never-mined",
+      100
+    ],
+    [
+      "artifacts/vossan-first-provenance-scroll",
+      "drops",
+      "lore/the-relic-is-honest-the-paper-is-not",
+      100
+    ],
+    [
+      "artifacts/vossan-first-provenance-scroll",
+      "drops",
+      "lore/the-seal-can-be-unmade",
+      100
+    ],
+    [
+      "artifacts/oseni-true-seal-die",
+      "drops",
+      "lore/the-seal-can-be-unmade",
+      200
+    ],
+    [
+      "artifacts/oseni-true-seal-die",
+      "drops",
+      "lore/the-amber-was-never-mined",
+      200
+    ],
+    [
+      "artifacts/oseni-true-seal-die",
+      "drops",
+      "lore/the-relic-is-honest-the-paper-is-not",
+      200
+    ],
+    [
+      "artifacts/khariti-route-log",
+      "drops",
+      "lore/the-drift-knows-the-real-source",
+      300
+    ],
+    [
+      "artifacts/khariti-route-log",
+      "drops",
+      "lore/the-amber-was-never-mined",
+      300
+    ],
+    [
+      "artifacts/khariti-route-log",
+      "drops",
+      "lore/the-relic-is-honest-the-paper-is-not",
+      300
+    ],
+    [
+      "artifacts/rho-clean-chain-relic",
+      "drops",
+      "lore/the-relic-is-honest-the-paper-is-not",
+      200
+    ],
+    [
+      "artifacts/rho-clean-chain-relic",
+      "drops",
+      "lore/the-amber-was-never-mined",
+      200
+    ],
+    [
+      "artifacts/rho-clean-chain-relic",
+      "drops",
+      "lore/the-drift-knows-the-real-source",
+      200
+    ],
+    [
+      "artifacts/melun-counterfeit-token",
+      "drops",
+      "lore/the-seal-can-be-unmade",
+      400
+    ],
+    [
+      "artifacts/melun-counterfeit-token",
+      "drops",
+      "lore/the-amber-was-never-mined",
+      400
+    ],
+    [
+      "artifacts/melun-counterfeit-token",
+      "drops",
+      "lore/the-drift-knows-the-real-source",
+      400
+    ],
+    [
+      "artifacts/dissident-assayer-confession",
+      "drops",
+      "lore/the-drift-knows-the-real-source",
+      300
+    ],
+    [
+      "artifacts/dissident-assayer-confession",
+      "drops",
+      "lore/the-seal-can-be-unmade",
+      300
+    ],
+    [
+      "artifacts/dissident-assayer-confession",
+      "drops",
+      "lore/the-relic-is-honest-the-paper-is-not",
+      300
+    ],
+    [
+      "lore/the-amber-was-never-mined",
+      "reveals",
+      "civs/the-vossan-syndics",
+      100
+    ],
+    [
+      "lore/the-seal-can-be-unmade",
+      "reveals",
+      "civs/the-oseni-assayers",
+      200
+    ],
+    [
+      "lore/the-relic-is-honest-the-paper-is-not",
+      "reveals",
+      "civs/the-rho-collectors",
+      200
+    ],
+    [
+      "lore/the-drift-knows-the-real-source",
+      "reveals",
+      "civs/the-khariti-drift",
+      300
+    ],
+    [
+      "lore/the-amber-was-never-mined",
+      "precedes",
+      "lore/the-seal-can-be-unmade",
+      200
+    ],
+    [
+      "lore/the-seal-can-be-unmade",
+      "precedes",
+      "lore/the-relic-is-honest-the-paper-is-not",
+      300
+    ],
+    [
+      "lore/the-relic-is-honest-the-paper-is-not",
+      "precedes",
+      "lore/the-drift-knows-the-real-source",
+      400
+    ],
+    [
+      "lore/the-drift-knows-the-real-source",
+      "precedes",
+      "events/the-contested-deal",
+      400
+    ],
+    [
+      "colonists/mara-osei-vance",
+      "owns",
+      "factions/humans",
+      500
+    ],
+    [
+      "colonists/mara-osei-vance",
+      "sought_by",
+      "civs/the-rho-collectors",
+      500
+    ],
+    [
+      "colonists/mara-osei-vance",
+      "owns",
+      "artifacts/khariti-route-log",
+      500
+    ],
+    [
+      "colonists/dev-haldane",
+      "rival_of",
+      "colonists/mara-osei-vance",
+      500
+    ],
+    [
+      "colonists/dev-haldane",
+      "owns",
+      "artifacts/melun-counterfeit-token",
+      500
+    ],
+    [
+      "colonists/sable-ferreira",
+      "betrayed_by",
+      "colonists/dev-haldane",
+      500
+    ],
+    [
+      "colonists/sable-ferreira",
+      "owns",
+      "artifacts/dissident-assayer-confession",
+      500
+    ],
+    [
+      "civs/the-melun-cartel",
+      "threatens",
+      "colonists/sable-ferreira",
+      500
+    ],
+    [
+      "civs/the-vossan-syndics",
+      "rival_of",
+      "civs/the-melun-cartel",
+      500
+    ],
+    [
+      "colonists/quen-arden",
+      "owns",
+      "artifacts/rho-clean-chain-relic",
+      500
+    ],
+    [
+      "civs/the-rho-collectors",
+      "sought_by",
+      "colonists/quen-arden",
+      500
+    ],
+    [
+      "arcs/the-deal-nobody-dares-close",
+      "concerns",
+      "events/the-contested-deal",
+      500
+    ],
+    [
+      "arcs/the-deal-nobody-dares-close",
+      "concerns",
+      "artifacts/rho-clean-chain-relic",
+      500
+    ],
+    [
+      "arcs/the-deal-nobody-dares-close",
+      "involves",
+      "colonists/mara-osei-vance",
+      500
+    ],
+    [
+      "arcs/the-deal-nobody-dares-close",
+      "involves",
+      "colonists/sable-ferreira",
+      500
+    ],
+    [
+      "arcs/the-deal-nobody-dares-close",
+      "involves",
+      "colonists/quen-arden"
+    ]
   ],
   "mystery": {
     "fragments": [

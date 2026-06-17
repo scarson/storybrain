@@ -1,0 +1,857 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.4,
+      "facts": {
+        "role": "late-arrivals",
+        "title": "The Returnees",
+        "detail": "Colonists who crossed the dark for a fresh, empty world and found it already carved — doorways their shoulders fit, stairs their stride matched, handrails worn smooth at exactly their grip. They call the dead builders 'the makers' and the makers 'alien,' and every relic they pry loose argues, quietly, against both words."
+      }
+    },
+    {
+      "slug": "civs/the-erased",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "absent-self-erased-makers",
+        "status": "ancestral",
+        "fate": "departed-into-us",
+        "title": "The Erased",
+        "detail": "Not a fallen empire — a people who chose to vanish. They did not die; they deleted themselves: dispersed their names, scattered their lines, salted their own record so thoroughly that the only proof they existed is the perfect fit of their architecture to the hands that returned. The Returnees ARE their scattered lines, grown strange and come home. The makers did not leave the world; they left it to their own children and forgot to mention it.",
+        "psychic_signature": "the warmth of a room that knows your name and will not say it",
+        "ancestral_memory": "subtle — to touch their work is to half-remember a decision you were not alive to make"
+      }
+    },
+    {
+      "slug": "civs/the-redactors",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "absent-archivist-lineage",
+        "status": "ancestral",
+        "fate": "dispersed-having-sealed",
+        "title": "The Redactors",
+        "detail": "The archivist-caste who performed the great forgetting: sealed the vaults, defaced the monuments, edited the charts so a returning child could never reassemble what was done. They believed mercy was a kind of erasure — that some inheritances are cruelties, and the only way to forgive your descendants is to make sure they never learn what they would have to forgive. They dispersed with the rest, certain they had bought their children a clean conscience.",
+        "psychic_signature": "the clean silence where a sentence used to be",
+        "ancestral_memory": "subtle — their relics bleed the steady hands of people deleting something they loved"
+      }
+    },
+    {
+      "slug": "civs/the-refusers",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "absent-dissenter-lineage",
+        "status": "ancestral",
+        "fate": "dispersed-having-hidden-the-key",
+        "title": "The Refusers",
+        "detail": "The maker-minority who fought the forgetting and lost. Unable to stop the erasure, they hid counter-records inside the very relics being sealed — a buried argument, addressed to a descendant who did not yet exist, insisting that a truth survived being deleted is still owed to the people it is about. They scattered with the rest, betting everything on a hand that would one day fit the door.",
+        "psychic_signature": "a voice that kept a copy because someone had to",
+        "ancestral_memory": "subtle — their work bleeds defiance, and the ache of writing a letter you will never see opened"
+      }
+    },
+    {
+      "slug": "locations/echo-resin-seam",
+      "type": "location",
+      "tension": 0.36,
+      "facts": {
+        "resource": "echo-resin",
+        "danger": 0.25,
+        "title": "The Echo-Resin Seam",
+        "detail": "A vein of resin that set around old broadcasts the way amber sets around a fly. Incidental to the makers' economy and incidental to the colony's — but a returnee who breathes its dust catches borrowed recollections that are not theirs. The resource was never the point. It is just where the memory is thinnest."
+      }
+    },
+    {
+      "slug": "locations/vault-salt-flats",
+      "type": "location",
+      "tension": 0.34,
+      "facts": {
+        "resource": "vault-salt",
+        "danger": 0.15,
+        "title": "The Vault-Salt Flats",
+        "detail": "The mineral the Redactors used to cure the seals on their vaults — a cheap, abundant preservative for a very expensive silence. The colony mines it for ballast and water-cracking and never asks why every grain tastes faintly of someone else's regret."
+      }
+    },
+    {
+      "slug": "figures/first-doubter",
+      "type": "figure",
+      "tension": 0.45,
+      "facts": {
+        "role": "maker-of-record",
+        "civ": "the-erased",
+        "title": "First Doubter of the Erased",
+        "detail": "The maker who first asked, before the vanishing, whether a people have the right to delete themselves from their own children. Outvoted. Her question is the oldest fingerprint on the whole design, and the seed every recovered memory grows back toward."
+      }
+    },
+    {
+      "slug": "figures/last-editor",
+      "type": "figure",
+      "tension": 0.45,
+      "facts": {
+        "role": "maker-of-record",
+        "civ": "the-redactors",
+        "title": "The Last Editor",
+        "detail": "The Redactor who sealed the final vault and, in the act, left the one flaw the Refusers had bribed him to leave — a seam a descendant's hand could open. He told himself it was an accident; his own relics record that he chose it."
+      }
+    },
+    {
+      "slug": "figures/keeper-of-the-copy",
+      "type": "figure",
+      "tension": 0.45,
+      "facts": {
+        "role": "maker-of-record",
+        "civ": "the-refusers",
+        "title": "Keeper of the Buried Copy",
+        "detail": "The Refuser who chose which truth to smuggle past the Redactors, knowing it would damn the makers in the eyes of whoever found it. He decided the descendants deserved the damnation more than the comfort."
+      }
+    },
+    {
+      "slug": "events/the-question-raised",
+      "type": "event",
+      "tension": 0.52,
+      "day": 100,
+      "facts": {
+        "kind": "schism",
+        "title": "The First Doubter asks whether a people may delete themselves from their children",
+        "detail": "Before any vault was sealed, the question was put to the makers and lost. Everything afterward is the working-out of a vote that should have gone the other way."
+      }
+    },
+    {
+      "slug": "events/the-vote-carried",
+      "type": "event",
+      "tension": 0.6,
+      "day": 200,
+      "facts": {
+        "kind": "decision",
+        "title": "The makers vote to erase themselves and scatter",
+        "detail": "Not a defeat, not a plague — a decision. They resolved to disperse their lines, salt their record, and walk away from their own names rather than carry forward as the people who had done the thing in the vault."
+      }
+    },
+    {
+      "slug": "events/the-great-redaction",
+      "type": "event",
+      "tension": 0.62,
+      "day": 300,
+      "facts": {
+        "kind": "redaction",
+        "title": "The Redactors seal the vaults and deface the record",
+        "detail": "The archivist-caste executed the forgetting: every monument scarred, every chart edited, every confession sealed in salt. Mercy, made permanent — or so they intended."
+      }
+    },
+    {
+      "slug": "events/the-buried-argument",
+      "type": "event",
+      "tension": 0.58,
+      "day": 400,
+      "facts": {
+        "kind": "sabotage",
+        "title": "The Refusers smuggle counter-records into the sealed relics",
+        "detail": "Losing the argument aloud, the Refusers won it in secret — keying the seals to inherited memory, hiding a will inside a will, so the truth could only be reassembled by a hand that was already kin."
+      }
+    },
+    {
+      "slug": "events/the-scattering",
+      "type": "event",
+      "tension": 0.685,
+      "day": 600,
+      "facts": {
+        "kind": "departure",
+        "title": "The makers disperse into the dark, becoming no one",
+        "detail": "The culminating act: the makers walked out of their own history. Their lines spread across the dark, forgot they were ever one people, and one branch of them eventually turned a ship around and came home to a world that fit their hands. This is the moment the Returnees are still living inside without knowing it.",
+        "climactic": true
+      }
+    },
+    {
+      "slug": "artifacts/the-scarred-stele",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "defaced-monument",
+        "maker": "the-redactors",
+        "title": "The Scarred Stele",
+        "detail": "A victory monument with every name chiselled out — but the chisel-marks themselves spell, to a hand that traces them, the shape of what was won and at whose cost. The first relic that bleeds a memory of human hands holding the chisel."
+      }
+    },
+    {
+      "slug": "artifacts/the-edited-sky",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "redacted-chart",
+        "maker": "the-redactors",
+        "title": "The Edited Sky",
+        "detail": "A star-chart with one destination burned to ash. The ash is not random; it is a coordinate, written in absence — the world the makers fled, and the one they could not let their children find their way back to."
+      }
+    },
+    {
+      "slug": "artifacts/the-refusers-vault",
+      "type": "artifact",
+      "tension": 0.62,
+      "facts": {
+        "archetype": "sealed-vault",
+        "maker": "the-refusers",
+        "title": "The Refusers' Vault",
+        "detail": "A vault the Redactors sealed and the Refusers re-keyed, so that only inherited memory — a returnee's borrowed recollection of the lock — can open it. The whole conspiracy of honesty is folded inside."
+      }
+    },
+    {
+      "slug": "artifacts/the-mercy-vault",
+      "type": "artifact",
+      "tension": 0.7,
+      "facts": {
+        "archetype": "sealed-bio-vault",
+        "maker": "the-redactors",
+        "title": "The Mercy Vault",
+        "detail": "Sealed by the Redactors as an act of love, holding the thing they judged could not be shared fairly and so chose to bury for everyone. Its seal answers only to a hand that already remembers cutting it. The last vault, and the heaviest."
+      }
+    },
+    {
+      "slug": "artifacts/the-counter-monument",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "defaced-monument",
+        "maker": "the-refusers",
+        "title": "The Counter-Monument",
+        "detail": "A Refuser forgery hidden among the defaced stones — it restores, in coded relief, exactly the sentence the Redactors worked hardest to erase. It does not accuse the makers; it confesses for them."
+      }
+    },
+    {
+      "slug": "artifacts/the-last-will",
+      "type": "artifact",
+      "tension": 0.65,
+      "facts": {
+        "archetype": "encrypted-will",
+        "maker": "the-refusers",
+        "title": "The Last Will",
+        "detail": "An encrypted will addressed to 'whoever's hand fits this' — the makers confessing, in the first person, that they are us, and asking forgiveness for the choice to forget. It is the only relic that says the quiet part aloud."
+      }
+    },
+    {
+      "slug": "lore/the-hands-that-fit",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": true,
+        "about": "the-erased",
+        "title": "The Hands That Fit",
+        "detail": "First recovered memory: the ruins are not alien. The makers' doorways, tools, and grips are human-scaled because the makers were human. The colonists are not explorers. They are the ones who came back."
+      }
+    },
+    {
+      "slug": "lore/the-vote-to-vanish",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-erased",
+        "title": "The Vote to Vanish",
+        "detail": "Second memory: the makers were not destroyed. They convened and chose to erase themselves — to disperse their lines and salt their record — rather than carry forward as they were. Absence by ballot, not by catastrophe."
+      }
+    },
+    {
+      "slug": "lore/the-clean-silence",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-redactors",
+        "title": "The Clean Silence",
+        "detail": "Third memory: the Redactors engineered the forgetting as mercy. They believed a descendant who never learned the secret could never be made complicit by it — that ignorance, made total, was a gift."
+      }
+    },
+    {
+      "slug": "lore/the-buried-copy",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-refusers",
+        "title": "The Buried Copy",
+        "detail": "Fourth memory: the Refusers smuggled a counter-record into the sealed relics, arguing a truth this heavy is owed to the people it is about, however much it costs them to know. The forgetting was never as total as the Redactors believed."
+      }
+    },
+    {
+      "slug": "lore/the-weight-of-the-secret",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-redactors",
+        "title": "The Weight of the Secret",
+        "detail": "Fifth memory: the thing buried. (Per this world: a cure withheld because it could never be shared fairly, sealed for everyone rather than granted to a few.) The makers judged themselves and could not bear the verdict, so they hid both the crime and the court."
+      }
+    },
+    {
+      "slug": "lore/it-was-us",
+      "type": "lore",
+      "tension": 0.85,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-erased",
+        "title": "It Was Us",
+        "detail": "Final memory, assembled: the reckoning lands. The colonists are the makers' descendants; the makers chose to bury this; and now the choice — to forget again, or to carry it — falls to the ones who came back."
+      }
+    },
+    {
+      "slug": "colonists/mara-okonkwo",
+      "type": "colonist",
+      "tension": 0.7,
+      "day": 1200,
+      "facts": {
+        "role": "lead xenoarchivist",
+        "present": true,
+        "skills": [
+          "relic-reading",
+          "ancestral-memory sensitivity"
+        ],
+        "title": "Mara Okonkwo",
+        "detail": "First of the returnees to recover a whole memory and keep her feet. She has read 'The Hands That Fit' and cannot un-know it. She wants the full chain assembled and made public; she thinks a people owe themselves the truth even when it indicts them."
+      }
+    },
+    {
+      "slug": "colonists/tomas-vey",
+      "type": "colonist",
+      "tension": 0.7,
+      "day": 1200,
+      "facts": {
+        "role": "council administrator",
+        "present": true,
+        "skills": [
+          "governance",
+          "risk-triage"
+        ],
+        "title": "Tomas Vey",
+        "detail": "Holds the colony charter and the nerve to enforce it. He has seen what one fragment did to Mara and argues the makers were right: some inheritances should stay buried. He wants the relic hunt halted before the chain completes."
+      }
+    },
+    {
+      "slug": "colonists/iris-sandoval",
+      "type": "colonist",
+      "tension": 0.72,
+      "day": 1200,
+      "facts": {
+        "role": "deep-survey engineer",
+        "present": true,
+        "skills": [
+          "seam-drilling",
+          "vault-cracking"
+        ],
+        "title": "Iris Sandoval",
+        "detail": "The hand that physically opens the vaults. The Mercy Vault's seal is keyed to inherited memory — and Iris's borrowed recollections are sharpening by the week. She is the one who can finish the dig, and the one most changed by it. The seal will open for her because, in a sense it terrifies her to admit, she is the one who cut it."
+      }
+    },
+    {
+      "slug": "colonists/elder-juno",
+      "type": "colonist",
+      "tension": 0.6,
+      "day": 1200,
+      "facts": {
+        "role": "settlement elder",
+        "present": true,
+        "skills": [
+          "oral history",
+          "mediation"
+        ],
+        "title": "Elder Juno",
+        "detail": "Remembers the colony's founding myth — that they were a new people in a clean place — and feels it dissolving with every relic Mara reads. Caught between Mara's truth and Tomas's mercy, and the only one old enough to suspect both are right."
+      }
+    },
+    {
+      "slug": "arc/the-second-choice",
+      "type": "arc",
+      "tension": 0.95,
+      "day": 1300,
+      "facts": {
+        "phase": "climax",
+        "next_beat_kind": "vault-opening",
+        "next_beat_faction": "factions/humans",
+        "next_beat_actor": "colonists/iris-sandoval",
+        "open": true,
+        "title": "The Second Choice",
+        "detail": "Five of the six memories are recovered; the Mercy Vault holds the last. The colony must decide whether to assemble 'It Was Us' — and then whether to do what their ancestors did, and forget again. The makers' choice is about to fall to the people who came back, and nobody yet knows which way they will vote."
+      }
+    },
+    {
+      "slug": "events/the-counter-monument-read",
+      "type": "event",
+      "tension": 0.85,
+      "day": 1250,
+      "facts": {
+        "kind": "recovery",
+        "title": "Mara reads The Counter-Monument and recovers The Buried Copy"
+      }
+    },
+    {
+      "slug": "events/the-vault-standoff",
+      "type": "event",
+      "tension": 0.9,
+      "day": 1300,
+      "facts": {
+        "kind": "standoff",
+        "title": "Tomas orders the Mercy Vault re-sealed; Iris refuses to step back from the door"
+      }
+    }
+  ],
+  "edges": [
+    [
+      "events/the-question-raised",
+      "involves",
+      "civs/the-erased",
+      100
+    ],
+    [
+      "events/the-question-raised",
+      "involves",
+      "figures/first-doubter",
+      100
+    ],
+    [
+      "events/the-vote-carried",
+      "involves",
+      "civs/the-erased",
+      200
+    ],
+    [
+      "events/the-vote-carried",
+      "caused_by",
+      "events/the-question-raised",
+      200
+    ],
+    [
+      "events/the-great-redaction",
+      "involves",
+      "civs/the-redactors",
+      300
+    ],
+    [
+      "events/the-great-redaction",
+      "involves",
+      "figures/last-editor",
+      300
+    ],
+    [
+      "events/the-great-redaction",
+      "caused_by",
+      "events/the-vote-carried",
+      300
+    ],
+    [
+      "events/the-great-redaction",
+      "concerns",
+      "locations/vault-salt-flats",
+      300
+    ],
+    [
+      "events/the-buried-argument",
+      "involves",
+      "civs/the-refusers",
+      400
+    ],
+    [
+      "events/the-buried-argument",
+      "involves",
+      "figures/keeper-of-the-copy",
+      400
+    ],
+    [
+      "events/the-buried-argument",
+      "caused_by",
+      "events/the-great-redaction",
+      400
+    ],
+    [
+      "civs/the-refusers",
+      "rival_of",
+      "civs/the-redactors",
+      400
+    ],
+    [
+      "events/the-scattering",
+      "involves",
+      "civs/the-erased",
+      600
+    ],
+    [
+      "events/the-scattering",
+      "involves",
+      "civs/the-redactors",
+      600
+    ],
+    [
+      "events/the-scattering",
+      "involves",
+      "civs/the-refusers",
+      600
+    ],
+    [
+      "events/the-scattering",
+      "caused_by",
+      "events/the-buried-argument",
+      600
+    ],
+    [
+      "civs/the-erased",
+      "becomes",
+      "factions/humans",
+      600
+    ],
+    [
+      "artifacts/the-scarred-stele",
+      "forged_by",
+      "civs/the-redactors",
+      300
+    ],
+    [
+      "artifacts/the-edited-sky",
+      "forged_by",
+      "civs/the-redactors",
+      300
+    ],
+    [
+      "artifacts/the-mercy-vault",
+      "forged_by",
+      "civs/the-redactors",
+      300
+    ],
+    [
+      "artifacts/the-refusers-vault",
+      "forged_by",
+      "civs/the-refusers",
+      400
+    ],
+    [
+      "artifacts/the-counter-monument",
+      "forged_by",
+      "civs/the-refusers",
+      400
+    ],
+    [
+      "artifacts/the-last-will",
+      "forged_by",
+      "civs/the-refusers",
+      400
+    ],
+    [
+      "events/the-great-redaction",
+      "concerns",
+      "locations/echo-resin-seam",
+      300
+    ],
+    [
+      "figures/last-editor",
+      "sealed",
+      "artifacts/the-mercy-vault",
+      300
+    ],
+    [
+      "figures/keeper-of-the-copy",
+      "hid",
+      "artifacts/the-last-will",
+      400
+    ],
+    [
+      "lore/the-vote-to-vanish",
+      "reveals",
+      "lore/the-hands-that-fit",
+      700
+    ],
+    [
+      "lore/the-clean-silence",
+      "reveals",
+      "lore/the-vote-to-vanish",
+      700
+    ],
+    [
+      "lore/the-buried-copy",
+      "reveals",
+      "lore/the-clean-silence",
+      700
+    ],
+    [
+      "lore/the-weight-of-the-secret",
+      "reveals",
+      "lore/the-buried-copy",
+      700
+    ],
+    [
+      "lore/it-was-us",
+      "reveals",
+      "lore/the-weight-of-the-secret",
+      700
+    ],
+    [
+      "lore/the-hands-that-fit",
+      "reveals",
+      "civs/the-erased",
+      700
+    ],
+    [
+      "lore/the-vote-to-vanish",
+      "reveals",
+      "civs/the-erased",
+      700
+    ],
+    [
+      "lore/the-clean-silence",
+      "reveals",
+      "civs/the-redactors",
+      700
+    ],
+    [
+      "lore/the-buried-copy",
+      "reveals",
+      "civs/the-refusers",
+      700
+    ],
+    [
+      "lore/the-weight-of-the-secret",
+      "reveals",
+      "civs/the-redactors",
+      700
+    ],
+    [
+      "lore/it-was-us",
+      "reveals",
+      "factions/humans",
+      700
+    ],
+    [
+      "artifacts/the-scarred-stele",
+      "drops",
+      "lore/the-hands-that-fit",
+      700
+    ],
+    [
+      "artifacts/the-scarred-stele",
+      "drops",
+      "lore/the-vote-to-vanish",
+      700
+    ],
+    [
+      "artifacts/the-scarred-stele",
+      "drops",
+      "lore/the-clean-silence",
+      700
+    ],
+    [
+      "artifacts/the-edited-sky",
+      "drops",
+      "lore/the-vote-to-vanish",
+      700
+    ],
+    [
+      "artifacts/the-edited-sky",
+      "drops",
+      "lore/the-clean-silence",
+      700
+    ],
+    [
+      "artifacts/the-edited-sky",
+      "drops",
+      "lore/the-weight-of-the-secret",
+      700
+    ],
+    [
+      "artifacts/the-refusers-vault",
+      "drops",
+      "lore/the-clean-silence",
+      700
+    ],
+    [
+      "artifacts/the-refusers-vault",
+      "drops",
+      "lore/the-vote-to-vanish",
+      700
+    ],
+    [
+      "artifacts/the-refusers-vault",
+      "drops",
+      "lore/the-buried-copy",
+      700
+    ],
+    [
+      "artifacts/the-counter-monument",
+      "drops",
+      "lore/the-buried-copy",
+      700
+    ],
+    [
+      "artifacts/the-counter-monument",
+      "drops",
+      "lore/the-weight-of-the-secret",
+      700
+    ],
+    [
+      "artifacts/the-counter-monument",
+      "drops",
+      "lore/the-hands-that-fit",
+      700
+    ],
+    [
+      "artifacts/the-mercy-vault",
+      "drops",
+      "lore/the-weight-of-the-secret",
+      700
+    ],
+    [
+      "artifacts/the-mercy-vault",
+      "drops",
+      "lore/it-was-us",
+      700
+    ],
+    [
+      "artifacts/the-mercy-vault",
+      "drops",
+      "lore/the-buried-copy",
+      700
+    ],
+    [
+      "artifacts/the-last-will",
+      "drops",
+      "lore/it-was-us",
+      700
+    ],
+    [
+      "artifacts/the-last-will",
+      "drops",
+      "lore/the-hands-that-fit",
+      700
+    ],
+    [
+      "artifacts/the-last-will",
+      "drops",
+      "lore/the-buried-copy",
+      700
+    ],
+    [
+      "colonists/mara-okonkwo",
+      "rival_of",
+      "colonists/tomas-vey",
+      1300
+    ],
+    [
+      "colonists/tomas-vey",
+      "threatens",
+      "colonists/iris-sandoval",
+      1300
+    ],
+    [
+      "colonists/iris-sandoval",
+      "betrayed_by",
+      "colonists/tomas-vey",
+      1300
+    ],
+    [
+      "colonists/elder-juno",
+      "rival_of",
+      "colonists/mara-okonkwo",
+      1300
+    ],
+    [
+      "colonists/iris-sandoval",
+      "owns",
+      "artifacts/the-mercy-vault",
+      1250
+    ],
+    [
+      "artifacts/the-last-will",
+      "sought_by",
+      "colonists/mara-okonkwo",
+      1250
+    ],
+    [
+      "artifacts/the-mercy-vault",
+      "sought_by",
+      "colonists/tomas-vey",
+      1300
+    ],
+    [
+      "arc/the-second-choice",
+      "involves",
+      "factions/humans",
+      1300
+    ],
+    [
+      "arc/the-second-choice",
+      "involves",
+      "lore/it-was-us",
+      1300
+    ],
+    [
+      "arc/the-second-choice",
+      "involves",
+      "artifacts/the-mercy-vault",
+      1300
+    ],
+    [
+      "arc/the-second-choice",
+      "involves",
+      "colonists/iris-sandoval",
+      1300
+    ],
+    [
+      "events/the-counter-monument-read",
+      "involves",
+      "colonists/mara-okonkwo",
+      1250
+    ],
+    [
+      "events/the-counter-monument-read",
+      "involves",
+      "artifacts/the-counter-monument",
+      1250
+    ],
+    [
+      "events/the-counter-monument-read",
+      "reveals",
+      "lore/the-buried-copy",
+      1250
+    ],
+    [
+      "events/the-vault-standoff",
+      "involves",
+      "colonists/tomas-vey",
+      1300
+    ],
+    [
+      "events/the-vault-standoff",
+      "involves",
+      "colonists/iris-sandoval",
+      1300
+    ],
+    [
+      "events/the-vault-standoff",
+      "involves",
+      "artifacts/the-mercy-vault",
+      1300
+    ]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/the-hands-that-fit",
+      "lore/the-vote-to-vanish",
+      "lore/the-clean-silence",
+      "lore/the-buried-copy",
+      "lore/the-weight-of-the-secret",
+      "lore/it-was-us"
+    ],
+    "order": [
+      "lore/the-hands-that-fit",
+      "lore/the-vote-to-vanish",
+      "lore/the-clean-silence",
+      "lore/the-buried-copy",
+      "lore/the-weight-of-the-secret",
+      "lore/it-was-us"
+    ],
+    "order_relation": "reveals"
+  }
+}
