@@ -252,6 +252,56 @@
       }
     },
     {
+      "slug": "figures/the-prior-steward-okonkwo",
+      "type": "colonist",
+      "tension": 0.6,
+      "facts": {
+        "role": "the colony's first steward, who held the post before Imani and vanished into the terraces",
+        "live": false,
+        "species": "human",
+        "note": "a forebear, not a body — left only a sealed cache, a logbook, and the steward's seal; the colony believes she walked into the empty terraces and was taken up like the cultivars before her",
+        "want": "to have sealed the shaping-tool away before her own row ripened, so the next steward would inherit the choice and not the harvest",
+        "skills": {
+          "social": 14,
+          "research": 11,
+          "shooting": 8,
+          "crafting": 9,
+          "medicine": 6,
+          "melee": 5
+        },
+        "passions": [
+          "social",
+          "crafting"
+        ],
+        "skill_profile": "colonist"
+      }
+    },
+    {
+      "slug": "figures/the-harvested-seedwright",
+      "type": "colonist",
+      "tension": 0.7,
+      "facts": {
+        "role": "a first-cultivar agronomist of the people-before, harvested mid-row with a gene-loom still in hand",
+        "live": false,
+        "faction": "civs/the-first-cultivars",
+        "species": "alien",
+        "note": "a forebear-trace, not a living voice — the empty terraces hold the loom she laid down; the loam-born colony children carry her steered lineage, which is why the midwife's daughter ripens",
+        "want": "to have finished the working she was wielding before she was lifted up, so the loom would tilt toward freedom and not toward a riper harvest",
+        "skills": {
+          "crafting": 17,
+          "research": 13,
+          "medicine": 9,
+          "growing": 15,
+          "social": 5
+        },
+        "passions": [
+          "crafting",
+          "research"
+        ],
+        "skill_profile": "colonist"
+      }
+    },
+    {
       "slug": "beliefs/the-grateful-guest-creed",
       "type": "belief",
       "tension": 0.5,
