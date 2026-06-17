@@ -142,7 +142,7 @@
         "title": "The Fold-Back",
         "actor": "the-erevan",
         "detail": "The Erevan succeed, briefly, in folding their war's end onto its beginning — closing a loop in which they have always already won. The Undated answer by un-deciding it. The two states coexist in the residue, neither settled.",
-        "near_climax": true
+        "penultimate": true
       }
     },
     {
@@ -158,7 +158,7 @@
     },
 
     {
-      "slug": "lore/thread-of-the-oncewill",
+      "slug": "lore/testimony-of-the-mourners",
       "type": "lore",
       "tension": 0.8,
       "facts": {
@@ -170,7 +170,7 @@
       }
     },
     {
-      "slug": "lore/thread-of-the-erevan",
+      "slug": "lore/the-backward-march-ordered",
       "type": "lore",
       "tension": 0.8,
       "facts": {
@@ -182,7 +182,7 @@
       }
     },
     {
-      "slug": "lore/thread-of-the-undated",
+      "slug": "lore/the-hand-behind-the-edits",
       "type": "lore",
       "tension": 0.8,
       "facts": {
@@ -353,41 +353,41 @@
     ["civs/the-undated", "involved_in", "events/the-war-that-has-not-finished-happening", 700],
     ["civs/the-oncewill", "involved_in", "events/the-war-that-has-not-finished-happening", 700],
 
-    ["lore/thread-of-the-undated", "precedes", "events/the-war-that-has-not-finished-happening", 700],
-    ["lore/thread-of-the-erevan", "precedes", "lore/thread-of-the-undated", 700],
-    ["lore/thread-of-the-oncewill", "precedes", "lore/thread-of-the-erevan", 700],
+    ["lore/the-hand-behind-the-edits", "precedes", "events/the-war-that-has-not-finished-happening", 700],
+    ["lore/the-backward-march-ordered", "precedes", "lore/the-hand-behind-the-edits", 700],
+    ["lore/testimony-of-the-mourners", "precedes", "lore/the-backward-march-ordered", 700],
 
-    ["artifacts/the-arriving-relic", "drops", "lore/thread-of-the-oncewill", 700],
-    ["artifacts/the-arriving-relic", "drops", "lore/thread-of-the-erevan", 700],
-    ["artifacts/the-arriving-relic", "drops", "lore/thread-of-the-undated", 700],
+    ["artifacts/the-arriving-relic", "drops", "lore/testimony-of-the-mourners", 700],
+    ["artifacts/the-arriving-relic", "drops", "lore/the-backward-march-ordered", 700],
+    ["artifacts/the-arriving-relic", "drops", "lore/the-hand-behind-the-edits", 700],
 
-    ["artifacts/object-older-than-its-maker", "drops", "lore/thread-of-the-oncewill", 700],
-    ["artifacts/object-older-than-its-maker", "drops", "lore/thread-of-the-erevan", 700],
-    ["artifacts/object-older-than-its-maker", "drops", "lore/thread-of-the-undated", 700],
+    ["artifacts/object-older-than-its-maker", "drops", "lore/testimony-of-the-mourners", 700],
+    ["artifacts/object-older-than-its-maker", "drops", "lore/the-backward-march-ordered", 700],
+    ["artifacts/object-older-than-its-maker", "drops", "lore/the-hand-behind-the-edits", 700],
 
-    ["artifacts/the-effect-before-cause", "drops", "lore/thread-of-the-erevan", 700],
-    ["artifacts/the-effect-before-cause", "drops", "lore/thread-of-the-oncewill", 700],
-    ["artifacts/the-effect-before-cause", "drops", "lore/thread-of-the-undated", 700],
+    ["artifacts/the-effect-before-cause", "drops", "lore/the-backward-march-ordered", 700],
+    ["artifacts/the-effect-before-cause", "drops", "lore/testimony-of-the-mourners", 700],
+    ["artifacts/the-effect-before-cause", "drops", "lore/the-hand-behind-the-edits", 700],
 
-    ["artifacts/the-retro-editing-stylus", "drops", "lore/thread-of-the-undated", 700],
-    ["artifacts/the-retro-editing-stylus", "drops", "lore/thread-of-the-erevan", 700],
-    ["artifacts/the-retro-editing-stylus", "drops", "lore/thread-of-the-oncewill", 700],
+    ["artifacts/the-retro-editing-stylus", "drops", "lore/the-hand-behind-the-edits", 700],
+    ["artifacts/the-retro-editing-stylus", "drops", "lore/the-backward-march-ordered", 700],
+    ["artifacts/the-retro-editing-stylus", "drops", "lore/testimony-of-the-mourners", 700],
 
-    ["artifacts/the-precognitive-shard", "drops", "lore/thread-of-the-oncewill", 700],
-    ["artifacts/the-precognitive-shard", "drops", "lore/thread-of-the-erevan", 700],
-    ["artifacts/the-precognitive-shard", "drops", "lore/thread-of-the-undated", 700],
+    ["artifacts/the-precognitive-shard", "drops", "lore/testimony-of-the-mourners", 700],
+    ["artifacts/the-precognitive-shard", "drops", "lore/the-backward-march-ordered", 700],
+    ["artifacts/the-precognitive-shard", "drops", "lore/the-hand-behind-the-edits", 700],
 
-    ["artifacts/the-undated-anachronism", "drops", "lore/thread-of-the-undated", 700],
-    ["artifacts/the-undated-anachronism", "drops", "lore/thread-of-the-oncewill", 700],
-    ["artifacts/the-undated-anachronism", "drops", "lore/thread-of-the-erevan", 700],
+    ["artifacts/the-undated-anachronism", "drops", "lore/the-hand-behind-the-edits", 700],
+    ["artifacts/the-undated-anachronism", "drops", "lore/testimony-of-the-mourners", 700],
+    ["artifacts/the-undated-anachronism", "drops", "lore/the-backward-march-ordered", 700],
 
-    ["artifacts/the-fold-loop-ring", "drops", "lore/thread-of-the-erevan", 700],
-    ["artifacts/the-fold-loop-ring", "drops", "lore/thread-of-the-undated", 700],
-    ["artifacts/the-fold-loop-ring", "drops", "lore/thread-of-the-oncewill", 700],
+    ["artifacts/the-fold-loop-ring", "drops", "lore/the-backward-march-ordered", 700],
+    ["artifacts/the-fold-loop-ring", "drops", "lore/the-hand-behind-the-edits", 700],
+    ["artifacts/the-fold-loop-ring", "drops", "lore/testimony-of-the-mourners", 700],
 
-    ["lore/thread-of-the-oncewill", "reveals", "civs/the-oncewill", 700],
-    ["lore/thread-of-the-erevan", "reveals", "civs/the-erevan", 700],
-    ["lore/thread-of-the-undated", "reveals", "civs/the-undated", 700],
+    ["lore/testimony-of-the-mourners", "reveals", "civs/the-oncewill", 700],
+    ["lore/the-backward-march-ordered", "reveals", "civs/the-erevan", 700],
+    ["lore/the-hand-behind-the-edits", "reveals", "civs/the-undated", 700],
 
     ["artifacts/the-arriving-relic", "echoes", "events/opening-shot", 700],
     ["artifacts/the-effect-before-cause", "echoes", "events/counter-march", 700],
@@ -413,14 +413,14 @@
   ],
   "mystery": {
     "fragments": [
-      "lore/thread-of-the-undated",
-      "lore/thread-of-the-erevan",
-      "lore/thread-of-the-oncewill"
+      "lore/the-hand-behind-the-edits",
+      "lore/the-backward-march-ordered",
+      "lore/testimony-of-the-mourners"
     ],
     "order": [
-      "lore/thread-of-the-oncewill",
-      "lore/thread-of-the-erevan",
-      "lore/thread-of-the-undated"
+      "lore/testimony-of-the-mourners",
+      "lore/the-backward-march-ordered",
+      "lore/the-hand-behind-the-edits"
     ],
     "order_relation": "precedes"
   }
