@@ -217,3 +217,18 @@ for Sam to review. Newest entries appended at the bottom of each section.
   causal scaffolding or larger worlds. Updated recommendation supersedes f12's
   "procgen not validated." Next: full 10-theme + cross-model re-judge; add a
   clothe-output lint (reject 'STEP n', '(Per this world)', 'owns factions/*').
+
+- 2026-06-17 (FULL TEN, Sam's request): Regenerated hybrid-v2 (abstract procgen +
+  clothe/prune) for all 10 themes; blinded leak-free vs the pure baselines; judged
+  clean Opus (Codex/cross-model unavailable -> single-judge caveat). RESULT
+  (finding 14): HYBRID-v2 wins 6-4 (aggregate 425 vs 408). REVERSES finding 12
+  (pure 9-1) on the same themes/baselines/judge — the ONLY change was
+  procgen.ts(fall) -> procgen-abstract.ts(neutral)+prune. Confirms Sam's diagnosis:
+  the forcing functions were the whole deficit. Hybrid-v2's edge = a fully-wired
+  present-tense layer (events+caused_by, arc with stakes, live cast) atop a
+  consistent backstory; biggest win the-living-marrow 47-34. Pure still edges 4
+  tight-single-conceit themes (first-contact, bio-symbiosis, machine, gen-ship) by
+  <=5 pts. Caveats: single judge model, narrow margins on 6/10, n=1/arm.
+  RECOMMENDED GENERATOR (supersedes f12/f13): abstract-procgen hybrid (Opus seed ->
+  procgen-abstract -> clothe+prune+Stage D) -> SQLite store; adds determinism +
+  seedability pure lacks. Next when Codex available: cross-model re-judge to confirm.
