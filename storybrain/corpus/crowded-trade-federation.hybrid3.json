@@ -622,6 +622,32 @@
     ["colonists/quen-arden", "owes", "colonists/mara-osei-vance", 500],
     ["colonists/voss-tahel", "rival_of", "colonists/iruwe-sael", 500],
 
+    ["colonists/mara-osei-vance", "mentored_by", "colonists/iruwe-sael", 500],
+    ["colonists/iruwe-sael", "mentor_of", "colonists/mara-osei-vance", 500],
+    ["colonists/dev-haldane", "estranged_from", "colonists/mara-osei-vance", 500],
+    ["colonists/voss-tahel", "reveres", "colonists/sable-ferreira", 500],
+    ["colonists/quen-arden", "role_model_of", "colonists/sable-ferreira", 500],
+    ["colonists/sable-ferreira", "served", "civs/the-melun-cartel", 400],
+
+    ["colonists/teoma-vance", "forged", "artifacts/khariti-route-log", 300],
+    ["colonists/halsen-arden", "died_for", "artifacts/rho-clean-chain-relic", 350],
+    ["colonists/orin-pell", "owned", "artifacts/dissident-assayer-confession", 350],
+    ["colonists/karza-vel", "forged", "artifacts/melun-counterfeit-token", 350],
+
+    ["colonists/mara-osei-vance", "descendant_of", "colonists/teoma-vance", 500],
+    ["colonists/mara-osei-vance", "kin_of", "colonists/teoma-vance", 500],
+    ["colonists/iruwe-sael", "successor_of", "colonists/teoma-vance", 500],
+    ["colonists/iruwe-sael", "reveres", "colonists/teoma-vance", 500],
+    ["colonists/quen-arden", "mentored_by", "colonists/halsen-arden", 500],
+    ["colonists/quen-arden", "successor_of", "colonists/halsen-arden", 500],
+    ["colonists/sable-ferreira", "mentored_by", "colonists/orin-pell", 500],
+    ["colonists/sable-ferreira", "grudge_against", "colonists/orin-pell", 500],
+    ["colonists/dev-haldane", "successor_of", "colonists/karza-vel", 500],
+    ["colonists/karza-vel", "predecessor_of", "colonists/dev-haldane", 500],
+
+    ["colonists/teoma-vance", "kin_of", "colonists/mara-osei-vance", 500],
+    ["colonists/halsen-arden", "kin_of", "colonists/quen-arden", 500],
+
     ["colonists/iruwe-sael", "member_of", "civs/the-khariti-drift", 500],
     ["colonists/voss-tahel", "member_of", "civs/the-oseni-assayers", 500],
 
