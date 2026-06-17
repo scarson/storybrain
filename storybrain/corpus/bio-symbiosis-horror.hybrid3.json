@@ -214,6 +214,58 @@
       }
     },
     {
+      "slug": "figures/forebear-anika-sorel",
+      "type": "colonist",
+      "tension": 0.72,
+      "facts": {
+        "role": "the first colony surgeon, who bonded the shared-sense organ before anyone understood what it cost",
+        "live": false,
+        "subsumed": true,
+        "note": "Elias Cho's teacher; she taught him to install a graft and then took the first grown organ into her own body to study its removal, and the removal took all of her — she died on her own table completing the cut she was perfecting",
+        "drive": "prove a graft could be undone before the colony went too deep; she ran out of body before she ran out of method",
+        "skills": {
+          "medicine": 20,
+          "research": 16,
+          "social": 11,
+          "crafting": 13,
+          "melee": 4,
+          "shooting": 5
+        },
+        "passions": [
+          "surgery",
+          "the clean removal"
+        ],
+        "want": "leave behind a removal that gives the patient back whole, even though her own took everything",
+        "skill_profile": "colonist"
+      }
+    },
+    {
+      "slug": "figures/forebear-tomas-vale",
+      "type": "colonist",
+      "tension": 0.7,
+      "facts": {
+        "role": "the prior survey lead who reached the deep-reach tool and was the first to be subsumed into the shared awareness",
+        "live": false,
+        "subsumed": true,
+        "note": "Mira Okonkwo's predecessor in the lead's chair and Sana Reyes' great-uncle; he wielded the deep-reach spore-tool deeper than any host before him and the reach kept the part of him it opened — he is a voice in the lattice now, not a man in the colony",
+        "drive": "carry the survey one graft further than the last lead dared; he succeeded and the success ate the edge that was only him",
+        "skills": {
+          "research": 15,
+          "social": 16,
+          "crafting": 11,
+          "shooting": 12,
+          "medicine": 7,
+          "melee": 9
+        },
+        "passions": [
+          "leadership",
+          "going deeper"
+        ],
+        "want": "be remembered as the lead who proved the reach could be survived, before the lattice finishes taking what is left of his name",
+        "skill_profile": "colonist"
+      }
+    },
+    {
       "slug": "beliefs/the-communion-creed",
       "type": "belief",
       "tension": 0.6,

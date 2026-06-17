@@ -448,6 +448,79 @@
     },
 
     {
+      "slug": "colonists/teoma-vance",
+      "type": "colonist",
+      "tension": 0.55,
+      "day": 300,
+      "facts": {
+        "name": "Teoma Vance",
+        "species": "human",
+        "deceased": true,
+        "role": "Mara's grandmother — the first human navigator the Khariti Drift ever trained, who broke caravan custom alongside Iruwe's line and wrote the original route-log before vanishing on the unmarked-station run",
+        "stake": "she forged the route-log out of stolen songs and died for the knowing of it; her name is the one the Drift elders most want erased",
+        "skills": { "navigation": 20, "piloting": 16, "sensors": 13, "xeno": 12, "eva": 8, "command": 9 },
+        "passions": ["navigation", "xeno"],
+        "crew_role": "navigator",
+        "skill_profile": "ship-crew",
+        "want": "(in life) to set down the true route in writing once, so the Drift could never again sell a lie as a memory"
+      }
+    },
+    {
+      "slug": "colonists/halsen-arden",
+      "type": "colonist",
+      "tension": 0.56,
+      "day": 350,
+      "facts": {
+        "name": "Halsen Arden",
+        "species": "human",
+        "deceased": true,
+        "role": "the Rho house's previous agent and Quen's mentor — the man who authenticated and then quietly protected the clean-chain relic, and was killed by the Cartel for refusing to swap it for a fake",
+        "stake": "he died over the relic Quen now holds, certain its paper was forged and never able to prove it",
+        "skills": { "sensors": 18, "command": 14, "engineering": 12, "social": 13, "navigation": 6, "life_support": 7 },
+        "passions": ["sensors", "social"],
+        "crew_role": "quartermaster",
+        "skill_profile": "ship-crew",
+        "want": "(in life) to expose the forged paper around the Rho relic without bringing the Cartel's guns down on the house he served"
+      }
+    },
+    {
+      "slug": "colonists/orin-pell",
+      "type": "colonist",
+      "tension": 0.54,
+      "day": 350,
+      "facts": {
+        "name": "Orin Pell",
+        "species": "human",
+        "deceased": true,
+        "role": "the fixer who taught Sable the trade — he owned the dissident Assayer's confession cylinder first, ran it half a sector, and was burned by the Cartel before he could sell it clean",
+        "stake": "he carried the confession that names the lie and never lived to spend it; Sable inherited both the cylinder and the people hunting it",
+        "skills": { "gunnery": 15, "eva": 16, "piloting": 14, "social": 11, "sensors": 8, "life_support": 7 },
+        "passions": ["eva", "social"],
+        "crew_role": "gunner",
+        "skill_profile": "ship-crew",
+        "want": "(in life) to fence the confession cylinder to a buyer who would actually break the seal, not bury it"
+      }
+    },
+    {
+      "slug": "colonists/karza-vel",
+      "type": "colonist",
+      "tension": 0.55,
+      "day": 350,
+      "facts": {
+        "name": "Karza Vel",
+        "species": "human",
+        "deceased": true,
+        "role": "the human broker who held Melun's frontier counterfeit seat before Haldane — he forged the first batch of counterfeit broker-tokens for the Cartel, then died when the Cartel decided he knew too much",
+        "stake": "he made the fakes Haldane now fences and was murdered to keep the recipe inside the Cartel",
+        "skills": { "command": 15, "crafting": 17, "gunnery": 9, "engineering": 12, "social": 10, "sensors": 7 },
+        "passions": ["crafting", "command"],
+        "crew_role": "trader",
+        "skill_profile": "ship-crew",
+        "want": "(in life) to make himself indispensable to the Cartel by being the only hand that could strike a perfect token"
+      }
+    },
+
+    {
       "slug": "arcs/the-deal-nobody-dares-close",
       "type": "arc",
       "tension": 0.7,
