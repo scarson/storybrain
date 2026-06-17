@@ -6,11 +6,16 @@
 # taxonomy.
 #
 # Activate (prototype phase):  gbrain schema use storybrain-base
-# Edges auto-wire (zero LLM) from [[type/slug]] wikilinks in page bodies.
+# Edges auto-wire from [[type/slug]] wikilinks in page bodies — BUT see
+# storybrain/findings/02-graph-autowire-empirical.md: typed auto-wiring is gated
+# by a hardcoded VC dir list, so custom dirs need explicit typed-link syntax or a
+# small extractor patch. This pack defines the taxonomy regardless.
 #
-# primitives used: entity (people/places/things), temporal (dated records that
-# feed timeline + find_trajectory), concept (abstract: plots, powers, beliefs),
-# media (lore prose, extractable).
+# primitives: entity (people/places/things), temporal (dated records feeding
+# timeline), concept (abstract: plots, powers, beliefs), media (lore prose).
+#
+# NOTE: gbrain's pack loader requires BLOCK-style YAML. Flow mappings
+# ({ name: x }) and inline list comments are rejected by the loader.
 
 api_version: gbrain-schema-pack-v1
 name: storybrain-base
@@ -21,161 +26,295 @@ extends: null
 borrow_from: []
 
 takes_kinds:
-  - fact      # established world truth ("Vera is the colony surgeon")
-  - hunch     # the Director's working theory about a brewing arc
+  - fact
+  - hunch
 
 page_types:
-  # ---- entities -----------------------------------------------------------
+  # ---- entities ----------------------------------------------------------
   - name: colonist
     primitive: entity
-    path_prefixes: [colonists/, pawns/]
-    aliases: [pawn, settler, character]
+    path_prefixes:
+      - colonists/
+      - pawns/
+    aliases:
+      - pawn
+      - settler
+      - character
     extractable: false
-    expert_routing: true        # "who knows surgery / who can negotiate"
+    expert_routing: true
 
   - name: faction
     primitive: entity
-    path_prefixes: [factions/]
-    aliases: [tribe, empire, clan, raiders]
+    path_prefixes:
+      - factions/
+    aliases:
+      - tribe
+      - empire
+      - clan
+      - raiders
     extractable: false
     expert_routing: true
 
   - name: location
     primitive: entity
-    path_prefixes: [locations/, places/, sites/]
+    path_prefixes:
+      - locations/
+      - places/
+      - sites/
     subtypes:
-      - { name: settlement, when: { path_pattern: "^locations/settlements/" } }
-      - { name: ruin,       when: { path_pattern: "^locations/ruins/" } }
-      - { name: huntsite,   when: { path_pattern: "^sites/" } }   # artifact dig sites
-    aliases: [place, room, biome, region]
+      - name: settlement
+        when:
+          path_pattern: "^locations/settlements/"
+      - name: ruin
+        when:
+          path_pattern: "^locations/ruins/"
+      - name: huntsite
+        when:
+          path_pattern: "^sites/"
+    aliases:
+      - place
+      - room
+      - biome
+      - region
     extractable: false
     expert_routing: false
 
   - name: artifact
-    primitive: entity            # FIRST-CLASS McGuffin. The story spine (DESIGN §4).
-    path_prefixes: [artifacts/, relics/]
+    primitive: entity
+    path_prefixes:
+      - artifacts/
+      - relics/
     subtypes:
-      - { name: relic,    when: { frontmatter_field: tier, frontmatter_value: relic } }
-      - { name: shard,    when: { frontmatter_field: fragment_of_set, frontmatter_value: true } }
-      - { name: mundane,  when: { frontmatter_field: tier, frontmatter_value: mundane } }
-    aliases: [relic, mcguffin, treasure, item]
+      - name: relic
+        when:
+          frontmatter_field: tier
+          frontmatter_value: relic
+      - name: shard
+        when:
+          frontmatter_field: fragment_of_set
+          frontmatter_value: true
+      - name: mundane
+        when:
+          frontmatter_field: tier
+          frontmatter_value: mundane
+    aliases:
+      - relic
+      - mcguffin
+      - treasure
+      - item
     extractable: false
     expert_routing: false
 
-  # ---- lore / world-building ---------------------------------------------
+  # ---- lore / world-building --------------------------------------------
   - name: lore
     primitive: media
-    path_prefixes: [lore/]
+    path_prefixes:
+      - lore/
     subtypes:
-      - { name: rumor,    when: { frontmatter_field: subtype, frontmatter_value: rumor } }     # foreshadow (pre-discovery)
-      - { name: fragment, when: { frontmatter_field: subtype, frontmatter_value: fragment } }  # dropped by an artifact
-      - { name: myth,     when: { frontmatter_field: subtype, frontmatter_value: myth } }
-      - { name: codex,    when: { frontmatter_field: subtype, frontmatter_value: codex } }
-      - { name: prophecy, when: { frontmatter_field: subtype, frontmatter_value: prophecy } }
-    aliases: [legend, story, fragment, rumor]
-    extractable: true
-
-  - name: belief
-    primitive: concept
-    path_prefixes: [beliefs/, ideoligions/]
-    aliases: [ideoligion, deity, religion, meme, ideology]
+      - name: rumor
+        when:
+          frontmatter_field: subtype
+          frontmatter_value: rumor
+      - name: fragment
+        when:
+          frontmatter_field: subtype
+          frontmatter_value: fragment
+      - name: myth
+        when:
+          frontmatter_field: subtype
+          frontmatter_value: myth
+      - name: codex
+        when:
+          frontmatter_field: subtype
+          frontmatter_value: codex
+      - name: prophecy
+        when:
+          frontmatter_field: subtype
+          frontmatter_value: prophecy
+    aliases:
+      - legend
+      - story
+      - fragment
+      - rumor
     extractable: true
     expert_routing: false
 
-  # ---- temporal records ---------------------------------------------------
-  - name: event
-    primitive: temporal          # workhorse; every incident becomes one
-    path_prefixes: [events/, incidents/]
-    subtypes:
-      - { name: raid,      when: { frontmatter_field: kind, frontmatter_value: raid } }
-      - { name: social,    when: { frontmatter_field: kind, frontmatter_value: social } }
-      - { name: disaster,  when: { frontmatter_field: kind, frontmatter_value: disaster } }
-      - { name: quest,     when: { frontmatter_field: kind, frontmatter_value: quest } }    # artifact hunts
-      - { name: discovery, when: { frontmatter_field: kind, frontmatter_value: discovery } } # the find
-    aliases: [incident, beat]
+  - name: belief
+    primitive: concept
+    path_prefixes:
+      - beliefs/
+      - ideoligions/
+    aliases:
+      - ideoligion
+      - deity
+      - religion
+      - meme
+      - ideology
     extractable: true
+    expert_routing: false
+
+  # ---- temporal records --------------------------------------------------
+  - name: event
+    primitive: temporal
+    path_prefixes:
+      - events/
+      - incidents/
+    subtypes:
+      - name: raid
+        when:
+          frontmatter_field: kind
+          frontmatter_value: raid
+      - name: social
+        when:
+          frontmatter_field: kind
+          frontmatter_value: social
+      - name: disaster
+        when:
+          frontmatter_field: kind
+          frontmatter_value: disaster
+      - name: quest
+        when:
+          frontmatter_field: kind
+          frontmatter_value: quest
+      - name: discovery
+        when:
+          frontmatter_field: kind
+          frontmatter_value: discovery
+    aliases:
+      - incident
+      - beat
+    extractable: true
+    expert_routing: false
 
   - name: arc
-    primitive: temporal          # an ACTIVE PLOT the Director steers (DESIGN §5)
-    path_prefixes: [arcs/]
-    # lifecycle lives in frontmatter: phase = seed|rumor|rising|climax|resolution|dormant
-    aliases: [plot, thread, storyline]
+    primitive: temporal
+    path_prefixes:
+      - arcs/
+    aliases:
+      - plot
+      - thread
+      - storyline
     extractable: false
     expert_routing: false
 
   - name: chapter
-    primitive: temporal          # LLM-written recap + compaction target ("Legends")
-    path_prefixes: [chapters/, eras/]
-    aliases: [era, recap, legend]
+    primitive: temporal
+    path_prefixes:
+      - chapters/
+      - eras/
+    aliases:
+      - era
+      - recap
+      - legend
     extractable: false
     expert_routing: false
 
-  # ---- abstract / mechanical ---------------------------------------------
+  # ---- abstract / mechanical --------------------------------------------
   - name: power
-    primitive: concept           # a boon an artifact grants (a page so it carries lore + balance)
-    path_prefixes: [powers/, boons/]
-    aliases: [boon, ability, blessing]
+    primitive: concept
+    path_prefixes:
+      - powers/
+      - boons/
+    aliases:
+      - boon
+      - ability
+      - blessing
     extractable: false
     expert_routing: false
 
   - name: curse
-    primitive: concept           # the dark side an artifact bears (risk/reward)
-    path_prefixes: [curses/]
-    aliases: [hex, malediction, blight]
+    primitive: concept
+    path_prefixes:
+      - curses/
+    aliases:
+      - hex
+      - malediction
+      - blight
     extractable: false
     expert_routing: false
 
-  # ---- catch-all ----------------------------------------------------------
+  # ---- catch-all ---------------------------------------------------------
   - name: note
     primitive: concept
-    path_prefixes: [notes/]
-    aliases: [memo, scratch]
+    path_prefixes:
+      - notes/
+    aliases:
+      - memo
+      - scratch
     extractable: true
     expert_routing: false
 
 link_types:
   # social
-  - { name: kin_of,     inverse: kin_of }
-  - { name: rival_of,   inverse: rival_of }
-  - { name: ally_of,    inverse: ally_of }
-  - { name: lover_of,   inverse: lover_of }
-  - { name: member_of,  inverse: has_member }
+  - name: kin_of
+    inverse: kin_of
+  - name: rival_of
+    inverse: rival_of
+  - name: ally_of
+    inverse: ally_of
+  - name: lover_of
+    inverse: lover_of
+  - name: member_of
+    inverse: has_member
 
   # action / history
-  - { name: killed,     inverse: killed_by }
-  - { name: betrayed,   inverse: betrayed_by }
-  - { name: saved,      inverse: saved_by }
-  - { name: involves,   inverse: involved_in }    # event -> colonist/faction
-  - { name: caused_by,  inverse: caused }          # event -> event (causal chains)
+  - name: killed
+    inverse: killed_by
+  - name: betrayed
+    inverse: betrayed_by
+  - name: saved
+    inverse: saved_by
+  - name: involves
+    inverse: involved_in
+  - name: caused_by
+    inverse: caused
 
   # spatial
-  - { name: located_at, inverse: location_of }
-  - { name: occurred_at,inverse: site_of }          # event -> location
+  - name: located_at
+    inverse: location_of
+  - name: occurred_at
+    inverse: site_of
 
-  # artifact spine (DESIGN §4)
-  - { name: hidden_at,  inverse: hides }            # artifact -> location
-  - { name: rumored_at, inverse: rumor_of }         # rumor lore -> location (foreshadow)
-  - { name: sought_by,  inverse: seeks }            # artifact -> faction/colonist
-  - { name: guarded_by, inverse: guards }           # artifact/site -> faction/beast
-  - { name: grants,     inverse: granted_by }       # artifact -> power
-  - { name: bears,      inverse: borne_by }          # artifact -> curse
-  - { name: fragment_of,inverse: has_fragment }      # shard -> greater relic
-  - { name: forged_by,  inverse: forged }            # artifact -> figure
-  - { name: owned_by,   inverse: owns }              # artifact -> colonist/faction
-  - { name: lost_in,    inverse: site_of_loss }      # artifact -> past event
-  - { name: drops,      inverse: dropped_by }        # artifact -> lore fragment
-  - { name: reveals,    inverse: revealed_by }       # lore -> figure/era/event
+  # artifact spine (DESIGN section 4)
+  - name: hidden_at
+    inverse: hides
+  - name: rumored_at
+    inverse: rumor_of
+  - name: sought_by
+    inverse: seeks
+  - name: guarded_by
+    inverse: guards
+  - name: grants
+    inverse: granted_by
+  - name: bears
+    inverse: borne_by
+  - name: fragment_of
+    inverse: has_fragment
+  - name: forged_by
+    inverse: forged
+  - name: owned_by
+    inverse: owns
+  - name: lost_in
+    inverse: site_of_loss
+  - name: drops
+    inverse: dropped_by
+  - name: reveals
+    inverse: revealed_by
 
   # player-choice fate (agency feeds the graph)
-  - { name: destroyed,  inverse: destroyed_by }
-  - { name: sold,       inverse: sold_by }
-  - { name: sealed,     inverse: sealed_by }
-  - { name: ignored,    inverse: ignored_by }
+  - name: destroyed
+    inverse: destroyed_by
+  - name: sold
+    inverse: sold_by
+  - name: sealed
+    inverse: sealed_by
+  - name: ignored
+    inverse: ignored_by
 
-  # arc wiring
-  - { name: advances,   inverse: advanced_by }       # event -> arc
-  - { name: resolves,   inverse: resolved_by }        # event -> arc
-  - { name: worships,   inverse: worshipped_by }       # colonist/faction -> belief
-
-# No mapping_rules: this is a greenfield pack for a new game, not a migration
-# from an existing brain's accreted types.
+  # arc wiring + belief
+  - name: advances
+    inverse: advanced_by
+  - name: resolves
+    inverse: resolved_by
+  - name: worships
+    inverse: worshipped_by
