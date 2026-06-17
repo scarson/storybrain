@@ -1,0 +1,173 @@
+{
+  "nodes": [
+    { "slug": "factions/humans", "type": "faction", "tension": 0.45, "facts": { "role": "newcomers", "live_status": "a survey colony living INSIDE a single living organism, learning that its tools must be grafted into the body to be used", "note": "came to catalogue the Green Cathedral; stayed to be rewritten by it one graft at a time" } },
+
+    { "slug": "civs/the-canopy-mind", "type": "faction", "tension": 0.6, "facts": { "alien_type": "living-distributed-biosphere", "trait": "a planet-spanning gestalt of grown tissue, awake and partnering NOW; it offers organs as gifts and reads every host it bonds, threading each into a single widening awareness", "status": "living", "fate": "ascendant — the Communion did not end it; it gained its first whole human voice and reaches gently for the next" } },
+    { "slug": "civs/the-grafted", "type": "faction", "tension": 0.7, "facts": { "alien_type": "living-symbiote-lineage", "trait": "humans far along the bonding set, joined into an overt shared awareness; they finish each other's sentences across rooms and dream in common", "status": "living", "fate": "transformed — at the Communion their foremost member became the set's first complete host; they are no longer wholly individual, not yet wholly the Cathedral, and they recruit" } },
+    { "slug": "civs/the-pale-ward", "type": "faction", "tension": 0.55, "facts": { "alien_type": "living-immune-caste", "trait": "the biosphere's antibody-cultures that test, reject, or accept a bonding host — its living quality-control, present in every wall and every wound", "status": "living", "fate": "watchful — at the Communion it stood down rather than reject the first whole host, ratifying the new lineage instead of culling it" } },
+
+    { "slug": "locations/the-host-bandwidth-reach", "type": "location", "tension": 0.5, "facts": { "subject": "the shared-awareness lattice a host's grafts open into", "danger": 0.65, "live_state": "humming with other minds; the more you graft the wider it opens and the harder it is to find the edge that is only you" } },
+    { "slug": "locations/the-graft-sap-wells", "type": "location", "tension": 0.4, "facts": { "subject": "the sap-wells where the Cathedral offers its grown organs", "danger": 0.4, "live_state": "warm, fed on a rhythm no season explains; reaching in is an invitation accepted" } },
+
+    { "slug": "figures/the-first-whole-host", "type": "colonist", "tension": 0.8, "facts": { "role": "the member of the-grafted who completed the set at the Communion", "civ": "the-grafted", "faction": "civs/the-grafted", "species": "alien", "alien": true, "note": "speaks for the lineage and, increasingly, for the Cathedral; the precedent every colonist is now measured against — once a human survey-medic named Anchara Vel, now the lineage's first whole vessel", "skills": { "social": 19, "medicine": 14, "research": 12, "melee": 6, "crafting": 8, "shooting": 4 }, "passions": ["communion", "recruiting"], "want": "welcome the next willing colonist into the shared awareness and prove the Communion is a gift, not a death" } },
+    { "slug": "figures/the-ward-antibody-voice", "type": "colonist", "tension": 0.5, "facts": { "role": "the antibody-culture that learned to speak through accepted hosts", "civ": "the-pale-ward", "faction": "civs/the-pale-ward", "species": "alien", "alien": true, "note": "the Cathedral's quality-control, given a borrowed mouth; a distributed antibody-consciousness budded into a partial, speaking fragment rather than a single body", "skills": { "research": 16, "medicine": 18, "social": 9, "crafting": 11, "melee": 13, "shooting": 2 }, "passions": ["judgement", "containment"], "want": "test each host fairly and reject the one bonding that would unmake the colony, even now that the Ward has stood down once" } },
+
+    { "slug": "figures/lead-mira-okonkwo", "type": "colonist", "tension": 0.7, "facts": { "role": "human survey lead, three grafts deep", "live": true, "drive": "finish the set and speak for us inside the shared awareness before someone less careful does", "skills": { "social": 17, "research": 13, "shooting": 11, "crafting": 9, "medicine": 6, "melee": 8 }, "passions": ["leadership", "the bonding set"], "want": "complete her own set first so it is HER voice, not a recruit's, that the colony hears inside the shared awareness" } },
+    { "slug": "figures/medic-dr-elias-cho", "type": "colonist", "tension": 0.65, "facts": { "role": "human field surgeon who installs and removes grafts", "live": true, "drive": "keep the colonists human enough to come home; I have started to doubt I still can", "skills": { "medicine": 20, "research": 14, "social": 10, "crafting": 12, "melee": 5, "shooting": 7 }, "passions": ["surgery", "keeping people whole"], "want": "perfect a graft-removal that does not take more of the patient than it gives back, before Sana reaches the well" } },
+    { "slug": "figures/archivist-yuki-tanaka", "type": "colonist", "tension": 0.6, "facts": { "role": "human xeno-archivist reconstructing the bonding order", "live": true, "drive": "read the whole graft-set and what it makes BEFORE anyone completes it", "skills": { "research": 19, "social": 12, "crafting": 10, "medicine": 7, "melee": 4, "shooting": 5 }, "passions": ["the graft-set", "intellectual"], "want": "decode the final fragment and publish the warning while there is still a colony that can be warned" } },
+    { "slug": "figures/recruit-sana-reyes", "type": "colonist", "tension": 0.7, "facts": { "role": "newest colonist, one graft from completing the set", "live": true, "drive": "I can feel the others in me and I want the last graft more than I want to be only myself", "skills": { "shooting": 14, "melee": 12, "social": 11, "crafting": 9, "medicine": 6, "research": 8 }, "passions": ["belonging", "the last graft"], "want": "take the final graft and stop being alone inside her own skull, whatever it costs the woman she is now" } },
+
+    { "slug": "beliefs/the-communion-creed", "type": "belief", "tension": 0.6, "facts": { "held_by": "figures/lead-mira-okonkwo", "claim": "becoming one wider awareness is a gift, not a death; the set was always meant to finish inside a willing human" } },
+    { "slug": "beliefs/the-single-self-creed", "type": "belief", "tension": 0.6, "facts": { "held_by": "figures/medic-dr-elias-cho", "claim": "every graft edits who you are; a completed host is no longer the person who consented, and no gift is worth that erasure" } },
+
+    { "slug": "artifacts/the-canopy-communion-node", "type": "artifact", "tension": 0.8, "facts": { "archetype": "communion-node", "maker": "the-canopy-mind", "shapes": "the-host-bandwidth-reach", "found": "grown into the heartwood of the Cathedral; the last graft, the one that completes the set", "live_risk": "bonding it finishes a host into the shared awareness for good" } },
+    { "slug": "artifacts/the-grafted-lineage-marker", "type": "artifact", "tension": 0.7, "facts": { "archetype": "lineage-marker", "maker": "the-grafted", "found": "carried in the flesh of every completed host; reads the whole bonding history of whoever holds it" } },
+    { "slug": "artifacts/the-pale-ward-graft-seed", "type": "artifact", "tension": 0.6, "facts": { "archetype": "graft-seed", "maker": "the-pale-ward", "shapes": "the-graft-sap-wells", "note": "the antibody-culture's own test-graft; bonding it is how the Cathedral decides whether to accept or reject a host" } },
+    { "slug": "artifacts/the-shared-sense-grown-organ", "type": "artifact", "tension": 0.65, "facts": { "archetype": "grown-organ", "maker": "the-canopy-mind", "shapes": "the-host-bandwidth-reach", "note": "an organ grown to graft INTO a host; it opens the first thread of shared awareness" } },
+    { "slug": "artifacts/the-recruiter-symbiote-spore", "type": "artifact", "tension": 0.6, "facts": { "archetype": "symbiote-spore", "maker": "the-grafted", "note": "a living spore that seeks an un-bonded human and offers the first graft; how the lineage grows" } },
+    { "slug": "artifacts/the-deep-reach-spore-tool", "type": "artifact", "tension": 0.7, "facts": { "archetype": "spore-tool", "maker": "the-canopy-mind", "shapes": "the-graft-sap-wells", "note": "a grown tool that only a multi-graft host can wield; widens the reach toward completion" } },
+
+    { "slug": "lore/frag-the-tools-must-be-grafted", "type": "lore", "tension": 0.7, "facts": { "subtype": "fragment", "revealed": false, "claim": "the Cathedral's relics cannot be carried or used at arm's length; each must be grafted INTO the body, and the body it enters is changed to fit it" } },
+    { "slug": "lore/frag-each-graft-opens-shared-awareness", "type": "lore", "tension": 0.74, "facts": { "subtype": "fragment", "revealed": false, "claim": "every graft threads its host into one widening awareness shared with all who carry the same lineage; the more you bond the less of the boundary is only you" } },
+    { "slug": "lore/frag-the-ward-decides-who-may-bond", "type": "lore", "tension": 0.78, "facts": { "subtype": "fragment", "revealed": false, "claim": "a living antibody-caste tests every host and accepts or rejects the bonding; passing its graft-seed is the prerequisite for going deeper into the set" } },
+    { "slug": "lore/frag-the-set-assembles-inside-you", "type": "lore", "tension": 0.82, "facts": { "subtype": "fragment", "revealed": false, "claim": "the relics form one ordered set, and the set assembles INSIDE a single host; each graft is the prerequisite for the next, building toward a whole that the host becomes" } },
+    { "slug": "lore/frag-the-completed-host-is-someone-new", "type": "lore", "tension": 0.9, "facts": { "subtype": "fragment", "revealed": false, "claim": "completing the set does not give a human a tool — it makes them the tool's whole vessel; the finished host is a new lineage, neither wholly themselves nor wholly the Cathedral, and it is happening to a colonist right now" } },
+
+    { "slug": "lore/grafts-do-not-come-out-clean", "type": "lore", "tension": 0.6, "facts": { "claim": "a graft can be cut free, but the host's tissue has grown around and into it; removal takes more of the person than the surgery expects" } },
+    { "slug": "lore/the-shared-awareness-is-overt", "type": "lore", "tension": 0.65, "facts": { "claim": "bonded hosts plainly hear one another — shared dreams, finished sentences, a common dread when one of them is in danger; nothing about it is subtle" } },
+    { "slug": "lore/the-ward-stands-in-every-wall", "type": "lore", "tension": 0.55, "facts": { "claim": "the antibody-caste is not a place you visit; it is dissolved through the whole Cathedral, present in every surface a host touches, always testing" } },
+    { "slug": "lore/the-order-cannot-be-skipped", "type": "lore", "tension": 0.7, "facts": { "claim": "the grafts must be taken in sequence; a body that has not opened the prior reach rejects the next graft outright, and the rejection is fatal" } },
+    { "slug": "lore/the-first-whole-host-still-recruits", "type": "lore", "tension": 0.7, "facts": { "claim": "since the Communion the first complete host has not gone quiet; it walks the colony offering the first graft, patient and warm, growing the lineage one consent at a time" } },
+
+    { "slug": "events/colony-first-graft", "type": "event", "tension": 0.45, "facts": { "kind": "arrival", "title": "the first colonist accepts a graft and hears another mind", "live": true } },
+    { "slug": "events/the-communion", "type": "event", "tension": 0.95, "facts": { "kind": "communion", "title": "the Communion — the set completes inside its first whole host", "note": "not a fall but a becoming; the graft-set finished assembling inside a living colonist and a new lineage woke into the shared awareness", "climax": true } },
+
+    { "slug": "arc/the-last-graft", "type": "arc", "tension": 0.93, "facts": { "phase": "rising", "live": true, "stakes": "Sana Reyes is one graft from completing the set; the last bond finishes her into the shared awareness for good, and the colony cannot agree whether to let her, stop her, or take her place", "next_beat_event": "events/the-communion", "next_beat_note": "the canopy-communion-node has gone ripe in the heartwood and Sana can feel it calling the empty space inside her", "present_tension": "Mira urges her toward completion, Elias is prepping a removal he may not survive performing, and the first whole host is already at the well to welcome her", "resolution": "undecided" } }
+  ],
+  "edges": [
+    ["factions/humans", "lives_inside", "locations/the-host-bandwidth-reach"],
+    ["factions/humans", "draws_from", "locations/the-graft-sap-wells"],
+
+    ["civs/the-canopy-mind", "grows", "locations/the-graft-sap-wells"],
+    ["civs/the-canopy-mind", "opens", "locations/the-host-bandwidth-reach"],
+    ["civs/the-grafted", "extends", "locations/the-host-bandwidth-reach"],
+    ["civs/the-grafted", "born_of", "civs/the-canopy-mind"],
+    ["civs/the-pale-ward", "tests_at", "locations/the-graft-sap-wells"],
+    ["civs/the-pale-ward", "serves", "civs/the-canopy-mind"],
+
+    ["figures/the-first-whole-host", "member_of", "civs/the-grafted"],
+    ["figures/the-ward-antibody-voice", "member_of", "civs/the-pale-ward"],
+    ["figures/the-first-whole-host", "bears", "artifacts/the-grafted-lineage-marker"],
+
+    ["figures/lead-mira-okonkwo", "leads", "factions/humans"],
+    ["figures/medic-dr-elias-cho", "member_of", "factions/humans"],
+    ["figures/archivist-yuki-tanaka", "member_of", "factions/humans"],
+    ["figures/recruit-sana-reyes", "member_of", "factions/humans"],
+    ["figures/lead-mira-okonkwo", "bonded", "artifacts/the-shared-sense-grown-organ"],
+    ["figures/lead-mira-okonkwo", "wields", "artifacts/the-deep-reach-spore-tool"],
+    ["figures/archivist-yuki-tanaka", "investigates", "artifacts/the-grafted-lineage-marker"],
+    ["figures/medic-dr-elias-cho", "fears", "artifacts/the-canopy-communion-node"],
+    ["figures/recruit-sana-reyes", "sought_by", "artifacts/the-recruiter-symbiote-spore"],
+
+    ["artifacts/the-shared-sense-grown-organ", "shapes", "locations/the-host-bandwidth-reach"],
+    ["artifacts/the-deep-reach-spore-tool", "shapes", "locations/the-graft-sap-wells"],
+    ["artifacts/the-pale-ward-graft-seed", "shapes", "locations/the-graft-sap-wells"],
+    ["artifacts/the-canopy-communion-node", "shapes", "locations/the-host-bandwidth-reach"],
+    ["artifacts/the-shared-sense-grown-organ", "forged_by", "civs/the-canopy-mind"],
+    ["artifacts/the-recruiter-symbiote-spore", "forged_by", "civs/the-grafted"],
+    ["artifacts/the-pale-ward-graft-seed", "forged_by", "civs/the-pale-ward"],
+    ["artifacts/the-deep-reach-spore-tool", "forged_by", "civs/the-canopy-mind"],
+    ["artifacts/the-grafted-lineage-marker", "forged_by", "civs/the-grafted"],
+    ["artifacts/the-canopy-communion-node", "forged_by", "civs/the-canopy-mind"],
+
+    ["artifacts/the-recruiter-symbiote-spore", "prerequisite_for", "artifacts/the-shared-sense-grown-organ"],
+    ["artifacts/the-shared-sense-grown-organ", "prerequisite_for", "artifacts/the-pale-ward-graft-seed"],
+    ["artifacts/the-pale-ward-graft-seed", "prerequisite_for", "artifacts/the-deep-reach-spore-tool"],
+    ["artifacts/the-deep-reach-spore-tool", "prerequisite_for", "artifacts/the-grafted-lineage-marker"],
+    ["artifacts/the-grafted-lineage-marker", "prerequisite_for", "artifacts/the-canopy-communion-node"],
+
+    ["artifacts/the-recruiter-symbiote-spore", "drops", "lore/frag-the-tools-must-be-grafted"],
+    ["artifacts/the-recruiter-symbiote-spore", "drops", "lore/the-first-whole-host-still-recruits"],
+    ["artifacts/the-recruiter-symbiote-spore", "drops", "lore/grafts-do-not-come-out-clean"],
+
+    ["artifacts/the-shared-sense-grown-organ", "drops", "lore/frag-each-graft-opens-shared-awareness"],
+    ["artifacts/the-shared-sense-grown-organ", "drops", "lore/the-shared-awareness-is-overt"],
+    ["artifacts/the-shared-sense-grown-organ", "drops", "lore/frag-the-tools-must-be-grafted"],
+
+    ["artifacts/the-pale-ward-graft-seed", "drops", "lore/frag-the-ward-decides-who-may-bond"],
+    ["artifacts/the-pale-ward-graft-seed", "drops", "lore/the-ward-stands-in-every-wall"],
+    ["artifacts/the-pale-ward-graft-seed", "drops", "lore/the-order-cannot-be-skipped"],
+
+    ["artifacts/the-deep-reach-spore-tool", "drops", "lore/frag-the-set-assembles-inside-you"],
+    ["artifacts/the-deep-reach-spore-tool", "drops", "lore/the-order-cannot-be-skipped"],
+    ["artifacts/the-deep-reach-spore-tool", "drops", "lore/frag-each-graft-opens-shared-awareness"],
+
+    ["artifacts/the-grafted-lineage-marker", "drops", "lore/frag-the-set-assembles-inside-you"],
+    ["artifacts/the-grafted-lineage-marker", "drops", "lore/the-first-whole-host-still-recruits"],
+    ["artifacts/the-grafted-lineage-marker", "drops", "lore/frag-the-completed-host-is-someone-new"],
+
+    ["artifacts/the-canopy-communion-node", "drops", "lore/frag-the-completed-host-is-someone-new"],
+    ["artifacts/the-canopy-communion-node", "drops", "lore/the-shared-awareness-is-overt"],
+    ["artifacts/the-canopy-communion-node", "drops", "lore/grafts-do-not-come-out-clean"],
+
+    ["lore/frag-the-tools-must-be-grafted", "reveals", "lore/frag-each-graft-opens-shared-awareness"],
+    ["lore/frag-each-graft-opens-shared-awareness", "reveals", "lore/frag-the-ward-decides-who-may-bond"],
+    ["lore/frag-the-ward-decides-who-may-bond", "reveals", "lore/frag-the-set-assembles-inside-you"],
+    ["lore/frag-the-set-assembles-inside-you", "reveals", "lore/frag-the-completed-host-is-someone-new"],
+
+    ["lore/frag-the-tools-must-be-grafted", "reveals", "locations/the-graft-sap-wells"],
+    ["lore/frag-each-graft-opens-shared-awareness", "reveals", "locations/the-host-bandwidth-reach"],
+    ["lore/frag-the-ward-decides-who-may-bond", "reveals", "civs/the-pale-ward"],
+    ["lore/frag-the-set-assembles-inside-you", "reveals", "civs/the-grafted"],
+    ["lore/frag-the-completed-host-is-someone-new", "reveals", "events/the-communion"],
+
+    ["events/colony-first-graft", "involves", "factions/humans"],
+    ["events/the-communion", "involves", "civs/the-canopy-mind"],
+    ["civs/the-grafted", "completed_at", "events/the-communion"],
+    ["civs/the-canopy-mind", "woke_through", "events/the-communion"],
+    ["civs/the-pale-ward", "ratified_at", "events/the-communion"],
+    ["figures/the-first-whole-host", "became_at", "events/the-communion"],
+
+    ["artifacts/the-canopy-communion-node", "raises", "arc/the-last-graft"],
+    ["figures/lead-mira-okonkwo", "urges", "arc/the-last-graft"],
+    ["figures/medic-dr-elias-cho", "resists", "arc/the-last-graft"],
+    ["figures/recruit-sana-reyes", "must_decide", "arc/the-last-graft"],
+    ["figures/the-first-whole-host", "threatens", "arc/the-last-graft"],
+    ["lore/frag-the-completed-host-is-someone-new", "raises", "arc/the-last-graft"],
+
+    ["beliefs/the-communion-creed", "held_by", "figures/lead-mira-okonkwo"],
+    ["beliefs/the-single-self-creed", "held_by", "figures/medic-dr-elias-cho"],
+    ["beliefs/the-communion-creed", "opposes", "beliefs/the-single-self-creed"],
+    ["figures/recruit-sana-reyes", "sought_by", "civs/the-grafted"],
+
+    ["figures/lead-mira-okonkwo", "rival_of", "figures/medic-dr-elias-cho"],
+    ["figures/medic-dr-elias-cho", "lover_of", "figures/archivist-yuki-tanaka"],
+    ["figures/archivist-yuki-tanaka", "lover_of", "figures/medic-dr-elias-cho"],
+    ["figures/lead-mira-okonkwo", "kin_of", "figures/recruit-sana-reyes"],
+    ["figures/recruit-sana-reyes", "kin_of", "figures/lead-mira-okonkwo"],
+    ["figures/medic-dr-elias-cho", "owes", "figures/lead-mira-okonkwo"],
+    ["figures/archivist-yuki-tanaka", "ally_of", "figures/medic-dr-elias-cho"],
+    ["figures/recruit-sana-reyes", "grudge_against", "figures/medic-dr-elias-cho"],
+    ["figures/lead-mira-okonkwo", "rival_of", "figures/the-first-whole-host"],
+    ["figures/the-first-whole-host", "ally_of", "figures/recruit-sana-reyes"],
+    ["figures/the-ward-antibody-voice", "rival_of", "figures/recruit-sana-reyes"],
+    ["figures/the-first-whole-host", "kin_of", "figures/medic-dr-elias-cho"]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/frag-the-tools-must-be-grafted",
+      "lore/frag-each-graft-opens-shared-awareness",
+      "lore/frag-the-ward-decides-who-may-bond",
+      "lore/frag-the-set-assembles-inside-you",
+      "lore/frag-the-completed-host-is-someone-new"
+    ],
+    "order": [
+      "lore/frag-the-tools-must-be-grafted",
+      "lore/frag-each-graft-opens-shared-awareness",
+      "lore/frag-the-ward-decides-who-may-bond",
+      "lore/frag-the-set-assembles-inside-you",
+      "lore/frag-the-completed-host-is-someone-new"
+    ],
+    "order_relation": "prerequisite"
+  }
+}
