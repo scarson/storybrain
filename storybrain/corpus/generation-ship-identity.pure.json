@@ -194,7 +194,19 @@
         "revealed": false,
         "about": "the-silenced",
         "title": "The Choice Made",
-        "detail": "Fourth memory: they chose. They let the sibling colony — the Silenced — quietly die, and let this one live. Then, unable to live as the people who had done it, they unmade themselves."
+        "detail": "Fourth memory: they chose. They let the sibling colony — the Silenced — quietly die, and let this one live."
+      }
+    },
+    {
+      "slug": "lore/the-self-erasure",
+      "type": "lore",
+      "tension": 0.85,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "factions/the-quiet-makers",
+        "title": "The Self-Erasure",
+        "detail": "Fifth memory: unable to live as the people who had done it, the makers sentenced themselves — unmaking their names and scattering their lines so their children would inherit the world but not the guilt."
       }
     },
     {
@@ -403,6 +415,25 @@
         "kind": "exodus",
         "title": "The bloodlines are scattered to return blind"
       }
+    },
+    {
+      "slug": "locations/the-sibling-coast",
+      "type": "location",
+      "tension": 0.6,
+      "facts": {
+        "title": "The Sibling Coast",
+        "detail": "The far shoreline the charts pretend is open water. It is where the Silenced settled, and where their unmarked dwellings still stand under the dunes — the one place a relic-blind colonist might stumble on the crime before the memories explain it."
+      }
+    },
+    {
+      "slug": "figures/the-cartographer",
+      "type": "figure",
+      "tension": 0.55,
+      "facts": {
+        "title": "The Cartographer",
+        "role": "maker who edited the sky",
+        "detail": "The Cleaner who burned the sibling colony off every chart and replaced its coordinates with open sea. The Starved Chart is her confession, hidden in the precision of the lie."
+      }
     }
   ],
   "edges": [
@@ -472,11 +503,16 @@
       "lore/the-two-colonies"
     ],
     [
-      "lore/it-was-us",
+      "lore/the-self-erasure",
       "reveals",
       "lore/the-choice-made"
     ],
     [
+      "lore/it-was-us",
+      "reveals",
+      "lore/the-self-erasure"
+    ],
+    [
       "artifacts/the-fitting-cradle",
       "drops",
       "lore/the-cradle-fits"
@@ -502,6 +538,11 @@
       "lore/it-was-us"
     ],
     [
+      "artifacts/the-warm-vault",
+      "drops",
+      "lore/the-self-erasure"
+    ],
+    [
       "artifacts/the-fitting-cradle",
       "drops",
       "lore/the-blank-panel"
@@ -529,7 +570,7 @@
     [
       "artifacts/the-mourners-will",
       "drops",
-      "lore/it-was-us"
+      "lore/the-self-erasure"
     ],
     [
       "artifacts/the-starved-chart",
@@ -539,22 +580,17 @@
     [
       "artifacts/the-starved-chart",
       "drops",
-      "lore/it-was-us"
+      "lore/the-self-erasure"
     ],
     [
       "artifacts/the-starved-chart",
       "drops",
-      "lore/the-cradle-fits"
+      "lore/it-was-us"
     ],
     [
       "artifacts/the-warm-vault",
       "drops",
       "lore/the-cradle-fits"
-    ],
-    [
-      "artifacts/the-warm-vault",
-      "drops",
-      "lore/the-blank-panel"
     ],
     [
       "lore/the-cradle-fits",
@@ -575,6 +611,11 @@
       "lore/the-choice-made",
       "reveals",
       "figures/the-silenced"
+    ],
+    [
+      "lore/the-self-erasure",
+      "reveals",
+      "factions/the-quiet-makers"
     ],
     [
       "lore/it-was-us",
@@ -802,6 +843,27 @@
       "artifacts/the-mourners-will",
       "records",
       "events/m4-the-vote-to-forget"
+    ],
+    [
+      "locations/the-sibling-coast",
+      "site_of",
+      "figures/the-silenced"
+    ],
+    [
+      "events/m3-the-silence",
+      "occurred_at",
+      "locations/the-sibling-coast",
+      -2880
+    ],
+    [
+      "figures/the-cartographer",
+      "made",
+      "artifacts/the-starved-chart"
+    ],
+    [
+      "figures/the-cartographer",
+      "holds",
+      "beliefs/the-clean-inheritance"
     ]
   ],
   "mystery": {
@@ -810,6 +872,7 @@
       "lore/the-blank-panel",
       "lore/the-two-colonies",
       "lore/the-choice-made",
+      "lore/the-self-erasure",
       "lore/it-was-us"
     ],
     "order": [
@@ -817,6 +880,7 @@
       "lore/the-blank-panel",
       "lore/the-two-colonies",
       "lore/the-choice-made",
+      "lore/the-self-erasure",
       "lore/it-was-us"
     ],
     "order_relation": "reveals"

@@ -328,6 +328,81 @@
         "truth": "the newest and most convincing lie, painted over a smuggled, harvested past",
         "chain_position": "newest-lie"
       }
+    },
+    {
+      "slug": "colonists/dret-vossan",
+      "type": "colonist",
+      "tension": 0.6,
+      "facts": {
+        "role": "Syndic price-master",
+        "civ": "the-vossan-syndics",
+        "desc": "the broker who sold Marlena the curio too cheap and now wants it back before she traces it"
+      }
+    },
+    {
+      "slug": "colonists/captain-yer",
+      "type": "colonist",
+      "tension": 0.5,
+      "facts": {
+        "role": "Khariti caravan-master",
+        "civ": "the-khariti-drift",
+        "desc": "the drift-captain whose broker-token names every hand the curio passed through"
+      }
+    },
+    {
+      "slug": "colonists/sho-melun",
+      "type": "colonist",
+      "tension": 0.65,
+      "facts": {
+        "role": "Melun cartel quartermaster",
+        "civ": "the-melun-cartel",
+        "desc": "knows the commodity is smuggled, not mined, and would rather you vanished than said so aloud"
+      }
+    },
+    {
+      "slug": "locations/the-counterfeit-row",
+      "type": "location",
+      "tension": 0.5,
+      "facts": {
+        "kind": "forgers' lane",
+        "desc": "the bazaar's back row where a clean fake costs more than a dirty truth"
+      }
+    },
+    {
+      "slug": "locations/the-melun-runs",
+      "type": "location",
+      "tension": 0.6,
+      "facts": {
+        "kind": "smuggling lanes",
+        "desc": "the dark routes the Melun cartel uses to move the commodity past the Syndic tariff"
+      }
+    },
+    {
+      "slug": "lore/amber-hums-near-kin",
+      "type": "lore",
+      "tension": 0.5,
+      "facts": {
+        "subtype": "flavor",
+        "note": "ghostlight-amber hums louder near more of itself — a property no mined mineral has, and the first crack in the mined-myth"
+      }
+    },
+    {
+      "slug": "lore/syndic-tariff-control",
+      "type": "lore",
+      "tension": 0.4,
+      "facts": {
+        "subtype": "flavor",
+        "note": "the Vossan Syndics tax every certified sale; their wealth depends on provenance staying scarce and forgeable"
+      }
+    },
+    {
+      "slug": "lore/khariti-neutral-memory",
+      "type": "lore",
+      "tension": 0.4,
+      "facts": {
+        "subtype": "flavor",
+        "note": "the Khariti remember every chain they carried but sell the memory only as a last resort, to stay welcome in every port"
+      }
     }
   ],
   "edges": [
@@ -670,6 +745,86 @@
       "lore/prov-khariti-carried-it",
       "precedes",
       "lore/prov-forged-mined-origin"
+    ],
+    [
+      "colonists/dret-vossan",
+      "member_of",
+      "civs/the-vossan-syndics"
+    ],
+    [
+      "colonists/captain-yer",
+      "member_of",
+      "civs/the-khariti-drift"
+    ],
+    [
+      "colonists/sho-melun",
+      "member_of",
+      "civs/the-melun-cartel"
+    ],
+    [
+      "colonists/dret-vossan",
+      "sold_to",
+      "colonists/marlena-okonkwo"
+    ],
+    [
+      "colonists/dret-vossan",
+      "wants_back",
+      "artifacts/the-humming-curio"
+    ],
+    [
+      "colonists/captain-yer",
+      "keeps",
+      "artifacts/the-khariti-drift-broker-token-4"
+    ],
+    [
+      "colonists/sho-melun",
+      "keeps",
+      "artifacts/the-melun-cartel-broker-token-30"
+    ],
+    [
+      "colonists/sho-melun",
+      "threatens",
+      "colonists/idris-vale"
+    ],
+    [
+      "civs/the-vossan-syndics",
+      "controls",
+      "locations/the-counterfeit-row"
+    ],
+    [
+      "civs/the-melun-cartel",
+      "controls",
+      "locations/the-melun-runs"
+    ],
+    [
+      "artifacts/the-humming-curio",
+      "drops",
+      "lore/amber-hums-near-kin"
+    ],
+    [
+      "artifacts/the-vossan-syndics-forged-provenance-scroll-26",
+      "drops",
+      "lore/syndic-tariff-control"
+    ],
+    [
+      "artifacts/the-khariti-drift-broker-token-4",
+      "drops",
+      "lore/khariti-neutral-memory"
+    ],
+    [
+      "lore/amber-hums-near-kin",
+      "reveals",
+      "locations/ghostlight-amber-seam"
+    ],
+    [
+      "lore/syndic-tariff-control",
+      "reveals",
+      "civs/the-vossan-syndics"
+    ],
+    [
+      "lore/khariti-neutral-memory",
+      "reveals",
+      "civs/the-khariti-drift"
     ]
   ],
   "mystery": {
