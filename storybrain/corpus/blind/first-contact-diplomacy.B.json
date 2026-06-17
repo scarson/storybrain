@@ -1,8 +1,4 @@
 {
-  "_arm": "HYBRID",
-  "_theme": "first-contact-diplomacy",
-  "_pipeline": "Stage B procgen skeleton (seed 314) enriched + present-tense live layer (Stage C). Procgen gave the deep-history scaffold: three living alien factions, their rivalries/schisms/seer-figures, resource seams, and three lent artifacts. Stage C reframes that skeleton to first-contact diplomacy, drops rich lore on every artifact, and adds a PRESENT layer — named human colonists, an OPEN arc, and present-stake edges tied to the artifacts and the mystery.",
-  "_flavor_note": "Sprawling, multi-site, geopolitical. Three living alien factions actively contend over whether humanity is vetted, denied, or brokered; caches scattered across a system; a live unresolved present where a human survey team is mid-triangulation with rivals closing. Mystery spine = reveals (each decoded gift reveals the next cache-bearing, ending in WHY the factions split over humanity).",
   "nodes": [
     {
       "slug": "factions/humans",

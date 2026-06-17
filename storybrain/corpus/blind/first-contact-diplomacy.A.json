@@ -1,7 +1,4 @@
 {
-  "_arm": "PURE-LLM",
-  "_theme": "first-contact-diplomacy",
-  "_flavor_note": "Intimate, single-table chamber-diplomacy. The whole world orbits one negotiation: a small human delegation, a living alien gatekeeper-caste that lends riddle-gifts, and the slow read of trust. Lyrical, character-forward, claustrophobic. Mystery spine = reveals (each correctly-read gift reveals the bearing to the next cache and, at the end, WHY the Irenni vet at all).",
   "nodes": [
     {
       "slug": "factions/humans",

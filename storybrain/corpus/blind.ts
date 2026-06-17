@@ -30,7 +30,11 @@ const coin = rng(20260617);
 // slugs; we can't rename slugs without breaking edges, so we only strip obvious
 // provenance and note the residual caveat in the finding).
 function sanitize(w: any) {
-  delete w._note; delete w._provenance; delete w.pipeline; delete w.arm;
+  // strip ALL underscore-prefixed keys (generation agents added _arm/_pipeline/
+  // _flavor_note/_theme that leak which pipeline made the world). The FIRST judged
+  // run used files that still had these (sanitize was too narrow) — finding 12
+  // discloses that leak; this fix produces clean files for any clean re-judge.
+  for (const k of Object.keys(w)) if (k.startsWith("_")) delete w[k];
   return w;
 }
 
