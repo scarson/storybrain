@@ -1,0 +1,11 @@
+=== Bond roller on bio-symbiosis-horror.hybrid3.json (seed 7) ===
+cast 6, artifacts 6. threshold 0.5, p_bond 0.7, cap 2/char
+
+★ the-first-whole-host --covets--> the-canopy-communion-node  (fit 0.66) — it speaks directly to their want
+· the-grafted-lineage-marker — 2 fit candidate(s) but roll declined (rarity)
+★ the-ward-antibody-voice --heir_to--> the-pale-ward-graft-seed  (fit 0.90) — it was made by their own people (the-pale-ward)
+· the-shared-sense-grown-organ — no resonant character; stays unbonded (correct: not forced)
+★ the-first-whole-host --heir_to--> the-recruiter-symbiote-spore  (fit 0.90) — it was made by their own people (the-grafted)
+· the-deep-reach-spore-tool — no resonant character; stays unbonded (correct: not forced)
+
+formed 3 bond(s), 3 item(s) left unbonded. Bonds only where a real signal resonated.

@@ -1,0 +1,12 @@
+=== Bond roller on megastructure-absent-architects.hybrid3.json (seed 7) ===
+cast 6, artifacts 7. threshold 0.5, p_bond 0.7, cap 2/char
+
+★ keeper-steward-echo --heir_to--> keepers-region-key-of-the-outer-ring  (fit 0.90) — it was made by their own people (the-keepers)
+· keepers-access-sigil-of-the-cradles — 8 fit candidate(s) but roll declined (rarity)
+★ architect-purpose-construct --operates--> keepers-control-key-of-the-mid-rings  (fit 0.90) — an engineer who can run it (20)  [+rival claim: engineer-davies also bonded]
+★ keeper-steward-echo --operates--> listeners-access-sigil-of-the-spire  (fit 0.88) — an engineer who can run it (19)  [+rival claim: the-listeners-firstear also bonded]
+★ architect-purpose-construct --covets--> architects-purpose-codex  (fit 0.66) — it speaks directly to their want
+· keepers-ward-sigil-of-the-core — 4 fit candidate(s) but roll declined (rarity)
+★ archivist-sole --decoded--> listeners-final-activation-codex  (fit 0.85) — a translator who reads it (xeno/research 18)
+
+formed 5 bond(s), 2 item(s) left unbonded. Bonds only where a real signal resonated.

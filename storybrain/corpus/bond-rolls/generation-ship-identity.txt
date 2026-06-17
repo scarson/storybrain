@@ -1,0 +1,11 @@
+=== Bond roller on generation-ship-identity.hybrid3.json (seed 7) ===
+cast 6, artifacts 6. threshold 0.5, p_bond 0.7, cap 2/char
+
+★ the-recorded-doubter --decoded--> the-scarred-stele  (fit 0.90) — a envoy who reads it (xeno/research 20)
+· the-edited-sky — 6 fit candidate(s) but roll declined (rarity)
+★ the-sleeper-of-the-erased --operates--> the-refusers-vault  (fit 0.82) — an engineer who can run it (17)
+★ mara-okonkwo --denies_to--> the-mercy-vault  (fit 0.72) — a faction they rival of (tomas-vey) also wants it
+★ mara-okonkwo --decoded--> the-counter-monument  (fit 0.88) — a translator who reads it (xeno/research 19)
+· the-last-will — 1 fit candidate(s) but roll declined (rarity)
+
+formed 4 bond(s), 2 item(s) left unbonded. Bonds only where a real signal resonated.

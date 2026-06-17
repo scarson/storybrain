@@ -1,0 +1,12 @@
+=== Bond roller on machine-successor.hybrid3.json (seed 7) ===
+cast 6, artifacts 7. threshold 0.5, p_bond 0.7, cap 2/char
+
+★ imani-rourke --covets--> founding-work-order  (fit 0.66) — it speaks directly to their want
+· tally-audit-key-relic — 6 fit candidate(s) but roll declined (rarity)
+· spindle-phase-manifest — no resonant character; stays unbonded (correct: not forced)
+· revenant-drifted-shard — no resonant character; stays unbonded (correct: not forced)
+★ sister-vale --operates--> still-cell-running-core  (fit 0.80) — an engineer who can run it (16)
+· cartage-route-cipher — no resonant character; stays unbonded (correct: not forced)
+★ imani-rourke --covets--> directive-stock-cache  (fit 0.66) — it speaks directly to their want
+
+formed 3 bond(s), 4 item(s) left unbonded. Bonds only where a real signal resonated.

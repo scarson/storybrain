@@ -1,0 +1,11 @@
+=== Bond roller on crowded-trade-federation.hybrid3.json (seed 7) ===
+cast 6, artifacts 6. threshold 0.5, p_bond 0.7, cap 2/char
+
+★ mara-osei-vance --covets--> vossan-first-provenance-scroll  (fit 0.66) — it speaks directly to their want
+· oseni-true-seal-die — no resonant character; stays unbonded (correct: not forced)
+· khariti-route-log — 6 fit candidate(s) but roll declined (rarity)
+· rho-clean-chain-relic — no resonant character; stays unbonded (correct: not forced)
+★ dev-haldane --covets--> melun-counterfeit-token  (fit 0.66) — it speaks directly to their want
+· dissident-assayer-confession — no resonant character; stays unbonded (correct: not forced)
+
+formed 2 bond(s), 4 item(s) left unbonded. Bonds only where a real signal resonated.

@@ -1,0 +1,12 @@
+=== Bond roller on the-living-marrow.hybrid3.json (seed 7) ===
+cast 6, artifacts 7. threshold 0.5, p_bond 0.7, cap 2/char
+
+★ the-velt-remnant-thauma --decoded--> kaels-bore-codex  (fit 0.90) — a Velt deepwright's last thought, still uncoiling in the glasshalls who reads it (xeno/research 20)
+· the-marrow-shard — 2 fit candidate(s) but roll declined (rarity)
+· cantors-final-loop — no resonant character; stays unbonded (correct: not forced)
+★ archivist-soln --covets--> the-still-tuning-fork  (fit 0.66) — it speaks directly to their want
+★ the-velt-remnant-thauma --decoded--> the-vitrified-map  (fit 0.90) — a Velt deepwright's last thought, still uncoiling in the glasshalls who reads it (xeno/research 20)
+· the-pale-wing-ledger — no resonant character; stays unbonded (correct: not forced)
+★ director-imre-vask --wields--> the-silence-engine  (fit 0.57) — a fighter who can wield it (7)
+
+formed 4 bond(s), 3 item(s) left unbonded. Bonds only where a real signal resonated.

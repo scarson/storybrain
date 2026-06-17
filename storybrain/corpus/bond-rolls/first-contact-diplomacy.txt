@@ -1,0 +1,11 @@
+=== Bond roller on first-contact-diplomacy.hybrid3.json (seed 7) ===
+cast 9, artifacts 6. threshold 0.5, p_bond 0.7, cap 2/char
+
+· the-lattice-lantern — no resonant character; stays unbonded (correct: not forced)
+· the-worthiness-stylus — no resonant character; stays unbonded (correct: not forced)
+· the-triangulating-token — no resonant character; stays unbonded (correct: not forced)
+★ the-mendicant-broker --heir_to--> the-mendicant-seal-key  (fit 0.90) — it was made by their own people (the-mendicant-tier)
+· the-sealed-lattice-cache — no resonant character; stays unbonded (correct: not forced)
+· the-corrupted-gift — 4 fit candidate(s) but roll declined (rarity)
+
+formed 1 bond(s), 5 item(s) left unbonded. Bonds only where a real signal resonated.

@@ -1,0 +1,11 @@
+=== Bond roller on extinction-plague-vector.hybrid3.json (seed 7) ===
+cast 7, artifacts 6. threshold 0.5, p_bond 0.7, cap 2/char
+
+★ the-sleeper-vael --heir_to--> the-failed-trial-deck  (fit 0.90) — it was made by their own people (the-cradlekeepers)
+· the-marrow-assay — 2 fit candidate(s) but roll declined (rarity)
+★ ilse-vantar --covets--> the-cold-glyph  (fit 0.66) — it speaks directly to their want
+★ the-sleeper-vael --operates--> the-keystone-relic  (fit 0.82) — an engineer who can run it (17)
+· the-sealwrights-recipe — no resonant character; stays unbonded (correct: not forced)
+★ halden-ree --operates--> the-host-vault-key  (fit 0.80) — an engineer who can run it (16)
+
+formed 4 bond(s), 2 item(s) left unbonded. Bonds only where a real signal resonated.

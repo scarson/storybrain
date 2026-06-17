@@ -1,0 +1,12 @@
+=== Bond roller on time-war.hybrid3.json (seed 7) ===
+cast 6, artifacts 7. threshold 0.5, p_bond 0.7, cap 2/char
+
+★ tobias-renn --covets--> the-arriving-relic  (fit 0.66) — it speaks directly to their want
+· object-older-than-its-maker — no resonant character; stays unbonded (correct: not forced)
+· the-effect-before-cause — 5 fit candidate(s) but roll declined (rarity)
+· the-retro-editing-stylus — no resonant character; stays unbonded (correct: not forced)
+· the-precognitive-shard — no resonant character; stays unbonded (correct: not forced)
+★ the-erevan-revenant-korl --covets--> the-undated-anachronism  (fit 0.66) — it speaks directly to their want
+★ tobias-renn --covets--> the-fold-loop-ring  (fit 0.66) — it speaks directly to their want
+
+formed 3 bond(s), 4 item(s) left unbonded. Bonds only where a real signal resonated.

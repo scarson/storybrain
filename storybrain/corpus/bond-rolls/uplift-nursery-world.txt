@@ -1,0 +1,11 @@
+=== Bond roller on uplift-nursery-world.hybrid3.json (seed 7) ===
+cast 7, artifacts 6. threshold 0.5, p_bond 0.7, cap 2/char
+
+★ the-loam-tender-near-hand --heir_to--> terraforming-seed-of-the-tenders  (fit 0.90) — it was made by their own people (the-loam-tenders)
+· the-gene-loom — 8 fit candidate(s) but roll declined (rarity)
+★ the-loam-tender-near-hand --covets--> the-listening-soil-shrine  (fit 0.66) — it speaks directly to their want
+★ seedwright-cole-vance --operates--> the-cultivar-lineage-key  (fit 0.75) — an engineer who can run it (14)
+★ the-ripening-child --heir_to--> the-gardeners-shaping-tool  (fit 0.90) — it was made by their own people (the-gardeners)
+· the-attention-bell — 2 fit candidate(s) but roll declined (rarity)
+
+formed 4 bond(s), 2 item(s) left unbonded. Bonds only where a real signal resonated.
