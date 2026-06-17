@@ -27,7 +27,7 @@ expensive. (Solo autonomous run; banners kept current for the record.)
 | 4 — load + Director + mystery check | ⬜ Not started | integration |
 
 ## Phase 1 — schema + validator (TDD)
-**Execution Status:** ⬜ NOT STARTED
+**Execution Status:** ✅ SHIPPED — `generator/schema.ts` + `schema.test.ts`, 6/6 green.
 - `generator/schema.ts`: types `WorldNode`, `Edge`, `World` + `validateWorld(w)`
   returning `{ok, errors[]}`. Checks: every edge.src/dst is a declared node slug;
   every `artifact` node has ≥3 facts in `facts.latent[]`; `mystery.fragments` all
