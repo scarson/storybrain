@@ -108,8 +108,8 @@
       "day": 800,
       "facts": {
         "title": "The makers seal themselves into quarantine-sleep beside the thing that hunted them",
-        "text": "With the seal unfinished, the Cradlekeepers chose dormancy over death: they sealed into the salt vaults alongside the carriers they could no longer separate from their own, gambling that someone would one day read the beacons and finish the lattice. This is the turn the whole world hinges on, the seal that was never finished.",
-        "climax": true
+        "text": "With the seal unfinished, the Cradlekeepers chose dormancy over death: they sealed into the salt vaults alongside the carriers they could no longer separate from their own, gambling that someone would one day read the beacons and finish the lattice. This is the moment the whole world hinges on, the seal that was never finished.",
+        "is_pivot": true
       }
     },
 
