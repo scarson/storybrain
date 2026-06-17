@@ -400,7 +400,11 @@
       "facts": {
         "role": "colony director",
         "stance": "wants the deep drill to reach the rich seam on schedule and dismisses the humming shard on his desk as superstition, even as it teaches him to dream the planet's pain",
-        "live": true
+        "live": true,
+        "species": "human",
+        "skills": { "shooting": 6, "medicine": 4, "social": 17, "research": 9, "crafting": 5, "melee": 7 },
+        "passions": ["social", "research"],
+        "want": "to hit the marrow-seam quota on schedule and post the colony's first profit before the charter board recalls him"
       }
     },
     {
@@ -410,7 +414,11 @@
       "facts": {
         "role": "xeno-archivist",
         "stance": "has half-decoded Kael's codex and now knows the ore is nerve-tissue; cannot get the director to halt the drill in time",
-        "live": true
+        "live": true,
+        "species": "human",
+        "skills": { "shooting": 3, "medicine": 8, "social": 11, "research": 18, "crafting": 9, "melee": 2 },
+        "passions": ["research", "medicine"],
+        "want": "to finish decoding Kael's bore-codex and force Vask to halt the drill before the bit touches living marrow"
       }
     },
     {
@@ -420,7 +428,11 @@
       "facts": {
         "role": "deep-drill chief",
         "stance": "following orders toward the vein on a quota he was promised was safe; the one whose bit will actually break the seam",
-        "live": true
+        "live": true,
+        "species": "human",
+        "skills": { "shooting": 10, "medicine": 5, "social": 8, "research": 6, "crafting": 16, "melee": 12 },
+        "passions": ["crafting", "shooting"],
+        "want": "to clear the debt he owes Vask by driving the deep drill to the seam, even as Soln's warnings start to reach him"
       }
     },
     {
@@ -430,7 +442,41 @@
       "facts": {
         "role": "junior surveyor going resonant-sensitive",
         "stance": "has begun to hear the wound the way the Choir did and is the only human who can read the Cantor's loop; racing to reach the amphitheater before the drill reaches the seam",
-        "live": true
+        "live": true,
+        "species": "human",
+        "skills": { "shooting": 4, "medicine": 6, "social": 9, "research": 13, "crafting": 7, "melee": 3 },
+        "passions": ["research", "social"],
+        "want": "to reach the silent amphitheater and decode the Cantor's final warning in time to stop Bren's drill"
+      }
+    },
+    {
+      "slug": "colonists/the-velt-remnant-thauma",
+      "type": "colonist",
+      "tension": 0.74,
+      "facts": {
+        "role": "Velt deepwright's last thought, still uncoiling in the glasshalls",
+        "stance": "a sliver of Kael's crystallized mind that never finished its final sentence; speaks one word a day to whoever holds the bore-codex, and has chosen Soln",
+        "live": true,
+        "species": "alien",
+        "faction": "civs/the-velt",
+        "skills": { "shooting": 0, "medicine": 2, "social": 5, "research": 20, "crafting": 14, "melee": 0 },
+        "passions": ["research", "crafting"],
+        "want": "to finish the sentence it was vitrified mid-thought — the warning Kael never got to carve — by speaking it through Soln before the second waking"
+      }
+    },
+    {
+      "slug": "colonists/the-choir-echo-vohn",
+      "type": "colonist",
+      "tension": 0.78,
+      "facts": {
+        "role": "Choir echo looping in the Cantor's final seven seconds",
+        "stance": "the sole surviving node of the gestalt, a recorded voice that has begun to recognize Yuki as kin because she hears on the Choir's own frequency",
+        "live": true,
+        "species": "alien",
+        "faction": "civs/the-choir",
+        "skills": { "shooting": 0, "medicine": 3, "social": 19, "research": 12, "crafting": 0, "melee": 0 },
+        "passions": ["social", "research"],
+        "want": "to teach Yuki the three-word warning and pull her back from the frequency before the wound learns her voice the way it learned the Choir's"
       }
     },
 
@@ -542,12 +588,23 @@
     ["colonists/archivist-soln", "member_of", "factions/humans", 800],
     ["colonists/drill-chief-bren-okafor", "member_of", "factions/humans", 800],
     ["colonists/the-listener-yuki", "member_of", "factions/humans", 800],
+    ["colonists/the-velt-remnant-thauma", "member_of", "civs/the-velt", 800],
+    ["colonists/the-choir-echo-vohn", "member_of", "civs/the-choir", 800],
+
+    ["colonists/archivist-soln", "kin_of", "colonists/the-listener-yuki", 800],
+    ["colonists/drill-chief-bren-okafor", "owes", "colonists/director-imre-vask", 800],
+    ["colonists/director-imre-vask", "betrayed", "colonists/drill-chief-bren-okafor", 800],
+    ["colonists/drill-chief-bren-okafor", "grudge_against", "colonists/director-imre-vask", 800],
+    ["colonists/drill-chief-bren-okafor", "lover_of", "colonists/the-listener-yuki", 800],
+    ["colonists/the-listener-yuki", "lover_of", "colonists/drill-chief-bren-okafor", 800],
+    ["colonists/archivist-soln", "ally_of", "colonists/the-listener-yuki", 800],
+    ["colonists/the-velt-remnant-thauma", "ally_of", "colonists/archivist-soln", 800],
+    ["colonists/the-choir-echo-vohn", "kin_of", "colonists/the-listener-yuki", 800],
 
     ["colonists/director-imre-vask", "owns", "artifacts/the-marrow-shard", 800],
     ["colonists/archivist-soln", "owns", "artifacts/kaels-bore-codex", 800],
     ["colonists/the-listener-yuki", "sought_by", "civs/the-choir", 800],
     ["colonists/archivist-soln", "rival_of", "colonists/director-imre-vask", 800],
-    ["colonists/drill-chief-bren-okafor", "betrayed_by", "colonists/director-imre-vask", 800],
 
     ["factions/humans", "located_at", "locations/colony-drosselmeyer", 800],
     ["locations/colony-drosselmeyer", "located_at", "locations/the-marrow-vein", 800],
