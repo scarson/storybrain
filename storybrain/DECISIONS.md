@@ -46,3 +46,20 @@ for Sam to review. Newest entries appended at the bottom of each section.
   async batched writes + durable journal, chapter compaction,
   find_contradictions for lore, cold-start + fixation guards, modding via packs.
   Next: 3 rounds adversarial Opus review.
+
+## Plugin install (Sam's mid-run request, 2026-06-17)
+
+- Installed at PROJECT scope via `claude plugin`: marketplaces `superpowers-dev`
+  (obra/superpowers) + `scarson-agent-skills` (scarson/agent-skills); plugins
+  `superpowers`, `project-setup`, `superpowers-plus`, `utility`.
+- NOTE: `.claude/settings.json` is gitignored by the upstream gbrain repo. Sam
+  asked for persistence across container restarts, which requires the project
+  settings to be committed, so I **force-added** `.claude/settings.json`
+  (`git add -f`). On a fresh container, the committed `extraKnownMarketplaces` +
+  `enabledPlugins` drive Claude Code to re-clone the marketplaces and re-enable
+  the plugins. If you'd rather not track this file, `git rm --cached
+  .claude/settings.json` and re-add the gitignore — but then plugins won't
+  auto-restore on restart.
+- Per Sam's instruction: use /writing-plans-enhanced for plans and /brainstorming
+  to think through ideas, but ANSWER ALL QUESTIONS MYSELF (no AskUserQuestion —
+  Sam is asleep; blocking would stall everything).

@@ -1,0 +1,22 @@
+{
+  "enabledPlugins": {
+    "superpowers@superpowers-dev": true,
+    "project-setup@scarson-agent-skills": true,
+    "superpowers-plus@scarson-agent-skills": true,
+    "utility@scarson-agent-skills": true
+  },
+  "extraKnownMarketplaces": {
+    "superpowers-dev": {
+      "source": {
+        "source": "github",
+        "repo": "obra/superpowers"
+      }
+    },
+    "scarson-agent-skills": {
+      "source": {
+        "source": "github",
+        "repo": "scarson/agent-skills"
+      }
+    }
+  }
+}
