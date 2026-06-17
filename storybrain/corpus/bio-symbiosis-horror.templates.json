@@ -1,0 +1,17 @@
+{
+  "setting": "The 'civilization' is a single living alien biosphere — the Green Cathedral — that grows its technology as organs rather than building it. It is alive NOW, aware, and partnering with the humans who walk inside it. To use one of its grown bio-relics a human must BOND with it, grafting it into their own flesh; each graft trades raw human limits for alien capacity and quietly edits who the host is, widening a shared awareness with everyone who carries the same graft-lineage. The relics form a set: assemble enough, in the right order, and you are no longer entirely the person who started hunting them.",
+  "civs": [
+    { "name": "the-canopy-mind", "archetype": "living-distributed-biosphere", "trait": "a planet-spanning gestalt of grown tissue, awake and partnering; it offers organs as gifts and reads every host it bonds", "greed": 0.55 },
+    { "name": "the-grafted", "archetype": "living-symbiote-lineage", "trait": "humans far along the bonding set, joined into an overt shared awareness; no longer wholly individual, not yet wholly the Cathedral", "greed": 0.7 },
+    { "name": "the-pale-ward", "archetype": "living-immune-caste", "trait": "the biosphere's antibody-cultures that test, reject, or accept a bonding host — its living quality-control", "greed": 0.45 }
+  ],
+  "resources": [
+    { "name": "host-bandwidth", "danger": 0.65 },
+    { "name": "graft-sap", "danger": 0.4 }
+  ],
+  "artifactKinds": ["grown-organ", "symbiote-spore", "spore-tool", "graft-seed", "communion-node", "lineage-marker"],
+  "epochs": 8,
+  "cascadeThreshold": 1.5,
+  "order_relation": "prerequisite",
+  "climax_label": "the Communion — the set completes inside its first whole host"
+}

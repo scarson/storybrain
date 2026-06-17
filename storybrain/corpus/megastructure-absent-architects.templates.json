@@ -1,0 +1,18 @@
+{
+  "setting": "Humanity arrives INSIDE a working megastructure the size of a solar system — a Dyson-class shell of nested rings, still lit, still warm, still drinking its star. The builders are simply GONE: no bodies, no graves, no war-scars, no fall. The structure is dormant in pieces; control-keys and access-sigils wake region after region. Each key both lights usable power/matter AND drops a fragment of the builders' PURPOSE — what this thing was built to DO and where they WENT. The ordered chain is retrospective: every activation enables the next, and the completed activation-sequence reveals a finished, abandoned purpose. Resource is vast but instrumental; the real prize is the answer to 'why', and whether finishing what they started is a gift or a trap.",
+  "civs": [
+    { "name": "the-architects", "archetype": "absent-builders-no-corpse", "trait": "the vanished makers — left a working machine and no remains; genuinely OTHER, genuinely gone, purpose unstated", "greed": 0.2 },
+    { "name": "the-keepers", "archetype": "absent-caretaker-order", "trait": "a successor caste of the builders who tended the structure after the makers left, then also vanished — they sequenced the shutdowns", "greed": 0.3 },
+    { "name": "the-listeners", "archetype": "absent-inheritor-pilgrims", "trait": "an earlier inheritor species that found the structure before humans, woke pieces, learned part of the purpose, and departed without explanation", "greed": 0.25 }
+  ],
+  "resources": [
+    { "name": "shell-lumen", "danger": 0.3 },
+    { "name": "core-matter", "danger": 0.75 },
+    { "name": "ring-current", "danger": 0.5 }
+  ],
+  "artifactKinds": ["control-key", "access-sigil", "activation-codex", "region-key", "ward-sigil", "purpose-fragment"],
+  "epochs": 8,
+  "cascadeThreshold": 1.5,
+  "order_relation": "enables",
+  "climax_label": "the structure completed and the makers vanished"
+}

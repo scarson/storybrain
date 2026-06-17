@@ -1,0 +1,1207 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.4,
+      "facts": {
+        "role": "late-arrivals"
+      }
+    },
+    {
+      "slug": "civs/the-erevan",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "tense-aligned-xeno-belligerent",
+        "trait": "fights from a future toward its own past; its fate is alive-or-dead undecided",
+        "status": "extant",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "civs/the-undated",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "acausal-xeno-counterforce",
+        "trait": "an enemy that edits the war's earlier moves after they have already happened",
+        "status": "extant",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "civs/the-oncewill",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "precognitive-xeno-witnesses",
+        "trait": "neutral observers who remember outcomes that have not occurred yet",
+        "status": "extant",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "locations/chronon-silt-seam",
+      "type": "location",
+      "tension": 0.345,
+      "facts": {
+        "resource": "chronon-silt",
+        "danger": 0.15
+      }
+    },
+    {
+      "slug": "locations/tense-residue-seam",
+      "type": "location",
+      "tension": 0.32999999999999996,
+      "facts": {
+        "resource": "tense-residue",
+        "danger": 0.1
+      }
+    },
+    {
+      "slug": "events/0-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 100,
+      "facts": {
+        "kind": "war",
+        "title": "the-erevan wars on the-oncewill"
+      }
+    },
+    {
+      "slug": "figures/the-undated-seer-1",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-undated"
+      }
+    },
+    {
+      "slug": "events/1-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 100,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-undated"
+      }
+    },
+    {
+      "slug": "events/2-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 100,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-oncewill taps chronon-silt"
+      }
+    },
+    {
+      "slug": "events/3-exploitation",
+      "type": "event",
+      "tension": 0.545,
+      "day": 100,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-oncewill over-extracts chronon-silt"
+      }
+    },
+    {
+      "slug": "artifacts/the-oncewill-relic-that-remembers-a-future-4",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "relic-that-remembers-a-future",
+        "maker": "the-oncewill"
+      }
+    },
+    {
+      "slug": "events/4-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 200,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-erevan taps chronon-silt"
+      }
+    },
+    {
+      "slug": "events/5-exploitation",
+      "type": "event",
+      "tension": 0.545,
+      "day": 200,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-erevan over-extracts chronon-silt"
+      }
+    },
+    {
+      "slug": "events/6-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 200,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-undated taps tense-residue"
+      }
+    },
+    {
+      "slug": "events/7-exploitation",
+      "type": "event",
+      "tension": 0.53,
+      "day": 200,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-undated over-extracts tense-residue"
+      }
+    },
+    {
+      "slug": "events/8-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 200,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-oncewill taps tense-residue"
+      }
+    },
+    {
+      "slug": "events/9-exploitation",
+      "type": "event",
+      "tension": 0.53,
+      "day": 200,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-oncewill over-extracts tense-residue"
+      }
+    },
+    {
+      "slug": "artifacts/the-oncewill-effect-before-cause-10",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "effect-before-cause",
+        "maker": "the-oncewill"
+      }
+    },
+    {
+      "slug": "events/10-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 300,
+      "facts": {
+        "kind": "war",
+        "title": "the-erevan wars on the-undated"
+      }
+    },
+    {
+      "slug": "events/11-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 300,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-undated taps chronon-silt"
+      }
+    },
+    {
+      "slug": "events/12-exploitation",
+      "type": "event",
+      "tension": 0.545,
+      "day": 300,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-undated over-extracts chronon-silt"
+      }
+    },
+    {
+      "slug": "events/13-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 300,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-oncewill taps tense-residue"
+      }
+    },
+    {
+      "slug": "events/14-exploitation",
+      "type": "event",
+      "tension": 0.53,
+      "day": 300,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-oncewill over-extracts tense-residue"
+      }
+    },
+    {
+      "slug": "events/15-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 400,
+      "facts": {
+        "kind": "war",
+        "title": "the-erevan wars on the-undated"
+      }
+    },
+    {
+      "slug": "events/16-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 400,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-undated taps chronon-silt"
+      }
+    },
+    {
+      "slug": "events/17-exploitation",
+      "type": "event",
+      "tension": 0.545,
+      "day": 400,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-undated over-extracts chronon-silt"
+      }
+    },
+    {
+      "slug": "artifacts/the-undated-relic-that-remembers-a-future-18",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "relic-that-remembers-a-future",
+        "maker": "the-undated"
+      }
+    },
+    {
+      "slug": "events/18-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 400,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-oncewill taps tense-residue"
+      }
+    },
+    {
+      "slug": "events/19-exploitation",
+      "type": "event",
+      "tension": 0.53,
+      "day": 400,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-oncewill over-extracts tense-residue"
+      }
+    },
+    {
+      "slug": "artifacts/the-oncewill-effect-before-cause-20",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "effect-before-cause",
+        "maker": "the-oncewill"
+      }
+    },
+    {
+      "slug": "events/20-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 500,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-erevan taps tense-residue"
+      }
+    },
+    {
+      "slug": "events/21-exploitation",
+      "type": "event",
+      "tension": 0.53,
+      "day": 500,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-erevan over-extracts tense-residue"
+      }
+    },
+    {
+      "slug": "events/22-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 500,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-undated taps chronon-silt"
+      }
+    },
+    {
+      "slug": "events/23-exploitation",
+      "type": "event",
+      "tension": 0.545,
+      "day": 500,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-undated over-extracts chronon-silt"
+      }
+    },
+    {
+      "slug": "artifacts/the-undated-anachronism-24",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "anachronism",
+        "maker": "the-undated"
+      }
+    },
+    {
+      "slug": "events/24-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 500,
+      "facts": {
+        "kind": "war",
+        "title": "the-oncewill wars on the-erevan"
+      }
+    },
+    {
+      "slug": "events/25-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 600,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-erevan taps tense-residue"
+      }
+    },
+    {
+      "slug": "events/26-exploitation",
+      "type": "event",
+      "tension": 0.53,
+      "day": 600,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-erevan over-extracts tense-residue"
+      }
+    },
+    {
+      "slug": "figures/the-undated-seer-27",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-undated"
+      }
+    },
+    {
+      "slug": "events/27-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 600,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-undated"
+      }
+    },
+    {
+      "slug": "events/28-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 600,
+      "facts": {
+        "kind": "war",
+        "title": "the-oncewill wars on the-erevan"
+      }
+    },
+    {
+      "slug": "events/29-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 700,
+      "facts": {
+        "kind": "war",
+        "title": "the-erevan wars on the-undated"
+      }
+    },
+    {
+      "slug": "figures/the-undated-seer-30",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-undated"
+      }
+    },
+    {
+      "slug": "events/30-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 700,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-undated"
+      }
+    },
+    {
+      "slug": "events/31-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 700,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-oncewill taps chronon-silt"
+      }
+    },
+    {
+      "slug": "events/32-exploitation",
+      "type": "event",
+      "tension": 0.545,
+      "day": 700,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-oncewill over-extracts chronon-silt"
+      }
+    },
+    {
+      "slug": "events/33-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 800,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-erevan taps chronon-silt"
+      }
+    },
+    {
+      "slug": "events/34-exploitation",
+      "type": "event",
+      "tension": 0.545,
+      "day": 800,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-erevan over-extracts chronon-silt"
+      }
+    },
+    {
+      "slug": "events/35-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 800,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-undated taps chronon-silt"
+      }
+    },
+    {
+      "slug": "events/36-exploitation",
+      "type": "event",
+      "tension": 0.545,
+      "day": 800,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-undated over-extracts chronon-silt"
+      }
+    },
+    {
+      "slug": "artifacts/the-undated-anachronism-37",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "anachronism",
+        "maker": "the-undated"
+      }
+    },
+    {
+      "slug": "events/37-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 800,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-oncewill taps chronon-silt"
+      }
+    },
+    {
+      "slug": "events/38-exploitation",
+      "type": "event",
+      "tension": 0.545,
+      "day": 800,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-oncewill over-extracts chronon-silt"
+      }
+    }
+  ],
+  "edges": [
+    [
+      "events/0-war",
+      "involves",
+      "civs/the-erevan",
+      100
+    ],
+    [
+      "civs/the-erevan",
+      "rival_of",
+      "civs/the-oncewill",
+      100
+    ],
+    [
+      "events/1-schism",
+      "involves",
+      "civs/the-undated",
+      100
+    ],
+    [
+      "events/1-schism",
+      "involves",
+      "figures/the-undated-seer-1",
+      100
+    ],
+    [
+      "events/2-discovery",
+      "involves",
+      "civs/the-oncewill",
+      100
+    ],
+    [
+      "civs/the-oncewill",
+      "exploits",
+      "locations/chronon-silt-seam",
+      100
+    ],
+    [
+      "events/3-exploitation",
+      "involves",
+      "civs/the-oncewill",
+      100
+    ],
+    [
+      "events/3-exploitation",
+      "caused_by",
+      "events/2-discovery",
+      100
+    ],
+    [
+      "artifacts/the-oncewill-relic-that-remembers-a-future-4",
+      "forged_by",
+      "civs/the-oncewill",
+      100
+    ],
+    [
+      "events/3-exploitation",
+      "involves",
+      "artifacts/the-oncewill-relic-that-remembers-a-future-4",
+      100
+    ],
+    [
+      "events/4-discovery",
+      "involves",
+      "civs/the-erevan",
+      200
+    ],
+    [
+      "events/4-discovery",
+      "caused_by",
+      "events/0-war",
+      200
+    ],
+    [
+      "civs/the-erevan",
+      "exploits",
+      "locations/chronon-silt-seam",
+      200
+    ],
+    [
+      "events/5-exploitation",
+      "involves",
+      "civs/the-erevan",
+      200
+    ],
+    [
+      "events/5-exploitation",
+      "caused_by",
+      "events/4-discovery",
+      200
+    ],
+    [
+      "events/6-discovery",
+      "involves",
+      "civs/the-undated",
+      200
+    ],
+    [
+      "events/6-discovery",
+      "caused_by",
+      "events/1-schism",
+      200
+    ],
+    [
+      "civs/the-undated",
+      "exploits",
+      "locations/tense-residue-seam",
+      200
+    ],
+    [
+      "events/7-exploitation",
+      "involves",
+      "civs/the-undated",
+      200
+    ],
+    [
+      "events/7-exploitation",
+      "caused_by",
+      "events/6-discovery",
+      200
+    ],
+    [
+      "events/8-discovery",
+      "involves",
+      "civs/the-oncewill",
+      200
+    ],
+    [
+      "events/8-discovery",
+      "caused_by",
+      "events/3-exploitation",
+      200
+    ],
+    [
+      "civs/the-oncewill",
+      "exploits",
+      "locations/tense-residue-seam",
+      200
+    ],
+    [
+      "events/9-exploitation",
+      "involves",
+      "civs/the-oncewill",
+      200
+    ],
+    [
+      "events/9-exploitation",
+      "caused_by",
+      "events/8-discovery",
+      200
+    ],
+    [
+      "artifacts/the-oncewill-effect-before-cause-10",
+      "forged_by",
+      "civs/the-oncewill",
+      200
+    ],
+    [
+      "events/9-exploitation",
+      "involves",
+      "artifacts/the-oncewill-effect-before-cause-10",
+      200
+    ],
+    [
+      "events/10-war",
+      "involves",
+      "civs/the-erevan",
+      300
+    ],
+    [
+      "events/10-war",
+      "caused_by",
+      "events/5-exploitation",
+      300
+    ],
+    [
+      "civs/the-erevan",
+      "rival_of",
+      "civs/the-undated",
+      300
+    ],
+    [
+      "events/11-discovery",
+      "involves",
+      "civs/the-undated",
+      300
+    ],
+    [
+      "events/11-discovery",
+      "caused_by",
+      "events/7-exploitation",
+      300
+    ],
+    [
+      "civs/the-undated",
+      "exploits",
+      "locations/chronon-silt-seam",
+      300
+    ],
+    [
+      "events/12-exploitation",
+      "involves",
+      "civs/the-undated",
+      300
+    ],
+    [
+      "events/12-exploitation",
+      "caused_by",
+      "events/11-discovery",
+      300
+    ],
+    [
+      "events/13-discovery",
+      "involves",
+      "civs/the-oncewill",
+      300
+    ],
+    [
+      "events/13-discovery",
+      "caused_by",
+      "events/9-exploitation",
+      300
+    ],
+    [
+      "civs/the-oncewill",
+      "exploits",
+      "locations/tense-residue-seam",
+      300
+    ],
+    [
+      "events/14-exploitation",
+      "involves",
+      "civs/the-oncewill",
+      300
+    ],
+    [
+      "events/14-exploitation",
+      "caused_by",
+      "events/13-discovery",
+      300
+    ],
+    [
+      "events/15-war",
+      "involves",
+      "civs/the-erevan",
+      400
+    ],
+    [
+      "events/15-war",
+      "caused_by",
+      "events/10-war",
+      400
+    ],
+    [
+      "civs/the-erevan",
+      "rival_of",
+      "civs/the-undated",
+      400
+    ],
+    [
+      "events/16-discovery",
+      "involves",
+      "civs/the-undated",
+      400
+    ],
+    [
+      "events/16-discovery",
+      "caused_by",
+      "events/12-exploitation",
+      400
+    ],
+    [
+      "civs/the-undated",
+      "exploits",
+      "locations/chronon-silt-seam",
+      400
+    ],
+    [
+      "events/17-exploitation",
+      "involves",
+      "civs/the-undated",
+      400
+    ],
+    [
+      "events/17-exploitation",
+      "caused_by",
+      "events/16-discovery",
+      400
+    ],
+    [
+      "artifacts/the-undated-relic-that-remembers-a-future-18",
+      "forged_by",
+      "civs/the-undated",
+      400
+    ],
+    [
+      "events/17-exploitation",
+      "involves",
+      "artifacts/the-undated-relic-that-remembers-a-future-18",
+      400
+    ],
+    [
+      "events/18-discovery",
+      "involves",
+      "civs/the-oncewill",
+      400
+    ],
+    [
+      "events/18-discovery",
+      "caused_by",
+      "events/14-exploitation",
+      400
+    ],
+    [
+      "civs/the-oncewill",
+      "exploits",
+      "locations/tense-residue-seam",
+      400
+    ],
+    [
+      "events/19-exploitation",
+      "involves",
+      "civs/the-oncewill",
+      400
+    ],
+    [
+      "events/19-exploitation",
+      "caused_by",
+      "events/18-discovery",
+      400
+    ],
+    [
+      "artifacts/the-oncewill-effect-before-cause-20",
+      "forged_by",
+      "civs/the-oncewill",
+      400
+    ],
+    [
+      "events/19-exploitation",
+      "involves",
+      "artifacts/the-oncewill-effect-before-cause-20",
+      400
+    ],
+    [
+      "events/20-discovery",
+      "involves",
+      "civs/the-erevan",
+      500
+    ],
+    [
+      "events/20-discovery",
+      "caused_by",
+      "events/15-war",
+      500
+    ],
+    [
+      "civs/the-erevan",
+      "exploits",
+      "locations/tense-residue-seam",
+      500
+    ],
+    [
+      "events/21-exploitation",
+      "involves",
+      "civs/the-erevan",
+      500
+    ],
+    [
+      "events/21-exploitation",
+      "caused_by",
+      "events/20-discovery",
+      500
+    ],
+    [
+      "events/22-discovery",
+      "involves",
+      "civs/the-undated",
+      500
+    ],
+    [
+      "events/22-discovery",
+      "caused_by",
+      "events/17-exploitation",
+      500
+    ],
+    [
+      "civs/the-undated",
+      "exploits",
+      "locations/chronon-silt-seam",
+      500
+    ],
+    [
+      "events/23-exploitation",
+      "involves",
+      "civs/the-undated",
+      500
+    ],
+    [
+      "events/23-exploitation",
+      "caused_by",
+      "events/22-discovery",
+      500
+    ],
+    [
+      "artifacts/the-undated-anachronism-24",
+      "forged_by",
+      "civs/the-undated",
+      500
+    ],
+    [
+      "events/23-exploitation",
+      "involves",
+      "artifacts/the-undated-anachronism-24",
+      500
+    ],
+    [
+      "events/24-war",
+      "involves",
+      "civs/the-oncewill",
+      500
+    ],
+    [
+      "events/24-war",
+      "caused_by",
+      "events/19-exploitation",
+      500
+    ],
+    [
+      "civs/the-oncewill",
+      "rival_of",
+      "civs/the-erevan",
+      500
+    ],
+    [
+      "events/25-discovery",
+      "involves",
+      "civs/the-erevan",
+      600
+    ],
+    [
+      "events/25-discovery",
+      "caused_by",
+      "events/21-exploitation",
+      600
+    ],
+    [
+      "civs/the-erevan",
+      "exploits",
+      "locations/tense-residue-seam",
+      600
+    ],
+    [
+      "events/26-exploitation",
+      "involves",
+      "civs/the-erevan",
+      600
+    ],
+    [
+      "events/26-exploitation",
+      "caused_by",
+      "events/25-discovery",
+      600
+    ],
+    [
+      "events/27-schism",
+      "involves",
+      "civs/the-undated",
+      600
+    ],
+    [
+      "events/27-schism",
+      "caused_by",
+      "events/23-exploitation",
+      600
+    ],
+    [
+      "events/27-schism",
+      "involves",
+      "figures/the-undated-seer-27",
+      600
+    ],
+    [
+      "events/28-war",
+      "involves",
+      "civs/the-oncewill",
+      600
+    ],
+    [
+      "events/28-war",
+      "caused_by",
+      "events/24-war",
+      600
+    ],
+    [
+      "civs/the-oncewill",
+      "rival_of",
+      "civs/the-erevan",
+      600
+    ],
+    [
+      "events/29-war",
+      "involves",
+      "civs/the-erevan",
+      700
+    ],
+    [
+      "events/29-war",
+      "caused_by",
+      "events/26-exploitation",
+      700
+    ],
+    [
+      "civs/the-erevan",
+      "rival_of",
+      "civs/the-undated",
+      700
+    ],
+    [
+      "events/30-schism",
+      "involves",
+      "civs/the-undated",
+      700
+    ],
+    [
+      "events/30-schism",
+      "caused_by",
+      "events/27-schism",
+      700
+    ],
+    [
+      "events/30-schism",
+      "involves",
+      "figures/the-undated-seer-30",
+      700
+    ],
+    [
+      "events/31-discovery",
+      "involves",
+      "civs/the-oncewill",
+      700
+    ],
+    [
+      "events/31-discovery",
+      "caused_by",
+      "events/28-war",
+      700
+    ],
+    [
+      "civs/the-oncewill",
+      "exploits",
+      "locations/chronon-silt-seam",
+      700
+    ],
+    [
+      "events/32-exploitation",
+      "involves",
+      "civs/the-oncewill",
+      700
+    ],
+    [
+      "events/32-exploitation",
+      "caused_by",
+      "events/31-discovery",
+      700
+    ],
+    [
+      "events/33-discovery",
+      "involves",
+      "civs/the-erevan",
+      800
+    ],
+    [
+      "events/33-discovery",
+      "caused_by",
+      "events/29-war",
+      800
+    ],
+    [
+      "civs/the-erevan",
+      "exploits",
+      "locations/chronon-silt-seam",
+      800
+    ],
+    [
+      "events/34-exploitation",
+      "involves",
+      "civs/the-erevan",
+      800
+    ],
+    [
+      "events/34-exploitation",
+      "caused_by",
+      "events/33-discovery",
+      800
+    ],
+    [
+      "events/35-discovery",
+      "involves",
+      "civs/the-undated",
+      800
+    ],
+    [
+      "events/35-discovery",
+      "caused_by",
+      "events/30-schism",
+      800
+    ],
+    [
+      "civs/the-undated",
+      "exploits",
+      "locations/chronon-silt-seam",
+      800
+    ],
+    [
+      "events/36-exploitation",
+      "involves",
+      "civs/the-undated",
+      800
+    ],
+    [
+      "events/36-exploitation",
+      "caused_by",
+      "events/35-discovery",
+      800
+    ],
+    [
+      "artifacts/the-undated-anachronism-37",
+      "forged_by",
+      "civs/the-undated",
+      800
+    ],
+    [
+      "events/36-exploitation",
+      "involves",
+      "artifacts/the-undated-anachronism-37",
+      800
+    ],
+    [
+      "events/37-discovery",
+      "involves",
+      "civs/the-oncewill",
+      800
+    ],
+    [
+      "events/37-discovery",
+      "caused_by",
+      "events/32-exploitation",
+      800
+    ],
+    [
+      "civs/the-oncewill",
+      "exploits",
+      "locations/chronon-silt-seam",
+      800
+    ],
+    [
+      "events/38-exploitation",
+      "involves",
+      "civs/the-oncewill",
+      800
+    ],
+    [
+      "events/38-exploitation",
+      "caused_by",
+      "events/37-discovery",
+      800
+    ]
+  ],
+  "mystery": {
+    "fragments": [],
+    "order": [],
+    "order_relation": "precedes"
+  }
+}

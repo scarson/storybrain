@@ -1,0 +1,990 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.4,
+      "facts": {
+        "role": "late-arrivals"
+      }
+    },
+    {
+      "slug": "civs/the-canopy-mind",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "living-distributed-biosphere",
+        "trait": "a planet-spanning gestalt of grown tissue, awake and partnering; it offers organs as gifts and reads every host it bonds",
+        "status": "fallen",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "civs/the-grafted",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "living-symbiote-lineage",
+        "trait": "humans far along the bonding set, joined into an overt shared awareness; no longer wholly individual, not yet wholly the Cathedral",
+        "status": "fallen",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "civs/the-pale-ward",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "living-immune-caste",
+        "trait": "the biosphere's antibody-cultures that test, reject, or accept a bonding host — its living quality-control",
+        "status": "fallen",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "locations/host-bandwidth-seam",
+      "type": "location",
+      "tension": 0.495,
+      "facts": {
+        "resource": "host-bandwidth",
+        "danger": 0.65
+      }
+    },
+    {
+      "slug": "locations/graft-sap-seam",
+      "type": "location",
+      "tension": 0.42,
+      "facts": {
+        "resource": "graft-sap",
+        "danger": 0.4
+      }
+    },
+    {
+      "slug": "events/0-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 100,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-canopy-mind taps graft-sap"
+      }
+    },
+    {
+      "slug": "events/1-exploitation",
+      "type": "event",
+      "tension": 0.62,
+      "day": 100,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-canopy-mind over-extracts graft-sap"
+      }
+    },
+    {
+      "slug": "events/2-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 100,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-grafted taps host-bandwidth"
+      }
+    },
+    {
+      "slug": "events/3-exploitation",
+      "type": "event",
+      "tension": 0.6950000000000001,
+      "day": 100,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-grafted over-extracts host-bandwidth"
+      }
+    },
+    {
+      "slug": "events/4-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 100,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-pale-ward taps graft-sap"
+      }
+    },
+    {
+      "slug": "events/5-exploitation",
+      "type": "event",
+      "tension": 0.62,
+      "day": 100,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-pale-ward over-extracts graft-sap"
+      }
+    },
+    {
+      "slug": "events/6-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 200,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-canopy-mind taps graft-sap"
+      }
+    },
+    {
+      "slug": "events/7-exploitation",
+      "type": "event",
+      "tension": 0.62,
+      "day": 200,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-canopy-mind over-extracts graft-sap"
+      }
+    },
+    {
+      "slug": "events/8-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 200,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-grafted taps host-bandwidth"
+      }
+    },
+    {
+      "slug": "events/9-exploitation",
+      "type": "event",
+      "tension": 0.6950000000000001,
+      "day": 200,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-grafted over-extracts host-bandwidth"
+      }
+    },
+    {
+      "slug": "figures/the-pale-ward-seer-10",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-pale-ward"
+      }
+    },
+    {
+      "slug": "events/10-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 200,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-pale-ward"
+      }
+    },
+    {
+      "slug": "events/11-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 300,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-canopy-mind taps graft-sap"
+      }
+    },
+    {
+      "slug": "events/12-exploitation",
+      "type": "event",
+      "tension": 0.62,
+      "day": 300,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-canopy-mind over-extracts graft-sap"
+      }
+    },
+    {
+      "slug": "figures/the-grafted-seer-13",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-grafted"
+      }
+    },
+    {
+      "slug": "events/13-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 300,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-grafted"
+      }
+    },
+    {
+      "slug": "figures/the-pale-ward-seer-14",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-pale-ward"
+      }
+    },
+    {
+      "slug": "events/14-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 300,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-pale-ward"
+      }
+    },
+    {
+      "slug": "events/15-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 400,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-canopy-mind taps host-bandwidth"
+      }
+    },
+    {
+      "slug": "events/16-exploitation",
+      "type": "event",
+      "tension": 0.6950000000000001,
+      "day": 400,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-canopy-mind over-extracts host-bandwidth"
+      }
+    },
+    {
+      "slug": "artifacts/the-canopy-mind-spore-tool-17",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "spore-tool",
+        "maker": "the-canopy-mind"
+      }
+    },
+    {
+      "slug": "events/17-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 400,
+      "facts": {
+        "kind": "war",
+        "title": "the-grafted wars on the-canopy-mind"
+      }
+    },
+    {
+      "slug": "events/18-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 400,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-pale-ward taps host-bandwidth"
+      }
+    },
+    {
+      "slug": "events/19-exploitation",
+      "type": "event",
+      "tension": 0.6950000000000001,
+      "day": 400,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-pale-ward over-extracts host-bandwidth"
+      }
+    },
+    {
+      "slug": "artifacts/the-pale-ward-communion-node-20",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "communion-node",
+        "maker": "the-pale-ward"
+      }
+    },
+    {
+      "slug": "figures/the-canopy-mind-seer-20",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-canopy-mind"
+      }
+    },
+    {
+      "slug": "events/20-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 500,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-canopy-mind"
+      }
+    },
+    {
+      "slug": "figures/the-grafted-seer-21",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-grafted"
+      }
+    },
+    {
+      "slug": "events/21-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 500,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-grafted"
+      }
+    },
+    {
+      "slug": "events/22-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 500,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-pale-ward taps host-bandwidth"
+      }
+    },
+    {
+      "slug": "events/23-exploitation",
+      "type": "event",
+      "tension": 0.6950000000000001,
+      "day": 500,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-pale-ward over-extracts host-bandwidth"
+      }
+    },
+    {
+      "slug": "artifacts/the-pale-ward-graft-seed-24",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "graft-seed",
+        "maker": "the-pale-ward"
+      }
+    },
+    {
+      "slug": "events/24-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 600,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-canopy-mind taps graft-sap"
+      }
+    },
+    {
+      "slug": "events/25-exploitation",
+      "type": "event",
+      "tension": 0.62,
+      "day": 600,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-canopy-mind over-extracts graft-sap"
+      }
+    },
+    {
+      "slug": "events/26-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 600,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-grafted taps graft-sap"
+      }
+    },
+    {
+      "slug": "events/27-exploitation",
+      "type": "event",
+      "tension": 0.62,
+      "day": 600,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-grafted over-extracts graft-sap"
+      }
+    },
+    {
+      "slug": "events/28-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 600,
+      "facts": {
+        "kind": "war",
+        "title": "the-pale-ward wars on the-grafted"
+      }
+    },
+    {
+      "slug": "events/29-cascade",
+      "type": "event",
+      "tension": 0.9,
+      "day": 600,
+      "facts": {
+        "kind": "cascade",
+        "title": "the Communion — the set completes inside its first whole host"
+      }
+    },
+    {
+      "slug": "lore/fate-of-the-canopy-mind",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-canopy-mind"
+      }
+    },
+    {
+      "slug": "lore/fate-of-the-grafted",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-grafted"
+      }
+    },
+    {
+      "slug": "lore/fate-of-the-pale-ward",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-pale-ward"
+      }
+    }
+  ],
+  "edges": [
+    [
+      "events/0-discovery",
+      "involves",
+      "civs/the-canopy-mind",
+      100
+    ],
+    [
+      "civs/the-canopy-mind",
+      "exploits",
+      "locations/graft-sap-seam",
+      100
+    ],
+    [
+      "events/1-exploitation",
+      "involves",
+      "civs/the-canopy-mind",
+      100
+    ],
+    [
+      "events/1-exploitation",
+      "caused_by",
+      "events/0-discovery",
+      100
+    ],
+    [
+      "events/2-discovery",
+      "involves",
+      "civs/the-grafted",
+      100
+    ],
+    [
+      "civs/the-grafted",
+      "exploits",
+      "locations/host-bandwidth-seam",
+      100
+    ],
+    [
+      "events/3-exploitation",
+      "involves",
+      "civs/the-grafted",
+      100
+    ],
+    [
+      "events/3-exploitation",
+      "caused_by",
+      "events/2-discovery",
+      100
+    ],
+    [
+      "events/4-discovery",
+      "involves",
+      "civs/the-pale-ward",
+      100
+    ],
+    [
+      "civs/the-pale-ward",
+      "exploits",
+      "locations/graft-sap-seam",
+      100
+    ],
+    [
+      "events/5-exploitation",
+      "involves",
+      "civs/the-pale-ward",
+      100
+    ],
+    [
+      "events/5-exploitation",
+      "caused_by",
+      "events/4-discovery",
+      100
+    ],
+    [
+      "events/6-discovery",
+      "involves",
+      "civs/the-canopy-mind",
+      200
+    ],
+    [
+      "events/6-discovery",
+      "caused_by",
+      "events/1-exploitation",
+      200
+    ],
+    [
+      "civs/the-canopy-mind",
+      "exploits",
+      "locations/graft-sap-seam",
+      200
+    ],
+    [
+      "events/7-exploitation",
+      "involves",
+      "civs/the-canopy-mind",
+      200
+    ],
+    [
+      "events/7-exploitation",
+      "caused_by",
+      "events/6-discovery",
+      200
+    ],
+    [
+      "events/8-discovery",
+      "involves",
+      "civs/the-grafted",
+      200
+    ],
+    [
+      "events/8-discovery",
+      "caused_by",
+      "events/3-exploitation",
+      200
+    ],
+    [
+      "civs/the-grafted",
+      "exploits",
+      "locations/host-bandwidth-seam",
+      200
+    ],
+    [
+      "events/9-exploitation",
+      "involves",
+      "civs/the-grafted",
+      200
+    ],
+    [
+      "events/9-exploitation",
+      "caused_by",
+      "events/8-discovery",
+      200
+    ],
+    [
+      "events/10-schism",
+      "involves",
+      "civs/the-pale-ward",
+      200
+    ],
+    [
+      "events/10-schism",
+      "caused_by",
+      "events/5-exploitation",
+      200
+    ],
+    [
+      "events/10-schism",
+      "involves",
+      "figures/the-pale-ward-seer-10",
+      200
+    ],
+    [
+      "events/11-discovery",
+      "involves",
+      "civs/the-canopy-mind",
+      300
+    ],
+    [
+      "events/11-discovery",
+      "caused_by",
+      "events/7-exploitation",
+      300
+    ],
+    [
+      "civs/the-canopy-mind",
+      "exploits",
+      "locations/graft-sap-seam",
+      300
+    ],
+    [
+      "events/12-exploitation",
+      "involves",
+      "civs/the-canopy-mind",
+      300
+    ],
+    [
+      "events/12-exploitation",
+      "caused_by",
+      "events/11-discovery",
+      300
+    ],
+    [
+      "events/13-schism",
+      "involves",
+      "civs/the-grafted",
+      300
+    ],
+    [
+      "events/13-schism",
+      "caused_by",
+      "events/9-exploitation",
+      300
+    ],
+    [
+      "events/13-schism",
+      "involves",
+      "figures/the-grafted-seer-13",
+      300
+    ],
+    [
+      "events/14-schism",
+      "involves",
+      "civs/the-pale-ward",
+      300
+    ],
+    [
+      "events/14-schism",
+      "caused_by",
+      "events/10-schism",
+      300
+    ],
+    [
+      "events/14-schism",
+      "involves",
+      "figures/the-pale-ward-seer-14",
+      300
+    ],
+    [
+      "events/15-discovery",
+      "involves",
+      "civs/the-canopy-mind",
+      400
+    ],
+    [
+      "events/15-discovery",
+      "caused_by",
+      "events/12-exploitation",
+      400
+    ],
+    [
+      "civs/the-canopy-mind",
+      "exploits",
+      "locations/host-bandwidth-seam",
+      400
+    ],
+    [
+      "events/16-exploitation",
+      "involves",
+      "civs/the-canopy-mind",
+      400
+    ],
+    [
+      "events/16-exploitation",
+      "caused_by",
+      "events/15-discovery",
+      400
+    ],
+    [
+      "artifacts/the-canopy-mind-spore-tool-17",
+      "forged_by",
+      "civs/the-canopy-mind",
+      400
+    ],
+    [
+      "events/16-exploitation",
+      "involves",
+      "artifacts/the-canopy-mind-spore-tool-17",
+      400
+    ],
+    [
+      "events/17-war",
+      "involves",
+      "civs/the-grafted",
+      400
+    ],
+    [
+      "events/17-war",
+      "caused_by",
+      "events/13-schism",
+      400
+    ],
+    [
+      "civs/the-grafted",
+      "rival_of",
+      "civs/the-canopy-mind",
+      400
+    ],
+    [
+      "events/18-discovery",
+      "involves",
+      "civs/the-pale-ward",
+      400
+    ],
+    [
+      "events/18-discovery",
+      "caused_by",
+      "events/14-schism",
+      400
+    ],
+    [
+      "civs/the-pale-ward",
+      "exploits",
+      "locations/host-bandwidth-seam",
+      400
+    ],
+    [
+      "events/19-exploitation",
+      "involves",
+      "civs/the-pale-ward",
+      400
+    ],
+    [
+      "events/19-exploitation",
+      "caused_by",
+      "events/18-discovery",
+      400
+    ],
+    [
+      "artifacts/the-pale-ward-communion-node-20",
+      "forged_by",
+      "civs/the-pale-ward",
+      400
+    ],
+    [
+      "events/19-exploitation",
+      "involves",
+      "artifacts/the-pale-ward-communion-node-20",
+      400
+    ],
+    [
+      "events/20-schism",
+      "involves",
+      "civs/the-canopy-mind",
+      500
+    ],
+    [
+      "events/20-schism",
+      "caused_by",
+      "events/16-exploitation",
+      500
+    ],
+    [
+      "events/20-schism",
+      "involves",
+      "figures/the-canopy-mind-seer-20",
+      500
+    ],
+    [
+      "events/21-schism",
+      "involves",
+      "civs/the-grafted",
+      500
+    ],
+    [
+      "events/21-schism",
+      "caused_by",
+      "events/17-war",
+      500
+    ],
+    [
+      "events/21-schism",
+      "involves",
+      "figures/the-grafted-seer-21",
+      500
+    ],
+    [
+      "events/22-discovery",
+      "involves",
+      "civs/the-pale-ward",
+      500
+    ],
+    [
+      "events/22-discovery",
+      "caused_by",
+      "events/19-exploitation",
+      500
+    ],
+    [
+      "civs/the-pale-ward",
+      "exploits",
+      "locations/host-bandwidth-seam",
+      500
+    ],
+    [
+      "events/23-exploitation",
+      "involves",
+      "civs/the-pale-ward",
+      500
+    ],
+    [
+      "events/23-exploitation",
+      "caused_by",
+      "events/22-discovery",
+      500
+    ],
+    [
+      "artifacts/the-pale-ward-graft-seed-24",
+      "forged_by",
+      "civs/the-pale-ward",
+      500
+    ],
+    [
+      "events/23-exploitation",
+      "involves",
+      "artifacts/the-pale-ward-graft-seed-24",
+      500
+    ],
+    [
+      "events/24-discovery",
+      "involves",
+      "civs/the-canopy-mind",
+      600
+    ],
+    [
+      "events/24-discovery",
+      "caused_by",
+      "events/20-schism",
+      600
+    ],
+    [
+      "civs/the-canopy-mind",
+      "exploits",
+      "locations/graft-sap-seam",
+      600
+    ],
+    [
+      "events/25-exploitation",
+      "involves",
+      "civs/the-canopy-mind",
+      600
+    ],
+    [
+      "events/25-exploitation",
+      "caused_by",
+      "events/24-discovery",
+      600
+    ],
+    [
+      "events/26-discovery",
+      "involves",
+      "civs/the-grafted",
+      600
+    ],
+    [
+      "events/26-discovery",
+      "caused_by",
+      "events/21-schism",
+      600
+    ],
+    [
+      "civs/the-grafted",
+      "exploits",
+      "locations/graft-sap-seam",
+      600
+    ],
+    [
+      "events/27-exploitation",
+      "involves",
+      "civs/the-grafted",
+      600
+    ],
+    [
+      "events/27-exploitation",
+      "caused_by",
+      "events/26-discovery",
+      600
+    ],
+    [
+      "events/28-war",
+      "involves",
+      "civs/the-pale-ward",
+      600
+    ],
+    [
+      "events/28-war",
+      "caused_by",
+      "events/23-exploitation",
+      600
+    ],
+    [
+      "civs/the-pale-ward",
+      "rival_of",
+      "civs/the-grafted",
+      600
+    ],
+    [
+      "lore/fate-of-the-canopy-mind",
+      "prerequisite",
+      "events/29-cascade",
+      600
+    ],
+    [
+      "civs/the-canopy-mind",
+      "fell_to",
+      "events/29-cascade",
+      600
+    ],
+    [
+      "lore/fate-of-the-grafted",
+      "prerequisite",
+      "lore/fate-of-the-canopy-mind",
+      600
+    ],
+    [
+      "civs/the-grafted",
+      "fell_to",
+      "events/29-cascade",
+      600
+    ],
+    [
+      "lore/fate-of-the-pale-ward",
+      "prerequisite",
+      "lore/fate-of-the-grafted",
+      600
+    ],
+    [
+      "civs/the-pale-ward",
+      "fell_to",
+      "events/29-cascade",
+      600
+    ]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/fate-of-the-canopy-mind",
+      "lore/fate-of-the-grafted",
+      "lore/fate-of-the-pale-ward"
+    ],
+    "order": [
+      "lore/fate-of-the-canopy-mind",
+      "lore/fate-of-the-grafted",
+      "lore/fate-of-the-pale-ward"
+    ],
+    "order_relation": "prerequisite"
+  }
+}

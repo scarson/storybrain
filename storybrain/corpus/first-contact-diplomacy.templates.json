@@ -1,0 +1,17 @@
+{
+  "setting": "The aliens are alive, ancient, and vetting humanity in real time. They lend a trickle of technology as worthiness-tests; each lent gift also encodes the location of a sealed cache of high-value technology. Humans triangulate caches from gifts, race rivals to reach them, and must prove worthy to open them — every find tightening or fraying a live relationship.",
+  "civs": [
+    { "name": "the-irenni", "archetype": "living-elder-xeno-persons", "trait": "ancient, patient gatekeepers who lend gifts as tests and read every human choice", "greed": 0.3 },
+    { "name": "the-saalvane", "archetype": "living-rival-xeno-faction", "trait": "a splinter that thinks humanity should be denied, not vetted — they sabotage the gifts", "greed": 0.7 },
+    { "name": "the-mendicant-tier", "archetype": "living-xeno-mediators", "trait": "a neutral caste that brokers access and adjudicates worthiness disputes", "greed": 0.4 }
+  ],
+  "resources": [
+    { "name": "lattice-fuel", "danger": 0.45 },
+    { "name": "cache-seals", "danger": 0.3 }
+  ],
+  "artifactKinds": ["lent-gift", "vetting-test", "cache-key", "sealed-cache", "encoded-clue", "diplomatic-token"],
+  "epochs": 8,
+  "cascadeThreshold": 1.5,
+  "order_relation": "reveals",
+  "climax_label": "the first cache earned open"
+}

@@ -1,0 +1,1097 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.4,
+      "facts": {
+        "role": "late-arrivals"
+      }
+    },
+    {
+      "slug": "civs/the-irenni",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "living-elder-xeno-persons",
+        "trait": "ancient, patient gatekeepers who lend gifts as tests and read every human choice",
+        "status": "extant",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "civs/the-saalvane",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "living-rival-xeno-faction",
+        "trait": "a splinter that thinks humanity should be denied, not vetted — they sabotage the gifts",
+        "status": "extant",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "civs/the-mendicant-tier",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "living-xeno-mediators",
+        "trait": "a neutral caste that brokers access and adjudicates worthiness disputes",
+        "status": "extant",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "locations/lattice-fuel-seam",
+      "type": "location",
+      "tension": 0.435,
+      "facts": {
+        "resource": "lattice-fuel",
+        "danger": 0.45
+      }
+    },
+    {
+      "slug": "locations/cache-seals-seam",
+      "type": "location",
+      "tension": 0.39,
+      "facts": {
+        "resource": "cache-seals",
+        "danger": 0.3
+      }
+    },
+    {
+      "slug": "events/0-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 100,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-irenni taps cache-seals"
+      }
+    },
+    {
+      "slug": "events/1-exploitation",
+      "type": "event",
+      "tension": 0.59,
+      "day": 100,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-irenni over-extracts cache-seals"
+      }
+    },
+    {
+      "slug": "figures/the-saalvane-seer-2",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-saalvane"
+      }
+    },
+    {
+      "slug": "events/2-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 100,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-saalvane"
+      }
+    },
+    {
+      "slug": "events/3-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 100,
+      "facts": {
+        "kind": "war",
+        "title": "the-mendicant-tier wars on the-saalvane"
+      }
+    },
+    {
+      "slug": "events/4-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 200,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-irenni taps cache-seals"
+      }
+    },
+    {
+      "slug": "events/5-exploitation",
+      "type": "event",
+      "tension": 0.59,
+      "day": 200,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-irenni over-extracts cache-seals"
+      }
+    },
+    {
+      "slug": "events/6-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 200,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-saalvane taps cache-seals"
+      }
+    },
+    {
+      "slug": "events/7-exploitation",
+      "type": "event",
+      "tension": 0.59,
+      "day": 200,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-saalvane over-extracts cache-seals"
+      }
+    },
+    {
+      "slug": "events/8-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 200,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-mendicant-tier taps lattice-fuel"
+      }
+    },
+    {
+      "slug": "events/9-exploitation",
+      "type": "event",
+      "tension": 0.635,
+      "day": 200,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-mendicant-tier over-extracts lattice-fuel"
+      }
+    },
+    {
+      "slug": "events/10-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 300,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-irenni taps lattice-fuel"
+      }
+    },
+    {
+      "slug": "events/11-exploitation",
+      "type": "event",
+      "tension": 0.635,
+      "day": 300,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-irenni over-extracts lattice-fuel"
+      }
+    },
+    {
+      "slug": "figures/the-saalvane-seer-12",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-saalvane"
+      }
+    },
+    {
+      "slug": "events/12-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 300,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-saalvane"
+      }
+    },
+    {
+      "slug": "events/13-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 300,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-mendicant-tier taps lattice-fuel"
+      }
+    },
+    {
+      "slug": "events/14-exploitation",
+      "type": "event",
+      "tension": 0.635,
+      "day": 300,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-mendicant-tier over-extracts lattice-fuel"
+      }
+    },
+    {
+      "slug": "artifacts/the-mendicant-tier-sealed-cache-15",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "sealed-cache",
+        "maker": "the-mendicant-tier"
+      }
+    },
+    {
+      "slug": "events/15-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 400,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-irenni taps cache-seals"
+      }
+    },
+    {
+      "slug": "events/16-exploitation",
+      "type": "event",
+      "tension": 0.59,
+      "day": 400,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-irenni over-extracts cache-seals"
+      }
+    },
+    {
+      "slug": "artifacts/the-irenni-encoded-clue-17",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "encoded-clue",
+        "maker": "the-irenni"
+      }
+    },
+    {
+      "slug": "figures/the-saalvane-seer-17",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-saalvane"
+      }
+    },
+    {
+      "slug": "events/17-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 400,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-saalvane"
+      }
+    },
+    {
+      "slug": "figures/the-mendicant-tier-seer-18",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-mendicant-tier"
+      }
+    },
+    {
+      "slug": "events/18-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 400,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-mendicant-tier"
+      }
+    },
+    {
+      "slug": "events/19-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 500,
+      "facts": {
+        "kind": "war",
+        "title": "the-irenni wars on the-mendicant-tier"
+      }
+    },
+    {
+      "slug": "events/20-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 500,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-saalvane taps lattice-fuel"
+      }
+    },
+    {
+      "slug": "events/21-exploitation",
+      "type": "event",
+      "tension": 0.635,
+      "day": 500,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-saalvane over-extracts lattice-fuel"
+      }
+    },
+    {
+      "slug": "artifacts/the-saalvane-diplomatic-token-22",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "diplomatic-token",
+        "maker": "the-saalvane"
+      }
+    },
+    {
+      "slug": "events/22-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 500,
+      "facts": {
+        "kind": "war",
+        "title": "the-mendicant-tier wars on the-saalvane"
+      }
+    },
+    {
+      "slug": "figures/the-irenni-seer-23",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-irenni"
+      }
+    },
+    {
+      "slug": "events/23-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 600,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-irenni"
+      }
+    },
+    {
+      "slug": "events/24-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 600,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-saalvane taps lattice-fuel"
+      }
+    },
+    {
+      "slug": "events/25-exploitation",
+      "type": "event",
+      "tension": 0.635,
+      "day": 600,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-saalvane over-extracts lattice-fuel"
+      }
+    },
+    {
+      "slug": "figures/the-mendicant-tier-seer-26",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-mendicant-tier"
+      }
+    },
+    {
+      "slug": "events/26-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 600,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-mendicant-tier"
+      }
+    },
+    {
+      "slug": "figures/the-irenni-seer-27",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-irenni"
+      }
+    },
+    {
+      "slug": "events/27-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 700,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-irenni"
+      }
+    },
+    {
+      "slug": "events/28-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 700,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-saalvane taps cache-seals"
+      }
+    },
+    {
+      "slug": "events/29-exploitation",
+      "type": "event",
+      "tension": 0.59,
+      "day": 700,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-saalvane over-extracts cache-seals"
+      }
+    },
+    {
+      "slug": "figures/the-mendicant-tier-seer-30",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-mendicant-tier"
+      }
+    },
+    {
+      "slug": "events/30-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 700,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-mendicant-tier"
+      }
+    },
+    {
+      "slug": "events/31-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 800,
+      "facts": {
+        "kind": "war",
+        "title": "the-irenni wars on the-mendicant-tier"
+      }
+    },
+    {
+      "slug": "figures/the-saalvane-seer-32",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-saalvane"
+      }
+    },
+    {
+      "slug": "events/32-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 800,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-saalvane"
+      }
+    },
+    {
+      "slug": "figures/the-mendicant-tier-seer-33",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-mendicant-tier"
+      }
+    },
+    {
+      "slug": "events/33-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 800,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-mendicant-tier"
+      }
+    }
+  ],
+  "edges": [
+    [
+      "events/0-discovery",
+      "involves",
+      "civs/the-irenni",
+      100
+    ],
+    [
+      "civs/the-irenni",
+      "exploits",
+      "locations/cache-seals-seam",
+      100
+    ],
+    [
+      "events/1-exploitation",
+      "involves",
+      "civs/the-irenni",
+      100
+    ],
+    [
+      "events/1-exploitation",
+      "caused_by",
+      "events/0-discovery",
+      100
+    ],
+    [
+      "events/2-schism",
+      "involves",
+      "civs/the-saalvane",
+      100
+    ],
+    [
+      "events/2-schism",
+      "involves",
+      "figures/the-saalvane-seer-2",
+      100
+    ],
+    [
+      "events/3-war",
+      "involves",
+      "civs/the-mendicant-tier",
+      100
+    ],
+    [
+      "civs/the-mendicant-tier",
+      "rival_of",
+      "civs/the-saalvane",
+      100
+    ],
+    [
+      "events/4-discovery",
+      "involves",
+      "civs/the-irenni",
+      200
+    ],
+    [
+      "events/4-discovery",
+      "caused_by",
+      "events/1-exploitation",
+      200
+    ],
+    [
+      "civs/the-irenni",
+      "exploits",
+      "locations/cache-seals-seam",
+      200
+    ],
+    [
+      "events/5-exploitation",
+      "involves",
+      "civs/the-irenni",
+      200
+    ],
+    [
+      "events/5-exploitation",
+      "caused_by",
+      "events/4-discovery",
+      200
+    ],
+    [
+      "events/6-discovery",
+      "involves",
+      "civs/the-saalvane",
+      200
+    ],
+    [
+      "events/6-discovery",
+      "caused_by",
+      "events/2-schism",
+      200
+    ],
+    [
+      "civs/the-saalvane",
+      "exploits",
+      "locations/cache-seals-seam",
+      200
+    ],
+    [
+      "events/7-exploitation",
+      "involves",
+      "civs/the-saalvane",
+      200
+    ],
+    [
+      "events/7-exploitation",
+      "caused_by",
+      "events/6-discovery",
+      200
+    ],
+    [
+      "events/8-discovery",
+      "involves",
+      "civs/the-mendicant-tier",
+      200
+    ],
+    [
+      "events/8-discovery",
+      "caused_by",
+      "events/3-war",
+      200
+    ],
+    [
+      "civs/the-mendicant-tier",
+      "exploits",
+      "locations/lattice-fuel-seam",
+      200
+    ],
+    [
+      "events/9-exploitation",
+      "involves",
+      "civs/the-mendicant-tier",
+      200
+    ],
+    [
+      "events/9-exploitation",
+      "caused_by",
+      "events/8-discovery",
+      200
+    ],
+    [
+      "events/10-discovery",
+      "involves",
+      "civs/the-irenni",
+      300
+    ],
+    [
+      "events/10-discovery",
+      "caused_by",
+      "events/5-exploitation",
+      300
+    ],
+    [
+      "civs/the-irenni",
+      "exploits",
+      "locations/lattice-fuel-seam",
+      300
+    ],
+    [
+      "events/11-exploitation",
+      "involves",
+      "civs/the-irenni",
+      300
+    ],
+    [
+      "events/11-exploitation",
+      "caused_by",
+      "events/10-discovery",
+      300
+    ],
+    [
+      "events/12-schism",
+      "involves",
+      "civs/the-saalvane",
+      300
+    ],
+    [
+      "events/12-schism",
+      "caused_by",
+      "events/7-exploitation",
+      300
+    ],
+    [
+      "events/12-schism",
+      "involves",
+      "figures/the-saalvane-seer-12",
+      300
+    ],
+    [
+      "events/13-discovery",
+      "involves",
+      "civs/the-mendicant-tier",
+      300
+    ],
+    [
+      "events/13-discovery",
+      "caused_by",
+      "events/9-exploitation",
+      300
+    ],
+    [
+      "civs/the-mendicant-tier",
+      "exploits",
+      "locations/lattice-fuel-seam",
+      300
+    ],
+    [
+      "events/14-exploitation",
+      "involves",
+      "civs/the-mendicant-tier",
+      300
+    ],
+    [
+      "events/14-exploitation",
+      "caused_by",
+      "events/13-discovery",
+      300
+    ],
+    [
+      "artifacts/the-mendicant-tier-sealed-cache-15",
+      "forged_by",
+      "civs/the-mendicant-tier",
+      300
+    ],
+    [
+      "events/14-exploitation",
+      "involves",
+      "artifacts/the-mendicant-tier-sealed-cache-15",
+      300
+    ],
+    [
+      "events/15-discovery",
+      "involves",
+      "civs/the-irenni",
+      400
+    ],
+    [
+      "events/15-discovery",
+      "caused_by",
+      "events/11-exploitation",
+      400
+    ],
+    [
+      "civs/the-irenni",
+      "exploits",
+      "locations/cache-seals-seam",
+      400
+    ],
+    [
+      "events/16-exploitation",
+      "involves",
+      "civs/the-irenni",
+      400
+    ],
+    [
+      "events/16-exploitation",
+      "caused_by",
+      "events/15-discovery",
+      400
+    ],
+    [
+      "artifacts/the-irenni-encoded-clue-17",
+      "forged_by",
+      "civs/the-irenni",
+      400
+    ],
+    [
+      "events/16-exploitation",
+      "involves",
+      "artifacts/the-irenni-encoded-clue-17",
+      400
+    ],
+    [
+      "events/17-schism",
+      "involves",
+      "civs/the-saalvane",
+      400
+    ],
+    [
+      "events/17-schism",
+      "caused_by",
+      "events/12-schism",
+      400
+    ],
+    [
+      "events/17-schism",
+      "involves",
+      "figures/the-saalvane-seer-17",
+      400
+    ],
+    [
+      "events/18-schism",
+      "involves",
+      "civs/the-mendicant-tier",
+      400
+    ],
+    [
+      "events/18-schism",
+      "caused_by",
+      "events/14-exploitation",
+      400
+    ],
+    [
+      "events/18-schism",
+      "involves",
+      "figures/the-mendicant-tier-seer-18",
+      400
+    ],
+    [
+      "events/19-war",
+      "involves",
+      "civs/the-irenni",
+      500
+    ],
+    [
+      "events/19-war",
+      "caused_by",
+      "events/16-exploitation",
+      500
+    ],
+    [
+      "civs/the-irenni",
+      "rival_of",
+      "civs/the-mendicant-tier",
+      500
+    ],
+    [
+      "events/20-discovery",
+      "involves",
+      "civs/the-saalvane",
+      500
+    ],
+    [
+      "events/20-discovery",
+      "caused_by",
+      "events/17-schism",
+      500
+    ],
+    [
+      "civs/the-saalvane",
+      "exploits",
+      "locations/lattice-fuel-seam",
+      500
+    ],
+    [
+      "events/21-exploitation",
+      "involves",
+      "civs/the-saalvane",
+      500
+    ],
+    [
+      "events/21-exploitation",
+      "caused_by",
+      "events/20-discovery",
+      500
+    ],
+    [
+      "artifacts/the-saalvane-diplomatic-token-22",
+      "forged_by",
+      "civs/the-saalvane",
+      500
+    ],
+    [
+      "events/21-exploitation",
+      "involves",
+      "artifacts/the-saalvane-diplomatic-token-22",
+      500
+    ],
+    [
+      "events/22-war",
+      "involves",
+      "civs/the-mendicant-tier",
+      500
+    ],
+    [
+      "events/22-war",
+      "caused_by",
+      "events/18-schism",
+      500
+    ],
+    [
+      "civs/the-mendicant-tier",
+      "rival_of",
+      "civs/the-saalvane",
+      500
+    ],
+    [
+      "events/23-schism",
+      "involves",
+      "civs/the-irenni",
+      600
+    ],
+    [
+      "events/23-schism",
+      "caused_by",
+      "events/19-war",
+      600
+    ],
+    [
+      "events/23-schism",
+      "involves",
+      "figures/the-irenni-seer-23",
+      600
+    ],
+    [
+      "events/24-discovery",
+      "involves",
+      "civs/the-saalvane",
+      600
+    ],
+    [
+      "events/24-discovery",
+      "caused_by",
+      "events/21-exploitation",
+      600
+    ],
+    [
+      "civs/the-saalvane",
+      "exploits",
+      "locations/lattice-fuel-seam",
+      600
+    ],
+    [
+      "events/25-exploitation",
+      "involves",
+      "civs/the-saalvane",
+      600
+    ],
+    [
+      "events/25-exploitation",
+      "caused_by",
+      "events/24-discovery",
+      600
+    ],
+    [
+      "events/26-schism",
+      "involves",
+      "civs/the-mendicant-tier",
+      600
+    ],
+    [
+      "events/26-schism",
+      "caused_by",
+      "events/22-war",
+      600
+    ],
+    [
+      "events/26-schism",
+      "involves",
+      "figures/the-mendicant-tier-seer-26",
+      600
+    ],
+    [
+      "events/27-schism",
+      "involves",
+      "civs/the-irenni",
+      700
+    ],
+    [
+      "events/27-schism",
+      "caused_by",
+      "events/23-schism",
+      700
+    ],
+    [
+      "events/27-schism",
+      "involves",
+      "figures/the-irenni-seer-27",
+      700
+    ],
+    [
+      "events/28-discovery",
+      "involves",
+      "civs/the-saalvane",
+      700
+    ],
+    [
+      "events/28-discovery",
+      "caused_by",
+      "events/25-exploitation",
+      700
+    ],
+    [
+      "civs/the-saalvane",
+      "exploits",
+      "locations/cache-seals-seam",
+      700
+    ],
+    [
+      "events/29-exploitation",
+      "involves",
+      "civs/the-saalvane",
+      700
+    ],
+    [
+      "events/29-exploitation",
+      "caused_by",
+      "events/28-discovery",
+      700
+    ],
+    [
+      "events/30-schism",
+      "involves",
+      "civs/the-mendicant-tier",
+      700
+    ],
+    [
+      "events/30-schism",
+      "caused_by",
+      "events/26-schism",
+      700
+    ],
+    [
+      "events/30-schism",
+      "involves",
+      "figures/the-mendicant-tier-seer-30",
+      700
+    ],
+    [
+      "events/31-war",
+      "involves",
+      "civs/the-irenni",
+      800
+    ],
+    [
+      "events/31-war",
+      "caused_by",
+      "events/27-schism",
+      800
+    ],
+    [
+      "civs/the-irenni",
+      "rival_of",
+      "civs/the-mendicant-tier",
+      800
+    ],
+    [
+      "events/32-schism",
+      "involves",
+      "civs/the-saalvane",
+      800
+    ],
+    [
+      "events/32-schism",
+      "caused_by",
+      "events/29-exploitation",
+      800
+    ],
+    [
+      "events/32-schism",
+      "involves",
+      "figures/the-saalvane-seer-32",
+      800
+    ],
+    [
+      "events/33-schism",
+      "involves",
+      "civs/the-mendicant-tier",
+      800
+    ],
+    [
+      "events/33-schism",
+      "caused_by",
+      "events/30-schism",
+      800
+    ],
+    [
+      "events/33-schism",
+      "involves",
+      "figures/the-mendicant-tier-seer-33",
+      800
+    ]
+  ],
+  "mystery": {
+    "fragments": [],
+    "order": [],
+    "order_relation": "reveals"
+  }
+}

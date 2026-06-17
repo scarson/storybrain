@@ -1,0 +1,17 @@
+{
+  "setting": "An alien civilization waged war through time itself; whether it survives is genuinely undecided — the conflict is still resolving. Its artifacts arrive out of sequence (effects before causes, relics that remember a future). Humans re-SEQUENCE the finds, and each new piece can retro-edit the meaning of everything collected so far. A causality puzzle, not a dig.",
+  "civs": [
+    { "name": "the-erevan", "archetype": "tense-aligned-xeno-belligerent", "trait": "fights from a future toward its own past; its fate is alive-or-dead undecided", "greed": 0.2 },
+    { "name": "the-undated", "archetype": "acausal-xeno-counterforce", "trait": "an enemy that edits the war's earlier moves after they have already happened", "greed": 0.25 },
+    { "name": "the-oncewill", "archetype": "precognitive-xeno-witnesses", "trait": "neutral observers who remember outcomes that have not occurred yet", "greed": 0.1 }
+  ],
+  "resources": [
+    { "name": "chronon-silt", "danger": 0.15 },
+    { "name": "tense-residue", "danger": 0.1 }
+  ],
+  "artifactKinds": ["anachronism", "relic-that-remembers-a-future", "object-older-than-its-maker", "effect-before-cause", "retro-editing-find", "precognitive-shard"],
+  "epochs": 8,
+  "cascadeThreshold": 1.5,
+  "order_relation": "precedes",
+  "climax_label": "the war that has not finished happening"
+}

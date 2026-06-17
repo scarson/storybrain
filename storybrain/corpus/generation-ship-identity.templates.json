@@ -1,0 +1,17 @@
+{
+  "setting": "Colonists arrive at a world strung with 'alien' ruins that fit human hands too well. The makers did not fall — they erased themselves on purpose, scattered, and buried something. As the colonists recover self-referential relics (memory-cores, sealed bio-vaults, redacted star-charts, defaced monuments, encrypted wills), each handling bleeds inherited ancestral memory, and the finds accumulate toward a fixed moral reckoning: the colonists ARE the makers' descendants, and the makers chose to bury a specific, morally heavy secret. Resources are incidental to the reckoning.",
+  "civs": [
+    { "name": "the-erased", "archetype": "absent-self-erased-makers", "trait": "the ancestral makers who deliberately deleted their own record and scattered, leaving only traces; absent-by-choice, not dead", "greed": 0.25 },
+    { "name": "the-redactors", "archetype": "absent-archivist-lineage", "trait": "the maker-caste that performed the great forgetting — sealed the vaults, defaced the monuments, edited the charts; their fingerprints are on every deletion", "greed": 0.3 },
+    { "name": "the-refusers", "archetype": "absent-dissenter-lineage", "trait": "the maker-minority who fought the erasure and hid counter-records so a descendant could one day reassemble the truth; gone with the rest", "greed": 0.2 }
+  ],
+  "resources": [
+    { "name": "echo-resin", "danger": 0.25 },
+    { "name": "vault-salt", "danger": 0.15 }
+  ],
+  "artifactKinds": ["memory-core", "sealed-vault", "redacted-chart", "defaced-monument", "encrypted-will", "ancestral-relic"],
+  "epochs": 8,
+  "cascadeThreshold": 1.5,
+  "order_relation": "reveals",
+  "climax_label": "the great forgetting"
+}
