@@ -411,6 +411,60 @@
       }
     },
     {
+      "slug": "colonists/warden-rekha-okonkwo",
+      "type": "colonist",
+      "tension": 0.72,
+      "facts": {
+        "role": "first vault-warden (deceased)",
+        "species": "human",
+        "stance": "the colony's founding warden who tried to set the keystone alone when the first salt began to thin; died in the lattice socket holding a breach shut by hand long enough for the others to re-salt",
+        "live": false,
+        "deceased": true,
+        "died_day": 600,
+        "skills": {
+          "crafting": 17,
+          "melee": 12,
+          "medicine": 13,
+          "research": 11,
+          "shooting": 9,
+          "social": 10
+        },
+        "passions": [
+          "crafting",
+          "medicine"
+        ],
+        "want": "to set the keystone the makers left unset, even knowing the lattice would take her if the salt failed mid-cast",
+        "skill_profile": "colonist"
+      }
+    },
+    {
+      "slug": "colonists/sealwright-corin-vantar",
+      "type": "colonist",
+      "tension": 0.7,
+      "facts": {
+        "role": "first glyph-translator and key-maker (deceased)",
+        "species": "human",
+        "stance": "the colonist who first read the makers' beacons and forged the colony's working copy of the host-vault key off the makers' pattern; lost his mind to the cold-glyph's meaning and died refusing to read it aloud one last time",
+        "live": false,
+        "deceased": true,
+        "died_day": 700,
+        "skills": {
+          "research": 19,
+          "crafting": 15,
+          "social": 11,
+          "medicine": 8,
+          "shooting": 3,
+          "melee": 2
+        },
+        "passions": [
+          "research",
+          "crafting"
+        ],
+        "want": "to leave behind a key and a clean reading of the cold-glyph so no one after him would have to learn it the way he did",
+        "skill_profile": "colonist"
+      }
+    },
+    {
       "slug": "colonists/the-sleeper-vael",
       "type": "colonist",
       "tension": 0.8,

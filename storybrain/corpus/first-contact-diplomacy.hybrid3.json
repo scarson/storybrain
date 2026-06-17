@@ -22,6 +22,9 @@
     { "slug": "figures/quartermaster-lena-vasquez", "type": "colonist", "tension": 0.58, "facts": { "role": "human quartermaster who catalogs every lent gift and its correct use", "species": "human", "live": true, "drive": "never misuse a gift; one wrong move reads as an act of war and locks a cache", "want": "catch the forged gift in the catalog before anyone uses it and triggers a war she would be blamed for", "skills": { "life_support": 17, "engineering": 14, "sensors": 12, "xeno": 11, "navigation": 9, "gunnery": 6 }, "passions": ["life_support", "engineering"], "crew_role": "quartermaster", "skill_profile": "ship-crew" } },
     { "slug": "figures/scout-ade-balogun", "type": "colonist", "tension": 0.6, "facts": { "role": "human field scout sent ahead to the triangulated vault", "species": "human", "live": true, "drive": "get to the lattice-fuel vault and hold it long enough for an honest open", "want": "reach the vault alive and hold it long enough for the envoy to bring a certified-worthy open", "skills": { "piloting": 18, "gunnery": 16, "eva": 13, "sensors": 9, "navigation": 10, "life_support": 7 }, "passions": ["piloting", "gunnery"], "crew_role": "pilot", "skill_profile": "ship-crew" } },
 
+    { "slug": "figures/envoy-imara-the-first", "type": "colonist", "tension": 0.6, "facts": { "role": "the first human first-contact envoy, who misread a lent gift's bearing and died reaching the sealed cache before the colony understood the open had to be earned", "species": "human", "live": false, "fate": "dead — she carried the first lantern to the vault, trusted a corrupted bearing, and the living seal read her approach as theft", "want": "(in life) prove humanity worthy at the first cache and open it cleanly — a hunt she died still chasing", "drive": "open the first cache and prove humanity worthy — died before she could", "skills": { "xeno": 18, "command": 16, "navigation": 13, "sensors": 11, "eva": 9, "gunnery": 6 }, "passions": ["xeno", "command"], "crew_role": "envoy", "skill_profile": "ship-crew", "note": "the predecessor every living human envoy is measured against; her death is the colony's standing warning that a misread reads as war" } },
+    { "slug": "figures/the-irenni-gift-lender-saev", "type": "colonist", "tension": 0.58, "facts": { "role": "the elder Irenni artisan who forged the first lattice-lantern and set the worthiness-stylus before passing the warden's post to the present gift-warden", "civ": "the-irenni", "faction": "civs/the-irenni", "species": "alien", "live": false, "fate": "gone now, but his made gifts still watch and still test; the warden and the sleeper both learned the craft of lending from him", "want": "(in his time) shape gifts that would reveal a newcomer's true nature before any cache could be breached", "skills": { "engineering": 19, "xeno": 16, "command": 14, "sensors": 12, "navigation": 8, "gunnery": 4 }, "passions": ["engineering", "xeno"], "crew_role": "engineer", "skill_profile": "ship-crew", "note": "the forebear who forged the lantern and owned the stylus; his standard of craft is the legacy the living Irenni envoys carry" } },
+
     { "slug": "beliefs/the-earned-open-creed", "type": "belief", "tension": 0.55, "facts": { "held_by": "envoy-mara-okonkwo", "claim": "the caches are tests of who we are, not loot; the only open that keeps the aliens our allies is the one we earn" } },
     { "slug": "beliefs/the-take-it-creed", "type": "belief", "tension": 0.6, "facts": { "held_by": "decoder-jonas-rhee", "claim": "worthiness is a leash; if we can triangulate and reach a cache we should crack it before a rival seals it forever" } },
 
@@ -163,7 +166,26 @@
     ["figures/the-mendicant-broker", "ally_of", "figures/the-irenni-sleeper-vael"],
     ["figures/decoder-jonas-rhee", "owes", "figures/the-saalvane-defector-corin"],
 
-    ["figures/scout-ade-balogun", "sought_by", "civs/the-saalvane"]
+    ["figures/scout-ade-balogun", "sought_by", "civs/the-saalvane"],
+
+    ["figures/envoy-imara-the-first", "member_of", "factions/humans"],
+    ["figures/the-irenni-gift-lender-saev", "member_of", "civs/the-irenni"],
+
+    ["figures/envoy-mara-okonkwo", "successor_of", "figures/envoy-imara-the-first"],
+    ["figures/decoder-jonas-rhee", "mentored_by", "figures/envoy-imara-the-first"],
+    ["figures/envoy-mara-okonkwo", "mentor_of", "figures/scout-ade-balogun"],
+    ["figures/the-irenni-gift-warden", "protege_of", "figures/the-irenni-gift-lender-saev"],
+    ["figures/the-irenni-sleeper-vael", "reveres", "figures/the-irenni-gift-lender-saev"],
+    ["figures/the-irenni-gift-warden", "commands", "figures/the-irenni-sleeper-vael"],
+    ["figures/the-irenni-sleeper-vael", "estranged_from", "figures/the-irenni-gift-warden"],
+
+    ["figures/envoy-mara-okonkwo", "kin_of", "figures/envoy-imara-the-first"],
+    ["figures/the-irenni-gift-warden", "ally_of", "figures/the-irenni-gift-lender-saev"],
+
+    ["figures/envoy-imara-the-first", "wielded", "artifacts/the-lattice-lantern"],
+    ["figures/envoy-imara-the-first", "died_for", "artifacts/the-sealed-lattice-cache"],
+    ["figures/the-irenni-gift-lender-saev", "forged", "artifacts/the-lattice-lantern"],
+    ["figures/the-irenni-gift-lender-saev", "owned", "artifacts/the-worthiness-stylus"]
   ],
   "mystery": {
     "fragments": [

@@ -569,7 +569,23 @@
 
     ["events/the-vault-standoff", "involves", "colonists/tomas-vey", 1300],
     ["events/the-vault-standoff", "involves", "colonists/iris-sandoval", 1300],
-    ["events/the-vault-standoff", "involves", "artifacts/the-mercy-vault", 1300]
+    ["events/the-vault-standoff", "involves", "artifacts/the-mercy-vault", 1300],
+
+    ["colonists/iris-sandoval", "descendant_of", "colonists/the-recorded-doubter", 1280],
+    ["colonists/the-recorded-doubter", "ancestor_of", "colonists/iris-sandoval", 1280],
+    ["colonists/tomas-vey", "descendant_of", "colonists/the-sleeper-of-the-erased", 1290],
+    ["colonists/mara-okonkwo", "descendant_of", "colonists/the-first-archivist", 1240],
+    ["colonists/the-first-archivist", "ancestor_of", "colonists/mara-okonkwo", 1240],
+    ["colonists/iris-sandoval", "reveres", "colonists/the-sleeper-of-the-erased", 1285],
+    ["colonists/the-sleeper-of-the-erased", "predecessor_of", "colonists/iris-sandoval", 580],
+    ["colonists/mara-okonkwo", "mentored_by", "colonists/elder-juno", 1150],
+    ["colonists/elder-juno", "mentor_of", "colonists/mara-okonkwo", 1150],
+    ["colonists/tomas-vey", "estranged_from", "colonists/mara-okonkwo", 1300],
+
+    ["colonists/the-recorded-doubter", "bonded_to", "artifacts/the-refusers-vault", 400],
+    ["colonists/the-sleeper-of-the-erased", "bonded_to", "artifacts/the-mercy-vault", 580],
+    ["colonists/the-first-archivist", "forged", "artifacts/the-scarred-stele", 300],
+    ["colonists/the-first-archivist", "sealed", "artifacts/the-edited-sky", 300]
   ],
   "mystery": {
     "fragments": [

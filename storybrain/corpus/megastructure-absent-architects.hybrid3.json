@@ -202,8 +202,7 @@
     ["figures/archivist-sole", "estranged_from", "figures/keyfinder-rust"],
 
     ["figures/first-explorer-vance", "died_for", "artifacts/keepers-control-key-of-the-mid-rings"],
-    ["figures/first-explorer-vance", "sealed", "artifacts/keepers-ward-sigil-of-the-core"],
-    ["figures/the-listeners-last-pilgrim", "covets", "artifacts/listeners-final-activation-codex"]
+    ["figures/first-explorer-vance", "sealed", "artifacts/keepers-ward-sigil-of-the-core"]
   ],
   "mystery": {
     "fragments": [
