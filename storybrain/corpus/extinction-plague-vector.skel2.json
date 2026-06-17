@@ -1,0 +1,799 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.4,
+      "facts": {
+        "role": "newcomers"
+      }
+    },
+    {
+      "slug": "civs/the-cradlekeepers",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "dormant-xeno-sleepers",
+        "trait": "the makers themselves, sealed in quarantine-sleep behind their own unfinished containment; wakeable as allies — or already carriers, no one knows which vault holds which"
+      }
+    },
+    {
+      "slug": "civs/the-stillborn-host",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "dormant-xeno-carriers",
+        "trait": "sleepers the vector reached first; dormant carriers whose waking is itself the outbreak, sealed beside the makers they can no longer be told apart from"
+      }
+    },
+    {
+      "slug": "civs/the-vector",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "dormant-self-replicating-plague",
+        "trait": "the extinction-agent itself — nanite swarm, mind-virus, or engineered pathogen depending on the world — sleeping in the relics' lore and the carriers' marrow, stirring whenever a seal is broken"
+      }
+    },
+    {
+      "slug": "locations/quarantine-foam-site",
+      "type": "location",
+      "tension": 0.35,
+      "facts": {
+        "subject": "quarantine-foam"
+      }
+    },
+    {
+      "slug": "locations/dormancy-salt-site",
+      "type": "location",
+      "tension": 0.38749999999999996,
+      "facts": {
+        "subject": "dormancy-salt"
+      }
+    },
+    {
+      "slug": "events/0-interaction",
+      "type": "event",
+      "tension": 0.4956554820230231,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-cradlekeepers",
+        "magnitude": 0.32,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/1-interaction",
+      "type": "event",
+      "tension": 0.5005750848986209,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-stillborn-host",
+        "magnitude": 0.34,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/2-interaction",
+      "type": "event",
+      "tension": 0.4940655537734274,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-vector",
+        "magnitude": 0.31,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/3-interaction",
+      "type": "event",
+      "tension": 0.5148201242759824,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-cradlekeepers",
+        "magnitude": 0.38,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/4-initiative",
+      "type": "event",
+      "tension": 0.5014693431616761,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-stillborn-host",
+        "magnitude": 0.34,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/5-commitment",
+      "type": "event",
+      "tension": 0.49636914424877615,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-vector",
+        "magnitude": 0.32,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/6-interaction",
+      "type": "event",
+      "tension": 0.4922921931028832,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-cradlekeepers",
+        "magnitude": 0.31,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/7-initiative",
+      "type": "event",
+      "tension": 0.4959438873394393,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-stillborn-host",
+        "magnitude": 0.32,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/8-interaction",
+      "type": "event",
+      "tension": 0.49830405571986924,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-vector",
+        "magnitude": 0.33,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/9-commitment",
+      "type": "event",
+      "tension": 0.5127981849752832,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-cradlekeepers",
+        "magnitude": 0.38,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/10-interaction",
+      "type": "event",
+      "tension": 0.4985610685478896,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-stillborn-host",
+        "magnitude": 0.33,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/11-initiative",
+      "type": "event",
+      "tension": 0.4954577479148284,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-vector",
+        "magnitude": 0.32,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/12-commitment",
+      "type": "event",
+      "tension": 0.5016948422696441,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-cradlekeepers",
+        "magnitude": 0.34,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/13-commitment",
+      "type": "event",
+      "tension": 0.5014325349433348,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-stillborn-host",
+        "magnitude": 0.34,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/14-interaction",
+      "type": "event",
+      "tension": 0.49464303282322364,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-vector",
+        "magnitude": 0.32,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/15-interaction",
+      "type": "event",
+      "tension": 0.5145589168125297,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-cradlekeepers",
+        "magnitude": 0.38,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/16-interaction",
+      "type": "event",
+      "tension": 0.49191270100558177,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-stillborn-host",
+        "magnitude": 0.31,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/17-interaction",
+      "type": "event",
+      "tension": 0.49847620719717817,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-vector",
+        "magnitude": 0.33,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/18-initiative",
+      "type": "event",
+      "tension": 0.49334583449107594,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-cradlekeepers",
+        "magnitude": 0.31,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/19-commitment",
+      "type": "event",
+      "tension": 0.5035579004436731,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-stillborn-host",
+        "magnitude": 0.35,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/20-commitment",
+      "type": "event",
+      "tension": 0.49720975828124214,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-vector",
+        "magnitude": 0.32,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/21-commitment",
+      "type": "event",
+      "tension": 0.5066872719961685,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-cradlekeepers",
+        "magnitude": 0.36,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/22-commitment",
+      "type": "event",
+      "tension": 0.5034994097757153,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-stillborn-host",
+        "magnitude": 0.34,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/23-initiative",
+      "type": "event",
+      "tension": 0.49125114910118284,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-vector",
+        "magnitude": 0.3,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/24-turn",
+      "type": "event",
+      "tension": 0.685,
+      "facts": {
+        "abstract_kind": "turn",
+        "actor": "the-cradlekeepers",
+        "magnitude": 0.95,
+        "placeholder": true,
+        "climax": true
+      }
+    },
+    {
+      "slug": "lore/thread-of-the-cradlekeepers",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-cradlekeepers",
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "lore/thread-of-the-stillborn-host",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-stillborn-host",
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "lore/thread-of-the-vector",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-vector",
+        "placeholder": true
+      }
+    }
+  ],
+  "edges": [
+    [
+      "events/0-interaction",
+      "involves",
+      "civs/the-cradlekeepers",
+      100
+    ],
+    [
+      "events/1-interaction",
+      "involves",
+      "civs/the-stillborn-host",
+      100
+    ],
+    [
+      "events/1-interaction",
+      "caused_by",
+      "events/0-interaction",
+      100
+    ],
+    [
+      "events/2-interaction",
+      "involves",
+      "civs/the-vector",
+      100
+    ],
+    [
+      "events/2-interaction",
+      "caused_by",
+      "events/0-interaction",
+      100
+    ],
+    [
+      "events/3-interaction",
+      "involves",
+      "civs/the-cradlekeepers",
+      200
+    ],
+    [
+      "events/3-interaction",
+      "caused_by",
+      "events/0-interaction",
+      200
+    ],
+    [
+      "events/3-interaction",
+      "caused_by",
+      "events/1-interaction",
+      200
+    ],
+    [
+      "events/4-initiative",
+      "involves",
+      "civs/the-stillborn-host",
+      200
+    ],
+    [
+      "events/4-initiative",
+      "caused_by",
+      "events/1-interaction",
+      200
+    ],
+    [
+      "events/5-commitment",
+      "involves",
+      "civs/the-vector",
+      200
+    ],
+    [
+      "events/5-commitment",
+      "caused_by",
+      "events/2-interaction",
+      200
+    ],
+    [
+      "events/5-commitment",
+      "concerns",
+      "locations/dormancy-salt-site",
+      200
+    ],
+    [
+      "events/6-interaction",
+      "involves",
+      "civs/the-cradlekeepers",
+      300
+    ],
+    [
+      "events/6-interaction",
+      "caused_by",
+      "events/3-interaction",
+      300
+    ],
+    [
+      "events/6-interaction",
+      "caused_by",
+      "events/4-initiative",
+      300
+    ],
+    [
+      "events/7-initiative",
+      "involves",
+      "civs/the-stillborn-host",
+      300
+    ],
+    [
+      "events/7-initiative",
+      "caused_by",
+      "events/4-initiative",
+      300
+    ],
+    [
+      "events/8-interaction",
+      "involves",
+      "civs/the-vector",
+      300
+    ],
+    [
+      "events/8-interaction",
+      "caused_by",
+      "events/5-commitment",
+      300
+    ],
+    [
+      "events/8-interaction",
+      "caused_by",
+      "events/7-initiative",
+      300
+    ],
+    [
+      "events/9-commitment",
+      "involves",
+      "civs/the-cradlekeepers",
+      400
+    ],
+    [
+      "events/9-commitment",
+      "caused_by",
+      "events/6-interaction",
+      400
+    ],
+    [
+      "events/9-commitment",
+      "concerns",
+      "locations/quarantine-foam-site",
+      400
+    ],
+    [
+      "events/10-interaction",
+      "involves",
+      "civs/the-stillborn-host",
+      400
+    ],
+    [
+      "events/10-interaction",
+      "caused_by",
+      "events/7-initiative",
+      400
+    ],
+    [
+      "events/10-interaction",
+      "caused_by",
+      "events/8-interaction",
+      400
+    ],
+    [
+      "events/11-initiative",
+      "involves",
+      "civs/the-vector",
+      400
+    ],
+    [
+      "events/11-initiative",
+      "caused_by",
+      "events/8-interaction",
+      400
+    ],
+    [
+      "events/12-commitment",
+      "involves",
+      "civs/the-cradlekeepers",
+      500
+    ],
+    [
+      "events/12-commitment",
+      "caused_by",
+      "events/9-commitment",
+      500
+    ],
+    [
+      "events/12-commitment",
+      "concerns",
+      "locations/dormancy-salt-site",
+      500
+    ],
+    [
+      "events/13-commitment",
+      "involves",
+      "civs/the-stillborn-host",
+      500
+    ],
+    [
+      "events/13-commitment",
+      "caused_by",
+      "events/10-interaction",
+      500
+    ],
+    [
+      "events/13-commitment",
+      "concerns",
+      "locations/dormancy-salt-site",
+      500
+    ],
+    [
+      "events/14-interaction",
+      "involves",
+      "civs/the-vector",
+      500
+    ],
+    [
+      "events/14-interaction",
+      "caused_by",
+      "events/11-initiative",
+      500
+    ],
+    [
+      "events/14-interaction",
+      "caused_by",
+      "events/12-commitment",
+      500
+    ],
+    [
+      "events/15-interaction",
+      "involves",
+      "civs/the-cradlekeepers",
+      600
+    ],
+    [
+      "events/15-interaction",
+      "caused_by",
+      "events/12-commitment",
+      600
+    ],
+    [
+      "events/15-interaction",
+      "caused_by",
+      "events/13-commitment",
+      600
+    ],
+    [
+      "events/16-interaction",
+      "involves",
+      "civs/the-stillborn-host",
+      600
+    ],
+    [
+      "events/16-interaction",
+      "caused_by",
+      "events/13-commitment",
+      600
+    ],
+    [
+      "events/16-interaction",
+      "caused_by",
+      "events/15-interaction",
+      600
+    ],
+    [
+      "events/17-interaction",
+      "involves",
+      "civs/the-vector",
+      600
+    ],
+    [
+      "events/17-interaction",
+      "caused_by",
+      "events/14-interaction",
+      600
+    ],
+    [
+      "events/17-interaction",
+      "caused_by",
+      "events/15-interaction",
+      600
+    ],
+    [
+      "events/18-initiative",
+      "involves",
+      "civs/the-cradlekeepers",
+      700
+    ],
+    [
+      "events/18-initiative",
+      "caused_by",
+      "events/15-interaction",
+      700
+    ],
+    [
+      "events/19-commitment",
+      "involves",
+      "civs/the-stillborn-host",
+      700
+    ],
+    [
+      "events/19-commitment",
+      "caused_by",
+      "events/16-interaction",
+      700
+    ],
+    [
+      "events/19-commitment",
+      "concerns",
+      "locations/quarantine-foam-site",
+      700
+    ],
+    [
+      "events/20-commitment",
+      "involves",
+      "civs/the-vector",
+      700
+    ],
+    [
+      "events/20-commitment",
+      "caused_by",
+      "events/17-interaction",
+      700
+    ],
+    [
+      "events/20-commitment",
+      "concerns",
+      "locations/quarantine-foam-site",
+      700
+    ],
+    [
+      "events/21-commitment",
+      "involves",
+      "civs/the-cradlekeepers",
+      800
+    ],
+    [
+      "events/21-commitment",
+      "caused_by",
+      "events/18-initiative",
+      800
+    ],
+    [
+      "events/21-commitment",
+      "concerns",
+      "locations/dormancy-salt-site",
+      800
+    ],
+    [
+      "events/22-commitment",
+      "involves",
+      "civs/the-stillborn-host",
+      800
+    ],
+    [
+      "events/22-commitment",
+      "caused_by",
+      "events/19-commitment",
+      800
+    ],
+    [
+      "events/22-commitment",
+      "concerns",
+      "locations/dormancy-salt-site",
+      800
+    ],
+    [
+      "events/23-initiative",
+      "involves",
+      "civs/the-vector",
+      800
+    ],
+    [
+      "events/23-initiative",
+      "caused_by",
+      "events/20-commitment",
+      800
+    ],
+    [
+      "events/24-turn",
+      "involves",
+      "civs/the-cradlekeepers",
+      800
+    ],
+    [
+      "lore/thread-of-the-cradlekeepers",
+      "prerequisite",
+      "events/24-turn",
+      800
+    ],
+    [
+      "civs/the-cradlekeepers",
+      "involved_in",
+      "events/24-turn",
+      800
+    ],
+    [
+      "lore/thread-of-the-stillborn-host",
+      "prerequisite",
+      "lore/thread-of-the-cradlekeepers",
+      800
+    ],
+    [
+      "civs/the-stillborn-host",
+      "involved_in",
+      "events/24-turn",
+      800
+    ],
+    [
+      "lore/thread-of-the-vector",
+      "prerequisite",
+      "lore/thread-of-the-stillborn-host",
+      800
+    ],
+    [
+      "civs/the-vector",
+      "involved_in",
+      "events/24-turn",
+      800
+    ]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/thread-of-the-cradlekeepers",
+      "lore/thread-of-the-stillborn-host",
+      "lore/thread-of-the-vector"
+    ],
+    "order": [
+      "lore/thread-of-the-cradlekeepers",
+      "lore/thread-of-the-stillborn-host",
+      "lore/thread-of-the-vector"
+    ],
+    "order_relation": "prerequisite"
+  }
+}

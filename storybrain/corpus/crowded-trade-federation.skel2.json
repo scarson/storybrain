@@ -1,0 +1,738 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.4,
+      "facts": {
+        "role": "newcomers"
+      }
+    },
+    {
+      "slug": "civs/the-vossan-syndics",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "living-broker-guild",
+        "trait": "consortium of merchant-clans who set prices, launder provenance, and fence the best forgeries"
+      }
+    },
+    {
+      "slug": "civs/the-khariti-drift",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "living-nomad-traders",
+        "trait": "tramp-fleet caravans who carry curios between ports and remember which papers are fake"
+      }
+    },
+    {
+      "slug": "civs/the-oseni-assayers",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "living-authenticator-caste",
+        "trait": "neutral appraisers who certify provenance for a fee — bribable, but the only ones who can read a true chain"
+      }
+    },
+    {
+      "slug": "civs/the-melun-cartel",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "living-smuggler-cartel",
+        "trait": "ruthless runners who corner the contested commodity and salt the market with counterfeits"
+      }
+    },
+    {
+      "slug": "civs/the-rho-collectors",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "living-curio-hoarders",
+        "trait": "obsessive private buyers who pay anything for a relic with a clean story, real or not"
+      }
+    },
+    {
+      "slug": "locations/ghostlight-amber-site",
+      "type": "location",
+      "tension": 0.425,
+      "facts": {
+        "subject": "ghostlight-amber"
+      }
+    },
+    {
+      "slug": "locations/ledger-salt-site",
+      "type": "location",
+      "tension": 0.375,
+      "facts": {
+        "subject": "ledger-salt"
+      }
+    },
+    {
+      "slug": "events/0-commitment",
+      "type": "event",
+      "tension": 0.5343965128811542,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-vossan-syndics",
+        "magnitude": 0.45,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/1-interaction",
+      "type": "event",
+      "tension": 0.5343964877417311,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-khariti-drift",
+        "magnitude": 0.45,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/2-commitment",
+      "type": "event",
+      "tension": 0.5706500375801697,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-oseni-assayers",
+        "magnitude": 0.57,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/3-commitment",
+      "type": "event",
+      "tension": 0.5577095182258636,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-melun-cartel",
+        "magnitude": 0.53,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/4-commitment",
+      "type": "event",
+      "tension": 0.5713581380988472,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-rho-collectors",
+        "magnitude": 0.57,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/5-commitment",
+      "type": "event",
+      "tension": 0.604961829632055,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-vossan-syndics",
+        "magnitude": 0.68,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/6-interaction",
+      "type": "event",
+      "tension": 0.5394639394348487,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-khariti-drift",
+        "magnitude": 0.46,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/7-interaction",
+      "type": "event",
+      "tension": 0.5437960677803494,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-oseni-assayers",
+        "magnitude": 0.48,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/8-interaction",
+      "type": "event",
+      "tension": 0.6025541165194008,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-melun-cartel",
+        "magnitude": 0.68,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/9-interaction",
+      "type": "event",
+      "tension": 0.5902786973658949,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-rho-collectors",
+        "magnitude": 0.63,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/10-initiative",
+      "type": "event",
+      "tension": 0.5207877929459792,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-vossan-syndics",
+        "magnitude": 0.4,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/11-commitment",
+      "type": "event",
+      "tension": 0.5452688019340858,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-khariti-drift",
+        "magnitude": 0.48,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/12-commitment",
+      "type": "event",
+      "tension": 0.5068944810475223,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-oseni-assayers",
+        "magnitude": 0.36,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/13-interaction",
+      "type": "event",
+      "tension": 0.5605499401118141,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-melun-cartel",
+        "magnitude": 0.54,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/14-commitment",
+      "type": "event",
+      "tension": 0.5979586546281352,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-rho-collectors",
+        "magnitude": 0.66,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/15-commitment",
+      "type": "event",
+      "tension": 0.5471123854517936,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-vossan-syndics",
+        "magnitude": 0.49,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/16-commitment",
+      "type": "event",
+      "tension": 0.5803826447175816,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-khariti-drift",
+        "magnitude": 0.6,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/17-interaction",
+      "type": "event",
+      "tension": 0.5243903542766348,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-oseni-assayers",
+        "magnitude": 0.41,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/18-interaction",
+      "type": "event",
+      "tension": 0.4903128271144815,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-melun-cartel",
+        "magnitude": 0.3,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/19-commitment",
+      "type": "event",
+      "tension": 0.5106246793237514,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-rho-collectors",
+        "magnitude": 0.37,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/20-turn",
+      "type": "event",
+      "tension": 0.685,
+      "facts": {
+        "abstract_kind": "turn",
+        "actor": "the-vossan-syndics",
+        "magnitude": 0.95,
+        "placeholder": true,
+        "climax": true
+      }
+    },
+    {
+      "slug": "lore/thread-of-the-melun-cartel",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-melun-cartel",
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "lore/thread-of-the-vossan-syndics",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-vossan-syndics",
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "lore/thread-of-the-rho-collectors",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-rho-collectors",
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "lore/thread-of-the-khariti-drift",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-khariti-drift",
+        "placeholder": true
+      }
+    }
+  ],
+  "edges": [
+    [
+      "events/0-commitment",
+      "involves",
+      "civs/the-vossan-syndics",
+      100
+    ],
+    [
+      "events/0-commitment",
+      "concerns",
+      "locations/ghostlight-amber-site",
+      100
+    ],
+    [
+      "events/1-interaction",
+      "involves",
+      "civs/the-khariti-drift",
+      100
+    ],
+    [
+      "events/2-commitment",
+      "involves",
+      "civs/the-oseni-assayers",
+      100
+    ],
+    [
+      "events/2-commitment",
+      "concerns",
+      "locations/ledger-salt-site",
+      100
+    ],
+    [
+      "events/3-commitment",
+      "involves",
+      "civs/the-melun-cartel",
+      100
+    ],
+    [
+      "events/3-commitment",
+      "concerns",
+      "locations/ledger-salt-site",
+      100
+    ],
+    [
+      "events/4-commitment",
+      "involves",
+      "civs/the-rho-collectors",
+      100
+    ],
+    [
+      "events/4-commitment",
+      "concerns",
+      "locations/ghostlight-amber-site",
+      100
+    ],
+    [
+      "events/5-commitment",
+      "involves",
+      "civs/the-vossan-syndics",
+      200
+    ],
+    [
+      "events/5-commitment",
+      "caused_by",
+      "events/0-commitment",
+      200
+    ],
+    [
+      "events/5-commitment",
+      "concerns",
+      "locations/ledger-salt-site",
+      200
+    ],
+    [
+      "events/6-interaction",
+      "involves",
+      "civs/the-khariti-drift",
+      200
+    ],
+    [
+      "events/6-interaction",
+      "caused_by",
+      "events/1-interaction",
+      200
+    ],
+    [
+      "events/6-interaction",
+      "caused_by",
+      "events/5-commitment",
+      200
+    ],
+    [
+      "events/7-interaction",
+      "involves",
+      "civs/the-oseni-assayers",
+      200
+    ],
+    [
+      "events/7-interaction",
+      "caused_by",
+      "events/2-commitment",
+      200
+    ],
+    [
+      "events/7-interaction",
+      "caused_by",
+      "events/5-commitment",
+      200
+    ],
+    [
+      "events/8-interaction",
+      "involves",
+      "civs/the-melun-cartel",
+      200
+    ],
+    [
+      "events/8-interaction",
+      "caused_by",
+      "events/3-commitment",
+      200
+    ],
+    [
+      "events/8-interaction",
+      "caused_by",
+      "events/6-interaction",
+      200
+    ],
+    [
+      "events/9-interaction",
+      "involves",
+      "civs/the-rho-collectors",
+      200
+    ],
+    [
+      "events/9-interaction",
+      "caused_by",
+      "events/4-commitment",
+      200
+    ],
+    [
+      "events/9-interaction",
+      "caused_by",
+      "events/8-interaction",
+      200
+    ],
+    [
+      "events/10-initiative",
+      "involves",
+      "civs/the-vossan-syndics",
+      300
+    ],
+    [
+      "events/10-initiative",
+      "caused_by",
+      "events/5-commitment",
+      300
+    ],
+    [
+      "events/11-commitment",
+      "involves",
+      "civs/the-khariti-drift",
+      300
+    ],
+    [
+      "events/11-commitment",
+      "caused_by",
+      "events/6-interaction",
+      300
+    ],
+    [
+      "events/11-commitment",
+      "concerns",
+      "locations/ghostlight-amber-site",
+      300
+    ],
+    [
+      "events/12-commitment",
+      "involves",
+      "civs/the-oseni-assayers",
+      300
+    ],
+    [
+      "events/12-commitment",
+      "caused_by",
+      "events/7-interaction",
+      300
+    ],
+    [
+      "events/12-commitment",
+      "concerns",
+      "locations/ghostlight-amber-site",
+      300
+    ],
+    [
+      "events/13-interaction",
+      "involves",
+      "civs/the-melun-cartel",
+      300
+    ],
+    [
+      "events/13-interaction",
+      "caused_by",
+      "events/8-interaction",
+      300
+    ],
+    [
+      "events/13-interaction",
+      "caused_by",
+      "events/10-initiative",
+      300
+    ],
+    [
+      "events/14-commitment",
+      "involves",
+      "civs/the-rho-collectors",
+      300
+    ],
+    [
+      "events/14-commitment",
+      "caused_by",
+      "events/9-interaction",
+      300
+    ],
+    [
+      "events/14-commitment",
+      "concerns",
+      "locations/ledger-salt-site",
+      300
+    ],
+    [
+      "events/15-commitment",
+      "involves",
+      "civs/the-vossan-syndics",
+      400
+    ],
+    [
+      "events/15-commitment",
+      "caused_by",
+      "events/10-initiative",
+      400
+    ],
+    [
+      "events/15-commitment",
+      "concerns",
+      "locations/ghostlight-amber-site",
+      400
+    ],
+    [
+      "events/16-commitment",
+      "involves",
+      "civs/the-khariti-drift",
+      400
+    ],
+    [
+      "events/16-commitment",
+      "caused_by",
+      "events/11-commitment",
+      400
+    ],
+    [
+      "events/16-commitment",
+      "concerns",
+      "locations/ghostlight-amber-site",
+      400
+    ],
+    [
+      "events/17-interaction",
+      "involves",
+      "civs/the-oseni-assayers",
+      400
+    ],
+    [
+      "events/17-interaction",
+      "caused_by",
+      "events/12-commitment",
+      400
+    ],
+    [
+      "events/17-interaction",
+      "caused_by",
+      "events/14-commitment",
+      400
+    ],
+    [
+      "events/18-interaction",
+      "involves",
+      "civs/the-melun-cartel",
+      400
+    ],
+    [
+      "events/18-interaction",
+      "caused_by",
+      "events/13-interaction",
+      400
+    ],
+    [
+      "events/18-interaction",
+      "caused_by",
+      "events/15-commitment",
+      400
+    ],
+    [
+      "events/19-commitment",
+      "involves",
+      "civs/the-rho-collectors",
+      400
+    ],
+    [
+      "events/19-commitment",
+      "caused_by",
+      "events/14-commitment",
+      400
+    ],
+    [
+      "events/19-commitment",
+      "concerns",
+      "locations/ghostlight-amber-site",
+      400
+    ],
+    [
+      "events/20-turn",
+      "involves",
+      "civs/the-vossan-syndics",
+      400
+    ],
+    [
+      "lore/thread-of-the-melun-cartel",
+      "precedes",
+      "events/20-turn",
+      400
+    ],
+    [
+      "civs/the-melun-cartel",
+      "involved_in",
+      "events/20-turn",
+      400
+    ],
+    [
+      "lore/thread-of-the-vossan-syndics",
+      "precedes",
+      "lore/thread-of-the-melun-cartel",
+      400
+    ],
+    [
+      "civs/the-vossan-syndics",
+      "involved_in",
+      "events/20-turn",
+      400
+    ],
+    [
+      "lore/thread-of-the-rho-collectors",
+      "precedes",
+      "lore/thread-of-the-vossan-syndics",
+      400
+    ],
+    [
+      "civs/the-rho-collectors",
+      "involved_in",
+      "events/20-turn",
+      400
+    ],
+    [
+      "lore/thread-of-the-khariti-drift",
+      "precedes",
+      "lore/thread-of-the-rho-collectors",
+      400
+    ],
+    [
+      "civs/the-khariti-drift",
+      "involved_in",
+      "events/20-turn",
+      400
+    ]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/thread-of-the-melun-cartel",
+      "lore/thread-of-the-vossan-syndics",
+      "lore/thread-of-the-rho-collectors",
+      "lore/thread-of-the-khariti-drift"
+    ],
+    "order": [
+      "lore/thread-of-the-melun-cartel",
+      "lore/thread-of-the-vossan-syndics",
+      "lore/thread-of-the-rho-collectors",
+      "lore/thread-of-the-khariti-drift"
+    ],
+    "order_relation": "precedes"
+  }
+}

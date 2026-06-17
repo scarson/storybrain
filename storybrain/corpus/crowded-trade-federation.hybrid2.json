@@ -1,0 +1,443 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.45,
+      "facts": {
+        "status": "active",
+        "role": "newcomer colonist-traders working a single rented stall on the Long Bazaar's frontier exchange",
+        "stance": "outsiders the old houses neither trust nor fear yet — which is exactly why a seller would slip them a hot relic"
+      }
+    },
+    {
+      "slug": "civs/the-vossan-syndics",
+      "type": "faction",
+      "tension": 0.6,
+      "facts": {
+        "alien_type": "living-broker-guild",
+        "status": "living",
+        "trait": "consortium of merchant-clans who set prices, launder provenance, and fence the best forgeries",
+        "agenda": "keep the contested commodity's true origin buried so the forged seals stacked in their vaults keep their value"
+      }
+    },
+    {
+      "slug": "civs/the-khariti-drift",
+      "type": "faction",
+      "tension": 0.6,
+      "facts": {
+        "alien_type": "living-nomad-traders",
+        "status": "living",
+        "trait": "tramp-fleet caravans who carry curios between ports and quietly remember which papers are fake",
+        "agenda": "stay neutral, carry curios for every side, and trade the one thing nobody can forge: an honest memory of where each relic has been"
+      }
+    },
+    {
+      "slug": "civs/the-oseni-assayers",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "living-authenticator-caste",
+        "status": "living",
+        "trait": "neutral appraisers who certify provenance for a fee — bribable, but the only caste that can read a true chain of custody",
+        "agenda": "guard the assayer monopoly; a dissident few would read a relic's real chain for the right buyer"
+      }
+    },
+    {
+      "slug": "civs/the-melun-cartel",
+      "type": "faction",
+      "tension": 0.7,
+      "facts": {
+        "alien_type": "living-smuggler-cartel",
+        "status": "active",
+        "trait": "ruthless runners who corner the contested commodity by force and salt the market with counterfeits",
+        "agenda": "own the ghostlight-amber supply outright and flood every rival's vault with fakes until only Melun seals mean anything"
+      }
+    },
+    {
+      "slug": "civs/the-rho-collectors",
+      "type": "faction",
+      "tension": 0.6,
+      "facts": {
+        "alien_type": "living-curio-hoarders",
+        "status": "living",
+        "trait": "obsessive private buyers who pay anything for a relic with a clean story, real or not",
+        "agenda": "own the single relic with a provably authentic chain — and burn every forgery that cheapens it"
+      }
+    },
+    {
+      "slug": "locations/ghostlight-amber-seam",
+      "type": "location",
+      "tension": 0.45,
+      "facts": {
+        "kind": "contested-commodity cache",
+        "resource": "ghostlight-amber",
+        "desc": "the commodity everyone wants a cut of — amber that hums with stored light. Brokers swear it is mined from a dead world; the truth is otherwise."
+      }
+    },
+    {
+      "slug": "locations/ledger-salt-flats",
+      "type": "location",
+      "tension": 0.39,
+      "facts": {
+        "kind": "trade-good seam",
+        "resource": "ledger-salt",
+        "desc": "the mundane salt that greases every certified sale — plentiful, taxed, never worth lying about, and so the one good every faction's books agree on"
+      }
+    },
+
+    {
+      "slug": "events/vossan-first-amber",
+      "type": "event",
+      "tension": 0.5,
+      "day": 100,
+      "facts": {
+        "title": "The Syndics broker the first crate of ghostlight-amber",
+        "beat": "Long before the market existed, a Vossan clan-broker buys a single humming crate from a Khariti caravan and writes the first provenance scroll — naming a dead world as the source. The lie is born in that first signature."
+      }
+    },
+    {
+      "slug": "events/khariti-carry-the-truth",
+      "type": "event",
+      "tension": 0.52,
+      "day": 100,
+      "facts": {
+        "title": "The Drift caravans learn where the amber really comes from",
+        "beat": "Hauling crate after crate, a Khariti navigator notices the amber is always loaded at the same unmarked station, never a mine. The Drift says nothing and starts keeping a private route-log no broker can buy."
+      }
+    },
+    {
+      "slug": "events/oseni-seal-the-lie",
+      "type": "event",
+      "tension": 0.57,
+      "day": 200,
+      "facts": {
+        "title": "The Assayers certify the Vossan forgery as authentic",
+        "beat": "Paid by the Syndics, the Oseni caste stamps the dead-world story with a true assayer seal. From that day the forged origin is legally real, and the only people who can unmake the lie are the ones who made it."
+      }
+    },
+    {
+      "slug": "events/melun-corner-the-supply",
+      "type": "event",
+      "tension": 0.66,
+      "day": 200,
+      "facts": {
+        "title": "The Melun Cartel seizes the unmarked station",
+        "beat": "Tracing the same loading runs the Drift hid, Melun gunships take the real amber source by force and begin rationing it — pricing every other house out and salting the gap with counterfeit crates."
+      }
+    },
+    {
+      "slug": "events/rho-buy-the-story",
+      "type": "event",
+      "tension": 0.6,
+      "day": 200,
+      "facts": {
+        "title": "The Rho Collectors pay a fortune for a clean chain",
+        "beat": "A Rho heir buys what the Assayers swear is the one amber relic with an unbroken, honest provenance — not knowing it sits atop the oldest forgery in the market. The price he pays funds the lie for a generation."
+      }
+    },
+    {
+      "slug": "events/oseni-schism",
+      "type": "event",
+      "tension": 0.6,
+      "day": 300,
+      "facts": {
+        "title": "A dissident Assayer threatens to read the true chain",
+        "beat": "One Oseni appraiser, sick of certifying fakes, lets it be known she can reconstruct the relic's real chain of custody — and will, for a buyer brave enough to want the truth. The caste moves to silence her."
+      }
+    },
+    {
+      "slug": "events/khariti-leak-the-log",
+      "type": "event",
+      "tension": 0.62,
+      "day": 300,
+      "facts": {
+        "title": "The Drift quietly sells a copy of the route-log",
+        "beat": "Smelling the coming war, the Khariti fence one encrypted copy of their honest route-log into the open market. It surfaces on a frontier stall — and suddenly the true origin is a thing that can be bought."
+      }
+    },
+    {
+      "slug": "events/melun-flood-the-fakes",
+      "type": "event",
+      "tension": 0.68,
+      "day": 400,
+      "facts": {
+        "title": "The Cartel floods every vault with counterfeits",
+        "beat": "To make the leaking truth worthless, Melun dumps thousands of perfect forgeries onto the exchange. Now no seal is trusted, every house is exposed, and a single verifiable relic is worth more than a fleet."
+      }
+    },
+    {
+      "slug": "events/the-contested-deal",
+      "type": "event",
+      "tension": 0.685,
+      "day": 400,
+      "facts": {
+        "title": "The deal nobody dares close",
+        "beat": "Everything converges on one transaction: whoever assembles the relic's true chain — Vossan's first scroll, Oseni's real seal, the Drift's route-log, and the Rho heir's relic — can prove what ghostlight-amber actually is and own the market outright. The Syndics, the Cartel, the Collectors, and the Drift all reach for it at once.",
+        "is_climax": true
+      }
+    },
+
+    {
+      "slug": "artifacts/vossan-first-provenance-scroll",
+      "type": "artifact",
+      "tension": 0.62,
+      "facts": {
+        "archetype": "forged-provenance-scroll",
+        "maker": "the-vossan-syndics",
+        "desc": "the original provenance scroll for the first amber crate — the oldest document in the market, and the first lie"
+      }
+    },
+    {
+      "slug": "artifacts/oseni-true-seal-die",
+      "type": "artifact",
+      "tension": 0.63,
+      "facts": {
+        "archetype": "assayer-seal",
+        "maker": "the-oseni-assayers",
+        "desc": "the assayer's master seal-die that stamped the forgery legitimate; whoever holds it can certify or un-certify any chain"
+      }
+    },
+    {
+      "slug": "artifacts/khariti-route-log",
+      "type": "artifact",
+      "tension": 0.64,
+      "facts": {
+        "archetype": "smugglers-ledger",
+        "maker": "the-khariti-drift",
+        "desc": "the encrypted caravan route-log recording every real loading run — the one record no broker could forge"
+      }
+    },
+    {
+      "slug": "artifacts/rho-clean-chain-relic",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "contraband-relic",
+        "maker": "the-rho-collectors",
+        "desc": "the amber relic the Rho heir bought as honest — the physical object whose true chain everyone is fighting to reconstruct"
+      }
+    },
+    {
+      "slug": "artifacts/melun-counterfeit-token",
+      "type": "artifact",
+      "tension": 0.61,
+      "facts": {
+        "archetype": "broker-token",
+        "maker": "the-melun-cartel",
+        "desc": "a flawless counterfeit broker-token from the Cartel's flood; comparing it to a real one exposes how the fakes are made"
+      }
+    },
+    {
+      "slug": "artifacts/dissident-assayer-confession",
+      "type": "artifact",
+      "tension": 0.66,
+      "facts": {
+        "archetype": "black-market-curio",
+        "maker": "the-oseni-assayers",
+        "desc": "a wax cylinder hidden by the dissident appraiser, on which she reads aloud what the true chain actually is"
+      }
+    },
+
+    {
+      "slug": "lore/the-amber-was-never-mined",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "Ghostlight-amber was never mined from any dead world. The Vossan Syndics invented the dead-world story with the very first scroll, and the whole market's value rests on that founding forgery."
+      }
+    },
+    {
+      "slug": "lore/the-seal-can-be-unmade",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The Oseni seal that made the lie legal can also unmake it: the same master die that certified the forgery is the only instrument that can certify the truth. The Cartel knows this, which is why it floods the market — to make any seal meaningless before the real one is used."
+      }
+    },
+    {
+      "slug": "lore/the-relic-is-honest-the-paper-is-not",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The Rho heir's relic is genuine amber — it is the PAPER around it that is forged. The object the Collectors guard is the one true link; its certified story is the lie wrapped around it."
+      }
+    },
+    {
+      "slug": "lore/the-drift-knows-the-real-source",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The Khariti route-log names the unmarked station — and what it really is. Ghostlight-amber is not a mineral at all but the slow-cooled residue of a living thing the Drift has been quietly harvesting; the 'source' everyone fights over is alive."
+      }
+    },
+
+    {
+      "slug": "colonists/mara-osei-vance",
+      "type": "colonist",
+      "tension": 0.6,
+      "day": 500,
+      "facts": {
+        "name": "Mara Osei-Vance",
+        "role": "human stall-trader who bought the leaked Khariti route-log off a desperate caravaner",
+        "stake": "holds the one record that proves the real source; every house wants it and she can only sell it once"
+      }
+    },
+    {
+      "slug": "colonists/dev-haldane",
+      "type": "colonist",
+      "tension": 0.62,
+      "day": 500,
+      "facts": {
+        "name": "Dev Haldane",
+        "role": "rival human broker on Melun's quiet payroll, peddling the Cartel's counterfeits as bargains",
+        "stake": "wants Mara's log destroyed before the truth craters the value of the fakes he is fencing"
+      }
+    },
+    {
+      "slug": "colonists/sable-ferreira",
+      "type": "colonist",
+      "tension": 0.64,
+      "day": 500,
+      "facts": {
+        "name": "Sable Ferreira",
+        "role": "fixer who smuggled out the dissident Assayer's confession cylinder",
+        "stake": "marked by the Cartel and sold out by Haldane; trades the confession for protection she may not get"
+      }
+    },
+    {
+      "slug": "colonists/quen-arden",
+      "type": "colonist",
+      "tension": 0.58,
+      "day": 500,
+      "facts": {
+        "name": "Quen Arden",
+        "role": "the Rho heir's estranged agent, holding the clean-chain relic and tempted to sell it honest",
+        "stake": "can complete the true chain by giving up the relic — but doing so ruins the house that raised him"
+      }
+    },
+    {
+      "slug": "arcs/the-deal-nobody-dares-close",
+      "type": "arc",
+      "tension": 0.7,
+      "day": 500,
+      "facts": {
+        "phase": "rising",
+        "title": "The deal nobody dares close",
+        "summary": "Four people hold the four links of the relic's true chain. Assemble them and the market breaks open; let one slip and the lie holds another generation.",
+        "next_beat_actor": "colonists/mara-osei-vance",
+        "next_beat": "Mara must decide whether to pool the route-log with Sable's confession and Quen's relic — or sell it alone to the highest bidder before Haldane and the Cartel reach her first",
+        "open": true,
+        "resolved": false
+      }
+    }
+  ],
+  "edges": [
+    ["events/vossan-first-amber", "involves", "civs/the-vossan-syndics", 100],
+    ["events/vossan-first-amber", "concerns", "locations/ghostlight-amber-seam", 100],
+    ["events/khariti-carry-the-truth", "involves", "civs/the-khariti-drift", 100],
+    ["events/khariti-carry-the-truth", "concerns", "locations/ghostlight-amber-seam", 100],
+
+    ["events/oseni-seal-the-lie", "involves", "civs/the-oseni-assayers", 200],
+    ["events/oseni-seal-the-lie", "caused_by", "events/vossan-first-amber", 200],
+    ["events/melun-corner-the-supply", "involves", "civs/the-melun-cartel", 200],
+    ["events/melun-corner-the-supply", "caused_by", "events/khariti-carry-the-truth", 200],
+    ["events/melun-corner-the-supply", "concerns", "locations/ghostlight-amber-seam", 200],
+    ["events/rho-buy-the-story", "involves", "civs/the-rho-collectors", 200],
+    ["events/rho-buy-the-story", "caused_by", "events/oseni-seal-the-lie", 200],
+
+    ["events/oseni-schism", "involves", "civs/the-oseni-assayers", 300],
+    ["events/oseni-schism", "caused_by", "events/rho-buy-the-story", 300],
+    ["events/khariti-leak-the-log", "involves", "civs/the-khariti-drift", 300],
+    ["events/khariti-leak-the-log", "caused_by", "events/melun-corner-the-supply", 300],
+
+    ["events/melun-flood-the-fakes", "involves", "civs/the-melun-cartel", 400],
+    ["events/melun-flood-the-fakes", "caused_by", "events/khariti-leak-the-log", 400],
+    ["events/melun-flood-the-fakes", "concerns", "locations/ghostlight-amber-seam", 400],
+
+    ["events/the-contested-deal", "involves", "civs/the-vossan-syndics", 400],
+    ["events/the-contested-deal", "caused_by", "events/oseni-schism", 400],
+    ["events/the-contested-deal", "caused_by", "events/melun-flood-the-fakes", 400],
+
+    ["civs/the-vossan-syndics", "involved_in", "events/the-contested-deal", 400],
+    ["civs/the-melun-cartel", "involved_in", "events/the-contested-deal", 400],
+    ["civs/the-rho-collectors", "involved_in", "events/the-contested-deal", 400],
+    ["civs/the-khariti-drift", "involved_in", "events/the-contested-deal", 400],
+
+    ["artifacts/vossan-first-provenance-scroll", "drops", "lore/the-amber-was-never-mined", 100],
+    ["artifacts/vossan-first-provenance-scroll", "drops", "lore/the-relic-is-honest-the-paper-is-not", 100],
+    ["artifacts/vossan-first-provenance-scroll", "drops", "lore/the-seal-can-be-unmade", 100],
+
+    ["artifacts/oseni-true-seal-die", "drops", "lore/the-seal-can-be-unmade", 200],
+    ["artifacts/oseni-true-seal-die", "drops", "lore/the-amber-was-never-mined", 200],
+    ["artifacts/oseni-true-seal-die", "drops", "lore/the-relic-is-honest-the-paper-is-not", 200],
+
+    ["artifacts/khariti-route-log", "drops", "lore/the-drift-knows-the-real-source", 300],
+    ["artifacts/khariti-route-log", "drops", "lore/the-amber-was-never-mined", 300],
+    ["artifacts/khariti-route-log", "drops", "lore/the-relic-is-honest-the-paper-is-not", 300],
+
+    ["artifacts/rho-clean-chain-relic", "drops", "lore/the-relic-is-honest-the-paper-is-not", 200],
+    ["artifacts/rho-clean-chain-relic", "drops", "lore/the-amber-was-never-mined", 200],
+    ["artifacts/rho-clean-chain-relic", "drops", "lore/the-drift-knows-the-real-source", 200],
+
+    ["artifacts/melun-counterfeit-token", "drops", "lore/the-seal-can-be-unmade", 400],
+    ["artifacts/melun-counterfeit-token", "drops", "lore/the-amber-was-never-mined", 400],
+    ["artifacts/melun-counterfeit-token", "drops", "lore/the-drift-knows-the-real-source", 400],
+
+    ["artifacts/dissident-assayer-confession", "drops", "lore/the-drift-knows-the-real-source", 300],
+    ["artifacts/dissident-assayer-confession", "drops", "lore/the-seal-can-be-unmade", 300],
+    ["artifacts/dissident-assayer-confession", "drops", "lore/the-relic-is-honest-the-paper-is-not", 300],
+
+    ["lore/the-amber-was-never-mined", "reveals", "civs/the-vossan-syndics", 100],
+    ["lore/the-seal-can-be-unmade", "reveals", "civs/the-oseni-assayers", 200],
+    ["lore/the-relic-is-honest-the-paper-is-not", "reveals", "civs/the-rho-collectors", 200],
+    ["lore/the-drift-knows-the-real-source", "reveals", "civs/the-khariti-drift", 300],
+
+    ["lore/the-amber-was-never-mined", "precedes", "lore/the-seal-can-be-unmade", 200],
+    ["lore/the-seal-can-be-unmade", "precedes", "lore/the-relic-is-honest-the-paper-is-not", 300],
+    ["lore/the-relic-is-honest-the-paper-is-not", "precedes", "lore/the-drift-knows-the-real-source", 400],
+    ["lore/the-drift-knows-the-real-source", "precedes", "events/the-contested-deal", 400],
+
+    ["colonists/mara-osei-vance", "owns", "factions/humans", 500],
+    ["colonists/mara-osei-vance", "sought_by", "civs/the-rho-collectors", 500],
+    ["colonists/mara-osei-vance", "owns", "artifacts/khariti-route-log", 500],
+    ["colonists/dev-haldane", "rival_of", "colonists/mara-osei-vance", 500],
+    ["colonists/dev-haldane", "owns", "artifacts/melun-counterfeit-token", 500],
+    ["colonists/sable-ferreira", "betrayed_by", "colonists/dev-haldane", 500],
+    ["colonists/sable-ferreira", "owns", "artifacts/dissident-assayer-confession", 500],
+    ["civs/the-melun-cartel", "threatens", "colonists/sable-ferreira", 500],
+    ["civs/the-vossan-syndics", "rival_of", "civs/the-melun-cartel", 500],
+    ["colonists/quen-arden", "owns", "artifacts/rho-clean-chain-relic", 500],
+    ["civs/the-rho-collectors", "sought_by", "colonists/quen-arden", 500],
+
+    ["arcs/the-deal-nobody-dares-close", "concerns", "events/the-contested-deal", 500],
+    ["arcs/the-deal-nobody-dares-close", "concerns", "artifacts/rho-clean-chain-relic", 500],
+    ["arcs/the-deal-nobody-dares-close", "involves", "colonists/mara-osei-vance", 500],
+    ["arcs/the-deal-nobody-dares-close", "involves", "colonists/sable-ferreira", 500],
+    ["arcs/the-deal-nobody-dares-close", "involves", "colonists/quen-arden"]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/the-amber-was-never-mined",
+      "lore/the-seal-can-be-unmade",
+      "lore/the-relic-is-honest-the-paper-is-not",
+      "lore/the-drift-knows-the-real-source"
+    ],
+    "order": [
+      "lore/the-amber-was-never-mined",
+      "lore/the-seal-can-be-unmade",
+      "lore/the-relic-is-honest-the-paper-is-not",
+      "lore/the-drift-knows-the-real-source"
+    ],
+    "order_relation": "precedes"
+  }
+}
+</content>

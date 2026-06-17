@@ -1,0 +1,643 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.4,
+      "facts": {
+        "role": "newcomers"
+      }
+    },
+    {
+      "slug": "civs/the-erased",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "absent-self-erased-makers",
+        "trait": "the ancestral makers who deliberately deleted their own record and scattered, leaving only traces; absent-by-choice, not dead"
+      }
+    },
+    {
+      "slug": "civs/the-redactors",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "absent-archivist-lineage",
+        "trait": "the maker-caste that performed the great forgetting — sealed the vaults, defaced the monuments, edited the charts; their fingerprints are on every deletion"
+      }
+    },
+    {
+      "slug": "civs/the-refusers",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "absent-dissenter-lineage",
+        "trait": "the maker-minority who fought the erasure and hid counter-records so a descendant could one day reassemble the truth; gone with the rest"
+      }
+    },
+    {
+      "slug": "locations/echo-resin-site",
+      "type": "location",
+      "tension": 0.3625,
+      "facts": {
+        "subject": "echo-resin"
+      }
+    },
+    {
+      "slug": "locations/vault-salt-site",
+      "type": "location",
+      "tension": 0.33749999999999997,
+      "facts": {
+        "subject": "vault-salt"
+      }
+    },
+    {
+      "slug": "events/0-initiative",
+      "type": "event",
+      "tension": 0.5185650734382216,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-erased",
+        "magnitude": 0.4,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/1-commitment",
+      "type": "event",
+      "tension": 0.5317254754239693,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-redactors",
+        "magnitude": 0.44,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/2-interaction",
+      "type": "event",
+      "tension": 0.49171523443516346,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-refusers",
+        "magnitude": 0.31,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/3-initiative",
+      "type": "event",
+      "tension": 0.49776016387389976,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-erased",
+        "magnitude": 0.33,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/4-commitment",
+      "type": "event",
+      "tension": 0.49198894001403826,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-redactors",
+        "magnitude": 0.31,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/5-commitment",
+      "type": "event",
+      "tension": 0.5210378957958892,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-refusers",
+        "magnitude": 0.4,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/6-commitment",
+      "type": "event",
+      "tension": 0.5148984834889416,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-erased",
+        "magnitude": 0.38,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/7-commitment",
+      "type": "event",
+      "tension": 0.5349280436118133,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-redactors",
+        "magnitude": 0.45,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/8-commitment",
+      "type": "event",
+      "tension": 0.5130919546280056,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-refusers",
+        "magnitude": 0.38,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/9-commitment",
+      "type": "event",
+      "tension": 0.5213099144224543,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-erased",
+        "magnitude": 0.4,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/10-commitment",
+      "type": "event",
+      "tension": 0.541138579051476,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-redactors",
+        "magnitude": 0.47,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/11-commitment",
+      "type": "event",
+      "tension": 0.49225639501493423,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-refusers",
+        "magnitude": 0.31,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/12-initiative",
+      "type": "event",
+      "tension": 0.49652881605084986,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-erased",
+        "magnitude": 0.32,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/13-interaction",
+      "type": "event",
+      "tension": 0.5127024158244021,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-redactors",
+        "magnitude": 0.38,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/14-interaction",
+      "type": "event",
+      "tension": 0.4957958214599639,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-refusers",
+        "magnitude": 0.32,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/15-commitment",
+      "type": "event",
+      "tension": 0.5252881108422298,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-erased",
+        "magnitude": 0.42,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/16-interaction",
+      "type": "event",
+      "tension": 0.4932822028016672,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-redactors",
+        "magnitude": 0.31,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/17-commitment",
+      "type": "event",
+      "tension": 0.5228328200858087,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-refusers",
+        "magnitude": 0.41,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/18-turn",
+      "type": "event",
+      "tension": 0.685,
+      "facts": {
+        "abstract_kind": "turn",
+        "actor": "the-erased",
+        "magnitude": 0.95,
+        "placeholder": true,
+        "climax": true
+      }
+    },
+    {
+      "slug": "lore/thread-of-the-redactors",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-redactors",
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "lore/thread-of-the-erased",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-erased",
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "lore/thread-of-the-refusers",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-refusers",
+        "placeholder": true
+      }
+    }
+  ],
+  "edges": [
+    [
+      "events/0-initiative",
+      "involves",
+      "civs/the-erased",
+      100
+    ],
+    [
+      "events/1-commitment",
+      "involves",
+      "civs/the-redactors",
+      100
+    ],
+    [
+      "events/1-commitment",
+      "concerns",
+      "locations/echo-resin-site",
+      100
+    ],
+    [
+      "events/2-interaction",
+      "involves",
+      "civs/the-refusers",
+      100
+    ],
+    [
+      "events/2-interaction",
+      "caused_by",
+      "events/1-commitment",
+      100
+    ],
+    [
+      "events/3-initiative",
+      "involves",
+      "civs/the-erased",
+      200
+    ],
+    [
+      "events/3-initiative",
+      "caused_by",
+      "events/0-initiative",
+      200
+    ],
+    [
+      "events/4-commitment",
+      "involves",
+      "civs/the-redactors",
+      200
+    ],
+    [
+      "events/4-commitment",
+      "caused_by",
+      "events/1-commitment",
+      200
+    ],
+    [
+      "events/4-commitment",
+      "concerns",
+      "locations/echo-resin-site",
+      200
+    ],
+    [
+      "events/5-commitment",
+      "involves",
+      "civs/the-refusers",
+      200
+    ],
+    [
+      "events/5-commitment",
+      "caused_by",
+      "events/2-interaction",
+      200
+    ],
+    [
+      "events/5-commitment",
+      "concerns",
+      "locations/echo-resin-site",
+      200
+    ],
+    [
+      "events/6-commitment",
+      "involves",
+      "civs/the-erased",
+      300
+    ],
+    [
+      "events/6-commitment",
+      "caused_by",
+      "events/3-initiative",
+      300
+    ],
+    [
+      "events/6-commitment",
+      "concerns",
+      "locations/echo-resin-site",
+      300
+    ],
+    [
+      "events/7-commitment",
+      "involves",
+      "civs/the-redactors",
+      300
+    ],
+    [
+      "events/7-commitment",
+      "caused_by",
+      "events/4-commitment",
+      300
+    ],
+    [
+      "events/7-commitment",
+      "concerns",
+      "locations/vault-salt-site",
+      300
+    ],
+    [
+      "events/8-commitment",
+      "involves",
+      "civs/the-refusers",
+      300
+    ],
+    [
+      "events/8-commitment",
+      "caused_by",
+      "events/5-commitment",
+      300
+    ],
+    [
+      "events/8-commitment",
+      "concerns",
+      "locations/echo-resin-site",
+      300
+    ],
+    [
+      "events/9-commitment",
+      "involves",
+      "civs/the-erased",
+      400
+    ],
+    [
+      "events/9-commitment",
+      "caused_by",
+      "events/6-commitment",
+      400
+    ],
+    [
+      "events/9-commitment",
+      "concerns",
+      "locations/echo-resin-site",
+      400
+    ],
+    [
+      "events/10-commitment",
+      "involves",
+      "civs/the-redactors",
+      400
+    ],
+    [
+      "events/10-commitment",
+      "caused_by",
+      "events/7-commitment",
+      400
+    ],
+    [
+      "events/10-commitment",
+      "concerns",
+      "locations/vault-salt-site",
+      400
+    ],
+    [
+      "events/11-commitment",
+      "involves",
+      "civs/the-refusers",
+      400
+    ],
+    [
+      "events/11-commitment",
+      "caused_by",
+      "events/8-commitment",
+      400
+    ],
+    [
+      "events/11-commitment",
+      "concerns",
+      "locations/vault-salt-site",
+      400
+    ],
+    [
+      "events/12-initiative",
+      "involves",
+      "civs/the-erased",
+      500
+    ],
+    [
+      "events/12-initiative",
+      "caused_by",
+      "events/9-commitment",
+      500
+    ],
+    [
+      "events/13-interaction",
+      "involves",
+      "civs/the-redactors",
+      500
+    ],
+    [
+      "events/13-interaction",
+      "caused_by",
+      "events/10-commitment",
+      500
+    ],
+    [
+      "events/13-interaction",
+      "caused_by",
+      "events/11-commitment",
+      500
+    ],
+    [
+      "events/14-interaction",
+      "involves",
+      "civs/the-refusers",
+      500
+    ],
+    [
+      "events/14-interaction",
+      "caused_by",
+      "events/11-commitment",
+      500
+    ],
+    [
+      "events/14-interaction",
+      "caused_by",
+      "events/12-initiative",
+      500
+    ],
+    [
+      "events/15-commitment",
+      "involves",
+      "civs/the-erased",
+      600
+    ],
+    [
+      "events/15-commitment",
+      "caused_by",
+      "events/12-initiative",
+      600
+    ],
+    [
+      "events/15-commitment",
+      "concerns",
+      "locations/echo-resin-site",
+      600
+    ],
+    [
+      "events/16-interaction",
+      "involves",
+      "civs/the-redactors",
+      600
+    ],
+    [
+      "events/16-interaction",
+      "caused_by",
+      "events/13-interaction",
+      600
+    ],
+    [
+      "events/16-interaction",
+      "caused_by",
+      "events/14-interaction",
+      600
+    ],
+    [
+      "events/17-commitment",
+      "involves",
+      "civs/the-refusers",
+      600
+    ],
+    [
+      "events/17-commitment",
+      "caused_by",
+      "events/14-interaction",
+      600
+    ],
+    [
+      "events/17-commitment",
+      "concerns",
+      "locations/vault-salt-site",
+      600
+    ],
+    [
+      "events/18-turn",
+      "involves",
+      "civs/the-erased",
+      600
+    ],
+    [
+      "lore/thread-of-the-redactors",
+      "reveals",
+      "events/18-turn",
+      600
+    ],
+    [
+      "civs/the-redactors",
+      "involved_in",
+      "events/18-turn",
+      600
+    ],
+    [
+      "lore/thread-of-the-erased",
+      "reveals",
+      "lore/thread-of-the-redactors",
+      600
+    ],
+    [
+      "civs/the-erased",
+      "involved_in",
+      "events/18-turn",
+      600
+    ],
+    [
+      "lore/thread-of-the-refusers",
+      "reveals",
+      "lore/thread-of-the-erased",
+      600
+    ],
+    [
+      "civs/the-refusers",
+      "involved_in",
+      "events/18-turn",
+      600
+    ]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/thread-of-the-redactors",
+      "lore/thread-of-the-erased",
+      "lore/thread-of-the-refusers"
+    ],
+    "order": [
+      "lore/thread-of-the-redactors",
+      "lore/thread-of-the-erased",
+      "lore/thread-of-the-refusers"
+    ],
+    "order_relation": "reveals"
+  }
+}
