@@ -1,0 +1,847 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.45,
+      "facts": {
+        "role": "newcomer colonist-traders working a stall on the frontier exchange",
+        "stance": "outsiders the old houses neither trust nor fear yet"
+      }
+    },
+    {
+      "slug": "civs/the-vossan-syndics",
+      "type": "faction",
+      "tension": 0.6,
+      "facts": {
+        "alien_type": "living-broker-guild",
+        "trait": "consortium of merchant-clans who set prices, launder provenance, and fence the best forgeries",
+        "status": "living",
+        "agenda": "keep the contested commodity's true origin buried so their forged seals keep their value"
+      }
+    },
+    {
+      "slug": "civs/the-khariti-drift",
+      "type": "faction",
+      "tension": 0.6,
+      "facts": {
+        "alien_type": "living-nomad-traders",
+        "trait": "tramp-fleet caravans who carry curios between ports and remember which papers are fake",
+        "status": "living",
+        "agenda": "stay neutral, carry curios for all sides, and remember which papers are fake"
+      }
+    },
+    {
+      "slug": "civs/the-oseni-assayers",
+      "type": "faction",
+      "tension": 0.6,
+      "facts": {
+        "alien_type": "living-authenticator-caste",
+        "trait": "neutral appraisers who certify provenance for a fee — bribable, but the only ones who can read a true chain",
+        "status": "living",
+        "agenda": "guard the assayer monopoly; a dissident few would read a true chain for the right price"
+      }
+    },
+    {
+      "slug": "civs/the-melun-cartel",
+      "type": "faction",
+      "tension": 0.6,
+      "facts": {
+        "alien_type": "living-smuggler-cartel",
+        "trait": "ruthless runners who corner the contested commodity and salt the market with counterfeits",
+        "status": "living",
+        "agenda": "corner the contested commodity by force and salt the market with counterfeits"
+      }
+    },
+    {
+      "slug": "civs/the-rho-collectors",
+      "type": "faction",
+      "tension": 0.6,
+      "facts": {
+        "alien_type": "living-curio-hoarders",
+        "trait": "obsessive private buyers who pay anything for a relic with a clean story, real or not",
+        "status": "living",
+        "agenda": "own the one relic with an authentic story, whatever it costs whoever it ruins"
+      }
+    },
+    {
+      "slug": "locations/ghostlight-amber-seam",
+      "type": "location",
+      "tension": 0.44999999999999996,
+      "facts": {
+        "kind": "contested-commodity cache",
+        "resource": "ghostlight-amber",
+        "desc": "the commodity everyone wants a cut of — amber that hums with stored light; brokers swear it is mined, the truth is otherwise"
+      }
+    },
+    {
+      "slug": "locations/ledger-salt-seam",
+      "type": "location",
+      "tension": 0.39,
+      "facts": {
+        "kind": "trade-good seam",
+        "resource": "ledger-salt",
+        "desc": "the mundane salt that greases every certified sale; plentiful, taxed, never worth lying about"
+      }
+    },
+    {
+      "slug": "events/0-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 100,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-vossan-syndics taps ghostlight-amber"
+      }
+    },
+    {
+      "slug": "events/1-exploitation",
+      "type": "event",
+      "tension": 0.65,
+      "day": 100,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-vossan-syndics over-extracts ghostlight-amber"
+      }
+    },
+    {
+      "slug": "artifacts/the-vossan-syndics-contraband-relic-2",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "contraband-relic",
+        "maker": "the-vossan-syndics"
+      }
+    },
+    {
+      "slug": "artifacts/the-khariti-drift-broker-token-4",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "broker-token",
+        "maker": "the-khariti-drift"
+      }
+    },
+    {
+      "slug": "figures/the-oseni-assayers-seer-4",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-oseni-assayers"
+      }
+    },
+    {
+      "slug": "events/4-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 100,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-oseni-assayers"
+      }
+    },
+    {
+      "slug": "events/5-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 100,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-melun-cartel taps ghostlight-amber"
+      }
+    },
+    {
+      "slug": "events/6-exploitation",
+      "type": "event",
+      "tension": 0.65,
+      "day": 100,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-melun-cartel over-extracts ghostlight-amber"
+      }
+    },
+    {
+      "slug": "artifacts/the-rho-collectors-assayer-seal-9",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "assayer-seal",
+        "maker": "the-rho-collectors"
+      }
+    },
+    {
+      "slug": "figures/the-vossan-syndics-seer-9",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-vossan-syndics"
+      }
+    },
+    {
+      "slug": "events/11-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 200,
+      "facts": {
+        "kind": "war",
+        "title": "the-oseni-assayers wars on the-khariti-drift"
+      }
+    },
+    {
+      "slug": "artifacts/the-vossan-syndics-forged-provenance-scroll-26",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "forged-provenance-scroll",
+        "maker": "the-vossan-syndics"
+      }
+    },
+    {
+      "slug": "artifacts/the-melun-cartel-broker-token-30",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "broker-token",
+        "maker": "the-melun-cartel"
+      }
+    },
+    {
+      "slug": "colonists/marlena-okonkwo",
+      "type": "colonist",
+      "tension": 0.55,
+      "facts": {
+        "role": "human stall-broker turned provenance-tracer",
+        "desc": "bought a humming curio too cheap, now races to trace its real chain before the houses bury it"
+      }
+    },
+    {
+      "slug": "colonists/idris-vale",
+      "type": "colonist",
+      "tension": 0.5,
+      "facts": {
+        "role": "human fixer and Marlena's partner",
+        "desc": "works the faction web, calling in favors and dodging the Melun runs"
+      }
+    },
+    {
+      "slug": "arcs/the-provenance-deal",
+      "type": "arc",
+      "tension": 0.7,
+      "facts": {
+        "state": "OPEN",
+        "desc": "the live, unresolved hunt: authenticate the contested relic by stripping its forged provenance oldest to newest, down to a singular true origin — then decide whether to sell the truth, sell the silence, or set the maker free",
+        "stakes": "rival houses are closing in; whoever fixes the chain first sets the price of the whole commodity"
+      }
+    },
+    {
+      "slug": "locations/the-long-bazaar",
+      "type": "location",
+      "tension": 0.5,
+      "facts": {
+        "kind": "frontier exchange",
+        "desc": "the crowded ring-station market where every species hawks curios and no provenance goes unquestioned"
+      }
+    },
+    {
+      "slug": "beliefs/provenance-is-power",
+      "type": "belief",
+      "tension": 0.45,
+      "facts": {
+        "creed": "a relic is worth its story, not its substance; whoever owns the chain owns the price"
+      }
+    },
+    {
+      "slug": "beliefs/the-mined-myth",
+      "type": "belief",
+      "tension": 0.5,
+      "facts": {
+        "creed": "the market's shared lie that ghostlight-amber is dug from dead seams — the fiction that hides the living maker being harvested"
+      }
+    },
+    {
+      "slug": "artifacts/the-humming-curio",
+      "type": "artifact",
+      "tension": 0.7,
+      "facts": {
+        "archetype": "black-market-curio",
+        "desc": "the relic at the centre of the deal: a node of ghostlight-amber whose forged papers say 'mined' and whose hum says otherwise"
+      }
+    },
+    {
+      "slug": "lore/prov-true-origin-living-maker",
+      "type": "lore",
+      "tension": 0.6,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "claim": "the oldest contraband relic names who first put light into the amber",
+        "truth": "ghostlight-amber is not mined at all — it is grown by a quiet living maker-species the market pretends does not exist, so its forgeries keep their price",
+        "chain_position": "true-origin"
+      }
+    },
+    {
+      "slug": "lore/prov-oseni-authentic-transfer",
+      "type": "lore",
+      "tension": 0.6,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "claim": "an Oseni assayer-seal certifies the oldest authenticated hand-to-hand transfer",
+        "truth": "below every forgery sits one genuine provenance link",
+        "chain_position": "first-authentic"
+      }
+    },
+    {
+      "slug": "lore/prov-melun-smuggled-source",
+      "type": "lore",
+      "tension": 0.6,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "claim": "a Melun broker-token shows the commodity was smuggled from a hidden source, not extracted",
+        "truth": "the contested commodity is harvested, not mined — an earlier true link",
+        "chain_position": "second"
+      }
+    },
+    {
+      "slug": "lore/prov-khariti-carried-it",
+      "type": "lore",
+      "tension": 0.6,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "claim": "a Khariti broker-token records the caravans that actually moved the curio",
+        "truth": "strips the Syndic seal: the relic never passed through any mine",
+        "chain_position": "third"
+      }
+    },
+    {
+      "slug": "lore/prov-forged-mined-origin",
+      "type": "lore",
+      "tension": 0.6,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "claim": "the topmost Syndic provenance-scroll certifies a tidy mined origin",
+        "truth": "the newest and most convincing lie, painted over a smuggled, harvested past",
+        "chain_position": "newest-lie"
+      }
+    },
+    {
+      "slug": "colonists/dret-vossan",
+      "type": "colonist",
+      "tension": 0.6,
+      "facts": {
+        "role": "Syndic price-master",
+        "civ": "the-vossan-syndics",
+        "desc": "the broker who sold Marlena the curio too cheap and now wants it back before she traces it"
+      }
+    },
+    {
+      "slug": "colonists/captain-yer",
+      "type": "colonist",
+      "tension": 0.5,
+      "facts": {
+        "role": "Khariti caravan-master",
+        "civ": "the-khariti-drift",
+        "desc": "the drift-captain whose broker-token names every hand the curio passed through"
+      }
+    },
+    {
+      "slug": "colonists/sho-melun",
+      "type": "colonist",
+      "tension": 0.65,
+      "facts": {
+        "role": "Melun cartel quartermaster",
+        "civ": "the-melun-cartel",
+        "desc": "knows the commodity is smuggled, not mined, and would rather you vanished than said so aloud"
+      }
+    },
+    {
+      "slug": "locations/the-counterfeit-row",
+      "type": "location",
+      "tension": 0.5,
+      "facts": {
+        "kind": "forgers' lane",
+        "desc": "the bazaar's back row where a clean fake costs more than a dirty truth"
+      }
+    },
+    {
+      "slug": "locations/the-melun-runs",
+      "type": "location",
+      "tension": 0.6,
+      "facts": {
+        "kind": "smuggling lanes",
+        "desc": "the dark routes the Melun cartel uses to move the commodity past the Syndic tariff"
+      }
+    },
+    {
+      "slug": "lore/amber-hums-near-kin",
+      "type": "lore",
+      "tension": 0.5,
+      "facts": {
+        "subtype": "flavor",
+        "note": "ghostlight-amber hums louder near more of itself — a property no mined mineral has, and the first crack in the mined-myth"
+      }
+    },
+    {
+      "slug": "lore/syndic-tariff-control",
+      "type": "lore",
+      "tension": 0.4,
+      "facts": {
+        "subtype": "flavor",
+        "note": "the Vossan Syndics tax every certified sale; their wealth depends on provenance staying scarce and forgeable"
+      }
+    },
+    {
+      "slug": "lore/khariti-neutral-memory",
+      "type": "lore",
+      "tension": 0.4,
+      "facts": {
+        "subtype": "flavor",
+        "note": "the Khariti remember every chain they carried but sell the memory only as a last resort, to stay welcome in every port"
+      }
+    }
+  ],
+  "edges": [
+    [
+      "events/0-discovery",
+      "involves",
+      "civs/the-vossan-syndics"
+    ],
+    [
+      "civs/the-vossan-syndics",
+      "exploits",
+      "locations/ghostlight-amber-seam"
+    ],
+    [
+      "events/1-exploitation",
+      "involves",
+      "civs/the-vossan-syndics"
+    ],
+    [
+      "artifacts/the-vossan-syndics-contraband-relic-2",
+      "forged_by",
+      "civs/the-vossan-syndics"
+    ],
+    [
+      "events/1-exploitation",
+      "involves",
+      "artifacts/the-vossan-syndics-contraband-relic-2"
+    ],
+    [
+      "civs/the-khariti-drift",
+      "exploits",
+      "locations/ledger-salt-seam"
+    ],
+    [
+      "artifacts/the-khariti-drift-broker-token-4",
+      "forged_by",
+      "civs/the-khariti-drift"
+    ],
+    [
+      "events/4-schism",
+      "involves",
+      "civs/the-oseni-assayers"
+    ],
+    [
+      "events/4-schism",
+      "involves",
+      "figures/the-oseni-assayers-seer-4"
+    ],
+    [
+      "events/5-discovery",
+      "involves",
+      "civs/the-melun-cartel"
+    ],
+    [
+      "civs/the-melun-cartel",
+      "exploits",
+      "locations/ghostlight-amber-seam"
+    ],
+    [
+      "events/6-exploitation",
+      "involves",
+      "civs/the-melun-cartel"
+    ],
+    [
+      "civs/the-rho-collectors",
+      "exploits",
+      "locations/ledger-salt-seam"
+    ],
+    [
+      "artifacts/the-rho-collectors-assayer-seal-9",
+      "forged_by",
+      "civs/the-rho-collectors"
+    ],
+    [
+      "events/11-war",
+      "involves",
+      "civs/the-oseni-assayers"
+    ],
+    [
+      "civs/the-oseni-assayers",
+      "rival_of",
+      "civs/the-khariti-drift"
+    ],
+    [
+      "civs/the-melun-cartel",
+      "exploits",
+      "locations/ledger-salt-seam"
+    ],
+    [
+      "civs/the-rho-collectors",
+      "exploits",
+      "locations/ledger-salt-seam"
+    ],
+    [
+      "civs/the-vossan-syndics",
+      "exploits",
+      "locations/ledger-salt-seam"
+    ],
+    [
+      "civs/the-melun-cartel",
+      "exploits",
+      "locations/ghostlight-amber-seam"
+    ],
+    [
+      "civs/the-rho-collectors",
+      "exploits",
+      "locations/ghostlight-amber-seam"
+    ],
+    [
+      "civs/the-vossan-syndics",
+      "exploits",
+      "locations/ghostlight-amber-seam"
+    ],
+    [
+      "artifacts/the-vossan-syndics-forged-provenance-scroll-26",
+      "forged_by",
+      "civs/the-vossan-syndics"
+    ],
+    [
+      "civs/the-oseni-assayers",
+      "rival_of",
+      "civs/the-vossan-syndics"
+    ],
+    [
+      "civs/the-melun-cartel",
+      "exploits",
+      "locations/ghostlight-amber-seam"
+    ],
+    [
+      "artifacts/the-melun-cartel-broker-token-30",
+      "forged_by",
+      "civs/the-melun-cartel"
+    ],
+    [
+      "civs/the-rho-collectors",
+      "exploits",
+      "locations/ledger-salt-seam"
+    ],
+    [
+      "artifacts/the-vossan-syndics-forged-provenance-scroll-26",
+      "drops",
+      "lore/prov-forged-mined-origin"
+    ],
+    [
+      "artifacts/the-vossan-syndics-forged-provenance-scroll-26",
+      "drops",
+      "lore/prov-khariti-carried-it"
+    ],
+    [
+      "artifacts/the-vossan-syndics-forged-provenance-scroll-26",
+      "drops",
+      "lore/prov-melun-smuggled-source"
+    ],
+    [
+      "artifacts/the-khariti-drift-broker-token-4",
+      "drops",
+      "lore/prov-khariti-carried-it"
+    ],
+    [
+      "artifacts/the-khariti-drift-broker-token-4",
+      "drops",
+      "lore/prov-melun-smuggled-source"
+    ],
+    [
+      "artifacts/the-khariti-drift-broker-token-4",
+      "drops",
+      "lore/prov-forged-mined-origin"
+    ],
+    [
+      "artifacts/the-melun-cartel-broker-token-30",
+      "drops",
+      "lore/prov-melun-smuggled-source"
+    ],
+    [
+      "artifacts/the-melun-cartel-broker-token-30",
+      "drops",
+      "lore/prov-oseni-authentic-transfer"
+    ],
+    [
+      "artifacts/the-melun-cartel-broker-token-30",
+      "drops",
+      "lore/prov-khariti-carried-it"
+    ],
+    [
+      "artifacts/the-rho-collectors-assayer-seal-9",
+      "drops",
+      "lore/prov-oseni-authentic-transfer"
+    ],
+    [
+      "artifacts/the-rho-collectors-assayer-seal-9",
+      "drops",
+      "lore/prov-true-origin-living-maker"
+    ],
+    [
+      "artifacts/the-rho-collectors-assayer-seal-9",
+      "drops",
+      "lore/prov-melun-smuggled-source"
+    ],
+    [
+      "artifacts/the-vossan-syndics-contraband-relic-2",
+      "drops",
+      "lore/prov-true-origin-living-maker"
+    ],
+    [
+      "artifacts/the-vossan-syndics-contraband-relic-2",
+      "drops",
+      "lore/prov-oseni-authentic-transfer"
+    ],
+    [
+      "artifacts/the-vossan-syndics-contraband-relic-2",
+      "drops",
+      "lore/prov-forged-mined-origin"
+    ],
+    [
+      "artifacts/the-humming-curio",
+      "drops",
+      "lore/prov-forged-mined-origin"
+    ],
+    [
+      "artifacts/the-humming-curio",
+      "drops",
+      "lore/prov-true-origin-living-maker"
+    ],
+    [
+      "artifacts/the-humming-curio",
+      "drops",
+      "lore/prov-khariti-carried-it"
+    ],
+    [
+      "colonists/marlena-okonkwo",
+      "member_of",
+      "factions/humans"
+    ],
+    [
+      "colonists/idris-vale",
+      "member_of",
+      "factions/humans"
+    ],
+    [
+      "colonists/marlena-okonkwo",
+      "hunts",
+      "artifacts/the-humming-curio"
+    ],
+    [
+      "colonists/marlena-okonkwo",
+      "drives",
+      "arcs/the-provenance-deal"
+    ],
+    [
+      "colonists/idris-vale",
+      "works",
+      "arcs/the-provenance-deal"
+    ],
+    [
+      "factions/humans",
+      "trades_in",
+      "locations/the-long-bazaar"
+    ],
+    [
+      "arcs/the-provenance-deal",
+      "contests",
+      "locations/ghostlight-amber-seam"
+    ],
+    [
+      "civs/the-vossan-syndics",
+      "opposes",
+      "arcs/the-provenance-deal"
+    ],
+    [
+      "civs/the-rho-collectors",
+      "funds",
+      "arcs/the-provenance-deal"
+    ],
+    [
+      "civs/the-melun-cartel",
+      "threatens",
+      "colonists/marlena-okonkwo"
+    ],
+    [
+      "factions/humans",
+      "believes",
+      "beliefs/provenance-is-power"
+    ],
+    [
+      "civs/the-vossan-syndics",
+      "believes",
+      "beliefs/the-mined-myth"
+    ],
+    [
+      "artifacts/the-humming-curio",
+      "found_at",
+      "locations/the-long-bazaar"
+    ],
+    [
+      "artifacts/the-humming-curio",
+      "is_made_of",
+      "locations/ghostlight-amber-seam"
+    ],
+    [
+      "lore/prov-forged-mined-origin",
+      "reveals",
+      "civs/the-vossan-syndics"
+    ],
+    [
+      "lore/prov-khariti-carried-it",
+      "reveals",
+      "civs/the-khariti-drift"
+    ],
+    [
+      "lore/prov-melun-smuggled-source",
+      "reveals",
+      "civs/the-melun-cartel"
+    ],
+    [
+      "lore/prov-oseni-authentic-transfer",
+      "reveals",
+      "civs/the-oseni-assayers"
+    ],
+    [
+      "lore/prov-true-origin-living-maker",
+      "reveals",
+      "locations/ghostlight-amber-seam"
+    ],
+    [
+      "lore/prov-true-origin-living-maker",
+      "precedes",
+      "lore/prov-oseni-authentic-transfer"
+    ],
+    [
+      "lore/prov-oseni-authentic-transfer",
+      "precedes",
+      "lore/prov-melun-smuggled-source"
+    ],
+    [
+      "lore/prov-melun-smuggled-source",
+      "precedes",
+      "lore/prov-khariti-carried-it"
+    ],
+    [
+      "lore/prov-khariti-carried-it",
+      "precedes",
+      "lore/prov-forged-mined-origin"
+    ],
+    [
+      "colonists/dret-vossan",
+      "member_of",
+      "civs/the-vossan-syndics"
+    ],
+    [
+      "colonists/captain-yer",
+      "member_of",
+      "civs/the-khariti-drift"
+    ],
+    [
+      "colonists/sho-melun",
+      "member_of",
+      "civs/the-melun-cartel"
+    ],
+    [
+      "colonists/dret-vossan",
+      "sold_to",
+      "colonists/marlena-okonkwo"
+    ],
+    [
+      "colonists/dret-vossan",
+      "wants_back",
+      "artifacts/the-humming-curio"
+    ],
+    [
+      "colonists/captain-yer",
+      "keeps",
+      "artifacts/the-khariti-drift-broker-token-4"
+    ],
+    [
+      "colonists/sho-melun",
+      "keeps",
+      "artifacts/the-melun-cartel-broker-token-30"
+    ],
+    [
+      "colonists/sho-melun",
+      "threatens",
+      "colonists/idris-vale"
+    ],
+    [
+      "civs/the-vossan-syndics",
+      "controls",
+      "locations/the-counterfeit-row"
+    ],
+    [
+      "civs/the-melun-cartel",
+      "controls",
+      "locations/the-melun-runs"
+    ],
+    [
+      "artifacts/the-humming-curio",
+      "drops",
+      "lore/amber-hums-near-kin"
+    ],
+    [
+      "artifacts/the-vossan-syndics-forged-provenance-scroll-26",
+      "drops",
+      "lore/syndic-tariff-control"
+    ],
+    [
+      "artifacts/the-khariti-drift-broker-token-4",
+      "drops",
+      "lore/khariti-neutral-memory"
+    ],
+    [
+      "lore/amber-hums-near-kin",
+      "reveals",
+      "locations/ghostlight-amber-seam"
+    ],
+    [
+      "lore/syndic-tariff-control",
+      "reveals",
+      "civs/the-vossan-syndics"
+    ],
+    [
+      "lore/khariti-neutral-memory",
+      "reveals",
+      "civs/the-khariti-drift"
+    ]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/prov-true-origin-living-maker",
+      "lore/prov-oseni-authentic-transfer",
+      "lore/prov-melun-smuggled-source",
+      "lore/prov-khariti-carried-it",
+      "lore/prov-forged-mined-origin"
+    ],
+    "order": [
+      "lore/prov-true-origin-living-maker",
+      "lore/prov-oseni-authentic-transfer",
+      "lore/prov-melun-smuggled-source",
+      "lore/prov-khariti-carried-it",
+      "lore/prov-forged-mined-origin"
+    ],
+    "order_relation": "precedes"
+  }
+}

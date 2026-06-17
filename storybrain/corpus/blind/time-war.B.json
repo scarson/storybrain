@@ -1,0 +1,758 @@
+{
+  "_arm": "HYBRID — Stage B procgen skeleton (procgen.ts seed 808, time-war.templates.json) reframed by Stage C enrichment (meaning + precognitive mystery spine) and Stage D live layer (present-tense human colony, OPEN arc). The civs, the six forged artifacts, the seer-figures, and the causal event backbone are procgen-derived; the lore, the precedes-spine, and the colonists are the LLM enrichment.",
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.45,
+      "facts": {
+        "role": "late-arrivals",
+        "status": "extant",
+        "note": "Survey charter 'Palindrome', three years on-site, cataloguing relics that keep contradicting their own catalogue."
+      }
+    },
+    {
+      "slug": "civs/the-erevan",
+      "type": "faction",
+      "tension": 0.7,
+      "facts": {
+        "alien_type": "tense-aligned-xeno-belligerent",
+        "trait": "fights from a future toward its own past",
+        "status": "ambiguous",
+        "note": "The aggressor of the war. Whether the Erevan still exist depends on which of their finds you sequence last — they are alive-or-dead undecided, never witnessed to fall."
+      }
+    },
+    {
+      "slug": "civs/the-undated",
+      "type": "faction",
+      "tension": 0.72,
+      "facts": {
+        "alien_type": "acausal-xeno-counterforce",
+        "trait": "edits the war's earlier moves after they have already happened",
+        "status": "ambiguous",
+        "note": "The counterforce. Its weapon is retroactive: it un-makes the Erevan's opening gambits, so the war keeps re-starting from a different beginning."
+      }
+    },
+    {
+      "slug": "civs/the-oncewill",
+      "type": "faction",
+      "tension": 0.6,
+      "facts": {
+        "alien_type": "precognitive-xeno-witnesses",
+        "trait": "remembers outcomes that have not occurred yet",
+        "status": "ambiguous",
+        "note": "Neutral observers who archive the war's possible endings. Their relics leak precognition into whoever handles them."
+      }
+    },
+    {
+      "slug": "figures/the-undated-seer-1",
+      "type": "colonist",
+      "tension": 0.45,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-undated",
+        "note": "An Undated mind that broke ranks, foreseeing its own faction's edit erasing it."
+      }
+    },
+    {
+      "slug": "figures/the-undated-seer-27",
+      "type": "colonist",
+      "tension": 0.45,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-undated",
+        "note": "Carries a memory of a peace that the war has not yet reached."
+      }
+    },
+    {
+      "slug": "figures/the-oncewill-witness",
+      "type": "colonist",
+      "tension": 0.5,
+      "facts": {
+        "role": "Oncewill observer-remnant",
+        "civ": "the-oncewill",
+        "note": "A single still-listening witness, looping the war's last possible move on repeat."
+      }
+    },
+    {
+      "slug": "locations/the-tense-residue-field",
+      "type": "location",
+      "tension": 0.4,
+      "facts": {
+        "note": "A region where dropped finds still hum with leftover tense; objects there age backward by hours."
+      }
+    },
+    {
+      "slug": "locations/the-chronon-silt-flats",
+      "type": "location",
+      "tension": 0.4,
+      "facts": {
+        "note": "Sediment of spent moments. Walking it, the colonists report deja-vu that arrives BEFORE the event it copies."
+      }
+    },
+    {
+      "slug": "locations/colony-palindrome",
+      "type": "location",
+      "tension": 0.45,
+      "facts": {
+        "note": "Human survey base. Named for the suspicion — now confirmed — that the war reads the same forward and backward."
+      }
+    },
+    {
+      "slug": "locations/the-folded-amphitheater",
+      "type": "location",
+      "tension": 0.55,
+      "facts": {
+        "note": "Where the Oncewill archived endings. The same speech is carved on the walls in three contradictory tenses."
+      }
+    },
+    {
+      "slug": "powers/precognitive-leak",
+      "type": "power",
+      "tension": 0.55,
+      "facts": {
+        "kind": "psychic",
+        "register": "precognitive",
+        "note": "Subtle. Handling a relic leaks fragments of a future that may or may not still happen. Not control — bleed-through."
+      }
+    },
+    {
+      "slug": "artifacts/the-oncewill-relic-that-remembers-a-future-4",
+      "type": "artifact",
+      "tension": 0.7,
+      "facts": {
+        "archetype": "relic-that-remembers-a-future",
+        "maker": "the-oncewill",
+        "tier": "relic",
+        "note": "Hums with an ending that has not arrived. The first find — and the one whose meaning inverts last."
+      }
+    },
+    {
+      "slug": "artifacts/the-oncewill-effect-before-cause-10",
+      "type": "artifact",
+      "tension": 0.72,
+      "facts": {
+        "archetype": "effect-before-cause",
+        "maker": "the-oncewill",
+        "tier": "relic",
+        "note": "A scorch-mark from a weapon that has not been forged. The damage precedes the strike."
+      }
+    },
+    {
+      "slug": "artifacts/the-undated-relic-that-remembers-a-future-18",
+      "type": "artifact",
+      "tension": 0.75,
+      "facts": {
+        "archetype": "relic-that-remembers-a-future",
+        "maker": "the-undated",
+        "tier": "relic",
+        "note": "An Undated edit-stone; it remembers the version of the war it deleted."
+      }
+    },
+    {
+      "slug": "artifacts/the-oncewill-effect-before-cause-20",
+      "type": "artifact",
+      "tension": 0.7,
+      "facts": {
+        "archetype": "effect-before-cause",
+        "maker": "the-oncewill",
+        "tier": "relic",
+        "note": "A reply with no message. The Oncewill answered a question the colony has not asked yet."
+      }
+    },
+    {
+      "slug": "artifacts/the-undated-anachronism-24",
+      "type": "artifact",
+      "tension": 0.78,
+      "facts": {
+        "archetype": "anachronism",
+        "maker": "the-undated",
+        "tier": "relic",
+        "note": "An object older than the civilization that made it. Carbon-dates to before its own makers existed."
+      }
+    },
+    {
+      "slug": "artifacts/the-undated-anachronism-37",
+      "type": "artifact",
+      "tension": 0.82,
+      "facts": {
+        "archetype": "anachronism",
+        "maker": "the-undated",
+        "tier": "relic",
+        "note": "The last find — and once held, it teaches the holder that there was no 'last' at all."
+      }
+    },
+    {
+      "slug": "lore/the-war-runs-backward",
+      "type": "lore",
+      "tension": 0.7,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "seq": 1,
+        "text": "The Erevan opened the war by striking their enemy's PAST. The first blow landed before the first cause. Every artifact you find is a move in a game whose opening is still being rewritten."
+      }
+    },
+    {
+      "slug": "lore/the-undated-answered-by-editing",
+      "type": "lore",
+      "tension": 0.74,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "seq": 2,
+        "text": "The Undated did not counter-attack. They EDITED — reaching back to un-make the Erevan's opening, so the war restarted from a beginning neither side now remembers as first."
+      }
+    },
+    {
+      "slug": "lore/cause-and-effect-came-unpinned",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "seq": 3,
+        "text": "With both sides editing each other's pasts, effects detached from causes. Relics began to remember futures. The 'older-than-its-maker' anachronisms are debris from collisions of two timelines that each claim to be first."
+      }
+    },
+    {
+      "slug": "lore/the-oncewill-archived-the-endings",
+      "type": "lore",
+      "tension": 0.82,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "seq": 4,
+        "text": "The neutral Oncewill could not stop the war, so they recorded every way it could END and scattered the records as relics — which is why handling them leaks a future. The records contradict because the endings contradict."
+      }
+    },
+    {
+      "slug": "lore/the-war-has-not-finished-happening",
+      "type": "lore",
+      "tension": 0.9,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "seq": 5,
+        "text": "There is no fall to excavate. Sequenced correctly, the finds prove the war is STILL RESOLVING — and the last relic you place decides whether the Erevan ever existed. The colony's own digging is now a move in it."
+      }
+    },
+    {
+      "slug": "lore/oncewill-remember-forward",
+      "type": "lore",
+      "tension": 0.55,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The Oncewill experience memory in reverse: they recall outcomes vividly and causes faintly. To them the war already ended; they just disagree on how."
+      }
+    },
+    {
+      "slug": "lore/the-first-find-was-the-ending",
+      "type": "lore",
+      "tension": 0.7,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The relic the colony catalogued first is, by the true sequence, the war's LAST move. Everything 'discovered after' it actually came before. The catalogue is upside down."
+      }
+    },
+    {
+      "slug": "lore/effect-before-cause-is-evidence",
+      "type": "lore",
+      "tension": 0.65,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "A scorch with no weapon is not damage — it is a PROMISE. The strike is coming, from a direction the timeline has not chosen yet."
+      }
+    },
+    {
+      "slug": "lore/the-reply-fits-no-question",
+      "type": "lore",
+      "tension": 0.6,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The Oncewill's answer-relic only makes sense once a later find supplies the question. Two finds, read in the wrong order, each look like nonsense; in the right order they are a confession."
+      }
+    },
+    {
+      "slug": "lore/the-edit-stone-remembers-deletions",
+      "type": "lore",
+      "tension": 0.72,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The Undated edit-stone holds the war's deleted drafts. Each draft names a different aggressor — proof the question 'who started it' has no fixed answer."
+      }
+    },
+    {
+      "slug": "lore/anachronism-predates-its-maker",
+      "type": "lore",
+      "tension": 0.78,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "An object that predates the civilization that built it can only exist if that civilization reached back and seeded its own origin. The Undated may have authored the Erevan to have an enemy worth editing."
+      }
+    },
+    {
+      "slug": "lore/the-last-find-unmakes-order",
+      "type": "lore",
+      "tension": 0.85,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "Hold the final anachronism and the sequence you so carefully built collapses: there is no 'first,' only the relic you place last. The reconstruction is itself a move in the war."
+      }
+    },
+    {
+      "slug": "lore/precognition-is-bleed-not-gift",
+      "type": "lore",
+      "tension": 0.5,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The futures the relics leak are not prophecy. They are the war's unresolved branches pressing through the present, felt as a shiver before a thing you have not yet done."
+      }
+    },
+    {
+      "slug": "lore/the-colony-is-a-move",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "By sequencing the finds, the colonists are not solving the war — they are PLAYING it. Whichever ending they reconstruct first becomes the one the relics 'always' remembered."
+      }
+    },
+    {
+      "slug": "colonists/sequencer-imrie",
+      "type": "colonist",
+      "tension": 0.6,
+      "facts": {
+        "role": "relic-sequencer",
+        "skills": [
+          "chronometry",
+          "anachronism-dating",
+          "pattern-inversion"
+        ],
+        "note": "HERE NOW. Keeper of the colony catalogue — and the first to realize it is upside down. Her last sort placed the anachronism she holds at the war's end; she suspects it belongs at the start."
+      }
+    },
+    {
+      "slug": "colonists/director-vash",
+      "type": "colonist",
+      "tension": 0.65,
+      "facts": {
+        "role": "survey director",
+        "skills": [
+          "logistics",
+          "negotiation",
+          "risk-triage"
+        ],
+        "note": "HERE NOW. Wants the dig finished before the Undated 'edit' the colony's finds out from under them. Pushing the team to reach the last relic first."
+      }
+    },
+    {
+      "slug": "colonists/tessmer-the-deja-reader",
+      "type": "colonist",
+      "tension": 0.7,
+      "facts": {
+        "role": "junior surveyor",
+        "skills": [
+          "field-survey",
+          "psych-resilience"
+        ],
+        "note": "HERE NOW. The first colonist the precognitive leak has touched — she remembers conversations a day before they happen, and the Oncewill have started 'answering' her."
+      }
+    },
+    {
+      "slug": "events/present-0-the-catalogue-inverts",
+      "type": "event",
+      "tension": 0.75,
+      "day": 1100,
+      "facts": {
+        "kind": "discovery",
+        "title": "Imrie re-sorts the finds and the meaning of every earlier relic flips"
+      }
+    },
+    {
+      "slug": "events/present-1-vash-races-the-edit",
+      "type": "event",
+      "tension": 0.8,
+      "day": 1110,
+      "facts": {
+        "kind": "race",
+        "title": "Vash drives the team toward the last anachronism before the Undated can un-find it"
+      }
+    },
+    {
+      "slug": "arcs/the-last-relic",
+      "type": "arc",
+      "tension": 0.9,
+      "facts": {
+        "phase": "rising",
+        "next_beat_kind": "discovery",
+        "next_beat_faction": "civs/the-undated",
+        "status": "open",
+        "note": "OPEN. The colony is one relic from reconstructing the war's true sequence — but placing the last find is itself a move, and the Undated are reaching back to edit whichever ending the colonists choose. Whoever sequences last decides whether the Erevan ever existed."
+      }
+    }
+  ],
+  "edges": [
+    [
+      "civs/the-erevan",
+      "rival_of",
+      "civs/the-undated"
+    ],
+    [
+      "civs/the-undated",
+      "rival_of",
+      "civs/the-erevan"
+    ],
+    [
+      "civs/the-oncewill",
+      "located_at",
+      "locations/the-folded-amphitheater"
+    ],
+    [
+      "factions/humans",
+      "located_at",
+      "locations/colony-palindrome"
+    ],
+    [
+      "figures/the-undated-seer-1",
+      "owned_by",
+      "civs/the-undated"
+    ],
+    [
+      "figures/the-undated-seer-27",
+      "owned_by",
+      "civs/the-undated"
+    ],
+    [
+      "figures/the-oncewill-witness",
+      "owned_by",
+      "civs/the-oncewill"
+    ],
+    [
+      "lore/the-undated-answered-by-editing",
+      "precedes",
+      "lore/the-war-runs-backward"
+    ],
+    [
+      "lore/cause-and-effect-came-unpinned",
+      "precedes",
+      "lore/the-undated-answered-by-editing"
+    ],
+    [
+      "lore/the-oncewill-archived-the-endings",
+      "precedes",
+      "lore/cause-and-effect-came-unpinned"
+    ],
+    [
+      "lore/the-war-has-not-finished-happening",
+      "precedes",
+      "lore/the-oncewill-archived-the-endings"
+    ],
+    [
+      "artifacts/the-oncewill-relic-that-remembers-a-future-4",
+      "forged_by",
+      "civs/the-oncewill"
+    ],
+    [
+      "artifacts/the-oncewill-relic-that-remembers-a-future-4",
+      "drops",
+      "lore/the-war-runs-backward"
+    ],
+    [
+      "artifacts/the-oncewill-relic-that-remembers-a-future-4",
+      "drops",
+      "lore/oncewill-remember-forward"
+    ],
+    [
+      "artifacts/the-oncewill-relic-that-remembers-a-future-4",
+      "drops",
+      "lore/the-first-find-was-the-ending"
+    ],
+    [
+      "artifacts/the-oncewill-relic-that-remembers-a-future-4",
+      "grants",
+      "powers/precognitive-leak"
+    ],
+    [
+      "artifacts/the-oncewill-relic-that-remembers-a-future-4",
+      "hidden_at",
+      "locations/the-folded-amphitheater"
+    ],
+    [
+      "lore/oncewill-remember-forward",
+      "reveals",
+      "civs/the-oncewill"
+    ],
+    [
+      "lore/the-first-find-was-the-ending",
+      "reveals",
+      "civs/the-erevan"
+    ],
+    [
+      "artifacts/the-oncewill-effect-before-cause-10",
+      "forged_by",
+      "civs/the-oncewill"
+    ],
+    [
+      "artifacts/the-oncewill-effect-before-cause-10",
+      "drops",
+      "lore/the-oncewill-archived-the-endings"
+    ],
+    [
+      "artifacts/the-oncewill-effect-before-cause-10",
+      "drops",
+      "lore/effect-before-cause-is-evidence"
+    ],
+    [
+      "artifacts/the-oncewill-effect-before-cause-10",
+      "drops",
+      "lore/precognition-is-bleed-not-gift"
+    ],
+    [
+      "artifacts/the-oncewill-effect-before-cause-10",
+      "grants",
+      "powers/precognitive-leak"
+    ],
+    [
+      "artifacts/the-oncewill-effect-before-cause-10",
+      "hidden_at",
+      "locations/the-tense-residue-field"
+    ],
+    [
+      "lore/effect-before-cause-is-evidence",
+      "reveals",
+      "civs/the-erevan"
+    ],
+    [
+      "artifacts/the-undated-relic-that-remembers-a-future-18",
+      "forged_by",
+      "civs/the-undated"
+    ],
+    [
+      "artifacts/the-undated-relic-that-remembers-a-future-18",
+      "drops",
+      "lore/the-undated-answered-by-editing"
+    ],
+    [
+      "artifacts/the-undated-relic-that-remembers-a-future-18",
+      "drops",
+      "lore/the-edit-stone-remembers-deletions"
+    ],
+    [
+      "artifacts/the-undated-relic-that-remembers-a-future-18",
+      "drops",
+      "lore/the-reply-fits-no-question"
+    ],
+    [
+      "artifacts/the-undated-relic-that-remembers-a-future-18",
+      "hidden_at",
+      "locations/the-chronon-silt-flats"
+    ],
+    [
+      "lore/the-edit-stone-remembers-deletions",
+      "reveals",
+      "civs/the-undated"
+    ],
+    [
+      "artifacts/the-oncewill-effect-before-cause-20",
+      "forged_by",
+      "civs/the-oncewill"
+    ],
+    [
+      "artifacts/the-oncewill-effect-before-cause-20",
+      "drops",
+      "lore/the-reply-fits-no-question"
+    ],
+    [
+      "artifacts/the-oncewill-effect-before-cause-20",
+      "drops",
+      "lore/oncewill-remember-forward"
+    ],
+    [
+      "artifacts/the-oncewill-effect-before-cause-20",
+      "drops",
+      "lore/precognition-is-bleed-not-gift"
+    ],
+    [
+      "artifacts/the-oncewill-effect-before-cause-20",
+      "hidden_at",
+      "locations/the-folded-amphitheater"
+    ],
+    [
+      "lore/the-reply-fits-no-question",
+      "reveals",
+      "civs/the-oncewill"
+    ],
+    [
+      "artifacts/the-undated-anachronism-24",
+      "forged_by",
+      "civs/the-undated"
+    ],
+    [
+      "artifacts/the-undated-anachronism-24",
+      "drops",
+      "lore/cause-and-effect-came-unpinned"
+    ],
+    [
+      "artifacts/the-undated-anachronism-24",
+      "drops",
+      "lore/anachronism-predates-its-maker"
+    ],
+    [
+      "artifacts/the-undated-anachronism-24",
+      "drops",
+      "lore/the-edit-stone-remembers-deletions"
+    ],
+    [
+      "artifacts/the-undated-anachronism-24",
+      "hidden_at",
+      "locations/the-chronon-silt-flats"
+    ],
+    [
+      "lore/anachronism-predates-its-maker",
+      "reveals",
+      "civs/the-erevan"
+    ],
+    [
+      "artifacts/the-undated-anachronism-37",
+      "forged_by",
+      "civs/the-undated"
+    ],
+    [
+      "artifacts/the-undated-anachronism-37",
+      "drops",
+      "lore/the-war-has-not-finished-happening"
+    ],
+    [
+      "artifacts/the-undated-anachronism-37",
+      "drops",
+      "lore/the-last-find-unmakes-order"
+    ],
+    [
+      "artifacts/the-undated-anachronism-37",
+      "drops",
+      "lore/anachronism-predates-its-maker"
+    ],
+    [
+      "artifacts/the-undated-anachronism-37",
+      "hidden_at",
+      "locations/the-tense-residue-field"
+    ],
+    [
+      "lore/the-last-find-unmakes-order",
+      "reveals",
+      "civs/the-undated"
+    ],
+    [
+      "figures/the-oncewill-witness",
+      "owns",
+      "artifacts/the-oncewill-relic-that-remembers-a-future-4"
+    ],
+    [
+      "colonists/sequencer-imrie",
+      "owned_by",
+      "factions/humans"
+    ],
+    [
+      "colonists/sequencer-imrie",
+      "owns",
+      "artifacts/the-undated-anachronism-24"
+    ],
+    [
+      "colonists/sequencer-imrie",
+      "involved_in",
+      "arcs/the-last-relic"
+    ],
+    [
+      "colonists/director-vash",
+      "owned_by",
+      "factions/humans"
+    ],
+    [
+      "colonists/director-vash",
+      "rival_of",
+      "civs/the-undated"
+    ],
+    [
+      "colonists/tessmer-the-deja-reader",
+      "owned_by",
+      "factions/humans"
+    ],
+    [
+      "colonists/tessmer-the-deja-reader",
+      "sought_by",
+      "civs/the-oncewill"
+    ],
+    [
+      "events/present-0-the-catalogue-inverts",
+      "involves",
+      "colonists/sequencer-imrie"
+    ],
+    [
+      "events/present-0-the-catalogue-inverts",
+      "involves",
+      "artifacts/the-undated-anachronism-24"
+    ],
+    [
+      "events/present-1-vash-races-the-edit",
+      "involves",
+      "colonists/director-vash"
+    ],
+    [
+      "events/present-1-vash-races-the-edit",
+      "involves",
+      "artifacts/the-undated-anachronism-37"
+    ],
+    [
+      "arcs/the-last-relic",
+      "involves",
+      "artifacts/the-undated-anachronism-37"
+    ],
+    [
+      "arcs/the-last-relic",
+      "involves",
+      "lore/the-colony-is-a-move"
+    ],
+    [
+      "arcs/the-last-relic",
+      "involves",
+      "lore/the-war-has-not-finished-happening"
+    ],
+    [
+      "artifacts/the-undated-anachronism-37",
+      "sought_by",
+      "civs/the-undated"
+    ],
+    [
+      "artifacts/the-undated-anachronism-37",
+      "drops",
+      "lore/the-colony-is-a-move"
+    ]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/the-war-runs-backward",
+      "lore/the-undated-answered-by-editing",
+      "lore/cause-and-effect-came-unpinned",
+      "lore/the-oncewill-archived-the-endings",
+      "lore/the-war-has-not-finished-happening"
+    ],
+    "order": [
+      "lore/the-war-has-not-finished-happening",
+      "lore/the-oncewill-archived-the-endings",
+      "lore/cause-and-effect-came-unpinned",
+      "lore/the-undated-answered-by-editing",
+      "lore/the-war-runs-backward"
+    ],
+    "order_relation": "precedes"
+  }
+}

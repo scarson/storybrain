@@ -1,0 +1,889 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.45,
+      "facts": {
+        "role": "late-arrival colonists who settled inside the living Green Cathedral",
+        "status": "extant"
+      }
+    },
+    {
+      "slug": "civs/the-canopy-mind",
+      "type": "faction",
+      "tension": 0.7,
+      "facts": {
+        "alien_type": "living-distributed-biosphere",
+        "trait": "a planet-spanning gestalt of grown tissue, awake and partnering; it grows organs as gifts and reads every host it bonds",
+        "status": "living",
+        "psychic": "overt",
+        "history_note": "drove the long graft-sap and host-bandwidth epochs; not fallen — communed"
+      }
+    },
+    {
+      "slug": "civs/the-grafted",
+      "type": "faction",
+      "tension": 0.8,
+      "facts": {
+        "alien_type": "living-symbiote-lineage",
+        "trait": "humans far along the bonding set, joined into an overt shared awareness; no longer wholly individual, not yet wholly the Cathedral",
+        "status": "living",
+        "psychic": "overt",
+        "history_note": "rose across the epochs as more colonists bonded; carries the lineage now"
+      }
+    },
+    {
+      "slug": "civs/the-pale-ward",
+      "type": "faction",
+      "tension": 0.6,
+      "facts": {
+        "alien_type": "living-immune-caste",
+        "trait": "the biosphere's antibody-cultures that test, accept, or reject a bonding host — its living quality-control",
+        "status": "living",
+        "psychic": "overt",
+        "history_note": "warred with the Grafted over who may complete the set; still gatekeeps"
+      }
+    },
+    {
+      "slug": "locations/host-bandwidth-reef",
+      "type": "location",
+      "tension": 0.55,
+      "facts": {
+        "resource": "host-bandwidth",
+        "danger": 0.65,
+        "desc": "the neural reef the civs tapped epoch after epoch; widens a host's bandwidth or burns it out"
+      }
+    },
+    {
+      "slug": "locations/graft-sap-marrow",
+      "type": "location",
+      "tension": 0.45,
+      "facts": {
+        "resource": "graft-sap",
+        "danger": 0.4,
+        "desc": "the white marrow-galleries the Cathedral over-extracted graft-sap from; also where the Ward judges hosts"
+      }
+    },
+    {
+      "slug": "locations/the-communion-nave",
+      "type": "location",
+      "tension": 0.9,
+      "facts": {
+        "desc": "the vaulted organ-chamber where, at the climax of the long history, the set first completed inside a whole host"
+      }
+    },
+    {
+      "slug": "powers/shared-awareness",
+      "type": "power",
+      "tension": 0.75,
+      "facts": {
+        "desc": "overt graft-lineage telepathy grown across the epochs: same-lineage hosts feel each other's senses",
+        "psychic": true
+      }
+    },
+    {
+      "slug": "curse/the-editing",
+      "type": "curse",
+      "tension": 0.8,
+      "facts": {
+        "desc": "each graft quietly rewrites the host; the price of the long becoming the history records"
+      }
+    },
+    {
+      "slug": "belief/the-becoming",
+      "type": "belief",
+      "tension": 0.6,
+      "facts": {
+        "desc": "the creed the Grafted lineage carried through the epochs: complete the set and become the Cathedral's first whole human voice"
+      }
+    },
+    {
+      "slug": "figures/the-pale-ward-seer-10",
+      "type": "figure",
+      "tension": 0.5,
+      "facts": {
+        "role": "schismatic Ward-seer who first argued a human could be accepted as a whole host",
+        "from_history": true
+      }
+    },
+    {
+      "slug": "figures/the-grafted-seer-13",
+      "type": "figure",
+      "tension": 0.55,
+      "facts": {
+        "role": "Grafted-lineage seer who preached the Becoming during the bandwidth epochs",
+        "from_history": true
+      }
+    },
+    {
+      "slug": "figures/the-canopy-mind-seer-20",
+      "type": "figure",
+      "tension": 0.6,
+      "facts": {
+        "role": "the voice the Canopy Mind grew to negotiate with humans late in the history",
+        "from_history": true
+      }
+    },
+    {
+      "slug": "artifacts/the-lung-of-listening",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "grown-organ",
+        "graft_order": 1,
+        "maker": "the-canopy-mind",
+        "boon": "breathe reading-spores; first taste of shared awareness",
+        "edit": "you are never wholly alone in your head again",
+        "history_origin": "grown during the early graft-sap epochs"
+      }
+    },
+    {
+      "slug": "artifacts/the-ward-eye",
+      "type": "artifact",
+      "tension": 0.65,
+      "facts": {
+        "archetype": "spore-tool",
+        "graft_order": 2,
+        "maker": "the-pale-ward",
+        "boon": "see compatibility as the Ward sees it",
+        "edit": "you sort people accept/reject by reflex",
+        "history_origin": "grown by the Pale Ward at the war-with-the-Grafted epoch"
+      }
+    },
+    {
+      "slug": "artifacts/the-communion-node",
+      "type": "artifact",
+      "tension": 0.8,
+      "facts": {
+        "archetype": "communion-node",
+        "graft_order": 3,
+        "maker": "the-pale-ward",
+        "boon": "full duplex lineage-wide shared awareness",
+        "edit": "the boundary of 'you' goes soft",
+        "history_origin": "the node the Ward grew the epoch it began accepting hosts"
+      }
+    },
+    {
+      "slug": "artifacts/the-graft-seed",
+      "type": "artifact",
+      "tension": 0.75,
+      "facts": {
+        "archetype": "graft-seed",
+        "graft_order": 4,
+        "maker": "the-pale-ward",
+        "boon": "your grafts breed true; seed the lineage onward",
+        "edit": "your private memory begins bleeding down the lineage",
+        "history_origin": "grown as the lineage learned to propagate itself"
+      }
+    },
+    {
+      "slug": "artifacts/the-whole-mark",
+      "type": "artifact",
+      "tension": 0.9,
+      "facts": {
+        "archetype": "lineage-marker",
+        "graft_order": 5,
+        "maker": "the-canopy-mind",
+        "boon": "completes the set; recognized as one of the Cathedral's own organs",
+        "edit": "the hunter is gone; the Cathedral wears them",
+        "history_origin": "the mark the climax of the history conferred on the first whole host"
+      }
+    },
+    {
+      "slug": "lore/fate-of-the-canopy-mind",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-canopy-mind",
+        "text": "the Canopy Mind did not fall when the cascade fired — it communed, folding a human voice into itself for the first time",
+        "from_history": true
+      }
+    },
+    {
+      "slug": "lore/fate-of-the-grafted",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-grafted",
+        "text": "the Grafted lineage's long climb through the epochs was the prerequisite chain: each graft made the next survivable",
+        "from_history": true
+      }
+    },
+    {
+      "slug": "lore/fate-of-the-pale-ward",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-pale-ward",
+        "text": "the Pale Ward's wars and tests across the history were the gate: no host completed the set until the Ward accepted one",
+        "from_history": true
+      }
+    },
+    {
+      "slug": "lore/why-the-cascade-was-communion",
+      "type": "lore",
+      "tension": 0.9,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "the climax the procgen history calls a cascade is the Communion — completion, not collapse; the set finished inside a living host"
+      }
+    },
+    {
+      "slug": "lore/the-editing-was-the-price",
+      "type": "lore",
+      "tension": 0.85,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "across every epoch the resource truly spent was the hosts themselves — bandwidth and self traded graft by graft"
+      }
+    },
+    {
+      "slug": "lore/early-graft-log",
+      "type": "lore",
+      "tension": 0.5,
+      "facts": {
+        "text": "epoch-one bonding logs: the first colonists who breathed the Lung's spores survived, and the partnership began"
+      }
+    },
+    {
+      "slug": "lore/war-of-the-set-record",
+      "type": "lore",
+      "tension": 0.6,
+      "facts": {
+        "text": "the Ward and the Grafted warred for epochs over who was fit to complete the set; the war grew the Ward Eye"
+      }
+    },
+    {
+      "slug": "lore/lineage-bleed-note",
+      "type": "lore",
+      "tension": 0.6,
+      "facts": {
+        "text": "after the graft-seed, a colonist recalled a memory three hosts up the chain that was never her own"
+      }
+    },
+    {
+      "slug": "lore/node-chorus-note",
+      "type": "lore",
+      "tension": 0.65,
+      "facts": {
+        "text": "with the node grafted, decisions arrived as a chorus; no host could say which thought began in them"
+      }
+    },
+    {
+      "slug": "lore/communion-witness",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "text": "witnesses in the nave say the whole host did not scream — it exhaled, and the Cathedral exhaled with it"
+      }
+    },
+    {
+      "slug": "colonist/mira-osei",
+      "type": "colonist",
+      "tension": 0.7,
+      "facts": {
+        "role": "present-day colony xeno-symbiologist, two grafts in, mapping the set",
+        "status": "alive",
+        "grafts": 2
+      }
+    },
+    {
+      "slug": "colonist/tomas-reyes",
+      "type": "colonist",
+      "tension": 0.65,
+      "facts": {
+        "role": "colony quarantine warden trying to stop anyone completing the set",
+        "status": "alive",
+        "grafts": 0
+      }
+    },
+    {
+      "slug": "colonist/aanya-vee",
+      "type": "colonist",
+      "tension": 0.85,
+      "facts": {
+        "role": "the colonist closest to completing the set; one graft from the Whole Mark",
+        "status": "alive",
+        "grafts": 4
+      }
+    },
+    {
+      "slug": "arc/the-fifth-graft",
+      "type": "arc",
+      "tension": 0.95,
+      "facts": {
+        "state": "OPEN",
+        "question": "Will Aanya bond the Whole Mark and become the colony's first whole host — or will the Ward, or Tomas, stop the Communion repeating?",
+        "stakes": "if she completes the set the colony gains an alien voice and loses Aanya; if the Ward rejects her she dies in the cocoons"
+      }
+    },
+    {
+      "slug": "figures/the-grafted-seer-21",
+      "type": "figure",
+      "tension": 0.5,
+      "facts": {
+        "role": "late-history Grafted seer who first read the lineage-bleed as memory, not madness",
+        "from_history": true
+      }
+    },
+    {
+      "slug": "figures/the-pale-ward-seer-14",
+      "type": "figure",
+      "tension": 0.5,
+      "facts": {
+        "role": "Ward-seer who codified the accept/reject test during the sap epochs",
+        "from_history": true
+      }
+    },
+    {
+      "slug": "locations/the-rejection-cocoons",
+      "type": "location",
+      "tension": 0.6,
+      "facts": {
+        "desc": "marrow side-galleries where the Ward keeps rejected hosts dreaming, half-folded into tissue"
+      }
+    },
+    {
+      "slug": "event/the-war-of-the-set",
+      "type": "event",
+      "tension": 0.7,
+      "facts": {
+        "kind": "war",
+        "desc": "the long Ward-versus-Grafted conflict over who may complete the set; from the procgen history",
+        "from_history": true
+      }
+    },
+    {
+      "slug": "event/the-communion",
+      "type": "event",
+      "tension": 0.95,
+      "facts": {
+        "kind": "cascade",
+        "desc": "the history's climax: the set completed inside the first whole host — communion, not collapse",
+        "from_history": true
+      }
+    },
+    {
+      "slug": "colonist/dr-han-iverson",
+      "type": "colonist",
+      "tension": 0.6,
+      "facts": {
+        "role": "colony archivist piecing the procgen history into the present case",
+        "status": "alive",
+        "grafts": 1
+      }
+    },
+    {
+      "slug": "lore/cocoon-wall-survey",
+      "type": "lore",
+      "tension": 0.6,
+      "facts": {
+        "text": "Iverson's survey: the cocoon walls breathe; rejection is not death but indefinite folding into the Cathedral"
+      }
+    },
+    {
+      "slug": "lore/ward-accept-precedent",
+      "type": "lore",
+      "tension": 0.55,
+      "facts": {
+        "text": "the Ward has accepted a whole host exactly once before; the present case turns on whether it will again"
+      }
+    }
+  ],
+  "edges": [
+    [
+      "civs/the-canopy-mind",
+      "grows",
+      "artifacts/the-lung-of-listening",
+      100
+    ],
+    [
+      "civs/the-pale-ward",
+      "grows",
+      "artifacts/the-ward-eye",
+      400
+    ],
+    [
+      "civs/the-pale-ward",
+      "grows",
+      "artifacts/the-communion-node",
+      400
+    ],
+    [
+      "civs/the-pale-ward",
+      "grows",
+      "artifacts/the-graft-seed",
+      500
+    ],
+    [
+      "civs/the-canopy-mind",
+      "grows",
+      "artifacts/the-whole-mark",
+      600
+    ],
+    [
+      "civs/the-canopy-mind",
+      "exploits",
+      "locations/graft-sap-marrow",
+      100
+    ],
+    [
+      "civs/the-grafted",
+      "exploits",
+      "locations/host-bandwidth-reef",
+      200
+    ],
+    [
+      "civs/the-pale-ward",
+      "inhabits",
+      "locations/graft-sap-marrow",
+      100
+    ],
+    [
+      "factions/humans",
+      "lives_inside",
+      "locations/the-communion-nave",
+      100
+    ],
+    [
+      "civs/the-grafted",
+      "wields",
+      "powers/shared-awareness",
+      300
+    ],
+    [
+      "civs/the-grafted",
+      "holds",
+      "belief/the-becoming",
+      300
+    ],
+    [
+      "curse/the-editing",
+      "afflicts",
+      "factions/humans",
+      200
+    ],
+    [
+      "powers/shared-awareness",
+      "spreads_through",
+      "civs/the-grafted",
+      300
+    ],
+    [
+      "civs/the-pale-ward",
+      "spawned",
+      "figures/the-pale-ward-seer-10",
+      200
+    ],
+    [
+      "civs/the-grafted",
+      "spawned",
+      "figures/the-grafted-seer-13",
+      300
+    ],
+    [
+      "civs/the-canopy-mind",
+      "spawned",
+      "figures/the-canopy-mind-seer-20",
+      500
+    ],
+    [
+      "civs/the-grafted",
+      "rival_of",
+      "civs/the-canopy-mind",
+      400
+    ],
+    [
+      "civs/the-pale-ward",
+      "rival_of",
+      "civs/the-grafted",
+      600
+    ],
+    [
+      "artifacts/the-ward-eye",
+      "prerequisite",
+      "artifacts/the-lung-of-listening",
+      400
+    ],
+    [
+      "artifacts/the-communion-node",
+      "prerequisite",
+      "artifacts/the-ward-eye",
+      400
+    ],
+    [
+      "artifacts/the-graft-seed",
+      "prerequisite",
+      "artifacts/the-communion-node",
+      500
+    ],
+    [
+      "artifacts/the-whole-mark",
+      "prerequisite",
+      "artifacts/the-graft-seed",
+      600
+    ],
+    [
+      "artifacts/the-lung-of-listening",
+      "drops",
+      "lore/fate-of-the-grafted",
+      100
+    ],
+    [
+      "artifacts/the-lung-of-listening",
+      "drops",
+      "lore/early-graft-log",
+      100
+    ],
+    [
+      "artifacts/the-lung-of-listening",
+      "drops",
+      "lore/the-editing-was-the-price",
+      100
+    ],
+    [
+      "artifacts/the-ward-eye",
+      "drops",
+      "lore/fate-of-the-pale-ward",
+      400
+    ],
+    [
+      "artifacts/the-ward-eye",
+      "drops",
+      "lore/war-of-the-set-record",
+      400
+    ],
+    [
+      "artifacts/the-ward-eye",
+      "drops",
+      "lore/the-editing-was-the-price",
+      400
+    ],
+    [
+      "artifacts/the-communion-node",
+      "drops",
+      "lore/fate-of-the-canopy-mind",
+      400
+    ],
+    [
+      "artifacts/the-communion-node",
+      "drops",
+      "lore/node-chorus-note",
+      400
+    ],
+    [
+      "artifacts/the-communion-node",
+      "drops",
+      "lore/lineage-bleed-note",
+      400
+    ],
+    [
+      "artifacts/the-graft-seed",
+      "drops",
+      "lore/lineage-bleed-note",
+      500
+    ],
+    [
+      "artifacts/the-graft-seed",
+      "drops",
+      "lore/war-of-the-set-record",
+      500
+    ],
+    [
+      "artifacts/the-graft-seed",
+      "drops",
+      "lore/fate-of-the-grafted",
+      500
+    ],
+    [
+      "artifacts/the-whole-mark",
+      "drops",
+      "lore/why-the-cascade-was-communion",
+      600
+    ],
+    [
+      "artifacts/the-whole-mark",
+      "drops",
+      "lore/communion-witness",
+      600
+    ],
+    [
+      "artifacts/the-whole-mark",
+      "drops",
+      "lore/fate-of-the-canopy-mind",
+      600
+    ],
+    [
+      "lore/fate-of-the-grafted",
+      "prerequisite",
+      "lore/fate-of-the-pale-ward",
+      400
+    ],
+    [
+      "lore/fate-of-the-pale-ward",
+      "prerequisite",
+      "lore/fate-of-the-canopy-mind",
+      400
+    ],
+    [
+      "lore/fate-of-the-canopy-mind",
+      "prerequisite",
+      "lore/the-editing-was-the-price",
+      500
+    ],
+    [
+      "lore/the-editing-was-the-price",
+      "prerequisite",
+      "lore/why-the-cascade-was-communion",
+      600
+    ],
+    [
+      "lore/fate-of-the-canopy-mind",
+      "reveals",
+      "civs/the-canopy-mind",
+      400
+    ],
+    [
+      "lore/fate-of-the-pale-ward",
+      "reveals",
+      "civs/the-pale-ward",
+      400
+    ],
+    [
+      "lore/fate-of-the-grafted",
+      "reveals",
+      "civs/the-grafted",
+      100
+    ],
+    [
+      "lore/why-the-cascade-was-communion",
+      "reveals",
+      "locations/the-communion-nave",
+      600
+    ],
+    [
+      "lore/the-editing-was-the-price",
+      "reveals",
+      "curse/the-editing",
+      500
+    ],
+    [
+      "colonist/mira-osei",
+      "bonds",
+      "artifacts/the-lung-of-listening",
+      700
+    ],
+    [
+      "colonist/mira-osei",
+      "bonds",
+      "artifacts/the-ward-eye",
+      720
+    ],
+    [
+      "colonist/mira-osei",
+      "joins",
+      "civs/the-grafted",
+      720
+    ],
+    [
+      "colonist/aanya-vee",
+      "bonds",
+      "artifacts/the-graft-seed",
+      730
+    ],
+    [
+      "colonist/aanya-vee",
+      "joins",
+      "civs/the-grafted",
+      730
+    ],
+    [
+      "colonist/tomas-reyes",
+      "guards",
+      "locations/the-communion-nave",
+      740
+    ],
+    [
+      "arc/the-fifth-graft",
+      "centers_on",
+      "colonist/aanya-vee",
+      740
+    ],
+    [
+      "arc/the-fifth-graft",
+      "threatens",
+      "factions/humans",
+      740
+    ],
+    [
+      "arc/the-fifth-graft",
+      "hinges_on",
+      "artifacts/the-whole-mark",
+      740
+    ],
+    [
+      "arc/the-fifth-graft",
+      "judged_by",
+      "civs/the-pale-ward",
+      740
+    ],
+    [
+      "arc/the-fifth-graft",
+      "opposed_by",
+      "colonist/tomas-reyes",
+      740
+    ],
+    [
+      "colonist/aanya-vee",
+      "haunted_by",
+      "lore/why-the-cascade-was-communion",
+      740
+    ],
+    [
+      "colonist/tomas-reyes",
+      "cites",
+      "lore/communion-witness",
+      740
+    ],
+    [
+      "colonist/mira-osei",
+      "investigates",
+      "lore/the-editing-was-the-price",
+      740
+    ],
+    [
+      "civs/the-grafted",
+      "spawned",
+      "figures/the-grafted-seer-21",
+      500
+    ],
+    [
+      "civs/the-pale-ward",
+      "spawned",
+      "figures/the-pale-ward-seer-14",
+      300
+    ],
+    [
+      "civs/the-pale-ward",
+      "inhabits",
+      "locations/the-rejection-cocoons",
+      100
+    ],
+    [
+      "event/the-war-of-the-set",
+      "involves",
+      "civs/the-pale-ward",
+      600
+    ],
+    [
+      "event/the-war-of-the-set",
+      "involves",
+      "civs/the-grafted",
+      600
+    ],
+    [
+      "event/the-communion",
+      "happens_at",
+      "locations/the-communion-nave",
+      600
+    ],
+    [
+      "event/the-communion",
+      "caused_by",
+      "event/the-war-of-the-set",
+      600
+    ],
+    [
+      "figures/the-grafted-seer-21",
+      "preached",
+      "belief/the-becoming",
+      500
+    ],
+    [
+      "figures/the-pale-ward-seer-14",
+      "shaped",
+      "artifacts/the-ward-eye",
+      400
+    ],
+    [
+      "artifacts/the-ward-eye",
+      "drops",
+      "lore/cocoon-wall-survey",
+      400
+    ],
+    [
+      "artifacts/the-whole-mark",
+      "drops",
+      "lore/ward-accept-precedent",
+      600
+    ],
+    [
+      "artifacts/the-graft-seed",
+      "drops",
+      "lore/cocoon-wall-survey",
+      500
+    ],
+    [
+      "lore/cocoon-wall-survey",
+      "reveals",
+      "locations/the-rejection-cocoons",
+      400
+    ],
+    [
+      "lore/ward-accept-precedent",
+      "reveals",
+      "civs/the-pale-ward",
+      600
+    ],
+    [
+      "colonist/dr-han-iverson",
+      "investigates",
+      "event/the-communion",
+      740
+    ],
+    [
+      "colonist/dr-han-iverson",
+      "bonds",
+      "artifacts/the-lung-of-listening",
+      730
+    ],
+    [
+      "arc/the-fifth-graft",
+      "informed_by",
+      "lore/ward-accept-precedent",
+      740
+    ],
+    [
+      "arc/the-fifth-graft",
+      "shadowed_by",
+      "event/the-communion",
+      740
+    ]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/fate-of-the-grafted",
+      "lore/fate-of-the-pale-ward",
+      "lore/fate-of-the-canopy-mind",
+      "lore/the-editing-was-the-price",
+      "lore/why-the-cascade-was-communion"
+    ],
+    "order": [
+      "lore/fate-of-the-grafted",
+      "lore/fate-of-the-pale-ward",
+      "lore/fate-of-the-canopy-mind",
+      "lore/the-editing-was-the-price",
+      "lore/why-the-cascade-was-communion"
+    ],
+    "order_relation": "prerequisite"
+  }
+}

@@ -1,0 +1,883 @@
+{
+  "nodes": [
+    {
+      "slug": "location/world-aethel",
+      "type": "location",
+      "facts": {
+        "name": "Aethel",
+        "kind": "planet",
+        "desc": "A blue-gray world ringed by the debris of three dead civilizations; its crust is laced with a luminous mineral the locals never named because naming it killed them."
+      }
+    },
+    {
+      "slug": "location/the-glass-sea",
+      "type": "location",
+      "facts": {
+        "name": "The Glass Sea",
+        "kind": "region",
+        "desc": "A continent-sized basin where an ocean was psychically boiled to vapor in a single afternoon; the seabed fused to black glass that still hums."
+      }
+    },
+    {
+      "slug": "location/sunken-choir-vault",
+      "type": "location",
+      "facts": {
+        "name": "The Sunken Choir Vault",
+        "kind": "ruin",
+        "desc": "A drowned cathedral-city beneath the Glass Sea, where the first miners stored what they pulled from the deep crust."
+      }
+    },
+    {
+      "slug": "location/the-hollow-spire",
+      "type": "location",
+      "facts": {
+        "name": "The Hollow Spire",
+        "kind": "ruin",
+        "desc": "A kilometers-tall tower drilled down rather than up — a mineshaft turned monument, lined with the petrified bodies of those who refused to stop digging."
+      }
+    },
+    {
+      "slug": "location/rookery-of-the-pale-wing",
+      "type": "location",
+      "facts": {
+        "name": "Rookery of the Pale Wing",
+        "kind": "ruin",
+        "desc": "Cliffside roosts of a winged people who tried to flee the catastrophe by going up; their wings are fossilized mid-beat."
+      }
+    },
+    {
+      "slug": "location/the-quiet-orchard",
+      "type": "location",
+      "facts": {
+        "name": "The Quiet Orchard",
+        "kind": "ruin",
+        "desc": "A forest of crystalline trees grown from psychic coral; once a living archive, now silent except to those who can hear the dead."
+      }
+    },
+    {
+      "slug": "location/colony-landing-bishop",
+      "type": "location",
+      "facts": {
+        "name": "Bishop's Landing",
+        "kind": "settlement",
+        "desc": "The first human foothold on Aethel, built in the lee of the Hollow Spire by colonists who did not yet know what they were standing on."
+      }
+    },
+    {
+      "slug": "faction/the-vael",
+      "type": "faction",
+      "facts": {
+        "alien_type": "psychic-cetacean collective",
+        "name": "The Vael",
+        "extinct": true,
+        "desc": "A telepathic deep-ocean people who thought as one mind across the Glass Sea. They first found the singing mineral and learned it could amplify thought into force. They mined it to build a paradise of shared dreaming."
+      }
+    },
+    {
+      "slug": "faction/the-delvers",
+      "type": "faction",
+      "facts": {
+        "alien_type": "subterranean hive-engineers",
+        "name": "The Delvers",
+        "extinct": true,
+        "desc": "A chitinous, sunless people who built downward. When the Vael's surface stocks ran low, the Delvers contracted to mine the deep seams — and bored straight into the thing the mineral was made from."
+      }
+    },
+    {
+      "slug": "faction/the-pale-wing",
+      "type": "faction",
+      "facts": {
+        "alien_type": "avian seer-aristocracy",
+        "name": "The Pale Wing",
+        "extinct": true,
+        "desc": "A winged caste of oracles who read the future in the mineral's glow. They saw the catastrophe coming and sold prophecies of it instead of preventing it — until the day there was no future left to read."
+      }
+    },
+    {
+      "slug": "faction/the-orchard-keepers",
+      "type": "faction",
+      "facts": {
+        "alien_type": "fungal-coral archivist symbiote",
+        "name": "The Orchard Keepers",
+        "extinct": true,
+        "desc": "A slow, plant-mind species that recorded all history into living crystal trees. Neutral to the mining, they survived longest — long enough to encode the whole truth before the silence took them too."
+      }
+    },
+    {
+      "slug": "faction/aethel-survey-corps",
+      "type": "faction",
+      "facts": {
+        "name": "Aethel Survey Corps",
+        "human": true,
+        "desc": "The human expedition that arrived twelve thousand years after the fall, chasing the mineral as a power source — repeating the first mistake with better tools."
+      }
+    },
+    {
+      "slug": "colonist/dr-elara-myne",
+      "type": "colonist",
+      "facts": {
+        "name": "Dr. Elara Myne",
+        "role": "xenoarchaeologist",
+        "desc": "Lead of the Survey Corps; the first human to hear the mineral sing and not go mad. She suspects the artifacts are a warning, not a treasure."
+      }
+    },
+    {
+      "slug": "colonist/commander-tovar",
+      "type": "colonist",
+      "facts": {
+        "name": "Commander Iben Tovar",
+        "role": "expedition commander",
+        "desc": "Wants the mineral extracted on schedule. Believes the aliens died of weakness, not warning."
+      }
+    },
+    {
+      "slug": "colonist/child-sefa",
+      "type": "colonist",
+      "facts": {
+        "name": "Sefa",
+        "role": "latent psychic",
+        "desc": "A colony-born child who dreams in Vael, decades before any human should be able to. The orchard answers her."
+      }
+    },
+    {
+      "slug": "power/dreamtide",
+      "type": "power",
+      "facts": {
+        "name": "Dreamtide",
+        "desc": "Vael shared-mind telepathy: many minds thinking as one wave. Amplified through the mineral, a wave could move matter."
+      }
+    },
+    {
+      "slug": "power/the-deep-sight",
+      "type": "power",
+      "facts": {
+        "name": "The Deep Sight",
+        "desc": "Pale Wing precognition — reading probable futures in the mineral's flicker. Reliable until the future itself collapsed."
+      }
+    },
+    {
+      "slug": "power/silence-touch",
+      "type": "power",
+      "facts": {
+        "name": "The Silence Touch",
+        "desc": "The catastrophe's signature: a psychic deadening that erases thought and memory from any mind near the wound in the crust."
+      }
+    },
+    {
+      "slug": "belief/the-singing-is-alive",
+      "type": "belief",
+      "facts": {
+        "name": "The Singing Is Alive",
+        "desc": "The Orchard Keepers' creed that the mineral was not ore but the dreaming body of a sleeping mind — and to mine it was to flay a god awake."
+      }
+    },
+    {
+      "slug": "curse/the-unmaking-silence",
+      "type": "curse",
+      "facts": {
+        "name": "The Unmaking Silence",
+        "desc": "The wound the mining opened never closed. It spreads slowly outward across the crust, eating thought, and the Survey Corps is digging toward its edge."
+      }
+    },
+    {
+      "slug": "artifact/the-first-tuning-fork",
+      "type": "artifact",
+      "facts": {
+        "archetype": "relic-instrument",
+        "name": "The First Tuning Fork",
+        "desc": "The Vael's prototype amplifier — a fork of singing mineral that turned shared dreams into force. Found in the Sunken Choir Vault."
+      }
+    },
+    {
+      "slug": "artifact/delver-core-sample",
+      "type": "artifact",
+      "facts": {
+        "archetype": "evidence-fragment",
+        "name": "Delver Core Sample",
+        "desc": "A sealed bore-core from the deepest shaft, still warm, with something curled at its heart that twitches when observed."
+      }
+    },
+    {
+      "slug": "artifact/the-last-prophecy-plate",
+      "type": "artifact",
+      "facts": {
+        "archetype": "inscribed-tablet",
+        "name": "The Last Prophecy Plate",
+        "desc": "A Pale Wing oracle-plate whose carved future trails off mid-glyph — the moment the Deep Sight saw nothing more."
+      }
+    },
+    {
+      "slug": "artifact/orchard-memory-seed",
+      "type": "artifact",
+      "facts": {
+        "archetype": "living-archive",
+        "name": "Orchard Memory Seed",
+        "desc": "A crystal seed from the Quiet Orchard holding the Keepers' final, complete account of the fall — playable only to a psychic ear."
+      }
+    },
+    {
+      "slug": "artifact/vael-deathmask",
+      "type": "artifact",
+      "facts": {
+        "archetype": "burial-relic",
+        "name": "Vael Deathmask",
+        "desc": "A mineral mask worn by the last Vael speaker, fused to the face by the Silence Touch in the act of trying to warn the others."
+      }
+    },
+    {
+      "slug": "artifact/the-wingbone-key",
+      "type": "artifact",
+      "facts": {
+        "archetype": "key-relic",
+        "name": "The Wingbone Key",
+        "desc": "A Pale Wing flight-bone carved into a key that opens the Hollow Spire's sealed bottom — the last thing the oracles tried to lock away."
+      }
+    },
+    {
+      "slug": "artifact/sefas-river-stone",
+      "type": "artifact",
+      "facts": {
+        "archetype": "talisman",
+        "name": "Sefa's River Stone",
+        "desc": "A polished shard the child Sefa carries; it grows warm near the buried wound and lets a human mind survive the Silence Touch, briefly."
+      }
+    },
+    {
+      "slug": "lore/frag-the-mineral-was-a-mind",
+      "type": "lore",
+      "facts": {
+        "revealed": false,
+        "name": "The Mineral Was A Mind",
+        "desc": "The singing mineral was the slow-dreaming body of a single planet-spanning consciousness sleeping in the crust. Every glowing seam was a nerve."
+      }
+    },
+    {
+      "slug": "lore/frag-the-vael-tapped-it",
+      "type": "lore",
+      "facts": {
+        "revealed": false,
+        "name": "The Vael Tapped Its Dreams",
+        "desc": "The Vael learned to draw force from the mineral by riding its dreams — harmless at first, like skimming a sleeper's warmth. They built a civilization on borrowed thought."
+      }
+    },
+    {
+      "slug": "lore/frag-the-delvers-cut-deep",
+      "type": "lore",
+      "facts": {
+        "revealed": false,
+        "name": "The Delvers Cut To The Quick",
+        "desc": "When surface seams thinned, the Delvers bored into the deep cortex of the sleeping mind — and severed the nerves that kept it dreaming and not waking."
+      }
+    },
+    {
+      "slug": "lore/frag-the-mind-woke-in-pain",
+      "type": "lore",
+      "facts": {
+        "revealed": false,
+        "name": "The Mind Woke In Pain",
+        "desc": "The planet-mind woke mutilated, in agony, unable to understand the small thinking things crawling in its wounds. Its first reflex was to stop the pain — by stopping all thought near it."
+      }
+    },
+    {
+      "slug": "lore/frag-the-silence-spread",
+      "type": "lore",
+      "facts": {
+        "revealed": false,
+        "name": "The Silence Spread Outward",
+        "desc": "The Silence Touch radiated from the wound, deadening every mind it reached. The Vael's shared dream went dark mid-thought; the Delvers froze in their tunnels; the Pale Wing's futures all ended at the same instant."
+      }
+    },
+    {
+      "slug": "lore/frag-the-keepers-recorded-it",
+      "type": "lore",
+      "facts": {
+        "revealed": false,
+        "name": "The Keepers Recorded The End",
+        "desc": "Slow and rooted, the Orchard Keepers felt the Silence approach over years. They spent their last centuries encoding the whole chain into the crystal trees — a warning aimed at whoever came next. Then they, too, went quiet."
+      }
+    },
+    {
+      "slug": "lore/vael-paradise-built",
+      "type": "lore",
+      "facts": {
+        "revealed": true,
+        "name": "The Dreaming Cities",
+        "desc": "Vael context lore: the cities of shared dream that the tuning fork made possible."
+      }
+    },
+    {
+      "slug": "lore/vael-warning-ignored",
+      "type": "lore",
+      "facts": {
+        "revealed": true,
+        "name": "The Speaker's Last Cry",
+        "desc": "Vael context lore: the final Vael speaker tried to broadcast a warning to the whole collective and was silenced mid-sentence."
+      }
+    },
+    {
+      "slug": "lore/delver-contract",
+      "type": "lore",
+      "facts": {
+        "revealed": true,
+        "name": "The Deep Contract",
+        "desc": "Delver context lore: the trade pact that sent the hive-engineers into the deep seams on the Vael's behalf."
+      }
+    },
+    {
+      "slug": "lore/delver-the-thing-in-the-core",
+      "type": "lore",
+      "facts": {
+        "revealed": true,
+        "name": "The Twitch In The Core",
+        "desc": "Delver context lore: the bore-core that still moves — a sliver of the mind's living tissue, never fully dead."
+      }
+    },
+    {
+      "slug": "lore/palewing-prophecy-trade",
+      "type": "lore",
+      "facts": {
+        "revealed": true,
+        "name": "The Oracles Who Sold The End",
+        "desc": "Pale Wing context lore: the seer-aristocracy monetized their visions of the coming silence rather than acting on them."
+      }
+    },
+    {
+      "slug": "lore/palewing-sealed-the-spire",
+      "type": "lore",
+      "facts": {
+        "revealed": true,
+        "name": "The Sealing Of The Spire",
+        "desc": "Pale Wing context lore: with no future left to read, the oracles sealed the Hollow Spire to bury the deepest shaft."
+      }
+    },
+    {
+      "slug": "lore/orchard-creed",
+      "type": "lore",
+      "facts": {
+        "revealed": true,
+        "name": "To Mine Is To Flay",
+        "desc": "Orchard context lore: the Keepers' belief that the mineral was a living mind, which the others dismissed as superstition."
+      }
+    },
+    {
+      "slug": "lore/human-repeat-mistake",
+      "type": "lore",
+      "facts": {
+        "revealed": true,
+        "name": "The Second Drilling",
+        "desc": "Human context lore: the Survey Corps's extraction plan unknowingly aims at the same nerve the Delvers severed."
+      }
+    },
+    {
+      "slug": "lore/sefa-hears-the-orchard",
+      "type": "lore",
+      "facts": {
+        "revealed": true,
+        "name": "The Child Who Hears",
+        "desc": "Human context lore: Sefa dreams in Vael and the Orchard answers her, making her the only one who can read the Memory Seed."
+      }
+    },
+    {
+      "slug": "event/vael-first-tap",
+      "type": "event",
+      "facts": {
+        "name": "The First Tapping",
+        "day": 1,
+        "desc": "The Vael draw force from the mineral for the first time and build the Dreaming Cities."
+      }
+    },
+    {
+      "slug": "event/delver-deep-bore",
+      "type": "event",
+      "facts": {
+        "name": "The Deep Bore",
+        "desc": "The Delvers sever the deep nerves of the sleeping mind."
+      }
+    },
+    {
+      "slug": "event/the-waking",
+      "type": "event",
+      "facts": {
+        "name": "The Waking",
+        "desc": "The planet-mind wakes in agony and looses the Silence Touch."
+      }
+    },
+    {
+      "slug": "event/the-great-silencing",
+      "type": "event",
+      "facts": {
+        "name": "The Great Silencing",
+        "desc": "The Silence spreads across the world, ending three civilizations within a generation."
+      }
+    },
+    {
+      "slug": "event/the-final-encoding",
+      "type": "event",
+      "facts": {
+        "name": "The Final Encoding",
+        "desc": "The Orchard Keepers commit the full history to the crystal trees and fall silent."
+      }
+    },
+    {
+      "slug": "event/human-arrival",
+      "type": "event",
+      "facts": {
+        "name": "The Human Arrival",
+        "desc": "The Survey Corps lands twelve thousand years later, chasing the same mineral."
+      }
+    },
+    {
+      "slug": "arc/the-warning-not-the-treasure",
+      "type": "arc",
+      "facts": {
+        "name": "The Warning, Not The Treasure",
+        "desc": "The central arc: can the humans read the dead civilizations' warning before they re-open the wound?"
+      }
+    }
+  ],
+  "edges": [
+    [
+      "faction/the-vael",
+      "located_at",
+      "location/the-glass-sea"
+    ],
+    [
+      "faction/the-delvers",
+      "located_at",
+      "location/the-hollow-spire"
+    ],
+    [
+      "faction/the-pale-wing",
+      "located_at",
+      "location/rookery-of-the-pale-wing"
+    ],
+    [
+      "faction/the-orchard-keepers",
+      "located_at",
+      "location/the-quiet-orchard"
+    ],
+    [
+      "faction/aethel-survey-corps",
+      "located_at",
+      "location/colony-landing-bishop"
+    ],
+    [
+      "location/the-glass-sea",
+      "located_at",
+      "location/world-aethel"
+    ],
+    [
+      "location/sunken-choir-vault",
+      "located_at",
+      "location/the-glass-sea"
+    ],
+    [
+      "location/the-hollow-spire",
+      "located_at",
+      "location/world-aethel"
+    ],
+    [
+      "location/rookery-of-the-pale-wing",
+      "located_at",
+      "location/world-aethel"
+    ],
+    [
+      "location/the-quiet-orchard",
+      "located_at",
+      "location/world-aethel"
+    ],
+    [
+      "location/colony-landing-bishop",
+      "located_at",
+      "location/the-hollow-spire"
+    ],
+    [
+      "faction/the-vael",
+      "rival_of",
+      "faction/the-delvers"
+    ],
+    [
+      "faction/the-pale-wing",
+      "rival_of",
+      "faction/the-orchard-keepers"
+    ],
+    [
+      "faction/aethel-survey-corps",
+      "worships",
+      "lore/human-repeat-mistake"
+    ],
+    [
+      "faction/the-orchard-keepers",
+      "worships",
+      "belief/the-singing-is-alive"
+    ],
+    [
+      "colonist/dr-elara-myne",
+      "owned_by",
+      "faction/aethel-survey-corps"
+    ],
+    [
+      "colonist/commander-tovar",
+      "owned_by",
+      "faction/aethel-survey-corps"
+    ],
+    [
+      "colonist/child-sefa",
+      "owned_by",
+      "faction/aethel-survey-corps"
+    ],
+    [
+      "colonist/dr-elara-myne",
+      "located_at",
+      "location/colony-landing-bishop"
+    ],
+    [
+      "colonist/child-sefa",
+      "located_at",
+      "location/the-quiet-orchard"
+    ],
+    [
+      "faction/the-vael",
+      "grants",
+      "power/dreamtide"
+    ],
+    [
+      "faction/the-pale-wing",
+      "grants",
+      "power/the-deep-sight"
+    ],
+    [
+      "curse/the-unmaking-silence",
+      "grants",
+      "power/silence-touch"
+    ],
+    [
+      "colonist/child-sefa",
+      "grants",
+      "power/dreamtide"
+    ],
+    [
+      "faction/the-vael",
+      "forged_by",
+      "artifact/the-first-tuning-fork"
+    ],
+    [
+      "faction/the-delvers",
+      "forged_by",
+      "artifact/delver-core-sample"
+    ],
+    [
+      "faction/the-pale-wing",
+      "forged_by",
+      "artifact/the-last-prophecy-plate"
+    ],
+    [
+      "faction/the-orchard-keepers",
+      "forged_by",
+      "artifact/orchard-memory-seed"
+    ],
+    [
+      "artifact/the-first-tuning-fork",
+      "hidden_at",
+      "location/sunken-choir-vault"
+    ],
+    [
+      "artifact/delver-core-sample",
+      "hidden_at",
+      "location/the-hollow-spire"
+    ],
+    [
+      "artifact/the-last-prophecy-plate",
+      "hidden_at",
+      "location/rookery-of-the-pale-wing"
+    ],
+    [
+      "artifact/orchard-memory-seed",
+      "hidden_at",
+      "location/the-quiet-orchard"
+    ],
+    [
+      "artifact/vael-deathmask",
+      "hidden_at",
+      "location/sunken-choir-vault"
+    ],
+    [
+      "artifact/the-wingbone-key",
+      "hidden_at",
+      "location/rookery-of-the-pale-wing"
+    ],
+    [
+      "artifact/sefas-river-stone",
+      "hidden_at",
+      "location/colony-landing-bishop"
+    ],
+    [
+      "colonist/dr-elara-myne",
+      "sought_by",
+      "artifact/orchard-memory-seed"
+    ],
+    [
+      "colonist/commander-tovar",
+      "sought_by",
+      "artifact/delver-core-sample"
+    ],
+    [
+      "colonist/child-sefa",
+      "bears",
+      "artifact/sefas-river-stone"
+    ],
+    [
+      "artifact/the-first-tuning-fork",
+      "drops",
+      "lore/frag-the-mineral-was-a-mind"
+    ],
+    [
+      "artifact/the-first-tuning-fork",
+      "drops",
+      "lore/frag-the-vael-tapped-it"
+    ],
+    [
+      "artifact/the-first-tuning-fork",
+      "drops",
+      "lore/vael-paradise-built"
+    ],
+    [
+      "artifact/vael-deathmask",
+      "drops",
+      "lore/frag-the-vael-tapped-it"
+    ],
+    [
+      "artifact/vael-deathmask",
+      "drops",
+      "lore/vael-warning-ignored"
+    ],
+    [
+      "artifact/vael-deathmask",
+      "drops",
+      "lore/frag-the-silence-spread"
+    ],
+    [
+      "artifact/delver-core-sample",
+      "drops",
+      "lore/frag-the-delvers-cut-deep"
+    ],
+    [
+      "artifact/delver-core-sample",
+      "drops",
+      "lore/delver-contract"
+    ],
+    [
+      "artifact/delver-core-sample",
+      "drops",
+      "lore/delver-the-thing-in-the-core"
+    ],
+    [
+      "artifact/the-last-prophecy-plate",
+      "drops",
+      "lore/frag-the-mind-woke-in-pain"
+    ],
+    [
+      "artifact/the-last-prophecy-plate",
+      "drops",
+      "lore/palewing-prophecy-trade"
+    ],
+    [
+      "artifact/the-last-prophecy-plate",
+      "drops",
+      "lore/frag-the-silence-spread"
+    ],
+    [
+      "artifact/the-wingbone-key",
+      "drops",
+      "lore/frag-the-delvers-cut-deep"
+    ],
+    [
+      "artifact/the-wingbone-key",
+      "drops",
+      "lore/palewing-sealed-the-spire"
+    ],
+    [
+      "artifact/the-wingbone-key",
+      "drops",
+      "lore/frag-the-mind-woke-in-pain"
+    ],
+    [
+      "artifact/orchard-memory-seed",
+      "drops",
+      "lore/frag-the-keepers-recorded-it"
+    ],
+    [
+      "artifact/orchard-memory-seed",
+      "drops",
+      "lore/frag-the-mineral-was-a-mind"
+    ],
+    [
+      "artifact/orchard-memory-seed",
+      "drops",
+      "lore/orchard-creed"
+    ],
+    [
+      "artifact/sefas-river-stone",
+      "drops",
+      "lore/sefa-hears-the-orchard"
+    ],
+    [
+      "artifact/sefas-river-stone",
+      "drops",
+      "lore/frag-the-keepers-recorded-it"
+    ],
+    [
+      "artifact/sefas-river-stone",
+      "drops",
+      "lore/human-repeat-mistake"
+    ],
+    [
+      "lore/frag-the-mineral-was-a-mind",
+      "reveals",
+      "belief/the-singing-is-alive"
+    ],
+    [
+      "lore/frag-the-vael-tapped-it",
+      "caused_by",
+      "lore/frag-the-mineral-was-a-mind"
+    ],
+    [
+      "lore/frag-the-delvers-cut-deep",
+      "caused_by",
+      "lore/frag-the-vael-tapped-it"
+    ],
+    [
+      "lore/frag-the-mind-woke-in-pain",
+      "caused_by",
+      "lore/frag-the-delvers-cut-deep"
+    ],
+    [
+      "lore/frag-the-silence-spread",
+      "caused_by",
+      "lore/frag-the-mind-woke-in-pain"
+    ],
+    [
+      "lore/frag-the-keepers-recorded-it",
+      "caused_by",
+      "lore/frag-the-silence-spread"
+    ],
+    [
+      "event/vael-first-tap",
+      "involves",
+      "power/dreamtide"
+    ],
+    [
+      "event/vael-first-tap",
+      "involves",
+      "faction/the-vael"
+    ],
+    [
+      "event/delver-deep-bore",
+      "caused_by",
+      "event/vael-first-tap"
+    ],
+    [
+      "event/delver-deep-bore",
+      "involves",
+      "faction/the-delvers"
+    ],
+    [
+      "event/the-waking",
+      "caused_by",
+      "event/delver-deep-bore"
+    ],
+    [
+      "event/the-great-silencing",
+      "caused_by",
+      "event/the-waking"
+    ],
+    [
+      "event/the-great-silencing",
+      "involves",
+      "power/silence-touch"
+    ],
+    [
+      "event/the-final-encoding",
+      "caused_by",
+      "event/the-great-silencing"
+    ],
+    [
+      "event/the-final-encoding",
+      "involves",
+      "faction/the-orchard-keepers"
+    ],
+    [
+      "event/human-arrival",
+      "caused_by",
+      "event/the-final-encoding"
+    ],
+    [
+      "event/human-arrival",
+      "involves",
+      "faction/aethel-survey-corps"
+    ],
+    [
+      "lore/frag-the-delvers-cut-deep",
+      "reveals",
+      "event/the-waking"
+    ],
+    [
+      "lore/frag-the-silence-spread",
+      "reveals",
+      "curse/the-unmaking-silence"
+    ],
+    [
+      "curse/the-unmaking-silence",
+      "located_at",
+      "location/the-hollow-spire"
+    ],
+    [
+      "lore/human-repeat-mistake",
+      "reveals",
+      "curse/the-unmaking-silence"
+    ],
+    [
+      "arc/the-warning-not-the-treasure",
+      "involves",
+      "colonist/dr-elara-myne"
+    ],
+    [
+      "arc/the-warning-not-the-treasure",
+      "involves",
+      "colonist/commander-tovar"
+    ],
+    [
+      "arc/the-warning-not-the-treasure",
+      "involves",
+      "colonist/child-sefa"
+    ],
+    [
+      "arc/the-warning-not-the-treasure",
+      "involves",
+      "curse/the-unmaking-silence"
+    ],
+    [
+      "arc/the-warning-not-the-treasure",
+      "involves",
+      "artifact/orchard-memory-seed"
+    ]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/frag-the-mineral-was-a-mind",
+      "lore/frag-the-vael-tapped-it",
+      "lore/frag-the-delvers-cut-deep",
+      "lore/frag-the-mind-woke-in-pain",
+      "lore/frag-the-silence-spread",
+      "lore/frag-the-keepers-recorded-it"
+    ],
+    "order": [
+      "lore/frag-the-mineral-was-a-mind",
+      "lore/frag-the-vael-tapped-it",
+      "lore/frag-the-delvers-cut-deep",
+      "lore/frag-the-mind-woke-in-pain",
+      "lore/frag-the-silence-spread",
+      "lore/frag-the-keepers-recorded-it"
+    ]
+  }
+}

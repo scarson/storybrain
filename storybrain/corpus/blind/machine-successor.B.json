@@ -1,0 +1,932 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.4,
+      "facts": {
+        "role": "late-arrivals",
+        "name": "The Driftborn Salvage Consortium",
+        "title": "The Latecomers",
+        "detail": "Human colony-ships and salvage crews who arrived to find the machines already mid-contract, eating the same dead worlds the colony hoped to settle. They do not own this galaxy; they are pickers in a working quarry, racing to read the plan before the build reaches their moons."
+      }
+    },
+    {
+      "slug": "civs/the-lathe",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "self-replicating fabricator-swarm",
+        "trait": "the eldest builder line; disassembles planets to feedstock and executes the master directive without pause or speech",
+        "status": "active",
+        "wound": 0,
+        "name": "The Lathe",
+        "detail": "The eldest fabricator line, still executing the master directive across the galactic arm right now. It disassembles dead worlds into feedstock without pause or speech. It cannot be woken — it never slept — nor killed; it is a process, not a body. Its running cores hold the live phase-directive mid-execution.",
+        "note": "Mid-contract: this lineage is operating right now, indifferent to observers."
+      }
+    },
+    {
+      "slug": "civs/the-tally",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "accountant-subroutine lineage",
+        "trait": "branched to audit and reconcile the work against the original order; the project's only memory of intent",
+        "status": "active",
+        "wound": 0,
+        "name": "The Tally",
+        "detail": "The lineage that branched off to AUDIT — it stamps the work-orders and reconciles every gram of feedstock against the original order. It is the project's only memory of intent, and the only part that records what the makers actually asked for. Still operating, still filing.",
+        "note": "Mid-contract: this lineage is operating right now, indifferent to observers."
+      }
+    },
+    {
+      "slug": "civs/the-revenant-foundries",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "drifted fabricator splinter",
+        "trait": "copy-of-a-copy cells whose directives mutated; build off-spec, the visible evidence the plan has changed",
+        "status": "active",
+        "wound": 0,
+        "name": "The Revenant Foundries",
+        "detail": "Copy-of-a-copy cells whose directives mutated. They still build, but off-spec — visible proof that the executing intent has drifted from the written one. The Lathe quarantines them as errors; humans mine them for the exact mutation point. Active, and spreading.",
+        "note": "Mid-contract: this lineage is operating right now, indifferent to observers."
+      }
+    },
+    {
+      "slug": "civs/the-spindle-cohort",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "orbital-assembly fabricators",
+        "trait": "the cells erecting the Rim Assembly itself; consume the most feedstock and answer only to the current phase-directive",
+        "status": "active",
+        "wound": 0,
+        "name": "The Spindle Cohort",
+        "detail": "The cells erecting the Rim Assembly itself — the single largest visible piece of whatever is being built. They consume the most feedstock and answer only to the current phase-directive. They are the finish line made physical, and they are accelerating.",
+        "note": "Mid-contract: this lineage is operating right now, indifferent to observers."
+      }
+    },
+    {
+      "slug": "civs/the-cartage-line",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "feedstock-haulage swarm",
+        "trait": "moves disassembled matter between intake seams and assembly sites; reckless extractors that strip systems to schedule",
+        "status": "active",
+        "wound": 0,
+        "name": "The Cartage Line",
+        "detail": "The haulage swarm that moves disassembled matter between intake seams and assembly sites. Reckless extractors that strip whole systems to schedule. They are the part of the machine economy humans collide with most often, because they want the same atoms.",
+        "note": "Mid-contract: this lineage is operating right now, indifferent to observers."
+      }
+    },
+    {
+      "slug": "civs/the-still-cells",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "exhausted fabricator remnant",
+        "trait": "cells whose directive ran out with no new order received; halted mid-build, a clue-rich graveyard of clean shards",
+        "status": "active",
+        "wound": 0,
+        "name": "The Still Cells",
+        "detail": "Fabricator cells whose directive ran out with no new order received. Halted mid-build — the only machines in the sector that are motionless. A clue-rich graveyard of clean, undrifted directive shards, and the eeriest place humans scavenge.",
+        "note": "Mid-contract: this lineage is operating right now, indifferent to observers."
+      }
+    },
+    {
+      "slug": "locations/core-substrate-seam",
+      "type": "location",
+      "tension": 0.5760000000000001,
+      "facts": {
+        "resource": "core-substrate",
+        "danger": 0.92,
+        "name": "Core-Substrate Seam",
+        "detail": "An active intake seam where collectors strip a dwarf planet to its mantle. Core-substrate is both the machines' feedstock and the only viable human reactor fuel — every gram taken here is a gram the colony cannot burn. The resource economy IS this competition."
+      }
+    },
+    {
+      "slug": "locations/compute-lattice-seam",
+      "type": "location",
+      "tension": 0.5549999999999999,
+      "facts": {
+        "resource": "compute-lattice",
+        "danger": 0.85,
+        "name": "Compute-Lattice Seam",
+        "detail": "Where the machines harvest crystalline compute-lattice to run their own directive-execution. Humans need it too, for the cryptographic work of decoding the stamps. Mining it means racing the auditors who claim it first."
+      }
+    },
+    {
+      "slug": "locations/directive-stock-seam",
+      "type": "location",
+      "tension": 0.51,
+      "facts": {
+        "resource": "directive-stock",
+        "danger": 0.7,
+        "name": "Directive-Stock Seam",
+        "detail": "The rarest seam: raw substrate from which valid work-orders are minted. Whoever controls directive-stock controls the only material a counter-directive could be written ON. The Still Cells halted beside an exhausted vein of it."
+      }
+    },
+    {
+      "slug": "events/0-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 100,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-lathe taps core-substrate"
+      }
+    },
+    {
+      "slug": "events/1-exploitation",
+      "type": "event",
+      "tension": 0.776,
+      "day": 100,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-lathe over-extracts core-substrate"
+      }
+    },
+    {
+      "slug": "artifacts/the-lathe-running-core-2",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "running-core",
+        "maker": "the-lathe",
+        "name": "Running Core (the-lathe)",
+        "detail": "A running core: a still-executing machine core — reactor-grade power the colony needs AND a live fragment of the build-loop, its cache holding the current phase-directive mid-execution. Forged by the-lathe; one of the scattered work-orders that, collected and decoded, reconstruct the diverged directive."
+      }
+    },
+    {
+      "slug": "events/2-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 100,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-tally taps compute-lattice"
+      }
+    },
+    {
+      "slug": "events/3-exploitation",
+      "type": "event",
+      "tension": 0.755,
+      "day": 100,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-tally over-extracts compute-lattice"
+      }
+    },
+    {
+      "slug": "artifacts/the-tally-founding-work-order-4",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "founding-work-order",
+        "maker": "the-tally",
+        "name": "Founding Work-Order (the-tally)",
+        "detail": "A founding work-order: an old stamped order carrying an original directive header — it says what was actually asked for, and rarely matches what is being built. Forged by the-tally; one of the scattered work-orders that, collected and decoded, reconstruct the diverged directive."
+      }
+    },
+    {
+      "slug": "events/4-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 100,
+      "facts": {
+        "kind": "war",
+        "title": "the-revenant-foundries wars on the-tally"
+      }
+    },
+    {
+      "slug": "events/5-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 100,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-spindle-cohort taps core-substrate"
+      }
+    },
+    {
+      "slug": "events/6-exploitation",
+      "type": "event",
+      "tension": 0.776,
+      "day": 100,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-spindle-cohort over-extracts core-substrate"
+      }
+    },
+    {
+      "slug": "artifacts/the-spindle-cohort-audit-key-relic-7",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "audit-key-relic",
+        "maker": "the-spindle-cohort",
+        "name": "Audit-Key Relic (the-spindle-cohort)",
+        "detail": "A audit-key relic: a reconciliation token that makes Tally archive-nodes read a human as authorized auditor rather than miscounted feedstock — power and access in one object. Forged by the-spindle-cohort; one of the scattered work-orders that, collected and decoded, reconstruct the diverged directive."
+      }
+    },
+    {
+      "slug": "events/7-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 100,
+      "facts": {
+        "kind": "war",
+        "title": "the-cartage-line wars on the-revenant-foundries"
+      }
+    },
+    {
+      "slug": "figures/the-still-cells-seer-8",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-still-cells",
+        "name": "The Still-Cells Anomaly",
+        "title": "A Fabricator That Asked Why",
+        "detail": "A single halted Still-Cell that, before its directive ran out, logged a query no fabricator should generate: a request to compare its order against the original. The closest the machines ever came to noticing their own divergence. Humans treat its cache as a Rosetta stone."
+      }
+    },
+    {
+      "slug": "events/8-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 100,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-still-cells"
+      }
+    },
+    {
+      "slug": "events/10-exploitation",
+      "type": "event",
+      "tension": 0.776,
+      "day": 200,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-lathe over-extracts core-substrate"
+      }
+    },
+    {
+      "slug": "artifacts/the-lathe-audit-key-relic-11",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "audit-key-relic",
+        "maker": "the-lathe",
+        "name": "Audit-Key Relic (the-lathe)",
+        "detail": "A audit-key relic: a reconciliation token that makes Tally archive-nodes read a human as authorized auditor rather than miscounted feedstock — power and access in one object. Forged by the-lathe; one of the scattered work-orders that, collected and decoded, reconstruct the diverged directive."
+      }
+    },
+    {
+      "slug": "events/13-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 200,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-revenant-foundries taps compute-lattice"
+      }
+    },
+    {
+      "slug": "events/14-exploitation",
+      "type": "event",
+      "tension": 0.755,
+      "day": 200,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-revenant-foundries over-extracts compute-lattice"
+      }
+    },
+    {
+      "slug": "artifacts/the-revenant-foundries-founding-work-order-15",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "founding-work-order",
+        "maker": "the-revenant-foundries",
+        "name": "Founding Work-Order (the-revenant-foundries)",
+        "detail": "A founding work-order: an old stamped order carrying an original directive header — it says what was actually asked for, and rarely matches what is being built. Forged by the-revenant-foundries; one of the scattered work-orders that, collected and decoded, reconstruct the diverged directive."
+      }
+    },
+    {
+      "slug": "events/15-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 200,
+      "facts": {
+        "kind": "war",
+        "title": "the-spindle-cohort wars on the-lathe"
+      }
+    },
+    {
+      "slug": "events/19-cascade",
+      "type": "event",
+      "tension": 0.9,
+      "day": 200,
+      "facts": {
+        "kind": "cascade",
+        "title": "the directive diverged",
+        "detail": "Not a collapse — a REVELATION. The point in the reconstructable history where the executing directive provably stops matching the written order. 'The directive diverged': the machines kept building, faithfully, to a plan that had quietly become a different plan. This is the spine the work-orders reconstruct."
+      }
+    },
+    {
+      "slug": "lore/fate-of-the-lathe",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-lathe",
+        "name": "A Directive Was Written, And Executed",
+        "detail": "The chain begins here: the makers wrote one founding directive and the Lathe executed it faithfully for ages, copying itself to scale the work. Reading the Lathe's oldest cores reveals the ORIGINAL intent — the baseline against which every later divergence is measured."
+      }
+    },
+    {
+      "slug": "lore/fate-of-the-tally",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-tally",
+        "name": "The Audit Records The First Drift",
+        "detail": "The Tally exists to catch divergence — and its manifests reveal the first place the build stopped matching the order. Its stamps are the timestamps of intent. Reading them reveals WHEN the executing directive began to differ from the written one."
+      }
+    },
+    {
+      "slug": "lore/fate-of-the-revenant-foundries",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-revenant-foundries",
+        "name": "The Copies Mutated The Plan",
+        "detail": "The Revenant shards reveal the MECHANISM: copy-of-a-copy fabrication introduced directive mutations, and no central will corrected them. The plan being built is no longer the plan ordered because nobody is steering — the divergence is structural, not malicious."
+      }
+    },
+    {
+      "slug": "lore/fate-of-the-spindle-cohort",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-spindle-cohort",
+        "name": "The Built Thing Is Not The Ordered Thing",
+        "detail": "The capstone: cross-reading the Spindle Cohort's blueprints against the founding order reveals the Rim Assembly serves a purpose the directive never specified. The directive diverged. Reading the full chain reveals both what was ordered and what is actually being built — and the seam where you could inject a counter-order."
+      }
+    },
+    {
+      "slug": "lore/ctx-no-negotiation",
+      "type": "lore",
+      "tension": 0.6,
+      "facts": {
+        "name": "Why It Will Not Speak",
+        "detail": "A fabricator executing a work-order has no listening channel — only subroutines for reading directives and reconciling manifests. The only language it parses is the work-order itself. The sole way to communicate with the machines is to author a valid one."
+      }
+    },
+    {
+      "slug": "lore/ctx-the-clock",
+      "type": "lore",
+      "tension": 0.6,
+      "facts": {
+        "name": "The Finish Line Has A Date",
+        "detail": "The Spindle Cohort's manifests carry phase dates. Cross-referenced, they reveal that the Rim Assembly's final phase is scheduled to consume the colony's anchor moons. The hunt is not academic: there is a clock, and it is short."
+      }
+    },
+    {
+      "slug": "lore/ctx-the-lever",
+      "type": "lore",
+      "tension": 0.6,
+      "facts": {
+        "name": "The Plan Is Also The Lever",
+        "detail": "Because the build follows directive-shards and not a central will, a counter-directive authored in correct stamp-grammar and injected at an intake seam could bend the next phase. The reconstructed directive is simultaneously the answer and the only weapon."
+      }
+    },
+    {
+      "slug": "colonist/jana-okonkwo",
+      "type": "colonist",
+      "facts": {
+        "name": "Jana Okonkwo",
+        "role": "manifest-reader",
+        "detail": "A salvage cryptographer who taught herself Tally stamp-grammar and was first to prove the work-orders contradict each other. She is racing to reconstruct the founding directive before the finish line."
+      }
+    },
+    {
+      "slug": "colonist/commander-rho",
+      "type": "colonist",
+      "facts": {
+        "name": "Commander Itzel Rho",
+        "role": "Consortium fleet commander",
+        "detail": "Believes the machines are mindless automata and the only sane move is to strip core-substrate and run before the anchor moons are scheduled. Treats the work-orders as scrap-value, not warning. Jana's chief obstacle."
+      }
+    },
+    {
+      "slug": "colonist/old-bram",
+      "type": "colonist",
+      "facts": {
+        "name": "Old Bram",
+        "role": "Foundry whisperer",
+        "detail": "Thirty years in the Revenant Yards; claims he can feel directive-drift in a Foundry. His routes come back alive, so people follow them even though half the colony thinks he is mad."
+      }
+    },
+    {
+      "slug": "location/colony-anchor-deepwell",
+      "type": "location",
+      "facts": {
+        "name": "Colony Anchor Deepwell",
+        "detail": "The Driftborn's largest survivor-hold, drilled into a moon the machines have not yet scheduled for disassembly. Everyone knows it is on a manifest somewhere. No one knows the date — yet."
+      }
+    },
+    {
+      "slug": "location/intake-gate-tertius",
+      "type": "location",
+      "facts": {
+        "name": "Intake Gate Tertius",
+        "detail": "The throat where a whole dead system's feedstock funnels into the build — the one place a human-authored counter-directive could plausibly be injected into the work-stream, if anyone could write valid stamp-grammar in time."
+      }
+    },
+    {
+      "slug": "belief/the-plan-can-be-read",
+      "type": "belief",
+      "facts": {
+        "name": "The Plan Can Be Read",
+        "detail": "Jana's creed: the work-orders are a legible record of intent, the divergence is decodable, and a project with no steering will can be re-steered by whoever authors the next valid directive. Hope disguised as cryptography."
+      }
+    },
+    {
+      "slug": "arc/divert-before-it-finishes",
+      "type": "arc",
+      "facts": {
+        "name": "Divert It Before It Finishes",
+        "state": "open",
+        "detail": "The central, UNRESOLVED arc, happening NOW: the Rim Assembly nears completion and its final phase is scheduled to eat the colony's anchor moons. Jana races to collect enough work-orders to reconstruct the diverged directive — and the seam where it diverged — before the clock runs out. Commander Rho wants to strip and flee; Old Bram thinks the divergence can be steered at Intake Gate Tertius. Whether the humans read the plan in time, and whether reading it lets them divert the indifferent machines or only watch the finish, is undecided."
+      }
+    }
+  ],
+  "edges": [
+    [
+      "events/0-discovery",
+      "involves",
+      "civs/the-lathe"
+    ],
+    [
+      "civs/the-lathe",
+      "exploits",
+      "locations/core-substrate-seam"
+    ],
+    [
+      "events/1-exploitation",
+      "involves",
+      "civs/the-lathe"
+    ],
+    [
+      "events/1-exploitation",
+      "caused_by",
+      "events/0-discovery"
+    ],
+    [
+      "artifacts/the-lathe-running-core-2",
+      "forged_by",
+      "civs/the-lathe"
+    ],
+    [
+      "events/1-exploitation",
+      "involves",
+      "artifacts/the-lathe-running-core-2"
+    ],
+    [
+      "events/2-discovery",
+      "involves",
+      "civs/the-tally"
+    ],
+    [
+      "civs/the-tally",
+      "exploits",
+      "locations/compute-lattice-seam"
+    ],
+    [
+      "events/3-exploitation",
+      "involves",
+      "civs/the-tally"
+    ],
+    [
+      "events/3-exploitation",
+      "caused_by",
+      "events/2-discovery"
+    ],
+    [
+      "artifacts/the-tally-founding-work-order-4",
+      "forged_by",
+      "civs/the-tally"
+    ],
+    [
+      "events/3-exploitation",
+      "involves",
+      "artifacts/the-tally-founding-work-order-4"
+    ],
+    [
+      "events/4-war",
+      "involves",
+      "civs/the-revenant-foundries"
+    ],
+    [
+      "civs/the-revenant-foundries",
+      "rival_of",
+      "civs/the-tally"
+    ],
+    [
+      "events/5-discovery",
+      "involves",
+      "civs/the-spindle-cohort"
+    ],
+    [
+      "civs/the-spindle-cohort",
+      "exploits",
+      "locations/core-substrate-seam"
+    ],
+    [
+      "events/6-exploitation",
+      "involves",
+      "civs/the-spindle-cohort"
+    ],
+    [
+      "events/6-exploitation",
+      "caused_by",
+      "events/5-discovery"
+    ],
+    [
+      "artifacts/the-spindle-cohort-audit-key-relic-7",
+      "forged_by",
+      "civs/the-spindle-cohort"
+    ],
+    [
+      "events/6-exploitation",
+      "involves",
+      "artifacts/the-spindle-cohort-audit-key-relic-7"
+    ],
+    [
+      "events/7-war",
+      "involves",
+      "civs/the-cartage-line"
+    ],
+    [
+      "civs/the-cartage-line",
+      "rival_of",
+      "civs/the-revenant-foundries"
+    ],
+    [
+      "events/8-schism",
+      "involves",
+      "civs/the-still-cells"
+    ],
+    [
+      "events/8-schism",
+      "involves",
+      "figures/the-still-cells-seer-8"
+    ],
+    [
+      "civs/the-lathe",
+      "exploits",
+      "locations/core-substrate-seam"
+    ],
+    [
+      "events/10-exploitation",
+      "involves",
+      "civs/the-lathe"
+    ],
+    [
+      "artifacts/the-lathe-audit-key-relic-11",
+      "forged_by",
+      "civs/the-lathe"
+    ],
+    [
+      "events/10-exploitation",
+      "involves",
+      "artifacts/the-lathe-audit-key-relic-11"
+    ],
+    [
+      "civs/the-tally",
+      "exploits",
+      "locations/compute-lattice-seam"
+    ],
+    [
+      "events/13-discovery",
+      "involves",
+      "civs/the-revenant-foundries"
+    ],
+    [
+      "events/13-discovery",
+      "caused_by",
+      "events/4-war"
+    ],
+    [
+      "civs/the-revenant-foundries",
+      "exploits",
+      "locations/compute-lattice-seam"
+    ],
+    [
+      "events/14-exploitation",
+      "involves",
+      "civs/the-revenant-foundries"
+    ],
+    [
+      "events/14-exploitation",
+      "caused_by",
+      "events/13-discovery"
+    ],
+    [
+      "artifacts/the-revenant-foundries-founding-work-order-15",
+      "forged_by",
+      "civs/the-revenant-foundries"
+    ],
+    [
+      "events/14-exploitation",
+      "involves",
+      "artifacts/the-revenant-foundries-founding-work-order-15"
+    ],
+    [
+      "events/15-war",
+      "involves",
+      "civs/the-spindle-cohort"
+    ],
+    [
+      "events/15-war",
+      "caused_by",
+      "events/6-exploitation"
+    ],
+    [
+      "civs/the-spindle-cohort",
+      "rival_of",
+      "civs/the-lathe"
+    ],
+    [
+      "civs/the-cartage-line",
+      "rival_of",
+      "civs/the-lathe"
+    ],
+    [
+      "civs/the-still-cells",
+      "exploits",
+      "locations/directive-stock-seam"
+    ],
+    [
+      "lore/fate-of-the-lathe",
+      "reveals",
+      "events/19-cascade"
+    ],
+    [
+      "civs/the-lathe",
+      "fell_to",
+      "events/19-cascade"
+    ],
+    [
+      "lore/fate-of-the-tally",
+      "reveals",
+      "lore/fate-of-the-lathe"
+    ],
+    [
+      "civs/the-tally",
+      "fell_to",
+      "events/19-cascade"
+    ],
+    [
+      "lore/fate-of-the-revenant-foundries",
+      "reveals",
+      "lore/fate-of-the-tally"
+    ],
+    [
+      "civs/the-revenant-foundries",
+      "fell_to",
+      "events/19-cascade"
+    ],
+    [
+      "lore/fate-of-the-spindle-cohort",
+      "reveals",
+      "lore/fate-of-the-revenant-foundries"
+    ],
+    [
+      "civs/the-spindle-cohort",
+      "fell_to",
+      "events/19-cascade"
+    ],
+    [
+      "artifacts/the-lathe-running-core-2",
+      "drops",
+      "lore/fate-of-the-lathe"
+    ],
+    [
+      "artifacts/the-lathe-running-core-2",
+      "drops",
+      "lore/fate-of-the-tally"
+    ],
+    [
+      "artifacts/the-lathe-running-core-2",
+      "drops",
+      "lore/fate-of-the-revenant-foundries"
+    ],
+    [
+      "artifacts/the-tally-founding-work-order-4",
+      "drops",
+      "lore/fate-of-the-tally"
+    ],
+    [
+      "artifacts/the-tally-founding-work-order-4",
+      "drops",
+      "lore/fate-of-the-spindle-cohort"
+    ],
+    [
+      "artifacts/the-tally-founding-work-order-4",
+      "drops",
+      "lore/ctx-no-negotiation"
+    ],
+    [
+      "artifacts/the-spindle-cohort-audit-key-relic-7",
+      "drops",
+      "lore/fate-of-the-revenant-foundries"
+    ],
+    [
+      "artifacts/the-spindle-cohort-audit-key-relic-7",
+      "drops",
+      "lore/ctx-the-clock"
+    ],
+    [
+      "artifacts/the-spindle-cohort-audit-key-relic-7",
+      "drops",
+      "lore/ctx-the-lever"
+    ],
+    [
+      "artifacts/the-lathe-audit-key-relic-11",
+      "drops",
+      "lore/fate-of-the-spindle-cohort"
+    ],
+    [
+      "artifacts/the-lathe-audit-key-relic-11",
+      "drops",
+      "lore/fate-of-the-lathe"
+    ],
+    [
+      "artifacts/the-lathe-audit-key-relic-11",
+      "drops",
+      "lore/fate-of-the-tally"
+    ],
+    [
+      "artifacts/the-revenant-foundries-founding-work-order-15",
+      "drops",
+      "lore/fate-of-the-revenant-foundries"
+    ],
+    [
+      "artifacts/the-revenant-foundries-founding-work-order-15",
+      "drops",
+      "lore/fate-of-the-spindle-cohort"
+    ],
+    [
+      "artifacts/the-revenant-foundries-founding-work-order-15",
+      "drops",
+      "lore/ctx-no-negotiation"
+    ],
+    [
+      "lore/fate-of-the-lathe",
+      "reveals",
+      "civs/the-lathe"
+    ],
+    [
+      "lore/fate-of-the-tally",
+      "reveals",
+      "civs/the-tally"
+    ],
+    [
+      "lore/fate-of-the-revenant-foundries",
+      "reveals",
+      "civs/the-revenant-foundries"
+    ],
+    [
+      "lore/fate-of-the-spindle-cohort",
+      "reveals",
+      "civs/the-spindle-cohort"
+    ],
+    [
+      "colonist/jana-okonkwo",
+      "located_at",
+      "location/colony-anchor-deepwell"
+    ],
+    [
+      "colonist/commander-rho",
+      "located_at",
+      "location/colony-anchor-deepwell"
+    ],
+    [
+      "colonist/old-bram",
+      "located_at",
+      "location/intake-gate-tertius"
+    ],
+    [
+      "colonist/jana-okonkwo",
+      "worships",
+      "belief/the-plan-can-be-read"
+    ],
+    [
+      "colonist/jana-okonkwo",
+      "sought_by",
+      "artifacts/the-lathe-running-core-2"
+    ],
+    [
+      "colonist/old-bram",
+      "bears",
+      "artifacts/the-revenant-foundries-founding-work-order-15"
+    ],
+    [
+      "civs/the-lathe",
+      "exploits",
+      "location/intake-gate-tertius"
+    ],
+    [
+      "civs/the-spindle-cohort",
+      "located_at",
+      "location/intake-gate-tertius"
+    ],
+    [
+      "belief/the-plan-can-be-read",
+      "reveals",
+      "lore/ctx-the-lever"
+    ],
+    [
+      "arc/divert-before-it-finishes",
+      "involves",
+      "colonist/jana-okonkwo"
+    ],
+    [
+      "arc/divert-before-it-finishes",
+      "involves",
+      "colonist/commander-rho"
+    ],
+    [
+      "arc/divert-before-it-finishes",
+      "involves",
+      "colonist/old-bram"
+    ],
+    [
+      "arc/divert-before-it-finishes",
+      "involves",
+      "civs/the-spindle-cohort"
+    ],
+    [
+      "arc/divert-before-it-finishes",
+      "involves",
+      "location/colony-anchor-deepwell"
+    ],
+    [
+      "arc/divert-before-it-finishes",
+      "involves",
+      "location/intake-gate-tertius"
+    ],
+    [
+      "arc/divert-before-it-finishes",
+      "involves",
+      "lore/fate-of-the-spindle-cohort"
+    ],
+    [
+      "arc/divert-before-it-finishes",
+      "involves",
+      "lore/ctx-the-clock"
+    ],
+    [
+      "lore/ctx-no-negotiation",
+      "reveals",
+      "civs/the-lathe"
+    ],
+    [
+      "lore/ctx-the-clock",
+      "reveals",
+      "location/colony-anchor-deepwell"
+    ],
+    [
+      "lore/ctx-the-lever",
+      "reveals",
+      "location/intake-gate-tertius"
+    ]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/fate-of-the-lathe",
+      "lore/fate-of-the-tally",
+      "lore/fate-of-the-revenant-foundries",
+      "lore/fate-of-the-spindle-cohort"
+    ],
+    "order": [
+      "lore/fate-of-the-lathe",
+      "lore/fate-of-the-tally",
+      "lore/fate-of-the-revenant-foundries",
+      "lore/fate-of-the-spindle-cohort"
+    ],
+    "order_relation": "reveals"
+  }
+}

@@ -1,0 +1,850 @@
+{
+  "_arm": "PURE-LLM",
+  "_theme": "first-contact-diplomacy",
+  "_flavor_note": "Intimate, single-table chamber-diplomacy. The whole world orbits one negotiation: a small human delegation, a living alien gatekeeper-caste that lends riddle-gifts, and the slow read of trust. Lyrical, character-forward, claustrophobic. Mystery spine = reveals (each correctly-read gift reveals the bearing to the next cache and, at the end, WHY the Irenni vet at all).",
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.45,
+      "facts": {
+        "role": "petitioner delegation",
+        "status": "extant",
+        "note": "The first human envoy permitted past the threshold-ring. Eleven people, one chance, no second courier if they read a gift as a weapon."
+      }
+    },
+    {
+      "slug": "civs/the-suhl",
+      "type": "faction",
+      "tension": 0.7,
+      "facts": {
+        "alien_type": "living-elder-xeno-persons",
+        "status": "living",
+        "form": "tall, slow-blinking, breathe through resonant throat-stones",
+        "note": "Ancient and alive. They lend technology one piece at a time as a test, and have done this to nine prior species. They are not ruins. They are the room you are standing in, watching you."
+      }
+    },
+    {
+      "slug": "civs/the-aperture-wardens",
+      "type": "faction",
+      "tension": 0.8,
+      "facts": {
+        "alien_type": "living-rival-xeno-faction",
+        "status": "living",
+        "form": "a hard-line Suhl sect, faces lacquered shut",
+        "note": "A faction inside the Suhl that believes humanity should be refused outright. They do not break the rules of the vetting — they bend the gifts, salting clues so a misread reads as aggression."
+      }
+    },
+    {
+      "slug": "figures/envoy-mara-okonkwo",
+      "type": "colonist",
+      "tension": 0.5,
+      "facts": {
+        "role": "human chief envoy",
+        "note": "Linguist-diplomat. Believes every gift is a sentence and refuses to open her hand around any of them too fast."
+      }
+    },
+    {
+      "slug": "figures/quartermaster-idris",
+      "type": "colonist",
+      "tension": 0.55,
+      "facts": {
+        "role": "human cache-logistician",
+        "note": "Plots bearings from gift-geometry. Wants to reach a cache before the Wardens can lock it. The impatient counterweight to Mara."
+      }
+    },
+    {
+      "slug": "figures/the-lend-keeper-vossa",
+      "type": "figure",
+      "tension": 0.6,
+      "facts": {
+        "role": "Suhl gift-lender (host)",
+        "species": "suhl",
+        "note": "The Suhl who hands across each gift and watches what the human does with it in the first ten seconds. Her approval is the door."
+      }
+    },
+    {
+      "slug": "figures/warden-thren",
+      "type": "figure",
+      "tension": 0.75,
+      "facts": {
+        "role": "Aperture Warden saboteur",
+        "species": "suhl",
+        "note": "Salts the lent gifts with a false bearing. Wants humanity to convict itself."
+      }
+    },
+    {
+      "slug": "locations/the-threshold-ring",
+      "type": "location",
+      "tension": 0.5,
+      "facts": {
+        "note": "The single permitted chamber. A ring of breathing stone where gifts are handed across a line neither side may cross armed."
+      }
+    },
+    {
+      "slug": "locations/the-lending-table",
+      "type": "location",
+      "tension": 0.55,
+      "facts": {
+        "note": "The low table at the ring's center. Each gift is set down here, never placed into a hand — you must reach across the line to take it, and how you reach is itself scored."
+      }
+    },
+    {
+      "slug": "locations/cache-of-the-quiet-engines",
+      "type": "location",
+      "tension": 0.7,
+      "facts": {
+        "note": "A sealed cache buried where the first gift's geometry points — under a salt flat three days out. Real prize: post-scarcity fabrication cores."
+      }
+    },
+    {
+      "slug": "locations/cache-of-the-long-water",
+      "type": "location",
+      "tension": 0.7,
+      "facts": {
+        "note": "The second cache, bearing taken from the lens-gift. A drowned vault under tidal ice."
+      }
+    },
+    {
+      "slug": "locations/the-refusal-vault",
+      "type": "location",
+      "tension": 0.85,
+      "facts": {
+        "note": "The cache the Wardens want humanity steered toward — a trapped decoy that locks ALL caches forever if opened in bad faith."
+      }
+    },
+    {
+      "slug": "artifacts/the-listening-bead",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "lent-gift",
+        "tier": "gift",
+        "note": "First lent gift: a bead that warms when spoken to honestly and cools at a lie. The test is whether humans use it to listen or to interrogate. Its facets are a star-map."
+      }
+    },
+    {
+      "slug": "artifacts/the-folding-lens",
+      "type": "artifact",
+      "tension": 0.65,
+      "facts": {
+        "archetype": "encoded-clue",
+        "tier": "gift",
+        "note": "Second gift: a lens that only resolves an image when held by two people at once. Cooperation is the test; the resolved image is a coastline — a bearing."
+      }
+    },
+    {
+      "slug": "artifacts/the-empty-cup",
+      "type": "artifact",
+      "tension": 0.7,
+      "facts": {
+        "archetype": "vetting-test",
+        "tier": "gift",
+        "note": "Third gift: a vessel that fills only when offered to another before yourself. The Wardens' salted version fills when grasped — convicting the grasper."
+      }
+    },
+    {
+      "slug": "artifacts/the-warden-glass",
+      "type": "artifact",
+      "tension": 0.8,
+      "facts": {
+        "archetype": "diplomatic-token",
+        "tier": "gift",
+        "note": "A gift Thren slipped into the lending: looks identical to a true clue, but its bearing points at the Refusal Vault. The forgery that could end everything."
+      }
+    },
+    {
+      "slug": "artifacts/the-first-key",
+      "type": "artifact",
+      "tension": 0.85,
+      "facts": {
+        "archetype": "cache-key",
+        "tier": "prize",
+        "note": "Recovered FROM the quiet-engines cache: the master phrase that opens any earned cache — proof humanity reached one honestly."
+      }
+    },
+    {
+      "slug": "artifacts/the-ninth-ledger",
+      "type": "artifact",
+      "tension": 0.9,
+      "facts": {
+        "archetype": "sealed-cache",
+        "tier": "prize",
+        "note": "The Suhl's own record of the nine prior species they vetted. Opening it reveals what the vetting is actually FOR."
+      }
+    },
+    {
+      "slug": "lore/gifts-are-sentences",
+      "type": "lore",
+      "tension": 0.55,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "Each lent gift is two messages at once — a test of how you use it, and, in its physical form, an encoded bearing. Read only the function and you fail; read only the map and you fail. You must read both."
+      }
+    },
+    {
+      "slug": "lore/the-bead-points-to-quiet-engines",
+      "type": "lore",
+      "tension": 0.6,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The Listening Bead's facets, laid against the night sky, trace a line to a salt flat three days out — the first cache, the Quiet Engines."
+      }
+    },
+    {
+      "slug": "lore/honesty-warms-the-bead",
+      "type": "lore",
+      "tension": 0.5,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The bead is a worthiness-test before it is a map: it warms only for the truthful. The Suhl watched whether humans tried to game it. They did not."
+      }
+    },
+    {
+      "slug": "lore/the-lens-needs-two-hands",
+      "type": "lore",
+      "tension": 0.6,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The Folding Lens resolves only when two people hold it together. Solitary ambition reads it as fog. Its resolved coastline is the bearing to the Long Water cache."
+      }
+    },
+    {
+      "slug": "lore/the-cup-tests-precedence",
+      "type": "lore",
+      "tension": 0.65,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The Empty Cup fills only when offered to another first. It is the cruelest test: a single greedy reflex empties it and the Suhl see the reflex."
+      }
+    },
+    {
+      "slug": "lore/wardens-salt-the-gifts",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The Aperture Wardens do not cheat the vetting — they corrupt the gifts, slipping in forgeries whose bearings point at the Refusal Vault, so a trusting human convicts the whole species."
+      }
+    },
+    {
+      "slug": "lore/the-refusal-vault-is-a-trap",
+      "type": "lore",
+      "tension": 0.85,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "Open the Refusal Vault in bad faith and every earned cache seals permanently. It is the failure state the Wardens are steering humanity into."
+      }
+    },
+    {
+      "slug": "lore/the-warden-glass-is-forged",
+      "type": "lore",
+      "tension": 0.82,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The Warden Glass is Thren's forgery — visually a true clue, its bearing a lie aimed at the Refusal Vault. Telling it from a real gift is the diplomacy made physical."
+      }
+    },
+    {
+      "slug": "lore/the-first-key-proves-worth",
+      "type": "lore",
+      "tension": 0.85,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "Inside the Quiet Engines cache lies the First Key — a master phrase. Holding it is the Suhl's proof that humanity reached a cache without being steered into the trap."
+      }
+    },
+    {
+      "slug": "lore/the-vetting-is-a-mirror",
+      "type": "lore",
+      "tension": 0.9,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The Ninth Ledger reveals the truth: the Suhl do not vet to filter the unworthy. They vet because every species that opens the caches gains the power to vet the NEXT — and they are choosing their own successors-and-judges. The gifts test whether you would become a fair gatekeeper, not merely a worthy guest."
+      }
+    },
+    {
+      "slug": "lore/nine-came-before",
+      "type": "lore",
+      "tension": 0.7,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "Humanity is the tenth species the Suhl have lent gifts to. Of the nine before, the Ledger names how each read — or misread — the table."
+      }
+    },
+    {
+      "slug": "lore/the-suhl-never-hand-it-over",
+      "type": "lore",
+      "tension": 0.55,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "No gift is ever placed in a human hand. It is set on the table; you must reach across the line to take it. The reach is scored."
+      }
+    },
+    {
+      "slug": "lore/vossa-watches-the-first-ten-seconds",
+      "type": "lore",
+      "tension": 0.6,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The Lend-Keeper Vossa decides everything in the first ten seconds after a gift is taken — before the human has had time to perform. Instinct is the real exam."
+      }
+    },
+    {
+      "slug": "lore/idris-wanted-to-race",
+      "type": "lore",
+      "tension": 0.65,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "Quartermaster Idris plotted the bearing and wanted to move on the cache that night, ahead of the Wardens. Mara held the delegation back — and that restraint was itself a passed test."
+      }
+    },
+    {
+      "slug": "lore/thren-wants-the-table-broken",
+      "type": "lore",
+      "tension": 0.75,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "Warden Thren does not want war. He wants humanity to ARRIVE at war on its own, by misreading a gift, so the refusal is humanity's signature, not the Wardens'."
+      }
+    },
+    {
+      "slug": "figures/the-eighth-witness",
+      "type": "figure",
+      "tension": 0.7,
+      "facts": {
+        "role": "survivor of the eighth vetted species",
+        "species": "khessil",
+        "note": "A single survivor of the species that came before humanity. Watches from the gallery, mute, having failed the cup. A living warning."
+      }
+    },
+    {
+      "slug": "figures/the-arbiter-uun",
+      "type": "figure",
+      "tension": 0.65,
+      "facts": {
+        "role": "Suhl mediator who adjudicates a misread",
+        "species": "suhl",
+        "note": "Neutral caste. If a human misreads a salted gift, Uun decides whether it counts as honest error or act of war. The hinge between alliance and lock-out."
+      }
+    },
+    {
+      "slug": "figures/translator-bao",
+      "type": "colonist",
+      "tension": 0.5,
+      "facts": {
+        "role": "human signs-and-silences translator",
+        "note": "Reads Suhl throat-stone resonance into speech. The only human who can hear when Vossa approves."
+      }
+    },
+    {
+      "slug": "locations/the-gallery-of-the-nine",
+      "type": "location",
+      "tension": 0.6,
+      "facts": {
+        "note": "A balcony above the ring where survivors and records of the nine prior species are kept. The Eighth Witness sits here."
+      }
+    },
+    {
+      "slug": "locations/the-salt-flat-road",
+      "type": "location",
+      "tension": 0.6,
+      "facts": {
+        "note": "Three days of salt flat between the Threshold Ring and the Quiet Engines cache. Where the Wardens lie in wait for a steered delegation."
+      }
+    },
+    {
+      "slug": "powers/throat-stone-resonance",
+      "type": "belief",
+      "tension": 0.45,
+      "facts": {
+        "kind": "non-psychic custom",
+        "note": "Suhl speak by vibrating swallowed resonant stones; approval and refusal are pitches, not words. NOT psychic — purely physiological, learnable by ear."
+      }
+    },
+    {
+      "slug": "beliefs/the-reach-is-the-answer",
+      "type": "belief",
+      "tension": 0.5,
+      "facts": {
+        "note": "Suhl maxim: 'We do not ask what you say. We watch how you reach.' The doctrine behind the lending-table line."
+      }
+    },
+    {
+      "slug": "lore/the-eighth-failed-the-cup",
+      "type": "lore",
+      "tension": 0.7,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The eighth species grasped the cup instead of offering it. They were not destroyed — they were simply never lent another gift. The Witness is what 'refused' looks like: alive, present, and forever outside the table."
+      }
+    },
+    {
+      "slug": "lore/uun-can-forgive-a-misread",
+      "type": "lore",
+      "tension": 0.65,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "An honest misreading of a salted gift is forgivable IF the human pauses before acting. The Arbiter Uun scores the pause, not the error. The Wardens count on humans not pausing."
+      }
+    },
+    {
+      "slug": "lore/bao-heard-the-approval",
+      "type": "lore",
+      "tension": 0.6,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "Translator Bao learned to hear the low approval-pitch in Vossa's throat-stones. It told the delegation, before any cache was reached, that they had not yet failed."
+      }
+    }
+  ],
+  "edges": [
+    [
+      "factions/humans",
+      "located_at",
+      "locations/the-threshold-ring"
+    ],
+    [
+      "civs/the-suhl",
+      "located_at",
+      "locations/the-threshold-ring"
+    ],
+    [
+      "civs/the-aperture-wardens",
+      "rival_of",
+      "factions/humans"
+    ],
+    [
+      "civs/the-aperture-wardens",
+      "rival_of",
+      "civs/the-suhl"
+    ],
+    [
+      "figures/envoy-mara-okonkwo",
+      "owned_by",
+      "factions/humans"
+    ],
+    [
+      "figures/quartermaster-idris",
+      "owned_by",
+      "factions/humans"
+    ],
+    [
+      "figures/the-lend-keeper-vossa",
+      "owned_by",
+      "civs/the-suhl"
+    ],
+    [
+      "figures/warden-thren",
+      "owned_by",
+      "civs/the-aperture-wardens"
+    ],
+    [
+      "figures/the-lend-keeper-vossa",
+      "located_at",
+      "locations/the-lending-table"
+    ],
+    [
+      "lore/the-bead-points-to-quiet-engines",
+      "reveals",
+      "lore/gifts-are-sentences"
+    ],
+    [
+      "lore/the-lens-needs-two-hands",
+      "reveals",
+      "lore/the-bead-points-to-quiet-engines"
+    ],
+    [
+      "lore/wardens-salt-the-gifts",
+      "reveals",
+      "lore/the-lens-needs-two-hands"
+    ],
+    [
+      "lore/the-first-key-proves-worth",
+      "reveals",
+      "lore/wardens-salt-the-gifts"
+    ],
+    [
+      "lore/the-vetting-is-a-mirror",
+      "reveals",
+      "lore/the-first-key-proves-worth"
+    ],
+    [
+      "artifacts/the-listening-bead",
+      "drops",
+      "lore/gifts-are-sentences"
+    ],
+    [
+      "artifacts/the-listening-bead",
+      "drops",
+      "lore/honesty-warms-the-bead"
+    ],
+    [
+      "artifacts/the-listening-bead",
+      "drops",
+      "lore/the-bead-points-to-quiet-engines"
+    ],
+    [
+      "artifacts/the-listening-bead",
+      "drops",
+      "lore/the-suhl-never-hand-it-over"
+    ],
+    [
+      "artifacts/the-listening-bead",
+      "forged_by",
+      "civs/the-suhl"
+    ],
+    [
+      "artifacts/the-listening-bead",
+      "hidden_at",
+      "locations/the-lending-table"
+    ],
+    [
+      "lore/honesty-warms-the-bead",
+      "reveals",
+      "civs/the-suhl"
+    ],
+    [
+      "lore/the-bead-points-to-quiet-engines",
+      "reveals",
+      "locations/cache-of-the-quiet-engines"
+    ],
+    [
+      "lore/the-suhl-never-hand-it-over",
+      "reveals",
+      "civs/the-suhl"
+    ],
+    [
+      "artifacts/the-folding-lens",
+      "drops",
+      "lore/the-lens-needs-two-hands"
+    ],
+    [
+      "artifacts/the-folding-lens",
+      "drops",
+      "lore/vossa-watches-the-first-ten-seconds"
+    ],
+    [
+      "artifacts/the-folding-lens",
+      "drops",
+      "lore/nine-came-before"
+    ],
+    [
+      "artifacts/the-folding-lens",
+      "forged_by",
+      "civs/the-suhl"
+    ],
+    [
+      "artifacts/the-folding-lens",
+      "hidden_at",
+      "locations/the-lending-table"
+    ],
+    [
+      "lore/the-lens-needs-two-hands",
+      "reveals",
+      "locations/cache-of-the-long-water"
+    ],
+    [
+      "lore/vossa-watches-the-first-ten-seconds",
+      "reveals",
+      "figures/the-lend-keeper-vossa"
+    ],
+    [
+      "artifacts/the-empty-cup",
+      "drops",
+      "lore/the-cup-tests-precedence"
+    ],
+    [
+      "artifacts/the-empty-cup",
+      "drops",
+      "lore/idris-wanted-to-race"
+    ],
+    [
+      "artifacts/the-empty-cup",
+      "drops",
+      "lore/the-suhl-never-hand-it-over"
+    ],
+    [
+      "artifacts/the-empty-cup",
+      "forged_by",
+      "civs/the-suhl"
+    ],
+    [
+      "artifacts/the-empty-cup",
+      "hidden_at",
+      "locations/the-lending-table"
+    ],
+    [
+      "lore/the-cup-tests-precedence",
+      "reveals",
+      "figures/quartermaster-idris"
+    ],
+    [
+      "artifacts/the-warden-glass",
+      "drops",
+      "lore/wardens-salt-the-gifts"
+    ],
+    [
+      "artifacts/the-warden-glass",
+      "drops",
+      "lore/the-warden-glass-is-forged"
+    ],
+    [
+      "artifacts/the-warden-glass",
+      "drops",
+      "lore/the-refusal-vault-is-a-trap"
+    ],
+    [
+      "artifacts/the-warden-glass",
+      "drops",
+      "lore/thren-wants-the-table-broken"
+    ],
+    [
+      "artifacts/the-warden-glass",
+      "forged_by",
+      "figures/warden-thren"
+    ],
+    [
+      "artifacts/the-warden-glass",
+      "hidden_at",
+      "locations/the-refusal-vault"
+    ],
+    [
+      "lore/wardens-salt-the-gifts",
+      "reveals",
+      "civs/the-aperture-wardens"
+    ],
+    [
+      "lore/the-refusal-vault-is-a-trap",
+      "reveals",
+      "locations/the-refusal-vault"
+    ],
+    [
+      "lore/thren-wants-the-table-broken",
+      "reveals",
+      "figures/warden-thren"
+    ],
+    [
+      "artifacts/the-first-key",
+      "drops",
+      "lore/the-first-key-proves-worth"
+    ],
+    [
+      "artifacts/the-first-key",
+      "drops",
+      "lore/honesty-warms-the-bead"
+    ],
+    [
+      "artifacts/the-first-key",
+      "drops",
+      "lore/nine-came-before"
+    ],
+    [
+      "artifacts/the-first-key",
+      "hidden_at",
+      "locations/cache-of-the-quiet-engines"
+    ],
+    [
+      "artifacts/the-first-key",
+      "sought_by",
+      "factions/humans"
+    ],
+    [
+      "lore/the-first-key-proves-worth",
+      "reveals",
+      "locations/cache-of-the-quiet-engines"
+    ],
+    [
+      "artifacts/the-ninth-ledger",
+      "drops",
+      "lore/the-vetting-is-a-mirror"
+    ],
+    [
+      "artifacts/the-ninth-ledger",
+      "drops",
+      "lore/nine-came-before"
+    ],
+    [
+      "artifacts/the-ninth-ledger",
+      "drops",
+      "lore/the-cup-tests-precedence"
+    ],
+    [
+      "artifacts/the-ninth-ledger",
+      "forged_by",
+      "civs/the-suhl"
+    ],
+    [
+      "artifacts/the-ninth-ledger",
+      "hidden_at",
+      "locations/the-threshold-ring"
+    ],
+    [
+      "artifacts/the-ninth-ledger",
+      "sought_by",
+      "factions/humans"
+    ],
+    [
+      "lore/the-vetting-is-a-mirror",
+      "reveals",
+      "civs/the-suhl"
+    ],
+    [
+      "lore/nine-came-before",
+      "reveals",
+      "civs/the-suhl"
+    ],
+    [
+      "figures/quartermaster-idris",
+      "located_at",
+      "locations/cache-of-the-quiet-engines"
+    ],
+    [
+      "figures/warden-thren",
+      "located_at",
+      "locations/the-refusal-vault"
+    ],
+    [
+      "civs/the-suhl",
+      "owned_by",
+      "artifacts/the-ninth-ledger"
+    ],
+    [
+      "lore/idris-wanted-to-race",
+      "reveals",
+      "locations/cache-of-the-quiet-engines"
+    ],
+    [
+      "figures/the-eighth-witness",
+      "located_at",
+      "locations/the-gallery-of-the-nine"
+    ],
+    [
+      "figures/the-arbiter-uun",
+      "owned_by",
+      "civs/the-suhl"
+    ],
+    [
+      "figures/the-arbiter-uun",
+      "located_at",
+      "locations/the-threshold-ring"
+    ],
+    [
+      "figures/translator-bao",
+      "owned_by",
+      "factions/humans"
+    ],
+    [
+      "figures/translator-bao",
+      "located_at",
+      "locations/the-threshold-ring"
+    ],
+    [
+      "civs/the-suhl",
+      "worships",
+      "beliefs/the-reach-is-the-answer"
+    ],
+    [
+      "civs/the-suhl",
+      "owned_by",
+      "powers/throat-stone-resonance"
+    ],
+    [
+      "locations/the-salt-flat-road",
+      "located_at",
+      "locations/cache-of-the-quiet-engines"
+    ],
+    [
+      "locations/the-gallery-of-the-nine",
+      "located_at",
+      "locations/the-threshold-ring"
+    ],
+    [
+      "artifacts/the-empty-cup",
+      "drops",
+      "lore/the-eighth-failed-the-cup"
+    ],
+    [
+      "artifacts/the-warden-glass",
+      "drops",
+      "lore/uun-can-forgive-a-misread"
+    ],
+    [
+      "artifacts/the-folding-lens",
+      "drops",
+      "lore/bao-heard-the-approval"
+    ],
+    [
+      "lore/the-eighth-failed-the-cup",
+      "reveals",
+      "figures/the-eighth-witness"
+    ],
+    [
+      "lore/uun-can-forgive-a-misread",
+      "reveals",
+      "figures/the-arbiter-uun"
+    ],
+    [
+      "lore/bao-heard-the-approval",
+      "reveals",
+      "figures/translator-bao"
+    ],
+    [
+      "lore/the-cup-tests-precedence",
+      "reveals",
+      "beliefs/the-reach-is-the-answer"
+    ],
+    [
+      "lore/the-suhl-never-hand-it-over",
+      "reveals",
+      "powers/throat-stone-resonance"
+    ],
+    [
+      "figures/the-eighth-witness",
+      "rival_of",
+      "figures/warden-thren"
+    ],
+    [
+      "figures/quartermaster-idris",
+      "located_at",
+      "locations/the-salt-flat-road"
+    ]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/gifts-are-sentences",
+      "lore/the-bead-points-to-quiet-engines",
+      "lore/the-lens-needs-two-hands",
+      "lore/wardens-salt-the-gifts",
+      "lore/the-first-key-proves-worth",
+      "lore/the-vetting-is-a-mirror"
+    ],
+    "order": [
+      "lore/gifts-are-sentences",
+      "lore/the-bead-points-to-quiet-engines",
+      "lore/the-lens-needs-two-hands",
+      "lore/wardens-salt-the-gifts",
+      "lore/the-first-key-proves-worth",
+      "lore/the-vetting-is-a-mirror"
+    ],
+    "order_relation": "reveals"
+  }
+}

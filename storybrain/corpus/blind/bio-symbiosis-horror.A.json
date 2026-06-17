@@ -1,0 +1,784 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.45,
+      "facts": {
+        "role": "late-arrival colonists living inside the Green Cathedral",
+        "status": "extant"
+      }
+    },
+    {
+      "slug": "civs/the-canopy-mind",
+      "type": "faction",
+      "tension": 0.7,
+      "facts": {
+        "alien_type": "living-distributed-biosphere",
+        "trait": "a planet-spanning gestalt of grown tissue, awake and partnering; it grows organs as gifts and reads every host it bonds",
+        "status": "living",
+        "psychic": "overt"
+      }
+    },
+    {
+      "slug": "civs/the-grafted",
+      "type": "faction",
+      "tension": 0.75,
+      "facts": {
+        "alien_type": "living-symbiote-lineage",
+        "trait": "humans far along the bonding set, joined into an overt shared awareness; no longer wholly individual, not yet wholly the Cathedral",
+        "status": "living",
+        "psychic": "overt"
+      }
+    },
+    {
+      "slug": "civs/the-pale-ward",
+      "type": "faction",
+      "tension": 0.6,
+      "facts": {
+        "alien_type": "living-immune-caste",
+        "trait": "the biosphere's antibody-cultures that test, accept, or reject a bonding host — its living quality-control",
+        "status": "living",
+        "psychic": "overt"
+      }
+    },
+    {
+      "slug": "locations/the-spore-cathedral",
+      "type": "location",
+      "tension": 0.6,
+      "facts": {
+        "desc": "the vaulted living nave where the biosphere grows its largest organs; air thick with reading-spores"
+      }
+    },
+    {
+      "slug": "locations/the-pale-marrow",
+      "type": "location",
+      "tension": 0.55,
+      "facts": {
+        "desc": "white antibody-galleries where the Pale Ward judges every would-be host",
+        "resource": "graft-sap"
+      }
+    },
+    {
+      "slug": "locations/the-bandwidth-reef",
+      "type": "location",
+      "tension": 0.5,
+      "facts": {
+        "desc": "coral-like neural reef where host-bandwidth is widened or burned out",
+        "resource": "host-bandwidth"
+      }
+    },
+    {
+      "slug": "powers/shared-awareness",
+      "type": "power",
+      "tension": 0.7,
+      "facts": {
+        "desc": "the overt graft-lineage telepathy: anyone carrying the same lineage-marker feels the others' senses bleed in",
+        "psychic": true
+      }
+    },
+    {
+      "slug": "belief/the-becoming",
+      "type": "belief",
+      "tension": 0.6,
+      "facts": {
+        "desc": "the Grafted creed: to complete the set is not to die but to become the Cathedral's first whole human voice"
+      }
+    },
+    {
+      "slug": "curse/the-editing",
+      "type": "curse",
+      "tension": 0.8,
+      "facts": {
+        "desc": "each graft quietly rewrites the host — memory, appetite, loyalty — trading a human limit for an alien capacity"
+      }
+    },
+    {
+      "slug": "figures/dr-ines-vallar",
+      "type": "figure",
+      "tension": 0.6,
+      "facts": {
+        "role": "first colonist xeno-symbiologist to bond a relic and survive the Ward"
+      }
+    },
+    {
+      "slug": "figures/the-first-whole-host",
+      "type": "figure",
+      "tension": 0.9,
+      "facts": {
+        "role": "the host in whom the full set first assembled — half person, half Cathedral voice"
+      }
+    },
+    {
+      "slug": "artifacts/the-lung-of-listening",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "grown-organ",
+        "graft_order": 1,
+        "boon": "breathe the reading-spores without madness; first taste of shared awareness",
+        "edit": "you stop being able to be truly alone in your own head"
+      }
+    },
+    {
+      "slug": "artifacts/the-sap-tongue",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "symbiote-spore",
+        "graft_order": 2,
+        "boon": "metabolize graft-sap; speak the Cathedral's chemical language",
+        "edit": "human food turns to ash in your mouth; you crave the sap"
+      }
+    },
+    {
+      "slug": "artifacts/the-ward-eye",
+      "type": "artifact",
+      "tension": 0.65,
+      "facts": {
+        "archetype": "spore-tool",
+        "graft_order": 3,
+        "boon": "see as the Pale Ward sees — read another host's compatibility at a glance",
+        "edit": "you begin sorting other people as accept/reject by instinct"
+      }
+    },
+    {
+      "slug": "artifacts/the-lineage-marrow",
+      "type": "artifact",
+      "tension": 0.7,
+      "facts": {
+        "archetype": "graft-seed",
+        "graft_order": 4,
+        "boon": "your grafts breed true; you can seed the lineage into another willing host",
+        "edit": "your private memories begin to be shared down the lineage"
+      }
+    },
+    {
+      "slug": "artifacts/the-communion-node",
+      "type": "artifact",
+      "tension": 0.8,
+      "facts": {
+        "archetype": "communion-node",
+        "graft_order": 5,
+        "boon": "full duplex shared awareness across the whole lineage at once",
+        "edit": "the boundary of 'you' goes soft; the chorus answers before you ask"
+      }
+    },
+    {
+      "slug": "artifacts/the-whole-mark",
+      "type": "artifact",
+      "tension": 0.9,
+      "facts": {
+        "archetype": "lineage-marker",
+        "graft_order": 6,
+        "boon": "completes the set; the Cathedral recognizes you as one of its own organs",
+        "edit": "the person who started hunting is gone — what remains is the Cathedral wearing them"
+      }
+    },
+    {
+      "slug": "lore/why-it-grows-gifts",
+      "type": "lore",
+      "tension": 0.7,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "the Cathedral is not strip-mined; it GROWS organs and offers them, the way a body grows a hand — partnership, not predation"
+      }
+    },
+    {
+      "slug": "lore/the-ward-test",
+      "type": "lore",
+      "tension": 0.7,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "the Pale Ward is an immune system: it must accept each host before the next graft can take, or the body rejects you to death"
+      }
+    },
+    {
+      "slug": "lore/the-graft-order",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "the relics are a sequence — each graft is the prerequisite that makes the next one survivable; bond them out of order and you die"
+      }
+    },
+    {
+      "slug": "lore/the-editing-is-the-price",
+      "type": "lore",
+      "tension": 0.85,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "the 'resource' you spend is your own self: each graft buys an alien capacity by overwriting a human one"
+      }
+    },
+    {
+      "slug": "lore/the-communion-is-not-death",
+      "type": "lore",
+      "tension": 0.9,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "completing the set is the Communion: the host becomes the Cathedral's first whole human voice — still alive, no longer only human"
+      }
+    },
+    {
+      "slug": "lore/first-survivor-log",
+      "type": "lore",
+      "tension": 0.5,
+      "facts": {
+        "text": "Dr. Vallar's bonding log: 'graft one took. I can hear the spores think. I am still me. I think I am still me.'"
+      }
+    },
+    {
+      "slug": "lore/ward-reject-record",
+      "type": "lore",
+      "tension": 0.55,
+      "facts": {
+        "text": "of forty colonists who skipped the Ward test, forty rejected; the Pale Marrow is lined with their cocoons"
+      }
+    },
+    {
+      "slug": "lore/sap-tongue-note",
+      "type": "lore",
+      "tension": 0.5,
+      "facts": {
+        "text": "after graft two, colonists report the Cathedral 'tastes glad' when they feed; the sap-tongue speaks back"
+      }
+    },
+    {
+      "slug": "lore/lineage-bleed-note",
+      "type": "lore",
+      "tension": 0.6,
+      "facts": {
+        "text": "a child of the lineage recalled a memory that was never hers — her grafter's, three hosts up the chain"
+      }
+    },
+    {
+      "slug": "lore/node-chorus-note",
+      "type": "lore",
+      "tension": 0.65,
+      "facts": {
+        "text": "with the node grafted, decisions arrive as a chorus; the host can no longer tell which thought began in them"
+      }
+    },
+    {
+      "slug": "lore/whole-host-testimony",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "text": "the first whole host, asked their name, answered in the plural and smiled with the Cathedral's patience"
+      }
+    },
+    {
+      "slug": "locations/the-rejection-cocoons",
+      "type": "location",
+      "tension": 0.6,
+      "facts": {
+        "desc": "side-galleries of the Pale Marrow where rejected hosts are gently digested into the wall"
+      }
+    },
+    {
+      "slug": "locations/the-first-nave",
+      "type": "location",
+      "tension": 0.5,
+      "facts": {
+        "desc": "the oldest grown chamber, where Dr. Vallar bonded the Lung and the lineage began"
+      }
+    },
+    {
+      "slug": "figures/warden-su-okonkwo",
+      "type": "figure",
+      "tension": 0.65,
+      "facts": {
+        "role": "colony quarantine officer who fears the Becoming and tries to ration the grafts"
+      }
+    },
+    {
+      "slug": "figures/the-three-up-grafter",
+      "type": "figure",
+      "tension": 0.6,
+      "facts": {
+        "role": "the ancestor host whose memory bleeds down the lineage"
+      }
+    },
+    {
+      "slug": "belief/the-rationing",
+      "type": "belief",
+      "tension": 0.55,
+      "facts": {
+        "desc": "the colony minority creed: bond only the first graft, never complete the set, stay human"
+      }
+    },
+    {
+      "slug": "event/the-first-bonding",
+      "type": "event",
+      "tension": 0.6,
+      "facts": {
+        "desc": "Dr. Vallar's survival of graft one; the day partnership replaced quarantine"
+      }
+    },
+    {
+      "slug": "event/the-communion",
+      "type": "event",
+      "tension": 0.95,
+      "facts": {
+        "desc": "the set completes inside the first whole host; the Cathedral gains a human voice"
+      }
+    },
+    {
+      "slug": "lore/quarantine-broke",
+      "type": "lore",
+      "tension": 0.55,
+      "facts": {
+        "text": "Warden Okonkwo's rationing failed: the shared awareness made every grafted colonist want the next graft at once"
+      }
+    },
+    {
+      "slug": "lore/cocoon-wall-survey",
+      "type": "lore",
+      "tension": 0.6,
+      "facts": {
+        "text": "the cocoon walls are not dead — rejected hosts are kept dreaming, half-folded into the Cathedral's tissue"
+      }
+    },
+    {
+      "slug": "lore/becoming-vs-rationing",
+      "type": "lore",
+      "tension": 0.65,
+      "facts": {
+        "text": "two human creeds now war inside one biosphere: complete the set and become, or stop at one and stay"
+      }
+    }
+  ],
+  "edges": [
+    [
+      "civs/the-canopy-mind",
+      "grows",
+      "artifacts/the-lung-of-listening",
+      100
+    ],
+    [
+      "civs/the-canopy-mind",
+      "grows",
+      "artifacts/the-sap-tongue",
+      120
+    ],
+    [
+      "civs/the-pale-ward",
+      "grows",
+      "artifacts/the-ward-eye",
+      140
+    ],
+    [
+      "civs/the-canopy-mind",
+      "grows",
+      "artifacts/the-lineage-marrow",
+      160
+    ],
+    [
+      "civs/the-grafted",
+      "grows",
+      "artifacts/the-communion-node",
+      180
+    ],
+    [
+      "civs/the-canopy-mind",
+      "grows",
+      "artifacts/the-whole-mark",
+      200
+    ],
+    [
+      "civs/the-canopy-mind",
+      "inhabits",
+      "locations/the-spore-cathedral",
+      100
+    ],
+    [
+      "civs/the-pale-ward",
+      "inhabits",
+      "locations/the-pale-marrow",
+      100
+    ],
+    [
+      "civs/the-grafted",
+      "inhabits",
+      "locations/the-bandwidth-reef",
+      100
+    ],
+    [
+      "factions/humans",
+      "lives_inside",
+      "locations/the-spore-cathedral",
+      100
+    ],
+    [
+      "civs/the-grafted",
+      "wields",
+      "powers/shared-awareness",
+      150
+    ],
+    [
+      "civs/the-grafted",
+      "holds",
+      "belief/the-becoming",
+      150
+    ],
+    [
+      "curse/the-editing",
+      "afflicts",
+      "factions/humans",
+      150
+    ],
+    [
+      "powers/shared-awareness",
+      "spreads_through",
+      "civs/the-grafted",
+      160
+    ],
+    [
+      "figures/dr-ines-vallar",
+      "bonds",
+      "artifacts/the-lung-of-listening",
+      110
+    ],
+    [
+      "figures/dr-ines-vallar",
+      "joins",
+      "civs/the-grafted",
+      170
+    ],
+    [
+      "figures/the-first-whole-host",
+      "bonds",
+      "artifacts/the-whole-mark",
+      200
+    ],
+    [
+      "figures/the-first-whole-host",
+      "becomes",
+      "civs/the-canopy-mind",
+      210
+    ],
+    [
+      "artifacts/the-sap-tongue",
+      "prerequisite",
+      "artifacts/the-lung-of-listening",
+      120
+    ],
+    [
+      "artifacts/the-ward-eye",
+      "prerequisite",
+      "artifacts/the-sap-tongue",
+      140
+    ],
+    [
+      "artifacts/the-lineage-marrow",
+      "prerequisite",
+      "artifacts/the-ward-eye",
+      160
+    ],
+    [
+      "artifacts/the-communion-node",
+      "prerequisite",
+      "artifacts/the-lineage-marrow",
+      180
+    ],
+    [
+      "artifacts/the-whole-mark",
+      "prerequisite",
+      "artifacts/the-communion-node",
+      200
+    ],
+    [
+      "artifacts/the-lung-of-listening",
+      "drops",
+      "lore/why-it-grows-gifts",
+      110
+    ],
+    [
+      "artifacts/the-lung-of-listening",
+      "drops",
+      "lore/first-survivor-log",
+      110
+    ],
+    [
+      "artifacts/the-lung-of-listening",
+      "drops",
+      "lore/sap-tongue-note",
+      110
+    ],
+    [
+      "artifacts/the-sap-tongue",
+      "drops",
+      "lore/the-graft-order",
+      120
+    ],
+    [
+      "artifacts/the-sap-tongue",
+      "drops",
+      "lore/sap-tongue-note",
+      120
+    ],
+    [
+      "artifacts/the-sap-tongue",
+      "drops",
+      "lore/first-survivor-log",
+      120
+    ],
+    [
+      "artifacts/the-ward-eye",
+      "drops",
+      "lore/the-ward-test",
+      140
+    ],
+    [
+      "artifacts/the-ward-eye",
+      "drops",
+      "lore/ward-reject-record",
+      140
+    ],
+    [
+      "artifacts/the-ward-eye",
+      "drops",
+      "lore/the-graft-order",
+      140
+    ],
+    [
+      "artifacts/the-lineage-marrow",
+      "drops",
+      "lore/the-editing-is-the-price",
+      160
+    ],
+    [
+      "artifacts/the-lineage-marrow",
+      "drops",
+      "lore/lineage-bleed-note",
+      160
+    ],
+    [
+      "artifacts/the-lineage-marrow",
+      "drops",
+      "lore/the-ward-test",
+      160
+    ],
+    [
+      "artifacts/the-communion-node",
+      "drops",
+      "lore/node-chorus-note",
+      180
+    ],
+    [
+      "artifacts/the-communion-node",
+      "drops",
+      "lore/the-editing-is-the-price",
+      180
+    ],
+    [
+      "artifacts/the-communion-node",
+      "drops",
+      "lore/lineage-bleed-note",
+      180
+    ],
+    [
+      "artifacts/the-whole-mark",
+      "drops",
+      "lore/the-communion-is-not-death",
+      200
+    ],
+    [
+      "artifacts/the-whole-mark",
+      "drops",
+      "lore/whole-host-testimony",
+      200
+    ],
+    [
+      "artifacts/the-whole-mark",
+      "drops",
+      "lore/node-chorus-note",
+      200
+    ],
+    [
+      "lore/the-ward-test",
+      "prerequisite",
+      "lore/why-it-grows-gifts",
+      140
+    ],
+    [
+      "lore/the-graft-order",
+      "prerequisite",
+      "lore/the-ward-test",
+      150
+    ],
+    [
+      "lore/the-editing-is-the-price",
+      "prerequisite",
+      "lore/the-graft-order",
+      160
+    ],
+    [
+      "lore/the-communion-is-not-death",
+      "prerequisite",
+      "lore/the-editing-is-the-price",
+      200
+    ],
+    [
+      "lore/why-it-grows-gifts",
+      "reveals",
+      "civs/the-canopy-mind",
+      110
+    ],
+    [
+      "lore/the-ward-test",
+      "reveals",
+      "civs/the-pale-ward",
+      140
+    ],
+    [
+      "lore/the-editing-is-the-price",
+      "reveals",
+      "curse/the-editing",
+      160
+    ],
+    [
+      "lore/the-communion-is-not-death",
+      "reveals",
+      "figures/the-first-whole-host",
+      200
+    ],
+    [
+      "lore/whole-host-testimony",
+      "reveals",
+      "civs/the-grafted",
+      200
+    ],
+    [
+      "civs/the-pale-ward",
+      "inhabits",
+      "locations/the-rejection-cocoons",
+      100
+    ],
+    [
+      "figures/dr-ines-vallar",
+      "bonds",
+      "artifacts/the-lung-of-listening",
+      110
+    ],
+    [
+      "event/the-first-bonding",
+      "happens_at",
+      "locations/the-first-nave",
+      110
+    ],
+    [
+      "event/the-first-bonding",
+      "involves",
+      "figures/dr-ines-vallar",
+      110
+    ],
+    [
+      "event/the-communion",
+      "happens_at",
+      "locations/the-spore-cathedral",
+      200
+    ],
+    [
+      "event/the-communion",
+      "involves",
+      "figures/the-first-whole-host",
+      200
+    ],
+    [
+      "event/the-communion",
+      "completes",
+      "artifacts/the-whole-mark",
+      200
+    ],
+    [
+      "figures/warden-su-okonkwo",
+      "holds",
+      "belief/the-rationing",
+      150
+    ],
+    [
+      "belief/the-rationing",
+      "opposes",
+      "belief/the-becoming",
+      150
+    ],
+    [
+      "figures/the-three-up-grafter",
+      "joins",
+      "civs/the-grafted",
+      130
+    ],
+    [
+      "figures/the-three-up-grafter",
+      "bonds",
+      "artifacts/the-lineage-marrow",
+      160
+    ],
+    [
+      "artifacts/the-ward-eye",
+      "drops",
+      "lore/cocoon-wall-survey",
+      140
+    ],
+    [
+      "artifacts/the-communion-node",
+      "drops",
+      "lore/quarantine-broke",
+      180
+    ],
+    [
+      "artifacts/the-whole-mark",
+      "drops",
+      "lore/becoming-vs-rationing",
+      200
+    ],
+    [
+      "lore/quarantine-broke",
+      "reveals",
+      "figures/warden-su-okonkwo",
+      180
+    ],
+    [
+      "lore/cocoon-wall-survey",
+      "reveals",
+      "locations/the-rejection-cocoons",
+      140
+    ],
+    [
+      "lore/becoming-vs-rationing",
+      "reveals",
+      "belief/the-rationing",
+      200
+    ],
+    [
+      "lore/lineage-bleed-note",
+      "reveals",
+      "figures/the-three-up-grafter",
+      160
+    ]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/why-it-grows-gifts",
+      "lore/the-ward-test",
+      "lore/the-graft-order",
+      "lore/the-editing-is-the-price",
+      "lore/the-communion-is-not-death"
+    ],
+    "order": [
+      "lore/why-it-grows-gifts",
+      "lore/the-ward-test",
+      "lore/the-graft-order",
+      "lore/the-editing-is-the-price",
+      "lore/the-communion-is-not-death"
+    ],
+    "order_relation": "prerequisite"
+  }
+}

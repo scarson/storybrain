@@ -1,0 +1,784 @@
+{
+  "_arm": "PURE-LLM — single-pass authored world for theme time-war. No procgen skeleton. Honors alien_status ambiguous (fate undecided, never a witnessed fall), psychic subtle/precognitive, resource_centrality none (a causality puzzle, not a dig), and a non-linear precedes spine where later finds rewrite earlier meaning.",
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.5,
+      "facts": {
+        "role": "salvage-cartographers",
+        "status": "extant",
+        "note": "The expedition 'Second Draft', here to map relics, now trapped inside the thing they are mapping."
+      }
+    },
+    {
+      "slug": "civs/the-aelthar",
+      "type": "faction",
+      "tension": 0.75,
+      "facts": {
+        "alien_type": "tense-displaced-belligerent",
+        "status": "ambiguous",
+        "note": "Aggressors who learned to fight from downstream of their own defeats. Alive-or-dead is undecided: in some relics they are triumphant, in others they were never born. No corpse, no witnessed fall."
+      }
+    },
+    {
+      "slug": "civs/the-cessation",
+      "type": "faction",
+      "tension": 0.78,
+      "facts": {
+        "alien_type": "retroactive-counterforce",
+        "status": "ambiguous",
+        "note": "Their only weapon is the eraser: they reach upstream and revise the Aelthar's first moves. The war therefore has no stable beginning — only a beginning that keeps being overwritten."
+      }
+    },
+    {
+      "slug": "civs/the-witnesses-who-remember-ahead",
+      "type": "faction",
+      "tension": 0.62,
+      "facts": {
+        "alien_type": "precognitive-archivists",
+        "status": "ambiguous",
+        "note": "Neutrals who experience time outcome-first. They cannot stop the war so they catalogue its possible ends. Their relics leak those ends into anyone who handles them."
+      }
+    },
+    {
+      "slug": "figures/the-recurring-envoy",
+      "type": "colonist",
+      "tension": 0.55,
+      "facts": {
+        "role": "Aelthar emissary",
+        "note": "Keeps appearing in finds that predate the Aelthar themselves — an envoy sent before there was anyone to send him."
+      }
+    },
+    {
+      "slug": "figures/the-last-editor",
+      "type": "colonist",
+      "tension": 0.6,
+      "facts": {
+        "role": "Cessation reviser",
+        "note": "The mind that makes the final edit. Whether it ever acts is the war's open question."
+      }
+    },
+    {
+      "slug": "figures/the-witness-who-stayed",
+      "type": "colonist",
+      "tension": 0.58,
+      "facts": {
+        "role": "Witness-remnant",
+        "note": "One archivist who chose to remember forward in real time, narrating an ending it refuses to name."
+      }
+    },
+    {
+      "slug": "locations/the-unhappened-front",
+      "type": "location",
+      "tension": 0.7,
+      "facts": {
+        "note": "A battlefield that flickers between fought-over and pristine depending on which relic you carry across it."
+      }
+    },
+    {
+      "slug": "locations/the-reliquary-out-of-order",
+      "type": "location",
+      "tension": 0.65,
+      "facts": {
+        "note": "A vault where the Witnesses shelved the war's endings. The shelf labels contradict the contents."
+      }
+    },
+    {
+      "slug": "locations/the-palimpsest-city",
+      "type": "location",
+      "tension": 0.68,
+      "facts": {
+        "note": "An Aelthar city overwritten by the Cessation so many times it exists as a smear of every version at once."
+      }
+    },
+    {
+      "slug": "locations/expedition-camp-second-draft",
+      "type": "location",
+      "tension": 0.5,
+      "facts": {
+        "note": "Human base, pitched on ground that was a crater yesterday and a meadow tomorrow."
+      }
+    },
+    {
+      "slug": "locations/the-ledger-vault",
+      "type": "location",
+      "tension": 0.58,
+      "facts": {
+        "note": "Where the expedition keeps its master catalogue. The pages rewrite themselves overnight whenever a new relic is dated."
+      }
+    },
+    {
+      "slug": "powers/the-leak-of-tomorrow",
+      "type": "power",
+      "tension": 0.55,
+      "facts": {
+        "kind": "psychic",
+        "register": "precognitive",
+        "note": "Subtle. To hold a relic is to briefly remember a future that may not arrive. Felt as certainty about a thing not yet done."
+      }
+    },
+    {
+      "slug": "artifacts/the-medal-for-a-battle-not-yet-fought",
+      "type": "artifact",
+      "tension": 0.74,
+      "facts": {
+        "archetype": "effect-before-cause",
+        "tier": "relic",
+        "note": "An Aelthar honor struck for a victory whose battle is still in the future. The award precedes the war it rewards."
+      }
+    },
+    {
+      "slug": "artifacts/the-envoys-older-skull",
+      "type": "artifact",
+      "tension": 0.8,
+      "facts": {
+        "archetype": "object-older-than-its-maker",
+        "tier": "relic",
+        "note": "The Recurring Envoy's remains — dated centuries before the Aelthar species arose. He was sent before his senders existed."
+      }
+    },
+    {
+      "slug": "artifacts/the-eraser-stone",
+      "type": "artifact",
+      "tension": 0.82,
+      "facts": {
+        "archetype": "retro-editing-find",
+        "tier": "relic",
+        "note": "A Cessation tool that, read, changes what the relics you already found were FOR."
+      }
+    },
+    {
+      "slug": "artifacts/the-witnesss-final-account",
+      "type": "artifact",
+      "tension": 0.78,
+      "facts": {
+        "archetype": "relic-that-remembers-a-future",
+        "tier": "relic",
+        "note": "A recording made after the ending, smuggled to before the beginning. It narrates how the war ends — in three incompatible ways."
+      }
+    },
+    {
+      "slug": "artifacts/the-treaty-signed-by-the-dead",
+      "type": "artifact",
+      "tension": 0.76,
+      "facts": {
+        "archetype": "anachronism",
+        "tier": "relic",
+        "note": "A peace accord bearing the marks of civilizations that, by every other find, never coexisted."
+      }
+    },
+    {
+      "slug": "artifacts/the-first-shot-that-came-last",
+      "type": "artifact",
+      "tension": 0.85,
+      "facts": {
+        "archetype": "effect-before-cause",
+        "tier": "relic",
+        "note": "The war's opening blow — recovered last, and dated after everything it supposedly began."
+      }
+    },
+    {
+      "slug": "lore/the-aelthar-struck-from-downstream",
+      "type": "lore",
+      "tension": 0.72,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "seq": 1,
+        "text": "The Aelthar opened the war by firing INTO their enemy's past from a future they had already lost. The opening move is also a last resort — they were dying when they decided to never have started losing."
+      }
+    },
+    {
+      "slug": "lore/the-cessation-revised-the-opening",
+      "type": "lore",
+      "tension": 0.76,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "seq": 2,
+        "text": "The Cessation answered not with force but with revision, editing the Aelthar's first strike out of having happened. So the war restarted — from a new first move neither side now agrees was first."
+      }
+    },
+    {
+      "slug": "lore/the-tenses-collapsed",
+      "type": "lore",
+      "tension": 0.82,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "seq": 3,
+        "text": "With two powers each rewriting the other's beginning, before and after stopped meaning anything. The anachronisms — the older-than-its-maker skull, the treaty signed by the dead — are wreckage from versions of history colliding."
+      }
+    },
+    {
+      "slug": "lore/the-witnesses-archived-every-ending",
+      "type": "lore",
+      "tension": 0.84,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "seq": 4,
+        "text": "Unable to take a side, the Witnesses recorded every way the war could END and hid the records upstream as relics. That is why touching one leaks a future — and why no two finds agree on how it finishes."
+      }
+    },
+    {
+      "slug": "lore/the-war-is-still-being-decided",
+      "type": "lore",
+      "tension": 0.92,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "seq": 5,
+        "text": "Sequence the finds and the truth is not a fall but a verdict not yet reached. The war is unresolved; the relic you place last picks the winner — and whether the Aelthar were ever real. The expedition has joined the war by sorting it."
+      }
+    },
+    {
+      "slug": "lore/the-envoy-was-sent-before-his-senders",
+      "type": "lore",
+      "tension": 0.7,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The skull predates the Aelthar because the Aelthar reached back to plant their own first ambassador — bootstrapping their existence by acting before they existed."
+      }
+    },
+    {
+      "slug": "lore/the-medal-rewards-the-unfought",
+      "type": "lore",
+      "tension": 0.6,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The medal is not a forgery. It is a promise the timeline is obligated to keep: the battle it honors WILL be fought, because the reward already exists."
+      }
+    },
+    {
+      "slug": "lore/the-eraser-rewrites-your-finds",
+      "type": "lore",
+      "tension": 0.78,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "Reading the eraser-stone, the expedition watches its own earlier catalogue entries change wording in the ledger. What a relic 'was for' is decided after you find it, not before."
+      }
+    },
+    {
+      "slug": "lore/the-account-has-three-endings",
+      "type": "lore",
+      "tension": 0.75,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The Witness's account ends three ways: Aelthar triumphant, Aelthar erased, both sides at peace. All three are recorded as having already happened."
+      }
+    },
+    {
+      "slug": "lore/the-treaty-proves-a-deleted-peace",
+      "type": "lore",
+      "tension": 0.72,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The treaty signed by the dead is evidence of a peace that was edited away. Someone reached back and un-made the ceasefire — the war exists because its end was deleted."
+      }
+    },
+    {
+      "slug": "lore/the-first-shot-is-the-last-find",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The opening shot is recovered last and dated latest — because in a war fought across tense, the beginning is whatever you decide to place first. The expedition's sequencing IS the firing of it."
+      }
+    },
+    {
+      "slug": "lore/precognition-is-the-war-pressing-through",
+      "type": "lore",
+      "tension": 0.55,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The futures the relics leak are the war's undecided branches bleeding into the present. The leak strengthens as the expedition nears the true sequence — the timeline bracing for its verdict."
+      }
+    },
+    {
+      "slug": "lore/the-aelthar-may-never-have-been",
+      "type": "lore",
+      "tension": 0.7,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "In the drafts where the Cessation's edit lands clean, the Aelthar were never born — yet their relics persist, orphaned causes looking for an effect. Their ambiguity is not death; it is undecidability."
+      }
+    },
+    {
+      "slug": "lore/the-ledger-is-not-neutral",
+      "type": "lore",
+      "tension": 0.66,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The expedition's own catalogue has become a battleground: every entry the Cessation can reach gets revised, every gap the Aelthar can fill gets filled. To keep records is already to take a side."
+      }
+    },
+    {
+      "slug": "colonists/cartographer-okonkwo",
+      "type": "colonist",
+      "tension": 0.62,
+      "facts": {
+        "role": "lead cartographer",
+        "skills": [
+          "stratigraphy",
+          "relic-dating",
+          "logic-of-paradox"
+        ],
+        "note": "HERE NOW. Building the master sequence wall-chart; every new pin forces her to re-pin the others. She has stopped trusting the word 'before'."
+      }
+    },
+    {
+      "slug": "colonists/quartermaster-reyes",
+      "type": "colonist",
+      "tension": 0.6,
+      "facts": {
+        "role": "quartermaster",
+        "skills": [
+          "logistics",
+          "morale",
+          "triage"
+        ],
+        "note": "HERE NOW. Holds the camp together while the ground under it keeps changing era. Wants to leave before the war's verdict lands on them."
+      }
+    },
+    {
+      "slug": "colonists/the-touched-surveyor-dane",
+      "type": "colonist",
+      "tension": 0.72,
+      "facts": {
+        "role": "surveyor",
+        "skills": [
+          "field-survey",
+          "endurance"
+        ],
+        "note": "HERE NOW. The precognitive leak has him remembering the expedition's own ending. He will not say which one — only that they are 'almost finished sequencing it'."
+      }
+    },
+    {
+      "slug": "events/now-0-the-wall-chart-reorders-itself",
+      "type": "event",
+      "tension": 0.78,
+      "day": 900,
+      "facts": {
+        "kind": "discovery",
+        "title": "Okonkwo's sequence inverts when the first-shot relic is dated last"
+      }
+    },
+    {
+      "slug": "events/now-1-the-ground-changes-era",
+      "type": "event",
+      "tension": 0.82,
+      "day": 905,
+      "facts": {
+        "kind": "incursion",
+        "title": "Camp Second Draft flickers to a battlefield as the Cessation edits nearby"
+      }
+    },
+    {
+      "slug": "arcs/the-verdict",
+      "type": "arc",
+      "tension": 0.9,
+      "facts": {
+        "phase": "climax",
+        "next_beat_kind": "discovery",
+        "next_beat_faction": "civs/the-cessation",
+        "status": "open",
+        "note": "OPEN. The expedition holds five of six finds; the sixth decides the war's outcome. Placing it is a move, not an observation — and the Cessation is reaching back to overwrite whichever ending the humans choose. Unresolved: who wins, and whether anyone ever did."
+      }
+    }
+  ],
+  "edges": [
+    [
+      "civs/the-aelthar",
+      "rival_of",
+      "civs/the-cessation"
+    ],
+    [
+      "civs/the-cessation",
+      "rival_of",
+      "civs/the-aelthar"
+    ],
+    [
+      "civs/the-witnesses-who-remember-ahead",
+      "located_at",
+      "locations/the-reliquary-out-of-order"
+    ],
+    [
+      "civs/the-aelthar",
+      "located_at",
+      "locations/the-palimpsest-city"
+    ],
+    [
+      "factions/humans",
+      "located_at",
+      "locations/expedition-camp-second-draft"
+    ],
+    [
+      "figures/the-recurring-envoy",
+      "owned_by",
+      "civs/the-aelthar"
+    ],
+    [
+      "figures/the-last-editor",
+      "owned_by",
+      "civs/the-cessation"
+    ],
+    [
+      "figures/the-witness-who-stayed",
+      "owned_by",
+      "civs/the-witnesses-who-remember-ahead"
+    ],
+    [
+      "lore/the-cessation-revised-the-opening",
+      "precedes",
+      "lore/the-aelthar-struck-from-downstream"
+    ],
+    [
+      "lore/the-tenses-collapsed",
+      "precedes",
+      "lore/the-cessation-revised-the-opening"
+    ],
+    [
+      "lore/the-witnesses-archived-every-ending",
+      "precedes",
+      "lore/the-tenses-collapsed"
+    ],
+    [
+      "lore/the-war-is-still-being-decided",
+      "precedes",
+      "lore/the-witnesses-archived-every-ending"
+    ],
+    [
+      "artifacts/the-medal-for-a-battle-not-yet-fought",
+      "forged_by",
+      "civs/the-aelthar"
+    ],
+    [
+      "artifacts/the-medal-for-a-battle-not-yet-fought",
+      "drops",
+      "lore/the-aelthar-struck-from-downstream"
+    ],
+    [
+      "artifacts/the-medal-for-a-battle-not-yet-fought",
+      "drops",
+      "lore/the-medal-rewards-the-unfought"
+    ],
+    [
+      "artifacts/the-medal-for-a-battle-not-yet-fought",
+      "drops",
+      "lore/precognition-is-the-war-pressing-through"
+    ],
+    [
+      "artifacts/the-medal-for-a-battle-not-yet-fought",
+      "grants",
+      "powers/the-leak-of-tomorrow"
+    ],
+    [
+      "artifacts/the-medal-for-a-battle-not-yet-fought",
+      "hidden_at",
+      "locations/the-unhappened-front"
+    ],
+    [
+      "lore/the-medal-rewards-the-unfought",
+      "reveals",
+      "civs/the-aelthar"
+    ],
+    [
+      "artifacts/the-envoys-older-skull",
+      "forged_by",
+      "civs/the-aelthar"
+    ],
+    [
+      "artifacts/the-envoys-older-skull",
+      "drops",
+      "lore/the-tenses-collapsed"
+    ],
+    [
+      "artifacts/the-envoys-older-skull",
+      "drops",
+      "lore/the-envoy-was-sent-before-his-senders"
+    ],
+    [
+      "artifacts/the-envoys-older-skull",
+      "drops",
+      "lore/precognition-is-the-war-pressing-through"
+    ],
+    [
+      "artifacts/the-envoys-older-skull",
+      "forged_by",
+      "figures/the-recurring-envoy"
+    ],
+    [
+      "artifacts/the-envoys-older-skull",
+      "hidden_at",
+      "locations/the-palimpsest-city"
+    ],
+    [
+      "lore/the-envoy-was-sent-before-his-senders",
+      "reveals",
+      "figures/the-recurring-envoy"
+    ],
+    [
+      "artifacts/the-eraser-stone",
+      "forged_by",
+      "civs/the-cessation"
+    ],
+    [
+      "artifacts/the-eraser-stone",
+      "drops",
+      "lore/the-cessation-revised-the-opening"
+    ],
+    [
+      "artifacts/the-eraser-stone",
+      "drops",
+      "lore/the-eraser-rewrites-your-finds"
+    ],
+    [
+      "artifacts/the-eraser-stone",
+      "drops",
+      "lore/the-treaty-proves-a-deleted-peace"
+    ],
+    [
+      "artifacts/the-eraser-stone",
+      "hidden_at",
+      "locations/the-palimpsest-city"
+    ],
+    [
+      "lore/the-eraser-rewrites-your-finds",
+      "reveals",
+      "civs/the-cessation"
+    ],
+    [
+      "artifacts/the-witnesss-final-account",
+      "forged_by",
+      "civs/the-witnesses-who-remember-ahead"
+    ],
+    [
+      "artifacts/the-witnesss-final-account",
+      "drops",
+      "lore/the-witnesses-archived-every-ending"
+    ],
+    [
+      "artifacts/the-witnesss-final-account",
+      "drops",
+      "lore/the-account-has-three-endings"
+    ],
+    [
+      "artifacts/the-witnesss-final-account",
+      "drops",
+      "lore/precognition-is-the-war-pressing-through"
+    ],
+    [
+      "artifacts/the-witnesss-final-account",
+      "grants",
+      "powers/the-leak-of-tomorrow"
+    ],
+    [
+      "artifacts/the-witnesss-final-account",
+      "forged_by",
+      "figures/the-witness-who-stayed"
+    ],
+    [
+      "artifacts/the-witnesss-final-account",
+      "hidden_at",
+      "locations/the-reliquary-out-of-order"
+    ],
+    [
+      "lore/the-account-has-three-endings",
+      "reveals",
+      "civs/the-witnesses-who-remember-ahead"
+    ],
+    [
+      "artifacts/the-treaty-signed-by-the-dead",
+      "forged_by",
+      "civs/the-witnesses-who-remember-ahead"
+    ],
+    [
+      "artifacts/the-treaty-signed-by-the-dead",
+      "drops",
+      "lore/the-treaty-proves-a-deleted-peace"
+    ],
+    [
+      "artifacts/the-treaty-signed-by-the-dead",
+      "drops",
+      "lore/the-account-has-three-endings"
+    ],
+    [
+      "artifacts/the-treaty-signed-by-the-dead",
+      "drops",
+      "lore/the-envoy-was-sent-before-his-senders"
+    ],
+    [
+      "artifacts/the-treaty-signed-by-the-dead",
+      "hidden_at",
+      "locations/the-reliquary-out-of-order"
+    ],
+    [
+      "lore/the-treaty-proves-a-deleted-peace",
+      "reveals",
+      "civs/the-cessation"
+    ],
+    [
+      "artifacts/the-first-shot-that-came-last",
+      "forged_by",
+      "civs/the-aelthar"
+    ],
+    [
+      "artifacts/the-first-shot-that-came-last",
+      "drops",
+      "lore/the-war-is-still-being-decided"
+    ],
+    [
+      "artifacts/the-first-shot-that-came-last",
+      "drops",
+      "lore/the-first-shot-is-the-last-find"
+    ],
+    [
+      "artifacts/the-first-shot-that-came-last",
+      "drops",
+      "lore/the-aelthar-struck-from-downstream"
+    ],
+    [
+      "artifacts/the-first-shot-that-came-last",
+      "hidden_at",
+      "locations/the-unhappened-front"
+    ],
+    [
+      "lore/the-first-shot-is-the-last-find",
+      "reveals",
+      "civs/the-aelthar"
+    ],
+    [
+      "artifacts/the-eraser-stone",
+      "drops",
+      "lore/the-aelthar-may-never-have-been"
+    ],
+    [
+      "artifacts/the-eraser-stone",
+      "drops",
+      "lore/the-ledger-is-not-neutral"
+    ],
+    [
+      "artifacts/the-eraser-stone",
+      "hidden_at",
+      "locations/the-ledger-vault"
+    ],
+    [
+      "lore/the-aelthar-may-never-have-been",
+      "reveals",
+      "civs/the-aelthar"
+    ],
+    [
+      "lore/the-ledger-is-not-neutral",
+      "reveals",
+      "factions/humans"
+    ],
+    [
+      "colonists/cartographer-okonkwo",
+      "located_at",
+      "locations/the-ledger-vault"
+    ],
+    [
+      "figures/the-witness-who-stayed",
+      "owns",
+      "artifacts/the-witnesss-final-account"
+    ],
+    [
+      "colonists/cartographer-okonkwo",
+      "owned_by",
+      "factions/humans"
+    ],
+    [
+      "colonists/cartographer-okonkwo",
+      "owns",
+      "artifacts/the-first-shot-that-came-last"
+    ],
+    [
+      "colonists/cartographer-okonkwo",
+      "involved_in",
+      "arcs/the-verdict"
+    ],
+    [
+      "colonists/quartermaster-reyes",
+      "owned_by",
+      "factions/humans"
+    ],
+    [
+      "colonists/quartermaster-reyes",
+      "rival_of",
+      "civs/the-cessation"
+    ],
+    [
+      "colonists/the-touched-surveyor-dane",
+      "owned_by",
+      "factions/humans"
+    ],
+    [
+      "colonists/the-touched-surveyor-dane",
+      "sought_by",
+      "civs/the-witnesses-who-remember-ahead"
+    ],
+    [
+      "events/now-0-the-wall-chart-reorders-itself",
+      "involves",
+      "colonists/cartographer-okonkwo"
+    ],
+    [
+      "events/now-0-the-wall-chart-reorders-itself",
+      "involves",
+      "artifacts/the-first-shot-that-came-last"
+    ],
+    [
+      "events/now-1-the-ground-changes-era",
+      "involves",
+      "colonists/quartermaster-reyes"
+    ],
+    [
+      "events/now-1-the-ground-changes-era",
+      "involves",
+      "civs/the-cessation"
+    ],
+    [
+      "arcs/the-verdict",
+      "involves",
+      "artifacts/the-first-shot-that-came-last"
+    ],
+    [
+      "arcs/the-verdict",
+      "involves",
+      "lore/the-war-is-still-being-decided"
+    ],
+    [
+      "arcs/the-verdict",
+      "involves",
+      "colonists/the-touched-surveyor-dane"
+    ]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/the-aelthar-struck-from-downstream",
+      "lore/the-cessation-revised-the-opening",
+      "lore/the-tenses-collapsed",
+      "lore/the-witnesses-archived-every-ending",
+      "lore/the-war-is-still-being-decided"
+    ],
+    "order": [
+      "lore/the-war-is-still-being-decided",
+      "lore/the-witnesses-archived-every-ending",
+      "lore/the-tenses-collapsed",
+      "lore/the-cessation-revised-the-opening",
+      "lore/the-aelthar-struck-from-downstream"
+    ],
+    "order_relation": "precedes"
+  }
+}
