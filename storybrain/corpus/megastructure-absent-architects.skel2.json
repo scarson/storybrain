@@ -1,0 +1,795 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.4,
+      "facts": {
+        "role": "newcomers"
+      }
+    },
+    {
+      "slug": "civs/the-architects",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "absent-builders-no-corpse",
+        "trait": "the vanished makers — left a working machine and no remains; genuinely OTHER, genuinely gone, purpose unstated"
+      }
+    },
+    {
+      "slug": "civs/the-keepers",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "absent-caretaker-order",
+        "trait": "a successor caste of the builders who tended the structure after the makers left, then also vanished — they sequenced the shutdowns"
+      }
+    },
+    {
+      "slug": "civs/the-listeners",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "absent-inheritor-pilgrims",
+        "trait": "an earlier inheritor species that found the structure before humans, woke pieces, learned part of the purpose, and departed without explanation"
+      }
+    },
+    {
+      "slug": "locations/shell-lumen-site",
+      "type": "location",
+      "tension": 0.375,
+      "facts": {
+        "subject": "shell-lumen"
+      }
+    },
+    {
+      "slug": "locations/core-matter-site",
+      "type": "location",
+      "tension": 0.4875,
+      "facts": {
+        "subject": "core-matter"
+      }
+    },
+    {
+      "slug": "locations/ring-current-site",
+      "type": "location",
+      "tension": 0.425,
+      "facts": {
+        "subject": "ring-current"
+      }
+    },
+    {
+      "slug": "events/0-commitment",
+      "type": "event",
+      "tension": 0.49871832830645146,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-architects",
+        "magnitude": 0.33,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/1-interaction",
+      "type": "event",
+      "tension": 0.5295205888468772,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-keepers",
+        "magnitude": 0.43,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/2-interaction",
+      "type": "event",
+      "tension": 0.5213970194535795,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-listeners",
+        "magnitude": 0.4,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/3-commitment",
+      "type": "event",
+      "tension": 0.5219327937029302,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-architects",
+        "magnitude": 0.41,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/4-commitment",
+      "type": "event",
+      "tension": 0.4983111158534885,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-keepers",
+        "magnitude": 0.33,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/5-initiative",
+      "type": "event",
+      "tension": 0.523456258235965,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-listeners",
+        "magnitude": 0.41,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/6-commitment",
+      "type": "event",
+      "tension": 0.5193720384985209,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-architects",
+        "magnitude": 0.4,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/7-commitment",
+      "type": "event",
+      "tension": 0.522380091140978,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-keepers",
+        "magnitude": 0.41,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/8-commitment",
+      "type": "event",
+      "tension": 0.4936049715930131,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-listeners",
+        "magnitude": 0.31,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/9-initiative",
+      "type": "event",
+      "tension": 0.5195273938216269,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-architects",
+        "magnitude": 0.4,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/10-interaction",
+      "type": "event",
+      "tension": 0.5271344470796175,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-keepers",
+        "magnitude": 0.42,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/11-commitment",
+      "type": "event",
+      "tension": 0.49854855174082335,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-listeners",
+        "magnitude": 0.33,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/12-initiative",
+      "type": "event",
+      "tension": 0.5238663535900414,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-architects",
+        "magnitude": 0.41,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/13-initiative",
+      "type": "event",
+      "tension": 0.5160345360403881,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-keepers",
+        "magnitude": 0.39,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/14-interaction",
+      "type": "event",
+      "tension": 0.5015915752004366,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-listeners",
+        "magnitude": 0.34,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/15-initiative",
+      "type": "event",
+      "tension": 0.4919334798650816,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-architects",
+        "magnitude": 0.31,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/16-interaction",
+      "type": "event",
+      "tension": 0.5146869625938125,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-keepers",
+        "magnitude": 0.38,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/17-commitment",
+      "type": "event",
+      "tension": 0.5304852880164981,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-listeners",
+        "magnitude": 0.43,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/18-commitment",
+      "type": "event",
+      "tension": 0.5240993133168668,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-architects",
+        "magnitude": 0.41,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/19-initiative",
+      "type": "event",
+      "tension": 0.5268889279677533,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-keepers",
+        "magnitude": 0.42,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/20-commitment",
+      "type": "event",
+      "tension": 0.520031562615186,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-listeners",
+        "magnitude": 0.4,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/21-interaction",
+      "type": "event",
+      "tension": 0.49018545075599107,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-architects",
+        "magnitude": 0.3,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/22-commitment",
+      "type": "event",
+      "tension": 0.5293302222471684,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-keepers",
+        "magnitude": 0.43,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/23-initiative",
+      "type": "event",
+      "tension": 0.5156033006380312,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-listeners",
+        "magnitude": 0.39,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/24-turn",
+      "type": "event",
+      "tension": 0.685,
+      "facts": {
+        "abstract_kind": "turn",
+        "actor": "the-architects",
+        "magnitude": 0.95,
+        "placeholder": true,
+        "climax": true
+      }
+    },
+    {
+      "slug": "lore/thread-of-the-keepers",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-keepers",
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "lore/thread-of-the-listeners",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-listeners",
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "lore/thread-of-the-architects",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-architects",
+        "placeholder": true
+      }
+    }
+  ],
+  "edges": [
+    [
+      "events/0-commitment",
+      "involves",
+      "civs/the-architects",
+      100
+    ],
+    [
+      "events/0-commitment",
+      "concerns",
+      "locations/ring-current-site",
+      100
+    ],
+    [
+      "events/1-interaction",
+      "involves",
+      "civs/the-keepers",
+      100
+    ],
+    [
+      "events/2-interaction",
+      "involves",
+      "civs/the-listeners",
+      100
+    ],
+    [
+      "events/2-interaction",
+      "caused_by",
+      "events/1-interaction",
+      100
+    ],
+    [
+      "events/3-commitment",
+      "involves",
+      "civs/the-architects",
+      200
+    ],
+    [
+      "events/3-commitment",
+      "caused_by",
+      "events/0-commitment",
+      200
+    ],
+    [
+      "events/3-commitment",
+      "concerns",
+      "locations/shell-lumen-site",
+      200
+    ],
+    [
+      "events/4-commitment",
+      "involves",
+      "civs/the-keepers",
+      200
+    ],
+    [
+      "events/4-commitment",
+      "caused_by",
+      "events/1-interaction",
+      200
+    ],
+    [
+      "events/4-commitment",
+      "concerns",
+      "locations/ring-current-site",
+      200
+    ],
+    [
+      "events/5-initiative",
+      "involves",
+      "civs/the-listeners",
+      200
+    ],
+    [
+      "events/5-initiative",
+      "caused_by",
+      "events/2-interaction",
+      200
+    ],
+    [
+      "events/6-commitment",
+      "involves",
+      "civs/the-architects",
+      300
+    ],
+    [
+      "events/6-commitment",
+      "caused_by",
+      "events/3-commitment",
+      300
+    ],
+    [
+      "events/6-commitment",
+      "concerns",
+      "locations/shell-lumen-site",
+      300
+    ],
+    [
+      "events/7-commitment",
+      "involves",
+      "civs/the-keepers",
+      300
+    ],
+    [
+      "events/7-commitment",
+      "caused_by",
+      "events/4-commitment",
+      300
+    ],
+    [
+      "events/7-commitment",
+      "concerns",
+      "locations/core-matter-site",
+      300
+    ],
+    [
+      "events/8-commitment",
+      "involves",
+      "civs/the-listeners",
+      300
+    ],
+    [
+      "events/8-commitment",
+      "caused_by",
+      "events/5-initiative",
+      300
+    ],
+    [
+      "events/8-commitment",
+      "concerns",
+      "locations/ring-current-site",
+      300
+    ],
+    [
+      "events/9-initiative",
+      "involves",
+      "civs/the-architects",
+      400
+    ],
+    [
+      "events/9-initiative",
+      "caused_by",
+      "events/6-commitment",
+      400
+    ],
+    [
+      "events/10-interaction",
+      "involves",
+      "civs/the-keepers",
+      400
+    ],
+    [
+      "events/10-interaction",
+      "caused_by",
+      "events/7-commitment",
+      400
+    ],
+    [
+      "events/10-interaction",
+      "caused_by",
+      "events/9-initiative",
+      400
+    ],
+    [
+      "events/11-commitment",
+      "involves",
+      "civs/the-listeners",
+      400
+    ],
+    [
+      "events/11-commitment",
+      "caused_by",
+      "events/8-commitment",
+      400
+    ],
+    [
+      "events/11-commitment",
+      "concerns",
+      "locations/shell-lumen-site",
+      400
+    ],
+    [
+      "events/12-initiative",
+      "involves",
+      "civs/the-architects",
+      500
+    ],
+    [
+      "events/12-initiative",
+      "caused_by",
+      "events/9-initiative",
+      500
+    ],
+    [
+      "events/13-initiative",
+      "involves",
+      "civs/the-keepers",
+      500
+    ],
+    [
+      "events/13-initiative",
+      "caused_by",
+      "events/10-interaction",
+      500
+    ],
+    [
+      "events/14-interaction",
+      "involves",
+      "civs/the-listeners",
+      500
+    ],
+    [
+      "events/14-interaction",
+      "caused_by",
+      "events/11-commitment",
+      500
+    ],
+    [
+      "events/14-interaction",
+      "caused_by",
+      "events/12-initiative",
+      500
+    ],
+    [
+      "events/15-initiative",
+      "involves",
+      "civs/the-architects",
+      600
+    ],
+    [
+      "events/15-initiative",
+      "caused_by",
+      "events/12-initiative",
+      600
+    ],
+    [
+      "events/16-interaction",
+      "involves",
+      "civs/the-keepers",
+      600
+    ],
+    [
+      "events/16-interaction",
+      "caused_by",
+      "events/13-initiative",
+      600
+    ],
+    [
+      "events/16-interaction",
+      "caused_by",
+      "events/14-interaction",
+      600
+    ],
+    [
+      "events/17-commitment",
+      "involves",
+      "civs/the-listeners",
+      600
+    ],
+    [
+      "events/17-commitment",
+      "caused_by",
+      "events/14-interaction",
+      600
+    ],
+    [
+      "events/17-commitment",
+      "concerns",
+      "locations/core-matter-site",
+      600
+    ],
+    [
+      "events/18-commitment",
+      "involves",
+      "civs/the-architects",
+      700
+    ],
+    [
+      "events/18-commitment",
+      "caused_by",
+      "events/15-initiative",
+      700
+    ],
+    [
+      "events/18-commitment",
+      "concerns",
+      "locations/core-matter-site",
+      700
+    ],
+    [
+      "events/19-initiative",
+      "involves",
+      "civs/the-keepers",
+      700
+    ],
+    [
+      "events/19-initiative",
+      "caused_by",
+      "events/16-interaction",
+      700
+    ],
+    [
+      "events/20-commitment",
+      "involves",
+      "civs/the-listeners",
+      700
+    ],
+    [
+      "events/20-commitment",
+      "caused_by",
+      "events/17-commitment",
+      700
+    ],
+    [
+      "events/20-commitment",
+      "concerns",
+      "locations/ring-current-site",
+      700
+    ],
+    [
+      "events/21-interaction",
+      "involves",
+      "civs/the-architects",
+      800
+    ],
+    [
+      "events/21-interaction",
+      "caused_by",
+      "events/18-commitment",
+      800
+    ],
+    [
+      "events/21-interaction",
+      "caused_by",
+      "events/19-initiative",
+      800
+    ],
+    [
+      "events/22-commitment",
+      "involves",
+      "civs/the-keepers",
+      800
+    ],
+    [
+      "events/22-commitment",
+      "caused_by",
+      "events/19-initiative",
+      800
+    ],
+    [
+      "events/22-commitment",
+      "concerns",
+      "locations/core-matter-site",
+      800
+    ],
+    [
+      "events/23-initiative",
+      "involves",
+      "civs/the-listeners",
+      800
+    ],
+    [
+      "events/23-initiative",
+      "caused_by",
+      "events/20-commitment",
+      800
+    ],
+    [
+      "events/24-turn",
+      "involves",
+      "civs/the-architects",
+      800
+    ],
+    [
+      "lore/thread-of-the-keepers",
+      "enables",
+      "events/24-turn",
+      800
+    ],
+    [
+      "civs/the-keepers",
+      "involved_in",
+      "events/24-turn",
+      800
+    ],
+    [
+      "lore/thread-of-the-listeners",
+      "enables",
+      "lore/thread-of-the-keepers",
+      800
+    ],
+    [
+      "civs/the-listeners",
+      "involved_in",
+      "events/24-turn",
+      800
+    ],
+    [
+      "lore/thread-of-the-architects",
+      "enables",
+      "lore/thread-of-the-listeners",
+      800
+    ],
+    [
+      "civs/the-architects",
+      "involved_in",
+      "events/24-turn",
+      800
+    ]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/thread-of-the-keepers",
+      "lore/thread-of-the-listeners",
+      "lore/thread-of-the-architects"
+    ],
+    "order": [
+      "lore/thread-of-the-keepers",
+      "lore/thread-of-the-listeners",
+      "lore/thread-of-the-architects"
+    ],
+    "order_relation": "enables"
+  }
+}

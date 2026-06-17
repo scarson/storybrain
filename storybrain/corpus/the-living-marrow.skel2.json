@@ -1,0 +1,708 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.4,
+      "facts": {
+        "role": "newcomers"
+      }
+    },
+    {
+      "slug": "civs/the-velt",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "crystalline-slow-life",
+        "trait": "cognition stored in stone, one thought per century"
+      }
+    },
+    {
+      "slug": "civs/the-choir",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "psychic-gestalt",
+        "trait": "a bodiless standing-wave of minds"
+      }
+    },
+    {
+      "slug": "civs/the-pale-wing",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "augur-merchants",
+        "trait": "sold prophecies of the doom instead of preventing it"
+      }
+    },
+    {
+      "slug": "locations/marrow-ore-site",
+      "type": "location",
+      "tension": 0.5375,
+      "facts": {
+        "subject": "marrow-ore"
+      }
+    },
+    {
+      "slug": "locations/lumen-salt-site",
+      "type": "location",
+      "tension": 0.35,
+      "facts": {
+        "subject": "lumen-salt"
+      }
+    },
+    {
+      "slug": "locations/void-glass-site",
+      "type": "location",
+      "tension": 0.4375,
+      "facts": {
+        "subject": "void-glass"
+      }
+    },
+    {
+      "slug": "events/0-initiative",
+      "type": "event",
+      "tension": 0.6385771284939256,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-velt",
+        "magnitude": 0.8,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/1-commitment",
+      "type": "event",
+      "tension": 0.5604455342143775,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-choir",
+        "magnitude": 0.53,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/2-interaction",
+      "type": "event",
+      "tension": 0.5318919736617245,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-pale-wing",
+        "magnitude": 0.44,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/3-interaction",
+      "type": "event",
+      "tension": 0.5100453488163185,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-velt",
+        "magnitude": 0.37,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/4-commitment",
+      "type": "event",
+      "tension": 0.5006644453406334,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-choir",
+        "magnitude": 0.34,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/5-commitment",
+      "type": "event",
+      "tension": 0.5193993480005301,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-pale-wing",
+        "magnitude": 0.4,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/6-commitment",
+      "type": "event",
+      "tension": 0.5103057896080427,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-velt",
+        "magnitude": 0.37,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/7-commitment",
+      "type": "event",
+      "tension": 0.5347528922073543,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-choir",
+        "magnitude": 0.45,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/8-interaction",
+      "type": "event",
+      "tension": 0.5977537920298055,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-pale-wing",
+        "magnitude": 0.66,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/9-interaction",
+      "type": "event",
+      "tension": 0.5234297751707491,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-velt",
+        "magnitude": 0.41,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/10-initiative",
+      "type": "event",
+      "tension": 0.5558631053045392,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-choir",
+        "magnitude": 0.52,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/11-initiative",
+      "type": "event",
+      "tension": 0.5458394893938676,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-pale-wing",
+        "magnitude": 0.49,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/12-commitment",
+      "type": "event",
+      "tension": 0.498235466392478,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-velt",
+        "magnitude": 0.33,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/13-initiative",
+      "type": "event",
+      "tension": 0.5334004444200546,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-choir",
+        "magnitude": 0.44,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/14-initiative",
+      "type": "event",
+      "tension": 0.5423029419314116,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-pale-wing",
+        "magnitude": 0.47,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/15-initiative",
+      "type": "event",
+      "tension": 0.5981952298532706,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-velt",
+        "magnitude": 0.66,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/16-initiative",
+      "type": "event",
+      "tension": 0.5328864980693907,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-choir",
+        "magnitude": 0.44,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/17-initiative",
+      "type": "event",
+      "tension": 0.5970152299692855,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-pale-wing",
+        "magnitude": 0.66,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/18-commitment",
+      "type": "event",
+      "tension": 0.6184814108747523,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-velt",
+        "magnitude": 0.73,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/19-commitment",
+      "type": "event",
+      "tension": 0.4966149947140366,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-choir",
+        "magnitude": 0.32,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/20-commitment",
+      "type": "event",
+      "tension": 0.5789921400975436,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-pale-wing",
+        "magnitude": 0.6,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/21-turn",
+      "type": "event",
+      "tension": 0.685,
+      "facts": {
+        "abstract_kind": "turn",
+        "actor": "the-velt",
+        "magnitude": 0.95,
+        "placeholder": true,
+        "climax": true
+      }
+    },
+    {
+      "slug": "lore/thread-of-the-velt",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-velt",
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "lore/thread-of-the-pale-wing",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-pale-wing",
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "lore/thread-of-the-choir",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-choir",
+        "placeholder": true
+      }
+    }
+  ],
+  "edges": [
+    [
+      "events/0-initiative",
+      "involves",
+      "civs/the-velt",
+      100
+    ],
+    [
+      "events/1-commitment",
+      "involves",
+      "civs/the-choir",
+      100
+    ],
+    [
+      "events/1-commitment",
+      "concerns",
+      "locations/void-glass-site",
+      100
+    ],
+    [
+      "events/2-interaction",
+      "involves",
+      "civs/the-pale-wing",
+      100
+    ],
+    [
+      "events/2-interaction",
+      "caused_by",
+      "events/1-commitment",
+      100
+    ],
+    [
+      "events/3-interaction",
+      "involves",
+      "civs/the-velt",
+      200
+    ],
+    [
+      "events/3-interaction",
+      "caused_by",
+      "events/0-initiative",
+      200
+    ],
+    [
+      "events/3-interaction",
+      "caused_by",
+      "events/1-commitment",
+      200
+    ],
+    [
+      "events/4-commitment",
+      "involves",
+      "civs/the-choir",
+      200
+    ],
+    [
+      "events/4-commitment",
+      "caused_by",
+      "events/1-commitment",
+      200
+    ],
+    [
+      "events/4-commitment",
+      "concerns",
+      "locations/lumen-salt-site",
+      200
+    ],
+    [
+      "events/5-commitment",
+      "involves",
+      "civs/the-pale-wing",
+      200
+    ],
+    [
+      "events/5-commitment",
+      "caused_by",
+      "events/2-interaction",
+      200
+    ],
+    [
+      "events/5-commitment",
+      "concerns",
+      "locations/lumen-salt-site",
+      200
+    ],
+    [
+      "events/6-commitment",
+      "involves",
+      "civs/the-velt",
+      300
+    ],
+    [
+      "events/6-commitment",
+      "caused_by",
+      "events/3-interaction",
+      300
+    ],
+    [
+      "events/6-commitment",
+      "concerns",
+      "locations/marrow-ore-site",
+      300
+    ],
+    [
+      "events/7-commitment",
+      "involves",
+      "civs/the-choir",
+      300
+    ],
+    [
+      "events/7-commitment",
+      "caused_by",
+      "events/4-commitment",
+      300
+    ],
+    [
+      "events/7-commitment",
+      "concerns",
+      "locations/lumen-salt-site",
+      300
+    ],
+    [
+      "events/8-interaction",
+      "involves",
+      "civs/the-pale-wing",
+      300
+    ],
+    [
+      "events/8-interaction",
+      "caused_by",
+      "events/5-commitment",
+      300
+    ],
+    [
+      "events/8-interaction",
+      "caused_by",
+      "events/6-commitment",
+      300
+    ],
+    [
+      "events/9-interaction",
+      "involves",
+      "civs/the-velt",
+      400
+    ],
+    [
+      "events/9-interaction",
+      "caused_by",
+      "events/6-commitment",
+      400
+    ],
+    [
+      "events/9-interaction",
+      "caused_by",
+      "events/8-interaction",
+      400
+    ],
+    [
+      "events/10-initiative",
+      "involves",
+      "civs/the-choir",
+      400
+    ],
+    [
+      "events/10-initiative",
+      "caused_by",
+      "events/7-commitment",
+      400
+    ],
+    [
+      "events/11-initiative",
+      "involves",
+      "civs/the-pale-wing",
+      400
+    ],
+    [
+      "events/11-initiative",
+      "caused_by",
+      "events/8-interaction",
+      400
+    ],
+    [
+      "events/12-commitment",
+      "involves",
+      "civs/the-velt",
+      500
+    ],
+    [
+      "events/12-commitment",
+      "caused_by",
+      "events/9-interaction",
+      500
+    ],
+    [
+      "events/12-commitment",
+      "concerns",
+      "locations/void-glass-site",
+      500
+    ],
+    [
+      "events/13-initiative",
+      "involves",
+      "civs/the-choir",
+      500
+    ],
+    [
+      "events/13-initiative",
+      "caused_by",
+      "events/10-initiative",
+      500
+    ],
+    [
+      "events/14-initiative",
+      "involves",
+      "civs/the-pale-wing",
+      500
+    ],
+    [
+      "events/14-initiative",
+      "caused_by",
+      "events/11-initiative",
+      500
+    ],
+    [
+      "events/15-initiative",
+      "involves",
+      "civs/the-velt",
+      600
+    ],
+    [
+      "events/15-initiative",
+      "caused_by",
+      "events/12-commitment",
+      600
+    ],
+    [
+      "events/16-initiative",
+      "involves",
+      "civs/the-choir",
+      600
+    ],
+    [
+      "events/16-initiative",
+      "caused_by",
+      "events/13-initiative",
+      600
+    ],
+    [
+      "events/17-initiative",
+      "involves",
+      "civs/the-pale-wing",
+      600
+    ],
+    [
+      "events/17-initiative",
+      "caused_by",
+      "events/14-initiative",
+      600
+    ],
+    [
+      "events/18-commitment",
+      "involves",
+      "civs/the-velt",
+      700
+    ],
+    [
+      "events/18-commitment",
+      "caused_by",
+      "events/15-initiative",
+      700
+    ],
+    [
+      "events/18-commitment",
+      "concerns",
+      "locations/lumen-salt-site",
+      700
+    ],
+    [
+      "events/19-commitment",
+      "involves",
+      "civs/the-choir",
+      700
+    ],
+    [
+      "events/19-commitment",
+      "caused_by",
+      "events/16-initiative",
+      700
+    ],
+    [
+      "events/19-commitment",
+      "concerns",
+      "locations/lumen-salt-site",
+      700
+    ],
+    [
+      "events/20-commitment",
+      "involves",
+      "civs/the-pale-wing",
+      700
+    ],
+    [
+      "events/20-commitment",
+      "caused_by",
+      "events/17-initiative",
+      700
+    ],
+    [
+      "events/20-commitment",
+      "concerns",
+      "locations/lumen-salt-site",
+      700
+    ],
+    [
+      "events/21-turn",
+      "involves",
+      "civs/the-velt",
+      700
+    ],
+    [
+      "lore/thread-of-the-velt",
+      "caused_by",
+      "events/21-turn",
+      700
+    ],
+    [
+      "civs/the-velt",
+      "involved_in",
+      "events/21-turn",
+      700
+    ],
+    [
+      "lore/thread-of-the-pale-wing",
+      "caused_by",
+      "lore/thread-of-the-velt",
+      700
+    ],
+    [
+      "civs/the-pale-wing",
+      "involved_in",
+      "events/21-turn",
+      700
+    ],
+    [
+      "lore/thread-of-the-choir",
+      "caused_by",
+      "lore/thread-of-the-pale-wing",
+      700
+    ],
+    [
+      "civs/the-choir",
+      "involved_in",
+      "events/21-turn",
+      700
+    ]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/thread-of-the-velt",
+      "lore/thread-of-the-pale-wing",
+      "lore/thread-of-the-choir"
+    ],
+    "order": [
+      "lore/thread-of-the-velt",
+      "lore/thread-of-the-pale-wing",
+      "lore/thread-of-the-choir"
+    ],
+    "order_relation": "caused_by"
+  }
+}

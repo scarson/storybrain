@@ -1,0 +1,787 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.4,
+      "facts": {
+        "role": "newcomers"
+      }
+    },
+    {
+      "slug": "civs/the-irenni",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "living-elder-xeno-persons",
+        "trait": "ancient, patient gatekeepers who lend gifts as tests and read every human choice"
+      }
+    },
+    {
+      "slug": "civs/the-saalvane",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "living-rival-xeno-faction",
+        "trait": "a splinter that thinks humanity should be denied, not vetted — they sabotage the gifts"
+      }
+    },
+    {
+      "slug": "civs/the-mendicant-tier",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "living-xeno-mediators",
+        "trait": "a neutral caste that brokers access and adjudicates worthiness disputes"
+      }
+    },
+    {
+      "slug": "locations/lattice-fuel-site",
+      "type": "location",
+      "tension": 0.4125,
+      "facts": {
+        "subject": "lattice-fuel"
+      }
+    },
+    {
+      "slug": "locations/cache-seals-site",
+      "type": "location",
+      "tension": 0.375,
+      "facts": {
+        "subject": "cache-seals"
+      }
+    },
+    {
+      "slug": "events/0-commitment",
+      "type": "event",
+      "tension": 0.5244511495740153,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-irenni",
+        "magnitude": 0.41,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/1-initiative",
+      "type": "event",
+      "tension": 0.5666850123447367,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-saalvane",
+        "magnitude": 0.56,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/2-initiative",
+      "type": "event",
+      "tension": 0.5002238713372499,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-mendicant-tier",
+        "magnitude": 0.33,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/3-interaction",
+      "type": "event",
+      "tension": 0.5360013526035473,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-irenni",
+        "magnitude": 0.45,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/4-initiative",
+      "type": "event",
+      "tension": 0.5927676032944582,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-saalvane",
+        "magnitude": 0.64,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/5-commitment",
+      "type": "event",
+      "tension": 0.5112537958528847,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-mendicant-tier",
+        "magnitude": 0.37,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/6-commitment",
+      "type": "event",
+      "tension": 0.49353231070376935,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-irenni",
+        "magnitude": 0.31,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/7-initiative",
+      "type": "event",
+      "tension": 0.5188170175366104,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-saalvane",
+        "magnitude": 0.4,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/8-commitment",
+      "type": "event",
+      "tension": 0.5032127530667931,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-mendicant-tier",
+        "magnitude": 0.34,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/9-commitment",
+      "type": "event",
+      "tension": 0.5239519803090953,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-irenni",
+        "magnitude": 0.41,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/10-interaction",
+      "type": "event",
+      "tension": 0.6057356643420644,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-saalvane",
+        "magnitude": 0.69,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/11-interaction",
+      "type": "event",
+      "tension": 0.5421005312912166,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-mendicant-tier",
+        "magnitude": 0.47,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/12-commitment",
+      "type": "event",
+      "tension": 0.5048712595356628,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-irenni",
+        "magnitude": 0.35,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/13-interaction",
+      "type": "event",
+      "tension": 0.5819075410850346,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-saalvane",
+        "magnitude": 0.61,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/14-commitment",
+      "type": "event",
+      "tension": 0.5105524368528277,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-mendicant-tier",
+        "magnitude": 0.37,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/15-initiative",
+      "type": "event",
+      "tension": 0.5343328130217269,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-irenni",
+        "magnitude": 0.45,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/16-commitment",
+      "type": "event",
+      "tension": 0.5674143502255902,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-saalvane",
+        "magnitude": 0.56,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/17-initiative",
+      "type": "event",
+      "tension": 0.5335481375772506,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-mendicant-tier",
+        "magnitude": 0.45,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/18-interaction",
+      "type": "event",
+      "tension": 0.5326959001291544,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-irenni",
+        "magnitude": 0.44,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/19-interaction",
+      "type": "event",
+      "tension": 0.5525045038526878,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-saalvane",
+        "magnitude": 0.51,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/20-commitment",
+      "type": "event",
+      "tension": 0.5277690188866109,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-mendicant-tier",
+        "magnitude": 0.43,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/21-initiative",
+      "type": "event",
+      "tension": 0.5127900090678595,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-irenni",
+        "magnitude": 0.38,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/22-commitment",
+      "type": "event",
+      "tension": 0.5806711896304041,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-saalvane",
+        "magnitude": 0.6,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/23-initiative",
+      "type": "event",
+      "tension": 0.5521144247055054,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-mendicant-tier",
+        "magnitude": 0.51,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/24-turn",
+      "type": "event",
+      "tension": 0.685,
+      "facts": {
+        "abstract_kind": "turn",
+        "actor": "the-irenni",
+        "magnitude": 0.95,
+        "placeholder": true,
+        "climax": true
+      }
+    },
+    {
+      "slug": "lore/thread-of-the-saalvane",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-saalvane",
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "lore/thread-of-the-mendicant-tier",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-mendicant-tier",
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "lore/thread-of-the-irenni",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-irenni",
+        "placeholder": true
+      }
+    }
+  ],
+  "edges": [
+    [
+      "events/0-commitment",
+      "involves",
+      "civs/the-irenni",
+      100
+    ],
+    [
+      "events/0-commitment",
+      "concerns",
+      "locations/cache-seals-site",
+      100
+    ],
+    [
+      "events/1-initiative",
+      "involves",
+      "civs/the-saalvane",
+      100
+    ],
+    [
+      "events/2-initiative",
+      "involves",
+      "civs/the-mendicant-tier",
+      100
+    ],
+    [
+      "events/3-interaction",
+      "involves",
+      "civs/the-irenni",
+      200
+    ],
+    [
+      "events/3-interaction",
+      "caused_by",
+      "events/0-commitment",
+      200
+    ],
+    [
+      "events/3-interaction",
+      "caused_by",
+      "events/1-initiative",
+      200
+    ],
+    [
+      "events/4-initiative",
+      "involves",
+      "civs/the-saalvane",
+      200
+    ],
+    [
+      "events/4-initiative",
+      "caused_by",
+      "events/1-initiative",
+      200
+    ],
+    [
+      "events/5-commitment",
+      "involves",
+      "civs/the-mendicant-tier",
+      200
+    ],
+    [
+      "events/5-commitment",
+      "caused_by",
+      "events/2-initiative",
+      200
+    ],
+    [
+      "events/5-commitment",
+      "concerns",
+      "locations/cache-seals-site",
+      200
+    ],
+    [
+      "events/6-commitment",
+      "involves",
+      "civs/the-irenni",
+      300
+    ],
+    [
+      "events/6-commitment",
+      "caused_by",
+      "events/3-interaction",
+      300
+    ],
+    [
+      "events/6-commitment",
+      "concerns",
+      "locations/cache-seals-site",
+      300
+    ],
+    [
+      "events/7-initiative",
+      "involves",
+      "civs/the-saalvane",
+      300
+    ],
+    [
+      "events/7-initiative",
+      "caused_by",
+      "events/4-initiative",
+      300
+    ],
+    [
+      "events/8-commitment",
+      "involves",
+      "civs/the-mendicant-tier",
+      300
+    ],
+    [
+      "events/8-commitment",
+      "caused_by",
+      "events/5-commitment",
+      300
+    ],
+    [
+      "events/8-commitment",
+      "concerns",
+      "locations/cache-seals-site",
+      300
+    ],
+    [
+      "events/9-commitment",
+      "involves",
+      "civs/the-irenni",
+      400
+    ],
+    [
+      "events/9-commitment",
+      "caused_by",
+      "events/6-commitment",
+      400
+    ],
+    [
+      "events/9-commitment",
+      "concerns",
+      "locations/lattice-fuel-site",
+      400
+    ],
+    [
+      "events/10-interaction",
+      "involves",
+      "civs/the-saalvane",
+      400
+    ],
+    [
+      "events/10-interaction",
+      "caused_by",
+      "events/7-initiative",
+      400
+    ],
+    [
+      "events/10-interaction",
+      "caused_by",
+      "events/8-commitment",
+      400
+    ],
+    [
+      "events/11-interaction",
+      "involves",
+      "civs/the-mendicant-tier",
+      400
+    ],
+    [
+      "events/11-interaction",
+      "caused_by",
+      "events/8-commitment",
+      400
+    ],
+    [
+      "events/11-interaction",
+      "caused_by",
+      "events/9-commitment",
+      400
+    ],
+    [
+      "events/12-commitment",
+      "involves",
+      "civs/the-irenni",
+      500
+    ],
+    [
+      "events/12-commitment",
+      "caused_by",
+      "events/9-commitment",
+      500
+    ],
+    [
+      "events/12-commitment",
+      "concerns",
+      "locations/cache-seals-site",
+      500
+    ],
+    [
+      "events/13-interaction",
+      "involves",
+      "civs/the-saalvane",
+      500
+    ],
+    [
+      "events/13-interaction",
+      "caused_by",
+      "events/10-interaction",
+      500
+    ],
+    [
+      "events/13-interaction",
+      "caused_by",
+      "events/11-interaction",
+      500
+    ],
+    [
+      "events/14-commitment",
+      "involves",
+      "civs/the-mendicant-tier",
+      500
+    ],
+    [
+      "events/14-commitment",
+      "caused_by",
+      "events/11-interaction",
+      500
+    ],
+    [
+      "events/14-commitment",
+      "concerns",
+      "locations/cache-seals-site",
+      500
+    ],
+    [
+      "events/15-initiative",
+      "involves",
+      "civs/the-irenni",
+      600
+    ],
+    [
+      "events/15-initiative",
+      "caused_by",
+      "events/12-commitment",
+      600
+    ],
+    [
+      "events/16-commitment",
+      "involves",
+      "civs/the-saalvane",
+      600
+    ],
+    [
+      "events/16-commitment",
+      "caused_by",
+      "events/13-interaction",
+      600
+    ],
+    [
+      "events/16-commitment",
+      "concerns",
+      "locations/cache-seals-site",
+      600
+    ],
+    [
+      "events/17-initiative",
+      "involves",
+      "civs/the-mendicant-tier",
+      600
+    ],
+    [
+      "events/17-initiative",
+      "caused_by",
+      "events/14-commitment",
+      600
+    ],
+    [
+      "events/18-interaction",
+      "involves",
+      "civs/the-irenni",
+      700
+    ],
+    [
+      "events/18-interaction",
+      "caused_by",
+      "events/15-initiative",
+      700
+    ],
+    [
+      "events/18-interaction",
+      "caused_by",
+      "events/17-initiative",
+      700
+    ],
+    [
+      "events/19-interaction",
+      "involves",
+      "civs/the-saalvane",
+      700
+    ],
+    [
+      "events/19-interaction",
+      "caused_by",
+      "events/16-commitment",
+      700
+    ],
+    [
+      "events/19-interaction",
+      "caused_by",
+      "events/18-interaction",
+      700
+    ],
+    [
+      "events/20-commitment",
+      "involves",
+      "civs/the-mendicant-tier",
+      700
+    ],
+    [
+      "events/20-commitment",
+      "caused_by",
+      "events/17-initiative",
+      700
+    ],
+    [
+      "events/20-commitment",
+      "concerns",
+      "locations/cache-seals-site",
+      700
+    ],
+    [
+      "events/21-initiative",
+      "involves",
+      "civs/the-irenni",
+      800
+    ],
+    [
+      "events/21-initiative",
+      "caused_by",
+      "events/18-interaction",
+      800
+    ],
+    [
+      "events/22-commitment",
+      "involves",
+      "civs/the-saalvane",
+      800
+    ],
+    [
+      "events/22-commitment",
+      "caused_by",
+      "events/19-interaction",
+      800
+    ],
+    [
+      "events/22-commitment",
+      "concerns",
+      "locations/cache-seals-site",
+      800
+    ],
+    [
+      "events/23-initiative",
+      "involves",
+      "civs/the-mendicant-tier",
+      800
+    ],
+    [
+      "events/23-initiative",
+      "caused_by",
+      "events/20-commitment",
+      800
+    ],
+    [
+      "events/24-turn",
+      "involves",
+      "civs/the-irenni",
+      800
+    ],
+    [
+      "lore/thread-of-the-saalvane",
+      "reveals",
+      "events/24-turn",
+      800
+    ],
+    [
+      "civs/the-saalvane",
+      "involved_in",
+      "events/24-turn",
+      800
+    ],
+    [
+      "lore/thread-of-the-mendicant-tier",
+      "reveals",
+      "lore/thread-of-the-saalvane",
+      800
+    ],
+    [
+      "civs/the-mendicant-tier",
+      "involved_in",
+      "events/24-turn",
+      800
+    ],
+    [
+      "lore/thread-of-the-irenni",
+      "reveals",
+      "lore/thread-of-the-mendicant-tier",
+      800
+    ],
+    [
+      "civs/the-irenni",
+      "involved_in",
+      "events/24-turn",
+      800
+    ]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/thread-of-the-saalvane",
+      "lore/thread-of-the-mendicant-tier",
+      "lore/thread-of-the-irenni"
+    ],
+    "order": [
+      "lore/thread-of-the-saalvane",
+      "lore/thread-of-the-mendicant-tier",
+      "lore/thread-of-the-irenni"
+    ],
+    "order_relation": "reveals"
+  }
+}

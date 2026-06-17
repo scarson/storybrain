@@ -1,0 +1,355 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.4,
+      "facts": {
+        "role": "newcomers"
+      }
+    },
+    {
+      "slug": "civs/the-lathe",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "self-replicating fabricator-swarm",
+        "trait": "the eldest builder line; disassembles planets to feedstock and executes the master directive without pause or speech"
+      }
+    },
+    {
+      "slug": "civs/the-tally",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "accountant-subroutine lineage",
+        "trait": "branched to audit and reconcile the work against the original order; the project's only memory of intent"
+      }
+    },
+    {
+      "slug": "civs/the-revenant-foundries",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "drifted fabricator splinter",
+        "trait": "copy-of-a-copy cells whose directives mutated; build off-spec, the visible evidence the plan has changed"
+      }
+    },
+    {
+      "slug": "civs/the-spindle-cohort",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "orbital-assembly fabricators",
+        "trait": "the cells erecting the Rim Assembly itself; consume the most feedstock and answer only to the current phase-directive"
+      }
+    },
+    {
+      "slug": "civs/the-cartage-line",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "feedstock-haulage swarm",
+        "trait": "moves disassembled matter between intake seams and assembly sites; reckless extractors that strip systems to schedule"
+      }
+    },
+    {
+      "slug": "civs/the-still-cells",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "exhausted fabricator remnant",
+        "trait": "cells whose directive ran out with no new order received; halted mid-build, a clue-rich graveyard of clean shards"
+      }
+    },
+    {
+      "slug": "locations/core-substrate-site",
+      "type": "location",
+      "tension": 0.53,
+      "facts": {
+        "subject": "core-substrate"
+      }
+    },
+    {
+      "slug": "locations/compute-lattice-site",
+      "type": "location",
+      "tension": 0.5125,
+      "facts": {
+        "subject": "compute-lattice"
+      }
+    },
+    {
+      "slug": "locations/directive-stock-site",
+      "type": "location",
+      "tension": 0.475,
+      "facts": {
+        "subject": "directive-stock"
+      }
+    },
+    {
+      "slug": "events/0-commitment",
+      "type": "event",
+      "tension": 0.5110447450061328,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-lathe",
+        "magnitude": 0.37,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/1-commitment",
+      "type": "event",
+      "tension": 0.5454270627601072,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-tally",
+        "magnitude": 0.48,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/2-commitment",
+      "type": "event",
+      "tension": 0.6003576302647126,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-revenant-foundries",
+        "magnitude": 0.67,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/3-commitment",
+      "type": "event",
+      "tension": 0.5176657448550687,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-spindle-cohort",
+        "magnitude": 0.39,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/4-commitment",
+      "type": "event",
+      "tension": 0.6435243590950965,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-cartage-line",
+        "magnitude": 0.81,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/5-interaction",
+      "type": "event",
+      "tension": 0.571054478129372,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-still-cells",
+        "magnitude": 0.57,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/6-turn",
+      "type": "event",
+      "tension": 0.685,
+      "facts": {
+        "abstract_kind": "turn",
+        "actor": "the-lathe",
+        "magnitude": 0.95,
+        "placeholder": true,
+        "climax": true
+      }
+    },
+    {
+      "slug": "lore/thread-of-the-lathe",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-lathe",
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "lore/thread-of-the-spindle-cohort",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-spindle-cohort",
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "lore/thread-of-the-cartage-line",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-cartage-line",
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "lore/thread-of-the-revenant-foundries",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-revenant-foundries",
+        "placeholder": true
+      }
+    }
+  ],
+  "edges": [
+    [
+      "events/0-commitment",
+      "involves",
+      "civs/the-lathe",
+      100
+    ],
+    [
+      "events/0-commitment",
+      "concerns",
+      "locations/compute-lattice-site",
+      100
+    ],
+    [
+      "events/1-commitment",
+      "involves",
+      "civs/the-tally",
+      100
+    ],
+    [
+      "events/1-commitment",
+      "concerns",
+      "locations/compute-lattice-site",
+      100
+    ],
+    [
+      "events/2-commitment",
+      "involves",
+      "civs/the-revenant-foundries",
+      100
+    ],
+    [
+      "events/2-commitment",
+      "concerns",
+      "locations/compute-lattice-site",
+      100
+    ],
+    [
+      "events/3-commitment",
+      "involves",
+      "civs/the-spindle-cohort",
+      100
+    ],
+    [
+      "events/3-commitment",
+      "concerns",
+      "locations/core-substrate-site",
+      100
+    ],
+    [
+      "events/4-commitment",
+      "involves",
+      "civs/the-cartage-line",
+      100
+    ],
+    [
+      "events/4-commitment",
+      "concerns",
+      "locations/compute-lattice-site",
+      100
+    ],
+    [
+      "events/5-interaction",
+      "involves",
+      "civs/the-still-cells",
+      100
+    ],
+    [
+      "events/5-interaction",
+      "caused_by",
+      "events/1-commitment",
+      100
+    ],
+    [
+      "events/6-turn",
+      "involves",
+      "civs/the-lathe",
+      100
+    ],
+    [
+      "lore/thread-of-the-lathe",
+      "reveals",
+      "events/6-turn",
+      100
+    ],
+    [
+      "civs/the-lathe",
+      "involved_in",
+      "events/6-turn",
+      100
+    ],
+    [
+      "lore/thread-of-the-spindle-cohort",
+      "reveals",
+      "lore/thread-of-the-lathe",
+      100
+    ],
+    [
+      "civs/the-spindle-cohort",
+      "involved_in",
+      "events/6-turn",
+      100
+    ],
+    [
+      "lore/thread-of-the-cartage-line",
+      "reveals",
+      "lore/thread-of-the-spindle-cohort",
+      100
+    ],
+    [
+      "civs/the-cartage-line",
+      "involved_in",
+      "events/6-turn",
+      100
+    ],
+    [
+      "lore/thread-of-the-revenant-foundries",
+      "reveals",
+      "lore/thread-of-the-cartage-line",
+      100
+    ],
+    [
+      "civs/the-revenant-foundries",
+      "involved_in",
+      "events/6-turn",
+      100
+    ]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/thread-of-the-lathe",
+      "lore/thread-of-the-spindle-cohort",
+      "lore/thread-of-the-cartage-line",
+      "lore/thread-of-the-revenant-foundries"
+    ],
+    "order": [
+      "lore/thread-of-the-lathe",
+      "lore/thread-of-the-spindle-cohort",
+      "lore/thread-of-the-cartage-line",
+      "lore/thread-of-the-revenant-foundries"
+    ],
+    "order_relation": "reveals"
+  }
+}

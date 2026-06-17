@@ -1,0 +1,805 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.4,
+      "facts": {
+        "role": "newcomers"
+      }
+    },
+    {
+      "slug": "civs/the-erevan",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "tense-aligned-xeno-belligerent",
+        "trait": "fights from a future toward its own past; its fate is alive-or-dead undecided"
+      }
+    },
+    {
+      "slug": "civs/the-undated",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "acausal-xeno-counterforce",
+        "trait": "an enemy that edits the war's earlier moves after they have already happened"
+      }
+    },
+    {
+      "slug": "civs/the-oncewill",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "precognitive-xeno-witnesses",
+        "trait": "neutral observers who remember outcomes that have not occurred yet"
+      }
+    },
+    {
+      "slug": "locations/chronon-silt-site",
+      "type": "location",
+      "tension": 0.33749999999999997,
+      "facts": {
+        "subject": "chronon-silt"
+      }
+    },
+    {
+      "slug": "locations/tense-residue-site",
+      "type": "location",
+      "tension": 0.325,
+      "facts": {
+        "subject": "tense-residue"
+      }
+    },
+    {
+      "slug": "events/0-interaction",
+      "type": "event",
+      "tension": 0.5222491617146879,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-erevan",
+        "magnitude": 0.41,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/1-commitment",
+      "type": "event",
+      "tension": 0.4933493906643707,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-undated",
+        "magnitude": 0.31,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/2-commitment",
+      "type": "event",
+      "tension": 0.49637655278248716,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-oncewill",
+        "magnitude": 0.32,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/3-initiative",
+      "type": "event",
+      "tension": 0.5053728956449777,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-erevan",
+        "magnitude": 0.35,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/4-initiative",
+      "type": "event",
+      "tension": 0.5233920185966418,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-undated",
+        "magnitude": 0.41,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/5-commitment",
+      "type": "event",
+      "tension": 0.49998306451877583,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-oncewill",
+        "magnitude": 0.33,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/6-interaction",
+      "type": "event",
+      "tension": 0.5131318423030898,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-erevan",
+        "magnitude": 0.38,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/7-commitment",
+      "type": "event",
+      "tension": 0.49434013266698457,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-undated",
+        "magnitude": 0.31,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/8-commitment",
+      "type": "event",
+      "tension": 0.5010433609159664,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-oncewill",
+        "magnitude": 0.34,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/9-interaction",
+      "type": "event",
+      "tension": 0.4911105509065092,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-erevan",
+        "magnitude": 0.3,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/10-commitment",
+      "type": "event",
+      "tension": 0.5101212742913049,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-undated",
+        "magnitude": 0.37,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/11-commitment",
+      "type": "event",
+      "tension": 0.5068497449317947,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-oncewill",
+        "magnitude": 0.36,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/12-interaction",
+      "type": "event",
+      "tension": 0.5079541492126882,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-erevan",
+        "magnitude": 0.36,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/13-initiative",
+      "type": "event",
+      "tension": 0.4988526986632496,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-undated",
+        "magnitude": 0.33,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/14-commitment",
+      "type": "event",
+      "tension": 0.49845645937882366,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-oncewill",
+        "magnitude": 0.33,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/15-interaction",
+      "type": "event",
+      "tension": 0.4982198787368834,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-erevan",
+        "magnitude": 0.33,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/16-interaction",
+      "type": "event",
+      "tension": 0.5224875844328198,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-undated",
+        "magnitude": 0.41,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/17-interaction",
+      "type": "event",
+      "tension": 0.4944163527972997,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-oncewill",
+        "magnitude": 0.31,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/18-commitment",
+      "type": "event",
+      "tension": 0.5203673140546308,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-erevan",
+        "magnitude": 0.4,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/19-commitment",
+      "type": "event",
+      "tension": 0.5175953769695479,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-undated",
+        "magnitude": 0.39,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/20-commitment",
+      "type": "event",
+      "tension": 0.507405341562815,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-oncewill",
+        "magnitude": 0.36,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/21-commitment",
+      "type": "event",
+      "tension": 0.4965515990778804,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-erevan",
+        "magnitude": 0.32,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/22-commitment",
+      "type": "event",
+      "tension": 0.4993284085066989,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-undated",
+        "magnitude": 0.33,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/23-initiative",
+      "type": "event",
+      "tension": 0.4983257038309239,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-oncewill",
+        "magnitude": 0.33,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/24-turn",
+      "type": "event",
+      "tension": 0.685,
+      "facts": {
+        "abstract_kind": "turn",
+        "actor": "the-erevan",
+        "magnitude": 0.95,
+        "placeholder": true,
+        "climax": true
+      }
+    },
+    {
+      "slug": "lore/thread-of-the-undated",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-undated",
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "lore/thread-of-the-erevan",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-erevan",
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "lore/thread-of-the-oncewill",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-oncewill",
+        "placeholder": true
+      }
+    }
+  ],
+  "edges": [
+    [
+      "events/0-interaction",
+      "involves",
+      "civs/the-erevan",
+      100
+    ],
+    [
+      "events/1-commitment",
+      "involves",
+      "civs/the-undated",
+      100
+    ],
+    [
+      "events/1-commitment",
+      "concerns",
+      "locations/chronon-silt-site",
+      100
+    ],
+    [
+      "events/2-commitment",
+      "involves",
+      "civs/the-oncewill",
+      100
+    ],
+    [
+      "events/2-commitment",
+      "concerns",
+      "locations/chronon-silt-site",
+      100
+    ],
+    [
+      "events/3-initiative",
+      "involves",
+      "civs/the-erevan",
+      200
+    ],
+    [
+      "events/3-initiative",
+      "caused_by",
+      "events/0-interaction",
+      200
+    ],
+    [
+      "events/4-initiative",
+      "involves",
+      "civs/the-undated",
+      200
+    ],
+    [
+      "events/4-initiative",
+      "caused_by",
+      "events/1-commitment",
+      200
+    ],
+    [
+      "events/5-commitment",
+      "involves",
+      "civs/the-oncewill",
+      200
+    ],
+    [
+      "events/5-commitment",
+      "caused_by",
+      "events/2-commitment",
+      200
+    ],
+    [
+      "events/5-commitment",
+      "concerns",
+      "locations/chronon-silt-site",
+      200
+    ],
+    [
+      "events/6-interaction",
+      "involves",
+      "civs/the-erevan",
+      300
+    ],
+    [
+      "events/6-interaction",
+      "caused_by",
+      "events/3-initiative",
+      300
+    ],
+    [
+      "events/6-interaction",
+      "caused_by",
+      "events/4-initiative",
+      300
+    ],
+    [
+      "events/7-commitment",
+      "involves",
+      "civs/the-undated",
+      300
+    ],
+    [
+      "events/7-commitment",
+      "caused_by",
+      "events/4-initiative",
+      300
+    ],
+    [
+      "events/7-commitment",
+      "concerns",
+      "locations/tense-residue-site",
+      300
+    ],
+    [
+      "events/8-commitment",
+      "involves",
+      "civs/the-oncewill",
+      300
+    ],
+    [
+      "events/8-commitment",
+      "caused_by",
+      "events/5-commitment",
+      300
+    ],
+    [
+      "events/8-commitment",
+      "concerns",
+      "locations/tense-residue-site",
+      300
+    ],
+    [
+      "events/9-interaction",
+      "involves",
+      "civs/the-erevan",
+      400
+    ],
+    [
+      "events/9-interaction",
+      "caused_by",
+      "events/6-interaction",
+      400
+    ],
+    [
+      "events/9-interaction",
+      "caused_by",
+      "events/7-commitment",
+      400
+    ],
+    [
+      "events/10-commitment",
+      "involves",
+      "civs/the-undated",
+      400
+    ],
+    [
+      "events/10-commitment",
+      "caused_by",
+      "events/7-commitment",
+      400
+    ],
+    [
+      "events/10-commitment",
+      "concerns",
+      "locations/chronon-silt-site",
+      400
+    ],
+    [
+      "events/11-commitment",
+      "involves",
+      "civs/the-oncewill",
+      400
+    ],
+    [
+      "events/11-commitment",
+      "caused_by",
+      "events/8-commitment",
+      400
+    ],
+    [
+      "events/11-commitment",
+      "concerns",
+      "locations/chronon-silt-site",
+      400
+    ],
+    [
+      "events/12-interaction",
+      "involves",
+      "civs/the-erevan",
+      500
+    ],
+    [
+      "events/12-interaction",
+      "caused_by",
+      "events/9-interaction",
+      500
+    ],
+    [
+      "events/12-interaction",
+      "caused_by",
+      "events/11-commitment",
+      500
+    ],
+    [
+      "events/13-initiative",
+      "involves",
+      "civs/the-undated",
+      500
+    ],
+    [
+      "events/13-initiative",
+      "caused_by",
+      "events/10-commitment",
+      500
+    ],
+    [
+      "events/14-commitment",
+      "involves",
+      "civs/the-oncewill",
+      500
+    ],
+    [
+      "events/14-commitment",
+      "caused_by",
+      "events/11-commitment",
+      500
+    ],
+    [
+      "events/14-commitment",
+      "concerns",
+      "locations/chronon-silt-site",
+      500
+    ],
+    [
+      "events/15-interaction",
+      "involves",
+      "civs/the-erevan",
+      600
+    ],
+    [
+      "events/15-interaction",
+      "caused_by",
+      "events/12-interaction",
+      600
+    ],
+    [
+      "events/15-interaction",
+      "caused_by",
+      "events/13-initiative",
+      600
+    ],
+    [
+      "events/16-interaction",
+      "involves",
+      "civs/the-undated",
+      600
+    ],
+    [
+      "events/16-interaction",
+      "caused_by",
+      "events/13-initiative",
+      600
+    ],
+    [
+      "events/16-interaction",
+      "caused_by",
+      "events/14-commitment",
+      600
+    ],
+    [
+      "events/17-interaction",
+      "involves",
+      "civs/the-oncewill",
+      600
+    ],
+    [
+      "events/17-interaction",
+      "caused_by",
+      "events/14-commitment",
+      600
+    ],
+    [
+      "events/17-interaction",
+      "caused_by",
+      "events/16-interaction",
+      600
+    ],
+    [
+      "events/18-commitment",
+      "involves",
+      "civs/the-erevan",
+      700
+    ],
+    [
+      "events/18-commitment",
+      "caused_by",
+      "events/15-interaction",
+      700
+    ],
+    [
+      "events/18-commitment",
+      "concerns",
+      "locations/chronon-silt-site",
+      700
+    ],
+    [
+      "events/19-commitment",
+      "involves",
+      "civs/the-undated",
+      700
+    ],
+    [
+      "events/19-commitment",
+      "caused_by",
+      "events/16-interaction",
+      700
+    ],
+    [
+      "events/19-commitment",
+      "concerns",
+      "locations/chronon-silt-site",
+      700
+    ],
+    [
+      "events/20-commitment",
+      "involves",
+      "civs/the-oncewill",
+      700
+    ],
+    [
+      "events/20-commitment",
+      "caused_by",
+      "events/17-interaction",
+      700
+    ],
+    [
+      "events/20-commitment",
+      "concerns",
+      "locations/tense-residue-site",
+      700
+    ],
+    [
+      "events/21-commitment",
+      "involves",
+      "civs/the-erevan",
+      800
+    ],
+    [
+      "events/21-commitment",
+      "caused_by",
+      "events/18-commitment",
+      800
+    ],
+    [
+      "events/21-commitment",
+      "concerns",
+      "locations/chronon-silt-site",
+      800
+    ],
+    [
+      "events/22-commitment",
+      "involves",
+      "civs/the-undated",
+      800
+    ],
+    [
+      "events/22-commitment",
+      "caused_by",
+      "events/19-commitment",
+      800
+    ],
+    [
+      "events/22-commitment",
+      "concerns",
+      "locations/tense-residue-site",
+      800
+    ],
+    [
+      "events/23-initiative",
+      "involves",
+      "civs/the-oncewill",
+      800
+    ],
+    [
+      "events/23-initiative",
+      "caused_by",
+      "events/20-commitment",
+      800
+    ],
+    [
+      "events/24-turn",
+      "involves",
+      "civs/the-erevan",
+      800
+    ],
+    [
+      "lore/thread-of-the-undated",
+      "precedes",
+      "events/24-turn",
+      800
+    ],
+    [
+      "civs/the-undated",
+      "involved_in",
+      "events/24-turn",
+      800
+    ],
+    [
+      "lore/thread-of-the-erevan",
+      "precedes",
+      "lore/thread-of-the-undated",
+      800
+    ],
+    [
+      "civs/the-erevan",
+      "involved_in",
+      "events/24-turn",
+      800
+    ],
+    [
+      "lore/thread-of-the-oncewill",
+      "precedes",
+      "lore/thread-of-the-erevan",
+      800
+    ],
+    [
+      "civs/the-oncewill",
+      "involved_in",
+      "events/24-turn",
+      800
+    ]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/thread-of-the-undated",
+      "lore/thread-of-the-erevan",
+      "lore/thread-of-the-oncewill"
+    ],
+    "order": [
+      "lore/thread-of-the-undated",
+      "lore/thread-of-the-erevan",
+      "lore/thread-of-the-oncewill"
+    ],
+    "order_relation": "precedes"
+  }
+}

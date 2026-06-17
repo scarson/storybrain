@@ -1,0 +1,799 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.4,
+      "facts": {
+        "role": "newcomers"
+      }
+    },
+    {
+      "slug": "civs/the-canopy-mind",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "living-distributed-biosphere",
+        "trait": "a planet-spanning gestalt of grown tissue, awake and partnering; it offers organs as gifts and reads every host it bonds"
+      }
+    },
+    {
+      "slug": "civs/the-grafted",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "living-symbiote-lineage",
+        "trait": "humans far along the bonding set, joined into an overt shared awareness; no longer wholly individual, not yet wholly the Cathedral"
+      }
+    },
+    {
+      "slug": "civs/the-pale-ward",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "living-immune-caste",
+        "trait": "the biosphere's antibody-cultures that test, reject, or accept a bonding host — its living quality-control"
+      }
+    },
+    {
+      "slug": "locations/host-bandwidth-site",
+      "type": "location",
+      "tension": 0.4625,
+      "facts": {
+        "subject": "host-bandwidth"
+      }
+    },
+    {
+      "slug": "locations/graft-sap-site",
+      "type": "location",
+      "tension": 0.4,
+      "facts": {
+        "subject": "graft-sap"
+      }
+    },
+    {
+      "slug": "events/0-commitment",
+      "type": "event",
+      "tension": 0.5851623225617223,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-canopy-mind",
+        "magnitude": 0.62,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/1-commitment",
+      "type": "event",
+      "tension": 0.5078289769301191,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-grafted",
+        "magnitude": 0.36,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/2-commitment",
+      "type": "event",
+      "tension": 0.533414855587529,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-pale-ward",
+        "magnitude": 0.44,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/3-commitment",
+      "type": "event",
+      "tension": 0.550192589602666,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-canopy-mind",
+        "magnitude": 0.5,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/4-commitment",
+      "type": "event",
+      "tension": 0.4941192052355036,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-grafted",
+        "magnitude": 0.31,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/5-initiative",
+      "type": "event",
+      "tension": 0.5297446731524542,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-pale-ward",
+        "magnitude": 0.43,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/6-interaction",
+      "type": "event",
+      "tension": 0.5731397718377411,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-canopy-mind",
+        "magnitude": 0.58,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/7-initiative",
+      "type": "event",
+      "tension": 0.5173070841152221,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-grafted",
+        "magnitude": 0.39,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/8-commitment",
+      "type": "event",
+      "tension": 0.5091653835987673,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-pale-ward",
+        "magnitude": 0.36,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/9-interaction",
+      "type": "event",
+      "tension": 0.4919085652760696,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-canopy-mind",
+        "magnitude": 0.31,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/10-commitment",
+      "type": "event",
+      "tension": 0.5146908720685169,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-grafted",
+        "magnitude": 0.38,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/11-initiative",
+      "type": "event",
+      "tension": 0.5571683628554456,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-pale-ward",
+        "magnitude": 0.52,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/12-commitment",
+      "type": "event",
+      "tension": 0.5370928127826191,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-canopy-mind",
+        "magnitude": 0.46,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/13-interaction",
+      "type": "event",
+      "tension": 0.5351403834209778,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-grafted",
+        "magnitude": 0.45,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/14-interaction",
+      "type": "event",
+      "tension": 0.4952109033893794,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-pale-ward",
+        "magnitude": 0.32,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/15-initiative",
+      "type": "event",
+      "tension": 0.558059576239204,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-canopy-mind",
+        "magnitude": 0.53,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/16-interaction",
+      "type": "event",
+      "tension": 0.563959304261487,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-grafted",
+        "magnitude": 0.55,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/17-interaction",
+      "type": "event",
+      "tension": 0.5086456169739831,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-pale-ward",
+        "magnitude": 0.36,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/18-commitment",
+      "type": "event",
+      "tension": 0.5423640184625983,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-canopy-mind",
+        "magnitude": 0.47,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/19-initiative",
+      "type": "event",
+      "tension": 0.606736393474508,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-grafted",
+        "magnitude": 0.69,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/20-commitment",
+      "type": "event",
+      "tension": 0.49259316006326115,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-pale-ward",
+        "magnitude": 0.31,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/21-commitment",
+      "type": "event",
+      "tension": 0.5257996579611208,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-canopy-mind",
+        "magnitude": 0.42,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/22-initiative",
+      "type": "event",
+      "tension": 0.5219703353838996,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-grafted",
+        "magnitude": 0.41,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/23-commitment",
+      "type": "event",
+      "tension": 0.5256408763863146,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-pale-ward",
+        "magnitude": 0.42,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/24-turn",
+      "type": "event",
+      "tension": 0.685,
+      "facts": {
+        "abstract_kind": "turn",
+        "actor": "the-canopy-mind",
+        "magnitude": 0.95,
+        "placeholder": true,
+        "climax": true
+      }
+    },
+    {
+      "slug": "lore/thread-of-the-grafted",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-grafted",
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "lore/thread-of-the-canopy-mind",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-canopy-mind",
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "lore/thread-of-the-pale-ward",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-pale-ward",
+        "placeholder": true
+      }
+    }
+  ],
+  "edges": [
+    [
+      "events/0-commitment",
+      "involves",
+      "civs/the-canopy-mind",
+      100
+    ],
+    [
+      "events/0-commitment",
+      "concerns",
+      "locations/graft-sap-site",
+      100
+    ],
+    [
+      "events/1-commitment",
+      "involves",
+      "civs/the-grafted",
+      100
+    ],
+    [
+      "events/1-commitment",
+      "concerns",
+      "locations/graft-sap-site",
+      100
+    ],
+    [
+      "events/2-commitment",
+      "involves",
+      "civs/the-pale-ward",
+      100
+    ],
+    [
+      "events/2-commitment",
+      "concerns",
+      "locations/graft-sap-site",
+      100
+    ],
+    [
+      "events/3-commitment",
+      "involves",
+      "civs/the-canopy-mind",
+      200
+    ],
+    [
+      "events/3-commitment",
+      "caused_by",
+      "events/0-commitment",
+      200
+    ],
+    [
+      "events/3-commitment",
+      "concerns",
+      "locations/graft-sap-site",
+      200
+    ],
+    [
+      "events/4-commitment",
+      "involves",
+      "civs/the-grafted",
+      200
+    ],
+    [
+      "events/4-commitment",
+      "caused_by",
+      "events/1-commitment",
+      200
+    ],
+    [
+      "events/4-commitment",
+      "concerns",
+      "locations/graft-sap-site",
+      200
+    ],
+    [
+      "events/5-initiative",
+      "involves",
+      "civs/the-pale-ward",
+      200
+    ],
+    [
+      "events/5-initiative",
+      "caused_by",
+      "events/2-commitment",
+      200
+    ],
+    [
+      "events/6-interaction",
+      "involves",
+      "civs/the-canopy-mind",
+      300
+    ],
+    [
+      "events/6-interaction",
+      "caused_by",
+      "events/3-commitment",
+      300
+    ],
+    [
+      "events/6-interaction",
+      "caused_by",
+      "events/5-initiative",
+      300
+    ],
+    [
+      "events/7-initiative",
+      "involves",
+      "civs/the-grafted",
+      300
+    ],
+    [
+      "events/7-initiative",
+      "caused_by",
+      "events/4-commitment",
+      300
+    ],
+    [
+      "events/8-commitment",
+      "involves",
+      "civs/the-pale-ward",
+      300
+    ],
+    [
+      "events/8-commitment",
+      "caused_by",
+      "events/5-initiative",
+      300
+    ],
+    [
+      "events/8-commitment",
+      "concerns",
+      "locations/host-bandwidth-site",
+      300
+    ],
+    [
+      "events/9-interaction",
+      "involves",
+      "civs/the-canopy-mind",
+      400
+    ],
+    [
+      "events/9-interaction",
+      "caused_by",
+      "events/6-interaction",
+      400
+    ],
+    [
+      "events/9-interaction",
+      "caused_by",
+      "events/7-initiative",
+      400
+    ],
+    [
+      "events/10-commitment",
+      "involves",
+      "civs/the-grafted",
+      400
+    ],
+    [
+      "events/10-commitment",
+      "caused_by",
+      "events/7-initiative",
+      400
+    ],
+    [
+      "events/10-commitment",
+      "concerns",
+      "locations/graft-sap-site",
+      400
+    ],
+    [
+      "events/11-initiative",
+      "involves",
+      "civs/the-pale-ward",
+      400
+    ],
+    [
+      "events/11-initiative",
+      "caused_by",
+      "events/8-commitment",
+      400
+    ],
+    [
+      "events/12-commitment",
+      "involves",
+      "civs/the-canopy-mind",
+      500
+    ],
+    [
+      "events/12-commitment",
+      "caused_by",
+      "events/9-interaction",
+      500
+    ],
+    [
+      "events/12-commitment",
+      "concerns",
+      "locations/host-bandwidth-site",
+      500
+    ],
+    [
+      "events/13-interaction",
+      "involves",
+      "civs/the-grafted",
+      500
+    ],
+    [
+      "events/13-interaction",
+      "caused_by",
+      "events/10-commitment",
+      500
+    ],
+    [
+      "events/13-interaction",
+      "caused_by",
+      "events/11-initiative",
+      500
+    ],
+    [
+      "events/14-interaction",
+      "involves",
+      "civs/the-pale-ward",
+      500
+    ],
+    [
+      "events/14-interaction",
+      "caused_by",
+      "events/11-initiative",
+      500
+    ],
+    [
+      "events/14-interaction",
+      "caused_by",
+      "events/13-interaction",
+      500
+    ],
+    [
+      "events/15-initiative",
+      "involves",
+      "civs/the-canopy-mind",
+      600
+    ],
+    [
+      "events/15-initiative",
+      "caused_by",
+      "events/12-commitment",
+      600
+    ],
+    [
+      "events/16-interaction",
+      "involves",
+      "civs/the-grafted",
+      600
+    ],
+    [
+      "events/16-interaction",
+      "caused_by",
+      "events/13-interaction",
+      600
+    ],
+    [
+      "events/16-interaction",
+      "caused_by",
+      "events/15-initiative",
+      600
+    ],
+    [
+      "events/17-interaction",
+      "involves",
+      "civs/the-pale-ward",
+      600
+    ],
+    [
+      "events/17-interaction",
+      "caused_by",
+      "events/14-interaction",
+      600
+    ],
+    [
+      "events/17-interaction",
+      "caused_by",
+      "events/16-interaction",
+      600
+    ],
+    [
+      "events/18-commitment",
+      "involves",
+      "civs/the-canopy-mind",
+      700
+    ],
+    [
+      "events/18-commitment",
+      "caused_by",
+      "events/15-initiative",
+      700
+    ],
+    [
+      "events/18-commitment",
+      "concerns",
+      "locations/graft-sap-site",
+      700
+    ],
+    [
+      "events/19-initiative",
+      "involves",
+      "civs/the-grafted",
+      700
+    ],
+    [
+      "events/19-initiative",
+      "caused_by",
+      "events/16-interaction",
+      700
+    ],
+    [
+      "events/20-commitment",
+      "involves",
+      "civs/the-pale-ward",
+      700
+    ],
+    [
+      "events/20-commitment",
+      "caused_by",
+      "events/17-interaction",
+      700
+    ],
+    [
+      "events/20-commitment",
+      "concerns",
+      "locations/host-bandwidth-site",
+      700
+    ],
+    [
+      "events/21-commitment",
+      "involves",
+      "civs/the-canopy-mind",
+      800
+    ],
+    [
+      "events/21-commitment",
+      "caused_by",
+      "events/18-commitment",
+      800
+    ],
+    [
+      "events/21-commitment",
+      "concerns",
+      "locations/graft-sap-site",
+      800
+    ],
+    [
+      "events/22-initiative",
+      "involves",
+      "civs/the-grafted",
+      800
+    ],
+    [
+      "events/22-initiative",
+      "caused_by",
+      "events/19-initiative",
+      800
+    ],
+    [
+      "events/23-commitment",
+      "involves",
+      "civs/the-pale-ward",
+      800
+    ],
+    [
+      "events/23-commitment",
+      "caused_by",
+      "events/20-commitment",
+      800
+    ],
+    [
+      "events/23-commitment",
+      "concerns",
+      "locations/host-bandwidth-site",
+      800
+    ],
+    [
+      "events/24-turn",
+      "involves",
+      "civs/the-canopy-mind",
+      800
+    ],
+    [
+      "lore/thread-of-the-grafted",
+      "prerequisite",
+      "events/24-turn",
+      800
+    ],
+    [
+      "civs/the-grafted",
+      "involved_in",
+      "events/24-turn",
+      800
+    ],
+    [
+      "lore/thread-of-the-canopy-mind",
+      "prerequisite",
+      "lore/thread-of-the-grafted",
+      800
+    ],
+    [
+      "civs/the-canopy-mind",
+      "involved_in",
+      "events/24-turn",
+      800
+    ],
+    [
+      "lore/thread-of-the-pale-ward",
+      "prerequisite",
+      "lore/thread-of-the-canopy-mind",
+      800
+    ],
+    [
+      "civs/the-pale-ward",
+      "involved_in",
+      "events/24-turn",
+      800
+    ]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/thread-of-the-grafted",
+      "lore/thread-of-the-canopy-mind",
+      "lore/thread-of-the-pale-ward"
+    ],
+    "order": [
+      "lore/thread-of-the-grafted",
+      "lore/thread-of-the-canopy-mind",
+      "lore/thread-of-the-pale-ward"
+    ],
+    "order_relation": "prerequisite"
+  }
+}
