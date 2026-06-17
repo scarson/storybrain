@@ -1,0 +1,14 @@
+=== Secondhand bonds on first-contact-diplomacy.hybrid3.json (seed 7) ===
+★ the-irenni-gift-warden --lives_up_to--> the-lattice-lantern  (via the-irenni-gift-lender-saev, protege of; the-irenni-gift-lender-saev forged it ; transmission 0.80)
+★ the-irenni-gift-warden --lives_up_to--> the-worthiness-stylus  (via the-irenni-gift-lender-saev, protege of; the-irenni-gift-lender-saev owned it ; transmission 0.56)
+★ the-irenni-gift-warden --obligated_over--> the-lattice-lantern  (via the-irenni-gift-lender-saev, ally of; the-irenni-gift-lender-saev forged it ; transmission 0.50)
+★ the-saalvane-saboteur --spites--> the-corrupted-gift  (via the-saalvane-defector-corin, grudge against; the-saalvane-defector-corin forged it — their people (the-saalvane); transmission 0.75)
+★ the-irenni-sleeper-vael --lives_up_to--> the-lattice-lantern  (via the-irenni-gift-lender-saev, reveres; the-irenni-gift-lender-saev forged it ; transmission 0.80)
+★ the-irenni-sleeper-vael --lives_up_to--> the-worthiness-stylus  (via the-irenni-gift-lender-saev, reveres; the-irenni-gift-lender-saev owned it ; transmission 0.56)
+★ envoy-mara-okonkwo --heir_to--> the-lattice-lantern  (via envoy-imara-the-first, successor of; envoy-imara-the-first wielded it ; transmission 0.64)
+★ envoy-mara-okonkwo --burdened_by--> the-sealed-lattice-cache  (via envoy-imara-the-first, successor of; envoy-imara-the-first died for it ; transmission 0.80)
+★ decoder-jonas-rhee --obligated_over--> the-corrupted-gift  (via the-saalvane-defector-corin, owes; the-saalvane-defector-corin forged it — their people (the-saalvane); transmission 0.60)
+★ decoder-jonas-rhee --lives_up_to--> the-lattice-lantern  (via envoy-imara-the-first, mentored by; envoy-imara-the-first wielded it ; transmission 0.68)
+★ decoder-jonas-rhee --must_finish--> the-sealed-lattice-cache  (via envoy-imara-the-first, mentored by; envoy-imara-the-first died for it ; transmission 0.85)
+
+formed 11 secondhand bond(s). Each required a real C→P→artifact chain (unforced).

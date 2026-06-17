@@ -1,0 +1,21 @@
+=== Secondhand bonds on uplift-nursery-world.hybrid3.json (seed 7) ===
+★ steward-imani-bayode --heir_to--> the-gardeners-shaping-tool  (via the-prior-steward-okonkwo, successor of; the-prior-steward-okonkwo wielded it ; transmission 0.64)
+★ steward-imani-bayode --burdened_by--> the-attention-bell  (via the-prior-steward-okonkwo, successor of; the-prior-steward-okonkwo sealed it ; transmission 0.56)
+★ seedwright-cole-vance --lives_up_to--> the-gardeners-shaping-tool  (via the-prior-steward-okonkwo, mentored by; the-prior-steward-okonkwo wielded it ; transmission 0.68)
+★ seedwright-cole-vance --must_finish--> the-attention-bell  (via the-prior-steward-okonkwo, mentored by; the-prior-steward-okonkwo sealed it ; transmission 0.59)
+★ seedwright-cole-vance --lives_up_to--> the-gene-loom  (via the-harvested-seedwright, reveres; the-harvested-seedwright wielded it ; transmission 0.64)
+★ seedwright-cole-vance --must_finish--> the-gene-loom  (via the-harvested-seedwright, reveres; the-harvested-seedwright died for it ; transmission 0.80)
+★ seedwright-cole-vance --lives_up_to--> the-cultivar-lineage-key  (via the-harvested-seedwright, reveres; the-harvested-seedwright forged it — their people (the-first-cultivars); transmission 0.80)
+★ reader-noor-haddad --lives_up_to--> the-cultivar-lineage-key  (via the-first-cultivar-elder, reveres; the-first-cultivar-elder bonded to it ; transmission 0.68)
+★ midwife-tomas-reyes --heir_to--> the-gene-loom  (via the-ripening-child, kin of; the-ripening-child forged it — their people (the-gardeners); transmission 1.00)
+★ midwife-tomas-reyes --heir_to--> the-gardeners-shaping-tool  (via the-ripening-child, kin of; the-ripening-child forged it — their people (the-gardeners); transmission 1.00)
+★ midwife-tomas-reyes --heir_to--> the-attention-bell  (via the-ripening-child, kin of; the-ripening-child forged it — their people (the-gardeners); transmission 1.00)
+★ midwife-tomas-reyes --obligated_over--> terraforming-seed-of-the-tenders  (via the-loam-tender-near-hand, owes; the-loam-tender-near-hand forged it — their people (the-loam-tenders); transmission 0.60)
+★ midwife-tomas-reyes --obligated_over--> the-listening-soil-shrine  (via the-loam-tender-near-hand, owes; the-loam-tender-near-hand forged it — their people (the-loam-tenders); transmission 0.60)
+★ midwife-tomas-reyes --burdened_by--> the-gene-loom  (via the-harvested-seedwright, descendant of; the-harvested-seedwright died for it ; transmission 1.00)
+★ midwife-tomas-reyes --heir_to--> the-cultivar-lineage-key  (via the-harvested-seedwright, descendant of; the-harvested-seedwright forged it — their people (the-first-cultivars); transmission 1.00)
+★ the-ripening-child --heir_to--> the-gene-loom  (via the-harvested-seedwright, descendant of; the-harvested-seedwright wielded it ; transmission 0.80)
+★ the-ripening-child --burdened_by--> the-gene-loom  (via the-harvested-seedwright, descendant of; the-harvested-seedwright died for it ; transmission 1.00)
+★ the-ripening-child --heir_to--> the-cultivar-lineage-key  (via the-harvested-seedwright, descendant of; the-harvested-seedwright forged it — their people (the-first-cultivars); transmission 1.00)
+
+formed 18 secondhand bond(s). Each required a real C→P→artifact chain (unforced).

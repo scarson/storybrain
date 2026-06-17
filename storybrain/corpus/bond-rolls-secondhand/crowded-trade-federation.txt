@@ -1,0 +1,11 @@
+=== Secondhand bonds on crowded-trade-federation.hybrid3.json (seed 7) ===
+★ mara-osei-vance --heir_to--> khariti-route-log  (via teoma-vance, descendant of; teoma-vance forged it ; transmission 1.00)
+★ dev-haldane --heir_to--> melun-counterfeit-token  (via karza-vel, successor of; karza-vel forged it ; transmission 0.80)
+★ sable-ferreira --lives_up_to--> dissident-assayer-confession  (via orin-pell, mentored by; orin-pell owned it ; transmission 0.59)
+★ sable-ferreira --spites--> dissident-assayer-confession  (via orin-pell, grudge against; orin-pell owned it ; transmission 0.52)
+★ quen-arden --must_finish--> rho-clean-chain-relic  (via halsen-arden, mentored by; halsen-arden died for it ; transmission 0.85)
+★ quen-arden --burdened_by--> rho-clean-chain-relic  (via halsen-arden, successor of; halsen-arden died for it ; transmission 0.80)
+★ iruwe-sael --heir_to--> khariti-route-log  (via teoma-vance, successor of; teoma-vance forged it ; transmission 0.80)
+★ iruwe-sael --lives_up_to--> khariti-route-log  (via teoma-vance, reveres; teoma-vance forged it ; transmission 0.80)
+
+formed 8 secondhand bond(s). Each required a real C→P→artifact chain (unforced).

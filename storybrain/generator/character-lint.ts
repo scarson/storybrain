@@ -10,7 +10,10 @@ const w: World = JSON.parse(await Bun.file(path).text());
 const issues: string[] = [];
 const colonists = w.nodes.filter(n => n.type === "colonist");
 const colSlugs = new Set(colonists.map(n => n.slug));
-const CHAR_REL = new Set(["kin_of","rival_of","lover_of","ally_of","killed","betrayed","saved","owes","grudge_against"]);
+const CHAR_REL = new Set(["kin_of","rival_of","lover_of","ally_of","killed","betrayed","saved","owes","grudge_against",
+  // richer directional relationships (v2) — these also power secondhand artifact bonds
+  "mentor_of","mentored_by","role_model_of","reveres","protege_of","predecessor_of","successor_of",
+  "ancestor_of","descendant_of","commands","served","estranged_from"]);
 
 // 1. every colonist has skills + a want/drive
 const noSkill = colonists.filter(n => !(n.facts && (n.facts.skills || n.facts.skill)));

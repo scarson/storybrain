@@ -1,0 +1,12 @@
+=== Secondhand bonds on the-living-marrow.hybrid3.json (seed 7) ===
+★ drill-chief-bren-okafor --heir_to--> the-vitrified-map  (via surveyor-mara-okafor, descendant of; surveyor-mara-okafor owned it ; transmission 0.70)
+★ drill-chief-bren-okafor --burdened_by--> the-vitrified-map  (via surveyor-mara-okafor, descendant of; surveyor-mara-okafor died for it ; transmission 1.00)
+★ the-listener-yuki --lives_up_to--> the-still-tuning-fork  (via the-choir-echo-vohn, reveres; the-choir-echo-vohn forged it — their people (the-choir); transmission 0.80)
+★ the-listener-yuki --heir_to--> the-still-tuning-fork  (via first-listener-edda, successor of; first-listener-edda wielded it ; transmission 0.64)
+★ the-listener-yuki --burdened_by--> the-still-tuning-fork  (via first-listener-edda, successor of; first-listener-edda died for it ; transmission 0.80)
+★ the-listener-yuki --must_finish--> the-still-tuning-fork  (via first-listener-edda, mentored by; first-listener-edda died for it ; transmission 0.85)
+★ the-velt-remnant-thauma --heir_to--> the-vitrified-map  (via velt-glasswright-sira, descendant of; velt-glasswright-sira forged it ; transmission 1.00)
+★ the-velt-remnant-thauma --burdened_by--> the-silence-engine  (via velt-glasswright-sira, descendant of; velt-glasswright-sira sealed it ; transmission 0.70)
+★ the-velt-remnant-thauma --heir_to--> the-marrow-shard  (via velt-glasswright-sira, descendant of; velt-glasswright-sira forged it — their people (the-velt); transmission 1.00)
+
+formed 9 secondhand bond(s). Each required a real C→P→artifact chain (unforced).

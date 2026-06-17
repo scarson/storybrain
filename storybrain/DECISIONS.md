@@ -277,3 +277,21 @@ for Sam to review. Newest entries appended at the bottom of each section.
   runtime roller bonds newly-discovered items) + deepening progression. Next:
   LLM semantic want-match + cached why-prose; playtest-tune thresholds; wire into
   runtime/Director; add bond verbs to lint.
+
+- 2026-06-17 (secondhand bonds + richer relationships — Sam's ask): Built
+  bond-roller-secondhand.ts — transitive C--R1-->P--R2-->artifact bonds typed by
+  the PAIR (carrier-class × artifact-class): lineage×held=heir_to, lineage×fate=
+  burdened_by, legacy×fate=must_finish, antagonism×held=spites, grief=grieves_
+  through, obligation=obligated_over, etc. Unforced by construction (both links
+  must exist). Expanded relationship vocab (mentor/role_model/protege/predecessor/
+  ancestor/descendant/commands/served/estranged) into Stage E prompt + character-
+  lint. Ran a Stage F enrichment on ALL 10 (richer directional edges + intermediary
+  forebear->artifact ties, forebears added as deceased colonist nodes); all stay
+  VALID+CHARACTER-OK. Secondhand bonds 20 -> 116 corpus-wide (finding 19). Example
+  chains: Bren burdened_by the map his grandmother died_for; medic must_finish the
+  graft his mentor died completing; Iris heir_to the vault holding her ancestor's
+  sealed memory; midwife burdened_by the loom a harvested ancestor died_for (the
+  loom now ripening his daughter). Feeds the Director (inheriting char's tension
+  spikes + forebear's story in scope -> two-generation payoff beats). Data on all
+  10 committed (bond-rolls-secondhand/). Next: tune the (R1,R2) MAP + caps by
+  playtest; dedicated ancestor/figure subtype.

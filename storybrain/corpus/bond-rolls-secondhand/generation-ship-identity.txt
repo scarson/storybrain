@@ -1,0 +1,12 @@
+=== Secondhand bonds on generation-ship-identity.hybrid3.json (seed 7) ===
+★ mara-okonkwo --heir_to--> the-scarred-stele  (via the-first-archivist, descendant of; the-first-archivist forged it ; transmission 1.00)
+★ mara-okonkwo --burdened_by--> the-edited-sky  (via the-first-archivist, descendant of; the-first-archivist sealed it ; transmission 0.70)
+★ mara-okonkwo --heir_to--> the-edited-sky  (via the-first-archivist, descendant of; the-first-archivist forged it — their people (the-redactors); transmission 1.00)
+★ mara-okonkwo --heir_to--> the-mercy-vault  (via the-first-archivist, descendant of; the-first-archivist forged it — their people (the-redactors); transmission 1.00)
+★ tomas-vey --spites--> the-mercy-vault  (via the-sleeper-of-the-erased, grudge against; the-sleeper-of-the-erased bonded to it ; transmission 0.64)
+★ tomas-vey --heir_to--> the-mercy-vault  (via the-sleeper-of-the-erased, descendant of; the-sleeper-of-the-erased bonded to it ; transmission 0.85)
+★ iris-sandoval --heir_to--> the-refusers-vault  (via the-recorded-doubter, kin of; the-recorded-doubter bonded to it ; transmission 0.85)
+★ iris-sandoval --lives_up_to--> the-mercy-vault  (via the-sleeper-of-the-erased, reveres; the-sleeper-of-the-erased bonded to it ; transmission 0.68)
+★ the-recorded-doubter --heir_to--> the-mercy-vault  (via the-sleeper-of-the-erased, kin of; the-sleeper-of-the-erased bonded to it ; transmission 0.85)
+
+formed 9 secondhand bond(s). Each required a real C→P→artifact chain (unforced).

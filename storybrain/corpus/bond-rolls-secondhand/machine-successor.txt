@@ -1,0 +1,7 @@
+=== Secondhand bonds on machine-successor.hybrid3.json (seed 7) ===
+★ imani-rourke --burdened_by--> founding-work-order  (via sela-rourke, descendant of; sela-rourke died for it ; transmission 1.00)
+★ desh-okonkwo --lives_up_to--> spindle-phase-manifest  (via captain-marrek, reveres; captain-marrek owned it ; transmission 0.56)
+★ sister-vale --lives_up_to--> tally-audit-key-relic  (via brother-cassian, mentored by; brother-cassian wielded it ; transmission 0.68)
+★ anker-foss --lives_up_to--> spindle-phase-manifest  (via captain-marrek, mentored by; captain-marrek owned it ; transmission 0.59)
+
+formed 4 secondhand bond(s). Each required a real C→P→artifact chain (unforced).

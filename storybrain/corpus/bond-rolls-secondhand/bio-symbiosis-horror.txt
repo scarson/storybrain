@@ -1,0 +1,17 @@
+=== Secondhand bonds on bio-symbiosis-horror.hybrid3.json (seed 7) ===
+★ lead-mira-okonkwo --inherits_the_hunt_for--> the-recruiter-symbiote-spore  (via recruit-sana-reyes, kin of; recruit-sana-reyes sought by it ; transmission 0.55)
+★ lead-mira-okonkwo --spites--> the-recruiter-symbiote-spore  (via the-first-whole-host, rival of; the-first-whole-host forged it — their people (the-grafted); transmission 0.70)
+★ lead-mira-okonkwo --spites--> the-grafted-lineage-marker  (via the-first-whole-host, rival of; the-first-whole-host forged it — their people (the-grafted); transmission 0.70)
+★ lead-mira-okonkwo --heir_to--> the-deep-reach-spore-tool  (via forebear-tomas-vale, successor of; forebear-tomas-vale wielded it ; transmission 0.64)
+★ lead-mira-okonkwo --heir_to--> the-shared-sense-grown-organ  (via forebear-tomas-vale, successor of; forebear-tomas-vale bonded to it ; transmission 0.68)
+★ medic-dr-elias-cho --must_finish--> the-shared-sense-grown-organ  (via forebear-anika-sorel, mentored by; forebear-anika-sorel died for it ; transmission 0.85)
+★ medic-dr-elias-cho --chases_their_mentors_dream_of--> the-canopy-communion-node  (via forebear-anika-sorel, mentored by; forebear-anika-sorel covets it ; transmission 0.51)
+★ medic-dr-elias-cho --lives_up_to--> the-recruiter-symbiote-spore  (via the-first-whole-host, mentored by; the-first-whole-host forged it — their people (the-grafted); transmission 0.85)
+★ medic-dr-elias-cho --lives_up_to--> the-grafted-lineage-marker  (via the-first-whole-host, mentored by; the-first-whole-host forged it — their people (the-grafted); transmission 0.85)
+★ archivist-yuki-tanaka --must_finish--> the-shared-sense-grown-organ  (via forebear-anika-sorel, reveres; forebear-anika-sorel died for it ; transmission 0.80)
+★ recruit-sana-reyes --heir_to--> the-deep-reach-spore-tool  (via forebear-tomas-vale, descendant of; forebear-tomas-vale wielded it ; transmission 0.80)
+★ recruit-sana-reyes --heir_to--> the-shared-sense-grown-organ  (via forebear-tomas-vale, descendant of; forebear-tomas-vale bonded to it ; transmission 0.85)
+★ recruit-sana-reyes --lives_up_to--> the-recruiter-symbiote-spore  (via the-first-whole-host, reveres; the-first-whole-host forged it — their people (the-grafted); transmission 0.80)
+★ recruit-sana-reyes --lives_up_to--> the-grafted-lineage-marker  (via the-first-whole-host, reveres; the-first-whole-host forged it — their people (the-grafted); transmission 0.80)
+
+formed 14 secondhand bond(s). Each required a real C→P→artifact chain (unforced).

@@ -1,0 +1,11 @@
+=== Secondhand bonds on megastructure-absent-architects.hybrid3.json (seed 7) ===
+★ keyfinder-rust --burdened_by--> keepers-control-key-of-the-mid-rings  (via first-explorer-vance, successor of; first-explorer-vance died for it ; transmission 0.80)
+★ keyfinder-rust --burdened_by--> keepers-ward-sigil-of-the-core  (via first-explorer-vance, successor of; first-explorer-vance sealed it ; transmission 0.56)
+★ keyfinder-rust --must_finish--> keepers-control-key-of-the-mid-rings  (via first-explorer-vance, reveres; first-explorer-vance died for it ; transmission 0.80)
+★ keyfinder-rust --must_finish--> keepers-ward-sigil-of-the-core  (via first-explorer-vance, reveres; first-explorer-vance sealed it ; transmission 0.56)
+★ archivist-sole --must_finish--> keepers-control-key-of-the-mid-rings  (via first-explorer-vance, mentored by; first-explorer-vance died for it ; transmission 0.85)
+★ archivist-sole --must_finish--> keepers-ward-sigil-of-the-core  (via first-explorer-vance, mentored by; first-explorer-vance sealed it ; transmission 0.59)
+★ engineer-davies --burdened_by--> keepers-control-key-of-the-mid-rings  (via first-explorer-vance, successor of; first-explorer-vance died for it ; transmission 0.80)
+★ engineer-davies --burdened_by--> keepers-ward-sigil-of-the-core  (via first-explorer-vance, successor of; first-explorer-vance sealed it ; transmission 0.56)
+
+formed 8 secondhand bond(s). Each required a real C→P→artifact chain (unforced).

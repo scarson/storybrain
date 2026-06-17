@@ -1,0 +1,13 @@
+=== Secondhand bonds on time-war.hybrid3.json (seed 7) ===
+★ dr-ileana-cross --burdened_by--> the-retro-editing-stylus  (via the-vanished-survey-lead, successor of; the-vanished-survey-lead died for it ; transmission 0.80)
+★ dr-ileana-cross --burdened_by--> the-undated-anachronism  (via the-vanished-survey-lead, successor of; the-vanished-survey-lead sealed it ; transmission 0.56)
+★ dr-ileana-cross --heir_to--> the-arriving-relic  (via the-vanished-survey-lead, successor of; the-vanished-survey-lead wielded it ; transmission 0.64)
+★ mara-okonkwo --must_finish--> the-retro-editing-stylus  (via the-vanished-survey-lead, mentored by; the-vanished-survey-lead died for it ; transmission 0.85)
+★ mara-okonkwo --must_finish--> the-undated-anachronism  (via the-vanished-survey-lead, mentored by; the-vanished-survey-lead sealed it ; transmission 0.59)
+★ mara-okonkwo --lives_up_to--> the-arriving-relic  (via the-vanished-survey-lead, mentored by; the-vanished-survey-lead wielded it ; transmission 0.68)
+★ the-quiet-recruit --must_finish--> the-retro-editing-stylus  (via the-vanished-survey-lead, protege of; the-vanished-survey-lead died for it ; transmission 0.80)
+★ the-quiet-recruit --must_finish--> the-undated-anachronism  (via the-vanished-survey-lead, protege of; the-vanished-survey-lead sealed it ; transmission 0.56)
+★ the-quiet-recruit --lives_up_to--> the-arriving-relic  (via the-vanished-survey-lead, protege of; the-vanished-survey-lead wielded it ; transmission 0.64)
+★ the-erevan-revenant-korl --heir_to--> the-fold-loop-ring  (via the-ancestor-soldier-vorr, descendant of; the-ancestor-soldier-vorr forged it ; transmission 1.00)
+
+formed 10 secondhand bond(s). Each required a real C→P→artifact chain (unforced).
