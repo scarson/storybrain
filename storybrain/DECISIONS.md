@@ -77,3 +77,25 @@ for Sam to review. Newest entries appended at the bottom of each section.
   ship deliverable, gbrain is an agent-REPL accelerator for the prototype.
   D-revised: recommendation is now GRADUATED, leaning toward "SQLite store is the
   artifact; gbrain validates fun cheaply."
+
+- 2026-06-17: Adversarial round 2 (Opus) — 4 FATAL (compaction still broken,
+  scorer hides hard problem in tension, lore GENERATION unspecified, determinism
+  contradiction), 4 HIGH, mediums. Built + RAN the Director prototype end-to-end
+  (findings 03/04) to ground the response. DESIGN v3→v4 with major changes:
+  * NEW §5 Lore Generation: canon = structured FACTS; prose = deterministic
+    render of facts; LLM = optional CACHED renderer, never author of canon.
+    Resolves R2-05 (generation), R2-06 (determinism — Director keys off facts not
+    prose), R2-01/R1-05 (compaction = drop prose bodies, keep facts/edges forever,
+    never purge), and the old contradiction problem (structured canon can't
+    self-contradict).
+  * COMMITTED the recommendation (R2-07): build SQLite edges store as the durable
+    artifact; gbrain is a ~1-week agent-REPL accelerator only. No more hedge.
+  * Added §4 hunt-as-fun-loop: location uncertainty, expedition cost, rival-race
+    clock, curse trade-off, fate choices that feed the scorer (R2-08).
+  * tension made concrete (game sim-state in memory, no N+1; demo values
+    illustrative) (R2-04). Arc state machine specified (R2-09). Save = journal +
+    snapshot, not live PGLite dir (R2-10).
+  * Fixed stale header (R2-11).
+  Decision shift: the SQLite store is now THE deliverable; gbrain demoted to
+  prototype accelerator. The lore-as-facts reframe is the strongest single
+  contribution of the exploration.
