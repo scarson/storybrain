@@ -29,3 +29,24 @@ Keep mystery.order + order_relation + every existing artifact/faction/arc. Add o
 Output ONLY the merged World JSON. MUST pass BOTH:
 `bun storybrain/generator/check.ts <file>` AND
 `bun storybrain/generator/character-lint.ts <file>`.
+
+## Skill profiles — pick the set that fits the world's FRAME (not Rimworld everywhere)
+
+Skills must match the premise. Choose per world; mixed casts may blend.
+
+- **SHIP-CREW / EXPEDITION profile** (spacefaring, salvage, survey, generation-ship,
+  merchant, explorers): use crew axes — `piloting`, `navigation`, `engineering`,
+  `sensors`, `gunnery`, `life_support`, `eva`, `xeno` (xenolinguistics/xenology),
+  `command`. (~6 per colonist, role-fitted: a pilot high `piloting`, a translator
+  high `xeno`.) Stamp `facts.crew_role` (pilot/engineer/navigator/gunner/medic/
+  envoy/quartermaster/captain…).
+- **COLONIST / SETTLER profile** (planetside homestead/colony — Rimworld-weighted):
+  `medicine`, `research`, `social`, `construction`, `growing`, `crafting`, `combat`.
+  Stamp `facts.colony_role`.
+
+Per-theme default frame (override if a world's fiction clearly differs):
+ship-crew → first-contact, machine-successor, time-war, generation-ship-identity,
+megastructure-absent-architects, crowded-trade-federation.
+colonist → the-living-marrow, bio-symbiosis-horror, extinction-plague-vector,
+uplift-nursery-world.
+Always set `facts.skill_profile: "ship-crew" | "colonist" | "mixed"` so it's explicit.
