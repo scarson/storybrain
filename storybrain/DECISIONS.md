@@ -232,3 +232,16 @@ for Sam to review. Newest entries appended at the bottom of each section.
   RECOMMENDED GENERATOR (supersedes f12/f13): abstract-procgen hybrid (Opus seed ->
   procgen-abstract -> clothe+prune+Stage D) -> SQLite store; adds determinism +
   seedability pure lacks. Next when Codex available: cross-model re-judge to confirm.
+
+- 2026-06-17 (character depth — Sam's Qs): Analysis showed characters (colonist
+  nodes) existed but shallow: ~0 skills, thin colonist<->colonist graph, no alien
+  individuals; pure left cast nearly inert (finding 15). Built character-lint.ts
+  (quality gate: skills, social density >=1.0, >=1 alien char, no over-spread/
+  malformed edges) + prompt-stageE.md (characters & polish pass). Rolled Stage E
+  across all 10 -> hybrid3 worlds, ALL now CHARACTER-OK (finding 16): 65/65
+  colonists have skills (was ~0), 111 social edges avg density 1.71 (was thin), 24
+  named alien chars (was ~0), over-spread + malformed edges fixed. Strong
+  theme-fit relationships (debt/betrayal/romance triangles wired to arcs). Skill
+  axes + relationship types are sensible Rimworld defaults, tunable to the game.
+  NEXT (queued): comparative re-judge hybrid3-vs-hybrid2 (did depth lift judged
+  quality?) and hybrid3-vs-pure; cross-model second judge pending Codex.
