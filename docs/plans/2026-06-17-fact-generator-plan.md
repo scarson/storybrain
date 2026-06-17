@@ -21,7 +21,7 @@ expensive. (Solo autonomous run; banners kept current for the record.)
 
 | Phase | Status | Notes |
 |---|---|---|
-| 1 — schema + validator (TDD) | ⬜ Not started | deterministic, no LLM |
+| 1 — schema + validator (TDD) | ✅ Shipped | 6/6 green, deterministic, no LLM |
 | 2 — generation prompts | ✅ Shipped | canon + artifacts |
 | 3 — generate world via model | ✅ Shipped | 34 nodes, validated 1st try |
 | 4 — load + Director + mystery check | ✅ Shipped | mystery reconstructs; feedback bug found+fixed |
@@ -29,10 +29,11 @@ expensive. (Solo autonomous run; banners kept current for the record.)
 ## Phase 1 — schema + validator (TDD)
 **Execution Status:** ✅ SHIPPED — `generator/schema.ts` + `schema.test.ts`, 6/6 green.
 - `generator/schema.ts`: types `WorldNode`, `Edge`, `World` + `validateWorld(w)`
-  returning `{ok, errors[]}`. Checks: every edge.src/dst is a declared node slug;
-  every `artifact` node has ≥3 facts in `facts.latent[]`; `mystery.fragments` all
-  exist and are `lore` nodes; mystery coverage = every fragment is the dst of some
-  artifact `drops`/`reveals` edge.
+  returning `{ok, errors[]}`. Checks (as implemented): every edge.src/dst is a
+  declared node slug; every `artifact` node `drops` ≥3 `lore` nodes (edge-based,
+  cleaner than nested `facts.latent[]`); `mystery.fragments` all exist + are `lore`;
+  mystery coverage = every fragment is the dst of some artifact `drops` edge;
+  unique slugs; `mystery.order` is a permutation of `fragments`.
 - TDD: write `generator/schema.test.ts` FIRST — cases: valid world passes; dangling
   edge fails; artifact with 2 facts fails; uncovered mystery fragment fails.
 - Done when `bun test generator/schema.test.ts` green.
