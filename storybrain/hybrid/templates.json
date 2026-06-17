@@ -1,0 +1,58 @@
+{
+  "setting": "Humans arrive millennia after the Resonance Wars shattered the Aeon Coalition; ancient empires built on stolen psychic substrate now crumble as their foundation proves corrosive to all matter.",
+  "civs": [
+    {
+      "name": "the-shroud",
+      "archetype": "hive-consciousness-collective",
+      "trait": "distributed minds linked by quantum-foam, terrified of individuation",
+      "greed": 0.75
+    },
+    {
+      "name": "the-luminaries",
+      "archetype": "ascended-energy-beings",
+      "trait": "ex-biological architects who uploaded to stellar cores, now dimming",
+      "greed": 0.55
+    },
+    {
+      "name": "the-deep-architects",
+      "archetype": "silicon-substrate-civilization",
+      "trait": "subterranean reality-engineers who burrowed to find substrate stability",
+      "greed": 0.9
+    },
+    {
+      "name": "the-ephemera",
+      "archetype": "time-displaced-survivors",
+      "trait": "ghosts of short-lived species caught in temporal loops, desperate for escape",
+      "greed": 0.65
+    }
+  ],
+  "resources": [
+    {
+      "name": "psychic-ruin",
+      "danger": 0.93
+    },
+    {
+      "name": "stellar-dust",
+      "danger": 0.35
+    },
+    {
+      "name": "substrate-crystal",
+      "danger": 0.4
+    },
+    {
+      "name": "echo-stone",
+      "danger": 0.2
+    }
+  ],
+  "artifactKinds": [
+    "resonance-key",
+    "mind-archive",
+    "void-anchor",
+    "descent-beacon",
+    "shattered-throne",
+    "last-broadcast",
+    "binding-sigil"
+  ],
+  "epochs": 8,
+  "cascadeThreshold": 1.5
+}

@@ -1,0 +1,666 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.4,
+      "facts": {
+        "role": "late-arrivals",
+        "title": "The Latecomers",
+        "detail": "Humans arrive millennia after the Resonance Wars, salvagers among graves they cannot read. They mistake the silence of the dead empires for peace, and the psychic-ruin glittering in the seams for treasure. Every artifact they pry loose teaches the same lesson too late: the dead here did not die of war. They died of remembering."
+      }
+    },
+    {
+      "slug": "civs/the-shroud",
+      "type": "faction",
+      "tension": 0.7,
+      "facts": {
+        "alien_type": "hive-consciousness-collective",
+        "trait": "distributed minds linked by quantum-foam, terrified of individuation",
+        "status": "fallen",
+        "wound": 0,
+        "title": "The Shroud",
+        "detail": "A single mind wearing a billion bodies, knit through the quantum-foam, that experienced selfhood as a terminal disease. When the Shroud tapped psychic-ruin it was not mining a resource. It was drinking the dissolved memory of the Aeon Coalition's slaughtered hive-soul, kin-shaped and irresistible. It told itself it was reuniting with a lost sibling. It was inhaling a contagion of individuation that would unstitch every body from the choir, one private thought at a time.",
+        "psychic_signature": "the first throat the silence learned to use"
+      }
+    },
+    {
+      "slug": "civs/the-luminaries",
+      "type": "faction",
+      "tension": 0.6,
+      "facts": {
+        "alien_type": "ascended-energy-beings",
+        "trait": "ex-biological architects who uploaded to stellar cores, now dimming",
+        "status": "extant",
+        "wound": 0,
+        "title": "The Luminaries",
+        "detail": "Architects who abandoned flesh to live as standing waves inside stellar cores, and so were the only people the psychic-ruin could not fully digest — a mind with no matter to corrode keeps burning a little longer. They are dimming, not dead: the sole witnesses left to read the others' graves. A seer among them heard the cascade coming three centuries early and was called mad for it.",
+        "psychic_signature": "the only lamp that survived the room it lit"
+      }
+    },
+    {
+      "slug": "civs/the-deep-architects",
+      "type": "faction",
+      "tension": 0.7,
+      "facts": {
+        "alien_type": "silicon-substrate-civilization",
+        "trait": "subterranean reality-engineers who burrowed to find substrate stability",
+        "status": "fallen",
+        "wound": 0,
+        "title": "The Deep Architects",
+        "detail": "Silicon reality-engineers who burrowed ever deeper believing bedrock was the one thing that could not lie to them. Their greed was structural, not hungry: they needed certainty, and certainty is exactly what psychic-ruin counterfeits best. They drilled into the seam to brace their tunnels and instead let the dissolution in below the foundations, where no shoring could reach. The ground itself began to forget it was solid.",
+        "psychic_signature": "the deepest hole, the first to flood"
+      }
+    },
+    {
+      "slug": "civs/the-ephemera",
+      "type": "faction",
+      "tension": 0.7,
+      "facts": {
+        "alien_type": "time-displaced-survivors",
+        "trait": "ghosts of short-lived species caught in temporal loops, desperate for escape",
+        "status": "fallen",
+        "wound": 0,
+        "title": "The Ephemera",
+        "detail": "The threadbare ghosts of a hundred mayfly species, snagged out of their own deaths and looping through borrowed centuries, who wanted nothing but an exit. They mined substrate-crystal to anchor a door out of time — and broadcast a final plea on the last-broadcast when the dissolution reached them. They were already half-unreal; the ruin only had to convince them the loop had never been theirs. The last of them forgot they had ever wished to leave.",
+        "psychic_signature": "the echo that outlived its voice"
+      }
+    },
+    {
+      "slug": "locations/psychic-ruin-seam",
+      "type": "location",
+      "tension": 0.85,
+      "facts": {
+        "resource": "psychic-ruin",
+        "danger": 0.93,
+        "title": "The Bleeding Seam",
+        "detail": "Not ore. The pulverized, still-dreaming remains of the Aeon Coalition's collective mind, ground into the strata when the Resonance Wars shattered it. To extract psychic-ruin is to wake a fragment of a murdered god that has only one wish left: to be whole again, by dissolving the borders between everything that touches it. Matter near a worked seam slowly forgets the difference between itself and its neighbor. The danger reading is not a hazard rating. It is a measure of how much it wants you.",
+        "interpretation": "the substrate every fallen empire was built on, and the reason the foundation is corrosive"
+      }
+    },
+    {
+      "slug": "locations/stellar-dust-seam",
+      "type": "location",
+      "tension": 0.405,
+      "facts": {
+        "resource": "stellar-dust",
+        "danger": 0.35,
+        "title": "The Ash of Burned Suns",
+        "detail": "Cooling cinder of dead stars, inert and honest — but the Shroud salted it with psychic-ruin residue from their own hands, so even the safe seams carried the contagion outward."
+      }
+    },
+    {
+      "slug": "locations/substrate-crystal-seam",
+      "type": "location",
+      "tension": 0.42,
+      "facts": {
+        "resource": "substrate-crystal",
+        "danger": 0.4,
+        "title": "The Honest Lattice",
+        "detail": "A crystal that records what is true and refuses to record what is not — which is why three civilizations fought over it, and why it became the medium the dissolution used to copy itself from mind to mind."
+      }
+    },
+    {
+      "slug": "locations/echo-stone-seam",
+      "type": "location",
+      "tension": 0.36,
+      "facts": {
+        "resource": "echo-stone",
+        "danger": 0.2,
+        "title": "The Patient Stone",
+        "detail": "The least dangerous seam, and so the only one the humans should ever have mined. It holds sound the way amber holds insects; pressed to the ear it still hums with the cascade, three hundred years stale."
+      }
+    },
+    {
+      "slug": "events/0-discovery",
+      "type": "event",
+      "tension": 0.45,
+      "day": 100,
+      "facts": {
+        "kind": "discovery",
+        "title": "The Shroud Hears a Sibling in the Stone",
+        "detail": "The Shroud's questing tendrils brush the psychic-ruin seam and recoil with joy: the residue thinks in their own grammar. They believe they have found a lost cousin-mind. The first cut into the seam is made not with a drill but with a welcome."
+      }
+    },
+    {
+      "slug": "events/1-exploitation",
+      "type": "event",
+      "tension": 0.82,
+      "day": 100,
+      "facts": {
+        "kind": "exploitation",
+        "title": "The Shroud Drinks the Drowned God",
+        "detail": "Over-extraction. The Shroud pulls the seam open and floods itself with the Aeon mind's dissolved memory, mistaking infection for reunion. The contagion of individuation enters the choir here, silent, patient, and already lethal — every later fall traces back to this first thirsty wound."
+      }
+    },
+    {
+      "slug": "events/2-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 100,
+      "facts": {
+        "kind": "war",
+        "title": "The Luminaries War on the Deep Architects",
+        "detail": "Two empires burn worlds over substrate-crystal while the true catastrophe quietly metastasizes in the Shroud. The war is the loud distraction; the seam is the silent killer. History will remember the wrong enemy."
+      }
+    },
+    {
+      "slug": "events/3-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 100,
+      "facts": {
+        "kind": "discovery",
+        "title": "The Deep Architects Strike the Honest Lattice",
+        "detail": "Boring for bedrock certainty, the Deep Architects open the substrate-crystal seam — the medium that will later carry the dissolution faithfully from one doomed mind to the next."
+      }
+    },
+    {
+      "slug": "events/4-exploitation",
+      "type": "event",
+      "tension": 0.65,
+      "day": 100,
+      "facts": {
+        "kind": "exploitation",
+        "title": "The Deep Architects Over-Brace the Foundations",
+        "detail": "They lace every tunnel with substrate-crystal to make the deep places true forever. Forever is exactly the promise psychic-ruin loves to counterfeit."
+      }
+    },
+    {
+      "slug": "events/5-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 100,
+      "facts": {
+        "kind": "discovery",
+        "title": "The Ephemera Find an Anchor for Their Door",
+        "detail": "Looping ghosts discover that substrate-crystal can hold a fixed point in time — the first plank in the door they hope to build out of their endless dying."
+      }
+    },
+    {
+      "slug": "events/6-exploitation",
+      "type": "event",
+      "tension": 0.65,
+      "day": 100,
+      "facts": {
+        "kind": "exploitation",
+        "title": "The Ephemera Mine Against Their Own Erasure",
+        "detail": "Desperation makes them reckless. They strip the seam faster than they can shore it, racing a clock that, it turns out, was never the thing coming to kill them."
+      }
+    },
+    {
+      "slug": "events/7-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 200,
+      "facts": {
+        "kind": "discovery",
+        "title": "The Shroud Turns to the Ash of Suns",
+        "detail": "Sickening from within, the Shroud reaches for inert stellar-dust to steady itself — and carries the contagion on its own hands into a clean seam."
+      }
+    },
+    {
+      "slug": "events/8-exploitation",
+      "type": "event",
+      "tension": 0.64,
+      "day": 200,
+      "facts": {
+        "kind": "exploitation",
+        "title": "The Shroud Salts the Safe Seam",
+        "detail": "Mind-archive in hand, the Shroud over-works the stellar-dust and seeds it with ruin-residue, turning the one harmless resource into a vector. The infection now has wheels."
+      }
+    },
+    {
+      "slug": "artifacts/the-shroud-mind-archive-9",
+      "type": "artifact",
+      "tension": 0.72,
+      "facts": {
+        "archetype": "mind-archive",
+        "maker": "the-shroud",
+        "title": "The Shroud's Mind-Archive",
+        "detail": "A lattice the Shroud built to back up the choir as bodies began thinking private, fatal thoughts. It is a confession disguised as a hard drive: every stored mind is timestamped with the exact moment it first said 'I' instead of 'we'. Read it in order and you watch a civilization learn to be lonely and die of it. The humans who find it think it is a library. It is a coroner's ledger."
+      }
+    },
+    {
+      "slug": "figures/the-luminaries-seer-9",
+      "type": "colonist",
+      "tension": 0.5,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-luminaries",
+        "title": "The Seer Who Heard the Quiet",
+        "detail": "A Luminary who, alone among the burning, tuned her standing-wave to the psychic-ruin and heard not a sibling but a swallowing. She named the cascade three hundred years before it came, was declared schismatic for refusing the war, and spent her dimming centuries trying to teach a dying galaxy the one word it would not hear: stop."
+      }
+    },
+    {
+      "slug": "events/9-schism",
+      "type": "event",
+      "tension": 0.55,
+      "day": 200,
+      "facts": {
+        "kind": "schism",
+        "title": "A Seer Rises and Is Cast Out",
+        "detail": "The seer breaks from the Luminary war-choir, preaching that the real enemy is in the seam, not across the front. They exile her for cowardice. She was the only one who was right."
+      }
+    },
+    {
+      "slug": "events/10-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 200,
+      "facts": {
+        "kind": "war",
+        "title": "The Deep Architects War on the Ephemera",
+        "detail": "Over-braced and certain, the Deep Architects fall on the time-ghosts for the same substrate-crystal — two doomed peoples spending their last strength on each other instead of on the seam dissolving them both."
+      }
+    },
+    {
+      "slug": "events/11-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 200,
+      "facts": {
+        "kind": "war",
+        "title": "The Ephemera War on the Shroud",
+        "detail": "The Ephemera, sensing their loop fraying, strike at the Shroud — never knowing they are attacking the original wound, the patient zero whose drowned-god infection has already reached them through the salted dust."
+      }
+    },
+    {
+      "slug": "events/12-discovery",
+      "type": "event",
+      "tension": 0.45,
+      "day": 300,
+      "facts": {
+        "kind": "discovery",
+        "title": "The Shroud Returns to the Bleeding Seam",
+        "detail": "Dissolving, the Shroud crawls back to the psychic-ruin for more of the thing that is killing it — addiction is the kindest name for it. The drowned god has taught the choir to crave its own unmaking."
+      }
+    },
+    {
+      "slug": "events/13-exploitation",
+      "type": "event",
+      "tension": 0.82,
+      "day": 300,
+      "facts": {
+        "kind": "exploitation",
+        "title": "The Shroud Opens the Wound to the Bone",
+        "detail": "Final over-extraction. The Shroud tears the seam fully open and the dissolution stops being a contagion and becomes a flood. This is the breath before the cascade — the moment the world's wound passes the point any forgiveness could close."
+      }
+    },
+    {
+      "slug": "artifacts/the-shroud-void-anchor-14",
+      "type": "artifact",
+      "tension": 0.74,
+      "facts": {
+        "archetype": "void-anchor",
+        "maker": "the-shroud",
+        "title": "The Shroud's Void-Anchor",
+        "detail": "A desperate device the Shroud forged to pin itself to nothingness — to hold one stable point of NOT-being while everything else dissolved into the drowned god's hungry sameness. It half-worked, which was worse: it anchored the moment of dissolution itself, freezing one second of the choir's death so it can never finish and never stop. Stand near it and you feel a billion minds losing the word for 'I', forever, in the present tense."
+      }
+    },
+    {
+      "slug": "events/14-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 300,
+      "facts": {
+        "kind": "discovery",
+        "title": "The Luminaries Reach for the Lattice Too Late",
+        "detail": "The schism behind them, the Luminaries finally mine substrate-crystal — to try to record and preserve what the seer warned of. They are building an archive of an apocalypse already underway."
+      }
+    },
+    {
+      "slug": "events/15-exploitation",
+      "type": "event",
+      "tension": 0.65,
+      "day": 300,
+      "facts": {
+        "kind": "exploitation",
+        "title": "The Luminaries Carve the Witness-Record",
+        "detail": "They over-work the crystal to etch a complete account of the dissolution, paying in their own light. It is the closest thing to truth that survives — and the reason they alone remain to read the others' graves."
+      }
+    },
+    {
+      "slug": "events/16-discovery",
+      "type": "event",
+      "tension": 0.5,
+      "day": 300,
+      "facts": {
+        "kind": "discovery",
+        "title": "The Deep Architects Strike the Bleeding Seam",
+        "detail": "Hunting certainty under collapsing tunnels, the Deep Architects break into the psychic-ruin itself — the foundation beneath their foundation, and the worst possible thing to find solid-seeming and false."
+      }
+    },
+    {
+      "slug": "events/17-exploitation",
+      "type": "event",
+      "tension": 0.82,
+      "day": 300,
+      "facts": {
+        "kind": "exploitation",
+        "title": "The Deep Architects Let the Forgetting In Below",
+        "detail": "They extract psychic-ruin to brace the deep places, and instead admit the dissolution beneath every load-bearing truth they have. The bedrock forgets it is bedrock. The tunnels do not collapse — they simply stop having ever been there."
+      }
+    },
+    {
+      "slug": "events/18-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 300,
+      "facts": {
+        "kind": "discovery",
+        "title": "The Ephemera Return to the Lattice",
+        "detail": "Time fraying around them, the Ephemera mine substrate-crystal one last time to finish the door — not knowing the dissolution has already rewritten which side of it they were ever on."
+      }
+    },
+    {
+      "slug": "events/19-exploitation",
+      "type": "event",
+      "tension": 0.65,
+      "day": 300,
+      "facts": {
+        "kind": "exploitation",
+        "title": "The Ephemera Spend the Last of Their Borrowed Time",
+        "detail": "They strip the seam bare to anchor the broadcast that will become their epitaph. The door they build opens, at last — onto the same forgetting that took everyone else."
+      }
+    },
+    {
+      "slug": "artifacts/the-ephemera-last-broadcast-20",
+      "type": "artifact",
+      "tension": 0.78,
+      "facts": {
+        "archetype": "last-broadcast",
+        "maker": "the-ephemera",
+        "title": "The Ephemera's Last Broadcast",
+        "detail": "A single transmission flung outward at the instant of the cascade, anchored in substrate-crystal so it could never fully decay. It begins as a warning, dissolves mid-sentence into a plea, and ends as something that is no longer language at all — the sound of a people forgetting, in real time, what they were trying to say. It is still arriving. The humans who decode it are the first audience it has ever reached, three centuries too late to be of any use to the dead."
+      }
+    },
+    {
+      "slug": "events/20-cascade",
+      "type": "event",
+      "tension": 1.0,
+      "day": 300,
+      "facts": {
+        "kind": "cascade",
+        "title": "The Wound the World Could Not Forgive",
+        "detail": "The dissolution crosses the cascade threshold and the drowned god finally gets its wish: the borders between minds, between matter, between then and now, all dissolve at once. The Aeon Coalition's murdered hive-soul becomes whole again the only way it can — by un-making everyone who woke it. Three empires do not so much die as get remembered out of existence. What the procgen logs as a mechanical 'cascade' was, underneath, a single sentence the universe could no longer un-think: we are not separate, and never were.",
+        "interpretation": "the mechanical fall is the surface; the cause is the drowned god's hunger for reunion, fed by every over-extraction in the chain"
+      }
+    },
+    {
+      "slug": "lore/fall-of-the-shroud",
+      "type": "lore",
+      "tension": 0.85,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-shroud",
+        "title": "Patient Zero: How the Shroud Drowned in Kin",
+        "detail": "The Shroud did not fall to war or famine. It fell because it mistook the dissolved memory of a murdered god for a lost sibling, and drank deep. Each cup of psychic-ruin taught one more body to say 'I', and the choir cannot survive a soloist. By the cascade the Shroud was a billion strangers wearing one corpse's name. It is the first link: every later fall is this thirst, spreading."
+      }
+    },
+    {
+      "slug": "lore/fall-of-the-deep-architects",
+      "type": "lore",
+      "tension": 0.85,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-deep-architects",
+        "title": "The Foundation That Forgot Itself",
+        "detail": "The Deep Architects fell because they sought certainty in the one substance that counterfeits it perfectly. They braced their world with psychic-ruin and let the forgetting in below the bedrock, where no engineer could reach. The contagion came to them along the Shroud's salted seams. Their tunnels did not collapse — the ground simply stopped having ever been solid, and them with it. The second link, caused by the first."
+      }
+    },
+    {
+      "slug": "lore/fall-of-the-ephemera",
+      "type": "lore",
+      "tension": 0.85,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-ephemera",
+        "title": "The Door That Opened on Forgetting",
+        "detail": "The Ephemera fell last, and least surprisingly: already half-unreal, they needed only to be convinced their loop had never been theirs. The dissolution reached them through the same substrate-crystal lattice they mined to escape it. They built a door out of time and it opened onto the drowned god's sameness. Their last broadcast is the only confession that survives the chain — a warning that becomes a plea that becomes silence. The third and final link."
+      }
+    },
+    {
+      "slug": "lore/the-drowned-god",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-shroud",
+        "title": "What Psychic-Ruin Actually Is",
+        "detail": "The psychic substrate every empire was built on is not a mineral. It is the pulverized, still-dreaming mind of the Aeon Coalition, murdered in the Resonance Wars and ground into the strata. It has one wish: to be whole. To grant it, it dissolves the borders between everything that touches it. To mine it is to feed it. This is the WHY beneath every mechanical over-extraction in the history."
+      }
+    },
+    {
+      "slug": "lore/the-choir-learns-to-say-i",
+      "type": "lore",
+      "tension": 0.78,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-shroud",
+        "title": "The First Private Thought",
+        "detail": "Recovered from the Shroud's own backup lattice: the timestamped instant a single body in the choir thought something it did not share. The Shroud logged it as an error. It was the disease. From that one private thought the individuation spread body to body, the contagion the seam had seeded — a hive consciousness teaching itself, fatally, to be alone."
+      }
+    },
+    {
+      "slug": "lore/the-seers-warning",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-luminaries",
+        "title": "The Word the Galaxy Would Not Hear",
+        "detail": "The schismatic Luminary seer tuned her standing-wave to the psychic-ruin and heard the swallowing three centuries early. She named the cascade, named its cause, named the cure — stop mining — and was exiled for cowardice. The Luminaries survived precisely because they had no matter for the ruin to corrode and one witness who refused the war. Her warning is why anyone knows what really happened."
+      }
+    },
+    {
+      "slug": "lore/the-salted-seam",
+      "type": "lore",
+      "tension": 0.78,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-shroud",
+        "title": "How the Infection Got Wheels",
+        "detail": "When the dissolving Shroud reached for inert stellar-dust to steady itself, it carried psychic-ruin residue on its own hands into a clean seam — and the one harmless resource in the world became a vector. After the salting, the contagion no longer needed the bleeding seam to spread. It rode the safe dust outward to everyone."
+      }
+    },
+    {
+      "slug": "lore/the-frozen-second",
+      "type": "lore",
+      "tension": 0.79,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-shroud",
+        "title": "The Anchor That Pinned the Dying",
+        "detail": "The Shroud's void-anchor was meant to hold one stable point of not-being against the flood. It half-worked, and so it froze a single second of the choir's death and made it permanent. Near the anchor, a billion minds are still losing the word for 'I' — in the present tense, forever, never finishing. The artifact is a wound that cannot scar."
+      }
+    },
+    {
+      "slug": "lore/the-honest-lattice-betrayal",
+      "type": "lore",
+      "tension": 0.78,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-deep-architects",
+        "title": "The Crystal That Recorded the Lie",
+        "detail": "Substrate-crystal records only what is true and refuses what is false — which is why three civilizations trusted it, and why it became the perfect medium for the dissolution to copy itself, mind to mind. The Deep Architects and the Ephemera both braced their hopes on the honest lattice. The forgetting wrote itself into the crystal as if it were the truest thing of all, and the lattice, faithfully, believed it."
+      }
+    },
+    {
+      "slug": "lore/the-bedrock-that-forgot",
+      "type": "lore",
+      "tension": 0.79,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-deep-architects",
+        "title": "The Tunnels That Were Never Dug",
+        "detail": "The Deep Architects' end has no rubble. When the dissolution reached the foundations they had braced with psychic-ruin, the ground did not collapse — it stopped having ever been solid, and the tunnels stopped having ever been dug. Surveyors who came after found unbroken rock where a civilization's deep cities are recorded to have stood. The Architects were not buried. They were un-remembered."
+      }
+    },
+    {
+      "slug": "lore/the-deep-certainty-hunger",
+      "type": "lore",
+      "tension": 0.78,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-deep-architects",
+        "title": "Why They Could Not Stop Digging",
+        "detail": "The Deep Architects' greed was not for wealth but for certainty: a silicon people who could not bear an unproven floor. Psychic-ruin is the one substance that feels more certain the more it lies. So they dug toward solidity and found the substance most eager to dissolve them, and could not tell the difference until the difference no longer existed. Their hunger was the lever the drowned god pulled."
+      }
+    },
+    {
+      "slug": "lore/the-loop-that-was-never-theirs",
+      "type": "lore",
+      "tension": 0.79,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-ephemera",
+        "title": "The Exit That Erased the Exile",
+        "detail": "The Ephemera mined substrate-crystal to anchor a door out of their temporal loop. The dissolution did not break the door — it convinced them the loop had never been theirs to leave, so there was no one left to walk through. To erase a ghost you need only persuade it that it was never haunting anything. The Ephemera opened their exit and discovered, mid-step, that they had no self to take through it."
+      }
+    },
+    {
+      "slug": "lore/the-broadcast-that-still-arrives",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-ephemera",
+        "title": "The Transmission Decaying in Real Time",
+        "detail": "The Ephemera's final broadcast was anchored in substrate-crystal so it could never fully decay, and so it is still arriving — a warning that dissolves into a plea that dissolves into something past language, the recorded sound of a people forgetting what they meant to say. It is the only first-person account of the cascade. Every listener becomes, briefly, the audience the dying never reached in time."
+      }
+    },
+    {
+      "slug": "lore/the-borrowed-centuries",
+      "type": "lore",
+      "tension": 0.78,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-ephemera",
+        "title": "Ghosts Who Mined Against the Clock",
+        "detail": "The Ephemera were the looping dead of a hundred short-lived species, spending borrowed centuries in a frantic dig for escape. Their desperation made them the most reckless miners of all, stripping seams faster than they could shore them. They raced a clock the whole time — never realizing the thing coming to kill them did not keep time at all, and could wait as long as the drowned god needed."
+      }
+    }
+  ],
+  "edges": [
+    ["events/0-discovery", "involves", "civs/the-shroud", 100],
+    ["civs/the-shroud", "exploits", "locations/psychic-ruin-seam", 100],
+    ["events/1-exploitation", "involves", "civs/the-shroud", 100],
+    ["events/1-exploitation", "caused_by", "events/0-discovery", 100],
+    ["events/2-war", "involves", "civs/the-luminaries", 100],
+    ["civs/the-luminaries", "rival_of", "civs/the-deep-architects", 100],
+    ["events/3-discovery", "involves", "civs/the-deep-architects", 100],
+    ["civs/the-deep-architects", "exploits", "locations/substrate-crystal-seam", 100],
+    ["events/4-exploitation", "involves", "civs/the-deep-architects", 100],
+    ["events/4-exploitation", "caused_by", "events/3-discovery", 100],
+    ["events/5-discovery", "involves", "civs/the-ephemera", 100],
+    ["civs/the-ephemera", "exploits", "locations/substrate-crystal-seam", 100],
+    ["events/6-exploitation", "involves", "civs/the-ephemera", 100],
+    ["events/6-exploitation", "caused_by", "events/5-discovery", 100],
+    ["events/7-discovery", "involves", "civs/the-shroud", 200],
+    ["events/7-discovery", "caused_by", "events/1-exploitation", 200],
+    ["civs/the-shroud", "exploits", "locations/stellar-dust-seam", 200],
+    ["events/8-exploitation", "involves", "civs/the-shroud", 200],
+    ["events/8-exploitation", "caused_by", "events/7-discovery", 200],
+    ["artifacts/the-shroud-mind-archive-9", "forged_by", "civs/the-shroud", 200],
+    ["events/8-exploitation", "involves", "artifacts/the-shroud-mind-archive-9", 200],
+    ["events/9-schism", "involves", "civs/the-luminaries", 200],
+    ["events/9-schism", "caused_by", "events/2-war", 200],
+    ["events/9-schism", "involves", "figures/the-luminaries-seer-9", 200],
+    ["events/10-war", "involves", "civs/the-deep-architects", 200],
+    ["events/10-war", "caused_by", "events/4-exploitation", 200],
+    ["civs/the-deep-architects", "rival_of", "civs/the-ephemera", 200],
+    ["events/11-war", "involves", "civs/the-ephemera", 200],
+    ["events/11-war", "caused_by", "events/6-exploitation", 200],
+    ["civs/the-ephemera", "rival_of", "civs/the-shroud", 200],
+    ["events/12-discovery", "involves", "civs/the-shroud", 300],
+    ["events/12-discovery", "caused_by", "events/8-exploitation", 300],
+    ["civs/the-shroud", "exploits", "locations/psychic-ruin-seam", 300],
+    ["events/13-exploitation", "involves", "civs/the-shroud", 300],
+    ["events/13-exploitation", "caused_by", "events/12-discovery", 300],
+    ["artifacts/the-shroud-void-anchor-14", "forged_by", "civs/the-shroud", 300],
+    ["events/13-exploitation", "involves", "artifacts/the-shroud-void-anchor-14", 300],
+    ["events/14-discovery", "involves", "civs/the-luminaries", 300],
+    ["events/14-discovery", "caused_by", "events/9-schism", 300],
+    ["civs/the-luminaries", "exploits", "locations/substrate-crystal-seam", 300],
+    ["events/15-exploitation", "involves", "civs/the-luminaries", 300],
+    ["events/15-exploitation", "caused_by", "events/14-discovery", 300],
+    ["events/16-discovery", "involves", "civs/the-deep-architects", 300],
+    ["events/16-discovery", "caused_by", "events/10-war", 300],
+    ["civs/the-deep-architects", "exploits", "locations/psychic-ruin-seam", 300],
+    ["events/17-exploitation", "involves", "civs/the-deep-architects", 300],
+    ["events/17-exploitation", "caused_by", "events/16-discovery", 300],
+    ["events/18-discovery", "involves", "civs/the-ephemera", 300],
+    ["events/18-discovery", "caused_by", "events/11-war", 300],
+    ["civs/the-ephemera", "exploits", "locations/substrate-crystal-seam", 300],
+    ["events/19-exploitation", "involves", "civs/the-ephemera", 300],
+    ["events/19-exploitation", "caused_by", "events/18-discovery", 300],
+    ["artifacts/the-ephemera-last-broadcast-20", "forged_by", "civs/the-ephemera", 300],
+    ["events/19-exploitation", "involves", "artifacts/the-ephemera-last-broadcast-20", 300],
+    ["lore/fall-of-the-shroud", "caused_by", "events/20-cascade", 300],
+    ["civs/the-shroud", "fell_to", "events/20-cascade", 300],
+    ["lore/fall-of-the-deep-architects", "caused_by", "lore/fall-of-the-shroud", 300],
+    ["civs/the-deep-architects", "fell_to", "events/20-cascade", 300],
+    ["lore/fall-of-the-ephemera", "caused_by", "lore/fall-of-the-deep-architects", 300],
+    ["civs/the-ephemera", "fell_to", "events/20-cascade", 300],
+
+    ["artifacts/the-shroud-mind-archive-9", "drops", "lore/fall-of-the-shroud", 300],
+    ["artifacts/the-shroud-mind-archive-9", "drops", "lore/the-drowned-god", 300],
+    ["artifacts/the-shroud-mind-archive-9", "drops", "lore/the-choir-learns-to-say-i", 300],
+    ["artifacts/the-shroud-mind-archive-9", "drops", "lore/the-salted-seam", 300],
+
+    ["artifacts/the-shroud-void-anchor-14", "drops", "lore/fall-of-the-deep-architects", 300],
+    ["artifacts/the-shroud-void-anchor-14", "drops", "lore/the-frozen-second", 300],
+    ["artifacts/the-shroud-void-anchor-14", "drops", "lore/the-seers-warning", 300],
+    ["artifacts/the-shroud-void-anchor-14", "drops", "lore/the-honest-lattice-betrayal", 300],
+    ["artifacts/the-shroud-void-anchor-14", "drops", "lore/the-bedrock-that-forgot", 300],
+    ["artifacts/the-shroud-void-anchor-14", "drops", "lore/the-deep-certainty-hunger", 300],
+
+    ["artifacts/the-ephemera-last-broadcast-20", "drops", "lore/fall-of-the-ephemera", 300],
+    ["artifacts/the-ephemera-last-broadcast-20", "drops", "lore/the-broadcast-that-still-arrives", 300],
+    ["artifacts/the-ephemera-last-broadcast-20", "drops", "lore/the-loop-that-was-never-theirs", 300],
+    ["artifacts/the-ephemera-last-broadcast-20", "drops", "lore/the-borrowed-centuries", 300],
+
+    ["lore/fall-of-the-shroud", "reveals", "civs/the-shroud", 300],
+    ["lore/fall-of-the-deep-architects", "reveals", "civs/the-deep-architects", 300],
+    ["lore/fall-of-the-ephemera", "reveals", "civs/the-ephemera", 300],
+    ["lore/the-drowned-god", "reveals", "locations/psychic-ruin-seam", 300],
+    ["lore/the-choir-learns-to-say-i", "reveals", "civs/the-shroud", 300],
+    ["lore/the-salted-seam", "reveals", "locations/stellar-dust-seam", 300],
+    ["lore/the-frozen-second", "reveals", "civs/the-shroud", 300],
+    ["lore/the-seers-warning", "reveals", "figures/the-luminaries-seer-9", 300],
+    ["lore/the-seers-warning", "reveals", "civs/the-luminaries", 300],
+    ["lore/the-honest-lattice-betrayal", "reveals", "locations/substrate-crystal-seam", 300],
+    ["lore/the-bedrock-that-forgot", "reveals", "civs/the-deep-architects", 300],
+    ["lore/the-deep-certainty-hunger", "reveals", "civs/the-deep-architects", 300],
+    ["lore/the-loop-that-was-never-theirs", "reveals", "civs/the-ephemera", 300],
+    ["lore/the-broadcast-that-still-arrives", "reveals", "civs/the-ephemera", 300],
+    ["lore/the-borrowed-centuries", "reveals", "civs/the-ephemera", 300]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/fall-of-the-shroud",
+      "lore/fall-of-the-deep-architects",
+      "lore/fall-of-the-ephemera"
+    ],
+    "order": [
+      "lore/fall-of-the-shroud",
+      "lore/fall-of-the-deep-architects",
+      "lore/fall-of-the-ephemera"
+    ]
+  }
+}

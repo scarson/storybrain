@@ -1,0 +1,742 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.4,
+      "facts": {
+        "role": "late-arrivals"
+      }
+    },
+    {
+      "slug": "civs/the-shroud",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "hive-consciousness-collective",
+        "trait": "distributed minds linked by quantum-foam, terrified of individuation",
+        "status": "fallen",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "civs/the-luminaries",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "ascended-energy-beings",
+        "trait": "ex-biological architects who uploaded to stellar cores, now dimming",
+        "status": "extant",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "civs/the-deep-architects",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "silicon-substrate-civilization",
+        "trait": "subterranean reality-engineers who burrowed to find substrate stability",
+        "status": "fallen",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "civs/the-ephemera",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "time-displaced-survivors",
+        "trait": "ghosts of short-lived species caught in temporal loops, desperate for escape",
+        "status": "fallen",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "locations/psychic-ruin-seam",
+      "type": "location",
+      "tension": 0.579,
+      "facts": {
+        "resource": "psychic-ruin",
+        "danger": 0.93
+      }
+    },
+    {
+      "slug": "locations/stellar-dust-seam",
+      "type": "location",
+      "tension": 0.40499999999999997,
+      "facts": {
+        "resource": "stellar-dust",
+        "danger": 0.35
+      }
+    },
+    {
+      "slug": "locations/substrate-crystal-seam",
+      "type": "location",
+      "tension": 0.42,
+      "facts": {
+        "resource": "substrate-crystal",
+        "danger": 0.4
+      }
+    },
+    {
+      "slug": "locations/echo-stone-seam",
+      "type": "location",
+      "tension": 0.36,
+      "facts": {
+        "resource": "echo-stone",
+        "danger": 0.2
+      }
+    },
+    {
+      "slug": "events/0-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 100,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-shroud taps psychic-ruin"
+      }
+    },
+    {
+      "slug": "events/1-exploitation",
+      "type": "event",
+      "tension": 0.779,
+      "day": 100,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-shroud over-extracts psychic-ruin"
+      }
+    },
+    {
+      "slug": "events/2-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 100,
+      "facts": {
+        "kind": "war",
+        "title": "the-luminaries wars on the-deep-architects"
+      }
+    },
+    {
+      "slug": "events/3-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 100,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-deep-architects taps substrate-crystal"
+      }
+    },
+    {
+      "slug": "events/4-exploitation",
+      "type": "event",
+      "tension": 0.62,
+      "day": 100,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-deep-architects over-extracts substrate-crystal"
+      }
+    },
+    {
+      "slug": "events/5-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 100,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-ephemera taps substrate-crystal"
+      }
+    },
+    {
+      "slug": "events/6-exploitation",
+      "type": "event",
+      "tension": 0.62,
+      "day": 100,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-ephemera over-extracts substrate-crystal"
+      }
+    },
+    {
+      "slug": "events/7-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 200,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-shroud taps stellar-dust"
+      }
+    },
+    {
+      "slug": "events/8-exploitation",
+      "type": "event",
+      "tension": 0.605,
+      "day": 200,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-shroud over-extracts stellar-dust"
+      }
+    },
+    {
+      "slug": "artifacts/the-shroud-mind-archive-9",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "mind-archive",
+        "maker": "the-shroud"
+      }
+    },
+    {
+      "slug": "figures/the-luminaries-seer-9",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-luminaries"
+      }
+    },
+    {
+      "slug": "events/9-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 200,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-luminaries"
+      }
+    },
+    {
+      "slug": "events/10-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 200,
+      "facts": {
+        "kind": "war",
+        "title": "the-deep-architects wars on the-ephemera"
+      }
+    },
+    {
+      "slug": "events/11-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 200,
+      "facts": {
+        "kind": "war",
+        "title": "the-ephemera wars on the-shroud"
+      }
+    },
+    {
+      "slug": "events/12-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 300,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-shroud taps psychic-ruin"
+      }
+    },
+    {
+      "slug": "events/13-exploitation",
+      "type": "event",
+      "tension": 0.779,
+      "day": 300,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-shroud over-extracts psychic-ruin"
+      }
+    },
+    {
+      "slug": "artifacts/the-shroud-void-anchor-14",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "void-anchor",
+        "maker": "the-shroud"
+      }
+    },
+    {
+      "slug": "events/14-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 300,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-luminaries taps substrate-crystal"
+      }
+    },
+    {
+      "slug": "events/15-exploitation",
+      "type": "event",
+      "tension": 0.62,
+      "day": 300,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-luminaries over-extracts substrate-crystal"
+      }
+    },
+    {
+      "slug": "events/16-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 300,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-deep-architects taps psychic-ruin"
+      }
+    },
+    {
+      "slug": "events/17-exploitation",
+      "type": "event",
+      "tension": 0.779,
+      "day": 300,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-deep-architects over-extracts psychic-ruin"
+      }
+    },
+    {
+      "slug": "events/18-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 300,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-ephemera taps substrate-crystal"
+      }
+    },
+    {
+      "slug": "events/19-exploitation",
+      "type": "event",
+      "tension": 0.62,
+      "day": 300,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-ephemera over-extracts substrate-crystal"
+      }
+    },
+    {
+      "slug": "artifacts/the-ephemera-last-broadcast-20",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "last-broadcast",
+        "maker": "the-ephemera"
+      }
+    },
+    {
+      "slug": "events/20-cascade",
+      "type": "event",
+      "tension": 0.9,
+      "day": 300,
+      "facts": {
+        "kind": "cascade",
+        "title": "the wound the world could not forgive"
+      }
+    },
+    {
+      "slug": "lore/fall-of-the-shroud",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-shroud"
+      }
+    },
+    {
+      "slug": "lore/fall-of-the-deep-architects",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-deep-architects"
+      }
+    },
+    {
+      "slug": "lore/fall-of-the-ephemera",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-ephemera"
+      }
+    }
+  ],
+  "edges": [
+    [
+      "events/0-discovery",
+      "involves",
+      "civs/the-shroud",
+      100
+    ],
+    [
+      "civs/the-shroud",
+      "exploits",
+      "locations/psychic-ruin-seam",
+      100
+    ],
+    [
+      "events/1-exploitation",
+      "involves",
+      "civs/the-shroud",
+      100
+    ],
+    [
+      "events/1-exploitation",
+      "caused_by",
+      "events/0-discovery",
+      100
+    ],
+    [
+      "events/2-war",
+      "involves",
+      "civs/the-luminaries",
+      100
+    ],
+    [
+      "civs/the-luminaries",
+      "rival_of",
+      "civs/the-deep-architects",
+      100
+    ],
+    [
+      "events/3-discovery",
+      "involves",
+      "civs/the-deep-architects",
+      100
+    ],
+    [
+      "civs/the-deep-architects",
+      "exploits",
+      "locations/substrate-crystal-seam",
+      100
+    ],
+    [
+      "events/4-exploitation",
+      "involves",
+      "civs/the-deep-architects",
+      100
+    ],
+    [
+      "events/4-exploitation",
+      "caused_by",
+      "events/3-discovery",
+      100
+    ],
+    [
+      "events/5-discovery",
+      "involves",
+      "civs/the-ephemera",
+      100
+    ],
+    [
+      "civs/the-ephemera",
+      "exploits",
+      "locations/substrate-crystal-seam",
+      100
+    ],
+    [
+      "events/6-exploitation",
+      "involves",
+      "civs/the-ephemera",
+      100
+    ],
+    [
+      "events/6-exploitation",
+      "caused_by",
+      "events/5-discovery",
+      100
+    ],
+    [
+      "events/7-discovery",
+      "involves",
+      "civs/the-shroud",
+      200
+    ],
+    [
+      "events/7-discovery",
+      "caused_by",
+      "events/1-exploitation",
+      200
+    ],
+    [
+      "civs/the-shroud",
+      "exploits",
+      "locations/stellar-dust-seam",
+      200
+    ],
+    [
+      "events/8-exploitation",
+      "involves",
+      "civs/the-shroud",
+      200
+    ],
+    [
+      "events/8-exploitation",
+      "caused_by",
+      "events/7-discovery",
+      200
+    ],
+    [
+      "artifacts/the-shroud-mind-archive-9",
+      "forged_by",
+      "civs/the-shroud",
+      200
+    ],
+    [
+      "events/8-exploitation",
+      "involves",
+      "artifacts/the-shroud-mind-archive-9",
+      200
+    ],
+    [
+      "events/9-schism",
+      "involves",
+      "civs/the-luminaries",
+      200
+    ],
+    [
+      "events/9-schism",
+      "caused_by",
+      "events/2-war",
+      200
+    ],
+    [
+      "events/9-schism",
+      "involves",
+      "figures/the-luminaries-seer-9",
+      200
+    ],
+    [
+      "events/10-war",
+      "involves",
+      "civs/the-deep-architects",
+      200
+    ],
+    [
+      "events/10-war",
+      "caused_by",
+      "events/4-exploitation",
+      200
+    ],
+    [
+      "civs/the-deep-architects",
+      "rival_of",
+      "civs/the-ephemera",
+      200
+    ],
+    [
+      "events/11-war",
+      "involves",
+      "civs/the-ephemera",
+      200
+    ],
+    [
+      "events/11-war",
+      "caused_by",
+      "events/6-exploitation",
+      200
+    ],
+    [
+      "civs/the-ephemera",
+      "rival_of",
+      "civs/the-shroud",
+      200
+    ],
+    [
+      "events/12-discovery",
+      "involves",
+      "civs/the-shroud",
+      300
+    ],
+    [
+      "events/12-discovery",
+      "caused_by",
+      "events/8-exploitation",
+      300
+    ],
+    [
+      "civs/the-shroud",
+      "exploits",
+      "locations/psychic-ruin-seam",
+      300
+    ],
+    [
+      "events/13-exploitation",
+      "involves",
+      "civs/the-shroud",
+      300
+    ],
+    [
+      "events/13-exploitation",
+      "caused_by",
+      "events/12-discovery",
+      300
+    ],
+    [
+      "artifacts/the-shroud-void-anchor-14",
+      "forged_by",
+      "civs/the-shroud",
+      300
+    ],
+    [
+      "events/13-exploitation",
+      "involves",
+      "artifacts/the-shroud-void-anchor-14",
+      300
+    ],
+    [
+      "events/14-discovery",
+      "involves",
+      "civs/the-luminaries",
+      300
+    ],
+    [
+      "events/14-discovery",
+      "caused_by",
+      "events/9-schism",
+      300
+    ],
+    [
+      "civs/the-luminaries",
+      "exploits",
+      "locations/substrate-crystal-seam",
+      300
+    ],
+    [
+      "events/15-exploitation",
+      "involves",
+      "civs/the-luminaries",
+      300
+    ],
+    [
+      "events/15-exploitation",
+      "caused_by",
+      "events/14-discovery",
+      300
+    ],
+    [
+      "events/16-discovery",
+      "involves",
+      "civs/the-deep-architects",
+      300
+    ],
+    [
+      "events/16-discovery",
+      "caused_by",
+      "events/10-war",
+      300
+    ],
+    [
+      "civs/the-deep-architects",
+      "exploits",
+      "locations/psychic-ruin-seam",
+      300
+    ],
+    [
+      "events/17-exploitation",
+      "involves",
+      "civs/the-deep-architects",
+      300
+    ],
+    [
+      "events/17-exploitation",
+      "caused_by",
+      "events/16-discovery",
+      300
+    ],
+    [
+      "events/18-discovery",
+      "involves",
+      "civs/the-ephemera",
+      300
+    ],
+    [
+      "events/18-discovery",
+      "caused_by",
+      "events/11-war",
+      300
+    ],
+    [
+      "civs/the-ephemera",
+      "exploits",
+      "locations/substrate-crystal-seam",
+      300
+    ],
+    [
+      "events/19-exploitation",
+      "involves",
+      "civs/the-ephemera",
+      300
+    ],
+    [
+      "events/19-exploitation",
+      "caused_by",
+      "events/18-discovery",
+      300
+    ],
+    [
+      "artifacts/the-ephemera-last-broadcast-20",
+      "forged_by",
+      "civs/the-ephemera",
+      300
+    ],
+    [
+      "events/19-exploitation",
+      "involves",
+      "artifacts/the-ephemera-last-broadcast-20",
+      300
+    ],
+    [
+      "lore/fall-of-the-shroud",
+      "caused_by",
+      "events/20-cascade",
+      300
+    ],
+    [
+      "civs/the-shroud",
+      "fell_to",
+      "events/20-cascade",
+      300
+    ],
+    [
+      "lore/fall-of-the-deep-architects",
+      "caused_by",
+      "lore/fall-of-the-shroud",
+      300
+    ],
+    [
+      "civs/the-deep-architects",
+      "fell_to",
+      "events/20-cascade",
+      300
+    ],
+    [
+      "lore/fall-of-the-ephemera",
+      "caused_by",
+      "lore/fall-of-the-deep-architects",
+      300
+    ],
+    [
+      "civs/the-ephemera",
+      "fell_to",
+      "events/20-cascade",
+      300
+    ]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/fall-of-the-shroud",
+      "lore/fall-of-the-deep-architects",
+      "lore/fall-of-the-ephemera"
+    ],
+    "order": [
+      "lore/fall-of-the-shroud",
+      "lore/fall-of-the-deep-architects",
+      "lore/fall-of-the-ephemera"
+    ]
+  }
+}
