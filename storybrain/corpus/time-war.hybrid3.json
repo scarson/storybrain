@@ -532,7 +532,10 @@
     ["colonists/dr-ileana-cross", "owns", "artifacts/the-retro-editing-stylus", 800],
     ["colonists/mara-okonkwo", "owns", "artifacts/the-undated-anachronism", 800],
     ["colonists/dr-ileana-cross", "sought_by", "civs/the-undated", 800],
+    ["colonists/tobias-renn", "threatens", "colonists/dr-ileana-cross", 800],
+    ["colonists/the-quiet-recruit", "betrayed_by", "civs/the-undated", 800],
     ["civs/the-undated", "threatens", "factions/humans", 800],
+    ["colonists/tobias-renn", "sought_by", "civs/the-oncewill", 800],
 
     ["colonists/mara-okonkwo", "rival_of", "colonists/dr-ileana-cross", 800],
     ["colonists/tobias-renn", "kin_of", "colonists/mara-okonkwo", 800],
