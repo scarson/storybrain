@@ -1,0 +1,819 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.4,
+      "facts": {
+        "role": "newcomers"
+      }
+    },
+    {
+      "slug": "civs/the-gardeners",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "hidden-stewards-unseen",
+        "trait": "present and acting, never seen — they shape the world by hand and watch; you feel their attention, never their bodies"
+      }
+    },
+    {
+      "slug": "civs/the-loam-tenders",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "hidden-subtended-caste",
+        "trait": "a lesser hidden caste that maintains the soil-shrines and gene-looms between the gardeners' great workings"
+      }
+    },
+    {
+      "slug": "civs/the-first-cultivars",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "cultivated-lineage-uplifted",
+        "trait": "an earlier lineage the gardeners grew to sapience here, then either harvested or moved on — the precedent the colony is unknowingly repeating"
+      }
+    },
+    {
+      "slug": "locations/engineered-biosphere-site",
+      "type": "location",
+      "tension": 0.525,
+      "facts": {
+        "subject": "engineered-biosphere"
+      }
+    },
+    {
+      "slug": "locations/gene-loam-site",
+      "type": "location",
+      "tension": 0.4375,
+      "facts": {
+        "subject": "gene-loam"
+      }
+    },
+    {
+      "slug": "locations/shrine-sap-site",
+      "type": "location",
+      "tension": 0.375,
+      "facts": {
+        "subject": "shrine-sap"
+      }
+    },
+    {
+      "slug": "events/0-interaction",
+      "type": "event",
+      "tension": 0.49095329714939,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-gardeners",
+        "magnitude": 0.3,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/1-commitment",
+      "type": "event",
+      "tension": 0.5431749287485145,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-loam-tenders",
+        "magnitude": 0.48,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/2-commitment",
+      "type": "event",
+      "tension": 0.49202563455072235,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-first-cultivars",
+        "magnitude": 0.31,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/3-commitment",
+      "type": "event",
+      "tension": 0.49546276009175927,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-gardeners",
+        "magnitude": 0.32,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/4-initiative",
+      "type": "event",
+      "tension": 0.5027992875464261,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-loam-tenders",
+        "magnitude": 0.34,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/5-commitment",
+      "type": "event",
+      "tension": 0.4925039663708303,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-first-cultivars",
+        "magnitude": 0.31,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/6-initiative",
+      "type": "event",
+      "tension": 0.5011836053209845,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-gardeners",
+        "magnitude": 0.34,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/7-interaction",
+      "type": "event",
+      "tension": 0.5330802794061601,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-loam-tenders",
+        "magnitude": 0.44,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/8-commitment",
+      "type": "event",
+      "tension": 0.5326768134229352,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-first-cultivars",
+        "magnitude": 0.44,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/9-commitment",
+      "type": "event",
+      "tension": 0.5297050261846743,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-gardeners",
+        "magnitude": 0.43,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/10-commitment",
+      "type": "event",
+      "tension": 0.5400695758475922,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-loam-tenders",
+        "magnitude": 0.47,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/11-interaction",
+      "type": "event",
+      "tension": 0.5691512106163428,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-first-cultivars",
+        "magnitude": 0.56,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/12-interaction",
+      "type": "event",
+      "tension": 0.5257030253484846,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-gardeners",
+        "magnitude": 0.42,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/13-commitment",
+      "type": "event",
+      "tension": 0.525481958720833,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-loam-tenders",
+        "magnitude": 0.42,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/14-interaction",
+      "type": "event",
+      "tension": 0.5274093991753179,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-first-cultivars",
+        "magnitude": 0.42,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/15-commitment",
+      "type": "event",
+      "tension": 0.5330443440331146,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-gardeners",
+        "magnitude": 0.44,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/16-interaction",
+      "type": "event",
+      "tension": 0.5313393386001699,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-loam-tenders",
+        "magnitude": 0.44,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/17-commitment",
+      "type": "event",
+      "tension": 0.5491042987951078,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-first-cultivars",
+        "magnitude": 0.5,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/18-commitment",
+      "type": "event",
+      "tension": 0.49495473405113444,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-gardeners",
+        "magnitude": 0.32,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/19-commitment",
+      "type": "event",
+      "tension": 0.5322969021173194,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-loam-tenders",
+        "magnitude": 0.44,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/20-commitment",
+      "type": "event",
+      "tension": 0.5331230145709124,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-first-cultivars",
+        "magnitude": 0.44,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/21-commitment",
+      "type": "event",
+      "tension": 0.5329210846684873,
+      "facts": {
+        "abstract_kind": "commitment",
+        "actor": "the-gardeners",
+        "magnitude": 0.44,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/22-interaction",
+      "type": "event",
+      "tension": 0.5364147459054366,
+      "facts": {
+        "abstract_kind": "interaction",
+        "actor": "the-loam-tenders",
+        "magnitude": 0.45,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/23-initiative",
+      "type": "event",
+      "tension": 0.49486318509210836,
+      "facts": {
+        "abstract_kind": "initiative",
+        "actor": "the-first-cultivars",
+        "magnitude": 0.32,
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "events/24-turn",
+      "type": "event",
+      "tension": 0.685,
+      "facts": {
+        "abstract_kind": "turn",
+        "actor": "the-gardeners",
+        "magnitude": 0.95,
+        "placeholder": true,
+        "climax": true
+      }
+    },
+    {
+      "slug": "lore/thread-of-the-first-cultivars",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-first-cultivars",
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "lore/thread-of-the-loam-tenders",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-loam-tenders",
+        "placeholder": true
+      }
+    },
+    {
+      "slug": "lore/thread-of-the-gardeners",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-gardeners",
+        "placeholder": true
+      }
+    }
+  ],
+  "edges": [
+    [
+      "events/0-interaction",
+      "involves",
+      "civs/the-gardeners",
+      100
+    ],
+    [
+      "events/1-commitment",
+      "involves",
+      "civs/the-loam-tenders",
+      100
+    ],
+    [
+      "events/1-commitment",
+      "concerns",
+      "locations/engineered-biosphere-site",
+      100
+    ],
+    [
+      "events/2-commitment",
+      "involves",
+      "civs/the-first-cultivars",
+      100
+    ],
+    [
+      "events/2-commitment",
+      "concerns",
+      "locations/gene-loam-site",
+      100
+    ],
+    [
+      "events/3-commitment",
+      "involves",
+      "civs/the-gardeners",
+      200
+    ],
+    [
+      "events/3-commitment",
+      "caused_by",
+      "events/0-interaction",
+      200
+    ],
+    [
+      "events/3-commitment",
+      "concerns",
+      "locations/gene-loam-site",
+      200
+    ],
+    [
+      "events/4-initiative",
+      "involves",
+      "civs/the-loam-tenders",
+      200
+    ],
+    [
+      "events/4-initiative",
+      "caused_by",
+      "events/1-commitment",
+      200
+    ],
+    [
+      "events/5-commitment",
+      "involves",
+      "civs/the-first-cultivars",
+      200
+    ],
+    [
+      "events/5-commitment",
+      "caused_by",
+      "events/2-commitment",
+      200
+    ],
+    [
+      "events/5-commitment",
+      "concerns",
+      "locations/engineered-biosphere-site",
+      200
+    ],
+    [
+      "events/6-initiative",
+      "involves",
+      "civs/the-gardeners",
+      300
+    ],
+    [
+      "events/6-initiative",
+      "caused_by",
+      "events/3-commitment",
+      300
+    ],
+    [
+      "events/7-interaction",
+      "involves",
+      "civs/the-loam-tenders",
+      300
+    ],
+    [
+      "events/7-interaction",
+      "caused_by",
+      "events/4-initiative",
+      300
+    ],
+    [
+      "events/7-interaction",
+      "caused_by",
+      "events/5-commitment",
+      300
+    ],
+    [
+      "events/8-commitment",
+      "involves",
+      "civs/the-first-cultivars",
+      300
+    ],
+    [
+      "events/8-commitment",
+      "caused_by",
+      "events/5-commitment",
+      300
+    ],
+    [
+      "events/8-commitment",
+      "concerns",
+      "locations/gene-loam-site",
+      300
+    ],
+    [
+      "events/9-commitment",
+      "involves",
+      "civs/the-gardeners",
+      400
+    ],
+    [
+      "events/9-commitment",
+      "caused_by",
+      "events/6-initiative",
+      400
+    ],
+    [
+      "events/9-commitment",
+      "concerns",
+      "locations/shrine-sap-site",
+      400
+    ],
+    [
+      "events/10-commitment",
+      "involves",
+      "civs/the-loam-tenders",
+      400
+    ],
+    [
+      "events/10-commitment",
+      "caused_by",
+      "events/7-interaction",
+      400
+    ],
+    [
+      "events/10-commitment",
+      "concerns",
+      "locations/engineered-biosphere-site",
+      400
+    ],
+    [
+      "events/11-interaction",
+      "involves",
+      "civs/the-first-cultivars",
+      400
+    ],
+    [
+      "events/11-interaction",
+      "caused_by",
+      "events/8-commitment",
+      400
+    ],
+    [
+      "events/11-interaction",
+      "caused_by",
+      "events/10-commitment",
+      400
+    ],
+    [
+      "events/12-interaction",
+      "involves",
+      "civs/the-gardeners",
+      500
+    ],
+    [
+      "events/12-interaction",
+      "caused_by",
+      "events/9-commitment",
+      500
+    ],
+    [
+      "events/12-interaction",
+      "caused_by",
+      "events/11-interaction",
+      500
+    ],
+    [
+      "events/13-commitment",
+      "involves",
+      "civs/the-loam-tenders",
+      500
+    ],
+    [
+      "events/13-commitment",
+      "caused_by",
+      "events/10-commitment",
+      500
+    ],
+    [
+      "events/13-commitment",
+      "concerns",
+      "locations/gene-loam-site",
+      500
+    ],
+    [
+      "events/14-interaction",
+      "involves",
+      "civs/the-first-cultivars",
+      500
+    ],
+    [
+      "events/14-interaction",
+      "caused_by",
+      "events/11-interaction",
+      500
+    ],
+    [
+      "events/14-interaction",
+      "caused_by",
+      "events/13-commitment",
+      500
+    ],
+    [
+      "events/15-commitment",
+      "involves",
+      "civs/the-gardeners",
+      600
+    ],
+    [
+      "events/15-commitment",
+      "caused_by",
+      "events/12-interaction",
+      600
+    ],
+    [
+      "events/15-commitment",
+      "concerns",
+      "locations/gene-loam-site",
+      600
+    ],
+    [
+      "events/16-interaction",
+      "involves",
+      "civs/the-loam-tenders",
+      600
+    ],
+    [
+      "events/16-interaction",
+      "caused_by",
+      "events/13-commitment",
+      600
+    ],
+    [
+      "events/16-interaction",
+      "caused_by",
+      "events/14-interaction",
+      600
+    ],
+    [
+      "events/17-commitment",
+      "involves",
+      "civs/the-first-cultivars",
+      600
+    ],
+    [
+      "events/17-commitment",
+      "caused_by",
+      "events/14-interaction",
+      600
+    ],
+    [
+      "events/17-commitment",
+      "concerns",
+      "locations/gene-loam-site",
+      600
+    ],
+    [
+      "events/18-commitment",
+      "involves",
+      "civs/the-gardeners",
+      700
+    ],
+    [
+      "events/18-commitment",
+      "caused_by",
+      "events/15-commitment",
+      700
+    ],
+    [
+      "events/18-commitment",
+      "concerns",
+      "locations/gene-loam-site",
+      700
+    ],
+    [
+      "events/19-commitment",
+      "involves",
+      "civs/the-loam-tenders",
+      700
+    ],
+    [
+      "events/19-commitment",
+      "caused_by",
+      "events/16-interaction",
+      700
+    ],
+    [
+      "events/19-commitment",
+      "concerns",
+      "locations/shrine-sap-site",
+      700
+    ],
+    [
+      "events/20-commitment",
+      "involves",
+      "civs/the-first-cultivars",
+      700
+    ],
+    [
+      "events/20-commitment",
+      "caused_by",
+      "events/17-commitment",
+      700
+    ],
+    [
+      "events/20-commitment",
+      "concerns",
+      "locations/shrine-sap-site",
+      700
+    ],
+    [
+      "events/21-commitment",
+      "involves",
+      "civs/the-gardeners",
+      800
+    ],
+    [
+      "events/21-commitment",
+      "caused_by",
+      "events/18-commitment",
+      800
+    ],
+    [
+      "events/21-commitment",
+      "concerns",
+      "locations/gene-loam-site",
+      800
+    ],
+    [
+      "events/22-interaction",
+      "involves",
+      "civs/the-loam-tenders",
+      800
+    ],
+    [
+      "events/22-interaction",
+      "caused_by",
+      "events/19-commitment",
+      800
+    ],
+    [
+      "events/22-interaction",
+      "caused_by",
+      "events/21-commitment",
+      800
+    ],
+    [
+      "events/23-initiative",
+      "involves",
+      "civs/the-first-cultivars",
+      800
+    ],
+    [
+      "events/23-initiative",
+      "caused_by",
+      "events/20-commitment",
+      800
+    ],
+    [
+      "events/24-turn",
+      "involves",
+      "civs/the-gardeners",
+      800
+    ],
+    [
+      "lore/thread-of-the-first-cultivars",
+      "reveals",
+      "events/24-turn",
+      800
+    ],
+    [
+      "civs/the-first-cultivars",
+      "involved_in",
+      "events/24-turn",
+      800
+    ],
+    [
+      "lore/thread-of-the-loam-tenders",
+      "reveals",
+      "lore/thread-of-the-first-cultivars",
+      800
+    ],
+    [
+      "civs/the-loam-tenders",
+      "involved_in",
+      "events/24-turn",
+      800
+    ],
+    [
+      "lore/thread-of-the-gardeners",
+      "reveals",
+      "lore/thread-of-the-loam-tenders",
+      800
+    ],
+    [
+      "civs/the-gardeners",
+      "involved_in",
+      "events/24-turn",
+      800
+    ]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/thread-of-the-first-cultivars",
+      "lore/thread-of-the-loam-tenders",
+      "lore/thread-of-the-gardeners"
+    ],
+    "order": [
+      "lore/thread-of-the-first-cultivars",
+      "lore/thread-of-the-loam-tenders",
+      "lore/thread-of-the-gardeners"
+    ],
+    "order_relation": "reveals"
+  }
+}
