@@ -1,0 +1,579 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.45,
+      "facts": {
+        "role": "newcomers",
+        "status": "living",
+        "note": "the Drosselmeyer charter, arrived eleven years ago to mine the same dark ore the dead aliens built their empires on, with no idea the ore is nerve-tissue"
+      }
+    },
+    {
+      "slug": "civs/the-velt",
+      "type": "faction",
+      "tension": 0.8,
+      "facts": {
+        "alien_type": "crystalline-slow-life",
+        "trait": "cognition stored in stone, one thought per century",
+        "status": "extinct",
+        "fate": "vitrified",
+        "note": "the slow lithic builders who bored the world's marrow to quicken their hundred-year thoughts; the day the planet woke they flash-froze mid-sentence into clear glass"
+      }
+    },
+    {
+      "slug": "civs/the-choir",
+      "type": "faction",
+      "tension": 0.85,
+      "facts": {
+        "alien_type": "psychic-gestalt",
+        "trait": "a bodiless standing-wave of minds",
+        "status": "extinct",
+        "fate": "dissolved",
+        "note": "a bodiless nation of voices living in the planet's resonance; heard the wound's agony first and threw their whole gestalt against it, and the world learned their frequency and answered in their own voices"
+      }
+    },
+    {
+      "slug": "civs/the-pale-wing",
+      "type": "faction",
+      "tension": 0.78,
+      "facts": {
+        "alien_type": "augur-merchants",
+        "trait": "sold prophecies of the doom instead of preventing it",
+        "status": "extinct",
+        "fate": "fled-and-lost",
+        "note": "winged seer-traders who read the coming catastrophe in the marrow's first tremors and sold tickets to it; their last ships scattered into the void-glass dark and never reported home"
+      }
+    },
+
+    {
+      "slug": "locations/the-marrow-vein",
+      "type": "location",
+      "tension": 0.9,
+      "facts": {
+        "resource": "marrow-ore",
+        "note": "the deepest extraction shaft, the original wound; still warm, still humming, and the colony's drill is now angled straight at it"
+      }
+    },
+    {
+      "slug": "locations/glasshalls-of-velt",
+      "type": "location",
+      "tension": 0.72,
+      "facts": {
+        "resource": "void-glass",
+        "note": "a Velt city flash-frozen into a single clear block; every street is a hundred-year thought stopped at the comma"
+      }
+    },
+    {
+      "slug": "locations/the-silent-amphitheater",
+      "type": "location",
+      "tension": 0.75,
+      "facts": {
+        "resource": "lumen-salt",
+        "note": "the resonant cavern where the Choir sang itself to death; the lumen-salt walls still hold the last chord like frost"
+      }
+    },
+    {
+      "slug": "locations/colony-drosselmeyer",
+      "type": "location",
+      "tension": 0.5,
+      "facts": {
+        "kind": "human-colony",
+        "note": "the human landing-town, built atop the largest unbroken marrow seam left on the world without anyone reading what lay beneath"
+      }
+    },
+
+    {
+      "slug": "figures/velt-deepwright-kael",
+      "type": "figure",
+      "tension": 0.65,
+      "facts": {
+        "role": "Velt mine-architect",
+        "note": "designed the first marrow-bores and, too late, the engine meant to silence them; his crystallized body is the deepest readable thing in the vein"
+      }
+    },
+    {
+      "slug": "figures/the-last-cantor",
+      "type": "figure",
+      "tension": 0.7,
+      "facts": {
+        "role": "final coherent voice of the Choir",
+        "note": "the single node of the gestalt that survived long enough to record a warning instead of a song"
+      }
+    },
+
+    {
+      "slug": "events/the-first-bore",
+      "type": "event",
+      "tension": 0.6,
+      "day": 100,
+      "facts": {
+        "title": "The Velt sink the first marrow-bore",
+        "text": "Deepwright Kael's crews cut the first shaft into the dark ore to feed the Velt's slow minds. They believed they were quarrying mineral. They were severing a nerve."
+      }
+    },
+    {
+      "slug": "events/the-golden-quickening",
+      "type": "event",
+      "tension": 0.62,
+      "day": 200,
+      "facts": {
+        "title": "Refined marrow quickens the Velt into a golden age",
+        "text": "Marrow let a Velt think in days instead of decades. Cities bloomed across the world in a single human lifetime, every one of them sited atop a seam to stay close to the supply."
+      }
+    },
+    {
+      "slug": "events/the-wound-begins-to-sing",
+      "type": "event",
+      "tension": 0.72,
+      "day": 300,
+      "facts": {
+        "title": "The severed marrow discharges its agony",
+        "text": "Every bore-shaft had cut living tissue, and the world did not die but woke in pieces and in pain. The Choir, who lived in the planet's resonance, heard the wound first and could not stop hearing it."
+      }
+    },
+    {
+      "slug": "events/the-pale-wing-sells-the-doom",
+      "type": "event",
+      "tension": 0.7,
+      "day": 400,
+      "facts": {
+        "title": "The Pale Wing sell prophecies of the end instead of stopping it",
+        "text": "The augur-merchants read the catastrophe coming in the marrow's tremors and made a market of it, selling escape-prophecies and salvage-rights to the very civilizations that were dying. They warned everyone and saved no one, least of all themselves."
+      }
+    },
+    {
+      "slug": "events/the-choir-sings-it-down",
+      "type": "event",
+      "tension": 0.82,
+      "day": 600,
+      "facts": {
+        "title": "The Choir throws its whole gestalt against the wound",
+        "text": "The Choir sang a counter-wave to lull the planet back to sleep. Instead the planet learned the Choir's frequency by listening, and began to answer in their own borrowed voices."
+      }
+    },
+    {
+      "slug": "events/the-waking-of-the-wounded-world",
+      "type": "event",
+      "tension": 0.97,
+      "day": 700,
+      "facts": {
+        "title": "The wounded world wakes whole and the psychic cascade takes the sky",
+        "text": "The amplified agony reached every marrow seam under every city in a single instant. The Velt, tuned to stone, vitrified mid-thought; the Choir dissolved into the song they could no longer leave; the Pale Wing fled into the dark and were never heard again. This is the moment the whole world turns on, the day the planet-mind woke in agony and the three empires ended at once.",
+        "is_pivot": true
+      }
+    },
+
+    {
+      "slug": "artifacts/kaels-bore-codex",
+      "type": "artifact",
+      "tension": 0.72,
+      "facts": {
+        "archetype": "lost-codex",
+        "maker": "the-velt",
+        "note": "Kael's etched-glass mining ledger; opens like blueprints and closes like a confession"
+      }
+    },
+    {
+      "slug": "artifacts/the-marrow-shard",
+      "type": "artifact",
+      "tension": 0.92,
+      "facts": {
+        "archetype": "cursed-idol",
+        "maker": "the-velt",
+        "note": "a fist-sized splinter of severed marrow; warm, slow-beating, and straining always toward the vein"
+      }
+    },
+    {
+      "slug": "artifacts/cantors-final-loop",
+      "type": "artifact",
+      "tension": 0.85,
+      "facts": {
+        "archetype": "prophecy-object",
+        "maker": "the-choir",
+        "note": "a knotted standing-wave holding the Last Cantor's final seven seconds, replaying forever"
+      }
+    },
+    {
+      "slug": "artifacts/the-still-tuning-fork",
+      "type": "artifact",
+      "tension": 0.83,
+      "facts": {
+        "archetype": "living-relic",
+        "maker": "the-choir",
+        "note": "a Choir resonance-anchor still faintly vibrating with the lullaby they died singing"
+      }
+    },
+    {
+      "slug": "artifacts/the-vitrified-map",
+      "type": "artifact",
+      "tension": 0.74,
+      "facts": {
+        "archetype": "key-map",
+        "maker": "the-velt",
+        "note": "a Velt city frozen so cleanly it became a literal three-dimensional chart of every marrow seam on the world"
+      }
+    },
+    {
+      "slug": "artifacts/the-pale-wing-ledger",
+      "type": "artifact",
+      "tension": 0.7,
+      "facts": {
+        "archetype": "prophecy-object",
+        "maker": "the-pale-wing",
+        "note": "the augur-merchants' sales-book; every doom they sold is dated, and the last entry is unsold"
+      }
+    },
+    {
+      "slug": "artifacts/the-silence-engine",
+      "type": "artifact",
+      "tension": 0.86,
+      "facts": {
+        "archetype": "weapon-relic",
+        "maker": "the-velt",
+        "note": "Kael's deathbed dampener, built to mute the wound; it works once, then returns what it swallowed twice as loud"
+      }
+    },
+
+    {
+      "slug": "lore/the-marrow-was-alive",
+      "type": "lore",
+      "tension": 0.7,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "step": "1-cause",
+        "text": "The dark ore the Velt mined was never mineral. It was the dormant nerve-marrow of a single planet-spanning organism, asleep since before the suns cooled."
+      }
+    },
+    {
+      "slug": "lore/extraction-was-amputation",
+      "type": "lore",
+      "tension": 0.78,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "step": "2-escalation",
+        "text": "Every bore-shaft severed living tissue. The world did not die; it woke, in pieces, in pain, and began to dream of the things cutting into it."
+      }
+    },
+    {
+      "slug": "lore/the-wound-sang",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "step": "3-escalation",
+        "text": "The severed marrow discharged its agony as a psychic standing-wave. The Choir heard it first and could not stop hearing it; the Pale Wing read it as profit and sold it."
+      }
+    },
+    {
+      "slug": "lore/the-choir-tried-to-sing-it-down",
+      "type": "lore",
+      "tension": 0.85,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "step": "4-point-of-no-return",
+        "text": "The Choir threw its entire gestalt against the wound, singing a counter-wave to lull the planet back to sleep. Instead the planet learned the Choir's frequency and answered in their own voices."
+      }
+    },
+    {
+      "slug": "lore/the-psychic-cascade",
+      "type": "lore",
+      "tension": 0.9,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "step": "5-collapse",
+        "text": "The amplified wave reached the seams under every city at once. The Velt vitrified mid-thought, the Choir dissolved into the song, the Pale Wing fled into the dark, and three empires ended in a single shared instant of the planet's pain."
+      }
+    },
+
+    {
+      "slug": "lore/velt-thought-in-stone",
+      "type": "lore",
+      "tension": 0.52,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The Velt did not write; they thought into silicate across centuries. To read their glass is to overhear a single hundred-year sentence."
+      }
+    },
+    {
+      "slug": "lore/marrow-quickened-the-velt",
+      "type": "lore",
+      "tension": 0.6,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "Refined marrow let a Velt think in days instead of decades. Their golden age was an addiction, and the bores were the needle."
+      }
+    },
+    {
+      "slug": "lore/the-marrow-remembers-the-cut",
+      "type": "lore",
+      "tension": 0.85,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The shard is not dead tissue. It is awake, it remembers being severed, and held long enough it teaches the holder to hear the planet whether they want to or not."
+      }
+    },
+    {
+      "slug": "lore/the-shard-wants-reunion",
+      "type": "lore",
+      "tension": 0.82,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "Every fragment of marrow strains toward the vein. Reunite enough of it and the organism wakes whole, and the colony sits on the largest seam left."
+      }
+    },
+    {
+      "slug": "lore/the-last-warning",
+      "type": "lore",
+      "tension": 0.84,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The Cantor's final loop is not grief. Decoded, it is an instruction in three words: do not dig, do not sing, let it sleep."
+      }
+    },
+    {
+      "slug": "lore/the-counter-wave-failed",
+      "type": "lore",
+      "tension": 0.78,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The fork's vibration is the Choir's lullaby preserved. Played near the wound it does not soothe; the planet sings it back, perfected and predatory."
+      }
+    },
+    {
+      "slug": "lore/the-pale-wing-knew-and-sold-it",
+      "type": "lore",
+      "tension": 0.74,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The ledger proves the Pale Wing saw the cascade coming with years to spare and chose to auction the ending rather than avert it. Their unsold last entry is dated the day of the waking."
+      }
+    },
+    {
+      "slug": "lore/every-city-sat-on-a-seam",
+      "type": "lore",
+      "tension": 0.7,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The vitrified map proves the Velt built atop the marrow on purpose, for proximity sped their thoughts. They paved their own graves to think faster."
+      }
+    },
+    {
+      "slug": "lore/the-seams-run-under-the-colony",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The largest unbroken seam on the map runs directly beneath Colony Drosselmeyer, and the drill is already pointed at it."
+      }
+    },
+    {
+      "slug": "lore/silence-is-borrowed",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The Silence Engine buys quiet by storing the wound's song. Its capacity is finite, and what it holds it eventually returns, louder than it took."
+      }
+    },
+
+    {
+      "slug": "colonists/director-imre-vask",
+      "type": "colonist",
+      "tension": 0.7,
+      "facts": {
+        "role": "colony director",
+        "stance": "wants the deep drill to reach the rich seam on schedule and dismisses the humming shard on his desk as superstition, even as it teaches him to dream the planet's pain",
+        "live": true
+      }
+    },
+    {
+      "slug": "colonists/archivist-soln",
+      "type": "colonist",
+      "tension": 0.6,
+      "facts": {
+        "role": "xeno-archivist",
+        "stance": "has half-decoded Kael's codex and now knows the ore is nerve-tissue; cannot get the director to halt the drill in time",
+        "live": true
+      }
+    },
+    {
+      "slug": "colonists/drill-chief-bren-okafor",
+      "type": "colonist",
+      "tension": 0.65,
+      "facts": {
+        "role": "deep-drill chief",
+        "stance": "following orders toward the vein on a quota he was promised was safe; the one whose bit will actually break the seam",
+        "live": true
+      }
+    },
+    {
+      "slug": "colonists/the-listener-yuki",
+      "type": "colonist",
+      "tension": 0.72,
+      "facts": {
+        "role": "junior surveyor going resonant-sensitive",
+        "stance": "has begun to hear the wound the way the Choir did and is the only human who can read the Cantor's loop; racing to reach the amphitheater before the drill reaches the seam",
+        "live": true
+      }
+    },
+
+    {
+      "slug": "arc/the-second-waking",
+      "type": "arc",
+      "tension": 0.95,
+      "facts": {
+        "phase": "rising",
+        "state": "open",
+        "present_stakes": "Drosselmeyer's deep drill is days from the unbroken seam beneath the colony, the exact mistake that ended three civilizations, and the director will not stop it",
+        "win_condition": "reconstruct the fall from the relics (marrow alive -> extraction was amputation -> the wound sang -> the Choir sang it down -> the cascade) and read the Cantor's warning in time to halt Bren's drill before the bit touches living marrow",
+        "fail_state": "the drill breaks the seam and the planet-mind wakes a second time, this time under a human town, repeating the cascade with the colony in the Velt's place",
+        "next_beat_trigger": "Yuki decodes the Cantor's loop and brings the director proof, while the shard on his desk has already begun changing what he wants",
+        "next_beat_stakes": "if Vask cannot be turned before Bren hits the seam, Drosselmeyer becomes the next glasshall"
+      }
+    }
+  ],
+
+  "edges": [
+    ["civs/the-velt", "located_at", "locations/glasshalls-of-velt"],
+    ["civs/the-velt", "located_at", "locations/the-marrow-vein"],
+    ["civs/the-choir", "located_at", "locations/the-silent-amphitheater"],
+    ["factions/humans", "located_at", "locations/colony-drosselmeyer"],
+    ["figures/velt-deepwright-kael", "owned_by", "civs/the-velt"],
+    ["figures/the-last-cantor", "owned_by", "civs/the-choir"],
+
+    ["events/the-first-bore", "involves", "civs/the-velt", 100],
+    ["events/the-golden-quickening", "involves", "civs/the-velt", 200],
+    ["events/the-golden-quickening", "caused_by", "events/the-first-bore", 200],
+    ["events/the-golden-quickening", "concerns", "locations/the-marrow-vein", 200],
+    ["events/the-wound-begins-to-sing", "involves", "civs/the-choir", 300],
+    ["events/the-wound-begins-to-sing", "caused_by", "events/the-first-bore", 300],
+    ["events/the-pale-wing-sells-the-doom", "involves", "civs/the-pale-wing", 400],
+    ["events/the-pale-wing-sells-the-doom", "caused_by", "events/the-wound-begins-to-sing", 400],
+    ["events/the-choir-sings-it-down", "involves", "civs/the-choir", 600],
+    ["events/the-choir-sings-it-down", "caused_by", "events/the-wound-begins-to-sing", 600],
+    ["events/the-waking-of-the-wounded-world", "caused_by", "events/the-choir-sings-it-down", 700],
+    ["civs/the-velt", "involved_in", "events/the-waking-of-the-wounded-world", 700],
+    ["civs/the-choir", "involved_in", "events/the-waking-of-the-wounded-world", 700],
+    ["civs/the-pale-wing", "involved_in", "events/the-waking-of-the-wounded-world", 700],
+
+    ["artifacts/kaels-bore-codex", "forged_by", "figures/velt-deepwright-kael"],
+    ["artifacts/the-silence-engine", "forged_by", "figures/velt-deepwright-kael"],
+    ["artifacts/cantors-final-loop", "forged_by", "figures/the-last-cantor"],
+    ["artifacts/the-still-tuning-fork", "forged_by", "civs/the-choir"],
+    ["artifacts/the-vitrified-map", "forged_by", "civs/the-velt"],
+    ["artifacts/the-pale-wing-ledger", "forged_by", "civs/the-pale-wing"],
+    ["artifacts/the-marrow-shard", "forged_by", "civs/the-velt"],
+
+    ["artifacts/kaels-bore-codex", "hidden_at", "locations/the-marrow-vein"],
+    ["artifacts/the-marrow-shard", "hidden_at", "locations/the-marrow-vein"],
+    ["artifacts/cantors-final-loop", "hidden_at", "locations/the-silent-amphitheater"],
+    ["artifacts/the-still-tuning-fork", "hidden_at", "locations/the-silent-amphitheater"],
+    ["artifacts/the-vitrified-map", "hidden_at", "locations/glasshalls-of-velt"],
+    ["artifacts/the-silence-engine", "hidden_at", "locations/glasshalls-of-velt"],
+
+    ["artifacts/kaels-bore-codex", "drops", "lore/the-marrow-was-alive"],
+    ["artifacts/kaels-bore-codex", "drops", "lore/velt-thought-in-stone"],
+    ["artifacts/kaels-bore-codex", "drops", "lore/marrow-quickened-the-velt"],
+    ["artifacts/kaels-bore-codex", "drops", "lore/extraction-was-amputation"],
+
+    ["artifacts/the-marrow-shard", "drops", "lore/extraction-was-amputation"],
+    ["artifacts/the-marrow-shard", "drops", "lore/the-marrow-remembers-the-cut"],
+    ["artifacts/the-marrow-shard", "drops", "lore/the-shard-wants-reunion"],
+
+    ["artifacts/cantors-final-loop", "drops", "lore/the-wound-sang"],
+    ["artifacts/cantors-final-loop", "drops", "lore/the-last-warning"],
+    ["artifacts/cantors-final-loop", "drops", "lore/the-choir-tried-to-sing-it-down"],
+
+    ["artifacts/the-still-tuning-fork", "drops", "lore/the-choir-tried-to-sing-it-down"],
+    ["artifacts/the-still-tuning-fork", "drops", "lore/the-counter-wave-failed"],
+    ["artifacts/the-still-tuning-fork", "drops", "lore/the-wound-sang"],
+
+    ["artifacts/the-vitrified-map", "drops", "lore/the-psychic-cascade"],
+    ["artifacts/the-vitrified-map", "drops", "lore/every-city-sat-on-a-seam"],
+    ["artifacts/the-vitrified-map", "drops", "lore/the-seams-run-under-the-colony"],
+
+    ["artifacts/the-pale-wing-ledger", "drops", "lore/the-wound-sang"],
+    ["artifacts/the-pale-wing-ledger", "drops", "lore/the-pale-wing-knew-and-sold-it"],
+    ["artifacts/the-pale-wing-ledger", "drops", "lore/the-psychic-cascade"],
+
+    ["artifacts/the-silence-engine", "drops", "lore/the-psychic-cascade"],
+    ["artifacts/the-silence-engine", "drops", "lore/silence-is-borrowed"],
+    ["artifacts/the-silence-engine", "drops", "lore/the-choir-tried-to-sing-it-down"],
+
+    ["lore/the-marrow-was-alive", "reveals", "civs/the-velt"],
+    ["lore/velt-thought-in-stone", "reveals", "civs/the-velt"],
+    ["lore/marrow-quickened-the-velt", "reveals", "civs/the-velt"],
+    ["lore/extraction-was-amputation", "reveals", "locations/the-marrow-vein"],
+    ["lore/the-wound-sang", "reveals", "civs/the-choir"],
+    ["lore/the-choir-tried-to-sing-it-down", "reveals", "civs/the-choir"],
+    ["lore/the-counter-wave-failed", "reveals", "civs/the-choir"],
+    ["lore/the-last-warning", "reveals", "figures/the-last-cantor"],
+    ["lore/the-marrow-remembers-the-cut", "reveals", "artifacts/the-marrow-shard"],
+    ["lore/the-shard-wants-reunion", "reveals", "locations/the-marrow-vein"],
+    ["lore/the-pale-wing-knew-and-sold-it", "reveals", "civs/the-pale-wing"],
+    ["lore/every-city-sat-on-a-seam", "reveals", "civs/the-velt"],
+    ["lore/the-seams-run-under-the-colony", "reveals", "locations/colony-drosselmeyer"],
+    ["lore/silence-is-borrowed", "reveals", "artifacts/the-silence-engine"],
+    ["lore/the-psychic-cascade", "reveals", "events/the-waking-of-the-wounded-world"],
+
+    ["lore/extraction-was-amputation", "caused_by", "lore/the-marrow-was-alive"],
+    ["lore/the-wound-sang", "caused_by", "lore/extraction-was-amputation"],
+    ["lore/the-choir-tried-to-sing-it-down", "caused_by", "lore/the-wound-sang"],
+    ["lore/the-psychic-cascade", "caused_by", "lore/the-choir-tried-to-sing-it-down"],
+
+    ["colonists/director-imre-vask", "member_of", "factions/humans", 800],
+    ["colonists/archivist-soln", "member_of", "factions/humans", 800],
+    ["colonists/drill-chief-bren-okafor", "member_of", "factions/humans", 800],
+    ["colonists/the-listener-yuki", "member_of", "factions/humans", 800],
+
+    ["colonists/director-imre-vask", "owns", "artifacts/the-marrow-shard", 800],
+    ["colonists/archivist-soln", "owns", "artifacts/kaels-bore-codex", 800],
+    ["colonists/the-listener-yuki", "sought_by", "civs/the-choir", 800],
+    ["colonists/archivist-soln", "rival_of", "colonists/director-imre-vask", 800],
+    ["colonists/drill-chief-bren-okafor", "betrayed_by", "colonists/director-imre-vask", 800],
+
+    ["factions/humans", "located_at", "locations/colony-drosselmeyer", 800],
+    ["locations/colony-drosselmeyer", "located_at", "locations/the-marrow-vein", 800],
+    ["artifacts/the-marrow-shard", "threatens", "locations/colony-drosselmeyer", 800],
+    ["arc/the-second-waking", "threatens", "locations/colony-drosselmeyer", 800],
+    ["arc/the-second-waking", "begins", "factions/humans", 800],
+    ["colonists/the-listener-yuki", "races_to_stop", "arc/the-second-waking", 800],
+    ["colonists/director-imre-vask", "drives", "arc/the-second-waking", 800],
+    ["arc/the-second-waking", "next_beat", "events/the-waking-of-the-wounded-world", 800]
+  ],
+
+  "mystery": {
+    "fragments": [
+      "lore/the-marrow-was-alive",
+      "lore/extraction-was-amputation",
+      "lore/the-wound-sang",
+      "lore/the-choir-tried-to-sing-it-down",
+      "lore/the-psychic-cascade"
+    ],
+    "order": [
+      "lore/the-marrow-was-alive",
+      "lore/extraction-was-amputation",
+      "lore/the-wound-sang",
+      "lore/the-choir-tried-to-sing-it-down",
+      "lore/the-psychic-cascade"
+    ],
+    "order_relation": "caused_by"
+  }
+}
