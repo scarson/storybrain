@@ -1,0 +1,1033 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.4,
+      "facts": {
+        "role": "containment-colony",
+        "note": "settlers who made planetfall inside the vector range before the beacons were translated"
+      }
+    },
+    {
+      "slug": "civs/the-cradlekeepers",
+      "type": "faction",
+      "tension": 0.6,
+      "facts": {
+        "alien_type": "dormant-xeno-sleepers",
+        "trait": "the makers themselves, sealed in quarantine-sleep behind their own unfinished containment; wakeable as allies \u2014 or already carriers, no one knows which vault holds which",
+        "status": "dormant",
+        "wound": 0,
+        "note": "the makers, sealed in quarantine-sleep behind their own unfinished containment; wakeable as allies or already carriers"
+      }
+    },
+    {
+      "slug": "civs/the-stillborn-host",
+      "type": "faction",
+      "tension": 0.62,
+      "facts": {
+        "alien_type": "dormant-xeno-carriers",
+        "trait": "sleepers the vector reached first; dormant carriers whose waking is itself the outbreak, sealed beside the makers they can no longer be told apart from",
+        "status": "dormant",
+        "wound": 0,
+        "note": "sleepers the vector reached first; dormant carriers whose waking IS the outbreak"
+      }
+    },
+    {
+      "slug": "civs/the-vector",
+      "type": "faction",
+      "tension": 0.72,
+      "facts": {
+        "alien_type": "dormant-self-replicating-plague",
+        "trait": "the extinction-agent itself \u2014 nanite swarm, mind-virus, or engineered pathogen depending on the world \u2014 sleeping in the relics' lore and the carriers' marrow, stirring whenever a seal is broken",
+        "status": "dormant",
+        "wound": 0,
+        "note": "the extinction-agent itself, sleeping in the relics lore and the carriers marrow; stirs when a seal breaks"
+      }
+    },
+    {
+      "slug": "locations/quarantine-foam-seam",
+      "type": "location",
+      "tension": 0.36,
+      "facts": {
+        "resource": "quarantine-foam",
+        "danger": 0.2
+      }
+    },
+    {
+      "slug": "locations/dormancy-salt-seam",
+      "type": "location",
+      "tension": 0.40499999999999997,
+      "facts": {
+        "resource": "dormancy-salt",
+        "danger": 0.35
+      }
+    },
+    {
+      "slug": "events/0-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 100,
+      "facts": {
+        "kind": "war",
+        "title": "the-cradlekeepers wars on the-stillborn-host"
+      }
+    },
+    {
+      "slug": "events/1-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 100,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-stillborn-host taps dormancy-salt"
+      }
+    },
+    {
+      "slug": "events/2-exploitation",
+      "type": "event",
+      "tension": 0.605,
+      "day": 100,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-stillborn-host over-extracts dormancy-salt"
+      }
+    },
+    {
+      "slug": "events/3-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 100,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-vector taps dormancy-salt"
+      }
+    },
+    {
+      "slug": "events/4-exploitation",
+      "type": "event",
+      "tension": 0.605,
+      "day": 100,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-vector over-extracts dormancy-salt"
+      }
+    },
+    {
+      "slug": "artifacts/the-vector-cure-fragment-5",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "cure-fragment",
+        "maker": "the-vector"
+      }
+    },
+    {
+      "slug": "events/5-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 200,
+      "facts": {
+        "kind": "war",
+        "title": "the-cradlekeepers wars on the-vector"
+      }
+    },
+    {
+      "slug": "events/10-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 300,
+      "facts": {
+        "kind": "war",
+        "title": "the-cradlekeepers wars on the-stillborn-host"
+      }
+    },
+    {
+      "slug": "artifacts/the-stillborn-host-sealed-vault-key-13",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "sealed-vault-key",
+        "maker": "the-stillborn-host"
+      }
+    },
+    {
+      "slug": "figures/the-vector-seer-13",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-vector"
+      }
+    },
+    {
+      "slug": "events/13-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 300,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-vector"
+      }
+    },
+    {
+      "slug": "events/14-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 400,
+      "facts": {
+        "kind": "war",
+        "title": "the-cradlekeepers wars on the-stillborn-host"
+      }
+    },
+    {
+      "slug": "figures/the-stillborn-host-seer-15",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-stillborn-host"
+      }
+    },
+    {
+      "slug": "events/15-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 400,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-stillborn-host"
+      }
+    },
+    {
+      "slug": "artifacts/the-vector-recipe-shard-18",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "recipe-shard",
+        "maker": "the-vector"
+      }
+    },
+    {
+      "slug": "figures/the-cradlekeepers-seer-18",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-cradlekeepers"
+      }
+    },
+    {
+      "slug": "events/18-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 500,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-cradlekeepers"
+      }
+    },
+    {
+      "slug": "events/19-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 500,
+      "facts": {
+        "kind": "war",
+        "title": "the-stillborn-host wars on the-cradlekeepers"
+      }
+    },
+    {
+      "slug": "artifacts/the-vector-dormancy-trigger-22",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "dormancy-trigger",
+        "maker": "the-vector"
+      }
+    },
+    {
+      "slug": "events/22-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 600,
+      "facts": {
+        "kind": "war",
+        "title": "the-cradlekeepers wars on the-vector"
+      }
+    },
+    {
+      "slug": "figures/the-vector-seer-25",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-vector"
+      }
+    },
+    {
+      "slug": "events/25-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 600,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-vector"
+      }
+    },
+    {
+      "slug": "artifacts/the-cradlekeepers-cure-fragment-28",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "cure-fragment",
+        "maker": "the-cradlekeepers"
+      }
+    },
+    {
+      "slug": "events/28-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 700,
+      "facts": {
+        "kind": "war",
+        "title": "the-stillborn-host wars on the-vector"
+      }
+    },
+    {
+      "slug": "artifacts/the-vector-containment-keystone-31",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "containment-keystone",
+        "maker": "the-vector"
+      }
+    },
+    {
+      "slug": "figures/the-cradlekeepers-seer-31",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-cradlekeepers"
+      }
+    },
+    {
+      "slug": "events/31-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 800,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-cradlekeepers"
+      }
+    },
+    {
+      "slug": "lore/proof-the-vector-is-real-and-lethal",
+      "type": "lore",
+      "tension": 0.85,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "step": "0-proof",
+        "text": "the makers record proves the extinction-vector is real, self-replicating and lethal \u2014 and that they SEALED, they did not die"
+      }
+    },
+    {
+      "slug": "lore/identify-the-vectors-nature",
+      "type": "lore",
+      "tension": 0.85,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "step": "1-identify",
+        "text": "the assay identifies this world vector as an engineered pathogen that hides in the carriers marrow, so containment must seal bodies, not just patterns"
+      }
+    },
+    {
+      "slug": "lore/find-the-dormancy-trigger",
+      "type": "lore",
+      "tension": 0.85,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "step": "2-trigger",
+        "text": "the dormancy-trigger reveals exactly what holds the vector asleep \u2014 the condition the seal must hold and the mistake that wakes it"
+      }
+    },
+    {
+      "slug": "lore/locate-the-keystone-relic",
+      "type": "lore",
+      "tension": 0.85,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "step": "3-keystone",
+        "text": "the keystone relic is located, the load-bearing piece the makers seal was built around and abandoned"
+      }
+    },
+    {
+      "slug": "lore/assemble-the-seal",
+      "type": "lore",
+      "tension": 0.85,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "step": "4-assemble",
+        "text": "with proof, nature, trigger and keystone in hand the seal assembles, finishing the containment the makers never closed"
+      }
+    },
+    {
+      "slug": "colonists/mara-okonkwo",
+      "type": "colonist",
+      "tension": 0.55,
+      "facts": {
+        "role": "containment lead",
+        "stance": "refuses to crack a relic without the recipe in hand",
+        "live": true
+      }
+    },
+    {
+      "slug": "colonists/devrant-isk",
+      "type": "colonist",
+      "tension": 0.6,
+      "facts": {
+        "role": "relic-runner",
+        "stance": "already cracked one quarantine-relic out of order",
+        "live": true
+      }
+    },
+    {
+      "slug": "colonists/the-translator",
+      "type": "colonist",
+      "tension": 0.5,
+      "facts": {
+        "role": "lore-reader",
+        "stance": "most exposed to a vector that travels through the relics lore",
+        "live": true
+      }
+    },
+    {
+      "slug": "locations/threshold-landing",
+      "type": "location",
+      "tension": 0.45,
+      "facts": {
+        "kind": "human-colony",
+        "note": "the colony dome, closest unsealed habitat to a stirring carrier",
+        "live": true
+      }
+    },
+    {
+      "slug": "locations/drift-carrier-ninth",
+      "type": "location",
+      "tension": 0.7,
+      "facts": {
+        "kind": "drifting-carrier-hulk",
+        "note": "a derelict whose dormant host has begun to stir",
+        "live": true
+      }
+    },
+    {
+      "slug": "arc/the-containment-race",
+      "type": "arc",
+      "tension": 0.95,
+      "facts": {
+        "state": "open",
+        "present_stakes": "the carrier on drift-carrier-ninth is stirring and the colony at threshold-landing is inside its range; the makers half-finished seal is the only thing that can hold it",
+        "win_condition": "assemble the seal in order (proof -> identify -> trigger -> keystone -> assemble) before a carrier fully wakes, then the sleepers can be woken safely",
+        "fail_state": "cracking a relic out of order, or opening a vault before the trigger is read, reseeds the vector inside the colony NOW or wakes the stillborn-host carrier \u2014 extinction by the players own hand",
+        "clock": "every relic hunted is a turn; the carrier wakes on its own schedule whether or not the seal is ready",
+        "note": "a forward containment protocol racing a present sleeping threat, NOT an autopsy of how the makers fell"
+      }
+    }
+  ],
+  "edges": [
+    [
+      "events/0-war",
+      "involves",
+      "civs/the-cradlekeepers",
+      100
+    ],
+    [
+      "civs/the-cradlekeepers",
+      "rival_of",
+      "civs/the-stillborn-host",
+      100
+    ],
+    [
+      "events/1-discovery",
+      "involves",
+      "civs/the-stillborn-host",
+      100
+    ],
+    [
+      "civs/the-stillborn-host",
+      "exploits",
+      "locations/dormancy-salt-seam",
+      100
+    ],
+    [
+      "events/2-exploitation",
+      "involves",
+      "civs/the-stillborn-host",
+      100
+    ],
+    [
+      "events/2-exploitation",
+      "caused_by",
+      "events/1-discovery",
+      100
+    ],
+    [
+      "events/3-discovery",
+      "involves",
+      "civs/the-vector",
+      100
+    ],
+    [
+      "civs/the-vector",
+      "exploits",
+      "locations/dormancy-salt-seam",
+      100
+    ],
+    [
+      "events/4-exploitation",
+      "involves",
+      "civs/the-vector",
+      100
+    ],
+    [
+      "events/4-exploitation",
+      "caused_by",
+      "events/3-discovery",
+      100
+    ],
+    [
+      "artifacts/the-vector-cure-fragment-5",
+      "forged_by",
+      "civs/the-vector",
+      100
+    ],
+    [
+      "events/4-exploitation",
+      "involves",
+      "artifacts/the-vector-cure-fragment-5",
+      100
+    ],
+    [
+      "events/5-war",
+      "involves",
+      "civs/the-cradlekeepers",
+      200
+    ],
+    [
+      "events/5-war",
+      "caused_by",
+      "events/0-war",
+      200
+    ],
+    [
+      "civs/the-cradlekeepers",
+      "rival_of",
+      "civs/the-vector",
+      200
+    ],
+    [
+      "civs/the-stillborn-host",
+      "exploits",
+      "locations/dormancy-salt-seam",
+      200
+    ],
+    [
+      "civs/the-vector",
+      "exploits",
+      "locations/dormancy-salt-seam",
+      200
+    ],
+    [
+      "events/10-war",
+      "involves",
+      "civs/the-cradlekeepers",
+      300
+    ],
+    [
+      "events/10-war",
+      "caused_by",
+      "events/5-war",
+      300
+    ],
+    [
+      "civs/the-cradlekeepers",
+      "rival_of",
+      "civs/the-stillborn-host",
+      300
+    ],
+    [
+      "civs/the-stillborn-host",
+      "exploits",
+      "locations/dormancy-salt-seam",
+      300
+    ],
+    [
+      "artifacts/the-stillborn-host-sealed-vault-key-13",
+      "forged_by",
+      "civs/the-stillborn-host",
+      300
+    ],
+    [
+      "events/13-schism",
+      "involves",
+      "civs/the-vector",
+      300
+    ],
+    [
+      "events/13-schism",
+      "involves",
+      "figures/the-vector-seer-13",
+      300
+    ],
+    [
+      "events/14-war",
+      "involves",
+      "civs/the-cradlekeepers",
+      400
+    ],
+    [
+      "events/14-war",
+      "caused_by",
+      "events/10-war",
+      400
+    ],
+    [
+      "civs/the-cradlekeepers",
+      "rival_of",
+      "civs/the-stillborn-host",
+      400
+    ],
+    [
+      "events/15-schism",
+      "involves",
+      "civs/the-stillborn-host",
+      400
+    ],
+    [
+      "events/15-schism",
+      "involves",
+      "figures/the-stillborn-host-seer-15",
+      400
+    ],
+    [
+      "civs/the-vector",
+      "exploits",
+      "locations/dormancy-salt-seam",
+      400
+    ],
+    [
+      "artifacts/the-vector-recipe-shard-18",
+      "forged_by",
+      "civs/the-vector",
+      400
+    ],
+    [
+      "events/18-schism",
+      "involves",
+      "civs/the-cradlekeepers",
+      500
+    ],
+    [
+      "events/18-schism",
+      "caused_by",
+      "events/14-war",
+      500
+    ],
+    [
+      "events/18-schism",
+      "involves",
+      "figures/the-cradlekeepers-seer-18",
+      500
+    ],
+    [
+      "events/19-war",
+      "involves",
+      "civs/the-stillborn-host",
+      500
+    ],
+    [
+      "events/19-war",
+      "caused_by",
+      "events/15-schism",
+      500
+    ],
+    [
+      "civs/the-stillborn-host",
+      "rival_of",
+      "civs/the-cradlekeepers",
+      500
+    ],
+    [
+      "civs/the-vector",
+      "exploits",
+      "locations/dormancy-salt-seam",
+      500
+    ],
+    [
+      "artifacts/the-vector-dormancy-trigger-22",
+      "forged_by",
+      "civs/the-vector",
+      500
+    ],
+    [
+      "events/22-war",
+      "involves",
+      "civs/the-cradlekeepers",
+      600
+    ],
+    [
+      "events/22-war",
+      "caused_by",
+      "events/18-schism",
+      600
+    ],
+    [
+      "civs/the-cradlekeepers",
+      "rival_of",
+      "civs/the-vector",
+      600
+    ],
+    [
+      "civs/the-stillborn-host",
+      "exploits",
+      "locations/quarantine-foam-seam",
+      600
+    ],
+    [
+      "events/25-schism",
+      "involves",
+      "civs/the-vector",
+      600
+    ],
+    [
+      "events/25-schism",
+      "involves",
+      "figures/the-vector-seer-25",
+      600
+    ],
+    [
+      "civs/the-cradlekeepers",
+      "exploits",
+      "locations/dormancy-salt-seam",
+      700
+    ],
+    [
+      "artifacts/the-cradlekeepers-cure-fragment-28",
+      "forged_by",
+      "civs/the-cradlekeepers",
+      700
+    ],
+    [
+      "events/28-war",
+      "involves",
+      "civs/the-stillborn-host",
+      700
+    ],
+    [
+      "civs/the-stillborn-host",
+      "rival_of",
+      "civs/the-vector",
+      700
+    ],
+    [
+      "civs/the-vector",
+      "exploits",
+      "locations/dormancy-salt-seam",
+      700
+    ],
+    [
+      "artifacts/the-vector-containment-keystone-31",
+      "forged_by",
+      "civs/the-vector",
+      700
+    ],
+    [
+      "events/31-schism",
+      "involves",
+      "civs/the-cradlekeepers",
+      800
+    ],
+    [
+      "events/31-schism",
+      "involves",
+      "figures/the-cradlekeepers-seer-31",
+      800
+    ],
+    [
+      "civs/the-stillborn-host",
+      "exploits",
+      "locations/quarantine-foam-seam",
+      800
+    ],
+    [
+      "civs/the-vector",
+      "exploits",
+      "locations/quarantine-foam-seam",
+      800
+    ],
+    [
+      "artifacts/the-vector-cure-fragment-5",
+      "drops",
+      "lore/proof-the-vector-is-real-and-lethal",
+      800
+    ],
+    [
+      "artifacts/the-vector-cure-fragment-5",
+      "drops",
+      "lore/identify-the-vectors-nature",
+      800
+    ],
+    [
+      "artifacts/the-vector-cure-fragment-5",
+      "drops",
+      "lore/find-the-dormancy-trigger",
+      800
+    ],
+    [
+      "artifacts/the-stillborn-host-sealed-vault-key-13",
+      "drops",
+      "lore/locate-the-keystone-relic",
+      800
+    ],
+    [
+      "artifacts/the-stillborn-host-sealed-vault-key-13",
+      "drops",
+      "lore/assemble-the-seal",
+      800
+    ],
+    [
+      "artifacts/the-stillborn-host-sealed-vault-key-13",
+      "drops",
+      "lore/proof-the-vector-is-real-and-lethal",
+      800
+    ],
+    [
+      "artifacts/the-vector-recipe-shard-18",
+      "drops",
+      "lore/identify-the-vectors-nature",
+      800
+    ],
+    [
+      "artifacts/the-vector-recipe-shard-18",
+      "drops",
+      "lore/proof-the-vector-is-real-and-lethal",
+      800
+    ],
+    [
+      "artifacts/the-vector-recipe-shard-18",
+      "drops",
+      "lore/find-the-dormancy-trigger",
+      800
+    ],
+    [
+      "artifacts/the-vector-dormancy-trigger-22",
+      "drops",
+      "lore/find-the-dormancy-trigger",
+      800
+    ],
+    [
+      "artifacts/the-vector-dormancy-trigger-22",
+      "drops",
+      "lore/identify-the-vectors-nature",
+      800
+    ],
+    [
+      "artifacts/the-vector-dormancy-trigger-22",
+      "drops",
+      "lore/locate-the-keystone-relic",
+      800
+    ],
+    [
+      "artifacts/the-cradlekeepers-cure-fragment-28",
+      "drops",
+      "lore/assemble-the-seal",
+      800
+    ],
+    [
+      "artifacts/the-cradlekeepers-cure-fragment-28",
+      "drops",
+      "lore/identify-the-vectors-nature",
+      800
+    ],
+    [
+      "artifacts/the-cradlekeepers-cure-fragment-28",
+      "drops",
+      "lore/proof-the-vector-is-real-and-lethal",
+      800
+    ],
+    [
+      "artifacts/the-vector-containment-keystone-31",
+      "drops",
+      "lore/locate-the-keystone-relic",
+      800
+    ],
+    [
+      "artifacts/the-vector-containment-keystone-31",
+      "drops",
+      "lore/find-the-dormancy-trigger",
+      800
+    ],
+    [
+      "artifacts/the-vector-containment-keystone-31",
+      "drops",
+      "lore/assemble-the-seal",
+      800
+    ],
+    [
+      "lore/identify-the-vectors-nature",
+      "prerequisite",
+      "lore/proof-the-vector-is-real-and-lethal",
+      800
+    ],
+    [
+      "lore/find-the-dormancy-trigger",
+      "prerequisite",
+      "lore/identify-the-vectors-nature",
+      800
+    ],
+    [
+      "lore/locate-the-keystone-relic",
+      "prerequisite",
+      "lore/find-the-dormancy-trigger",
+      800
+    ],
+    [
+      "lore/assemble-the-seal",
+      "prerequisite",
+      "lore/locate-the-keystone-relic",
+      800
+    ],
+    [
+      "lore/proof-the-vector-is-real-and-lethal",
+      "reveals",
+      "civs/the-vector",
+      800
+    ],
+    [
+      "lore/identify-the-vectors-nature",
+      "reveals",
+      "civs/the-vector",
+      800
+    ],
+    [
+      "lore/find-the-dormancy-trigger",
+      "reveals",
+      "civs/the-stillborn-host",
+      800
+    ],
+    [
+      "lore/locate-the-keystone-relic",
+      "reveals",
+      "civs/the-cradlekeepers",
+      800
+    ],
+    [
+      "lore/assemble-the-seal",
+      "reveals",
+      "civs/the-cradlekeepers",
+      800
+    ],
+    [
+      "colonists/mara-okonkwo",
+      "leads",
+      "factions/humans",
+      800
+    ],
+    [
+      "colonists/devrant-isk",
+      "member_of",
+      "factions/humans",
+      800
+    ],
+    [
+      "colonists/the-translator",
+      "member_of",
+      "factions/humans",
+      800
+    ],
+    [
+      "factions/humans",
+      "settled",
+      "locations/threshold-landing",
+      800
+    ],
+    [
+      "locations/threshold-landing",
+      "inside_range_of",
+      "locations/drift-carrier-ninth",
+      800
+    ],
+    [
+      "civs/the-vector",
+      "stirs_in",
+      "locations/drift-carrier-ninth",
+      800
+    ],
+    [
+      "civs/the-stillborn-host",
+      "carries",
+      "civs/the-vector",
+      800
+    ],
+    [
+      "colonists/devrant-isk",
+      "cracked_out_of_order",
+      "artifacts/the-vector-cure-fragment-5",
+      800
+    ],
+    [
+      "colonists/the-translator",
+      "exposed_to",
+      "civs/the-vector",
+      800
+    ],
+    [
+      "colonists/mara-okonkwo",
+      "races_to_assemble",
+      "arc/the-containment-race",
+      800
+    ],
+    [
+      "arc/the-containment-race",
+      "threatened_by",
+      "locations/drift-carrier-ninth",
+      800
+    ],
+    [
+      "arc/the-containment-race",
+      "won_by",
+      "lore/assemble-the-seal",
+      800
+    ],
+    [
+      "arc/the-containment-race",
+      "begins",
+      "factions/humans",
+      800
+    ]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/proof-the-vector-is-real-and-lethal",
+      "lore/identify-the-vectors-nature",
+      "lore/find-the-dormancy-trigger",
+      "lore/locate-the-keystone-relic",
+      "lore/assemble-the-seal"
+    ],
+    "order": [
+      "lore/proof-the-vector-is-real-and-lethal",
+      "lore/identify-the-vectors-nature",
+      "lore/find-the-dormancy-trigger",
+      "lore/locate-the-keystone-relic",
+      "lore/assemble-the-seal"
+    ],
+    "order_relation": "prerequisite"
+  }
+}

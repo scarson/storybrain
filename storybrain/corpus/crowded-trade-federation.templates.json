@@ -1,0 +1,19 @@
+{
+  "setting": "The galaxy is alive and crowded — dozens of minor living alien species trading, scheming, and feuding across a busy frontier. No empire, no tomb, no single mind: a marketplace. Black-market curios move hand to hand, and an artifact's power is inseparable from its provenance — half of which is forged. Everyone wants a cut of one contested commodity that is not what the brokers say it is; tracing it to its real source is the deal nobody dares close. The spine is mercantile noir: whose history is real, who you deal with, who you cross — and the relic's true chain of custody, lies stripped oldest to newest, down to a singular true origin.",
+  "civs": [
+    { "name": "the-vossan-syndics", "archetype": "living-broker-guild", "trait": "consortium of merchant-clans who set prices, launder provenance, and fence the best forgeries", "greed": 0.85 },
+    { "name": "the-khariti-drift", "archetype": "living-nomad-traders", "trait": "tramp-fleet caravans who carry curios between ports and remember which papers are fake", "greed": 0.6 },
+    { "name": "the-oseni-assayers", "archetype": "living-authenticator-caste", "trait": "neutral appraisers who certify provenance for a fee — bribable, but the only ones who can read a true chain", "greed": 0.45 },
+    { "name": "the-melun-cartel", "archetype": "living-smuggler-cartel", "trait": "ruthless runners who corner the contested commodity and salt the market with counterfeits", "greed": 0.95 },
+    { "name": "the-rho-collectors", "archetype": "living-curio-hoarders", "trait": "obsessive private buyers who pay anything for a relic with a clean story, real or not", "greed": 0.7 }
+  ],
+  "resources": [
+    { "name": "ghostlight-amber", "danger": 0.5 },
+    { "name": "ledger-salt", "danger": 0.3 }
+  ],
+  "artifactKinds": ["forged-provenance-scroll", "black-market-curio", "assayer-seal", "smugglers-ledger", "contraband-relic", "broker-token"],
+  "epochs": 8,
+  "cascadeThreshold": 1.5,
+  "order_relation": "precedes",
+  "climax_label": "the true origin behind the forgeries"
+}

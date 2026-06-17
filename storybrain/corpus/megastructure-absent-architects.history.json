@@ -1,0 +1,1204 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.4,
+      "facts": {
+        "role": "late-arrivals"
+      }
+    },
+    {
+      "slug": "civs/the-architects",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "absent-builders-no-corpse",
+        "trait": "the vanished makers — left a working machine and no remains; genuinely OTHER, genuinely gone, purpose unstated",
+        "status": "extant",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "civs/the-keepers",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "absent-caretaker-order",
+        "trait": "a successor caste of the builders who tended the structure after the makers left, then also vanished — they sequenced the shutdowns",
+        "status": "extant",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "civs/the-listeners",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "absent-inheritor-pilgrims",
+        "trait": "an earlier inheritor species that found the structure before humans, woke pieces, learned part of the purpose, and departed without explanation",
+        "status": "extant",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "locations/shell-lumen-seam",
+      "type": "location",
+      "tension": 0.39,
+      "facts": {
+        "resource": "shell-lumen",
+        "danger": 0.3
+      }
+    },
+    {
+      "slug": "locations/core-matter-seam",
+      "type": "location",
+      "tension": 0.5249999999999999,
+      "facts": {
+        "resource": "core-matter",
+        "danger": 0.75
+      }
+    },
+    {
+      "slug": "locations/ring-current-seam",
+      "type": "location",
+      "tension": 0.44999999999999996,
+      "facts": {
+        "resource": "ring-current",
+        "danger": 0.5
+      }
+    },
+    {
+      "slug": "events/0-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 100,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-architects taps shell-lumen"
+      }
+    },
+    {
+      "slug": "events/1-exploitation",
+      "type": "event",
+      "tension": 0.59,
+      "day": 100,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-architects over-extracts shell-lumen"
+      }
+    },
+    {
+      "slug": "events/2-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 100,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-keepers taps ring-current"
+      }
+    },
+    {
+      "slug": "events/3-exploitation",
+      "type": "event",
+      "tension": 0.65,
+      "day": 100,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-keepers over-extracts ring-current"
+      }
+    },
+    {
+      "slug": "events/4-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 100,
+      "facts": {
+        "kind": "war",
+        "title": "the-listeners wars on the-keepers"
+      }
+    },
+    {
+      "slug": "figures/the-architects-seer-5",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-architects"
+      }
+    },
+    {
+      "slug": "events/5-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 200,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-architects"
+      }
+    },
+    {
+      "slug": "events/6-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 200,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-keepers taps ring-current"
+      }
+    },
+    {
+      "slug": "events/7-exploitation",
+      "type": "event",
+      "tension": 0.65,
+      "day": 200,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-keepers over-extracts ring-current"
+      }
+    },
+    {
+      "slug": "artifacts/the-keepers-control-key-8",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "control-key",
+        "maker": "the-keepers"
+      }
+    },
+    {
+      "slug": "events/8-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 200,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-listeners taps ring-current"
+      }
+    },
+    {
+      "slug": "events/9-exploitation",
+      "type": "event",
+      "tension": 0.65,
+      "day": 200,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-listeners over-extracts ring-current"
+      }
+    },
+    {
+      "slug": "events/10-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 300,
+      "facts": {
+        "kind": "war",
+        "title": "the-architects wars on the-keepers"
+      }
+    },
+    {
+      "slug": "figures/the-keepers-seer-11",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-keepers"
+      }
+    },
+    {
+      "slug": "events/11-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 300,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-keepers"
+      }
+    },
+    {
+      "slug": "events/12-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 300,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-listeners taps core-matter"
+      }
+    },
+    {
+      "slug": "events/13-exploitation",
+      "type": "event",
+      "tension": 0.725,
+      "day": 300,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-listeners over-extracts core-matter"
+      }
+    },
+    {
+      "slug": "events/14-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 400,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-architects taps shell-lumen"
+      }
+    },
+    {
+      "slug": "events/15-exploitation",
+      "type": "event",
+      "tension": 0.59,
+      "day": 400,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-architects over-extracts shell-lumen"
+      }
+    },
+    {
+      "slug": "artifacts/the-architects-purpose-fragment-16",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "purpose-fragment",
+        "maker": "the-architects"
+      }
+    },
+    {
+      "slug": "figures/the-keepers-seer-16",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-keepers"
+      }
+    },
+    {
+      "slug": "events/16-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 400,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-keepers"
+      }
+    },
+    {
+      "slug": "figures/the-listeners-seer-17",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-listeners"
+      }
+    },
+    {
+      "slug": "events/17-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 400,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-listeners"
+      }
+    },
+    {
+      "slug": "events/18-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 500,
+      "facts": {
+        "kind": "war",
+        "title": "the-architects wars on the-listeners"
+      }
+    },
+    {
+      "slug": "events/19-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 500,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-keepers taps shell-lumen"
+      }
+    },
+    {
+      "slug": "events/20-exploitation",
+      "type": "event",
+      "tension": 0.59,
+      "day": 500,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-keepers over-extracts shell-lumen"
+      }
+    },
+    {
+      "slug": "artifacts/the-keepers-access-sigil-21",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "access-sigil",
+        "maker": "the-keepers"
+      }
+    },
+    {
+      "slug": "figures/the-listeners-seer-21",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-listeners"
+      }
+    },
+    {
+      "slug": "events/21-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 500,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-listeners"
+      }
+    },
+    {
+      "slug": "figures/the-architects-seer-22",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-architects"
+      }
+    },
+    {
+      "slug": "events/22-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 600,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-architects"
+      }
+    },
+    {
+      "slug": "figures/the-keepers-seer-23",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-keepers"
+      }
+    },
+    {
+      "slug": "events/23-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 600,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-keepers"
+      }
+    },
+    {
+      "slug": "events/24-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 600,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-listeners taps core-matter"
+      }
+    },
+    {
+      "slug": "events/25-exploitation",
+      "type": "event",
+      "tension": 0.725,
+      "day": 600,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-listeners over-extracts core-matter"
+      }
+    },
+    {
+      "slug": "artifacts/the-listeners-access-sigil-26",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "access-sigil",
+        "maker": "the-listeners"
+      }
+    },
+    {
+      "slug": "figures/the-architects-seer-26",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-architects"
+      }
+    },
+    {
+      "slug": "events/26-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 700,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-architects"
+      }
+    },
+    {
+      "slug": "events/27-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 700,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-keepers taps ring-current"
+      }
+    },
+    {
+      "slug": "events/28-exploitation",
+      "type": "event",
+      "tension": 0.65,
+      "day": 700,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-keepers over-extracts ring-current"
+      }
+    },
+    {
+      "slug": "artifacts/the-keepers-purpose-fragment-29",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "purpose-fragment",
+        "maker": "the-keepers"
+      }
+    },
+    {
+      "slug": "events/29-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 700,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-listeners taps ring-current"
+      }
+    },
+    {
+      "slug": "events/30-exploitation",
+      "type": "event",
+      "tension": 0.65,
+      "day": 700,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-listeners over-extracts ring-current"
+      }
+    },
+    {
+      "slug": "artifacts/the-listeners-activation-codex-31",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "activation-codex",
+        "maker": "the-listeners"
+      }
+    },
+    {
+      "slug": "figures/the-architects-seer-31",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-architects"
+      }
+    },
+    {
+      "slug": "events/31-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 800,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-architects"
+      }
+    },
+    {
+      "slug": "events/32-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 800,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-keepers taps ring-current"
+      }
+    },
+    {
+      "slug": "events/33-exploitation",
+      "type": "event",
+      "tension": 0.65,
+      "day": 800,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-keepers over-extracts ring-current"
+      }
+    },
+    {
+      "slug": "events/34-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 800,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-listeners taps ring-current"
+      }
+    },
+    {
+      "slug": "events/35-exploitation",
+      "type": "event",
+      "tension": 0.65,
+      "day": 800,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-listeners over-extracts ring-current"
+      }
+    }
+  ],
+  "edges": [
+    [
+      "events/0-discovery",
+      "involves",
+      "civs/the-architects",
+      100
+    ],
+    [
+      "civs/the-architects",
+      "exploits",
+      "locations/shell-lumen-seam",
+      100
+    ],
+    [
+      "events/1-exploitation",
+      "involves",
+      "civs/the-architects",
+      100
+    ],
+    [
+      "events/1-exploitation",
+      "caused_by",
+      "events/0-discovery",
+      100
+    ],
+    [
+      "events/2-discovery",
+      "involves",
+      "civs/the-keepers",
+      100
+    ],
+    [
+      "civs/the-keepers",
+      "exploits",
+      "locations/ring-current-seam",
+      100
+    ],
+    [
+      "events/3-exploitation",
+      "involves",
+      "civs/the-keepers",
+      100
+    ],
+    [
+      "events/3-exploitation",
+      "caused_by",
+      "events/2-discovery",
+      100
+    ],
+    [
+      "events/4-war",
+      "involves",
+      "civs/the-listeners",
+      100
+    ],
+    [
+      "civs/the-listeners",
+      "rival_of",
+      "civs/the-keepers",
+      100
+    ],
+    [
+      "events/5-schism",
+      "involves",
+      "civs/the-architects",
+      200
+    ],
+    [
+      "events/5-schism",
+      "caused_by",
+      "events/1-exploitation",
+      200
+    ],
+    [
+      "events/5-schism",
+      "involves",
+      "figures/the-architects-seer-5",
+      200
+    ],
+    [
+      "events/6-discovery",
+      "involves",
+      "civs/the-keepers",
+      200
+    ],
+    [
+      "events/6-discovery",
+      "caused_by",
+      "events/3-exploitation",
+      200
+    ],
+    [
+      "civs/the-keepers",
+      "exploits",
+      "locations/ring-current-seam",
+      200
+    ],
+    [
+      "events/7-exploitation",
+      "involves",
+      "civs/the-keepers",
+      200
+    ],
+    [
+      "events/7-exploitation",
+      "caused_by",
+      "events/6-discovery",
+      200
+    ],
+    [
+      "artifacts/the-keepers-control-key-8",
+      "forged_by",
+      "civs/the-keepers",
+      200
+    ],
+    [
+      "events/7-exploitation",
+      "involves",
+      "artifacts/the-keepers-control-key-8",
+      200
+    ],
+    [
+      "events/8-discovery",
+      "involves",
+      "civs/the-listeners",
+      200
+    ],
+    [
+      "events/8-discovery",
+      "caused_by",
+      "events/4-war",
+      200
+    ],
+    [
+      "civs/the-listeners",
+      "exploits",
+      "locations/ring-current-seam",
+      200
+    ],
+    [
+      "events/9-exploitation",
+      "involves",
+      "civs/the-listeners",
+      200
+    ],
+    [
+      "events/9-exploitation",
+      "caused_by",
+      "events/8-discovery",
+      200
+    ],
+    [
+      "events/10-war",
+      "involves",
+      "civs/the-architects",
+      300
+    ],
+    [
+      "events/10-war",
+      "caused_by",
+      "events/5-schism",
+      300
+    ],
+    [
+      "civs/the-architects",
+      "rival_of",
+      "civs/the-keepers",
+      300
+    ],
+    [
+      "events/11-schism",
+      "involves",
+      "civs/the-keepers",
+      300
+    ],
+    [
+      "events/11-schism",
+      "caused_by",
+      "events/7-exploitation",
+      300
+    ],
+    [
+      "events/11-schism",
+      "involves",
+      "figures/the-keepers-seer-11",
+      300
+    ],
+    [
+      "events/12-discovery",
+      "involves",
+      "civs/the-listeners",
+      300
+    ],
+    [
+      "events/12-discovery",
+      "caused_by",
+      "events/9-exploitation",
+      300
+    ],
+    [
+      "civs/the-listeners",
+      "exploits",
+      "locations/core-matter-seam",
+      300
+    ],
+    [
+      "events/13-exploitation",
+      "involves",
+      "civs/the-listeners",
+      300
+    ],
+    [
+      "events/13-exploitation",
+      "caused_by",
+      "events/12-discovery",
+      300
+    ],
+    [
+      "events/14-discovery",
+      "involves",
+      "civs/the-architects",
+      400
+    ],
+    [
+      "events/14-discovery",
+      "caused_by",
+      "events/10-war",
+      400
+    ],
+    [
+      "civs/the-architects",
+      "exploits",
+      "locations/shell-lumen-seam",
+      400
+    ],
+    [
+      "events/15-exploitation",
+      "involves",
+      "civs/the-architects",
+      400
+    ],
+    [
+      "events/15-exploitation",
+      "caused_by",
+      "events/14-discovery",
+      400
+    ],
+    [
+      "artifacts/the-architects-purpose-fragment-16",
+      "forged_by",
+      "civs/the-architects",
+      400
+    ],
+    [
+      "events/15-exploitation",
+      "involves",
+      "artifacts/the-architects-purpose-fragment-16",
+      400
+    ],
+    [
+      "events/16-schism",
+      "involves",
+      "civs/the-keepers",
+      400
+    ],
+    [
+      "events/16-schism",
+      "caused_by",
+      "events/11-schism",
+      400
+    ],
+    [
+      "events/16-schism",
+      "involves",
+      "figures/the-keepers-seer-16",
+      400
+    ],
+    [
+      "events/17-schism",
+      "involves",
+      "civs/the-listeners",
+      400
+    ],
+    [
+      "events/17-schism",
+      "caused_by",
+      "events/13-exploitation",
+      400
+    ],
+    [
+      "events/17-schism",
+      "involves",
+      "figures/the-listeners-seer-17",
+      400
+    ],
+    [
+      "events/18-war",
+      "involves",
+      "civs/the-architects",
+      500
+    ],
+    [
+      "events/18-war",
+      "caused_by",
+      "events/15-exploitation",
+      500
+    ],
+    [
+      "civs/the-architects",
+      "rival_of",
+      "civs/the-listeners",
+      500
+    ],
+    [
+      "events/19-discovery",
+      "involves",
+      "civs/the-keepers",
+      500
+    ],
+    [
+      "events/19-discovery",
+      "caused_by",
+      "events/16-schism",
+      500
+    ],
+    [
+      "civs/the-keepers",
+      "exploits",
+      "locations/shell-lumen-seam",
+      500
+    ],
+    [
+      "events/20-exploitation",
+      "involves",
+      "civs/the-keepers",
+      500
+    ],
+    [
+      "events/20-exploitation",
+      "caused_by",
+      "events/19-discovery",
+      500
+    ],
+    [
+      "artifacts/the-keepers-access-sigil-21",
+      "forged_by",
+      "civs/the-keepers",
+      500
+    ],
+    [
+      "events/20-exploitation",
+      "involves",
+      "artifacts/the-keepers-access-sigil-21",
+      500
+    ],
+    [
+      "events/21-schism",
+      "involves",
+      "civs/the-listeners",
+      500
+    ],
+    [
+      "events/21-schism",
+      "caused_by",
+      "events/17-schism",
+      500
+    ],
+    [
+      "events/21-schism",
+      "involves",
+      "figures/the-listeners-seer-21",
+      500
+    ],
+    [
+      "events/22-schism",
+      "involves",
+      "civs/the-architects",
+      600
+    ],
+    [
+      "events/22-schism",
+      "caused_by",
+      "events/18-war",
+      600
+    ],
+    [
+      "events/22-schism",
+      "involves",
+      "figures/the-architects-seer-22",
+      600
+    ],
+    [
+      "events/23-schism",
+      "involves",
+      "civs/the-keepers",
+      600
+    ],
+    [
+      "events/23-schism",
+      "caused_by",
+      "events/20-exploitation",
+      600
+    ],
+    [
+      "events/23-schism",
+      "involves",
+      "figures/the-keepers-seer-23",
+      600
+    ],
+    [
+      "events/24-discovery",
+      "involves",
+      "civs/the-listeners",
+      600
+    ],
+    [
+      "events/24-discovery",
+      "caused_by",
+      "events/21-schism",
+      600
+    ],
+    [
+      "civs/the-listeners",
+      "exploits",
+      "locations/core-matter-seam",
+      600
+    ],
+    [
+      "events/25-exploitation",
+      "involves",
+      "civs/the-listeners",
+      600
+    ],
+    [
+      "events/25-exploitation",
+      "caused_by",
+      "events/24-discovery",
+      600
+    ],
+    [
+      "artifacts/the-listeners-access-sigil-26",
+      "forged_by",
+      "civs/the-listeners",
+      600
+    ],
+    [
+      "events/25-exploitation",
+      "involves",
+      "artifacts/the-listeners-access-sigil-26",
+      600
+    ],
+    [
+      "events/26-schism",
+      "involves",
+      "civs/the-architects",
+      700
+    ],
+    [
+      "events/26-schism",
+      "caused_by",
+      "events/22-schism",
+      700
+    ],
+    [
+      "events/26-schism",
+      "involves",
+      "figures/the-architects-seer-26",
+      700
+    ],
+    [
+      "events/27-discovery",
+      "involves",
+      "civs/the-keepers",
+      700
+    ],
+    [
+      "events/27-discovery",
+      "caused_by",
+      "events/23-schism",
+      700
+    ],
+    [
+      "civs/the-keepers",
+      "exploits",
+      "locations/ring-current-seam",
+      700
+    ],
+    [
+      "events/28-exploitation",
+      "involves",
+      "civs/the-keepers",
+      700
+    ],
+    [
+      "events/28-exploitation",
+      "caused_by",
+      "events/27-discovery",
+      700
+    ],
+    [
+      "artifacts/the-keepers-purpose-fragment-29",
+      "forged_by",
+      "civs/the-keepers",
+      700
+    ],
+    [
+      "events/28-exploitation",
+      "involves",
+      "artifacts/the-keepers-purpose-fragment-29",
+      700
+    ],
+    [
+      "events/29-discovery",
+      "involves",
+      "civs/the-listeners",
+      700
+    ],
+    [
+      "events/29-discovery",
+      "caused_by",
+      "events/25-exploitation",
+      700
+    ],
+    [
+      "civs/the-listeners",
+      "exploits",
+      "locations/ring-current-seam",
+      700
+    ],
+    [
+      "events/30-exploitation",
+      "involves",
+      "civs/the-listeners",
+      700
+    ],
+    [
+      "events/30-exploitation",
+      "caused_by",
+      "events/29-discovery",
+      700
+    ],
+    [
+      "artifacts/the-listeners-activation-codex-31",
+      "forged_by",
+      "civs/the-listeners",
+      700
+    ],
+    [
+      "events/30-exploitation",
+      "involves",
+      "artifacts/the-listeners-activation-codex-31",
+      700
+    ],
+    [
+      "events/31-schism",
+      "involves",
+      "civs/the-architects",
+      800
+    ],
+    [
+      "events/31-schism",
+      "caused_by",
+      "events/26-schism",
+      800
+    ],
+    [
+      "events/31-schism",
+      "involves",
+      "figures/the-architects-seer-31",
+      800
+    ],
+    [
+      "events/32-discovery",
+      "involves",
+      "civs/the-keepers",
+      800
+    ],
+    [
+      "events/32-discovery",
+      "caused_by",
+      "events/28-exploitation",
+      800
+    ],
+    [
+      "civs/the-keepers",
+      "exploits",
+      "locations/ring-current-seam",
+      800
+    ],
+    [
+      "events/33-exploitation",
+      "involves",
+      "civs/the-keepers",
+      800
+    ],
+    [
+      "events/33-exploitation",
+      "caused_by",
+      "events/32-discovery",
+      800
+    ],
+    [
+      "events/34-discovery",
+      "involves",
+      "civs/the-listeners",
+      800
+    ],
+    [
+      "events/34-discovery",
+      "caused_by",
+      "events/30-exploitation",
+      800
+    ],
+    [
+      "civs/the-listeners",
+      "exploits",
+      "locations/ring-current-seam",
+      800
+    ],
+    [
+      "events/35-exploitation",
+      "involves",
+      "civs/the-listeners",
+      800
+    ],
+    [
+      "events/35-exploitation",
+      "caused_by",
+      "events/34-discovery",
+      800
+    ]
+  ],
+  "mystery": {
+    "fragments": [],
+    "order": [],
+    "order_relation": "enables"
+  }
+}

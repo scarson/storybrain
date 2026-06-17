@@ -1,0 +1,1171 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.4,
+      "facts": {
+        "role": "late-arrivals"
+      }
+    },
+    {
+      "slug": "civs/the-vossan-syndics",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "living-broker-guild",
+        "trait": "consortium of merchant-clans who set prices, launder provenance, and fence the best forgeries",
+        "status": "fallen",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "civs/the-khariti-drift",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "living-nomad-traders",
+        "trait": "tramp-fleet caravans who carry curios between ports and remember which papers are fake",
+        "status": "extant",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "civs/the-oseni-assayers",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "living-authenticator-caste",
+        "trait": "neutral appraisers who certify provenance for a fee — bribable, but the only ones who can read a true chain",
+        "status": "extant",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "civs/the-melun-cartel",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "living-smuggler-cartel",
+        "trait": "ruthless runners who corner the contested commodity and salt the market with counterfeits",
+        "status": "fallen",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "civs/the-rho-collectors",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "living-curio-hoarders",
+        "trait": "obsessive private buyers who pay anything for a relic with a clean story, real or not",
+        "status": "fallen",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "locations/ghostlight-amber-seam",
+      "type": "location",
+      "tension": 0.44999999999999996,
+      "facts": {
+        "resource": "ghostlight-amber",
+        "danger": 0.5
+      }
+    },
+    {
+      "slug": "locations/ledger-salt-seam",
+      "type": "location",
+      "tension": 0.39,
+      "facts": {
+        "resource": "ledger-salt",
+        "danger": 0.3
+      }
+    },
+    {
+      "slug": "events/0-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 100,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-vossan-syndics taps ghostlight-amber"
+      }
+    },
+    {
+      "slug": "events/1-exploitation",
+      "type": "event",
+      "tension": 0.65,
+      "day": 100,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-vossan-syndics over-extracts ghostlight-amber"
+      }
+    },
+    {
+      "slug": "artifacts/the-vossan-syndics-contraband-relic-2",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "contraband-relic",
+        "maker": "the-vossan-syndics"
+      }
+    },
+    {
+      "slug": "events/2-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 100,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-khariti-drift taps ledger-salt"
+      }
+    },
+    {
+      "slug": "events/3-exploitation",
+      "type": "event",
+      "tension": 0.59,
+      "day": 100,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-khariti-drift over-extracts ledger-salt"
+      }
+    },
+    {
+      "slug": "artifacts/the-khariti-drift-broker-token-4",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "broker-token",
+        "maker": "the-khariti-drift"
+      }
+    },
+    {
+      "slug": "figures/the-oseni-assayers-seer-4",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-oseni-assayers"
+      }
+    },
+    {
+      "slug": "events/4-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 100,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-oseni-assayers"
+      }
+    },
+    {
+      "slug": "events/5-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 100,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-melun-cartel taps ghostlight-amber"
+      }
+    },
+    {
+      "slug": "events/6-exploitation",
+      "type": "event",
+      "tension": 0.65,
+      "day": 100,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-melun-cartel over-extracts ghostlight-amber"
+      }
+    },
+    {
+      "slug": "events/7-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 100,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-rho-collectors taps ledger-salt"
+      }
+    },
+    {
+      "slug": "events/8-exploitation",
+      "type": "event",
+      "tension": 0.59,
+      "day": 100,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-rho-collectors over-extracts ledger-salt"
+      }
+    },
+    {
+      "slug": "artifacts/the-rho-collectors-assayer-seal-9",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "assayer-seal",
+        "maker": "the-rho-collectors"
+      }
+    },
+    {
+      "slug": "figures/the-vossan-syndics-seer-9",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-vossan-syndics"
+      }
+    },
+    {
+      "slug": "events/9-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 200,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-vossan-syndics"
+      }
+    },
+    {
+      "slug": "figures/the-khariti-drift-seer-10",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-khariti-drift"
+      }
+    },
+    {
+      "slug": "events/10-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 200,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-khariti-drift"
+      }
+    },
+    {
+      "slug": "events/11-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 200,
+      "facts": {
+        "kind": "war",
+        "title": "the-oseni-assayers wars on the-khariti-drift"
+      }
+    },
+    {
+      "slug": "events/12-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 200,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-melun-cartel taps ledger-salt"
+      }
+    },
+    {
+      "slug": "events/13-exploitation",
+      "type": "event",
+      "tension": 0.59,
+      "day": 200,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-melun-cartel over-extracts ledger-salt"
+      }
+    },
+    {
+      "slug": "events/14-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 200,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-rho-collectors taps ledger-salt"
+      }
+    },
+    {
+      "slug": "events/15-exploitation",
+      "type": "event",
+      "tension": 0.59,
+      "day": 200,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-rho-collectors over-extracts ledger-salt"
+      }
+    },
+    {
+      "slug": "events/16-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 300,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-vossan-syndics taps ledger-salt"
+      }
+    },
+    {
+      "slug": "events/17-exploitation",
+      "type": "event",
+      "tension": 0.59,
+      "day": 300,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-vossan-syndics over-extracts ledger-salt"
+      }
+    },
+    {
+      "slug": "figures/the-khariti-drift-seer-18",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-khariti-drift"
+      }
+    },
+    {
+      "slug": "events/18-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 300,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-khariti-drift"
+      }
+    },
+    {
+      "slug": "figures/the-oseni-assayers-seer-19",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-oseni-assayers"
+      }
+    },
+    {
+      "slug": "events/19-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 300,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-oseni-assayers"
+      }
+    },
+    {
+      "slug": "events/20-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 300,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-melun-cartel taps ghostlight-amber"
+      }
+    },
+    {
+      "slug": "events/21-exploitation",
+      "type": "event",
+      "tension": 0.65,
+      "day": 300,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-melun-cartel over-extracts ghostlight-amber"
+      }
+    },
+    {
+      "slug": "events/22-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 300,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-rho-collectors taps ghostlight-amber"
+      }
+    },
+    {
+      "slug": "events/23-exploitation",
+      "type": "event",
+      "tension": 0.65,
+      "day": 300,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-rho-collectors over-extracts ghostlight-amber"
+      }
+    },
+    {
+      "slug": "artifacts/the-rho-collectors-forged-provenance-scroll-24",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "forged-provenance-scroll",
+        "maker": "the-rho-collectors"
+      }
+    },
+    {
+      "slug": "events/24-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 400,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-vossan-syndics taps ghostlight-amber"
+      }
+    },
+    {
+      "slug": "events/25-exploitation",
+      "type": "event",
+      "tension": 0.65,
+      "day": 400,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-vossan-syndics over-extracts ghostlight-amber"
+      }
+    },
+    {
+      "slug": "artifacts/the-vossan-syndics-forged-provenance-scroll-26",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "forged-provenance-scroll",
+        "maker": "the-vossan-syndics"
+      }
+    },
+    {
+      "slug": "figures/the-khariti-drift-seer-26",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-khariti-drift"
+      }
+    },
+    {
+      "slug": "events/26-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 400,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-khariti-drift"
+      }
+    },
+    {
+      "slug": "events/27-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 400,
+      "facts": {
+        "kind": "war",
+        "title": "the-oseni-assayers wars on the-vossan-syndics"
+      }
+    },
+    {
+      "slug": "events/28-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 400,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-melun-cartel taps ghostlight-amber"
+      }
+    },
+    {
+      "slug": "events/29-exploitation",
+      "type": "event",
+      "tension": 0.65,
+      "day": 400,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-melun-cartel over-extracts ghostlight-amber"
+      }
+    },
+    {
+      "slug": "artifacts/the-melun-cartel-broker-token-30",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "broker-token",
+        "maker": "the-melun-cartel"
+      }
+    },
+    {
+      "slug": "events/30-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 400,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-rho-collectors taps ledger-salt"
+      }
+    },
+    {
+      "slug": "events/31-exploitation",
+      "type": "event",
+      "tension": 0.59,
+      "day": 400,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-rho-collectors over-extracts ledger-salt"
+      }
+    },
+    {
+      "slug": "artifacts/the-rho-collectors-broker-token-32",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "broker-token",
+        "maker": "the-rho-collectors"
+      }
+    },
+    {
+      "slug": "events/32-cascade",
+      "type": "event",
+      "tension": 0.9,
+      "day": 400,
+      "facts": {
+        "kind": "cascade",
+        "title": "the true origin behind the forgeries"
+      }
+    },
+    {
+      "slug": "lore/fate-of-the-vossan-syndics",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-vossan-syndics"
+      }
+    },
+    {
+      "slug": "lore/fate-of-the-melun-cartel",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-melun-cartel"
+      }
+    },
+    {
+      "slug": "lore/fate-of-the-rho-collectors",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-rho-collectors"
+      }
+    }
+  ],
+  "edges": [
+    [
+      "events/0-discovery",
+      "involves",
+      "civs/the-vossan-syndics",
+      100
+    ],
+    [
+      "civs/the-vossan-syndics",
+      "exploits",
+      "locations/ghostlight-amber-seam",
+      100
+    ],
+    [
+      "events/1-exploitation",
+      "involves",
+      "civs/the-vossan-syndics",
+      100
+    ],
+    [
+      "events/1-exploitation",
+      "caused_by",
+      "events/0-discovery",
+      100
+    ],
+    [
+      "artifacts/the-vossan-syndics-contraband-relic-2",
+      "forged_by",
+      "civs/the-vossan-syndics",
+      100
+    ],
+    [
+      "events/1-exploitation",
+      "involves",
+      "artifacts/the-vossan-syndics-contraband-relic-2",
+      100
+    ],
+    [
+      "events/2-discovery",
+      "involves",
+      "civs/the-khariti-drift",
+      100
+    ],
+    [
+      "civs/the-khariti-drift",
+      "exploits",
+      "locations/ledger-salt-seam",
+      100
+    ],
+    [
+      "events/3-exploitation",
+      "involves",
+      "civs/the-khariti-drift",
+      100
+    ],
+    [
+      "events/3-exploitation",
+      "caused_by",
+      "events/2-discovery",
+      100
+    ],
+    [
+      "artifacts/the-khariti-drift-broker-token-4",
+      "forged_by",
+      "civs/the-khariti-drift",
+      100
+    ],
+    [
+      "events/3-exploitation",
+      "involves",
+      "artifacts/the-khariti-drift-broker-token-4",
+      100
+    ],
+    [
+      "events/4-schism",
+      "involves",
+      "civs/the-oseni-assayers",
+      100
+    ],
+    [
+      "events/4-schism",
+      "involves",
+      "figures/the-oseni-assayers-seer-4",
+      100
+    ],
+    [
+      "events/5-discovery",
+      "involves",
+      "civs/the-melun-cartel",
+      100
+    ],
+    [
+      "civs/the-melun-cartel",
+      "exploits",
+      "locations/ghostlight-amber-seam",
+      100
+    ],
+    [
+      "events/6-exploitation",
+      "involves",
+      "civs/the-melun-cartel",
+      100
+    ],
+    [
+      "events/6-exploitation",
+      "caused_by",
+      "events/5-discovery",
+      100
+    ],
+    [
+      "events/7-discovery",
+      "involves",
+      "civs/the-rho-collectors",
+      100
+    ],
+    [
+      "civs/the-rho-collectors",
+      "exploits",
+      "locations/ledger-salt-seam",
+      100
+    ],
+    [
+      "events/8-exploitation",
+      "involves",
+      "civs/the-rho-collectors",
+      100
+    ],
+    [
+      "events/8-exploitation",
+      "caused_by",
+      "events/7-discovery",
+      100
+    ],
+    [
+      "artifacts/the-rho-collectors-assayer-seal-9",
+      "forged_by",
+      "civs/the-rho-collectors",
+      100
+    ],
+    [
+      "events/8-exploitation",
+      "involves",
+      "artifacts/the-rho-collectors-assayer-seal-9",
+      100
+    ],
+    [
+      "events/9-schism",
+      "involves",
+      "civs/the-vossan-syndics",
+      200
+    ],
+    [
+      "events/9-schism",
+      "caused_by",
+      "events/1-exploitation",
+      200
+    ],
+    [
+      "events/9-schism",
+      "involves",
+      "figures/the-vossan-syndics-seer-9",
+      200
+    ],
+    [
+      "events/10-schism",
+      "involves",
+      "civs/the-khariti-drift",
+      200
+    ],
+    [
+      "events/10-schism",
+      "caused_by",
+      "events/3-exploitation",
+      200
+    ],
+    [
+      "events/10-schism",
+      "involves",
+      "figures/the-khariti-drift-seer-10",
+      200
+    ],
+    [
+      "events/11-war",
+      "involves",
+      "civs/the-oseni-assayers",
+      200
+    ],
+    [
+      "events/11-war",
+      "caused_by",
+      "events/4-schism",
+      200
+    ],
+    [
+      "civs/the-oseni-assayers",
+      "rival_of",
+      "civs/the-khariti-drift",
+      200
+    ],
+    [
+      "events/12-discovery",
+      "involves",
+      "civs/the-melun-cartel",
+      200
+    ],
+    [
+      "events/12-discovery",
+      "caused_by",
+      "events/6-exploitation",
+      200
+    ],
+    [
+      "civs/the-melun-cartel",
+      "exploits",
+      "locations/ledger-salt-seam",
+      200
+    ],
+    [
+      "events/13-exploitation",
+      "involves",
+      "civs/the-melun-cartel",
+      200
+    ],
+    [
+      "events/13-exploitation",
+      "caused_by",
+      "events/12-discovery",
+      200
+    ],
+    [
+      "events/14-discovery",
+      "involves",
+      "civs/the-rho-collectors",
+      200
+    ],
+    [
+      "events/14-discovery",
+      "caused_by",
+      "events/8-exploitation",
+      200
+    ],
+    [
+      "civs/the-rho-collectors",
+      "exploits",
+      "locations/ledger-salt-seam",
+      200
+    ],
+    [
+      "events/15-exploitation",
+      "involves",
+      "civs/the-rho-collectors",
+      200
+    ],
+    [
+      "events/15-exploitation",
+      "caused_by",
+      "events/14-discovery",
+      200
+    ],
+    [
+      "events/16-discovery",
+      "involves",
+      "civs/the-vossan-syndics",
+      300
+    ],
+    [
+      "events/16-discovery",
+      "caused_by",
+      "events/9-schism",
+      300
+    ],
+    [
+      "civs/the-vossan-syndics",
+      "exploits",
+      "locations/ledger-salt-seam",
+      300
+    ],
+    [
+      "events/17-exploitation",
+      "involves",
+      "civs/the-vossan-syndics",
+      300
+    ],
+    [
+      "events/17-exploitation",
+      "caused_by",
+      "events/16-discovery",
+      300
+    ],
+    [
+      "events/18-schism",
+      "involves",
+      "civs/the-khariti-drift",
+      300
+    ],
+    [
+      "events/18-schism",
+      "caused_by",
+      "events/10-schism",
+      300
+    ],
+    [
+      "events/18-schism",
+      "involves",
+      "figures/the-khariti-drift-seer-18",
+      300
+    ],
+    [
+      "events/19-schism",
+      "involves",
+      "civs/the-oseni-assayers",
+      300
+    ],
+    [
+      "events/19-schism",
+      "caused_by",
+      "events/11-war",
+      300
+    ],
+    [
+      "events/19-schism",
+      "involves",
+      "figures/the-oseni-assayers-seer-19",
+      300
+    ],
+    [
+      "events/20-discovery",
+      "involves",
+      "civs/the-melun-cartel",
+      300
+    ],
+    [
+      "events/20-discovery",
+      "caused_by",
+      "events/13-exploitation",
+      300
+    ],
+    [
+      "civs/the-melun-cartel",
+      "exploits",
+      "locations/ghostlight-amber-seam",
+      300
+    ],
+    [
+      "events/21-exploitation",
+      "involves",
+      "civs/the-melun-cartel",
+      300
+    ],
+    [
+      "events/21-exploitation",
+      "caused_by",
+      "events/20-discovery",
+      300
+    ],
+    [
+      "events/22-discovery",
+      "involves",
+      "civs/the-rho-collectors",
+      300
+    ],
+    [
+      "events/22-discovery",
+      "caused_by",
+      "events/15-exploitation",
+      300
+    ],
+    [
+      "civs/the-rho-collectors",
+      "exploits",
+      "locations/ghostlight-amber-seam",
+      300
+    ],
+    [
+      "events/23-exploitation",
+      "involves",
+      "civs/the-rho-collectors",
+      300
+    ],
+    [
+      "events/23-exploitation",
+      "caused_by",
+      "events/22-discovery",
+      300
+    ],
+    [
+      "artifacts/the-rho-collectors-forged-provenance-scroll-24",
+      "forged_by",
+      "civs/the-rho-collectors",
+      300
+    ],
+    [
+      "events/23-exploitation",
+      "involves",
+      "artifacts/the-rho-collectors-forged-provenance-scroll-24",
+      300
+    ],
+    [
+      "events/24-discovery",
+      "involves",
+      "civs/the-vossan-syndics",
+      400
+    ],
+    [
+      "events/24-discovery",
+      "caused_by",
+      "events/17-exploitation",
+      400
+    ],
+    [
+      "civs/the-vossan-syndics",
+      "exploits",
+      "locations/ghostlight-amber-seam",
+      400
+    ],
+    [
+      "events/25-exploitation",
+      "involves",
+      "civs/the-vossan-syndics",
+      400
+    ],
+    [
+      "events/25-exploitation",
+      "caused_by",
+      "events/24-discovery",
+      400
+    ],
+    [
+      "artifacts/the-vossan-syndics-forged-provenance-scroll-26",
+      "forged_by",
+      "civs/the-vossan-syndics",
+      400
+    ],
+    [
+      "events/25-exploitation",
+      "involves",
+      "artifacts/the-vossan-syndics-forged-provenance-scroll-26",
+      400
+    ],
+    [
+      "events/26-schism",
+      "involves",
+      "civs/the-khariti-drift",
+      400
+    ],
+    [
+      "events/26-schism",
+      "caused_by",
+      "events/18-schism",
+      400
+    ],
+    [
+      "events/26-schism",
+      "involves",
+      "figures/the-khariti-drift-seer-26",
+      400
+    ],
+    [
+      "events/27-war",
+      "involves",
+      "civs/the-oseni-assayers",
+      400
+    ],
+    [
+      "events/27-war",
+      "caused_by",
+      "events/19-schism",
+      400
+    ],
+    [
+      "civs/the-oseni-assayers",
+      "rival_of",
+      "civs/the-vossan-syndics",
+      400
+    ],
+    [
+      "events/28-discovery",
+      "involves",
+      "civs/the-melun-cartel",
+      400
+    ],
+    [
+      "events/28-discovery",
+      "caused_by",
+      "events/21-exploitation",
+      400
+    ],
+    [
+      "civs/the-melun-cartel",
+      "exploits",
+      "locations/ghostlight-amber-seam",
+      400
+    ],
+    [
+      "events/29-exploitation",
+      "involves",
+      "civs/the-melun-cartel",
+      400
+    ],
+    [
+      "events/29-exploitation",
+      "caused_by",
+      "events/28-discovery",
+      400
+    ],
+    [
+      "artifacts/the-melun-cartel-broker-token-30",
+      "forged_by",
+      "civs/the-melun-cartel",
+      400
+    ],
+    [
+      "events/29-exploitation",
+      "involves",
+      "artifacts/the-melun-cartel-broker-token-30",
+      400
+    ],
+    [
+      "events/30-discovery",
+      "involves",
+      "civs/the-rho-collectors",
+      400
+    ],
+    [
+      "events/30-discovery",
+      "caused_by",
+      "events/23-exploitation",
+      400
+    ],
+    [
+      "civs/the-rho-collectors",
+      "exploits",
+      "locations/ledger-salt-seam",
+      400
+    ],
+    [
+      "events/31-exploitation",
+      "involves",
+      "civs/the-rho-collectors",
+      400
+    ],
+    [
+      "events/31-exploitation",
+      "caused_by",
+      "events/30-discovery",
+      400
+    ],
+    [
+      "artifacts/the-rho-collectors-broker-token-32",
+      "forged_by",
+      "civs/the-rho-collectors",
+      400
+    ],
+    [
+      "events/31-exploitation",
+      "involves",
+      "artifacts/the-rho-collectors-broker-token-32",
+      400
+    ],
+    [
+      "lore/fate-of-the-vossan-syndics",
+      "precedes",
+      "events/32-cascade",
+      400
+    ],
+    [
+      "civs/the-vossan-syndics",
+      "fell_to",
+      "events/32-cascade",
+      400
+    ],
+    [
+      "lore/fate-of-the-melun-cartel",
+      "precedes",
+      "lore/fate-of-the-vossan-syndics",
+      400
+    ],
+    [
+      "civs/the-melun-cartel",
+      "fell_to",
+      "events/32-cascade",
+      400
+    ],
+    [
+      "lore/fate-of-the-rho-collectors",
+      "precedes",
+      "lore/fate-of-the-melun-cartel",
+      400
+    ],
+    [
+      "civs/the-rho-collectors",
+      "fell_to",
+      "events/32-cascade",
+      400
+    ]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/fate-of-the-vossan-syndics",
+      "lore/fate-of-the-melun-cartel",
+      "lore/fate-of-the-rho-collectors"
+    ],
+    "order": [
+      "lore/fate-of-the-vossan-syndics",
+      "lore/fate-of-the-melun-cartel",
+      "lore/fate-of-the-rho-collectors"
+    ],
+    "order_relation": "precedes"
+  }
+}

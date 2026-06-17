@@ -10,7 +10,7 @@
     { "name": "vault-salt", "danger": 0.15 }
   ],
   "artifactKinds": ["memory-core", "sealed-vault", "redacted-chart", "defaced-monument", "encrypted-will", "ancestral-relic"],
-  "epochs": 8,
+  "epochs": 6,
   "cascadeThreshold": 1.5,
   "order_relation": "reveals",
   "climax_label": "the great forgetting"

@@ -1,0 +1,938 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.4,
+      "facts": {
+        "role": "late-arrivals"
+      }
+    },
+    {
+      "slug": "civs/the-erased",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "absent-self-erased-makers",
+        "trait": "the ancestral makers who deliberately deleted their own record and scattered, leaving only traces; absent-by-choice, not dead",
+        "status": "extant",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "civs/the-redactors",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "absent-archivist-lineage",
+        "trait": "the maker-caste that performed the great forgetting — sealed the vaults, defaced the monuments, edited the charts; their fingerprints are on every deletion",
+        "status": "extant",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "civs/the-refusers",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "absent-dissenter-lineage",
+        "trait": "the maker-minority who fought the erasure and hid counter-records so a descendant could one day reassemble the truth; gone with the rest",
+        "status": "extant",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "locations/echo-resin-seam",
+      "type": "location",
+      "tension": 0.375,
+      "facts": {
+        "resource": "echo-resin",
+        "danger": 0.25
+      }
+    },
+    {
+      "slug": "locations/vault-salt-seam",
+      "type": "location",
+      "tension": 0.345,
+      "facts": {
+        "resource": "vault-salt",
+        "danger": 0.15
+      }
+    },
+    {
+      "slug": "figures/the-erased-seer-0",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-erased"
+      }
+    },
+    {
+      "slug": "events/0-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 100,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-erased"
+      }
+    },
+    {
+      "slug": "events/1-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 100,
+      "facts": {
+        "kind": "war",
+        "title": "the-redactors wars on the-erased"
+      }
+    },
+    {
+      "slug": "figures/the-refusers-seer-2",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-refusers"
+      }
+    },
+    {
+      "slug": "events/2-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 100,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-refusers"
+      }
+    },
+    {
+      "slug": "events/3-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 200,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-erased taps vault-salt"
+      }
+    },
+    {
+      "slug": "events/4-exploitation",
+      "type": "event",
+      "tension": 0.545,
+      "day": 200,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-erased over-extracts vault-salt"
+      }
+    },
+    {
+      "slug": "artifacts/the-erased-defaced-monument-5",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "defaced-monument",
+        "maker": "the-erased"
+      }
+    },
+    {
+      "slug": "figures/the-redactors-seer-5",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-redactors"
+      }
+    },
+    {
+      "slug": "events/5-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 200,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-redactors"
+      }
+    },
+    {
+      "slug": "events/6-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 200,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-refusers taps echo-resin"
+      }
+    },
+    {
+      "slug": "events/7-exploitation",
+      "type": "event",
+      "tension": 0.575,
+      "day": 200,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-refusers over-extracts echo-resin"
+      }
+    },
+    {
+      "slug": "artifacts/the-refusers-sealed-vault-8",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "sealed-vault",
+        "maker": "the-refusers"
+      }
+    },
+    {
+      "slug": "events/8-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 300,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-erased taps vault-salt"
+      }
+    },
+    {
+      "slug": "events/9-exploitation",
+      "type": "event",
+      "tension": 0.545,
+      "day": 300,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-erased over-extracts vault-salt"
+      }
+    },
+    {
+      "slug": "artifacts/the-erased-redacted-chart-10",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "redacted-chart",
+        "maker": "the-erased"
+      }
+    },
+    {
+      "slug": "events/10-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 300,
+      "facts": {
+        "kind": "war",
+        "title": "the-redactors wars on the-erased"
+      }
+    },
+    {
+      "slug": "events/11-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 300,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-refusers taps vault-salt"
+      }
+    },
+    {
+      "slug": "events/12-exploitation",
+      "type": "event",
+      "tension": 0.545,
+      "day": 300,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-refusers over-extracts vault-salt"
+      }
+    },
+    {
+      "slug": "events/13-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 400,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-erased taps vault-salt"
+      }
+    },
+    {
+      "slug": "events/14-exploitation",
+      "type": "event",
+      "tension": 0.545,
+      "day": 400,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-erased over-extracts vault-salt"
+      }
+    },
+    {
+      "slug": "artifacts/the-erased-sealed-vault-15",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "sealed-vault",
+        "maker": "the-erased"
+      }
+    },
+    {
+      "slug": "events/15-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 400,
+      "facts": {
+        "kind": "war",
+        "title": "the-redactors wars on the-erased"
+      }
+    },
+    {
+      "slug": "events/16-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 400,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-refusers taps vault-salt"
+      }
+    },
+    {
+      "slug": "events/17-exploitation",
+      "type": "event",
+      "tension": 0.545,
+      "day": 400,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-refusers over-extracts vault-salt"
+      }
+    },
+    {
+      "slug": "events/18-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 500,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-erased taps echo-resin"
+      }
+    },
+    {
+      "slug": "events/19-exploitation",
+      "type": "event",
+      "tension": 0.575,
+      "day": 500,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-erased over-extracts echo-resin"
+      }
+    },
+    {
+      "slug": "figures/the-redactors-seer-20",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-redactors"
+      }
+    },
+    {
+      "slug": "events/20-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 500,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-redactors"
+      }
+    },
+    {
+      "slug": "events/21-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 500,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-refusers taps vault-salt"
+      }
+    },
+    {
+      "slug": "events/22-exploitation",
+      "type": "event",
+      "tension": 0.545,
+      "day": 500,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-refusers over-extracts vault-salt"
+      }
+    },
+    {
+      "slug": "artifacts/the-refusers-defaced-monument-23",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "defaced-monument",
+        "maker": "the-refusers"
+      }
+    },
+    {
+      "slug": "events/23-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 600,
+      "facts": {
+        "kind": "war",
+        "title": "the-erased wars on the-redactors"
+      }
+    },
+    {
+      "slug": "events/24-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 600,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-redactors taps echo-resin"
+      }
+    },
+    {
+      "slug": "events/25-exploitation",
+      "type": "event",
+      "tension": 0.575,
+      "day": 600,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-redactors over-extracts echo-resin"
+      }
+    },
+    {
+      "slug": "events/26-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 600,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-refusers taps vault-salt"
+      }
+    },
+    {
+      "slug": "events/27-exploitation",
+      "type": "event",
+      "tension": 0.545,
+      "day": 600,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-refusers over-extracts vault-salt"
+      }
+    },
+    {
+      "slug": "artifacts/the-refusers-ancestral-relic-28",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "ancestral-relic",
+        "maker": "the-refusers"
+      }
+    }
+  ],
+  "edges": [
+    [
+      "events/0-schism",
+      "involves",
+      "civs/the-erased",
+      100
+    ],
+    [
+      "events/0-schism",
+      "involves",
+      "figures/the-erased-seer-0",
+      100
+    ],
+    [
+      "events/1-war",
+      "involves",
+      "civs/the-redactors",
+      100
+    ],
+    [
+      "civs/the-redactors",
+      "rival_of",
+      "civs/the-erased",
+      100
+    ],
+    [
+      "events/2-schism",
+      "involves",
+      "civs/the-refusers",
+      100
+    ],
+    [
+      "events/2-schism",
+      "involves",
+      "figures/the-refusers-seer-2",
+      100
+    ],
+    [
+      "events/3-discovery",
+      "involves",
+      "civs/the-erased",
+      200
+    ],
+    [
+      "events/3-discovery",
+      "caused_by",
+      "events/0-schism",
+      200
+    ],
+    [
+      "civs/the-erased",
+      "exploits",
+      "locations/vault-salt-seam",
+      200
+    ],
+    [
+      "events/4-exploitation",
+      "involves",
+      "civs/the-erased",
+      200
+    ],
+    [
+      "events/4-exploitation",
+      "caused_by",
+      "events/3-discovery",
+      200
+    ],
+    [
+      "artifacts/the-erased-defaced-monument-5",
+      "forged_by",
+      "civs/the-erased",
+      200
+    ],
+    [
+      "events/4-exploitation",
+      "involves",
+      "artifacts/the-erased-defaced-monument-5",
+      200
+    ],
+    [
+      "events/5-schism",
+      "involves",
+      "civs/the-redactors",
+      200
+    ],
+    [
+      "events/5-schism",
+      "caused_by",
+      "events/1-war",
+      200
+    ],
+    [
+      "events/5-schism",
+      "involves",
+      "figures/the-redactors-seer-5",
+      200
+    ],
+    [
+      "events/6-discovery",
+      "involves",
+      "civs/the-refusers",
+      200
+    ],
+    [
+      "events/6-discovery",
+      "caused_by",
+      "events/2-schism",
+      200
+    ],
+    [
+      "civs/the-refusers",
+      "exploits",
+      "locations/echo-resin-seam",
+      200
+    ],
+    [
+      "events/7-exploitation",
+      "involves",
+      "civs/the-refusers",
+      200
+    ],
+    [
+      "events/7-exploitation",
+      "caused_by",
+      "events/6-discovery",
+      200
+    ],
+    [
+      "artifacts/the-refusers-sealed-vault-8",
+      "forged_by",
+      "civs/the-refusers",
+      200
+    ],
+    [
+      "events/7-exploitation",
+      "involves",
+      "artifacts/the-refusers-sealed-vault-8",
+      200
+    ],
+    [
+      "events/8-discovery",
+      "involves",
+      "civs/the-erased",
+      300
+    ],
+    [
+      "events/8-discovery",
+      "caused_by",
+      "events/4-exploitation",
+      300
+    ],
+    [
+      "civs/the-erased",
+      "exploits",
+      "locations/vault-salt-seam",
+      300
+    ],
+    [
+      "events/9-exploitation",
+      "involves",
+      "civs/the-erased",
+      300
+    ],
+    [
+      "events/9-exploitation",
+      "caused_by",
+      "events/8-discovery",
+      300
+    ],
+    [
+      "artifacts/the-erased-redacted-chart-10",
+      "forged_by",
+      "civs/the-erased",
+      300
+    ],
+    [
+      "events/9-exploitation",
+      "involves",
+      "artifacts/the-erased-redacted-chart-10",
+      300
+    ],
+    [
+      "events/10-war",
+      "involves",
+      "civs/the-redactors",
+      300
+    ],
+    [
+      "events/10-war",
+      "caused_by",
+      "events/5-schism",
+      300
+    ],
+    [
+      "civs/the-redactors",
+      "rival_of",
+      "civs/the-erased",
+      300
+    ],
+    [
+      "events/11-discovery",
+      "involves",
+      "civs/the-refusers",
+      300
+    ],
+    [
+      "events/11-discovery",
+      "caused_by",
+      "events/7-exploitation",
+      300
+    ],
+    [
+      "civs/the-refusers",
+      "exploits",
+      "locations/vault-salt-seam",
+      300
+    ],
+    [
+      "events/12-exploitation",
+      "involves",
+      "civs/the-refusers",
+      300
+    ],
+    [
+      "events/12-exploitation",
+      "caused_by",
+      "events/11-discovery",
+      300
+    ],
+    [
+      "events/13-discovery",
+      "involves",
+      "civs/the-erased",
+      400
+    ],
+    [
+      "events/13-discovery",
+      "caused_by",
+      "events/9-exploitation",
+      400
+    ],
+    [
+      "civs/the-erased",
+      "exploits",
+      "locations/vault-salt-seam",
+      400
+    ],
+    [
+      "events/14-exploitation",
+      "involves",
+      "civs/the-erased",
+      400
+    ],
+    [
+      "events/14-exploitation",
+      "caused_by",
+      "events/13-discovery",
+      400
+    ],
+    [
+      "artifacts/the-erased-sealed-vault-15",
+      "forged_by",
+      "civs/the-erased",
+      400
+    ],
+    [
+      "events/14-exploitation",
+      "involves",
+      "artifacts/the-erased-sealed-vault-15",
+      400
+    ],
+    [
+      "events/15-war",
+      "involves",
+      "civs/the-redactors",
+      400
+    ],
+    [
+      "events/15-war",
+      "caused_by",
+      "events/10-war",
+      400
+    ],
+    [
+      "civs/the-redactors",
+      "rival_of",
+      "civs/the-erased",
+      400
+    ],
+    [
+      "events/16-discovery",
+      "involves",
+      "civs/the-refusers",
+      400
+    ],
+    [
+      "events/16-discovery",
+      "caused_by",
+      "events/12-exploitation",
+      400
+    ],
+    [
+      "civs/the-refusers",
+      "exploits",
+      "locations/vault-salt-seam",
+      400
+    ],
+    [
+      "events/17-exploitation",
+      "involves",
+      "civs/the-refusers",
+      400
+    ],
+    [
+      "events/17-exploitation",
+      "caused_by",
+      "events/16-discovery",
+      400
+    ],
+    [
+      "events/18-discovery",
+      "involves",
+      "civs/the-erased",
+      500
+    ],
+    [
+      "events/18-discovery",
+      "caused_by",
+      "events/14-exploitation",
+      500
+    ],
+    [
+      "civs/the-erased",
+      "exploits",
+      "locations/echo-resin-seam",
+      500
+    ],
+    [
+      "events/19-exploitation",
+      "involves",
+      "civs/the-erased",
+      500
+    ],
+    [
+      "events/19-exploitation",
+      "caused_by",
+      "events/18-discovery",
+      500
+    ],
+    [
+      "events/20-schism",
+      "involves",
+      "civs/the-redactors",
+      500
+    ],
+    [
+      "events/20-schism",
+      "caused_by",
+      "events/15-war",
+      500
+    ],
+    [
+      "events/20-schism",
+      "involves",
+      "figures/the-redactors-seer-20",
+      500
+    ],
+    [
+      "events/21-discovery",
+      "involves",
+      "civs/the-refusers",
+      500
+    ],
+    [
+      "events/21-discovery",
+      "caused_by",
+      "events/17-exploitation",
+      500
+    ],
+    [
+      "civs/the-refusers",
+      "exploits",
+      "locations/vault-salt-seam",
+      500
+    ],
+    [
+      "events/22-exploitation",
+      "involves",
+      "civs/the-refusers",
+      500
+    ],
+    [
+      "events/22-exploitation",
+      "caused_by",
+      "events/21-discovery",
+      500
+    ],
+    [
+      "artifacts/the-refusers-defaced-monument-23",
+      "forged_by",
+      "civs/the-refusers",
+      500
+    ],
+    [
+      "events/22-exploitation",
+      "involves",
+      "artifacts/the-refusers-defaced-monument-23",
+      500
+    ],
+    [
+      "events/23-war",
+      "involves",
+      "civs/the-erased",
+      600
+    ],
+    [
+      "events/23-war",
+      "caused_by",
+      "events/19-exploitation",
+      600
+    ],
+    [
+      "civs/the-erased",
+      "rival_of",
+      "civs/the-redactors",
+      600
+    ],
+    [
+      "events/24-discovery",
+      "involves",
+      "civs/the-redactors",
+      600
+    ],
+    [
+      "events/24-discovery",
+      "caused_by",
+      "events/20-schism",
+      600
+    ],
+    [
+      "civs/the-redactors",
+      "exploits",
+      "locations/echo-resin-seam",
+      600
+    ],
+    [
+      "events/25-exploitation",
+      "involves",
+      "civs/the-redactors",
+      600
+    ],
+    [
+      "events/25-exploitation",
+      "caused_by",
+      "events/24-discovery",
+      600
+    ],
+    [
+      "events/26-discovery",
+      "involves",
+      "civs/the-refusers",
+      600
+    ],
+    [
+      "events/26-discovery",
+      "caused_by",
+      "events/22-exploitation",
+      600
+    ],
+    [
+      "civs/the-refusers",
+      "exploits",
+      "locations/vault-salt-seam",
+      600
+    ],
+    [
+      "events/27-exploitation",
+      "involves",
+      "civs/the-refusers",
+      600
+    ],
+    [
+      "events/27-exploitation",
+      "caused_by",
+      "events/26-discovery",
+      600
+    ],
+    [
+      "artifacts/the-refusers-ancestral-relic-28",
+      "forged_by",
+      "civs/the-refusers",
+      600
+    ],
+    [
+      "events/27-exploitation",
+      "involves",
+      "artifacts/the-refusers-ancestral-relic-28",
+      600
+    ]
+  ],
+  "mystery": {
+    "fragments": [],
+    "order": [],
+    "order_relation": "reveals"
+  }
+}

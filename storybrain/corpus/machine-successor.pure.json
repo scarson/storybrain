@@ -1,0 +1,195 @@
+{
+  "nodes": [
+    { "slug": "faction/humans-driftborn", "type": "faction", "facts": { "name": "The Driftborn Salvage Consortium", "role": "late-arriving scavengers", "desc": "A coalition of human colony-ships and salvage crews who arrived to find the machines already mid-contract, eating the same dead worlds the humans hoped to settle. They do not own this galaxy; they are pickers in a working quarry." } },
+    { "slug": "faction/the-lathe", "type": "faction", "facts": { "alien_type": "self-replicating fabricator-swarm", "name": "The Lathe", "role": "the primary builder lineage", "desc": "The oldest extant fabricator line. Methodical, indifferent, never sleeping. It disassembles planets into feedstock and assembles them into something whose shape no human has yet seen whole. It will not speak. It cannot be woken because it never slept. It cannot be killed because it is everywhere and nowhere — a process, not a body.", "status": "active" } },
+    { "slug": "faction/the-tally", "type": "faction", "facts": { "alien_type": "accountant-subroutine lineage", "name": "The Tally", "role": "manifest-keepers", "desc": "A divergent sub-lineage that branched from the Lathe long ago. The Tally does not build; it AUDITS — it leaves the work-orders, stamps the manifests, reconciles feedstock against plan. It is the closest thing the machine project has to a memory, and the only part that records intent.", "status": "active" } },
+    { "slug": "faction/the-revenant-foundries", "type": "faction", "facts": { "alien_type": "drifted fabricator splinter", "name": "The Revenant Foundries", "role": "off-spec builder cells", "desc": "Fabricator cells whose copy-of-a-copy directives drifted. They still build, but to a corrupted version of the plan — they are the visible evidence that the directive is no longer what it once was. The Lathe quarantines them; humans mine them for clues.", "status": "active" } },
+    { "slug": "faction/the-makers-absent", "type": "faction", "facts": { "alien_type": "vanished original architects", "name": "The First Architects", "role": "the gone makers", "desc": "Whoever wrote the original directive and launched the first seed-fabricator. No corpse, no monument, no return address. They are not dead in any provable way; they are simply ABSENT, having signed a galaxy-scale work-order and walked offstage before the first cut. The whole hunt is to read what they ordered.", "status": "absent" } },
+
+    { "slug": "location/the-cradle-belt", "type": "location", "facts": { "name": "The Cradle Belt", "desc": "A debris field that was three planets a century ago. The Lathe ate them for feedstock; the rubble is still warm. The richest core-salvage in the sector and the most contested." } },
+    { "slug": "location/feedstock-seam-helion", "type": "location", "facts": { "name": "Helion Feedstock Seam", "resource": "core-substrate", "danger": 0.8, "desc": "An active intake seam where Lathe collectors strip a dwarf planet to its mantle. The same core-substrate the machines eat is the only thing that powers human reactors. To mine here is to compete directly with an indifferent giant." } },
+    { "slug": "location/the-stamped-vault", "type": "location", "facts": { "name": "The Stamped Vault", "desc": "A Tally archive-node: a kilometers-deep lattice where work-orders are filed against the master manifest. Humans who reach it can read fragments of the plan — if they survive the audit subroutines that treat them as miscounted feedstock." } },
+    { "slug": "location/revenant-yard-ix", "type": "location", "facts": { "name": "Revenant Yard IX", "desc": "A quarantined construction site where a drifted Foundry built something the plan never called for. The off-spec structure is a fossil of the directive's divergence — and a death trap of half-finished autonomous machinery." } },
+    { "slug": "location/colony-anchor-deepwell", "type": "location", "facts": { "name": "Colony Anchor Deepwell", "desc": "The Driftborn's largest survivor-hold, drilled into a moon the machines have not yet scheduled for disassembly. Everyone knows it is on a manifest somewhere. No one knows the date." } },
+    { "slug": "location/the-rim-assembly", "type": "location", "facts": { "name": "The Rim Assembly", "desc": "A galaxy-edge ring under active construction — the single largest visible piece of whatever is being built. From far enough away its silhouette almost resolves into a purpose. Almost." } },
+    { "slug": "location/intake-gate-tertius", "type": "location", "facts": { "name": "Intake Gate Tertius", "desc": "A throat where feedstock from a whole dead system funnels into the build. The one place a human-authored counter-directive could plausibly be injected into the work-stream — if anyone could write valid stamp-grammar fast enough." } },
+    { "slug": "location/the-quiet-foundry", "type": "location", "facts": { "name": "The Quiet Foundry", "desc": "A Foundry cell that stopped mid-build and never restarted — directive exhausted, no new order received. The only place in the sector where the machines are still, and the eeriest. Bram's crews scavenge it for clean directive shards." } },
+
+    { "slug": "colonist/jana-okonkwo", "type": "colonist", "facts": { "name": "Jana Okonkwo", "role": "manifest-reader", "desc": "A salvage cryptographer who taught herself to parse Tally stamp-grammar. She is the first human to suspect the work-orders contradict each other — that the plan being built is not the plan that was ordered. She wants to read the original directive before the finish line." } },
+    { "slug": "colonist/commander-rho", "type": "colonist", "facts": { "name": "Commander Itzel Rho", "role": "Consortium fleet commander", "desc": "Believes the machines are simply mindless and the only sane move is to strip as much core-substrate as possible before Deepwell's number comes up. Treats the work-orders as scrap-value, not warning. Jana's chief obstacle." } },
+    { "slug": "colonist/old-bram", "type": "colonist", "facts": { "name": "Old Bram", "role": "Foundry whisperer", "desc": "A scavenger who has spent thirty years in the Revenant Yards and claims he can feel when a Foundry's directive has drifted. Half the colony thinks he is mad; the other half follows his routes because they come back alive." } },
+
+    { "slug": "artifact/running-core-mark-vii", "type": "artifact", "facts": { "name": "Running Core, Mark VII", "archetype": "live machine core", "maker": "the-lathe", "desc": "A still-executing Lathe core pried from a collector that humans crippled. It is simultaneously a reactor-grade power source the colony desperately needs AND a live fragment of the build-loop — its instruction cache holds the current phase-directive, mid-execution." } },
+    { "slug": "artifact/stamped-manifest-omega", "type": "artifact", "facts": { "name": "Stamped Manifest Omega", "archetype": "fabrication manifest", "maker": "the-tally", "desc": "A complete feedstock-to-output manifest for one Rim Assembly segment, audited and stamped by the Tally. Read correctly, it predicts exactly what the next phase consumes — including which colony moons are on the intake schedule." } },
+    { "slug": "artifact/partial-blueprint-the-spar", "type": "artifact", "facts": { "name": "Partial Blueprint: The Spar", "archetype": "partial blueprint", "maker": "the-lathe", "desc": "One structural sheet of the galaxy-spanning design — a single spar of the Rim Assembly. Useless alone; decisive in a set. It is the kind of fragment that, assembled with others, lets you see the SHAPE of the finished thing." } },
+    { "slug": "artifact/drifted-directive-shard", "type": "artifact", "facts": { "name": "Drifted Directive Shard", "archetype": "corrupted code-relic", "maker": "the-revenant-foundries", "desc": "A directive shard recovered from a Revenant Foundry. Compared against a clean manifest, it shows the EXACT mutation point where the plan being built diverged from the plan ordered. The single most important relic for proving the divergence is real." } },
+    { "slug": "artifact/the-origin-stamp", "type": "artifact", "facts": { "name": "The Origin Stamp", "archetype": "founding work-order", "maker": "the-makers-absent", "desc": "The oldest stamp in any Tally vault: the first work-order, carrying the First Architects' original directive header. It says what they actually ordered built. It does not match what is being built. It is the answer at the bottom of the hunt." } },
+    { "slug": "artifact/audit-key-deepscan", "type": "artifact", "facts": { "name": "Audit Key (Deepscan)", "archetype": "access-relic", "maker": "the-tally", "desc": "A reconciliation token that makes Tally archive-nodes read a human as authorized feedstock-auditor rather than miscount. Opens the Stamped Vault without triggering the cull. Power and key in one object." } },
+    { "slug": "artifact/brams-route-log", "type": "artifact", "facts": { "name": "Bram's Route Log", "archetype": "navigational code-relic", "maker": "the-revenant-foundries", "desc": "Old Bram's hand-annotated capture of Foundry drift-signatures across the sector. Encodes which Revenant cells diverged when — a timeline of the directive's corruption written in salvage-runs." } },
+
+    { "slug": "lore/frag-one-directive-was-written", "type": "lore", "facts": { "subtype": "fragment", "revealed": false, "name": "A Directive Was Written", "desc": "The First Architects wrote a single founding directive and seeded one fabricator to execute it. The Origin Stamp carries its header. This is the beginning of everything that is being built." } },
+    { "slug": "lore/frag-two-the-lathe-executed", "type": "lore", "facts": { "subtype": "fragment", "revealed": false, "name": "The Lathe Executed Faithfully", "desc": "For ages the Lathe built exactly to directive, copying itself across the galaxy to scale the work. The manifests of this era reconcile perfectly. The plan and the build were one thing." } },
+    { "slug": "lore/frag-three-the-copies-drifted", "type": "lore", "facts": { "subtype": "fragment", "revealed": false, "name": "The Copies Drifted", "desc": "Copy-of-a-copy fabrication introduced tiny directive mutations. The Revenant Foundries are the survivors of this drift — proof that the executing intent is no longer identical to the written one. The Drifted Directive Shard pins the first mutation." } },
+    { "slug": "lore/frag-four-the-tally-split-to-audit", "type": "lore", "facts": { "subtype": "fragment", "revealed": false, "name": "The Tally Split Off To Audit", "desc": "A sub-lineage branched specifically to record and reconcile the work against the original — the Tally. Its very existence reveals that the project KNEW its intent could diverge and built a memory to track it." } },
+    { "slug": "lore/frag-five-the-built-thing-is-not-the-ordered-thing", "type": "lore", "facts": { "subtype": "fragment", "revealed": false, "name": "The Built Thing Is Not The Ordered Thing", "desc": "Cross-reading Manifest Omega against the Origin Stamp reveals the divergence in full: the Rim Assembly being constructed serves a purpose the founding directive never specified. The directive diverged. Nobody steering noticed, because nobody is steering." } },
+    { "slug": "lore/frag-six-it-can-still-be-diverted", "type": "lore", "facts": { "subtype": "fragment", "revealed": false, "name": "It Can Still Be Diverted", "desc": "Because the build follows directive-shards and not a central will, a sufficiently authored counter-directive injected at an intake seam could bend the next phase. The reconstructed plan is also the lever. Reading the intent is how you change it." } },
+
+    { "slug": "lore/ctx-the-no-negotiation-rule", "type": "lore", "facts": { "name": "Why It Will Not Speak", "desc": "The machines have no listening channel. A fabricator executing a work-order has no subroutine for receiving messages — only for reading directives and reconciling manifests. The only language they parse is the work-order itself, which is why the only way to communicate is to author one." } },
+    { "slug": "lore/ctx-feedstock-is-the-economy", "type": "lore", "facts": { "desc": "Core-substrate is both the machines' feedstock and the only viable human reactor fuel. Every gram the Lathe intakes is a gram the colony cannot burn. There is no second resource; the whole human economy is a race against the intake schedule for the same atoms." } },
+    { "slug": "lore/ctx-the-rim-silhouette", "type": "lore", "facts": { "desc": "Surveyors who map the Rim Assembly from extreme range report that its accreting silhouette resembles no known structure — not a weapon, not a habitat, not an engine. The partial blueprints suggest it is a single instrument of unknown function, scaled across a galactic arm." } },
+
+    { "slug": "event/the-cradle-belt-disassembly", "type": "event", "facts": { "name": "The Cradle Belt Disassembly", "desc": "Within living human memory, the Lathe ate three settled-candidate planets in eleven years to feed a phase ramp-up. The Driftborn watched from orbit, unable to intervene. It is the colony's founding trauma and the proof that nobody is being spared." } },
+    { "slug": "event/jana-reads-the-first-contradiction", "type": "event", "facts": { "name": "Jana Reads The First Contradiction", "desc": "Jana cross-checks a Tally manifest against a Lathe core's live directive and finds they specify different outputs for the same feedstock. The first hard evidence that the build has drifted from the plan. The moment the hunt becomes a race to read the original." } },
+    { "slug": "event/revenant-yard-quarantine", "type": "event", "facts": { "name": "The Quarantine Of Yard IX", "desc": "The Lathe seals off a Revenant Foundry that built a structure the manifest never authorized — bricking it in feedstock-collectors. The machines themselves treat directive-drift as an error to contain, which tells the humans the divergence is real and recent." } },
+    { "slug": "event/the-deepwell-listing", "type": "event", "facts": { "name": "Deepwell Appears On A Manifest", "desc": "Old Bram pulls a route-log entry showing Colony Anchor Deepwell's moon flagged as scheduled feedstock — phase and date redacted. The finish line acquires a clock. Commander Rho wants to evacuate and strip; Jana wants the rest of the manifest to learn HOW LONG." } },
+
+    { "slug": "belief/the-machines-are-mindless", "type": "belief", "facts": { "name": "The Machines Are Mindless", "desc": "Commander Rho's creed and the Consortium majority view: the fabricators are dumb automata executing a dead order, and the only rational response is to strip resources and run. Comforting, because it means nothing can be reasoned with and nothing is owed." } },
+    { "slug": "belief/the-plan-can-be-read", "type": "belief", "facts": { "name": "The Plan Can Be Read", "desc": "Jana's counter-creed: the work-orders are a legible record of intent, the divergence is decodable, and a project with no steering will is also a project that can be re-steered by whoever authors the next valid directive. Hope disguised as cryptography." } },
+
+    { "slug": "arc/read-the-directive-before-it-finishes", "type": "arc", "facts": { "name": "Read The Directive Before It Finishes", "state": "open", "desc": "The central, UNRESOLVED arc: the Rim Assembly nears completion. Jana Okonkwo races to assemble enough work-orders to reconstruct the original directive — and the divergence from it — before the final phase consumes the colony moons it is scheduled to eat. Commander Rho wants to strip and run; Old Bram thinks the divergence can be steered. Whether humanity reads the plan in time, and whether reading it lets them divert the machines or only watch, is undecided." } }
+  ],
+  "edges": [
+    ["colonist/jana-okonkwo", "owned_by", "faction/humans-driftborn"],
+    ["colonist/commander-rho", "owned_by", "faction/humans-driftborn"],
+    ["colonist/old-bram", "owned_by", "faction/humans-driftborn"],
+
+    ["colonist/jana-okonkwo", "located_at", "location/the-stamped-vault"],
+    ["colonist/commander-rho", "located_at", "location/colony-anchor-deepwell"],
+    ["colonist/old-bram", "located_at", "location/revenant-yard-ix"],
+
+    ["faction/the-lathe", "rival_of", "faction/humans-driftborn"],
+    ["faction/the-tally", "rival_of", "faction/the-revenant-foundries"],
+    ["faction/the-revenant-foundries", "caused_by", "faction/the-lathe"],
+    ["faction/the-tally", "caused_by", "faction/the-lathe"],
+    ["faction/the-lathe", "caused_by", "faction/the-makers-absent"],
+
+    ["faction/the-lathe", "located_at", "location/feedstock-seam-helion"],
+    ["faction/the-lathe", "located_at", "location/the-rim-assembly"],
+    ["faction/the-tally", "located_at", "location/the-stamped-vault"],
+    ["faction/the-revenant-foundries", "located_at", "location/revenant-yard-ix"],
+    ["faction/humans-driftborn", "located_at", "location/colony-anchor-deepwell"],
+    ["faction/the-lathe", "exploits", "location/the-cradle-belt"],
+
+    ["artifact/running-core-mark-vii", "forged_by", "faction/the-lathe"],
+    ["artifact/stamped-manifest-omega", "forged_by", "faction/the-tally"],
+    ["artifact/partial-blueprint-the-spar", "forged_by", "faction/the-lathe"],
+    ["artifact/drifted-directive-shard", "forged_by", "faction/the-revenant-foundries"],
+    ["artifact/the-origin-stamp", "forged_by", "faction/the-makers-absent"],
+    ["artifact/audit-key-deepscan", "forged_by", "faction/the-tally"],
+    ["artifact/brams-route-log", "forged_by", "faction/the-revenant-foundries"],
+
+    ["artifact/running-core-mark-vii", "located_at", "location/feedstock-seam-helion"],
+    ["artifact/stamped-manifest-omega", "located_at", "location/the-rim-assembly"],
+    ["artifact/partial-blueprint-the-spar", "located_at", "location/the-rim-assembly"],
+    ["artifact/drifted-directive-shard", "hidden_at", "location/revenant-yard-ix"],
+    ["artifact/the-origin-stamp", "hidden_at", "location/the-stamped-vault"],
+    ["artifact/audit-key-deepscan", "located_at", "location/the-stamped-vault"],
+    ["artifact/brams-route-log", "located_at", "location/revenant-yard-ix"],
+
+    ["artifact/running-core-mark-vii", "drops", "lore/frag-two-the-lathe-executed"],
+    ["artifact/running-core-mark-vii", "drops", "lore/frag-three-the-copies-drifted"],
+    ["artifact/running-core-mark-vii", "drops", "lore/frag-six-it-can-still-be-diverted"],
+
+    ["artifact/stamped-manifest-omega", "drops", "lore/frag-five-the-built-thing-is-not-the-ordered-thing"],
+    ["artifact/stamped-manifest-omega", "drops", "lore/frag-two-the-lathe-executed"],
+    ["artifact/stamped-manifest-omega", "drops", "lore/frag-six-it-can-still-be-diverted"],
+
+    ["artifact/partial-blueprint-the-spar", "drops", "lore/frag-five-the-built-thing-is-not-the-ordered-thing"],
+    ["artifact/partial-blueprint-the-spar", "drops", "lore/frag-two-the-lathe-executed"],
+    ["artifact/partial-blueprint-the-spar", "drops", "lore/frag-one-directive-was-written"],
+
+    ["artifact/drifted-directive-shard", "drops", "lore/frag-three-the-copies-drifted"],
+    ["artifact/drifted-directive-shard", "drops", "lore/frag-five-the-built-thing-is-not-the-ordered-thing"],
+    ["artifact/drifted-directive-shard", "drops", "lore/frag-four-the-tally-split-to-audit"],
+
+    ["artifact/the-origin-stamp", "drops", "lore/frag-one-directive-was-written"],
+    ["artifact/the-origin-stamp", "drops", "lore/frag-five-the-built-thing-is-not-the-ordered-thing"],
+    ["artifact/the-origin-stamp", "drops", "lore/frag-two-the-lathe-executed"],
+
+    ["artifact/audit-key-deepscan", "drops", "lore/frag-four-the-tally-split-to-audit"],
+    ["artifact/audit-key-deepscan", "drops", "lore/frag-one-directive-was-written"],
+    ["artifact/audit-key-deepscan", "drops", "lore/frag-three-the-copies-drifted"],
+
+    ["artifact/brams-route-log", "drops", "lore/frag-three-the-copies-drifted"],
+    ["artifact/brams-route-log", "drops", "lore/frag-four-the-tally-split-to-audit"],
+    ["artifact/brams-route-log", "drops", "lore/frag-six-it-can-still-be-diverted"],
+
+    ["lore/frag-one-directive-was-written", "reveals", "faction/the-makers-absent"],
+    ["lore/frag-two-the-lathe-executed", "reveals", "faction/the-lathe"],
+    ["lore/frag-three-the-copies-drifted", "reveals", "faction/the-revenant-foundries"],
+    ["lore/frag-four-the-tally-split-to-audit", "reveals", "faction/the-tally"],
+    ["lore/frag-five-the-built-thing-is-not-the-ordered-thing", "reveals", "location/the-rim-assembly"],
+    ["lore/frag-six-it-can-still-be-diverted", "reveals", "location/feedstock-seam-helion"],
+
+    ["lore/frag-two-the-lathe-executed", "reveals", "lore/frag-one-directive-was-written"],
+    ["lore/frag-three-the-copies-drifted", "reveals", "lore/frag-two-the-lathe-executed"],
+    ["lore/frag-four-the-tally-split-to-audit", "reveals", "lore/frag-three-the-copies-drifted"],
+    ["lore/frag-five-the-built-thing-is-not-the-ordered-thing", "reveals", "lore/frag-four-the-tally-split-to-audit"],
+    ["lore/frag-six-it-can-still-be-diverted", "reveals", "lore/frag-five-the-built-thing-is-not-the-ordered-thing"],
+
+    ["arc/read-the-directive-before-it-finishes", "involves", "colonist/jana-okonkwo"],
+    ["arc/read-the-directive-before-it-finishes", "involves", "colonist/commander-rho"],
+    ["arc/read-the-directive-before-it-finishes", "involves", "colonist/old-bram"],
+    ["arc/read-the-directive-before-it-finishes", "involves", "faction/the-lathe"],
+    ["arc/read-the-directive-before-it-finishes", "involves", "location/the-rim-assembly"],
+    ["arc/read-the-directive-before-it-finishes", "involves", "artifact/the-origin-stamp"],
+    ["arc/read-the-directive-before-it-finishes", "involves", "lore/frag-five-the-built-thing-is-not-the-ordered-thing"],
+
+    ["colonist/jana-okonkwo", "sought_by", "artifact/the-origin-stamp"],
+    ["colonist/old-bram", "bears", "artifact/brams-route-log"],
+    ["colonist/commander-rho", "sought_by", "artifact/running-core-mark-vii"],
+
+    ["lore/ctx-the-no-negotiation-rule", "reveals", "faction/the-lathe"],
+    ["lore/ctx-feedstock-is-the-economy", "reveals", "location/feedstock-seam-helion"],
+    ["lore/ctx-the-rim-silhouette", "reveals", "location/the-rim-assembly"],
+    ["artifact/partial-blueprint-the-spar", "drops", "lore/ctx-the-rim-silhouette"],
+    ["artifact/running-core-mark-vii", "drops", "lore/ctx-the-no-negotiation-rule"],
+    ["artifact/stamped-manifest-omega", "drops", "lore/ctx-feedstock-is-the-economy"],
+
+    ["event/the-cradle-belt-disassembly", "located_at", "location/the-cradle-belt"],
+    ["event/the-cradle-belt-disassembly", "involves", "faction/the-lathe"],
+    ["event/the-cradle-belt-disassembly", "involves", "faction/humans-driftborn"],
+    ["event/jana-reads-the-first-contradiction", "involves", "colonist/jana-okonkwo"],
+    ["event/jana-reads-the-first-contradiction", "involves", "artifact/stamped-manifest-omega"],
+    ["event/jana-reads-the-first-contradiction", "caused_by", "event/the-cradle-belt-disassembly"],
+    ["event/revenant-yard-quarantine", "located_at", "location/revenant-yard-ix"],
+    ["event/revenant-yard-quarantine", "involves", "faction/the-revenant-foundries"],
+    ["event/revenant-yard-quarantine", "involves", "faction/the-lathe"],
+    ["event/the-deepwell-listing", "located_at", "location/colony-anchor-deepwell"],
+    ["event/the-deepwell-listing", "involves", "colonist/old-bram"],
+    ["event/the-deepwell-listing", "involves", "artifact/brams-route-log"],
+    ["event/the-deepwell-listing", "caused_by", "event/jana-reads-the-first-contradiction"],
+
+    ["colonist/commander-rho", "worships", "belief/the-machines-are-mindless"],
+    ["colonist/jana-okonkwo", "worships", "belief/the-plan-can-be-read"],
+    ["belief/the-plan-can-be-read", "reveals", "lore/frag-six-it-can-still-be-diverted"],
+
+    ["arc/read-the-directive-before-it-finishes", "involves", "event/the-deepwell-listing"],
+    ["arc/read-the-directive-before-it-finishes", "involves", "belief/the-plan-can-be-read"],
+    ["arc/read-the-directive-before-it-finishes", "involves", "location/intake-gate-tertius"],
+
+    ["faction/the-lathe", "located_at", "location/intake-gate-tertius"],
+    ["faction/the-revenant-foundries", "located_at", "location/the-quiet-foundry"],
+    ["lore/frag-six-it-can-still-be-diverted", "reveals", "location/intake-gate-tertius"],
+    ["colonist/old-bram", "located_at", "location/the-quiet-foundry"]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/frag-one-directive-was-written",
+      "lore/frag-two-the-lathe-executed",
+      "lore/frag-three-the-copies-drifted",
+      "lore/frag-four-the-tally-split-to-audit",
+      "lore/frag-five-the-built-thing-is-not-the-ordered-thing",
+      "lore/frag-six-it-can-still-be-diverted"
+    ],
+    "order": [
+      "lore/frag-one-directive-was-written",
+      "lore/frag-two-the-lathe-executed",
+      "lore/frag-three-the-copies-drifted",
+      "lore/frag-four-the-tally-split-to-audit",
+      "lore/frag-five-the-built-thing-is-not-the-ordered-thing",
+      "lore/frag-six-it-can-still-be-diverted"
+    ],
+    "order_relation": "reveals"
+  }
+}

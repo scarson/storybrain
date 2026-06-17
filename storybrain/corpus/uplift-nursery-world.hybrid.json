@@ -1,0 +1,926 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.6,
+      "facts": {
+        "role": "the colony — present-tense, alive NOW",
+        "status": "cultivated (suspected, unconfirmed)",
+        "question": "welcome guest, pest to be culled, or the next lineage being grown?"
+      }
+    },
+    {
+      "slug": "civs/the-gardeners",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "hidden-stewards-unseen",
+        "trait": "present and acting, never seen — they shape the world by hand and watch; you feel their attention, never their bodies",
+        "status": "extant",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "civs/the-loam-tenders",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "hidden-subtended-caste",
+        "trait": "a lesser hidden caste that maintains the soil-shrines and gene-looms between the gardeners' great workings",
+        "status": "extant",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "civs/the-first-cultivars",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "cultivated-lineage-uplifted",
+        "trait": "an earlier lineage the gardeners grew to sapience here, then either harvested or moved on — the precedent the colony is unknowingly repeating",
+        "status": "extant",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "locations/engineered-biosphere-seam",
+      "type": "location",
+      "tension": 0.5700000000000001,
+      "facts": {
+        "resource": "engineered-biosphere",
+        "danger": 0.9
+      }
+    },
+    {
+      "slug": "locations/gene-loam-seam",
+      "type": "location",
+      "tension": 0.46499999999999997,
+      "facts": {
+        "resource": "gene-loam",
+        "danger": 0.55
+      }
+    },
+    {
+      "slug": "locations/shrine-sap-seam",
+      "type": "location",
+      "tension": 0.39,
+      "facts": {
+        "resource": "shrine-sap",
+        "danger": 0.3
+      }
+    },
+    {
+      "slug": "events/0-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 100,
+      "facts": {
+        "kind": "tending",
+        "title": "the-gardeners begins tending engineered-biosphere"
+      }
+    },
+    {
+      "slug": "events/1-exploitation",
+      "type": "event",
+      "tension": 0.77,
+      "day": 100,
+      "facts": {
+        "kind": "cultivation",
+        "title": "the-gardeners steers the engineered-biosphere"
+      }
+    },
+    {
+      "slug": "events/2-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 100,
+      "facts": {
+        "kind": "tending",
+        "title": "the-loam-tenders begins tending shrine-sap"
+      }
+    },
+    {
+      "slug": "artifacts/the-loam-tenders-gene-loom-4",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "gene-loom",
+        "maker": "the-loam-tenders"
+      }
+    },
+    {
+      "slug": "events/4-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 100,
+      "facts": {
+        "kind": "tending",
+        "title": "the-first-cultivars begins tending gene-loam"
+      }
+    },
+    {
+      "slug": "events/5-exploitation",
+      "type": "event",
+      "tension": 0.665,
+      "day": 100,
+      "facts": {
+        "kind": "cultivation",
+        "title": "the-first-cultivars steers the gene-loam"
+      }
+    },
+    {
+      "slug": "artifacts/the-first-cultivars-terraforming-seed-6",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "terraforming-seed",
+        "maker": "the-first-cultivars"
+      }
+    },
+    {
+      "slug": "artifacts/the-gardeners-terraforming-seed-8",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "terraforming-seed",
+        "maker": "the-gardeners"
+      }
+    },
+    {
+      "slug": "artifacts/the-loam-tenders-attention-bell-15",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "attention-bell",
+        "maker": "the-loam-tenders"
+      }
+    },
+    {
+      "slug": "figures/the-gardeners-seer-16",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "sensing-one (feels the gardeners' attention)",
+        "hidden_lineage": "the-gardeners"
+      }
+    },
+    {
+      "slug": "events/16-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 400,
+      "facts": {
+        "kind": "sensing",
+        "title": "a sensing-one wakes within the-gardeners"
+      }
+    },
+    {
+      "slug": "figures/the-gardeners-seer-21",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "sensing-one (feels the gardeners' attention)",
+        "hidden_lineage": "the-gardeners"
+      }
+    },
+    {
+      "slug": "artifacts/the-loam-tenders-shaping-tool-24",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "shaping-tool",
+        "maker": "the-loam-tenders"
+      }
+    },
+    {
+      "slug": "artifacts/the-first-cultivars-attention-bell-26",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "attention-bell",
+        "maker": "the-first-cultivars"
+      }
+    },
+    {
+      "slug": "artifacts/the-gardeners-gene-loom-32",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "gene-loom",
+        "maker": "the-gardeners"
+      }
+    },
+    {
+      "slug": "figures/the-loam-tenders-seer-32",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "sensing-one (feels the gardeners' attention)",
+        "hidden_lineage": "the-loam-tenders"
+      }
+    },
+    {
+      "slug": "figures/the-first-cultivars-seer-33",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "sensing-one (feels the gardeners' attention)",
+        "hidden_lineage": "the-first-cultivars"
+      }
+    },
+    {
+      "slug": "factions/the-colony-stewards",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "role": "colonists who use the shaping-tools as gifts — tend the world, take the gardeners' help gratefully",
+        "stance": "gratitude",
+        "status": "active-now"
+      }
+    },
+    {
+      "slug": "factions/the-extractors",
+      "type": "faction",
+      "tension": 0.7,
+      "facts": {
+        "role": "colonists who strip the engineered biosphere for yield — and keep tripping the attention-bells",
+        "stance": "exploitation",
+        "status": "active-now"
+      }
+    },
+    {
+      "slug": "arc/are-we-the-harvest",
+      "type": "arc",
+      "tension": 0.85,
+      "facts": {
+        "state": "OPEN",
+        "present_stakes": "every shaping-tool used reveals one more step of the gardeners' method AND draws their attention; the colony is mid-cultivation and does not yet know toward what",
+        "resolves_when": "the reveals-chain completes — but the harvest itself is still ahead, unwitnessed",
+        "tense": "present"
+      }
+    },
+    {
+      "slug": "powers/sense-the-aimedness",
+      "type": "power",
+      "tension": 0.5,
+      "facts": {
+        "register": "subtle",
+        "effect": "a sensing-one feels when a place is too AIMED, and feels the pressure of attention when a tool is used — never sees the gardener",
+        "note": "not precognition, not ancestral memory — just the felt geometry of intent"
+      }
+    },
+    {
+      "slug": "beliefs/the-patient-hand",
+      "type": "belief",
+      "tension": 0.45,
+      "facts": {
+        "tenet": "the world is tended; convenience is a tell; gratitude is the safe posture and greed rings the bell"
+      }
+    },
+    {
+      "slug": "locations/the-too-green-valley",
+      "type": "location",
+      "tension": 0.55,
+      "facts": {
+        "note": "soil self-enriches overnight; blights answered before noon — the most AIMED place on the planet, where the colony farms and the gardeners watch closest"
+      }
+    },
+    {
+      "slug": "lore/method-1-the-seeding",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "STEP 1 of the gardeners' method: this world was SEEDED, not found — every convenient trait was placed. The aimed-ness is design, not luck.",
+        "about": "the-gardeners",
+        "step": 1
+      }
+    },
+    {
+      "slug": "lore/method-2-the-precedent",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "STEP 2: a lineage was grown to sapience here before us — the first-cultivars — by the same hand. We are not the first crop in this soil.",
+        "about": "the-first-cultivars",
+        "step": 2
+      }
+    },
+    {
+      "slug": "lore/method-3-the-attention",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "STEP 3: the tools are not gifts but instruments — using one is the gardeners reading us, scoring how we tend versus how we strip. The bell is a test.",
+        "about": "the-loam-tenders",
+        "step": 3
+      }
+    },
+    {
+      "slug": "lore/method-4-the-shaping",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "STEP 4: the gene-looms are already editing the colony's own line — slowly, toward a shape we did not choose. We are mid-cultivation. We ARE the experiment.",
+        "about": "the-gardeners",
+        "step": 4
+      }
+    },
+    {
+      "slug": "lore/method-5-the-harvest-ahead",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "STEP 5 (still unfolding): the chain points FORWARD — to a harvest the gardeners are patiently waiting for. What we are being grown INTO is in our future, not their past.",
+        "about": "the-gardeners",
+        "step": 5
+      }
+    },
+    {
+      "slug": "events/the-harvest-ahead",
+      "type": "event",
+      "tension": 0.95,
+      "facts": {
+        "kind": "climax",
+        "title": "the harvest the gardeners are waiting for",
+        "state": "still unfolding — not a fall, a culmination ahead"
+      }
+    },
+    {
+      "slug": "lore/flavor-0",
+      "type": "lore",
+      "tension": 0.5,
+      "facts": {
+        "subtype": "note",
+        "revealed": false,
+        "text": "a gene-loom rethreads a living lineage thread by thread — patient, reversible, deniable"
+      }
+    },
+    {
+      "slug": "lore/flavor-2",
+      "type": "lore",
+      "tension": 0.5,
+      "facts": {
+        "subtype": "note",
+        "revealed": false,
+        "text": "a terraforming-seed makes a place too convenient overnight — a tell of tending"
+      }
+    },
+    {
+      "slug": "lore/flavor-4",
+      "type": "lore",
+      "tension": 0.5,
+      "facts": {
+        "subtype": "note",
+        "revealed": false,
+        "text": "a terraforming-seed makes a place too convenient overnight — a tell of tending"
+      }
+    },
+    {
+      "slug": "lore/flavor-6",
+      "type": "lore",
+      "tension": 0.5,
+      "facts": {
+        "subtype": "note",
+        "revealed": false,
+        "text": "an attention-bell rings when greed crosses tending — the gardeners' threshold sensor"
+      }
+    },
+    {
+      "slug": "lore/flavor-7",
+      "type": "lore",
+      "tension": 0.5,
+      "facts": {
+        "subtype": "note",
+        "revealed": false,
+        "text": "the bell does not warn the colony; it summons the watchers"
+      }
+    },
+    {
+      "slug": "lore/flavor-8",
+      "type": "lore",
+      "tension": 0.5,
+      "facts": {
+        "subtype": "note",
+        "revealed": false,
+        "text": "a shaping-tool steers the living world a few degrees — and the steering is logged elsewhere"
+      }
+    },
+    {
+      "slug": "lore/flavor-9",
+      "type": "lore",
+      "tension": 0.5,
+      "facts": {
+        "subtype": "note",
+        "revealed": false,
+        "text": "using it feels like authorship; it is closer to obedience"
+      }
+    },
+    {
+      "slug": "lore/flavor-10",
+      "type": "lore",
+      "tension": 0.5,
+      "facts": {
+        "subtype": "note",
+        "revealed": false,
+        "text": "an attention-bell rings when greed crosses tending — the gardeners' threshold sensor"
+      }
+    },
+    {
+      "slug": "lore/flavor-11",
+      "type": "lore",
+      "tension": 0.5,
+      "facts": {
+        "subtype": "note",
+        "revealed": false,
+        "text": "the bell does not warn the colony; it summons the watchers"
+      }
+    },
+    {
+      "slug": "lore/flavor-12",
+      "type": "lore",
+      "tension": 0.5,
+      "facts": {
+        "subtype": "note",
+        "revealed": false,
+        "text": "a gene-loom rethreads a living lineage thread by thread — patient, reversible, deniable"
+      }
+    },
+    {
+      "slug": "lore/flavor-18",
+      "type": "lore",
+      "tension": 0.45,
+      "facts": {
+        "subtype": "note",
+        "revealed": false,
+        "text": "the-loam-tenders-shaping-tool-24 carries a method-trace: proof the world is being tended by a hand never seen"
+      }
+    }
+  ],
+  "edges": [
+    [
+      "events/0-discovery",
+      "involves",
+      "civs/the-gardeners",
+      100
+    ],
+    [
+      "civs/the-gardeners",
+      "cultivates",
+      "locations/engineered-biosphere-seam",
+      100
+    ],
+    [
+      "events/1-exploitation",
+      "involves",
+      "civs/the-gardeners",
+      100
+    ],
+    [
+      "events/1-exploitation",
+      "caused_by",
+      "events/0-discovery",
+      100
+    ],
+    [
+      "events/2-discovery",
+      "involves",
+      "civs/the-loam-tenders",
+      100
+    ],
+    [
+      "civs/the-loam-tenders",
+      "cultivates",
+      "locations/shrine-sap-seam",
+      100
+    ],
+    [
+      "artifacts/the-loam-tenders-gene-loom-4",
+      "forged_by",
+      "civs/the-loam-tenders",
+      100
+    ],
+    [
+      "events/4-discovery",
+      "involves",
+      "civs/the-first-cultivars",
+      100
+    ],
+    [
+      "civs/the-first-cultivars",
+      "cultivates",
+      "locations/gene-loam-seam",
+      100
+    ],
+    [
+      "events/5-exploitation",
+      "involves",
+      "civs/the-first-cultivars",
+      100
+    ],
+    [
+      "events/5-exploitation",
+      "caused_by",
+      "events/4-discovery",
+      100
+    ],
+    [
+      "artifacts/the-first-cultivars-terraforming-seed-6",
+      "forged_by",
+      "civs/the-first-cultivars",
+      100
+    ],
+    [
+      "events/5-exploitation",
+      "involves",
+      "artifacts/the-first-cultivars-terraforming-seed-6",
+      100
+    ],
+    [
+      "civs/the-gardeners",
+      "cultivates",
+      "locations/shrine-sap-seam",
+      200
+    ],
+    [
+      "artifacts/the-gardeners-terraforming-seed-8",
+      "forged_by",
+      "civs/the-gardeners",
+      200
+    ],
+    [
+      "civs/the-loam-tenders",
+      "cultivates",
+      "locations/engineered-biosphere-seam",
+      200
+    ],
+    [
+      "civs/the-first-cultivars",
+      "cultivates",
+      "locations/gene-loam-seam",
+      200
+    ],
+    [
+      "civs/the-gardeners",
+      "is-grown-alongside",
+      "civs/the-loam-tenders",
+      300
+    ],
+    [
+      "civs/the-loam-tenders",
+      "cultivates",
+      "locations/gene-loam-seam",
+      300
+    ],
+    [
+      "artifacts/the-loam-tenders-attention-bell-15",
+      "forged_by",
+      "civs/the-loam-tenders",
+      300
+    ],
+    [
+      "civs/the-first-cultivars",
+      "is-grown-alongside",
+      "civs/the-gardeners",
+      300
+    ],
+    [
+      "events/16-schism",
+      "involves",
+      "civs/the-gardeners",
+      400
+    ],
+    [
+      "events/16-schism",
+      "involves",
+      "figures/the-gardeners-seer-16",
+      400
+    ],
+    [
+      "civs/the-loam-tenders",
+      "cultivates",
+      "locations/shrine-sap-seam",
+      400
+    ],
+    [
+      "civs/the-first-cultivars",
+      "cultivates",
+      "locations/gene-loam-seam",
+      400
+    ],
+    [
+      "civs/the-loam-tenders",
+      "cultivates",
+      "locations/gene-loam-seam",
+      500
+    ],
+    [
+      "artifacts/the-loam-tenders-shaping-tool-24",
+      "forged_by",
+      "civs/the-loam-tenders",
+      500
+    ],
+    [
+      "civs/the-first-cultivars",
+      "cultivates",
+      "locations/gene-loam-seam",
+      500
+    ],
+    [
+      "artifacts/the-first-cultivars-attention-bell-26",
+      "forged_by",
+      "civs/the-first-cultivars",
+      500
+    ],
+    [
+      "civs/the-gardeners",
+      "cultivates",
+      "locations/shrine-sap-seam",
+      600
+    ],
+    [
+      "civs/the-loam-tenders",
+      "is-grown-alongside",
+      "civs/the-gardeners",
+      600
+    ],
+    [
+      "civs/the-first-cultivars",
+      "is-grown-alongside",
+      "civs/the-gardeners",
+      600
+    ],
+    [
+      "civs/the-gardeners",
+      "cultivates",
+      "locations/engineered-biosphere-seam",
+      700
+    ],
+    [
+      "artifacts/the-gardeners-gene-loom-32",
+      "forged_by",
+      "civs/the-gardeners",
+      700
+    ],
+    [
+      "civs/the-gardeners",
+      "cultivates",
+      "locations/gene-loam-seam",
+      800
+    ],
+    [
+      "civs/the-loam-tenders",
+      "cultivates",
+      "locations/shrine-sap-seam",
+      800
+    ],
+    [
+      "civs/the-first-cultivars",
+      "is-grown-alongside",
+      "civs/the-loam-tenders",
+      800
+    ],
+    [
+      "arc/are-we-the-harvest",
+      "concerns",
+      "factions/humans"
+    ],
+    [
+      "arc/are-we-the-harvest",
+      "watched_by",
+      "civs/the-gardeners"
+    ],
+    [
+      "powers/sense-the-aimedness",
+      "manifest_in",
+      "factions/humans"
+    ],
+    [
+      "figures/the-gardeners-seer-16",
+      "wields",
+      "powers/sense-the-aimedness"
+    ],
+    [
+      "figures/the-gardeners-seer-21",
+      "wields",
+      "powers/sense-the-aimedness"
+    ],
+    [
+      "figures/the-loam-tenders-seer-32",
+      "wields",
+      "powers/sense-the-aimedness"
+    ],
+    [
+      "figures/the-first-cultivars-seer-33",
+      "wields",
+      "powers/sense-the-aimedness"
+    ],
+    [
+      "factions/the-colony-stewards",
+      "holds",
+      "beliefs/the-patient-hand"
+    ],
+    [
+      "factions/humans",
+      "settles",
+      "locations/the-too-green-valley"
+    ],
+    [
+      "powers/sense-the-aimedness",
+      "strongest_at",
+      "locations/the-too-green-valley"
+    ],
+    [
+      "lore/method-1-the-seeding",
+      "reveals",
+      "civs/the-gardeners"
+    ],
+    [
+      "lore/method-2-the-precedent",
+      "reveals",
+      "civs/the-first-cultivars"
+    ],
+    [
+      "lore/method-1-the-seeding",
+      "reveals",
+      "lore/method-2-the-precedent"
+    ],
+    [
+      "lore/method-3-the-attention",
+      "reveals",
+      "civs/the-loam-tenders"
+    ],
+    [
+      "lore/method-2-the-precedent",
+      "reveals",
+      "lore/method-3-the-attention"
+    ],
+    [
+      "lore/method-4-the-shaping",
+      "reveals",
+      "civs/the-gardeners"
+    ],
+    [
+      "lore/method-3-the-attention",
+      "reveals",
+      "lore/method-4-the-shaping"
+    ],
+    [
+      "lore/method-5-the-harvest-ahead",
+      "reveals",
+      "civs/the-gardeners"
+    ],
+    [
+      "lore/method-4-the-shaping",
+      "reveals",
+      "lore/method-5-the-harvest-ahead"
+    ],
+    [
+      "lore/method-5-the-harvest-ahead",
+      "reveals",
+      "events/the-harvest-ahead"
+    ],
+    [
+      "arc/are-we-the-harvest",
+      "culminates_in",
+      "events/the-harvest-ahead"
+    ],
+    [
+      "events/the-harvest-ahead",
+      "awaited_by",
+      "civs/the-gardeners"
+    ],
+    [
+      "artifacts/the-loam-tenders-gene-loom-4",
+      "drops",
+      "lore/flavor-0"
+    ],
+    [
+      "artifacts/the-first-cultivars-terraforming-seed-6",
+      "drops",
+      "lore/flavor-2"
+    ],
+    [
+      "artifacts/the-gardeners-terraforming-seed-8",
+      "drops",
+      "lore/flavor-4"
+    ],
+    [
+      "artifacts/the-loam-tenders-attention-bell-15",
+      "drops",
+      "lore/flavor-6"
+    ],
+    [
+      "artifacts/the-loam-tenders-attention-bell-15",
+      "drops",
+      "lore/flavor-7"
+    ],
+    [
+      "artifacts/the-loam-tenders-shaping-tool-24",
+      "drops",
+      "lore/flavor-8"
+    ],
+    [
+      "artifacts/the-loam-tenders-shaping-tool-24",
+      "drops",
+      "lore/flavor-9"
+    ],
+    [
+      "artifacts/the-first-cultivars-attention-bell-26",
+      "drops",
+      "lore/flavor-10"
+    ],
+    [
+      "artifacts/the-first-cultivars-attention-bell-26",
+      "drops",
+      "lore/flavor-11"
+    ],
+    [
+      "artifacts/the-gardeners-gene-loom-32",
+      "drops",
+      "lore/flavor-12"
+    ],
+    [
+      "artifacts/the-loam-tenders-shaping-tool-24",
+      "drops",
+      "lore/flavor-18"
+    ],
+    [
+      "artifacts/the-gardeners-terraforming-seed-8",
+      "drops",
+      "lore/method-1-the-seeding"
+    ],
+    [
+      "artifacts/the-first-cultivars-terraforming-seed-6",
+      "drops",
+      "lore/method-1-the-seeding"
+    ],
+    [
+      "artifacts/the-first-cultivars-terraforming-seed-6",
+      "drops",
+      "lore/method-2-the-precedent"
+    ],
+    [
+      "artifacts/the-first-cultivars-attention-bell-26",
+      "drops",
+      "lore/method-2-the-precedent"
+    ],
+    [
+      "artifacts/the-loam-tenders-attention-bell-15",
+      "drops",
+      "lore/method-3-the-attention"
+    ],
+    [
+      "artifacts/the-loam-tenders-gene-loom-4",
+      "drops",
+      "lore/method-3-the-attention"
+    ],
+    [
+      "artifacts/the-gardeners-gene-loom-32",
+      "drops",
+      "lore/method-4-the-shaping"
+    ],
+    [
+      "artifacts/the-loam-tenders-gene-loom-4",
+      "drops",
+      "lore/method-4-the-shaping"
+    ],
+    [
+      "artifacts/the-gardeners-terraforming-seed-8",
+      "drops",
+      "lore/method-5-the-harvest-ahead"
+    ],
+    [
+      "artifacts/the-gardeners-gene-loom-32",
+      "drops",
+      "lore/method-5-the-harvest-ahead"
+    ]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/method-1-the-seeding",
+      "lore/method-2-the-precedent",
+      "lore/method-3-the-attention",
+      "lore/method-4-the-shaping",
+      "lore/method-5-the-harvest-ahead"
+    ],
+    "order": [
+      "lore/method-1-the-seeding",
+      "lore/method-2-the-precedent",
+      "lore/method-3-the-attention",
+      "lore/method-4-the-shaping",
+      "lore/method-5-the-harvest-ahead"
+    ],
+    "order_relation": "reveals"
+  }
+}

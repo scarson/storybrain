@@ -1,0 +1,1159 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.4,
+      "facts": {
+        "role": "late-arrivals"
+      }
+    },
+    {
+      "slug": "civs/the-cradlekeepers",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "dormant-xeno-sleepers",
+        "trait": "the makers themselves, sealed in quarantine-sleep behind their own unfinished containment; wakeable as allies — or already carriers, no one knows which vault holds which",
+        "status": "extant",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "civs/the-stillborn-host",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "dormant-xeno-carriers",
+        "trait": "sleepers the vector reached first; dormant carriers whose waking is itself the outbreak, sealed beside the makers they can no longer be told apart from",
+        "status": "extant",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "civs/the-vector",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "dormant-self-replicating-plague",
+        "trait": "the extinction-agent itself — nanite swarm, mind-virus, or engineered pathogen depending on the world — sleeping in the relics' lore and the carriers' marrow, stirring whenever a seal is broken",
+        "status": "extant",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "locations/quarantine-foam-seam",
+      "type": "location",
+      "tension": 0.36,
+      "facts": {
+        "resource": "quarantine-foam",
+        "danger": 0.2
+      }
+    },
+    {
+      "slug": "locations/dormancy-salt-seam",
+      "type": "location",
+      "tension": 0.40499999999999997,
+      "facts": {
+        "resource": "dormancy-salt",
+        "danger": 0.35
+      }
+    },
+    {
+      "slug": "events/0-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 100,
+      "facts": {
+        "kind": "war",
+        "title": "the-cradlekeepers wars on the-stillborn-host"
+      }
+    },
+    {
+      "slug": "events/1-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 100,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-stillborn-host taps dormancy-salt"
+      }
+    },
+    {
+      "slug": "events/2-exploitation",
+      "type": "event",
+      "tension": 0.605,
+      "day": 100,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-stillborn-host over-extracts dormancy-salt"
+      }
+    },
+    {
+      "slug": "events/3-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 100,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-vector taps dormancy-salt"
+      }
+    },
+    {
+      "slug": "events/4-exploitation",
+      "type": "event",
+      "tension": 0.605,
+      "day": 100,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-vector over-extracts dormancy-salt"
+      }
+    },
+    {
+      "slug": "artifacts/the-vector-cure-fragment-5",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "cure-fragment",
+        "maker": "the-vector"
+      }
+    },
+    {
+      "slug": "events/5-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 200,
+      "facts": {
+        "kind": "war",
+        "title": "the-cradlekeepers wars on the-vector"
+      }
+    },
+    {
+      "slug": "events/6-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 200,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-stillborn-host taps dormancy-salt"
+      }
+    },
+    {
+      "slug": "events/7-exploitation",
+      "type": "event",
+      "tension": 0.605,
+      "day": 200,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-stillborn-host over-extracts dormancy-salt"
+      }
+    },
+    {
+      "slug": "events/8-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 200,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-vector taps dormancy-salt"
+      }
+    },
+    {
+      "slug": "events/9-exploitation",
+      "type": "event",
+      "tension": 0.605,
+      "day": 200,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-vector over-extracts dormancy-salt"
+      }
+    },
+    {
+      "slug": "events/10-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 300,
+      "facts": {
+        "kind": "war",
+        "title": "the-cradlekeepers wars on the-stillborn-host"
+      }
+    },
+    {
+      "slug": "events/11-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 300,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-stillborn-host taps dormancy-salt"
+      }
+    },
+    {
+      "slug": "events/12-exploitation",
+      "type": "event",
+      "tension": 0.605,
+      "day": 300,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-stillborn-host over-extracts dormancy-salt"
+      }
+    },
+    {
+      "slug": "artifacts/the-stillborn-host-sealed-vault-key-13",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "sealed-vault-key",
+        "maker": "the-stillborn-host"
+      }
+    },
+    {
+      "slug": "figures/the-vector-seer-13",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-vector"
+      }
+    },
+    {
+      "slug": "events/13-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 300,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-vector"
+      }
+    },
+    {
+      "slug": "events/14-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 400,
+      "facts": {
+        "kind": "war",
+        "title": "the-cradlekeepers wars on the-stillborn-host"
+      }
+    },
+    {
+      "slug": "figures/the-stillborn-host-seer-15",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-stillborn-host"
+      }
+    },
+    {
+      "slug": "events/15-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 400,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-stillborn-host"
+      }
+    },
+    {
+      "slug": "events/16-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 400,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-vector taps dormancy-salt"
+      }
+    },
+    {
+      "slug": "events/17-exploitation",
+      "type": "event",
+      "tension": 0.605,
+      "day": 400,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-vector over-extracts dormancy-salt"
+      }
+    },
+    {
+      "slug": "artifacts/the-vector-recipe-shard-18",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "recipe-shard",
+        "maker": "the-vector"
+      }
+    },
+    {
+      "slug": "figures/the-cradlekeepers-seer-18",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-cradlekeepers"
+      }
+    },
+    {
+      "slug": "events/18-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 500,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-cradlekeepers"
+      }
+    },
+    {
+      "slug": "events/19-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 500,
+      "facts": {
+        "kind": "war",
+        "title": "the-stillborn-host wars on the-cradlekeepers"
+      }
+    },
+    {
+      "slug": "events/20-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 500,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-vector taps dormancy-salt"
+      }
+    },
+    {
+      "slug": "events/21-exploitation",
+      "type": "event",
+      "tension": 0.605,
+      "day": 500,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-vector over-extracts dormancy-salt"
+      }
+    },
+    {
+      "slug": "artifacts/the-vector-dormancy-trigger-22",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "dormancy-trigger",
+        "maker": "the-vector"
+      }
+    },
+    {
+      "slug": "events/22-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 600,
+      "facts": {
+        "kind": "war",
+        "title": "the-cradlekeepers wars on the-vector"
+      }
+    },
+    {
+      "slug": "events/23-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 600,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-stillborn-host taps quarantine-foam"
+      }
+    },
+    {
+      "slug": "events/24-exploitation",
+      "type": "event",
+      "tension": 0.56,
+      "day": 600,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-stillborn-host over-extracts quarantine-foam"
+      }
+    },
+    {
+      "slug": "figures/the-vector-seer-25",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-vector"
+      }
+    },
+    {
+      "slug": "events/25-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 600,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-vector"
+      }
+    },
+    {
+      "slug": "events/26-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 700,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-cradlekeepers taps dormancy-salt"
+      }
+    },
+    {
+      "slug": "events/27-exploitation",
+      "type": "event",
+      "tension": 0.605,
+      "day": 700,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-cradlekeepers over-extracts dormancy-salt"
+      }
+    },
+    {
+      "slug": "artifacts/the-cradlekeepers-cure-fragment-28",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "cure-fragment",
+        "maker": "the-cradlekeepers"
+      }
+    },
+    {
+      "slug": "events/28-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 700,
+      "facts": {
+        "kind": "war",
+        "title": "the-stillborn-host wars on the-vector"
+      }
+    },
+    {
+      "slug": "events/29-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 700,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-vector taps dormancy-salt"
+      }
+    },
+    {
+      "slug": "events/30-exploitation",
+      "type": "event",
+      "tension": 0.605,
+      "day": 700,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-vector over-extracts dormancy-salt"
+      }
+    },
+    {
+      "slug": "artifacts/the-vector-containment-keystone-31",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "containment-keystone",
+        "maker": "the-vector"
+      }
+    },
+    {
+      "slug": "figures/the-cradlekeepers-seer-31",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-cradlekeepers"
+      }
+    },
+    {
+      "slug": "events/31-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 800,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-cradlekeepers"
+      }
+    },
+    {
+      "slug": "events/32-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 800,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-stillborn-host taps quarantine-foam"
+      }
+    },
+    {
+      "slug": "events/33-exploitation",
+      "type": "event",
+      "tension": 0.56,
+      "day": 800,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-stillborn-host over-extracts quarantine-foam"
+      }
+    },
+    {
+      "slug": "events/34-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 800,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-vector taps quarantine-foam"
+      }
+    },
+    {
+      "slug": "events/35-exploitation",
+      "type": "event",
+      "tension": 0.56,
+      "day": 800,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-vector over-extracts quarantine-foam"
+      }
+    }
+  ],
+  "edges": [
+    [
+      "events/0-war",
+      "involves",
+      "civs/the-cradlekeepers",
+      100
+    ],
+    [
+      "civs/the-cradlekeepers",
+      "rival_of",
+      "civs/the-stillborn-host",
+      100
+    ],
+    [
+      "events/1-discovery",
+      "involves",
+      "civs/the-stillborn-host",
+      100
+    ],
+    [
+      "civs/the-stillborn-host",
+      "exploits",
+      "locations/dormancy-salt-seam",
+      100
+    ],
+    [
+      "events/2-exploitation",
+      "involves",
+      "civs/the-stillborn-host",
+      100
+    ],
+    [
+      "events/2-exploitation",
+      "caused_by",
+      "events/1-discovery",
+      100
+    ],
+    [
+      "events/3-discovery",
+      "involves",
+      "civs/the-vector",
+      100
+    ],
+    [
+      "civs/the-vector",
+      "exploits",
+      "locations/dormancy-salt-seam",
+      100
+    ],
+    [
+      "events/4-exploitation",
+      "involves",
+      "civs/the-vector",
+      100
+    ],
+    [
+      "events/4-exploitation",
+      "caused_by",
+      "events/3-discovery",
+      100
+    ],
+    [
+      "artifacts/the-vector-cure-fragment-5",
+      "forged_by",
+      "civs/the-vector",
+      100
+    ],
+    [
+      "events/4-exploitation",
+      "involves",
+      "artifacts/the-vector-cure-fragment-5",
+      100
+    ],
+    [
+      "events/5-war",
+      "involves",
+      "civs/the-cradlekeepers",
+      200
+    ],
+    [
+      "events/5-war",
+      "caused_by",
+      "events/0-war",
+      200
+    ],
+    [
+      "civs/the-cradlekeepers",
+      "rival_of",
+      "civs/the-vector",
+      200
+    ],
+    [
+      "events/6-discovery",
+      "involves",
+      "civs/the-stillborn-host",
+      200
+    ],
+    [
+      "events/6-discovery",
+      "caused_by",
+      "events/2-exploitation",
+      200
+    ],
+    [
+      "civs/the-stillborn-host",
+      "exploits",
+      "locations/dormancy-salt-seam",
+      200
+    ],
+    [
+      "events/7-exploitation",
+      "involves",
+      "civs/the-stillborn-host",
+      200
+    ],
+    [
+      "events/7-exploitation",
+      "caused_by",
+      "events/6-discovery",
+      200
+    ],
+    [
+      "events/8-discovery",
+      "involves",
+      "civs/the-vector",
+      200
+    ],
+    [
+      "events/8-discovery",
+      "caused_by",
+      "events/4-exploitation",
+      200
+    ],
+    [
+      "civs/the-vector",
+      "exploits",
+      "locations/dormancy-salt-seam",
+      200
+    ],
+    [
+      "events/9-exploitation",
+      "involves",
+      "civs/the-vector",
+      200
+    ],
+    [
+      "events/9-exploitation",
+      "caused_by",
+      "events/8-discovery",
+      200
+    ],
+    [
+      "events/10-war",
+      "involves",
+      "civs/the-cradlekeepers",
+      300
+    ],
+    [
+      "events/10-war",
+      "caused_by",
+      "events/5-war",
+      300
+    ],
+    [
+      "civs/the-cradlekeepers",
+      "rival_of",
+      "civs/the-stillborn-host",
+      300
+    ],
+    [
+      "events/11-discovery",
+      "involves",
+      "civs/the-stillborn-host",
+      300
+    ],
+    [
+      "events/11-discovery",
+      "caused_by",
+      "events/7-exploitation",
+      300
+    ],
+    [
+      "civs/the-stillborn-host",
+      "exploits",
+      "locations/dormancy-salt-seam",
+      300
+    ],
+    [
+      "events/12-exploitation",
+      "involves",
+      "civs/the-stillborn-host",
+      300
+    ],
+    [
+      "events/12-exploitation",
+      "caused_by",
+      "events/11-discovery",
+      300
+    ],
+    [
+      "artifacts/the-stillborn-host-sealed-vault-key-13",
+      "forged_by",
+      "civs/the-stillborn-host",
+      300
+    ],
+    [
+      "events/12-exploitation",
+      "involves",
+      "artifacts/the-stillborn-host-sealed-vault-key-13",
+      300
+    ],
+    [
+      "events/13-schism",
+      "involves",
+      "civs/the-vector",
+      300
+    ],
+    [
+      "events/13-schism",
+      "caused_by",
+      "events/9-exploitation",
+      300
+    ],
+    [
+      "events/13-schism",
+      "involves",
+      "figures/the-vector-seer-13",
+      300
+    ],
+    [
+      "events/14-war",
+      "involves",
+      "civs/the-cradlekeepers",
+      400
+    ],
+    [
+      "events/14-war",
+      "caused_by",
+      "events/10-war",
+      400
+    ],
+    [
+      "civs/the-cradlekeepers",
+      "rival_of",
+      "civs/the-stillborn-host",
+      400
+    ],
+    [
+      "events/15-schism",
+      "involves",
+      "civs/the-stillborn-host",
+      400
+    ],
+    [
+      "events/15-schism",
+      "caused_by",
+      "events/12-exploitation",
+      400
+    ],
+    [
+      "events/15-schism",
+      "involves",
+      "figures/the-stillborn-host-seer-15",
+      400
+    ],
+    [
+      "events/16-discovery",
+      "involves",
+      "civs/the-vector",
+      400
+    ],
+    [
+      "events/16-discovery",
+      "caused_by",
+      "events/13-schism",
+      400
+    ],
+    [
+      "civs/the-vector",
+      "exploits",
+      "locations/dormancy-salt-seam",
+      400
+    ],
+    [
+      "events/17-exploitation",
+      "involves",
+      "civs/the-vector",
+      400
+    ],
+    [
+      "events/17-exploitation",
+      "caused_by",
+      "events/16-discovery",
+      400
+    ],
+    [
+      "artifacts/the-vector-recipe-shard-18",
+      "forged_by",
+      "civs/the-vector",
+      400
+    ],
+    [
+      "events/17-exploitation",
+      "involves",
+      "artifacts/the-vector-recipe-shard-18",
+      400
+    ],
+    [
+      "events/18-schism",
+      "involves",
+      "civs/the-cradlekeepers",
+      500
+    ],
+    [
+      "events/18-schism",
+      "caused_by",
+      "events/14-war",
+      500
+    ],
+    [
+      "events/18-schism",
+      "involves",
+      "figures/the-cradlekeepers-seer-18",
+      500
+    ],
+    [
+      "events/19-war",
+      "involves",
+      "civs/the-stillborn-host",
+      500
+    ],
+    [
+      "events/19-war",
+      "caused_by",
+      "events/15-schism",
+      500
+    ],
+    [
+      "civs/the-stillborn-host",
+      "rival_of",
+      "civs/the-cradlekeepers",
+      500
+    ],
+    [
+      "events/20-discovery",
+      "involves",
+      "civs/the-vector",
+      500
+    ],
+    [
+      "events/20-discovery",
+      "caused_by",
+      "events/17-exploitation",
+      500
+    ],
+    [
+      "civs/the-vector",
+      "exploits",
+      "locations/dormancy-salt-seam",
+      500
+    ],
+    [
+      "events/21-exploitation",
+      "involves",
+      "civs/the-vector",
+      500
+    ],
+    [
+      "events/21-exploitation",
+      "caused_by",
+      "events/20-discovery",
+      500
+    ],
+    [
+      "artifacts/the-vector-dormancy-trigger-22",
+      "forged_by",
+      "civs/the-vector",
+      500
+    ],
+    [
+      "events/21-exploitation",
+      "involves",
+      "artifacts/the-vector-dormancy-trigger-22",
+      500
+    ],
+    [
+      "events/22-war",
+      "involves",
+      "civs/the-cradlekeepers",
+      600
+    ],
+    [
+      "events/22-war",
+      "caused_by",
+      "events/18-schism",
+      600
+    ],
+    [
+      "civs/the-cradlekeepers",
+      "rival_of",
+      "civs/the-vector",
+      600
+    ],
+    [
+      "events/23-discovery",
+      "involves",
+      "civs/the-stillborn-host",
+      600
+    ],
+    [
+      "events/23-discovery",
+      "caused_by",
+      "events/19-war",
+      600
+    ],
+    [
+      "civs/the-stillborn-host",
+      "exploits",
+      "locations/quarantine-foam-seam",
+      600
+    ],
+    [
+      "events/24-exploitation",
+      "involves",
+      "civs/the-stillborn-host",
+      600
+    ],
+    [
+      "events/24-exploitation",
+      "caused_by",
+      "events/23-discovery",
+      600
+    ],
+    [
+      "events/25-schism",
+      "involves",
+      "civs/the-vector",
+      600
+    ],
+    [
+      "events/25-schism",
+      "caused_by",
+      "events/21-exploitation",
+      600
+    ],
+    [
+      "events/25-schism",
+      "involves",
+      "figures/the-vector-seer-25",
+      600
+    ],
+    [
+      "events/26-discovery",
+      "involves",
+      "civs/the-cradlekeepers",
+      700
+    ],
+    [
+      "events/26-discovery",
+      "caused_by",
+      "events/22-war",
+      700
+    ],
+    [
+      "civs/the-cradlekeepers",
+      "exploits",
+      "locations/dormancy-salt-seam",
+      700
+    ],
+    [
+      "events/27-exploitation",
+      "involves",
+      "civs/the-cradlekeepers",
+      700
+    ],
+    [
+      "events/27-exploitation",
+      "caused_by",
+      "events/26-discovery",
+      700
+    ],
+    [
+      "artifacts/the-cradlekeepers-cure-fragment-28",
+      "forged_by",
+      "civs/the-cradlekeepers",
+      700
+    ],
+    [
+      "events/27-exploitation",
+      "involves",
+      "artifacts/the-cradlekeepers-cure-fragment-28",
+      700
+    ],
+    [
+      "events/28-war",
+      "involves",
+      "civs/the-stillborn-host",
+      700
+    ],
+    [
+      "events/28-war",
+      "caused_by",
+      "events/24-exploitation",
+      700
+    ],
+    [
+      "civs/the-stillborn-host",
+      "rival_of",
+      "civs/the-vector",
+      700
+    ],
+    [
+      "events/29-discovery",
+      "involves",
+      "civs/the-vector",
+      700
+    ],
+    [
+      "events/29-discovery",
+      "caused_by",
+      "events/25-schism",
+      700
+    ],
+    [
+      "civs/the-vector",
+      "exploits",
+      "locations/dormancy-salt-seam",
+      700
+    ],
+    [
+      "events/30-exploitation",
+      "involves",
+      "civs/the-vector",
+      700
+    ],
+    [
+      "events/30-exploitation",
+      "caused_by",
+      "events/29-discovery",
+      700
+    ],
+    [
+      "artifacts/the-vector-containment-keystone-31",
+      "forged_by",
+      "civs/the-vector",
+      700
+    ],
+    [
+      "events/30-exploitation",
+      "involves",
+      "artifacts/the-vector-containment-keystone-31",
+      700
+    ],
+    [
+      "events/31-schism",
+      "involves",
+      "civs/the-cradlekeepers",
+      800
+    ],
+    [
+      "events/31-schism",
+      "caused_by",
+      "events/27-exploitation",
+      800
+    ],
+    [
+      "events/31-schism",
+      "involves",
+      "figures/the-cradlekeepers-seer-31",
+      800
+    ],
+    [
+      "events/32-discovery",
+      "involves",
+      "civs/the-stillborn-host",
+      800
+    ],
+    [
+      "events/32-discovery",
+      "caused_by",
+      "events/28-war",
+      800
+    ],
+    [
+      "civs/the-stillborn-host",
+      "exploits",
+      "locations/quarantine-foam-seam",
+      800
+    ],
+    [
+      "events/33-exploitation",
+      "involves",
+      "civs/the-stillborn-host",
+      800
+    ],
+    [
+      "events/33-exploitation",
+      "caused_by",
+      "events/32-discovery",
+      800
+    ],
+    [
+      "events/34-discovery",
+      "involves",
+      "civs/the-vector",
+      800
+    ],
+    [
+      "events/34-discovery",
+      "caused_by",
+      "events/30-exploitation",
+      800
+    ],
+    [
+      "civs/the-vector",
+      "exploits",
+      "locations/quarantine-foam-seam",
+      800
+    ],
+    [
+      "events/35-exploitation",
+      "involves",
+      "civs/the-vector",
+      800
+    ],
+    [
+      "events/35-exploitation",
+      "caused_by",
+      "events/34-discovery",
+      800
+    ]
+  ],
+  "mystery": {
+    "fragments": [],
+    "order": [],
+    "order_relation": "prerequisite"
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "nodes": [
+    { "slug": "factions/humans", "type": "faction", "tension": 0.5, "facts": { "role": "containment-colony", "name": "the Threshold colony", "note": "settlers who made planetfall inside the vector's range before the warning beacons were translated" } },
+    { "slug": "civs/the-cradlekeepers", "type": "faction", "tension": 0.6, "facts": { "alien_type": "dormant-xeno-sleepers", "trait": "the makers, sealed in quarantine-sleep behind the containment they never finished", "status": "dormant", "note": "wakeable as allies — or carriers; no living instrument can tell which vault holds which until it is opened" } },
+    { "slug": "civs/the-stillborn-host", "type": "faction", "tension": 0.62, "facts": { "alien_type": "dormant-xeno-carriers", "trait": "sleepers the vector reached first; dormant carriers whose waking IS the outbreak", "status": "dormant", "note": "sealed beside the makers, indistinguishable by exterior" } },
+    { "slug": "civs/the-vector", "type": "faction", "tension": 0.72, "facts": { "alien_type": "dormant-self-replicating-plague", "trait": "the extinction-agent — in this world a memetic nanite-swarm that propagates through the relics' own lore as much as through marrow", "status": "dormant", "note": "stirs whenever a seal is broken; does not need a body, only an unsealed pattern" } },
+
+    { "slug": "locations/the-quarantine-belt", "type": "location", "tension": 0.55, "facts": { "kind": "sealed-world-cluster", "note": "the ring of vaulted worlds the makers sealed themselves into" } },
+    { "slug": "locations/threshold-landing", "type": "location", "tension": 0.45, "facts": { "kind": "human-colony", "note": "the colony dome, now the closest unsealed habitat to a stirring carrier" } },
+    { "slug": "locations/the-still-vault", "type": "location", "tension": 0.68, "facts": { "kind": "keystone-vault", "note": "the central vault where the unfinished seal still hangs half-assembled around its keystone cradle" } },
+    { "slug": "locations/drift-carrier-ninth", "type": "location", "tension": 0.7, "facts": { "kind": "drifting-carrier-hulk", "note": "a derelict carrying a dormant host that has begun, slowly, to stir" } },
+
+    { "slug": "colonists/mara-okonkwo", "type": "colonist", "tension": 0.55, "facts": { "role": "containment lead", "stance": "wants the seal finished before anything wakes; refuses to crack a relic without the recipe in hand" } },
+    { "slug": "colonists/devrant-isk", "type": "colonist", "tension": 0.6, "facts": { "role": "relic-runner", "stance": "hunts vaults fast; has already cracked one quarantine-relic out of order" } },
+    { "slug": "colonists/the-translator", "type": "colonist", "tension": 0.5, "facts": { "role": "lore-reader", "stance": "reads the makers' recipe — and is the most exposed to a memetic vector that travels through lore" } },
+    { "slug": "colonists/sergeant-vo", "type": "colonist", "tension": 0.58, "facts": { "role": "quarantine warden", "stance": "would burn every vault unread rather than risk one waking; argues the sleepers are not worth the gamble" } },
+    { "slug": "colonists/dr-amein", "type": "colonist", "tension": 0.52, "facts": { "role": "epidemiologist", "stance": "believes the cure-fragment can finish the seal into a vaccine that wakes the makers safely; the lone voice for rescue over incineration" } },
+    { "slug": "colonists/child-tam", "type": "colonist", "tension": 0.4, "facts": { "role": "colony-born", "stance": "the first generation with no memory of any home but the Threshold; the stakes the adults keep arguing over" } },
+
+    { "slug": "factions/the-ashline-creed", "type": "faction", "tension": 0.66, "facts": { "role": "burn-it-all faction", "name": "the Ashline Creed", "stance": "a splinter that wants the whole quarantine-belt scorched from orbit — no seal, no sleepers, no risk" } },
+
+    { "slug": "belief/the-makers-can-be-woken", "type": "belief", "tension": 0.5, "facts": { "held_by": "dr-amein", "claim": "if the seal is finished as a vaccine, the cradlekeepers wake as allies, not carriers" } },
+    { "slug": "belief/every-seal-is-a-lie", "type": "belief", "tension": 0.6, "facts": { "held_by": "the Ashline Creed", "claim": "containment only delays the outbreak; the only safe vault is a burned one" } },
+    { "slug": "belief/order-is-the-only-mercy", "type": "belief", "tension": 0.55, "facts": { "held_by": "mara-okonkwo", "claim": "the recipe must be assembled in exact order; one fragment out of sequence and the seal becomes the outbreak" } },
+
+    { "slug": "event/the-translators-fever", "type": "event", "tension": 0.72, "day": 50, "facts": { "kind": "exposure", "title": "the translator runs a fever the medics cannot name after reading the lethal record" } },
+    { "slug": "event/the-keystone-located", "type": "event", "tension": 0.83, "day": 110, "facts": { "kind": "discovery", "title": "the keystone is found still cradled in the unfinished seal" } },
+
+    { "slug": "location/the-half-seal", "type": "location", "tension": 0.75, "facts": { "kind": "abandoned-containment", "note": "the seal the makers were assembling when they ran out of time and chose sleep instead" } },
+    { "slug": "location/marrow-reliquary", "type": "location", "tension": 0.68, "facts": { "kind": "carrier-vault", "note": "where the stillborn-host sleeps; the dormancy-salt seep keeps it under, for now" } },
+
+    { "slug": "curse/the-reading-spreads-it", "type": "curse", "tension": 0.7, "facts": { "kind": "memetic-hazard", "note": "this world's vector rides the lore — to understand a relic is to risk carrying it" } },
+
+    { "slug": "locations/the-cold-archive", "type": "location", "tension": 0.6, "facts": { "kind": "lore-vault", "note": "where the makers stored their recipe-shards; reading here is the safest exposure and the deepest" } },
+    { "slug": "locations/orbital-quarantine-ring", "type": "location", "tension": 0.5, "facts": { "kind": "human-orbital", "note": "the colony's monitoring ring, watching the carrier hulk drift closer each cycle" } },
+
+    { "slug": "events/planetfall-inside-the-range", "type": "event", "tension": 0.55, "day": 0, "facts": { "kind": "arrival", "title": "the Threshold colony makes planetfall before the beacons are translated" } },
+    { "slug": "events/first-relic-cracked-blind", "type": "event", "tension": 0.7, "day": 40, "facts": { "kind": "mistake", "title": "Devrant cracks a quarantine-relic before the recipe is in hand" } },
+    { "slug": "events/the-carrier-stirs", "type": "event", "tension": 0.85, "day": 80, "facts": { "kind": "alarm", "title": "drift-carrier-ninth registers its first stir — the clock starts" } },
+    { "slug": "events/the-ashline-vote", "type": "event", "tension": 0.78, "day": 90, "facts": { "kind": "schism", "title": "the colony splits: finish the seal, or scorch the belt" } },
+
+    { "slug": "artifacts/proof-relic-the-lethal-record", "type": "artifact", "tension": 0.7, "facts": { "archetype": "quarantine-relic", "hazard": "low", "note": "the makers' own sealed record of what the vector did to them — opening it is safe, reading it is the first exposure to a memetic strain" } },
+    { "slug": "artifacts/identification-shard", "type": "artifact", "tension": 0.66, "facts": { "archetype": "recipe-shard", "hazard": "medium", "note": "the assay that names the vector's NATURE — without it every later relic is opened blind" } },
+    { "slug": "artifacts/dormancy-trigger-relic", "type": "artifact", "tension": 0.74, "facts": { "archetype": "dormancy-trigger", "hazard": "high", "note": "encodes what keeps the vector asleep — and, read wrong, what wakes it" } },
+    { "slug": "artifacts/the-containment-keystone", "type": "artifact", "tension": 0.8, "facts": { "archetype": "containment-keystone", "hazard": "extreme", "note": "the load-bearing relic of the seal; useless and lethal unless the prior fragments are assembled first" } },
+    { "slug": "artifacts/cure-fragment-foam", "type": "artifact", "tension": 0.58, "facts": { "archetype": "cure-fragment", "hazard": "medium", "note": "a partial vaccine the makers brewed but never finished — completes the seal into something that could wake the sleepers safely" } },
+    { "slug": "artifacts/sealed-vault-key", "type": "artifact", "tension": 0.64, "facts": { "archetype": "sealed-vault-key", "hazard": "high", "note": "opens the still-vault; opens it whether or not you are ready" } },
+
+    { "slug": "lore/proof-the-vector-is-real-and-lethal", "type": "lore", "tension": 0.78, "facts": { "subtype": "fragment", "revealed": false, "step": "0-proof", "text": "the makers' record proves the extinction-vector is real, self-replicating, and lethal — and that they sealed, not died" } },
+    { "slug": "lore/identify-the-vectors-nature", "type": "lore", "tension": 0.8, "facts": { "subtype": "fragment", "revealed": false, "step": "1-identify", "text": "the assay identifies this world's vector as a memetic nanite-swarm that propagates through lore, so containment must seal patterns, not just bodies" } },
+    { "slug": "lore/find-the-dormancy-trigger", "type": "lore", "tension": 0.82, "facts": { "subtype": "fragment", "revealed": false, "step": "2-trigger", "text": "the dormancy-trigger reveals what holds the vector asleep — the precise condition the seal must hold, and the exact mistake that wakes it" } },
+    { "slug": "lore/locate-the-keystone-relic", "type": "lore", "tension": 0.85, "facts": { "subtype": "fragment", "revealed": false, "step": "3-keystone", "text": "the keystone relic is located in the still-vault, the load-bearing piece the makers' seal was built around and abandoned" } },
+    { "slug": "lore/assemble-the-seal", "type": "lore", "tension": 0.9, "facts": { "subtype": "fragment", "revealed": false, "step": "4-assemble", "text": "with proof, nature, trigger and keystone in hand the seal assembles — finishing the containment the makers never closed, the only configuration that lets the sleepers be woken instead of burned" } },
+
+    { "slug": "arc/the-containment-race", "type": "arc", "tension": 0.95, "facts": {
+      "state": "open",
+      "present_stakes": "the carrier on drift-carrier-ninth is stirring and the colony at threshold-landing is inside its range; the seal the makers left half-finished is the only thing that can hold it",
+      "win_condition": "assemble the seal in order (proof -> identify -> trigger -> keystone -> assemble) before a carrier fully wakes; then the sleepers can be woken safely as allies",
+      "fail_state": "cracking a relic out of order, or opening the still-vault before the trigger is read, reseeds the memetic vector inside the colony NOW or wakes the stillborn-host carrier — extinction arrives by the player's own hand",
+      "clock": "every relic hunted is a turn; the carrier wakes on its own schedule whether or not the seal is ready",
+      "note": "this is not an autopsy of how the makers fell — it is a forward containment protocol racing a present, sleeping threat"
+    } }
+  ],
+  "edges": [
+    ["civs/the-cradlekeepers", "sealed_within", "locations/the-quarantine-belt", 0],
+    ["civs/the-stillborn-host", "sealed_within", "locations/the-quarantine-belt", 0],
+    ["civs/the-vector", "sleeps_in", "locations/the-quarantine-belt", 0],
+    ["civs/the-vector", "stirs_in", "locations/drift-carrier-ninth", 0],
+    ["civs/the-stillborn-host", "carries", "civs/the-vector", 0],
+    ["civs/the-cradlekeepers", "sealed_against", "civs/the-vector", 0],
+    ["civs/the-cradlekeepers", "left_unfinished", "artifacts/the-containment-keystone", 0],
+
+    ["factions/humans", "settled", "locations/threshold-landing", 0],
+    ["locations/threshold-landing", "inside_range_of", "locations/drift-carrier-ninth", 0],
+    ["locations/the-still-vault", "within", "locations/the-quarantine-belt", 0],
+
+    ["colonists/mara-okonkwo", "leads", "factions/humans", 0],
+    ["colonists/devrant-isk", "member_of", "factions/humans", 0],
+    ["colonists/the-translator", "member_of", "factions/humans", 0],
+    ["colonists/devrant-isk", "cracked_out_of_order", "artifacts/proof-relic-the-lethal-record", 0],
+    ["colonists/the-translator", "reads", "artifacts/proof-relic-the-lethal-record", 0],
+    ["colonists/the-translator", "exposed_to", "civs/the-vector", 0],
+    ["colonists/mara-okonkwo", "races_to_assemble", "arc/the-containment-race", 0],
+
+    ["artifacts/proof-relic-the-lethal-record", "drops", "lore/proof-the-vector-is-real-and-lethal", 0],
+    ["artifacts/proof-relic-the-lethal-record", "drops", "lore/identify-the-vectors-nature", 0],
+    ["artifacts/proof-relic-the-lethal-record", "drops", "lore/find-the-dormancy-trigger", 0],
+
+    ["artifacts/identification-shard", "drops", "lore/identify-the-vectors-nature", 0],
+    ["artifacts/identification-shard", "drops", "lore/proof-the-vector-is-real-and-lethal", 0],
+    ["artifacts/identification-shard", "drops", "lore/find-the-dormancy-trigger", 0],
+
+    ["artifacts/dormancy-trigger-relic", "drops", "lore/find-the-dormancy-trigger", 0],
+    ["artifacts/dormancy-trigger-relic", "drops", "lore/identify-the-vectors-nature", 0],
+    ["artifacts/dormancy-trigger-relic", "drops", "lore/locate-the-keystone-relic", 0],
+
+    ["artifacts/the-containment-keystone", "drops", "lore/locate-the-keystone-relic", 0],
+    ["artifacts/the-containment-keystone", "drops", "lore/find-the-dormancy-trigger", 0],
+    ["artifacts/the-containment-keystone", "drops", "lore/assemble-the-seal", 0],
+
+    ["artifacts/cure-fragment-foam", "drops", "lore/assemble-the-seal", 0],
+    ["artifacts/cure-fragment-foam", "drops", "lore/identify-the-vectors-nature", 0],
+    ["artifacts/cure-fragment-foam", "drops", "lore/locate-the-keystone-relic", 0],
+
+    ["artifacts/sealed-vault-key", "drops", "lore/locate-the-keystone-relic", 0],
+    ["artifacts/sealed-vault-key", "drops", "lore/assemble-the-seal", 0],
+    ["artifacts/sealed-vault-key", "drops", "lore/proof-the-vector-is-real-and-lethal", 0],
+
+    ["lore/identify-the-vectors-nature", "prerequisite", "lore/proof-the-vector-is-real-and-lethal", 0],
+    ["lore/find-the-dormancy-trigger", "prerequisite", "lore/identify-the-vectors-nature", 0],
+    ["lore/locate-the-keystone-relic", "prerequisite", "lore/find-the-dormancy-trigger", 0],
+    ["lore/assemble-the-seal", "prerequisite", "lore/locate-the-keystone-relic", 0],
+
+    ["lore/proof-the-vector-is-real-and-lethal", "reveals", "civs/the-vector", 0],
+    ["lore/identify-the-vectors-nature", "reveals", "civs/the-vector", 0],
+    ["lore/find-the-dormancy-trigger", "reveals", "civs/the-stillborn-host", 0],
+    ["lore/locate-the-keystone-relic", "reveals", "locations/the-still-vault", 0],
+    ["lore/assemble-the-seal", "reveals", "civs/the-cradlekeepers", 0],
+
+    ["artifacts/the-containment-keystone", "lies_in", "locations/the-still-vault", 0],
+    ["artifacts/sealed-vault-key", "opens", "locations/the-still-vault", 0],
+    ["arc/the-containment-race", "threatened_by", "locations/drift-carrier-ninth", 0],
+    ["arc/the-containment-race", "won_by", "lore/assemble-the-seal", 0],
+
+    ["colonists/sergeant-vo", "member_of", "factions/humans", 0],
+    ["colonists/dr-amein", "member_of", "factions/humans", 0],
+    ["colonists/child-tam", "member_of", "factions/humans", 0],
+    ["colonists/sergeant-vo", "joins", "factions/the-ashline-creed", 90],
+    ["factions/the-ashline-creed", "splinter_of", "factions/humans", 90],
+    ["factions/the-ashline-creed", "would_burn", "locations/the-quarantine-belt", 90],
+    ["colonists/dr-amein", "holds", "belief/the-makers-can-be-woken", 0],
+    ["factions/the-ashline-creed", "holds", "belief/every-seal-is-a-lie", 0],
+    ["belief/the-makers-can-be-woken", "reveals", "civs/the-cradlekeepers", 0],
+    ["belief/every-seal-is-a-lie", "reveals", "civs/the-vector", 0],
+    ["colonists/dr-amein", "reads", "artifacts/cure-fragment-foam", 0],
+
+    ["artifacts/identification-shard", "lies_in", "locations/the-cold-archive", 0],
+    ["artifacts/dormancy-trigger-relic", "lies_in", "locations/the-cold-archive", 0],
+    ["colonists/the-translator", "works_in", "locations/the-cold-archive", 0],
+    ["locations/orbital-quarantine-ring", "watches", "locations/drift-carrier-ninth", 0],
+    ["factions/humans", "operates", "locations/orbital-quarantine-ring", 0],
+
+    ["events/planetfall-inside-the-range", "begins", "arc/the-containment-race", 0],
+    ["events/first-relic-cracked-blind", "caused_by", "colonists/devrant-isk", 40],
+    ["events/first-relic-cracked-blind", "stirs", "civs/the-vector", 40],
+    ["events/the-carrier-stirs", "threatens", "locations/threshold-landing", 80],
+    ["events/the-carrier-stirs", "involves", "civs/the-stillborn-host", 80],
+    ["events/the-ashline-vote", "splits", "factions/humans", 90],
+    ["events/the-ashline-vote", "involves", "factions/the-ashline-creed", 90],
+
+    ["colonists/mara-okonkwo", "holds", "belief/order-is-the-only-mercy", 0],
+    ["belief/order-is-the-only-mercy", "concerns", "lore/assemble-the-seal", 0],
+    ["event/the-translators-fever", "involves", "colonists/the-translator", 50],
+    ["event/the-translators-fever", "caused_by", "curse/the-reading-spreads-it", 50],
+    ["curse/the-reading-spreads-it", "afflicts", "civs/the-vector", 0],
+    ["curse/the-reading-spreads-it", "threatens", "colonists/the-translator", 0],
+    ["event/the-keystone-located", "reveals", "artifacts/the-containment-keystone", 110],
+    ["event/the-keystone-located", "involves", "location/the-half-seal", 110],
+    ["location/the-half-seal", "within", "locations/the-still-vault", 0],
+    ["civs/the-cradlekeepers", "abandoned", "location/the-half-seal", 0],
+    ["civs/the-stillborn-host", "sleeps_in", "location/marrow-reliquary", 0],
+    ["location/marrow-reliquary", "within", "locations/the-quarantine-belt", 0],
+    ["lore/find-the-dormancy-trigger", "reveals", "location/marrow-reliquary", 0]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/proof-the-vector-is-real-and-lethal",
+      "lore/identify-the-vectors-nature",
+      "lore/find-the-dormancy-trigger",
+      "lore/locate-the-keystone-relic",
+      "lore/assemble-the-seal"
+    ],
+    "order": [
+      "lore/proof-the-vector-is-real-and-lethal",
+      "lore/identify-the-vectors-nature",
+      "lore/find-the-dormancy-trigger",
+      "lore/locate-the-keystone-relic",
+      "lore/assemble-the-seal"
+    ],
+    "order_relation": "prerequisite"
+  }
+}

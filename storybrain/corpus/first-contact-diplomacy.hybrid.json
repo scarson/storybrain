@@ -1,0 +1,197 @@
+{
+  "_arm": "HYBRID",
+  "_theme": "first-contact-diplomacy",
+  "_pipeline": "Stage B procgen skeleton (seed 314) enriched + present-tense live layer (Stage C). Procgen gave the deep-history scaffold: three living alien factions, their rivalries/schisms/seer-figures, resource seams, and three lent artifacts. Stage C reframes that skeleton to first-contact diplomacy, drops rich lore on every artifact, and adds a PRESENT layer — named human colonists, an OPEN arc, and present-stake edges tied to the artifacts and the mystery.",
+  "_flavor_note": "Sprawling, multi-site, geopolitical. Three living alien factions actively contend over whether humanity is vetted, denied, or brokered; caches scattered across a system; a live unresolved present where a human survey team is mid-triangulation with rivals closing. Mystery spine = reveals (each decoded gift reveals the next cache-bearing, ending in WHY the factions split over humanity).",
+  "nodes": [
+    { "slug": "factions/humans", "type": "faction", "tension": 0.4, "facts": { "role": "late-arrivals", "status": "extant", "note": "A multi-ship survey coalition that arrived expecting ruins and found living gatekeepers instead." } },
+
+    { "slug": "civs/the-irenni", "type": "faction", "tension": 0.6, "facts": { "alien_type": "living-elder-xeno-persons", "trait": "ancient, patient gatekeepers who lend gifts as tests and read every human choice", "status": "living", "note": "The senior faction. They lend technology one piece at a time and have vetted petitioners for longer than humans have had writing. PRESENT, with agency — not a ruin." } },
+    { "slug": "civs/the-saalvane", "type": "faction", "tension": 0.7, "facts": { "alien_type": "living-rival-xeno-faction", "trait": "a splinter that thinks humanity should be denied, not vetted — they sabotage the gifts", "status": "living", "note": "A breakaway faction. They argue humanity should be refused outright and corrupt the lent gifts to make humans convict themselves." } },
+    { "slug": "civs/the-mendicant-tier", "type": "faction", "tension": 0.55, "facts": { "alien_type": "living-xeno-mediators", "trait": "a neutral caste that brokers access and adjudicates worthiness disputes", "status": "living", "note": "The broker caste. They mediate between Irenni, Saalvane, and any petitioner, and hold the keys to dispute resolution." } },
+
+    { "slug": "locations/lattice-fuel-seam", "type": "location", "tension": 0.435, "facts": { "resource": "lattice-fuel", "danger": 0.45, "note": "A contested fuel seam the alien factions tap; humans need it too, which is the moderate resource friction under the diplomacy." } },
+    { "slug": "locations/cache-seals-seam", "type": "location", "tension": 0.39, "facts": { "resource": "cache-seals", "danger": 0.3, "note": "Where the seal-material for sealed caches is quarried. Control it and you control who can RE-seal a cache after opening." } },
+
+    { "slug": "figures/the-saalvane-seer-2", "type": "colonist", "tension": 0.4, "facts": { "role": "schismatic seer", "civ": "the-saalvane", "note": "The first Saalvane voice to preach refusal of humanity." } },
+    { "slug": "figures/the-saalvane-seer-17", "type": "colonist", "tension": 0.4, "facts": { "role": "schismatic seer", "civ": "the-saalvane" } },
+    { "slug": "figures/the-mendicant-tier-seer-18", "type": "colonist", "tension": 0.4, "facts": { "role": "schismatic seer", "civ": "the-mendicant-tier" } },
+    { "slug": "figures/the-mendicant-tier-seer-30", "type": "colonist", "tension": 0.4, "facts": { "role": "schismatic seer", "civ": "the-mendicant-tier" } },
+    { "slug": "figures/the-irenni-seer-23", "type": "colonist", "tension": 0.4, "facts": { "role": "schismatic seer", "civ": "the-irenni", "note": "An Irenni who began to doubt the vetting — the seed of the present split." } },
+    { "slug": "figures/the-irenni-seer-27", "type": "colonist", "tension": 0.4, "facts": { "role": "schismatic seer", "civ": "the-irenni" } },
+
+    { "slug": "events/3-war", "type": "event", "tension": 0.6, "day": 100, "facts": { "kind": "war", "title": "the-mendicant-tier brokers a ceasefire against the-saalvane", "reframed": "The first time the brokers moved openly against the refusers." } },
+    { "slug": "events/19-war", "type": "event", "tension": 0.6, "day": 500, "facts": { "kind": "war", "title": "the-irenni clashes with the-mendicant-tier over access rules" } },
+    { "slug": "events/22-war", "type": "event", "tension": 0.6, "day": 500, "facts": { "kind": "war", "title": "the-mendicant-tier moves on the-saalvane sabotage cells" } },
+    { "slug": "events/31-war", "type": "event", "tension": 0.6, "day": 800, "facts": { "kind": "war", "title": "the-irenni and the-mendicant-tier deadlock on humanity's petition" } },
+
+    { "slug": "artifacts/the-mendicant-tier-sealed-cache-15", "type": "artifact", "tension": 0.7, "facts": { "archetype": "sealed-cache", "tier": "prize", "maker": "the-mendicant-tier", "note": "A brokered cache the Mendicants will only unseal if all three factions agree humanity is worthy. The political prize." } },
+    { "slug": "artifacts/the-irenni-encoded-clue-17", "type": "artifact", "tension": 0.65, "facts": { "archetype": "encoded-clue", "tier": "gift", "maker": "the-irenni", "note": "The Irenni's lent clue-gift: its lattice-geometry encodes the bearing to the first reachable cache." } },
+    { "slug": "artifacts/the-saalvane-diplomatic-token-22", "type": "artifact", "tension": 0.8, "facts": { "archetype": "diplomatic-token", "tier": "gift", "maker": "the-saalvane", "note": "A Saalvane 'gift' that is really bait — its bearing is salted to point humans at a forbidden site and provoke a refusal." } },
+
+    { "slug": "artifacts/the-irenni-lending-stone", "type": "artifact", "tension": 0.6, "facts": { "archetype": "lent-gift", "tier": "gift", "maker": "the-irenni", "note": "The very first gift lent to humanity: a fabrication primer that only works if shared between two ships. Cooperation is the test." } },
+    { "slug": "artifacts/the-brokers-tally", "type": "artifact", "tension": 0.75, "facts": { "archetype": "cache-key", "tier": "prize", "maker": "the-mendicant-tier", "note": "The Mendicants' tally-key: the running ledger of humanity's passed and failed tests. Reach it and you see your own scorecard." } },
+    { "slug": "artifacts/the-concord-core", "type": "artifact", "tension": 0.9, "facts": { "archetype": "sealed-cache", "tier": "prize", "maker": "the-irenni", "note": "The deepest sealed cache. Opening it reveals the origin of the schism — why the factions split over how to treat newcomers." } },
+
+    { "slug": "lore/gifts-encode-bearings", "type": "lore", "tension": 0.55, "facts": { "subtype": "fragment", "revealed": false, "text": "Every lent gift is two things: a worthiness-test in its USE, and, in its physical lattice, an encoded bearing to a sealed cache. The Irenni never simply hand over the prize — they hand over the map to it, folded into a test." } },
+    { "slug": "lore/the-clue-points-to-the-tally", "type": "lore", "tension": 0.6, "facts": { "subtype": "fragment", "revealed": false, "text": "The Irenni encoded-clue's geometry, resolved across two survey ships, traces a bearing to the Brokers' Tally cache — the first cache humanity can actually reach." } },
+    { "slug": "lore/the-tally-reveals-the-token-is-bait", "type": "lore", "tension": 0.75, "facts": { "subtype": "fragment", "revealed": false, "text": "The Brokers' Tally, once read, exposes the Saalvane token as salted bait: its bearing points at a forbidden site, and reaching it would register as an act of war." } },
+    { "slug": "lore/the-saalvane-want-refusal", "type": "lore", "tension": 0.8, "facts": { "subtype": "fragment", "revealed": false, "text": "The Saalvane do not break the vetting rules — they corrupt the gifts so humanity convicts itself. They want refusal to carry humanity's own signature, not theirs." } },
+    { "slug": "lore/the-cache-needs-three-agreements", "type": "lore", "tension": 0.82, "facts": { "subtype": "fragment", "revealed": false, "text": "The Mendicant sealed-cache opens only on the agreement of all three factions. Decoding the Tally reveals the unlock isn't a key — it's a consensus humanity must earn from rivals who disagree about it." } },
+    { "slug": "lore/the-schism-was-about-us", "type": "lore", "tension": 0.9, "facts": { "subtype": "fragment", "revealed": false, "text": "The Concord Core reveals the truth the factions buried: the Irenni split long ago over whether vetting newcomers is mercy or arrogance. Humanity is not being judged — humanity is the case that will finally settle the factions' own ancient argument. Whoever humanity proves right, wins the schism." } },
+
+    { "slug": "lore/the-lending-stone-needs-two-ships", "type": "lore", "tension": 0.5, "facts": { "subtype": "fragment", "revealed": false, "text": "The first lent gift, the Lending Stone, only fabricates when two human ships power it together. Solo ambition gets nothing. The Irenni watched whether the coalition would share." } },
+    { "slug": "lore/the-irenni-vet-by-watching", "type": "lore", "tension": 0.55, "facts": { "subtype": "fragment", "revealed": false, "text": "The Irenni do not interrogate. They lend, then watch. Every human choice with a gift is a data point — generosity, restraint, suspicion, haste — read in real time." } },
+    { "slug": "lore/the-mendicants-broker-everything", "type": "lore", "tension": 0.6, "facts": { "subtype": "fragment", "revealed": false, "text": "Nothing reaches humanity without the Mendicant Tier brokering it. They are neutral, but neutrality has a price: every cache they hold opens only by their tally." } },
+    { "slug": "lore/cache-seals-control-resealing", "type": "lore", "tension": 0.6, "facts": { "subtype": "fragment", "revealed": false, "text": "The cache-seal seam matters because whoever holds it can RE-seal a cache after it opens. The Saalvane covet the seam: a cache they can re-lock is a cache they can withhold." } },
+    { "slug": "lore/lattice-fuel-is-shared-need", "type": "lore", "tension": 0.55, "facts": { "subtype": "fragment", "revealed": false, "text": "Humans and aliens burn the same lattice-fuel. The moderate scarcity keeps the diplomacy honest: every cache reached is also fuel NOT spent fighting over the seam." } },
+    { "slug": "lore/the-irenni-seer-doubts", "type": "lore", "tension": 0.7, "facts": { "subtype": "fragment", "revealed": false, "text": "An Irenni seer began preaching that the vetting itself is the arrogance — that lending tests to strangers is the very flaw the Concord Core was meant to hide. The present split runs through the Irenni now." } },
+
+    { "slug": "figures/survey-lead-petra-vance", "type": "colonist", "tension": 0.55, "facts": { "role": "human survey lead (PRESENT)", "note": "Leads the live triangulation effort. Has the Irenni clue-gift in hand and a Saalvane token she does not yet trust." } },
+    { "slug": "figures/pilot-ozan-reyes", "type": "colonist", "tension": 0.5, "facts": { "role": "human pilot (PRESENT)", "note": "Flies the second survey ship. The Lending Stone needs both his ship and Petra's to work — the cooperation test is literally between them." } },
+    { "slug": "figures/broker-liaison-essa", "type": "figure", "tension": 0.6, "facts": { "role": "Mendicant Tier liaison to humanity (PRESENT)", "species": "mendicant", "note": "The living alien who tells humanity, day by day, whether they are passing. Holds the Brokers' Tally and will not lie — but will not warn, either." } },
+    { "slug": "figures/saalvane-agent-thol", "type": "figure", "tension": 0.78, "facts": { "role": "Saalvane saboteur in the present (PRESENT)", "species": "saalvane", "note": "Working now to steer Petra's team toward the salted token's bearing before they read the Tally. The live antagonist." } },
+
+    { "slug": "locations/the-petition-station", "type": "location", "tension": 0.5, "facts": { "note": "The neutral orbital where the present petition is conducted; gifts are lent here under Mendicant watch." } },
+    { "slug": "locations/the-forbidden-site", "type": "location", "tension": 0.85, "facts": { "note": "Where the Saalvane token's salted bearing points. Reaching it armed reads as an act of war and could collapse the petition." } },
+    { "slug": "locations/cache-of-the-brokers-tally", "type": "location", "tension": 0.7, "facts": { "note": "The first reachable cache, holding the Brokers' Tally. The live race target — Petra's team versus Thol's steering." } },
+
+    { "slug": "arcs/the-open-petition", "type": "arc", "tension": 0.9, "facts": { "status": "OPEN", "note": "UNRESOLVED present arc: Petra's team must read the Irenni clue, reach the Brokers' Tally, and expose the Saalvane token as bait BEFORE Thol steers them to the Forbidden Site. The petition's outcome — alliance, denial, or the Concord schism finally breaking open — is not yet decided." } },
+
+    { "slug": "lore/the-race-is-on-now", "type": "lore", "tension": 0.85, "facts": { "subtype": "fragment", "revealed": false, "text": "Right now, Petra's team is mid-triangulation with the Saalvane agent Thol working to mislead them. Whoever reaches the Brokers' Tally first decides whether humanity reads its own scorecard or walks into the trap." } },
+    { "slug": "lore/petra-holds-both-gifts", "type": "lore", "tension": 0.7, "facts": { "subtype": "fragment", "revealed": false, "text": "Petra Vance holds the genuine Irenni clue AND the salted Saalvane token at once, and cannot yet tell which bearing to trust. The whole present arc balances on her telling them apart." } },
+    { "slug": "lore/essa-will-not-warn", "type": "lore", "tension": 0.65, "facts": { "subtype": "fragment", "revealed": false, "text": "Liaison Essa knows the token is bait but, as a neutral broker, will not warn humanity — only confirm, after the fact, whether the choice was honest. Her silence is itself part of the test." } }
+  ],
+
+  "edges": [
+    ["civs/the-irenni", "exploits", "locations/cache-seals-seam"],
+    ["civs/the-saalvane", "exploits", "locations/cache-seals-seam"],
+    ["civs/the-mendicant-tier", "exploits", "locations/lattice-fuel-seam"],
+    ["civs/the-irenni", "exploits", "locations/lattice-fuel-seam"],
+    ["civs/the-saalvane", "exploits", "locations/lattice-fuel-seam"],
+    ["factions/humans", "located_at", "locations/the-petition-station"],
+
+    ["civs/the-mendicant-tier", "rival_of", "civs/the-saalvane"],
+    ["civs/the-irenni", "rival_of", "civs/the-mendicant-tier"],
+    ["civs/the-saalvane", "rival_of", "factions/humans"],
+
+    ["figures/the-saalvane-seer-2", "owned_by", "civs/the-saalvane"],
+    ["figures/the-saalvane-seer-12", "owned_by", "civs/the-saalvane"],
+    ["figures/the-saalvane-seer-17", "owned_by", "civs/the-saalvane"],
+    ["figures/the-saalvane-seer-32", "owned_by", "civs/the-saalvane"],
+    ["figures/the-mendicant-tier-seer-18", "owned_by", "civs/the-mendicant-tier"],
+    ["figures/the-mendicant-tier-seer-26", "owned_by", "civs/the-mendicant-tier"],
+    ["figures/the-mendicant-tier-seer-30", "owned_by", "civs/the-mendicant-tier"],
+    ["figures/the-mendicant-tier-seer-33", "owned_by", "civs/the-mendicant-tier"],
+    ["figures/the-irenni-seer-23", "owned_by", "civs/the-irenni"],
+    ["figures/the-irenni-seer-27", "owned_by", "civs/the-irenni"],
+
+    ["events/3-war", "involves", "civs/the-mendicant-tier"],
+    ["events/19-war", "involves", "civs/the-irenni"],
+    ["events/22-war", "involves", "civs/the-mendicant-tier"],
+    ["events/31-war", "involves", "civs/the-irenni"],
+    ["events/31-war", "involves", "civs/the-mendicant-tier"],
+
+    ["lore/the-clue-points-to-the-tally", "reveals", "lore/gifts-encode-bearings"],
+    ["lore/the-tally-reveals-the-token-is-bait", "reveals", "lore/the-clue-points-to-the-tally"],
+    ["lore/the-saalvane-want-refusal", "reveals", "lore/the-tally-reveals-the-token-is-bait"],
+    ["lore/the-cache-needs-three-agreements", "reveals", "lore/the-saalvane-want-refusal"],
+    ["lore/the-schism-was-about-us", "reveals", "lore/the-cache-needs-three-agreements"],
+
+    ["artifacts/the-irenni-lending-stone", "drops", "lore/gifts-encode-bearings"],
+    ["artifacts/the-irenni-lending-stone", "drops", "lore/the-lending-stone-needs-two-ships"],
+    ["artifacts/the-irenni-lending-stone", "drops", "lore/the-irenni-vet-by-watching"],
+    ["artifacts/the-irenni-lending-stone", "forged_by", "civs/the-irenni"],
+    ["artifacts/the-irenni-lending-stone", "hidden_at", "locations/the-petition-station"],
+    ["lore/the-irenni-vet-by-watching", "reveals", "civs/the-irenni"],
+    ["lore/the-lending-stone-needs-two-ships", "reveals", "figures/pilot-ozan-reyes"],
+
+    ["artifacts/the-irenni-encoded-clue-17", "drops", "lore/the-clue-points-to-the-tally"],
+    ["artifacts/the-irenni-encoded-clue-17", "drops", "lore/lattice-fuel-is-shared-need"],
+    ["artifacts/the-irenni-encoded-clue-17", "drops", "lore/petra-holds-both-gifts"],
+    ["artifacts/the-irenni-encoded-clue-17", "forged_by", "civs/the-irenni"],
+    ["artifacts/the-irenni-encoded-clue-17", "hidden_at", "locations/the-petition-station"],
+    ["lore/the-clue-points-to-the-tally", "reveals", "locations/cache-of-the-brokers-tally"],
+    ["lore/lattice-fuel-is-shared-need", "reveals", "locations/lattice-fuel-seam"],
+
+    ["artifacts/the-saalvane-diplomatic-token-22", "drops", "lore/the-saalvane-want-refusal"],
+    ["artifacts/the-saalvane-diplomatic-token-22", "drops", "lore/cache-seals-control-resealing"],
+    ["artifacts/the-saalvane-diplomatic-token-22", "drops", "lore/petra-holds-both-gifts"],
+    ["artifacts/the-saalvane-diplomatic-token-22", "drops", "lore/the-race-is-on-now"],
+    ["artifacts/the-saalvane-diplomatic-token-22", "forged_by", "figures/saalvane-agent-thol"],
+    ["artifacts/the-saalvane-diplomatic-token-22", "hidden_at", "locations/the-forbidden-site"],
+    ["lore/the-saalvane-want-refusal", "reveals", "civs/the-saalvane"],
+    ["lore/cache-seals-control-resealing", "reveals", "locations/cache-seals-seam"],
+
+    ["artifacts/the-brokers-tally", "drops", "lore/the-tally-reveals-the-token-is-bait"],
+    ["artifacts/the-brokers-tally", "drops", "lore/the-mendicants-broker-everything"],
+    ["artifacts/the-brokers-tally", "drops", "lore/the-cache-needs-three-agreements"],
+    ["artifacts/the-brokers-tally", "drops", "lore/essa-will-not-warn"],
+    ["artifacts/the-brokers-tally", "forged_by", "civs/the-mendicant-tier"],
+    ["artifacts/the-brokers-tally", "hidden_at", "locations/cache-of-the-brokers-tally"],
+    ["artifacts/the-brokers-tally", "sought_by", "factions/humans"],
+    ["lore/the-mendicants-broker-everything", "reveals", "civs/the-mendicant-tier"],
+    ["lore/essa-will-not-warn", "reveals", "figures/broker-liaison-essa"],
+
+    ["artifacts/the-mendicant-tier-sealed-cache-15", "drops", "lore/the-cache-needs-three-agreements"],
+    ["artifacts/the-mendicant-tier-sealed-cache-15", "drops", "lore/the-mendicants-broker-everything"],
+    ["artifacts/the-mendicant-tier-sealed-cache-15", "drops", "lore/cache-seals-control-resealing"],
+    ["artifacts/the-mendicant-tier-sealed-cache-15", "forged_by", "civs/the-mendicant-tier"],
+    ["artifacts/the-mendicant-tier-sealed-cache-15", "hidden_at", "locations/cache-seals-seam"],
+    ["artifacts/the-mendicant-tier-sealed-cache-15", "sought_by", "factions/humans"],
+
+    ["artifacts/the-concord-core", "drops", "lore/the-schism-was-about-us"],
+    ["artifacts/the-concord-core", "drops", "lore/the-irenni-seer-doubts"],
+    ["artifacts/the-concord-core", "drops", "lore/the-irenni-vet-by-watching"],
+    ["artifacts/the-concord-core", "forged_by", "civs/the-irenni"],
+    ["artifacts/the-concord-core", "hidden_at", "locations/cache-of-the-brokers-tally"],
+    ["artifacts/the-concord-core", "sought_by", "factions/humans"],
+    ["lore/the-schism-was-about-us", "reveals", "civs/the-irenni"],
+    ["lore/the-irenni-seer-doubts", "reveals", "figures/the-irenni-seer-23"],
+
+    ["figures/survey-lead-petra-vance", "owned_by", "factions/humans"],
+    ["figures/pilot-ozan-reyes", "owned_by", "factions/humans"],
+    ["figures/survey-lead-petra-vance", "located_at", "locations/the-petition-station"],
+    ["figures/pilot-ozan-reyes", "located_at", "locations/the-petition-station"],
+    ["figures/broker-liaison-essa", "owned_by", "civs/the-mendicant-tier"],
+    ["figures/saalvane-agent-thol", "owned_by", "civs/the-saalvane"],
+    ["figures/broker-liaison-essa", "located_at", "locations/the-petition-station"],
+    ["figures/saalvane-agent-thol", "located_at", "locations/the-forbidden-site"],
+
+    ["arcs/the-open-petition", "involves", "figures/survey-lead-petra-vance"],
+    ["arcs/the-open-petition", "involves", "figures/saalvane-agent-thol"],
+    ["arcs/the-open-petition", "involves", "artifacts/the-irenni-encoded-clue-17"],
+    ["arcs/the-open-petition", "involves", "artifacts/the-saalvane-diplomatic-token-22"],
+    ["arcs/the-open-petition", "involves", "artifacts/the-brokers-tally"],
+    ["arcs/the-open-petition", "located_at", "locations/cache-of-the-brokers-tally"],
+
+    ["figures/survey-lead-petra-vance", "sought_by", "figures/saalvane-agent-thol"],
+    ["artifacts/the-brokers-tally", "sought_by", "figures/saalvane-agent-thol"],
+    ["figures/survey-lead-petra-vance", "located_at", "locations/cache-of-the-brokers-tally"],
+    ["lore/the-race-is-on-now", "reveals", "arcs/the-open-petition"],
+    ["lore/petra-holds-both-gifts", "reveals", "figures/survey-lead-petra-vance"],
+    ["lore/the-race-is-on-now", "reveals", "figures/saalvane-agent-thol"],
+    ["figures/pilot-ozan-reyes", "located_at", "locations/cache-of-the-brokers-tally"],
+    ["figures/the-irenni-seer-23", "rival_of", "civs/the-irenni"]
+  ],
+
+  "mystery": {
+    "fragments": [
+      "lore/gifts-encode-bearings",
+      "lore/the-clue-points-to-the-tally",
+      "lore/the-tally-reveals-the-token-is-bait",
+      "lore/the-saalvane-want-refusal",
+      "lore/the-cache-needs-three-agreements",
+      "lore/the-schism-was-about-us"
+    ],
+    "order": [
+      "lore/gifts-encode-bearings",
+      "lore/the-clue-points-to-the-tally",
+      "lore/the-tally-reveals-the-token-is-bait",
+      "lore/the-saalvane-want-refusal",
+      "lore/the-cache-needs-three-agreements",
+      "lore/the-schism-was-about-us"
+    ],
+    "order_relation": "reveals"
+  }
+}

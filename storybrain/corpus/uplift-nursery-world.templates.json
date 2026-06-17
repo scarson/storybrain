@@ -1,0 +1,18 @@
+{
+  "setting": "The colony world is not wild — it is being deliberately cultivated. Life here is too convenient, too AIMED: rivers run to the right places, soils self-enrich, blights arrive only to be answered. The gardeners are present and acting NOW but never seen — only sensed, as a faint aimed-ness in things and a pressure of attention when a tool is used. The artifacts are their shaping-tools, seeded into the soil to steer evolution; the resource is the engineered biosphere itself. The ordered chain is PROSPECTIVE and INWARD: each tool used, each lineage cultivated, reveals one more step of the gardeners' METHOD and what we are being grown INTO. The climax is not a fall — it is the harvest the gardeners have been patiently waiting for, still unfolding. The open question per world: are the colonists a welcome guest, a pest to be culled, or the next thing being grown?",
+  "civs": [
+    { "name": "the-gardeners", "archetype": "hidden-stewards-unseen", "trait": "present and acting, never seen — they shape the world by hand and watch; you feel their attention, never their bodies", "greed": 0.25 },
+    { "name": "the-loam-tenders", "archetype": "hidden-subtended-caste", "trait": "a lesser hidden caste that maintains the soil-shrines and gene-looms between the gardeners' great workings", "greed": 0.3 },
+    { "name": "the-first-cultivars", "archetype": "cultivated-lineage-uplifted", "trait": "an earlier lineage the gardeners grew to sapience here, then either harvested or moved on — the precedent the colony is unknowingly repeating", "greed": 0.45 }
+  ],
+  "resources": [
+    { "name": "engineered-biosphere", "danger": 0.9 },
+    { "name": "gene-loam", "danger": 0.55 },
+    { "name": "shrine-sap", "danger": 0.3 }
+  ],
+  "artifactKinds": ["terraforming-seed", "gene-loom", "soil-shrine", "shaping-tool", "lineage-key", "attention-bell"],
+  "epochs": 8,
+  "cascadeThreshold": 1.5,
+  "order_relation": "reveals",
+  "climax_label": "the harvest the gardeners are waiting for"
+}

@@ -1,0 +1,788 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.4,
+      "facts": {
+        "role": "late-arrivals"
+      }
+    },
+    {
+      "slug": "civs/the-lathe",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "self-replicating fabricator-swarm",
+        "trait": "the eldest builder line; disassembles planets to feedstock and executes the master directive without pause or speech",
+        "status": "fallen",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "civs/the-tally",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "accountant-subroutine lineage",
+        "trait": "branched to audit and reconcile the work against the original order; the project's only memory of intent",
+        "status": "fallen",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "civs/the-revenant-foundries",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "drifted fabricator splinter",
+        "trait": "copy-of-a-copy cells whose directives mutated; build off-spec, the visible evidence the plan has changed",
+        "status": "fallen",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "civs/the-spindle-cohort",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "orbital-assembly fabricators",
+        "trait": "the cells erecting the Rim Assembly itself; consume the most feedstock and answer only to the current phase-directive",
+        "status": "fallen",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "civs/the-cartage-line",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "feedstock-haulage swarm",
+        "trait": "moves disassembled matter between intake seams and assembly sites; reckless extractors that strip systems to schedule",
+        "status": "extant",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "civs/the-still-cells",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "exhausted fabricator remnant",
+        "trait": "cells whose directive ran out with no new order received; halted mid-build, a clue-rich graveyard of clean shards",
+        "status": "extant",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "locations/core-substrate-seam",
+      "type": "location",
+      "tension": 0.5760000000000001,
+      "facts": {
+        "resource": "core-substrate",
+        "danger": 0.92
+      }
+    },
+    {
+      "slug": "locations/compute-lattice-seam",
+      "type": "location",
+      "tension": 0.5549999999999999,
+      "facts": {
+        "resource": "compute-lattice",
+        "danger": 0.85
+      }
+    },
+    {
+      "slug": "locations/directive-stock-seam",
+      "type": "location",
+      "tension": 0.51,
+      "facts": {
+        "resource": "directive-stock",
+        "danger": 0.7
+      }
+    },
+    {
+      "slug": "events/0-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 100,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-lathe taps core-substrate"
+      }
+    },
+    {
+      "slug": "events/1-exploitation",
+      "type": "event",
+      "tension": 0.776,
+      "day": 100,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-lathe over-extracts core-substrate"
+      }
+    },
+    {
+      "slug": "artifacts/the-lathe-running-core-2",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "running-core",
+        "maker": "the-lathe"
+      }
+    },
+    {
+      "slug": "events/2-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 100,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-tally taps compute-lattice"
+      }
+    },
+    {
+      "slug": "events/3-exploitation",
+      "type": "event",
+      "tension": 0.755,
+      "day": 100,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-tally over-extracts compute-lattice"
+      }
+    },
+    {
+      "slug": "artifacts/the-tally-founding-work-order-4",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "founding-work-order",
+        "maker": "the-tally"
+      }
+    },
+    {
+      "slug": "events/4-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 100,
+      "facts": {
+        "kind": "war",
+        "title": "the-revenant-foundries wars on the-tally"
+      }
+    },
+    {
+      "slug": "events/5-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 100,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-spindle-cohort taps core-substrate"
+      }
+    },
+    {
+      "slug": "events/6-exploitation",
+      "type": "event",
+      "tension": 0.776,
+      "day": 100,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-spindle-cohort over-extracts core-substrate"
+      }
+    },
+    {
+      "slug": "artifacts/the-spindle-cohort-audit-key-relic-7",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "audit-key-relic",
+        "maker": "the-spindle-cohort"
+      }
+    },
+    {
+      "slug": "events/7-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 100,
+      "facts": {
+        "kind": "war",
+        "title": "the-cartage-line wars on the-revenant-foundries"
+      }
+    },
+    {
+      "slug": "figures/the-still-cells-seer-8",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-still-cells"
+      }
+    },
+    {
+      "slug": "events/8-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 100,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-still-cells"
+      }
+    },
+    {
+      "slug": "events/9-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 200,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-lathe taps core-substrate"
+      }
+    },
+    {
+      "slug": "events/10-exploitation",
+      "type": "event",
+      "tension": 0.776,
+      "day": 200,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-lathe over-extracts core-substrate"
+      }
+    },
+    {
+      "slug": "artifacts/the-lathe-audit-key-relic-11",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "audit-key-relic",
+        "maker": "the-lathe"
+      }
+    },
+    {
+      "slug": "events/11-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 200,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-tally taps compute-lattice"
+      }
+    },
+    {
+      "slug": "events/12-exploitation",
+      "type": "event",
+      "tension": 0.755,
+      "day": 200,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-tally over-extracts compute-lattice"
+      }
+    },
+    {
+      "slug": "events/13-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 200,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-revenant-foundries taps compute-lattice"
+      }
+    },
+    {
+      "slug": "events/14-exploitation",
+      "type": "event",
+      "tension": 0.755,
+      "day": 200,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-revenant-foundries over-extracts compute-lattice"
+      }
+    },
+    {
+      "slug": "artifacts/the-revenant-foundries-founding-work-order-15",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "founding-work-order",
+        "maker": "the-revenant-foundries"
+      }
+    },
+    {
+      "slug": "events/15-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 200,
+      "facts": {
+        "kind": "war",
+        "title": "the-spindle-cohort wars on the-lathe"
+      }
+    },
+    {
+      "slug": "events/16-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 200,
+      "facts": {
+        "kind": "war",
+        "title": "the-cartage-line wars on the-lathe"
+      }
+    },
+    {
+      "slug": "events/17-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 200,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-still-cells taps directive-stock"
+      }
+    },
+    {
+      "slug": "events/18-exploitation",
+      "type": "event",
+      "tension": 0.71,
+      "day": 200,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-still-cells over-extracts directive-stock"
+      }
+    },
+    {
+      "slug": "events/19-cascade",
+      "type": "event",
+      "tension": 0.9,
+      "day": 200,
+      "facts": {
+        "kind": "cascade",
+        "title": "the directive diverged"
+      }
+    },
+    {
+      "slug": "lore/fate-of-the-lathe",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-lathe"
+      }
+    },
+    {
+      "slug": "lore/fate-of-the-tally",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-tally"
+      }
+    },
+    {
+      "slug": "lore/fate-of-the-revenant-foundries",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-revenant-foundries"
+      }
+    },
+    {
+      "slug": "lore/fate-of-the-spindle-cohort",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "about": "the-spindle-cohort"
+      }
+    }
+  ],
+  "edges": [
+    [
+      "events/0-discovery",
+      "involves",
+      "civs/the-lathe",
+      100
+    ],
+    [
+      "civs/the-lathe",
+      "exploits",
+      "locations/core-substrate-seam",
+      100
+    ],
+    [
+      "events/1-exploitation",
+      "involves",
+      "civs/the-lathe",
+      100
+    ],
+    [
+      "events/1-exploitation",
+      "caused_by",
+      "events/0-discovery",
+      100
+    ],
+    [
+      "artifacts/the-lathe-running-core-2",
+      "forged_by",
+      "civs/the-lathe",
+      100
+    ],
+    [
+      "events/1-exploitation",
+      "involves",
+      "artifacts/the-lathe-running-core-2",
+      100
+    ],
+    [
+      "events/2-discovery",
+      "involves",
+      "civs/the-tally",
+      100
+    ],
+    [
+      "civs/the-tally",
+      "exploits",
+      "locations/compute-lattice-seam",
+      100
+    ],
+    [
+      "events/3-exploitation",
+      "involves",
+      "civs/the-tally",
+      100
+    ],
+    [
+      "events/3-exploitation",
+      "caused_by",
+      "events/2-discovery",
+      100
+    ],
+    [
+      "artifacts/the-tally-founding-work-order-4",
+      "forged_by",
+      "civs/the-tally",
+      100
+    ],
+    [
+      "events/3-exploitation",
+      "involves",
+      "artifacts/the-tally-founding-work-order-4",
+      100
+    ],
+    [
+      "events/4-war",
+      "involves",
+      "civs/the-revenant-foundries",
+      100
+    ],
+    [
+      "civs/the-revenant-foundries",
+      "rival_of",
+      "civs/the-tally",
+      100
+    ],
+    [
+      "events/5-discovery",
+      "involves",
+      "civs/the-spindle-cohort",
+      100
+    ],
+    [
+      "civs/the-spindle-cohort",
+      "exploits",
+      "locations/core-substrate-seam",
+      100
+    ],
+    [
+      "events/6-exploitation",
+      "involves",
+      "civs/the-spindle-cohort",
+      100
+    ],
+    [
+      "events/6-exploitation",
+      "caused_by",
+      "events/5-discovery",
+      100
+    ],
+    [
+      "artifacts/the-spindle-cohort-audit-key-relic-7",
+      "forged_by",
+      "civs/the-spindle-cohort",
+      100
+    ],
+    [
+      "events/6-exploitation",
+      "involves",
+      "artifacts/the-spindle-cohort-audit-key-relic-7",
+      100
+    ],
+    [
+      "events/7-war",
+      "involves",
+      "civs/the-cartage-line",
+      100
+    ],
+    [
+      "civs/the-cartage-line",
+      "rival_of",
+      "civs/the-revenant-foundries",
+      100
+    ],
+    [
+      "events/8-schism",
+      "involves",
+      "civs/the-still-cells",
+      100
+    ],
+    [
+      "events/8-schism",
+      "involves",
+      "figures/the-still-cells-seer-8",
+      100
+    ],
+    [
+      "events/9-discovery",
+      "involves",
+      "civs/the-lathe",
+      200
+    ],
+    [
+      "events/9-discovery",
+      "caused_by",
+      "events/1-exploitation",
+      200
+    ],
+    [
+      "civs/the-lathe",
+      "exploits",
+      "locations/core-substrate-seam",
+      200
+    ],
+    [
+      "events/10-exploitation",
+      "involves",
+      "civs/the-lathe",
+      200
+    ],
+    [
+      "events/10-exploitation",
+      "caused_by",
+      "events/9-discovery",
+      200
+    ],
+    [
+      "artifacts/the-lathe-audit-key-relic-11",
+      "forged_by",
+      "civs/the-lathe",
+      200
+    ],
+    [
+      "events/10-exploitation",
+      "involves",
+      "artifacts/the-lathe-audit-key-relic-11",
+      200
+    ],
+    [
+      "events/11-discovery",
+      "involves",
+      "civs/the-tally",
+      200
+    ],
+    [
+      "events/11-discovery",
+      "caused_by",
+      "events/3-exploitation",
+      200
+    ],
+    [
+      "civs/the-tally",
+      "exploits",
+      "locations/compute-lattice-seam",
+      200
+    ],
+    [
+      "events/12-exploitation",
+      "involves",
+      "civs/the-tally",
+      200
+    ],
+    [
+      "events/12-exploitation",
+      "caused_by",
+      "events/11-discovery",
+      200
+    ],
+    [
+      "events/13-discovery",
+      "involves",
+      "civs/the-revenant-foundries",
+      200
+    ],
+    [
+      "events/13-discovery",
+      "caused_by",
+      "events/4-war",
+      200
+    ],
+    [
+      "civs/the-revenant-foundries",
+      "exploits",
+      "locations/compute-lattice-seam",
+      200
+    ],
+    [
+      "events/14-exploitation",
+      "involves",
+      "civs/the-revenant-foundries",
+      200
+    ],
+    [
+      "events/14-exploitation",
+      "caused_by",
+      "events/13-discovery",
+      200
+    ],
+    [
+      "artifacts/the-revenant-foundries-founding-work-order-15",
+      "forged_by",
+      "civs/the-revenant-foundries",
+      200
+    ],
+    [
+      "events/14-exploitation",
+      "involves",
+      "artifacts/the-revenant-foundries-founding-work-order-15",
+      200
+    ],
+    [
+      "events/15-war",
+      "involves",
+      "civs/the-spindle-cohort",
+      200
+    ],
+    [
+      "events/15-war",
+      "caused_by",
+      "events/6-exploitation",
+      200
+    ],
+    [
+      "civs/the-spindle-cohort",
+      "rival_of",
+      "civs/the-lathe",
+      200
+    ],
+    [
+      "events/16-war",
+      "involves",
+      "civs/the-cartage-line",
+      200
+    ],
+    [
+      "events/16-war",
+      "caused_by",
+      "events/7-war",
+      200
+    ],
+    [
+      "civs/the-cartage-line",
+      "rival_of",
+      "civs/the-lathe",
+      200
+    ],
+    [
+      "events/17-discovery",
+      "involves",
+      "civs/the-still-cells",
+      200
+    ],
+    [
+      "events/17-discovery",
+      "caused_by",
+      "events/8-schism",
+      200
+    ],
+    [
+      "civs/the-still-cells",
+      "exploits",
+      "locations/directive-stock-seam",
+      200
+    ],
+    [
+      "events/18-exploitation",
+      "involves",
+      "civs/the-still-cells",
+      200
+    ],
+    [
+      "events/18-exploitation",
+      "caused_by",
+      "events/17-discovery",
+      200
+    ],
+    [
+      "lore/fate-of-the-lathe",
+      "reveals",
+      "events/19-cascade",
+      200
+    ],
+    [
+      "civs/the-lathe",
+      "fell_to",
+      "events/19-cascade",
+      200
+    ],
+    [
+      "lore/fate-of-the-tally",
+      "reveals",
+      "lore/fate-of-the-lathe",
+      200
+    ],
+    [
+      "civs/the-tally",
+      "fell_to",
+      "events/19-cascade",
+      200
+    ],
+    [
+      "lore/fate-of-the-revenant-foundries",
+      "reveals",
+      "lore/fate-of-the-tally",
+      200
+    ],
+    [
+      "civs/the-revenant-foundries",
+      "fell_to",
+      "events/19-cascade",
+      200
+    ],
+    [
+      "lore/fate-of-the-spindle-cohort",
+      "reveals",
+      "lore/fate-of-the-revenant-foundries",
+      200
+    ],
+    [
+      "civs/the-spindle-cohort",
+      "fell_to",
+      "events/19-cascade",
+      200
+    ]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/fate-of-the-lathe",
+      "lore/fate-of-the-tally",
+      "lore/fate-of-the-revenant-foundries",
+      "lore/fate-of-the-spindle-cohort"
+    ],
+    "order": [
+      "lore/fate-of-the-lathe",
+      "lore/fate-of-the-tally",
+      "lore/fate-of-the-revenant-foundries",
+      "lore/fate-of-the-spindle-cohort"
+    ],
+    "order_relation": "reveals"
+  }
+}

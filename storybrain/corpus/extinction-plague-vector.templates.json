@@ -1,0 +1,17 @@
+{
+  "setting": "A self-replicating extinction-vector tore through an alien civilization, but its makers are not dead — they are SEALED. They went into quarantine-sleep behind their own unfinished containment, dormant in vaults alongside the dormant carriers of the thing that hunted them; waking either is the threat. The story is PRESENT TENSE: the vector still sleeps in sealed worlds and stirs in drifting carriers, and a human colony has just arrived inside its range. The engine is CONTAINMENT, not extraction — hunting quarantine-relics and the scattered fragments of a forward-facing containment recipe (identify the vector -> find its dormancy trigger -> locate the keystone relic -> assemble the seal) is a race to finish the seal the makers never completed, where every relic cracked might reseed the plague here, now.",
+  "civs": [
+    { "name": "the-cradlekeepers", "archetype": "dormant-xeno-sleepers", "trait": "the makers themselves, sealed in quarantine-sleep behind their own unfinished containment; wakeable as allies — or already carriers, no one knows which vault holds which", "greed": 0.15 },
+    { "name": "the-stillborn-host", "archetype": "dormant-xeno-carriers", "trait": "sleepers the vector reached first; dormant carriers whose waking is itself the outbreak, sealed beside the makers they can no longer be told apart from", "greed": 0.1 },
+    { "name": "the-vector", "archetype": "dormant-self-replicating-plague", "trait": "the extinction-agent itself — nanite swarm, mind-virus, or engineered pathogen depending on the world — sleeping in the relics' lore and the carriers' marrow, stirring whenever a seal is broken", "greed": 0.05 }
+  ],
+  "resources": [
+    { "name": "quarantine-foam", "danger": 0.2 },
+    { "name": "dormancy-salt", "danger": 0.35 }
+  ],
+  "artifactKinds": ["quarantine-relic", "cure-fragment", "containment-keystone", "dormancy-trigger", "sealed-vault-key", "recipe-shard"],
+  "epochs": 8,
+  "cascadeThreshold": 1.5,
+  "order_relation": "prerequisite",
+  "climax_label": "the seal that was never finished"
+}

@@ -1,0 +1,148 @@
+{
+  "nodes": [
+    { "slug": "factions/the-inheritor-fleet", "type": "faction", "tension": 0.45, "facts": { "role": "human late-arrivals", "status": "exploring", "note": "the colony ship Cassava and its descendants, woken inside a working megastructure" } },
+    { "slug": "factions/the-keybearers", "type": "faction", "tension": 0.6, "facts": { "role": "human salvage guild", "creed": "every dark region must be lit", "status": "ascendant" } },
+    { "slug": "factions/the-warders", "type": "faction", "tension": 0.65, "facts": { "role": "human caution-order", "creed": "some rooms were sealed for a reason; do not finish what the builders abandoned", "status": "growing" } },
+
+    { "slug": "civs/the-architects", "type": "faction", "tension": 0.5, "facts": { "alien_type": "absent-builders-no-corpse", "trait": "the vanished makers; left a lit machine and no remains, no graves, no war", "status": "absent", "note": "genuinely other, genuinely gone" } },
+    { "slug": "civs/the-keepers", "type": "faction", "tension": 0.5, "facts": { "alien_type": "absent-caretaker-order", "trait": "successor caretakers who tended and then sequenced the shutdowns before they too departed", "status": "absent" } },
+    { "slug": "civs/the-first-listeners", "type": "faction", "tension": 0.45, "facts": { "alien_type": "absent-inheritor-pilgrims", "trait": "an earlier inheritor species that woke pieces, learned part of the purpose, and left without explanation", "status": "absent" } },
+
+    { "slug": "locations/the-girdling-shell", "type": "location", "tension": 0.4, "facts": { "scale": "encloses the whole star", "state": "warm, lit, drinking sunlight", "resource": "shell-lumen" } },
+    { "slug": "locations/the-dark-rings", "type": "location", "tension": 0.55, "facts": { "state": "dormant, unpowered nested rings", "note": "wake one ring per key" } },
+    { "slug": "locations/the-core-vault", "type": "location", "tension": 0.7, "facts": { "resource": "core-matter", "danger": 0.75, "state": "sealed; the most-warded region" } },
+    { "slug": "locations/the-empty-cradles", "type": "location", "tension": 0.6, "facts": { "note": "habitats sized for the builders, swept clean, no bodies, beds made", "state": "dormant" } },
+    { "slug": "locations/the-listening-spire", "type": "location", "tension": 0.5, "facts": { "note": "an antenna ring the First Listeners woke and then abandoned", "state": "half-lit" } },
+    { "slug": "locations/the-current-weir", "type": "location", "tension": 0.55, "facts": { "resource": "ring-current", "danger": 0.5, "state": "throttled" } },
+
+    { "slug": "figures/dr-anwen-sole", "type": "colonist", "tension": 0.5, "facts": { "role": "lead archaeo-engineer of the Inheritor Fleet", "drive": "wants to read the whole sequence before lighting the last key" } },
+    { "slug": "figures/quartermaster-vale", "type": "colonist", "tension": 0.6, "facts": { "role": "Keybearer quartermaster", "drive": "light everything; the power solves the colony's scarcity" } },
+    { "slug": "figures/sister-okonkwo", "type": "colonist", "tension": 0.6, "facts": { "role": "Warder voice", "drive": "the sealed core was sealed last and on purpose" } },
+    { "slug": "figures/the-listener-glyph", "type": "figure", "tension": 0.45, "facts": { "role": "the First Listeners' parting message, addressed to whoever comes next" } },
+    { "slug": "figures/the-last-keeper", "type": "figure", "tension": 0.5, "facts": { "role": "the caretaker who wrote the shutdown codex and walked into the dark last" } },
+    { "slug": "figures/engineer-tan", "type": "colonist", "tension": 0.5, "facts": { "role": "Inheritor Fleet power-systems lead", "drive": "map every region's draw before anyone fires the core" } },
+
+    { "slug": "beliefs/the-gift-doctrine", "type": "belief", "tension": 0.5, "facts": { "held_by": "the-keybearers", "claim": "the builders left the machine on FOR us; finishing it is our inheritance" } },
+    { "slug": "beliefs/the-trap-doctrine", "type": "belief", "tension": 0.55, "facts": { "held_by": "the-warders", "claim": "the dark was made on purpose; the final key is a fuse, not a gift" } },
+    { "slug": "curses/the-one-shot", "type": "curse", "tension": 0.7, "facts": { "claim": "the departure can fire only once; whoever completes the sequence cannot take it back" } },
+
+    { "slug": "artifacts/the-threshold-key", "type": "artifact", "tension": 0.6, "facts": { "archetype": "control-key", "wakes": "the-dark-rings", "found_in": "the-empty-cradles" } },
+    { "slug": "artifacts/the-cradle-sigil", "type": "artifact", "tension": 0.6, "facts": { "archetype": "access-sigil", "wakes": "the-empty-cradles" } },
+    { "slug": "artifacts/the-keepers-codex", "type": "artifact", "tension": 0.7, "facts": { "archetype": "activation-codex", "note": "the shutdown sequence, read backwards = the build sequence" } },
+    { "slug": "artifacts/the-listeners-relay", "type": "artifact", "tension": 0.6, "facts": { "archetype": "region-key", "wakes": "the-listening-spire" } },
+    { "slug": "artifacts/the-core-ward", "type": "artifact", "tension": 0.8, "facts": { "archetype": "ward-sigil", "guards": "the-core-vault", "note": "a key that REFUSES; the only one built to keep a room shut" } },
+    { "slug": "artifacts/the-final-fragment", "type": "artifact", "tension": 0.85, "facts": { "archetype": "purpose-fragment", "note": "the last key; lighting it completes the sequence" } },
+
+    { "slug": "lore/the-shell-was-never-finished-by-accident", "type": "lore", "tension": 0.7, "facts": { "subtype": "fragment", "revealed": false, "claim": "the structure is not a ruin; it was switched OFF in deliberate order, region by region" } },
+    { "slug": "lore/the-keepers-sequenced-the-dark", "type": "lore", "tension": 0.75, "facts": { "subtype": "fragment", "revealed": false, "claim": "the caretakers powered down each ring in reverse build-order after the makers were already gone" } },
+    { "slug": "lore/the-listeners-heard-the-aim", "type": "lore", "tension": 0.75, "facts": { "subtype": "fragment", "revealed": false, "claim": "the First Listeners woke the spire and learned the structure points OUTWARD — it is an emitter, not a home" } },
+    { "slug": "lore/the-purpose-was-a-departure", "type": "lore", "tension": 0.85, "facts": { "subtype": "fragment", "revealed": false, "claim": "the megastructure is a launch instrument; its completed function was to send the builders somewhere the structure could not follow" } },
+    { "slug": "lore/the-core-is-the-engine-of-leaving", "type": "lore", "tension": 0.9, "facts": { "subtype": "fragment", "revealed": false, "claim": "the warded core holds the firing matter; completing the sequence aims and fires the departure — once" } },
+
+    { "slug": "lore/shell-lumen-is-free-power", "type": "lore", "tension": 0.4, "facts": { "claim": "the lit shell yields effectively unlimited clean power to whoever holds a control-key" } },
+    { "slug": "lore/cradles-were-left-tidy", "type": "lore", "tension": 0.5, "facts": { "claim": "the builders' habitats were cleaned and closed, not fled — no panic, no bodies" } },
+    { "slug": "lore/keepers-left-last", "type": "lore", "tension": 0.55, "facts": { "claim": "the caretakers outlived the makers and chose to follow them, leaving the codex for the next inheritor" } },
+    { "slug": "lore/relay-still-listens", "type": "lore", "tension": 0.5, "facts": { "claim": "the spire still receives a faint return signal from wherever the builders went" } },
+    { "slug": "lore/core-matter-is-volatile", "type": "lore", "tension": 0.6, "facts": { "claim": "core-matter powers the firing but is single-use and dangerous to wake" } },
+    { "slug": "lore/the-ward-is-a-warning", "type": "lore", "tension": 0.7, "facts": { "claim": "the core-ward is the only sigil built to deny entry; the builders wanted the last step to require deliberate choice" } },
+
+    { "slug": "arc/finish-it-or-leave-it-dark", "type": "arc", "tension": 0.9, "facts": { "state": "open", "stakes": "completing the sequence either gifts humanity a star-engine or fires a departure no one can recall", "resolution": "undecided" } }
+  ],
+  "edges": [
+    ["factions/the-inheritor-fleet", "explores", "locations/the-girdling-shell"],
+    ["factions/the-keybearers", "splintered_from", "factions/the-inheritor-fleet"],
+    ["factions/the-warders", "splintered_from", "factions/the-inheritor-fleet"],
+    ["factions/the-keybearers", "rival_of", "factions/the-warders"],
+
+    ["figures/dr-anwen-sole", "leads", "factions/the-inheritor-fleet"],
+    ["figures/quartermaster-vale", "leads", "factions/the-keybearers"],
+    ["figures/sister-okonkwo", "leads", "factions/the-warders"],
+
+    ["civs/the-keepers", "succeeded", "civs/the-architects"],
+    ["civs/the-first-listeners", "came_before", "factions/the-inheritor-fleet"],
+    ["civs/the-architects", "built", "locations/the-girdling-shell"],
+    ["civs/the-keepers", "darkened", "locations/the-dark-rings"],
+    ["civs/the-first-listeners", "woke", "locations/the-listening-spire"],
+
+    ["artifacts/the-threshold-key", "found_in", "locations/the-empty-cradles"],
+    ["artifacts/the-threshold-key", "wakes", "locations/the-dark-rings"],
+    ["artifacts/the-cradle-sigil", "wakes", "locations/the-empty-cradles"],
+    ["artifacts/the-listeners-relay", "wakes", "locations/the-listening-spire"],
+    ["artifacts/the-core-ward", "guards", "locations/the-core-vault"],
+
+    ["artifacts/the-cradle-sigil", "enables", "artifacts/the-threshold-key"],
+    ["artifacts/the-threshold-key", "enables", "artifacts/the-keepers-codex"],
+    ["artifacts/the-keepers-codex", "enables", "artifacts/the-listeners-relay"],
+    ["artifacts/the-listeners-relay", "enables", "artifacts/the-final-fragment"],
+
+    ["artifacts/the-cradle-sigil", "drops", "lore/the-shell-was-never-finished-by-accident"],
+    ["artifacts/the-cradle-sigil", "drops", "lore/cradles-were-left-tidy"],
+    ["artifacts/the-cradle-sigil", "drops", "lore/shell-lumen-is-free-power"],
+
+    ["artifacts/the-threshold-key", "drops", "lore/the-keepers-sequenced-the-dark"],
+    ["artifacts/the-threshold-key", "drops", "lore/shell-lumen-is-free-power"],
+    ["artifacts/the-threshold-key", "drops", "lore/keepers-left-last"],
+
+    ["artifacts/the-keepers-codex", "drops", "lore/the-keepers-sequenced-the-dark"],
+    ["artifacts/the-keepers-codex", "drops", "lore/keepers-left-last"],
+    ["artifacts/the-keepers-codex", "drops", "lore/the-shell-was-never-finished-by-accident"],
+
+    ["artifacts/the-listeners-relay", "drops", "lore/the-listeners-heard-the-aim"],
+    ["artifacts/the-listeners-relay", "drops", "lore/relay-still-listens"],
+    ["artifacts/the-listeners-relay", "drops", "lore/the-purpose-was-a-departure"],
+
+    ["artifacts/the-core-ward", "drops", "lore/the-ward-is-a-warning"],
+    ["artifacts/the-core-ward", "drops", "lore/core-matter-is-volatile"],
+    ["artifacts/the-core-ward", "drops", "lore/the-core-is-the-engine-of-leaving"],
+
+    ["artifacts/the-final-fragment", "drops", "lore/the-purpose-was-a-departure"],
+    ["artifacts/the-final-fragment", "drops", "lore/the-core-is-the-engine-of-leaving"],
+    ["artifacts/the-final-fragment", "drops", "lore/the-listeners-heard-the-aim"],
+
+    ["lore/the-shell-was-never-finished-by-accident", "enables", "lore/the-keepers-sequenced-the-dark"],
+    ["lore/the-keepers-sequenced-the-dark", "enables", "lore/the-listeners-heard-the-aim"],
+    ["lore/the-listeners-heard-the-aim", "enables", "lore/the-purpose-was-a-departure"],
+    ["lore/the-purpose-was-a-departure", "enables", "lore/the-core-is-the-engine-of-leaving"],
+
+    ["lore/the-shell-was-never-finished-by-accident", "reveals", "locations/the-girdling-shell"],
+    ["lore/the-keepers-sequenced-the-dark", "reveals", "civs/the-keepers"],
+    ["lore/the-listeners-heard-the-aim", "reveals", "civs/the-first-listeners"],
+    ["lore/the-purpose-was-a-departure", "reveals", "civs/the-architects"],
+    ["lore/the-core-is-the-engine-of-leaving", "reveals", "locations/the-core-vault"],
+    ["lore/the-ward-is-a-warning", "reveals", "artifacts/the-core-ward"],
+
+    ["artifacts/the-final-fragment", "enables", "arc/finish-it-or-leave-it-dark"],
+    ["figures/quartermaster-vale", "wants", "arc/finish-it-or-leave-it-dark"],
+    ["figures/sister-okonkwo", "resists", "arc/finish-it-or-leave-it-dark"],
+    ["figures/dr-anwen-sole", "investigates", "arc/finish-it-or-leave-it-dark"],
+    ["figures/the-listener-glyph", "warns", "factions/the-inheritor-fleet"],
+
+    ["figures/the-last-keeper", "wrote", "artifacts/the-keepers-codex"],
+    ["figures/the-last-keeper", "member_of", "civs/the-keepers"],
+    ["figures/engineer-tan", "member_of", "factions/the-inheritor-fleet"],
+    ["figures/engineer-tan", "studies", "locations/the-current-weir"],
+
+    ["beliefs/the-gift-doctrine", "held_by", "factions/the-keybearers"],
+    ["beliefs/the-trap-doctrine", "held_by", "factions/the-warders"],
+    ["beliefs/the-gift-doctrine", "opposes", "beliefs/the-trap-doctrine"],
+    ["curses/the-one-shot", "binds", "arc/finish-it-or-leave-it-dark"],
+    ["curses/the-one-shot", "warns", "figures/quartermaster-vale"]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/the-shell-was-never-finished-by-accident",
+      "lore/the-keepers-sequenced-the-dark",
+      "lore/the-listeners-heard-the-aim",
+      "lore/the-purpose-was-a-departure",
+      "lore/the-core-is-the-engine-of-leaving"
+    ],
+    "order": [
+      "lore/the-shell-was-never-finished-by-accident",
+      "lore/the-keepers-sequenced-the-dark",
+      "lore/the-listeners-heard-the-aim",
+      "lore/the-purpose-was-a-departure",
+      "lore/the-core-is-the-engine-of-leaving"
+    ],
+    "order_relation": "enables"
+  }
+}

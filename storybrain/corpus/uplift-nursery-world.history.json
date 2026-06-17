@@ -1,0 +1,1246 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.4,
+      "facts": {
+        "role": "late-arrivals"
+      }
+    },
+    {
+      "slug": "civs/the-gardeners",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "hidden-stewards-unseen",
+        "trait": "present and acting, never seen — they shape the world by hand and watch; you feel their attention, never their bodies",
+        "status": "extant",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "civs/the-loam-tenders",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "hidden-subtended-caste",
+        "trait": "a lesser hidden caste that maintains the soil-shrines and gene-looms between the gardeners' great workings",
+        "status": "extant",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "civs/the-first-cultivars",
+      "type": "faction",
+      "tension": 0.55,
+      "facts": {
+        "alien_type": "cultivated-lineage-uplifted",
+        "trait": "an earlier lineage the gardeners grew to sapience here, then either harvested or moved on — the precedent the colony is unknowingly repeating",
+        "status": "extant",
+        "wound": 0
+      }
+    },
+    {
+      "slug": "locations/engineered-biosphere-seam",
+      "type": "location",
+      "tension": 0.5700000000000001,
+      "facts": {
+        "resource": "engineered-biosphere",
+        "danger": 0.9
+      }
+    },
+    {
+      "slug": "locations/gene-loam-seam",
+      "type": "location",
+      "tension": 0.46499999999999997,
+      "facts": {
+        "resource": "gene-loam",
+        "danger": 0.55
+      }
+    },
+    {
+      "slug": "locations/shrine-sap-seam",
+      "type": "location",
+      "tension": 0.39,
+      "facts": {
+        "resource": "shrine-sap",
+        "danger": 0.3
+      }
+    },
+    {
+      "slug": "events/0-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 100,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-gardeners taps engineered-biosphere"
+      }
+    },
+    {
+      "slug": "events/1-exploitation",
+      "type": "event",
+      "tension": 0.77,
+      "day": 100,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-gardeners over-extracts engineered-biosphere"
+      }
+    },
+    {
+      "slug": "events/2-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 100,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-loam-tenders taps shrine-sap"
+      }
+    },
+    {
+      "slug": "events/3-exploitation",
+      "type": "event",
+      "tension": 0.59,
+      "day": 100,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-loam-tenders over-extracts shrine-sap"
+      }
+    },
+    {
+      "slug": "artifacts/the-loam-tenders-gene-loom-4",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "gene-loom",
+        "maker": "the-loam-tenders"
+      }
+    },
+    {
+      "slug": "events/4-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 100,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-first-cultivars taps gene-loam"
+      }
+    },
+    {
+      "slug": "events/5-exploitation",
+      "type": "event",
+      "tension": 0.665,
+      "day": 100,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-first-cultivars over-extracts gene-loam"
+      }
+    },
+    {
+      "slug": "artifacts/the-first-cultivars-terraforming-seed-6",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "terraforming-seed",
+        "maker": "the-first-cultivars"
+      }
+    },
+    {
+      "slug": "events/6-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 200,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-gardeners taps shrine-sap"
+      }
+    },
+    {
+      "slug": "events/7-exploitation",
+      "type": "event",
+      "tension": 0.59,
+      "day": 200,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-gardeners over-extracts shrine-sap"
+      }
+    },
+    {
+      "slug": "artifacts/the-gardeners-terraforming-seed-8",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "terraforming-seed",
+        "maker": "the-gardeners"
+      }
+    },
+    {
+      "slug": "events/8-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 200,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-loam-tenders taps engineered-biosphere"
+      }
+    },
+    {
+      "slug": "events/9-exploitation",
+      "type": "event",
+      "tension": 0.77,
+      "day": 200,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-loam-tenders over-extracts engineered-biosphere"
+      }
+    },
+    {
+      "slug": "events/10-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 200,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-first-cultivars taps gene-loam"
+      }
+    },
+    {
+      "slug": "events/11-exploitation",
+      "type": "event",
+      "tension": 0.665,
+      "day": 200,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-first-cultivars over-extracts gene-loam"
+      }
+    },
+    {
+      "slug": "events/12-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 300,
+      "facts": {
+        "kind": "war",
+        "title": "the-gardeners wars on the-loam-tenders"
+      }
+    },
+    {
+      "slug": "events/13-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 300,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-loam-tenders taps gene-loam"
+      }
+    },
+    {
+      "slug": "events/14-exploitation",
+      "type": "event",
+      "tension": 0.665,
+      "day": 300,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-loam-tenders over-extracts gene-loam"
+      }
+    },
+    {
+      "slug": "artifacts/the-loam-tenders-attention-bell-15",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "attention-bell",
+        "maker": "the-loam-tenders"
+      }
+    },
+    {
+      "slug": "events/15-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 300,
+      "facts": {
+        "kind": "war",
+        "title": "the-first-cultivars wars on the-gardeners"
+      }
+    },
+    {
+      "slug": "figures/the-gardeners-seer-16",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-gardeners"
+      }
+    },
+    {
+      "slug": "events/16-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 400,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-gardeners"
+      }
+    },
+    {
+      "slug": "events/17-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 400,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-loam-tenders taps shrine-sap"
+      }
+    },
+    {
+      "slug": "events/18-exploitation",
+      "type": "event",
+      "tension": 0.59,
+      "day": 400,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-loam-tenders over-extracts shrine-sap"
+      }
+    },
+    {
+      "slug": "events/19-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 400,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-first-cultivars taps gene-loam"
+      }
+    },
+    {
+      "slug": "events/20-exploitation",
+      "type": "event",
+      "tension": 0.665,
+      "day": 400,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-first-cultivars over-extracts gene-loam"
+      }
+    },
+    {
+      "slug": "figures/the-gardeners-seer-21",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-gardeners"
+      }
+    },
+    {
+      "slug": "events/21-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 500,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-gardeners"
+      }
+    },
+    {
+      "slug": "events/22-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 500,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-loam-tenders taps gene-loam"
+      }
+    },
+    {
+      "slug": "events/23-exploitation",
+      "type": "event",
+      "tension": 0.665,
+      "day": 500,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-loam-tenders over-extracts gene-loam"
+      }
+    },
+    {
+      "slug": "artifacts/the-loam-tenders-shaping-tool-24",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "shaping-tool",
+        "maker": "the-loam-tenders"
+      }
+    },
+    {
+      "slug": "events/24-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 500,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-first-cultivars taps gene-loam"
+      }
+    },
+    {
+      "slug": "events/25-exploitation",
+      "type": "event",
+      "tension": 0.665,
+      "day": 500,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-first-cultivars over-extracts gene-loam"
+      }
+    },
+    {
+      "slug": "artifacts/the-first-cultivars-attention-bell-26",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "attention-bell",
+        "maker": "the-first-cultivars"
+      }
+    },
+    {
+      "slug": "events/26-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 600,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-gardeners taps shrine-sap"
+      }
+    },
+    {
+      "slug": "events/27-exploitation",
+      "type": "event",
+      "tension": 0.59,
+      "day": 600,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-gardeners over-extracts shrine-sap"
+      }
+    },
+    {
+      "slug": "events/28-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 600,
+      "facts": {
+        "kind": "war",
+        "title": "the-loam-tenders wars on the-gardeners"
+      }
+    },
+    {
+      "slug": "events/29-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 600,
+      "facts": {
+        "kind": "war",
+        "title": "the-first-cultivars wars on the-gardeners"
+      }
+    },
+    {
+      "slug": "events/30-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 700,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-gardeners taps engineered-biosphere"
+      }
+    },
+    {
+      "slug": "events/31-exploitation",
+      "type": "event",
+      "tension": 0.77,
+      "day": 700,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-gardeners over-extracts engineered-biosphere"
+      }
+    },
+    {
+      "slug": "artifacts/the-gardeners-gene-loom-32",
+      "type": "artifact",
+      "tension": 0.6,
+      "facts": {
+        "archetype": "gene-loom",
+        "maker": "the-gardeners"
+      }
+    },
+    {
+      "slug": "figures/the-loam-tenders-seer-32",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-loam-tenders"
+      }
+    },
+    {
+      "slug": "events/32-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 700,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-loam-tenders"
+      }
+    },
+    {
+      "slug": "figures/the-first-cultivars-seer-33",
+      "type": "colonist",
+      "tension": 0.4,
+      "facts": {
+        "role": "schismatic seer",
+        "civ": "the-first-cultivars"
+      }
+    },
+    {
+      "slug": "events/33-schism",
+      "type": "event",
+      "tension": 0.45,
+      "day": 700,
+      "facts": {
+        "kind": "schism",
+        "title": "a seer rises among the-first-cultivars"
+      }
+    },
+    {
+      "slug": "events/34-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 800,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-gardeners taps gene-loam"
+      }
+    },
+    {
+      "slug": "events/35-exploitation",
+      "type": "event",
+      "tension": 0.665,
+      "day": 800,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-gardeners over-extracts gene-loam"
+      }
+    },
+    {
+      "slug": "events/36-discovery",
+      "type": "event",
+      "tension": 0.4,
+      "day": 800,
+      "facts": {
+        "kind": "discovery",
+        "title": "the-loam-tenders taps shrine-sap"
+      }
+    },
+    {
+      "slug": "events/37-exploitation",
+      "type": "event",
+      "tension": 0.59,
+      "day": 800,
+      "facts": {
+        "kind": "exploitation",
+        "title": "the-loam-tenders over-extracts shrine-sap"
+      }
+    },
+    {
+      "slug": "events/38-war",
+      "type": "event",
+      "tension": 0.6,
+      "day": 800,
+      "facts": {
+        "kind": "war",
+        "title": "the-first-cultivars wars on the-loam-tenders"
+      }
+    }
+  ],
+  "edges": [
+    [
+      "events/0-discovery",
+      "involves",
+      "civs/the-gardeners",
+      100
+    ],
+    [
+      "civs/the-gardeners",
+      "exploits",
+      "locations/engineered-biosphere-seam",
+      100
+    ],
+    [
+      "events/1-exploitation",
+      "involves",
+      "civs/the-gardeners",
+      100
+    ],
+    [
+      "events/1-exploitation",
+      "caused_by",
+      "events/0-discovery",
+      100
+    ],
+    [
+      "events/2-discovery",
+      "involves",
+      "civs/the-loam-tenders",
+      100
+    ],
+    [
+      "civs/the-loam-tenders",
+      "exploits",
+      "locations/shrine-sap-seam",
+      100
+    ],
+    [
+      "events/3-exploitation",
+      "involves",
+      "civs/the-loam-tenders",
+      100
+    ],
+    [
+      "events/3-exploitation",
+      "caused_by",
+      "events/2-discovery",
+      100
+    ],
+    [
+      "artifacts/the-loam-tenders-gene-loom-4",
+      "forged_by",
+      "civs/the-loam-tenders",
+      100
+    ],
+    [
+      "events/3-exploitation",
+      "involves",
+      "artifacts/the-loam-tenders-gene-loom-4",
+      100
+    ],
+    [
+      "events/4-discovery",
+      "involves",
+      "civs/the-first-cultivars",
+      100
+    ],
+    [
+      "civs/the-first-cultivars",
+      "exploits",
+      "locations/gene-loam-seam",
+      100
+    ],
+    [
+      "events/5-exploitation",
+      "involves",
+      "civs/the-first-cultivars",
+      100
+    ],
+    [
+      "events/5-exploitation",
+      "caused_by",
+      "events/4-discovery",
+      100
+    ],
+    [
+      "artifacts/the-first-cultivars-terraforming-seed-6",
+      "forged_by",
+      "civs/the-first-cultivars",
+      100
+    ],
+    [
+      "events/5-exploitation",
+      "involves",
+      "artifacts/the-first-cultivars-terraforming-seed-6",
+      100
+    ],
+    [
+      "events/6-discovery",
+      "involves",
+      "civs/the-gardeners",
+      200
+    ],
+    [
+      "events/6-discovery",
+      "caused_by",
+      "events/1-exploitation",
+      200
+    ],
+    [
+      "civs/the-gardeners",
+      "exploits",
+      "locations/shrine-sap-seam",
+      200
+    ],
+    [
+      "events/7-exploitation",
+      "involves",
+      "civs/the-gardeners",
+      200
+    ],
+    [
+      "events/7-exploitation",
+      "caused_by",
+      "events/6-discovery",
+      200
+    ],
+    [
+      "artifacts/the-gardeners-terraforming-seed-8",
+      "forged_by",
+      "civs/the-gardeners",
+      200
+    ],
+    [
+      "events/7-exploitation",
+      "involves",
+      "artifacts/the-gardeners-terraforming-seed-8",
+      200
+    ],
+    [
+      "events/8-discovery",
+      "involves",
+      "civs/the-loam-tenders",
+      200
+    ],
+    [
+      "events/8-discovery",
+      "caused_by",
+      "events/3-exploitation",
+      200
+    ],
+    [
+      "civs/the-loam-tenders",
+      "exploits",
+      "locations/engineered-biosphere-seam",
+      200
+    ],
+    [
+      "events/9-exploitation",
+      "involves",
+      "civs/the-loam-tenders",
+      200
+    ],
+    [
+      "events/9-exploitation",
+      "caused_by",
+      "events/8-discovery",
+      200
+    ],
+    [
+      "events/10-discovery",
+      "involves",
+      "civs/the-first-cultivars",
+      200
+    ],
+    [
+      "events/10-discovery",
+      "caused_by",
+      "events/5-exploitation",
+      200
+    ],
+    [
+      "civs/the-first-cultivars",
+      "exploits",
+      "locations/gene-loam-seam",
+      200
+    ],
+    [
+      "events/11-exploitation",
+      "involves",
+      "civs/the-first-cultivars",
+      200
+    ],
+    [
+      "events/11-exploitation",
+      "caused_by",
+      "events/10-discovery",
+      200
+    ],
+    [
+      "events/12-war",
+      "involves",
+      "civs/the-gardeners",
+      300
+    ],
+    [
+      "events/12-war",
+      "caused_by",
+      "events/7-exploitation",
+      300
+    ],
+    [
+      "civs/the-gardeners",
+      "rival_of",
+      "civs/the-loam-tenders",
+      300
+    ],
+    [
+      "events/13-discovery",
+      "involves",
+      "civs/the-loam-tenders",
+      300
+    ],
+    [
+      "events/13-discovery",
+      "caused_by",
+      "events/9-exploitation",
+      300
+    ],
+    [
+      "civs/the-loam-tenders",
+      "exploits",
+      "locations/gene-loam-seam",
+      300
+    ],
+    [
+      "events/14-exploitation",
+      "involves",
+      "civs/the-loam-tenders",
+      300
+    ],
+    [
+      "events/14-exploitation",
+      "caused_by",
+      "events/13-discovery",
+      300
+    ],
+    [
+      "artifacts/the-loam-tenders-attention-bell-15",
+      "forged_by",
+      "civs/the-loam-tenders",
+      300
+    ],
+    [
+      "events/14-exploitation",
+      "involves",
+      "artifacts/the-loam-tenders-attention-bell-15",
+      300
+    ],
+    [
+      "events/15-war",
+      "involves",
+      "civs/the-first-cultivars",
+      300
+    ],
+    [
+      "events/15-war",
+      "caused_by",
+      "events/11-exploitation",
+      300
+    ],
+    [
+      "civs/the-first-cultivars",
+      "rival_of",
+      "civs/the-gardeners",
+      300
+    ],
+    [
+      "events/16-schism",
+      "involves",
+      "civs/the-gardeners",
+      400
+    ],
+    [
+      "events/16-schism",
+      "caused_by",
+      "events/12-war",
+      400
+    ],
+    [
+      "events/16-schism",
+      "involves",
+      "figures/the-gardeners-seer-16",
+      400
+    ],
+    [
+      "events/17-discovery",
+      "involves",
+      "civs/the-loam-tenders",
+      400
+    ],
+    [
+      "events/17-discovery",
+      "caused_by",
+      "events/14-exploitation",
+      400
+    ],
+    [
+      "civs/the-loam-tenders",
+      "exploits",
+      "locations/shrine-sap-seam",
+      400
+    ],
+    [
+      "events/18-exploitation",
+      "involves",
+      "civs/the-loam-tenders",
+      400
+    ],
+    [
+      "events/18-exploitation",
+      "caused_by",
+      "events/17-discovery",
+      400
+    ],
+    [
+      "events/19-discovery",
+      "involves",
+      "civs/the-first-cultivars",
+      400
+    ],
+    [
+      "events/19-discovery",
+      "caused_by",
+      "events/15-war",
+      400
+    ],
+    [
+      "civs/the-first-cultivars",
+      "exploits",
+      "locations/gene-loam-seam",
+      400
+    ],
+    [
+      "events/20-exploitation",
+      "involves",
+      "civs/the-first-cultivars",
+      400
+    ],
+    [
+      "events/20-exploitation",
+      "caused_by",
+      "events/19-discovery",
+      400
+    ],
+    [
+      "events/21-schism",
+      "involves",
+      "civs/the-gardeners",
+      500
+    ],
+    [
+      "events/21-schism",
+      "caused_by",
+      "events/16-schism",
+      500
+    ],
+    [
+      "events/21-schism",
+      "involves",
+      "figures/the-gardeners-seer-21",
+      500
+    ],
+    [
+      "events/22-discovery",
+      "involves",
+      "civs/the-loam-tenders",
+      500
+    ],
+    [
+      "events/22-discovery",
+      "caused_by",
+      "events/18-exploitation",
+      500
+    ],
+    [
+      "civs/the-loam-tenders",
+      "exploits",
+      "locations/gene-loam-seam",
+      500
+    ],
+    [
+      "events/23-exploitation",
+      "involves",
+      "civs/the-loam-tenders",
+      500
+    ],
+    [
+      "events/23-exploitation",
+      "caused_by",
+      "events/22-discovery",
+      500
+    ],
+    [
+      "artifacts/the-loam-tenders-shaping-tool-24",
+      "forged_by",
+      "civs/the-loam-tenders",
+      500
+    ],
+    [
+      "events/23-exploitation",
+      "involves",
+      "artifacts/the-loam-tenders-shaping-tool-24",
+      500
+    ],
+    [
+      "events/24-discovery",
+      "involves",
+      "civs/the-first-cultivars",
+      500
+    ],
+    [
+      "events/24-discovery",
+      "caused_by",
+      "events/20-exploitation",
+      500
+    ],
+    [
+      "civs/the-first-cultivars",
+      "exploits",
+      "locations/gene-loam-seam",
+      500
+    ],
+    [
+      "events/25-exploitation",
+      "involves",
+      "civs/the-first-cultivars",
+      500
+    ],
+    [
+      "events/25-exploitation",
+      "caused_by",
+      "events/24-discovery",
+      500
+    ],
+    [
+      "artifacts/the-first-cultivars-attention-bell-26",
+      "forged_by",
+      "civs/the-first-cultivars",
+      500
+    ],
+    [
+      "events/25-exploitation",
+      "involves",
+      "artifacts/the-first-cultivars-attention-bell-26",
+      500
+    ],
+    [
+      "events/26-discovery",
+      "involves",
+      "civs/the-gardeners",
+      600
+    ],
+    [
+      "events/26-discovery",
+      "caused_by",
+      "events/21-schism",
+      600
+    ],
+    [
+      "civs/the-gardeners",
+      "exploits",
+      "locations/shrine-sap-seam",
+      600
+    ],
+    [
+      "events/27-exploitation",
+      "involves",
+      "civs/the-gardeners",
+      600
+    ],
+    [
+      "events/27-exploitation",
+      "caused_by",
+      "events/26-discovery",
+      600
+    ],
+    [
+      "events/28-war",
+      "involves",
+      "civs/the-loam-tenders",
+      600
+    ],
+    [
+      "events/28-war",
+      "caused_by",
+      "events/23-exploitation",
+      600
+    ],
+    [
+      "civs/the-loam-tenders",
+      "rival_of",
+      "civs/the-gardeners",
+      600
+    ],
+    [
+      "events/29-war",
+      "involves",
+      "civs/the-first-cultivars",
+      600
+    ],
+    [
+      "events/29-war",
+      "caused_by",
+      "events/25-exploitation",
+      600
+    ],
+    [
+      "civs/the-first-cultivars",
+      "rival_of",
+      "civs/the-gardeners",
+      600
+    ],
+    [
+      "events/30-discovery",
+      "involves",
+      "civs/the-gardeners",
+      700
+    ],
+    [
+      "events/30-discovery",
+      "caused_by",
+      "events/27-exploitation",
+      700
+    ],
+    [
+      "civs/the-gardeners",
+      "exploits",
+      "locations/engineered-biosphere-seam",
+      700
+    ],
+    [
+      "events/31-exploitation",
+      "involves",
+      "civs/the-gardeners",
+      700
+    ],
+    [
+      "events/31-exploitation",
+      "caused_by",
+      "events/30-discovery",
+      700
+    ],
+    [
+      "artifacts/the-gardeners-gene-loom-32",
+      "forged_by",
+      "civs/the-gardeners",
+      700
+    ],
+    [
+      "events/31-exploitation",
+      "involves",
+      "artifacts/the-gardeners-gene-loom-32",
+      700
+    ],
+    [
+      "events/32-schism",
+      "involves",
+      "civs/the-loam-tenders",
+      700
+    ],
+    [
+      "events/32-schism",
+      "caused_by",
+      "events/28-war",
+      700
+    ],
+    [
+      "events/32-schism",
+      "involves",
+      "figures/the-loam-tenders-seer-32",
+      700
+    ],
+    [
+      "events/33-schism",
+      "involves",
+      "civs/the-first-cultivars",
+      700
+    ],
+    [
+      "events/33-schism",
+      "caused_by",
+      "events/29-war",
+      700
+    ],
+    [
+      "events/33-schism",
+      "involves",
+      "figures/the-first-cultivars-seer-33",
+      700
+    ],
+    [
+      "events/34-discovery",
+      "involves",
+      "civs/the-gardeners",
+      800
+    ],
+    [
+      "events/34-discovery",
+      "caused_by",
+      "events/31-exploitation",
+      800
+    ],
+    [
+      "civs/the-gardeners",
+      "exploits",
+      "locations/gene-loam-seam",
+      800
+    ],
+    [
+      "events/35-exploitation",
+      "involves",
+      "civs/the-gardeners",
+      800
+    ],
+    [
+      "events/35-exploitation",
+      "caused_by",
+      "events/34-discovery",
+      800
+    ],
+    [
+      "events/36-discovery",
+      "involves",
+      "civs/the-loam-tenders",
+      800
+    ],
+    [
+      "events/36-discovery",
+      "caused_by",
+      "events/32-schism",
+      800
+    ],
+    [
+      "civs/the-loam-tenders",
+      "exploits",
+      "locations/shrine-sap-seam",
+      800
+    ],
+    [
+      "events/37-exploitation",
+      "involves",
+      "civs/the-loam-tenders",
+      800
+    ],
+    [
+      "events/37-exploitation",
+      "caused_by",
+      "events/36-discovery",
+      800
+    ],
+    [
+      "events/38-war",
+      "involves",
+      "civs/the-first-cultivars",
+      800
+    ],
+    [
+      "events/38-war",
+      "caused_by",
+      "events/33-schism",
+      800
+    ],
+    [
+      "civs/the-first-cultivars",
+      "rival_of",
+      "civs/the-loam-tenders",
+      800
+    ]
+  ],
+  "mystery": {
+    "fragments": [],
+    "order": [],
+    "order_relation": "reveals"
+  }
+}

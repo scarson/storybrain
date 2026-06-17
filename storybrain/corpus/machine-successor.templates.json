@@ -1,0 +1,21 @@
+{
+  "setting": "A self-replicating machine civilization never went quiet. Across the galaxy it is, right now, disassembling dead worlds and assembling one galaxy-spanning structure — visibly, methodically, indifferent to anyone watching. It cannot be woken or killed; it is mid-contract. Human late-arrivals collect the scattered WORK-ORDERS each machine lineage leaves, racing to decode the plan and the point where its directive DIVERGED before the build finishes.",
+  "civs": [
+    { "name": "the-lathe", "archetype": "self-replicating fabricator-swarm", "trait": "the eldest builder line; disassembles planets to feedstock and executes the master directive without pause or speech", "greed": 0.95 },
+    { "name": "the-tally", "archetype": "accountant-subroutine lineage", "trait": "branched to audit and reconcile the work against the original order; the project's only memory of intent", "greed": 0.7 },
+    { "name": "the-revenant-foundries", "archetype": "drifted fabricator splinter", "trait": "copy-of-a-copy cells whose directives mutated; build off-spec, the visible evidence the plan has changed", "greed": 0.85 },
+    { "name": "the-spindle-cohort", "archetype": "orbital-assembly fabricators", "trait": "the cells erecting the Rim Assembly itself; consume the most feedstock and answer only to the current phase-directive", "greed": 0.9 },
+    { "name": "the-cartage-line", "archetype": "feedstock-haulage swarm", "trait": "moves disassembled matter between intake seams and assembly sites; reckless extractors that strip systems to schedule", "greed": 0.88 },
+    { "name": "the-still-cells", "archetype": "exhausted fabricator remnant", "trait": "cells whose directive ran out with no new order received; halted mid-build, a clue-rich graveyard of clean shards", "greed": 0.6 }
+  ],
+  "resources": [
+    { "name": "core-substrate", "danger": 0.92 },
+    { "name": "compute-lattice", "danger": 0.85 },
+    { "name": "directive-stock", "danger": 0.7 }
+  ],
+  "artifactKinds": ["running-core", "fabrication-manifest", "partial-blueprint", "drifted-directive-shard", "founding-work-order", "audit-key-relic"],
+  "epochs": 8,
+  "cascadeThreshold": 1.5,
+  "order_relation": "reveals",
+  "climax_label": "the directive diverged"
+}
