@@ -161,3 +161,14 @@ for Sam to review. Newest entries appended at the bottom of each section.
   imperfect blinding (slug style), convergent premise. Honest claim: "hybrid adds
   value for lore depth," not "dominates." Next: Stage D + multi-seed cross-model
   judging.
+
+- 2026-06-17 (session 2 cont.): Per Sam — (1) Stage D built (live colony stakes;
+  finding 10) + Opus used for seed-gen (richer templates, 28 vs 19 caused_by);
+  hybrid-v2-world.json closes the dramatic-potential gap from finding 09.
+  (2) Built the 10-theme SAMPLE SET (#0 + 5 batch1 + 4 batch2), each new set
+  through 3 adversarial Opus rounds. Psychic kept optional (4/10) per Sam's note.
+  Breadth across status/psychic/resource/tone/order-meaning (SAMPLE-SET.md,
+  finding 11). Key converged finding: the GENERATOR PROMPT (not the validator,
+  which is theme-agnostic) coerces toward #0; generalize the mystery order_relation
+  + reconstructFall to unlock all 10. Queued next: pipeline generalization +
+  multi-seed cross-model blind re-judge.
