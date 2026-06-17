@@ -414,6 +414,26 @@
       }
     },
     {
+      "slug": "colonists/the-first-archivist",
+      "type": "colonist",
+      "tension": 0.76,
+      "day": 300,
+      "facts": {
+        "role": "ancestor-recording",
+        "present": false,
+        "species": "alien",
+        "faction": "civs/the-redactors",
+        "civ": "the-redactors",
+        "skills": { "research": 20, "engineering": 16, "sensors": 14, "command": 13, "xeno": 10, "life_support": 8 },
+        "passions": ["research", "command"],
+        "crew_role": "quartermaster",
+        "skill_profile": "ship-crew",
+        "want": "to be remembered as the hand that cut the record cleanly — and to be forgiven by the descendant who finally reads what the cut hid",
+        "title": "The First Archivist",
+        "detail": "The Redactor who chiselled the names from the Scarred Stele and burned the destination out of the Edited Sky — the steadiest hand in the great forgetting. She believed she was sparing her own children a verdict they could not survive. The returnees who trace her work read an alien craftsman; she is the forebear whose line runs straight down into Mara, the archivist who now wants everything she sealed read aloud. The relics still bleed the warmth of someone deleting what she loved."
+      }
+    },
+    {
       "slug": "arc/the-second-choice",
       "type": "arc",
       "tension": 0.95,

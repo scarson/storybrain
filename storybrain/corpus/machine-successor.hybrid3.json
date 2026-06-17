@@ -449,6 +449,63 @@
       }
     },
     {
+      "slug": "colonists/sela-rourke",
+      "type": "colonist",
+      "tension": 0.55,
+      "day": 300,
+      "facts": {
+        "name": "Sela Rourke",
+        "species": "human",
+        "status": "deceased",
+        "faction": "factions/humans",
+        "role": "Imani's grandmother and the first salvor to reach the build-zone; she pried the founding work-order out of the first disassembly seam and would not let go of it when the Lathe's schedule routed the seam open around her",
+        "stake": "she is why the founding order survived at all — and why it cost a life to recover; her granddaughter inherited both the document and the debt of finishing what she started",
+        "skills": { "eva": 18, "sensors": 14, "piloting": 12, "engineering": 10, "navigation": 9, "gunnery": 5 },
+        "passions": ["eva", "sensors"],
+        "crew_role": "salvager",
+        "skill_profile": "ship-crew",
+        "want": "had wanted only to carry the founding order clear of the seam before the Lathe peeled it — and died on the schedule, the document intact in her grip"
+      }
+    },
+    {
+      "slug": "colonists/brother-cassian",
+      "type": "colonist",
+      "tension": 0.5,
+      "day": 350,
+      "facts": {
+        "name": "Brother Cassian",
+        "species": "human",
+        "status": "deceased",
+        "faction": "factions/humans",
+        "role": "the lattice-tech who taught Sister Vale to read the Tally's reconciliation cipher; the first human to wield the audit-key relic and prove a fabricator had drifted off-spec",
+        "stake": "he established the entire method Vale now uses, then burned out chasing a reconciliation the Tally itself could no longer make; his unfinished work is the standard she measures herself against",
+        "skills": { "engineering": 17, "sensors": 16, "navigation": 13, "xeno": 11, "life_support": 9, "gunnery": 3 },
+        "passions": ["engineering", "xeno"],
+        "crew_role": "engineer",
+        "skill_profile": "ship-crew",
+        "want": "had wanted to reconcile one full phase against the founding order by hand — and never managed it before he died, leaving the audit-key and the unfinished proof to his protege"
+      }
+    },
+    {
+      "slug": "colonists/captain-marrek",
+      "type": "colonist",
+      "tension": 0.52,
+      "day": 320,
+      "facts": {
+        "name": "Captain Marrek",
+        "species": "human",
+        "status": "deceased",
+        "faction": "factions/humans",
+        "role": "the salvage fleet's previous captain, who first grasped that a Spindle phase-manifest could be sold to predict feedstock draws; he held one for years and built the whole prediction trade Desh now races to corner",
+        "stake": "he made the work-orders worth money instead of worth stopping the build, and both Desh and Anker came up under him — one reveres the trade he built, the other is trying to outrun the man's example",
+        "skills": { "command": 16, "navigation": 15, "piloting": 13, "gunnery": 12, "sensors": 10, "engineering": 7 },
+        "passions": ["command", "navigation"],
+        "crew_role": "captain",
+        "skill_profile": "ship-crew",
+        "want": "had wanted to own every phase-manifest in the build-zone and sell the future of the structure phase by phase — and died holding one, the trade he founded outliving him"
+      }
+    },
+    {
       "slug": "arcs/race-the-finish-line",
       "type": "arc",
       "tension": 0.74,
@@ -556,6 +613,28 @@
 
     ["civs/the-cartage-line", "threatens", "colonists/sister-vale", 500],
     ["civs/the-spindle-cohort", "threatens", "factions/humans", 500],
+
+    ["colonists/imani-rourke", "mentor_of", "colonists/sister-vale", 500],
+    ["colonists/sister-vale", "mentored_by", "colonists/imani-rourke", 500],
+    ["colonists/anker-foss", "estranged_from", "colonists/imani-rourke", 500],
+    ["colonists/desh-okonkwo", "role_model_of", "colonists/anker-foss", 500],
+
+    ["colonists/sela-rourke", "member_of", "factions/humans", 300],
+    ["colonists/brother-cassian", "member_of", "factions/humans", 350],
+    ["colonists/captain-marrek", "member_of", "factions/humans", 320],
+
+    ["colonists/imani-rourke", "descendant_of", "colonists/sela-rourke", 500],
+    ["colonists/sela-rourke", "ancestor_of", "colonists/imani-rourke", 300],
+    ["colonists/sela-rourke", "died_for", "artifacts/founding-work-order", 300],
+
+    ["colonists/sister-vale", "mentored_by", "colonists/brother-cassian", 500],
+    ["colonists/brother-cassian", "mentor_of", "colonists/sister-vale", 350],
+    ["colonists/brother-cassian", "wielded", "artifacts/tally-audit-key-relic", 350],
+
+    ["colonists/desh-okonkwo", "reveres", "colonists/captain-marrek", 500],
+    ["colonists/anker-foss", "mentored_by", "colonists/captain-marrek", 500],
+    ["colonists/captain-marrek", "mentor_of", "colonists/anker-foss", 320],
+    ["colonists/captain-marrek", "owned", "artifacts/spindle-phase-manifest", 320],
 
     ["arcs/race-the-finish-line", "concerns", "events/the-directive-diverged", 500],
     ["arcs/race-the-finish-line", "concerns", "artifacts/founding-work-order", 500],

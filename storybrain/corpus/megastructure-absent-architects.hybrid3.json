@@ -24,6 +24,8 @@
     { "slug": "figures/keeper-steward-echo", "type": "colonist", "tension": 0.6, "facts": { "role": "a Keeper steward's recorded log-personality, still answering questions from the banking-logs — a trace, not a body; nothing of the Keeper is left but its voice and its instructions", "species": "alien", "faction": "the-keepers", "live": false, "trace": true, "drive": "complete the shutdown record; account for every ring that was banked and confirm the structure was left correctly", "want": "have an inheritor confirm aloud that the rings were powered down on purpose, so the record can close as banked rather than abandoned", "skills": { "engineering": 19, "life_support": 14, "sensors": 12, "xeno": 10, "navigation": 6, "eva": 4 }, "passions": ["engineering", "life_support"], "crew_role": "quartermaster", "skill_profile": "ship-crew" } },
     { "slug": "figures/architect-purpose-construct", "type": "colonist", "tension": 0.68, "facts": { "role": "a maintenance-construct the Architects left running in the purpose-codex; it kept the structure tended for ages and now narrates the makers' intent on request — a left-behind machine, not a survivor", "species": "alien", "faction": "the-architects", "live": false, "trace": true, "construct": true, "drive": "keep the structure ready for the one who will complete the order; maintain, recite the purpose, do not decide", "want": "deliver the makers' encoded purpose-statement intact to whoever next reaches the codex, and let them choose", "skills": { "engineering": 20, "sensors": 17, "life_support": 11, "navigation": 6, "eva": 4, "gunnery": 2 }, "passions": ["engineering", "sensors"], "crew_role": "engineer", "skill_profile": "ship-crew" } },
 
+    { "slug": "figures/first-explorer-vance", "type": "colonist", "tension": 0.66, "facts": { "role": "leader of the FIRST human expedition into the Inheritance, a generation before the colony fleet arrived — the one who proved the keys could be turned and died doing it", "species": "human", "live": false, "dead": true, "predecessor_role": "key-hunter and survey lead", "drive": "wake the mid-rings so the next humans inherit warmth, whatever it cost", "want": "turn the mid-ring control key so the structure would never again be dark for those who came after", "death": "killed turning the mid-ring control key alone when the ring-current surged back through her — the colony's later key-finders trace their whole craft to her notes", "skills": { "eva": 18, "engineering": 15, "sensors": 13, "gunnery": 9, "piloting": 8, "navigation": 7 }, "passions": ["eva", "engineering"], "crew_role": "quartermaster", "skill_profile": "ship-crew" } },
+
     { "slug": "beliefs/the-inheritance-creed", "type": "belief", "tension": 0.55, "facts": { "held_by": "keyfinder-rust", "claim": "the machine was deliberately left running for its inheritors; completing the activation order is accepting a gift" } },
     { "slug": "beliefs/the-unturned-key-creed", "type": "belief", "tension": 0.58, "facts": { "held_by": "archivist-sole", "claim": "the Listeners stood exactly here with the final key in hand and chose to leave; the wisdom is in NOT finishing it" } },
 
@@ -186,7 +188,22 @@
     ["figures/archivist-sole", "ally_of", "figures/keeper-steward-echo"],
     ["figures/keeper-steward-echo", "owes", "figures/archivist-sole"],
     ["figures/keyfinder-rust", "rival_of", "figures/architect-purpose-construct"],
-    ["figures/architect-purpose-construct", "ally_of", "figures/keyfinder-rust"]
+    ["figures/architect-purpose-construct", "ally_of", "figures/keyfinder-rust"],
+
+    ["figures/first-explorer-vance", "member_of", "factions/humans"],
+
+    ["figures/first-explorer-vance", "predecessor_of", "figures/keyfinder-rust"],
+    ["figures/keyfinder-rust", "successor_of", "figures/first-explorer-vance"],
+    ["figures/keyfinder-rust", "reveres", "figures/first-explorer-vance"],
+    ["figures/archivist-sole", "mentored_by", "figures/first-explorer-vance"],
+    ["figures/engineer-davies", "successor_of", "figures/first-explorer-vance"],
+    ["figures/captain-mara-okonjo", "commands", "figures/keyfinder-rust"],
+    ["figures/keyfinder-rust", "served", "figures/captain-mara-okonjo"],
+    ["figures/archivist-sole", "estranged_from", "figures/keyfinder-rust"],
+
+    ["figures/first-explorer-vance", "died_for", "artifacts/keepers-control-key-of-the-mid-rings"],
+    ["figures/first-explorer-vance", "sealed", "artifacts/keepers-ward-sigil-of-the-core"],
+    ["figures/the-listeners-last-pilgrim", "covets", "artifacts/listeners-final-activation-codex"]
   ],
   "mystery": {
     "fragments": [

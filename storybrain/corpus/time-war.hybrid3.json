@@ -458,6 +458,41 @@
     },
 
     {
+      "slug": "colonists/the-vanished-survey-lead",
+      "type": "colonist",
+      "tension": 0.76,
+      "facts": {
+        "title": "Dr. Henrik Vael, the Survey Lead Who Re-Sequenced Himself Out of the Record",
+        "role": "Founding lead of the Concordance Survey, vanished mid-ordering",
+        "species": "human",
+        "stake": "Vael ran the Survey before Cross. He was re-sequencing the Undated relics when his name began dropping out of the catalog he himself wrote; the last entry in his hand is a sealed warning he died for filing. He trained the wardens and certified the first chronology — the one every later inversion edits.",
+        "skills": { "command": 18, "sensors": 17, "navigation": 16, "xeno": 14, "engineering": 7, "gunnery": 4 },
+        "passions": ["command", "navigation"],
+        "crew_role": "captain",
+        "skill_profile": "ship-crew",
+        "want": "to seal the one warning that survives being re-sequenced, even at the cost of being edited out of the record himself",
+        "status": "vanished"
+      }
+    },
+    {
+      "slug": "colonists/the-ancestor-soldier-vorr",
+      "type": "colonist",
+      "tension": 0.77,
+      "facts": {
+        "title": "Vorr, the Erevan Smith-Soldier Who Forged the Loop",
+        "role": "Erevan front-line armorer of the war's deepest past",
+        "species": "alien",
+        "faction": "civs/the-erevan",
+        "stake": "Vorr forged the Fold-Loop Ring in the war's earliest (true-last) stratum and fell carrying it. He is Korl's forebear in the backward-marching line — an ancestor whose work the Survey recovers in the present, so the descendant is bonded to a relic the ancestor made before the descendant was deployed.",
+        "skills": { "gunnery": 15, "engineering": 18, "eva": 13, "life_support": 4, "xeno": 6, "sensors": 5 },
+        "passions": ["engineering", "gunnery"],
+        "crew_role": "armorer",
+        "skill_profile": "ship-crew",
+        "want": "to forge the relic that will let his line win the engagement he can already feel marching backward toward him",
+        "status": "fallen"
+      }
+    },
+    {
       "slug": "arc/the-inverting-verdict",
       "type": "arc",
       "tension": 0.9,
@@ -561,6 +596,22 @@
 
     ["colonists/the-oncewill-envoy-sael", "owns", "artifacts/the-precognitive-shard", 800],
     ["colonists/the-erevan-revenant-korl", "owns", "artifacts/the-effect-before-cause", 800],
+
+    ["colonists/dr-ileana-cross", "successor_of", "colonists/the-vanished-survey-lead", 750],
+    ["colonists/the-vanished-survey-lead", "predecessor_of", "colonists/dr-ileana-cross", 750],
+    ["colonists/mara-okonkwo", "mentored_by", "colonists/the-vanished-survey-lead", 700],
+    ["colonists/the-vanished-survey-lead", "mentor_of", "colonists/mara-okonkwo", 700],
+    ["colonists/the-quiet-recruit", "protege_of", "colonists/the-vanished-survey-lead", 760],
+    ["colonists/the-quiet-recruit", "reveres", "colonists/the-vanished-survey-lead", 760],
+    ["colonists/the-erevan-revenant-korl", "descendant_of", "colonists/the-ancestor-soldier-vorr", 110],
+    ["colonists/the-ancestor-soldier-vorr", "ancestor_of", "colonists/the-erevan-revenant-korl", 110],
+    ["colonists/tobias-renn", "estranged_from", "colonists/dr-ileana-cross", 800],
+    ["colonists/dr-ileana-cross", "commands", "colonists/the-quiet-recruit", 800],
+
+    ["colonists/the-vanished-survey-lead", "died_for", "artifacts/the-retro-editing-stylus", 740],
+    ["colonists/the-vanished-survey-lead", "sealed", "artifacts/the-undated-anachronism", 740],
+    ["colonists/the-vanished-survey-lead", "wielded", "artifacts/the-arriving-relic", 730],
+    ["colonists/the-ancestor-soldier-vorr", "forged", "artifacts/the-fold-loop-ring", 100],
 
     ["arc/the-inverting-verdict", "threatens", "factions/humans", 800],
     ["arc/the-inverting-verdict", "involves", "colonists/dr-ileana-cross", 800],

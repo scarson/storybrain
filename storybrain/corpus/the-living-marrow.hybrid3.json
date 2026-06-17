@@ -539,6 +539,84 @@
       }
     },
     {
+      "slug": "colonists/surveyor-mara-okafor",
+      "type": "colonist",
+      "tension": 0.6,
+      "facts": {
+        "role": "first charter surveyor (deceased), Bren's grandmother",
+        "stance": "the founding surveyor who hauled the vitrified-map up out of the glasshalls and mapped every seam under Drosselmeyer; died in the vein finishing the chart that proved the colony sits on the largest unbroken seam left",
+        "live": false,
+        "species": "human",
+        "faction": "factions/humans",
+        "skills": {
+          "shooting": 7,
+          "medicine": 4,
+          "social": 6,
+          "research": 14,
+          "crafting": 11,
+          "melee": 5
+        },
+        "passions": [
+          "research",
+          "crafting"
+        ],
+        "want": "to have finished the seam-chart so her grandson would never drill blind into the wound that took her",
+        "skill_profile": "colonist"
+      }
+    },
+    {
+      "slug": "colonists/first-listener-edda",
+      "type": "colonist",
+      "tension": 0.66,
+      "facts": {
+        "role": "Yuki's predecessor in the surveyor post (deceased), the first human to go resonant-sensitive",
+        "stance": "the surveyor who heard the wound before Yuki did, recovered the still-tuning-fork from the amphitheater, and died holding it to her ear trying to decode the lullaby; trained Yuki in her last months",
+        "live": false,
+        "species": "human",
+        "faction": "factions/humans",
+        "skills": {
+          "shooting": 3,
+          "medicine": 5,
+          "social": 8,
+          "research": 16,
+          "crafting": 6,
+          "melee": 2
+        },
+        "passions": [
+          "research",
+          "social"
+        ],
+        "want": "to have finished decoding the Cantor's lullaby before it took her, so the next listener would not have to die learning it",
+        "skill_profile": "colonist"
+      }
+    },
+    {
+      "slug": "colonists/velt-glasswright-sira",
+      "type": "colonist",
+      "tension": 0.7,
+      "facts": {
+        "role": "elder Velt glasswright (vitrified), the deep-thought Thauma uncoiled from",
+        "stance": "the century-minded Velt who forged the vitrified-map as a single hundred-year sentence and sealed the silence-engine's first draft before the waking froze her mid-word; Thauma is the last living sliver of her thought",
+        "live": false,
+        "species": "alien",
+        "faction": "civs/the-velt",
+        "skills": {
+          "shooting": 0,
+          "medicine": 1,
+          "social": 4,
+          "research": 20,
+          "crafting": 18,
+          "melee": 0
+        },
+        "passions": [
+          "research",
+          "crafting"
+        ],
+        "want": "to have carved the warning into the map plainly instead of in the Velt's hundred-year cipher, so a faster mind could read it in time",
+        "skill_profile": "colonist"
+      }
+    },
+    {
       "slug": "arc/the-second-waking",
       "type": "arc",
       "tension": 0.95,
@@ -1050,6 +1128,120 @@
       "colonists/archivist-soln",
       "rival_of",
       "colonists/director-imre-vask",
+      800
+    ],
+    [
+      "colonists/director-imre-vask",
+      "commands",
+      "colonists/drill-chief-bren-okafor",
+      800
+    ],
+    [
+      "colonists/drill-chief-bren-okafor",
+      "served",
+      "colonists/director-imre-vask",
+      800
+    ],
+    [
+      "colonists/archivist-soln",
+      "estranged_from",
+      "colonists/director-imre-vask",
+      800
+    ],
+    [
+      "colonists/the-listener-yuki",
+      "reveres",
+      "colonists/the-choir-echo-vohn",
+      800
+    ],
+    [
+      "colonists/the-velt-remnant-thauma",
+      "mentor_of",
+      "colonists/archivist-soln",
+      800
+    ],
+    [
+      "colonists/drill-chief-bren-okafor",
+      "descendant_of",
+      "colonists/surveyor-mara-okafor",
+      800
+    ],
+    [
+      "colonists/drill-chief-bren-okafor",
+      "kin_of",
+      "colonists/surveyor-mara-okafor",
+      800
+    ],
+    [
+      "colonists/the-listener-yuki",
+      "successor_of",
+      "colonists/first-listener-edda",
+      800
+    ],
+    [
+      "colonists/the-listener-yuki",
+      "mentored_by",
+      "colonists/first-listener-edda",
+      800
+    ],
+    [
+      "colonists/the-velt-remnant-thauma",
+      "descendant_of",
+      "colonists/velt-glasswright-sira",
+      800
+    ],
+    [
+      "colonists/surveyor-mara-okafor",
+      "owned",
+      "artifacts/the-vitrified-map",
+      800
+    ],
+    [
+      "colonists/surveyor-mara-okafor",
+      "died_for",
+      "artifacts/the-vitrified-map",
+      800
+    ],
+    [
+      "colonists/first-listener-edda",
+      "wielded",
+      "artifacts/the-still-tuning-fork",
+      800
+    ],
+    [
+      "colonists/first-listener-edda",
+      "died_for",
+      "artifacts/the-still-tuning-fork",
+      800
+    ],
+    [
+      "colonists/velt-glasswright-sira",
+      "forged",
+      "artifacts/the-vitrified-map",
+      800
+    ],
+    [
+      "colonists/velt-glasswright-sira",
+      "sealed",
+      "artifacts/the-silence-engine",
+      800
+    ],
+    [
+      "colonists/surveyor-mara-okafor",
+      "member_of",
+      "factions/humans",
+      800
+    ],
+    [
+      "colonists/first-listener-edda",
+      "member_of",
+      "factions/humans",
+      800
+    ],
+    [
+      "colonists/velt-glasswright-sira",
+      "member_of",
+      "civs/the-velt",
       800
     ],
     [
