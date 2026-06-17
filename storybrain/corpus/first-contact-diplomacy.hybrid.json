@@ -76,13 +76,9 @@
     ["civs/the-saalvane", "rival_of", "factions/humans"],
 
     ["figures/the-saalvane-seer-2", "owned_by", "civs/the-saalvane"],
-    ["figures/the-saalvane-seer-12", "owned_by", "civs/the-saalvane"],
     ["figures/the-saalvane-seer-17", "owned_by", "civs/the-saalvane"],
-    ["figures/the-saalvane-seer-32", "owned_by", "civs/the-saalvane"],
     ["figures/the-mendicant-tier-seer-18", "owned_by", "civs/the-mendicant-tier"],
-    ["figures/the-mendicant-tier-seer-26", "owned_by", "civs/the-mendicant-tier"],
     ["figures/the-mendicant-tier-seer-30", "owned_by", "civs/the-mendicant-tier"],
-    ["figures/the-mendicant-tier-seer-33", "owned_by", "civs/the-mendicant-tier"],
     ["figures/the-irenni-seer-23", "owned_by", "civs/the-irenni"],
     ["figures/the-irenni-seer-27", "owned_by", "civs/the-irenni"],
 

@@ -113,6 +113,13 @@
     ["artifacts/the-first-shot-that-came-last", "hidden_at", "locations/the-unhappened-front"],
     ["lore/the-first-shot-is-the-last-find", "reveals", "civs/the-aelthar"],
 
+    ["artifacts/the-eraser-stone", "drops", "lore/the-aelthar-may-never-have-been"],
+    ["artifacts/the-eraser-stone", "drops", "lore/the-ledger-is-not-neutral"],
+    ["artifacts/the-eraser-stone", "hidden_at", "locations/the-ledger-vault"],
+    ["lore/the-aelthar-may-never-have-been", "reveals", "civs/the-aelthar"],
+    ["lore/the-ledger-is-not-neutral", "reveals", "factions/humans"],
+    ["colonists/cartographer-okonkwo", "located_at", "locations/the-ledger-vault"],
+
     ["figures/the-witness-who-stayed", "owns", "artifacts/the-witnesss-final-account"],
 
     ["colonists/cartographer-okonkwo", "owned_by", "factions/humans"],
