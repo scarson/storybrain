@@ -1,0 +1,18 @@
+{
+  "setting": "Humans arrive long after advanced alien civilizations fell; they mined a living planet-mind's nerve-tissue as 'ore' and it woke in agony.",
+  "civs": [
+    { "name": "the-velt", "archetype": "crystalline-slow-life", "trait": "cognition stored in stone, one thought per century", "greed": 0.85 },
+    { "name": "the-choir", "archetype": "psychic-gestalt", "trait": "a bodiless standing-wave of minds", "greed": 0.4 },
+    { "name": "the-pale-wing", "archetype": "augur-merchants", "trait": "sold prophecies of the doom instead of preventing it", "greed": 0.7 }
+  ],
+  "resources": [
+    { "name": "marrow-ore", "danger": 0.95 },
+    { "name": "lumen-salt", "danger": 0.2 },
+    { "name": "void-glass", "danger": 0.55 }
+  ],
+  "artifactKinds": ["weapon-relic", "lost-codex", "cursed-idol", "key-map", "living-relic", "prophecy-object"],
+  "epochs": 7,
+  "cascadeThreshold": 1.5,
+  "order_relation": "caused_by",
+  "climax_label": "the waking of the wounded world"
+}
