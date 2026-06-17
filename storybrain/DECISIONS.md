@@ -145,3 +145,19 @@ for Sam to review. Newest entries appended at the bottom of each section.
     involves-edges snowballing callback) — callback now counts STAKE edges only.
   Finding 08. The "model generates lore that drives story" headline is demonstrated
   end-to-end. This SUPERSEDES the v5 "hand-author first" suggestion per Sam's call.
+
+- 2026-06-17: Built + ran the hybrid LLM->procgen->LLM pipeline + blind-judge
+  experiment (Sam's request). Stage A (Haiku) seeds templates -> deterministic
+  procgen.ts (seed 1337, 37-node history, 19 caused_by) -> Stage C (Opus) enriches
+  -> hybrid-world.json (48 nodes). Pure-LLM baseline (Opus, no procgen, size-
+  matched) -> pure-llm-world.json (49 nodes). TWO blind Opus judges with A/B
+  SWAPPED (counterbalanced). RESULT: hybrid won BOTH (40-35, 41-39); aggregate
+  hybrid 81 vs pure 74. Hybrid wins thematic richness (+4), novelty (+4), causal
+  depth (+2), ties coherence; pure-LLM wins dramatic potential (+3, live human
+  stakes). Finding 09. CONCLUSION: hybrid has real judge-visible value for deep
+  consistent LORE (procgen=causal scale/consistency, LLM=meaning); pure-LLM's only
+  win (live drama) is a fixable gap -> proposed Stage D for present-tense colony
+  stakes. Limitations: n=2, single judge model (Opus self-preference risk),
+  imperfect blinding (slug style), convergent premise. Honest claim: "hybrid adds
+  value for lore depth," not "dominates." Next: Stage D + multi-seed cross-model
+  judging.
