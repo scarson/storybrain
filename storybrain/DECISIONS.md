@@ -245,3 +245,16 @@ for Sam to review. Newest entries appended at the bottom of each section.
   axes + relationship types are sensible Rimworld defaults, tunable to the game.
   NEXT (queued): comparative re-judge hybrid3-vs-hybrid2 (did depth lift judged
   quality?) and hybrid3-vs-pure; cross-model second judge pending Codex.
+
+- 2026-06-17 (Stage E re-judge + frame-correct skills): Per Sam, skills made
+  frame-appropriate — ship-crew axes (piloting/navigation/engineering/sensors/
+  gunnery/life_support/eva/xeno/command + crew_role) for the 6 spacefaring/
+  expedition/merchant/gen-ship worlds; colonist axes for the 4 planetside colonies;
+  facts.skill_profile stamped on all. Then blind clean-Opus re-judge hybrid-v3
+  (Stage E) vs hybrid-v2 (pre-character). RESULT (finding 17): v3 wins 10/10 by
+  6-13 pts (438 vs 350). Both judges blind-identified the CAST layer as decisive.
+  CONCLUSION: the character pass is a large, unanimous, measured quality gain.
+  RECOMMENDED GENERATOR (final): Stage A Opus seed -> procgen-abstract -> Stage C+D
+  clothe/prune/live-layer -> Stage E characters & frame-correct skills -> SQLite
+  store. Caveats: single judge model (Codex pending); v3-vs-pure confirming pass
+  not re-run (v3 should extend the f14 6-4 lead since pure lacks the cast layer).

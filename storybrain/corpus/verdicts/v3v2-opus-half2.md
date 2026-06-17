@@ -73,3 +73,65 @@ This is the widest A/B gap of the half. Shared backbone: the "they SEALED rather
 **A total: 44 / B total: 32 — WINNER: A (decisively)**
 
 Rationale: Same premise, but A is a populated, textured world and B is its wireframe. A's two sleeper-colonists (`the-sleeper-vael`, `the-quarantined-tsenn`) convert the dormant factions into the cast's most dramatic pieces — the ally who can teach the seal and the carrier who begs to stay under — and the human social web is fully motivated by the seal dilemma (the translator-lover the vector targets, the warden who hates what he guards). B deletes both sleepers, all five extra humans' skills/wants, all six flavor-lore nodes, AND scrambles its `drops` ordering to back-fill the emptied slots. Widest gap in the half.
+
+---
+
+## Theme: crowded-trade-federation
+
+Best mystery-design of the half on the shared layer — a market-fraud thriller where five LIVING houses (`the-vossan-syndics` forgers, `the-khariti-drift` honest-memory nomads, `the-oseni-assayers` bribable authenticators, `the-melun-cartel` counterfeit-flooders, `the-rho-collectors` purity-obsessed hoarders) all converge on `events/the-contested-deal`. The 4-fragment chain (`amber-was-never-mined → seal-can-be-unmade → relic-is-honest-paper-is-not → drift-knows-the-real-source`, `order_relation: precedes`) lands a genuinely good escalating reveal: the founding forgery, the seal that can undo it, the honest-object-in-a-lying-wrapper, and the kicker — the amber's "source" is ALIVE. Causal event-chain is clean in both (`caused_by` ladder day 100→400). Divergence is, once more, the cast plus B regressions.
+
+**Cast diff:**
+- **A:** 6 colonists, each holding one link of the chain. Four humans (`mara-osei-vance` log-holder, `dev-haldane` Cartel-payroll rival, `sable-ferreira` confession-smuggling fixer, `quen-arden` estranged Rho agent) with full quantified `skills`, `passions`, `crew_role`, and pointed `want`s that conflict (Mara wants to sell the log ONCE; Haldane wants to BURN it). PLUS two alien faction-colonists who are exactly the figures the lore names: `iruwe-sael` (the Khariti navigator who broke custom and wrote the songs into the route-log — `want`: settle her debt before the caste erases her name) and `voss-tahel` (the dissident Oseni on the confession cylinder — `want`: "re-strike the master seal on the TRUE chain just once before her caste catches her, to die having told the truth in metal"). These two convert two beautiful lore beats (`oseni-schism`, `khariti-leak-the-log`) into living stakes. Dense, motivated web: `quen-arden lover_of sable-ferreira` (and Quen's want includes "before Sable is killed for the matching half" — romance wired to the plot), `mara owes iruwe-sael` (the debt that motivated the leak), `dev-haldane betrayed sable-ferreira`, `voss-tahel ally_of sable`, `iruwe grudge_against haldane`, `voss-tahel rival_of iruwe`. Every relationship maps to a chain-link transaction.
+- **B:** Only the 4 human colonists, stripped to `name`+`role`+`stake` — NO skills, NO want, NO crew_role. Both alien faction-colonists (`iruwe-sael`, `voss-tahel`) deleted, so the dissident assayer and the rogue navigator exist only as faceless lore. Social web thins to `dev rival_of mara`, `sable betrayed_by dev`, plus structural ownership.
+
+**B regressions (multiple genuine bugs):** B has THREE malformed/contradictory edges A does not. (1) `mara-osei-vance owns factions/humans` — a colonist "owns" her own faction; should be `member_of` (A has it right). (2) `civs/the-rho-collectors sought_by quen-arden` — direction reversed; the house seeks its estranged agent, not vice-versa (A correctly has `quen-arden sought_by the-rho-collectors`). (3) the final edge `[arc, involves, quen-arden]` is missing its timestamp element — a structural malformation. Plus B's `drops` graph is scrambled: every artifact drops nearly every fragment regardless of `precedes` order (the Vossan scroll "drops" `seal-can-be-unmade` AND `relic-is-honest`, the route-log "drops" `amber-was-never-mined`), collapsing the discover-in-order design. A's `drops` are disciplined: the scroll drops only the first fragment + Syndic color, the route-log drops the source-reveal + Drift color.
+
+| Axis | A | B | Note |
+|---|---|---|---|
+| Coherence | 9 | 6 | B has 3 broken edges (`mara owns humans`, reversed `rho sought_by quen`, timestamp-less arc edge) + scrambled drops; A is clean |
+| Causal/Structural Depth | 9 | 7 | Same event `caused_by` ladder; A's `drops` respect `precedes`, B's don't; A's 2 faction-colonists add cross-faction links |
+| Thematic Richness | 9 | 7 | A's 6 color-lore (`syndic-ink-never-fades` = "trapped in their own first lie", `assayer-oath` = "a seal is the caste's word made metal", `ledger-salt-balances-every-book") thicken a fraud economy; B drops all six |
+| Novelty/Surprise | 8 | 8 | Same killer reveal (the source is alive; the honest relic in a forged wrapper) — tie on shared content |
+| Dramatic Potential | 9 | 5 | A's `voss-tahel` ("die having told the truth in metal") + the lover-hostage + the debt that caused the leak give a heist-thriller cast; B is four nodes with stakes-lines and two edges |
+
+**A total: 44 / B total: 33 — WINNER: A (decisively)**
+
+Rationale: Excellent shared market-fraud mystery, but A is the only one that's actually clean AND populated. A turns the two pivotal lore figures (the rogue navigator, the dissident assayer) into playable colonists with the half's best single `want` line ("to die having told the truth in metal"), wires a full debt/romance/betrayal web onto the four chain-links, and keeps its `drops` graph faithful to the `precedes` order. B strips skills/wants, deletes both faction-colonists and all six color nodes, scrambles its drops, and ships three malformed edges (a colonist owning her own faction, a reversed sought_by, a timestamp-less arc edge). On a fraud story whose whole point is custody-chain fidelity, B's own graph integrity is the casualty.
+
+---
+
+## Theme: uplift-nursery-world
+
+The reversal of the half: here B is the cast-rich world and A is the thin one. Shared backbone (excellent in both): the Gardeners are PRESENT and acting (`civs/the-gardeners` hidden-stewards + `civs/the-loam-tenders` undercaste + `civs/the-first-cultivars` the prior lineage "harvested, not killed — taken UP"), the 5-fragment `reveals` chain climaxing on `frag-we-are-the-next-row`, the artifact `enables` ladder ending on `the-attention-bell` (ringing it CALLS a harvest), and the opposed creeds (`grateful-guest` vs `fallow`). The horror premise — gentleness as cultivation, the bell as a reaping signal — is equally strong in both.
+
+**Cast diff (B wins it):**
+- **A:** ALL colonists are thin. The four humans (`steward-imani-bayode`, `seedwright-cole-vance`, `reader-noor-haddad`, `midwife-tomas-reyes`) carry only `role` + `drive` — NO skills, NO want, NO passions. The two alien trace-colonists (`the-first-cultivar-elder`, `the-loam-tender-near-hand`) have just role+civ. Social web is sparse: `cole rival_of noor`, the two opposed beliefs, and one dangling `midwife sought_by the-loam-tenders` with no payoff. No native-born-child node despite the arc note ("the colony's first native-born children are testing ripe").
+- **B:** ALL colonists fully fleshed — quantified `skills`, `passions`, `species`, AND a pointed `want` on every one (including the two alien traces: the elder `want`s "to finish singing the steps of the growing so the next row knows what it is being grown into before the bell sounds"; the loam-tender `want`s "to leave just enough of itself half-glimpsed that a clever guest finds the truth before ripening"). And B adds the single best node across BOTH halves of this theme: `figures/the-ripening-child` — the midwife's loom-bent native-born daughter, `faction: civs/the-gardeners`, "born human on the terraces... her parents see their daughter, the shrines read a finished cultivar — the Gardeners' newest product wearing a colonist's face," whose `want` is "to follow the warm pull toward the shrines... not understanding it is a harvest calling her home." That node makes the abstract "we are the next row" reveal personal and devastating. B's web is correspondingly dense and tragic: `midwife kin_of the-ripening-child`, `the-loam-tender-near-hand saved midwife` + `midwife owes` it (the undercaste already intervened), `cole lover_of imani` + `imani owes cole`, `reader-noor ally_of midwife`, `the-first-cultivar-elder ally_of noor` (the harvested voice allied with the refuse-to-ripen creed), `civs/the-gardeners ripens the-ripening-child`.
+
+**Filler/contradiction trace:** B has redundant symmetric duplicate edges — `cole rival_of noor` AND `noor rival_of cole`; `midwife kin_of child` AND `child kin_of midwife` (kin/rival are inherently mutual, so the back-edge is filler). Also `noor grudge_against cole` co-exists with the `rival_of` pair (slightly piled-on, but readable). These are cosmetic, not contradictions. A's only blemish is the dangling unpaid `midwife sought_by the-loam-tenders` and the absence of the child the arc explicitly promises.
+
+| Axis | A | B | Note |
+|---|---|---|---|
+| Coherence | 8 | 7 | A cleaner edge-wise; B has duplicate symmetric `rival_of`/`kin_of` pairs (filler) |
+| Causal/Structural Depth | 8 | 9 | Same `reveals`+`enables` chains, but B's `the-ripening-child` + `gardeners ripens child` + the saved/owes loop add live causal hooks A leaves abstract |
+| Thematic Richness | 7 | 9 | B's `the-ripening-child` ("the Gardeners' product wearing a colonist's face") and the elder's lullaby-want embody the uplift horror; A states it only in lore |
+| Novelty/Surprise | 8 | 9 | Both share the reveal; B's child-who-is-already-harvest-ripe is a fresh, specific image that personalizes the twist |
+| Dramatic Potential | 6 | 9 | A's thin cast (role+drive, one rival edge) vs B's wired family tragedy: a father who owes the undercaste that saved him, a daughter being called home to a harvest, a lover-steward who must ring or refuse the bell |
+
+**A total: 37 / B total: 43 — WINNER: B**
+
+Rationale: The lone theme where the richer cast sits on the B side, and it wins for exactly the reasons A won the other four. B fleshes every colonist with skills + a conflicting `want`, gives the two hidden castes interactive voices, and — decisively — adds `the-ripening-child`, the loom-bent daughter who reads as a finished Gardeners' cultivar while her parents still see their child. That single node turns "we are the next row" from a lore claim into a family in crisis, and the surrounding web (the midwife's debt to the undercaste that saved him, the harvested elder allied with the fallow creed, the lover-steward holding the bell) is fully motivated by the harvest dilemma. A keeps the same superb mystery but populates it with role+drive stubs, omits the child the arc itself promises, and leaves one social edge dangling. B's only cost is a few redundant mirror-edges.
+
+---
+
+## Summary
+
+| Theme | A total | B total | Winner |
+|---|---|---|---|
+| generation-ship-identity | 43 | 36 | A |
+| megastructure-absent-architects | 43 | 37 | A |
+| extinction-plague-vector | 44 | 32 | A |
+| crowded-trade-federation | 44 | 33 | A |
+| uplift-nursery-world | 37 | 43 | B |
+
+Pattern: in 4 of 5 themes the two worlds share an identical lore/mystery backbone, and the winner is decided entirely by which side carries the fleshed cast — quantified skills, pointed `want`s, extra alien/ancestor/trace colonists, and an arc-wired social web (lover/kin/owes/grudge/ally). That richer cast is on the A side in themes 1-4 and on the B side in theme 5; in every case it took the theme. The thin variant repeatedly strips skills to bare strings or omits them, deletes flavor-lore and faction-colonists, and tends to introduce filler or malformed edges (`owns` own-faction, reversed `sought_by`, a timestamp-less edge, scrambled `drops` ordering).
