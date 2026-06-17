@@ -125,3 +125,23 @@ for Sam to review. Newest entries appended at the bottom of each section.
   gate) and can coherent lore be authored/generated at scale — are game-design +
   content, not substrate, and remain the friend's calls. The substrate won't block
   them.
+
+- 2026-06-17: Sam (awake briefly) corrected course: DON'T ask permission to do the
+  obvious next thing; and he wants a MODEL to generate facts (not hand-authored).
+  Themes: sci-fi, advanced alien civs of different types, psychic powers, ancient
+  mysteries, why-a-civilization-fell, resource exploitation gone TERRIBLY wrong.
+  Built the model-driven fact generator (brainstorm spec + writing-plans-enhanced
+  plan + TDD):
+  * generator/schema.ts + .test.ts (6/6): validateWorld contract = the model↔store
+    gate (edges→declared nodes; ≥3 facts/artifact; mystery fully covered).
+  * prompt-canon.md + prompt-artifacts.md: staged generation prompts (portable to
+    Anthropic API: opus seed, haiku artifacts).
+  * An Opus subagent GENERATED world-scifi.json (34 nodes, 2 alien civ types —
+    crystalline Velt + psychic-gestalt Choir, 5-fragment mystery: they mined a
+    sleeping planet-organism's nerve-tissue; it woke in agony and killed them
+    both). Validated first try.
+  * load.ts: loads into SQLite, runs Director multi-tick, reconstructs the mystery
+    (caused_by chain ✓). Surfaced + fixed a real feedback bug (Director's own
+    involves-edges snowballing callback) — callback now counts STAKE edges only.
+  Finding 08. The "model generates lore that drives story" headline is demonstrated
+  end-to-end. This SUPERSEDES the v5 "hand-author first" suggestion per Sam's call.

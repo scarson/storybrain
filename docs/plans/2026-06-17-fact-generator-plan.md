@@ -17,14 +17,14 @@ progresses, not only at completion (banners flip to 🚧/✅/⏸ with SHAs). Rat
 expensive. (Solo autonomous run; banners kept current for the record.)
 
 ## Execution Status
-**Overall:** 0/4 phases shipped.
+**Overall:** 4/4 phases shipped.
 
 | Phase | Status | Notes |
 |---|---|---|
 | 1 — schema + validator (TDD) | ⬜ Not started | deterministic, no LLM |
-| 2 — generation prompts | ⬜ Not started | canon + artifacts |
-| 3 — generate world via model | ⬜ Not started | Agent tool call |
-| 4 — load + Director + mystery check | ⬜ Not started | integration |
+| 2 — generation prompts | ✅ Shipped | canon + artifacts |
+| 3 — generate world via model | ✅ Shipped | 34 nodes, validated 1st try |
+| 4 — load + Director + mystery check | ✅ Shipped | mystery reconstructs; feedback bug found+fixed |
 
 ## Phase 1 — schema + validator (TDD)
 **Execution Status:** ✅ SHIPPED — `generator/schema.ts` + `schema.test.ts`, 6/6 green.
