@@ -1,8 +1,9 @@
 # StoryBrain — an AI storyteller knowledgebase on gbrain
 
-> Status: **v4** (post 5-round self-review + adversarial rounds 1–2, with a WORKING
-> prototype: a Director tick runs sense→score→fire→writeback against a live brain).
-> Evidence: `storybrain/findings/01–04` (measured, not asserted). Reviews:
+> Status: **v5 (final)** (post 5-round self-review + 3 adversarial rounds, with a
+> reproducible prototype, a self-contained SQLite ship store at behavioral parity,
+> and a multi-tick emergence sim). Evidence: `storybrain/findings/01–07` (measured;
+> each adversarial round was answered by RUNNING something, not by prose). Reviews:
 > `storybrain/reviews/`. Decisions: `storybrain/DECISIONS.md`.
 
 Designs **gbrain** (this repo) — or a small store like it — as the persistent
@@ -15,13 +16,20 @@ and **emergent** (history-driven) narrative.
 ## 0. The decision, up front (no hedge)
 
 **Build a small SQLite/libSQL `edges` store (the §10 query catalog) as the durable
-artifact. Use gbrain only as a week-one agent-drivable REPL to validate the fun,
-then stop.** The evidence forced this (findings 02/04, R1-08, R2-07): gbrain's
-one hard-to-replicate feature — prose→typed-graph extraction — *doesn't work for a
-game domain anyway* (it's hardcoded to VC dirs), and every other gbrain
-differentiator (hybrid ranking, LLM contradiction, salience, trajectory) this use
-case discards. What remains is "stand up a world and interrogate it by talking to
-an agent, no engine code" — real, but a one-week accelerator, not a foundation.
+artifact — and you can start there on day one.** The SQLite store is *proven*: a
+self-contained ~200-line implementation reproduces the gbrain prototype's exact
+Director pick (finding 06: 3.197, behavioral parity) with all catalog queries
+incl. recursive-CTE traversal. gbrain's one hard-to-replicate feature —
+prose→typed-graph extraction — *doesn't work for a game domain anyway* (hardcoded
+to VC dirs, finding 02), and every other gbrain differentiator (hybrid ranking,
+LLM contradiction, salience, trajectory) this use case discards. So gbrain's only
+residual value is "stand up a world and interrogate it by talking to an agent, no
+engine code." That is real but **marginal** — and adversarial round 3 showed it
+comes with footguns (a stateful brain that prior experiments polluted, breaking
+reproducibility until the seed was made self-contained). **Honest call: if you're
+comfortable in SQL, skip gbrain and build the `edges` store directly (finding 06
+is your starting point). Use gbrain only if agent-driven exploration genuinely
+beats writing SQL for you.**
 
 The two things that ARE the design, and are substrate-independent:
 1. **A typed-edge graph the Director queries at decision time** — proven to work
@@ -180,37 +188,120 @@ that cites it → the event reveals/seeds the next fact. The spiral runs on FACT
 (deterministic, cheap); prose is painted on top (cached). This is exactly the
 Ashmark→Iron-Empire chain demonstrated in finding 03.
 
+### 5.4 Scope of the "contradictions vanish" claim (R3 honesty)
+
+Structured canon prevents *intra-artifact* prose contradictions (the renderer
+can't invent a second forger). It does NOT prevent *cross-fact* tension if a
+designer authors two conflicting facts, or if procgen produces them. That's a
+content-authoring lint problem (a cheap deterministic check over the fact table),
+not the LLM-judged probe gbrain ships. Don't overclaim: structured canon makes
+contradictions *rare and detectable*, not impossible.
+
 ---
 
-## 6. The Director (you build) — one term specified, proven
+## 5.5 Is this actually EMERGENT? (the friend's core requirement)
+
+Adversarial round 3 pressed the hardest question: if lore is a *pre-authored* (or
+procgen) fact-skeleton merely *revealed* in different orders, is that emergent — or
+just an RPG codex behind a progression mask? The honest, and I think correct,
+answer:
+
+**Emergence here is combinatorial, and that is exactly how the genre's emergence
+works.** Rimworld's celebrated storytelling does NOT invent new event *types* per
+playthrough — it draws from a fixed, authored pool of incident templates. The
+emergence everyone praises is the **weave**: authored templates × the *genuinely
+emergent* colony state (who you recruited, who died, who fell in love, what you
+built, what you can afford to lose). StoryBrain applies that same model to lore:
+
+- **The myth layer (authored / procgen): stable canon.** Artifacts and their
+  fact-skeletons. Finite, consistent, deterministic.
+- **The chronicle layer (emergent): genuinely novel every run.** The colony graph
+  — deaths, grudges, romances, betrayals, who went on which hunt, who wielded the
+  cursed blade when their mood broke. This is invented by *gameplay*, not authored.
+- **The story = the weave.** The Director threads the fixed myth through the
+  emergent chronicle. **Demonstrated (finding 07):** the identical Ashmark myth
+  produces a raid-on-Vera's-grudge in one colony and a raid-on-Bjorn's-feud in
+  another, purely because the emergent chronicles differ. No author wrote either
+  sentence.
+
+So "fact-skeleton + reveal" is **not** a retreat from emergence — it is the
+load-bearing structure that lets emergent gameplay state produce coherent,
+non-contradictory, per-playthrough-unique narrative. Pure generative emergence
+(an LLM inventing canon from nothing) is the thing to *avoid*: it's incoherent,
+non-deterministic, and expensive — the opposite of what the friend wants.
+
+**Two honest costs:**
+
+1. **Content budget (if hand-authored).** Like Rimworld's incident pool, the myth
+   layer needs enough breadth not to run dry. Rough target: ~30–60 artifacts ×
+   3–5 latent facts each (~150–250 facts) + ~10–20 rumor/threat templates. Because
+   the *weave* is combinatorial against an unbounded emergent chronicle, that
+   modest corpus yields effectively unbounded distinct stories — again, exactly
+   the Rimworld economics (a few hundred authored pieces → years of distinct runs).
+2. **Procgen canon (optional, large).** Generating the fact-skeletons themselves
+   at world-gen — Dwarf Fortress *legends* — is a genuine, sizeable subsystem
+   (templated name/purpose/owner-death-chain generators with consistency
+   constraints). It is NOT four words of hand-wave; treat it as a separate project
+   to attempt *after* the hand-authored version proves fun. The store doesn't
+   change either way — procgen just writes more rows.
+
+The store (gbrain or SQLite) is **agnostic** to which layer authored a fact; it
+just remembers and connects. Emergence is delivered by the Director's weave +
+the emergent chronicle, both demonstrated. That answers the charter's "emergent"
+requirement honestly: combinatorial emergence, the same kind Rimworld ships, not
+generative-from-nothing.
+
+---
+
+## 6. The Director (you build) — specified, normalized, run multi-tick
 
 Loop: `1. pacing state (game) → 2. sense (graph queries) → 3. score → 4. fire →
 5. write back (event + edges + advance arc)`. LLM never in this loop.
 
-`resonance = w1·arc_advance + w2·callback_strength + w3·character_stakes +
-w4·valence_fit + w5·tension_fit − w6·repetition − w7·fixation`
-
-**`callback_strength` specified and RUN (finding 03):**
+**All terms normalized to [0,1]; resonance has a stable, tunable scale** (finding
+07; fixes round-3 R3-03/04 — earlier drafts had an unbounded `Σ` and a
+double-counted arc term):
 ```
-callback_strength(candidate→F) = Σ over revealed edges e into F of
-    tension(from(e)) · recency_decay(e.day)            (× arc multiplier if the
-recency_decay(d) = 0.5 ^ ((today − d)/HALF_LIFE)        candidate advances an open arc)
+resonance = w_arc·arc_advance + w_cb·callback_strength + w_char·character_stakes
+          + w_val·valence_fit  + w_tens·tension_fit
+          − w_rep·repetition   − w_fix·fixation
+worked weights: arc .25, cb .30, char .10, val .10, tens .15, rep .25, fix .25
+→ resonance ∈ [−0.5, 0.9]; weights are tunable and scores comparable.
 ```
-`tension(node)` is **engine sim-state held in game memory** (combat danger, mood
-swings, deaths, reveals stamp it) — NOT a graph field, so NO N+1 fan-out (R2-04):
-the game already holds node state; the store supplies only structure. The demo
-values (`world.json`) are illustrative game-design inputs, not derived. Quality of
-the Director = quality of how the real game stamps tension; that is the genuine
-game-design work, and the store cannot do it for you (honest).
 
-`arc_advance` = candidate matches an open arc's `next_beat` (arc frontmatter,
-NOT find_trajectory). `repetition`/`fixation` read `recent_events(n)`. **Fate
-choices feed the scorer:** a `destroyed` artifact raises its seekers' faction
-tension (revenge-for-destruction beats); `sealed` lowers it (the threat is
-deferred) — so §4's fate choice has mechanical narrative consequence.
+**`callback_strength` — top-K, normalized, RUN (findings 03, 05, 07):**
+```
+callback_strength(candidate→F) =
+  (Σ over the TOP-K highest-charge revealed edges into F of
+       tension(from(e)) · recency_decay(e.day)) / K          ∈ [0,1]
+recency_decay(d) = 0.5 ^ ((today − d) / HALF_LIFE)
+```
+**Why top-K not Σ-all (finding 05 — a real bug we caught):** an unbounded sum lets
+a hub of many low-charge edges (60 anonymous grunts) swamp a few high-charge ones,
+so the Director fixates on whoever has the most connections regardless of drama.
+Narration cites a few NAMED stakes; so does the scorer. After the fix the winner
+provably tracks inputs — it follows the open arc and the tension landscape
+(finding 05 scenarios B/D flip the winner correctly).
+
+`tension(node)` is **engine sim-state held in game memory** (combat, mood, deaths,
+reveals stamp it) — NOT a graph field, so NO N+1 (R2-04). The demo values are
+illustrative; **how the real game stamps tension is THE game-design work, and no
+store can do it for you (honest).**
+
+`arc_advance` = a SINGLE additive 0/1 term (matches an open arc's `next_beat`; no
+multiplier — R3-04). `valence_fit` = `1 − |cand.valence − budget_valence|/2`
+(alternate dread/relief). `repetition`/`fixation` = fraction of the last N events
+sharing the candidate's kind/faction — the anti-treadmill guards, which
+**demonstrably engage** (finding 07: penalties climb 0.00→0.50→0.67 on repeats;
+the sim fires disaster + relief beats, not iron-raid-every-tick). *Honest caveat:*
+balancing arc-pull vs anti-repetition is a TUNING problem, not a solved constant.
+**Fate choices feed the scorer:** a `destroyed` artifact raises its seekers'
+faction tension (revenge); `sealed` lowers it.
 
 **Falsifiable success metric** (replaces "feels authored"): a blind rater shown 10
 Director picks interleaved with 10 hand-authored beats cannot beat ~60% accuracy.
+*Status: UNRUN* — needs a richer multi-tick world + human raters. The normalized
+scorer makes it computable; it remains the key open validation gate.
 
 **Arc state machine (R2-09):** `seed → rumor → rising → climax → resolution →
 dormant`. Transitions: a matching fired event advances phase + resets
@@ -259,11 +350,23 @@ non-portable), `find_trajectory` (VC numeric metrics, unrelated to arcs),
 3. Compaction — drop prose bodies, keep facts/edges; never purge (R2-01). *Resolved.*
 4. Lore generation + determinism — fact-skeleton + deterministic render (§5).
    *Resolved.*
-5. Recommendation hedge — now a clear call (§0): SQLite store is the build (R2-07).
-   *Resolved.*
+5. Recommendation hedge — clear call (§0): build the SQLite store, gbrain optional
+   (R2-07; finding 06 proves the store at parity). *Resolved.*
 6. Hunt fun — uncertainty + rival clock + curse trade-off + fate choice (§4).
    *Resolved in design; needs playtest.*
-7. Mega-hub traversal blowup — cap fan-out, avoid one-node hubs (finding 04). *Noted.*
+7. Mega-hub traversal blowup + scorer volume-domination — cap fan-out; top-K
+   scorer (finding 05). *Resolved.*
+8. Emergence (charter requirement) — combinatorial weave of authored myth ×
+   emergent chronicle; demonstrated two-colony divergence (§5.5, finding 07).
+   *Resolved (content budget + procgen honestly costed).*
+9. Reproducibility (R3-01/02) — seed.sh self-contained, 3.197 reproduces from a
+   clean brain; multi-tick sim non-degenerate (findings 06/07). *Resolved.*
+10. Scorer not normalized/runnable metric (R3-03/04) — normalized terms, stable
+    scale, valence in, no double-count (finding 07). Blind-rater metric now
+    computable but *still UNRUN* — the key open gate.
+11. Lore-content pipeline (the generative half) — schema-ready (`facts` JSON +
+    `revealed`), but authoring/procgen content is unbuilt; it's game-design +
+    content, not store work. *Open by design — the friend's core work.*
 
 ---
 
@@ -287,15 +390,32 @@ unnecessary; §5.2.)
 
 ## 11. Recommendation (the path)
 
-1. **Validate fun cheaply (gbrain, ~1 week).** Already started: brain + pack up,
-   Director spiral runs (findings 02/03). Extend to a multi-tick playthrough with
-   the §4 hunt loop and §5 fact-reveal; judge with the blind-rater metric.
-2. **Build the SQLite `edges` store** (the §10 catalog) as the durable artifact,
-   in-process. Port the proven queries; drop gbrain.
-3. **Build the Director** (tension stamping + scorer + arcs + guards) and the lore
-   fact-skeleton + renderer (§5) as game code.
+The store question is settled; the open work is game design + content, in priority
+order:
+
+1. **Build the SQLite `edges` store first** (the §10 catalog) — `storybrain/ship/
+   storybrain.ts` is a working starting point at parity with gbrain (finding 06).
+   In-process, ships with any engine. *Skip gbrain unless agent-driven SQL-free
+   exploration genuinely helps you* (and mind the stateful-brain footguns round 3
+   surfaced). This is the un-hedged call.
+2. **Prove the fun: run the blind-rater gate.** Build a richer multi-tick world
+   (the §4 hunt loop, §5 fact-reveal, real `tension` stamping) and run the
+   falsifiable metric (§6). This is the make-or-break validation and is still
+   UNRUN — everything before it is plumbing.
+3. **Do the genuinely hard, game-specific halves:** (a) how the game stamps
+   `tension` (the scorer is only as good as this), (b) the lore-content pipeline —
+   hand-author the ~150–250-fact myth corpus (§5.5 budget) first; attempt procgen
+   (DF-legends) only after hand-authored proves fun.
+
+What this exploration *proved* (findings 01–07): the World-Memory + typed-edge
+graph + Director-selection half works, is small, and is portable. What it
+*could not prove from the outside*: that the resulting stories are fun (the
+blind-rater gate) and that authoring/generating coherent lore at scale is
+tractable for this team. Those are the friend's calls — but the substrate will not
+be what blocks them.
 
 The artifact spiral — affordable because typed edges are free to write/traverse
-and lore is structured facts rendered on demand — is the case for a graph store
-over a flat wiki. gbrain proves the model in a week; SQLite ships it.
+and lore is structured facts rendered on demand — is the real case for a graph
+store over a flat wiki, and it holds up. Build the small store; spend your effort
+on tension, lore content, and tuning, not on the database.
 </content>

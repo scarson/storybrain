@@ -99,3 +99,29 @@ for Sam to review. Newest entries appended at the bottom of each section.
   Decision shift: the SQLite store is now THE deliverable; gbrain demoted to
   prototype accelerator. The lore-as-facts reframe is the strongest single
   contribution of the exploration.
+
+- 2026-06-17: Adversarial round 3 (Opus) — 2 FATAL (prototype didn't reproduce
+  from its own recipe; non-idempotent multi-tick), 4 HIGH (emergence not met,
+  scorer unnormalized, formula mismatch, procgen hand-waved). Answered each by
+  RUNNING code:
+  * Fixed seed.sh to be self-contained (init+activate, no error-swallowing);
+    re-verified 3.197 reproduces from a CLEAN brain (R3-01).
+  * Built ship/storybrain.ts: self-contained SQLite store, 10-query catalog,
+    Director tick at PARITY with gbrain (3.197) — finding 06. Proves the
+    recommended ship path concretely.
+  * Built ship/sim.ts: 5-tick NORMALIZED scorer (terms in [0,1], stable scale),
+    top-K callback (finding 05 bug fix), valence implemented, arc single additive
+    term (no double-count), repetition/fixation guards that engage; emergence demo
+    (same myth, two colonies -> raid-iron vs raid-ash) — finding 07. Fixes
+    R3-02/03/04/05.
+  * DESIGN v4->v5: added §5.5 Emergence (combinatorial weave = Rimworld's model;
+    content budget; procgen honestly costed as a separate large project); §5.4
+    contradiction-scope honesty; normalized scorer spec; un-hedged recommendation
+    (build SQLite first, gbrain optional/marginal); risks updated; flagged the
+    blind-rater "is it fun" gate as the key UNRUN validation and lore-content
+    pipeline as the friend's core open work.
+  FINAL POSITION: store/graph/selection half is proven, small, portable
+  (findings 01-07). The two things that decide the game — is it FUN (blind-rater
+  gate) and can coherent lore be authored/generated at scale — are game-design +
+  content, not substrate, and remain the friend's calls. The substrate won't block
+  them.
