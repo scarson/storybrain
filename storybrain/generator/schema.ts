@@ -15,8 +15,16 @@ export type Edge = [string, string, string] | [string, string, string, number]; 
 export type World = {
   nodes: WorldNode[];
   edges: Edge[];
-  mystery: { fragments: string[]; order: string[] };  // the why-it-fell chain
+  // The central mystery, GENERALIZED beyond #0's death chain. `order` lists the
+  // fragments in their reconstruction sequence; `order_relation` is the edge verb
+  // that links consecutive fragments and names what the sequence MEANS for this
+  // theme (not always cause-of-death). Defaults to caused_by for back-compat.
+  mystery: { fragments: string[]; order: string[]; order_relation?: OrderRelation };
 };
+
+// The mystery-spine relations a seed can declare (the batch1/batch2 review axis).
+export const ORDER_RELATIONS = ["caused_by", "enables", "prerequisite", "precedes", "reveals"] as const;
+export type OrderRelation = typeof ORDER_RELATIONS[number];
 
 export type ValidationResult = { ok: boolean; errors: string[] };
 
@@ -65,13 +73,20 @@ export function validateWorld(w: World): ValidationResult {
   if (fSet.size !== oSet.size || [...fSet].some(f => !oSet.has(f)))
     errors.push(`mystery.order must be a permutation of mystery.fragments`);
 
+  // order_relation, if declared, must be a known spine verb
+  if (w.mystery.order_relation && !(ORDER_RELATIONS as readonly string[]).includes(w.mystery.order_relation))
+    errors.push(`mystery.order_relation '${w.mystery.order_relation}' not in ${ORDER_RELATIONS.join("|")}`);
+
   return { ok: errors.length === 0, errors };
 }
 
-/** Reconstruct the why-it-fell chain by following caused_by among revealed mystery
- *  fragments (used by the integration test to prove the mystery assembles). */
-export function reconstructFall(w: World): string[] {
-  // ordered fragments whose node facts.revealed === true
+/** Reconstruct the mystery: the revealed fragments in their declared order. Theme-
+ *  agnostic — the order MEANS whatever mystery.order_relation says (cause-of-death,
+ *  build-order, provenance, containment-recipe, …), not always a fall. */
+export function reconstructMystery(w: World): string[] {
   const revealed = new Set(w.nodes.filter(n => n.facts?.revealed === true).map(n => n.slug));
   return w.mystery.order.filter(f => revealed.has(f));
 }
+
+/** @deprecated back-compat alias; the mystery is no longer assumed to be a fall. */
+export const reconstructFall = reconstructMystery;

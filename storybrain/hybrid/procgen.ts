@@ -27,7 +27,12 @@ export type Templates = {
   resources: Array<{ name: string; danger: number }>;   // danger ∈ [0,1] (hidden cost of exploiting)
   artifactKinds: string[];
   epochs: number;
-  cascadeThreshold: number;   // global pressure at which the fall fires
+  cascadeThreshold: number;   // global pressure at which the CLIMAX fires
+  // GENERALIZED (corpus eval): the climax need not be a "fall". order_relation is
+  // the verb linking the mystery fragments (the spine meaning); climax_label names
+  // the culminating event. Stage C reframes the procgen skeleton to the theme.
+  order_relation?: string;    // caused_by|enables|prerequisite|precedes|reveals
+  climax_label?: string;      // e.g. "the fall", "the structure completed", "the outbreak peak"
 };
 
 export const DEFAULT_TEMPLATES: Templates = {
@@ -45,6 +50,8 @@ export const DEFAULT_TEMPLATES: Templates = {
   artifactKinds: ["weapon-relic", "lost-codex", "cursed-idol", "key-map", "living-relic", "prophecy-object"],
   epochs: 7,
   cascadeThreshold: 1.6,
+  order_relation: "caused_by",
+  climax_label: "the wound the world could not forgive",
 };
 
 const slug = (t: string, n: string) => `${t}/${n}`;
@@ -117,10 +124,11 @@ export function runProcgen(tpl: Templates, seed: number): World {
         link(c.lastEvent, "involves", fig, day);
       }
     }
-    // cascade check — the fall
+    // climax check — generalized (a fall by default; Stage C may reframe)
     if (pressure >= tpl.cascadeThreshold) {
-      const cascade = newEvent("cascade", "the wound the world could not forgive", 0.9);
-      // fall fragments: a caused_by chain of the doomed
+      const REL = tpl.order_relation ?? "caused_by";
+      const cascade = newEvent("cascade", tpl.climax_label ?? "the climax", 0.9);
+      // mystery fragments: a chain linked by the theme's order_relation
       let prev = cascade;
       for (const [name, c] of alive) {
         if (c.fell) continue;
@@ -128,20 +136,21 @@ export function runProcgen(tpl: Templates, seed: number): World {
           c.fell = true;
           const civNode = nodes.find(n => n.slug === slug("civs", name));
           if (civNode) civNode.facts!.status = "fallen";
-          const frag = add({ slug: slug("lore", `fall-of-${name}`), type: "lore", tension: 0.8,
+          const frag = add({ slug: slug("lore", `fate-of-${name}`), type: "lore", tension: 0.8,
             facts: { subtype: "fragment", revealed: false, about: name } });
-          link(frag, "caused_by", prev === cascade ? cascade : prev, day);
+          link(frag, REL, prev === cascade ? cascade : prev, day);
           link(slug("civs", name), "fell_to", cascade, day);
           fallFragments.push(frag);
           prev = frag;
         }
       }
-      break; // the fall ends the history
+      break; // the climax ends the history
     }
   }
 
-  // mystery: the fall fragments, ordered as generated (caused_by chain)
-  return { nodes, edges, mystery: { fragments: fallFragments, order: [...fallFragments] } };
+  // mystery: the fragments, ordered as generated, linked by order_relation
+  return { nodes, edges, mystery: { fragments: fallFragments, order: [...fallFragments],
+    order_relation: (tpl.order_relation ?? "caused_by") as any } };
 }
 
 // ---- CLI ------------------------------------------------------------------

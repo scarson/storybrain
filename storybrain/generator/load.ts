@@ -3,7 +3,7 @@
 // Director multi-tick on it, and prove the central mystery reconstructs.
 // Run:  bun storybrain/generator/load.ts
 import { Database } from "bun:sqlite";
-import { validateWorld, reconstructFall, type World } from "./schema.ts";
+import { validateWorld, reconstructMystery, type World } from "./schema.ts";
 
 const path = new URL("./world-scifi.json", import.meta.url).pathname;
 const w: World = JSON.parse(await Bun.file(path).text());
@@ -74,21 +74,21 @@ for(let t=0;t<6;t++){
 console.log("  sequence:", hist.map(h=>h.faction?h.faction.split("/")[1]:h.kind).join(" → "));
 console.log("  distinct targets:", new Set(hist.map(h=>h.faction??h.kind)).size, "(not a treadmill)");
 
-// ---- mystery reconstruction (the headline) --------------------------------
-console.log("\n=== mystery reconstruction: piece together why they fell ===");
-console.log("Reveal fragments as artifacts are found, then follow caused_by:");
-// reveal all fragments (simulating a full hunt) and reconstruct in order
+// ---- mystery reconstruction (theme-agnostic — uses the declared relation) ---
+const REL = w.mystery.order_relation ?? "caused_by";
+console.log(`\n=== mystery reconstruction (order relation: ${REL}) ===`);
+console.log("Reveal fragments as artifacts are found, then follow the relation:");
 for(const f of w.mystery.fragments){ const n=w.nodes.find(x=>x.slug===f); if(n){n.facts=n.facts??{}; n.facts.revealed=true;} }
-const chain = reconstructFall(w);
-console.log("  reconstructed fall chain (mystery.order, all revealed):");
+const chain = reconstructMystery(w);
+console.log(`  reconstructed ${REL} chain (mystery.order, all revealed):`);
 for(let i=0;i<chain.length;i++) console.log(`    ${i+1}. ${chain[i]}`);
-// verify the caused_by edges actually connect consecutive fragments
-let causalOk=true;
+// verify the relation edges connect consecutive fragments (either direction)
+let chainOk=true;
 for(let i=1;i<w.mystery.order.length;i++){
   const a=w.mystery.order[i-1], b=w.mystery.order[i];
-  const linked = (db.query("SELECT 1 FROM edges WHERE src=? AND verb='caused_by' AND dst=?").get(b,a))
-              || (db.query("SELECT 1 FROM edges WHERE src=? AND verb='caused_by' AND dst=?").get(a,b));
-  if(!linked) causalOk=false;
+  const linked = (db.query("SELECT 1 FROM edges WHERE src=? AND verb=? AND dst=?").get(b,REL,a))
+              || (db.query("SELECT 1 FROM edges WHERE src=? AND verb=? AND dst=?").get(a,REL,b));
+  if(!linked) chainOk=false;
 }
-console.log(`  caused_by chain connects all consecutive fragments: ${causalOk ? "YES ✓" : "NO"}`);
+console.log(`  ${REL} chain connects all consecutive fragments: ${chainOk ? "YES ✓" : "NO"}`);
 console.log(`  full mystery reconstructable from artifact finds: ${chain.length===w.mystery.fragments.length ? "YES ✓" : "NO"}`);
