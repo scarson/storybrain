@@ -1,17 +1,10 @@
 {
-  "today": 430,
-  "half_life_days": 30,
-  "arc_weight": 1.8,
+  "today": 430, "half_life_days": 30, "arc_weight": 1.8,
   "tension": {
-    "colonists/vera": 0.5,
-    "colonists/bjorn": 0.4,
-    "colonists/mira": 0.3,
-    "factions/iron-empire": 0.6,
-    "factions/ash-clan": 0.4,
-    "artifacts/ashmark": 0.7,
-    "artifacts/weeping-crown": 0.5,
-    "lore/ashmark-forged": 0.7,
-    "arcs/iron-empire-reckoning": 0.8
+    "colonists/vera": 0.5, "colonists/bjorn": 0.4, "colonists/mira": 0.3,
+    "factions/iron-empire": 0.6, "factions/ash-clan": 0.4,
+    "artifacts/ashmark": 0.7, "artifacts/weeping-crown": 0.5,
+    "lore/ashmark-forged": 0.7, "arcs/iron-empire-reckoning": 0.8
   },
   "edge_day": {
     "lore/ashmark-forged->factions/iron-empire": 412,
