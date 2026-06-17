@@ -305,6 +305,104 @@
         "kind": "standoff",
         "title": "The Governor orders the Still Archive sealed; Jax stalls at the Warm Vault"
       }
+    },
+    {
+      "slug": "beliefs/the-clean-inheritance",
+      "type": "belief",
+      "tension": 0.55,
+      "facts": {
+        "title": "The Clean Inheritance",
+        "detail": "The Cleaners' doctrine: that love for one's descendants is measured by what you spare them from knowing. A child born without the crime in their record is a child who cannot be made to carry it."
+      }
+    },
+    {
+      "slug": "beliefs/the-owed-truth",
+      "type": "belief",
+      "tension": 0.55,
+      "facts": {
+        "title": "The Owed Truth",
+        "detail": "The Mourners' doctrine: that a truth this heavy belongs to the people it is about, and that mercy bought with forgetting is just the crime, committed a second time against your own children."
+      }
+    },
+    {
+      "slug": "figures/the-quartermaster",
+      "type": "figure",
+      "tension": 0.7,
+      "facts": {
+        "title": "The Quartermaster",
+        "role": "ration-keeper of the makers",
+        "detail": "The maker who tallied the famine ledger and confirmed that two colonies could not both live. She did no harm with her own hands; she only made the arithmetic undeniable. The Starved Chart is, in part, her work."
+      }
+    },
+    {
+      "slug": "figures/the-ferryman",
+      "type": "figure",
+      "tension": 0.7,
+      "facts": {
+        "title": "The Ferryman",
+        "role": "keeper of the second seeding",
+        "detail": "The maker sent to tend the sibling colony — the Silenced — and then ordered home as the rations were cut. He returned and never spoke again. The Mourners' Will is addressed, in part, to him."
+      }
+    },
+    {
+      "slug": "figures/the-scatterer",
+      "type": "figure",
+      "tension": 0.6,
+      "facts": {
+        "title": "The Scatterer",
+        "role": "architect of dispersal",
+        "detail": "The maker who designed the great dispersal — the thousand-year scattering of bloodlines that would return as the Foundlings, blind to whose children they were."
+      }
+    },
+    {
+      "slug": "events/m1-the-second-seeding",
+      "type": "event",
+      "tension": 0.5,
+      "day": -3000,
+      "facts": {
+        "kind": "founding",
+        "title": "The makers seed a sibling colony"
+      }
+    },
+    {
+      "slug": "events/m2-the-famine-ledger",
+      "type": "event",
+      "tension": 0.7,
+      "day": -2900,
+      "facts": {
+        "kind": "reckoning",
+        "title": "The Quartermaster confirms: food for one"
+      }
+    },
+    {
+      "slug": "events/m3-the-silence",
+      "type": "event",
+      "tension": 0.9,
+      "day": -2880,
+      "facts": {
+        "kind": "atrocity",
+        "title": "The rations to the sibling colony are cut"
+      }
+    },
+    {
+      "slug": "events/m4-the-vote-to-forget",
+      "type": "event",
+      "tension": 0.85,
+      "day": -2800,
+      "facts": {
+        "kind": "schism",
+        "title": "The makers vote to erase the crime and themselves"
+      }
+    },
+    {
+      "slug": "events/m5-the-dispersal",
+      "type": "event",
+      "tension": 0.7,
+      "day": -2700,
+      "facts": {
+        "kind": "exodus",
+        "title": "The bloodlines are scattered to return blind"
+      }
     }
   ],
   "edges": [
@@ -601,6 +699,109 @@
       "factions/the-foundlings",
       "exploits",
       "locations/cistern-stone-cut"
+    ],
+    [
+      "factions/the-cleaners",
+      "holds",
+      "beliefs/the-clean-inheritance"
+    ],
+    [
+      "factions/the-mourners",
+      "holds",
+      "beliefs/the-owed-truth"
+    ],
+    [
+      "events/m1-the-second-seeding",
+      "involves",
+      "figures/the-ferryman",
+      -3000
+    ],
+    [
+      "events/m1-the-second-seeding",
+      "involves",
+      "figures/the-silenced",
+      -3000
+    ],
+    [
+      "events/m2-the-famine-ledger",
+      "involves",
+      "figures/the-quartermaster",
+      -2900
+    ],
+    [
+      "events/m2-the-famine-ledger",
+      "caused_by",
+      "events/m1-the-second-seeding",
+      -2900
+    ],
+    [
+      "events/m3-the-silence",
+      "caused_by",
+      "events/m2-the-famine-ledger",
+      -2880
+    ],
+    [
+      "events/m3-the-silence",
+      "involves",
+      "figures/the-silenced",
+      -2880
+    ],
+    [
+      "events/m3-the-silence",
+      "involves",
+      "figures/the-ferryman",
+      -2880
+    ],
+    [
+      "events/m4-the-vote-to-forget",
+      "caused_by",
+      "events/m3-the-silence",
+      -2800
+    ],
+    [
+      "events/m4-the-vote-to-forget",
+      "involves",
+      "factions/the-cleaners",
+      -2800
+    ],
+    [
+      "events/m4-the-vote-to-forget",
+      "involves",
+      "factions/the-mourners",
+      -2800
+    ],
+    [
+      "events/m5-the-dispersal",
+      "caused_by",
+      "events/m4-the-vote-to-forget",
+      -2700
+    ],
+    [
+      "events/m5-the-dispersal",
+      "involves",
+      "figures/the-scatterer",
+      -2700
+    ],
+    [
+      "events/m5-the-dispersal",
+      "involves",
+      "factions/the-quiet-makers",
+      -2700
+    ],
+    [
+      "artifacts/the-starved-chart",
+      "records",
+      "events/m2-the-famine-ledger"
+    ],
+    [
+      "artifacts/the-edited-monument",
+      "records",
+      "events/m3-the-silence"
+    ],
+    [
+      "artifacts/the-mourners-will",
+      "records",
+      "events/m4-the-vote-to-forget"
     ]
   ],
   "mystery": {
