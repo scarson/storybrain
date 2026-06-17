@@ -89,3 +89,42 @@ DRAMATIC POTENTIAL (DRAMA).
 **Totals: A = 44, B = 36. WINNER: A** (decisive — A is the cleaner, deeper, more thematically-pointed build with a real multi-artifact reconstruction puzzle; B reskins the same premise but inherits a self-contradicting fall-template and procgen filler that drag every dimension down).
 
 ---
+
+## Theme: time-war
+
+| Dim   | A | B |
+|-------|---|---|
+| COH   | 9 | 8 |
+| DEP   | 9 | 8 |
+| THEME | 9 | 9 |
+| NOV   | 9 | 8 |
+| DRAMA | 9 | 9 |
+
+(Close siblings: both share the genuinely clever central device — the mystery `order` runs REVERSED against the fragments' `seq`, with `order_relation: precedes`, so the war's "beginning" is whatever the expedition sequences last, and cataloguing the relics IS firing the war's verdict.)
+
+- COH: A. Both execute the reversed-precedes spine cleanly (`war-is-still-being-decided` precedes `witnesses-archived` precedes `tenses-collapsed` precedes `cessation-revised` precedes `aelthar-struck`, and B's mirror). A is marginally tighter: every relic's `drops` set, `hidden_at`, and `forged_by` reconcile with the lore it carries, and the ambiguous `status` of all three civs is honored consistently ("no corpse, no witnessed fall"). B is also coherent but carries faint scaffolding (numbered `the-undated-seer-1/27`, artifact slugs that are archetype-plus-index like `the-undated-anachronism-37`).
+- DEP: A. Both have ~5 mystery fragments plus a rich support layer. A has slightly more connective lore (13 lore nodes incl. `the-ledger-is-not-neutral`, `the-aelthar-may-never-have-been`, `the-medal-rewards-the-unfought` — "a promise the timeline is obligated to keep") giving more recursive causal hooks. B's support lore is strong too (`the-reply-fits-no-question`: two finds read in wrong order are nonsense, in right order a confession; `anachronism-predates-its-maker`: the Undated may have authored the Erevan to have an enemy worth editing — an excellent bootstrap).
+- THEME: Tie at 9. Both fully realize "a war fought across tense where before/after stop meaning anything." A: "they were dying when they decided to never have started losing." B: "whichever ending they reconstruct first becomes the one the relics always remembered." Both are top-tier thematic statements of the genre.
+- NOV: A. A's individually-named relics are more surprising and self-explaining as hooks — `the-medal-for-a-battle-not-yet-fought`, `the-treaty-signed-by-the-dead`, `the-first-shot-that-came-last`, `the-envoys-older-skull` (an envoy sent before his senders existed, bootstrapping their existence). B's strongest novelty (`the-reply-fits-no-question`, the Erevan possibly authored to be an enemy) is excellent but its artifact NAMES are generic archetype labels, costing surprise at the hunt-surface.
+- DRAMA: Tie at 9. Both have superb OPEN climax arcs where placing the final relic is a MOVE not an observation, with the counterforce reaching back to overwrite the chosen ending. A: `arcs/the-verdict` (holds five of six, the sixth decides), Dane remembering the expedition's own ending but refusing to name it. B: `arcs/the-last-relic`, Imrie realizing the catalogue is upside down, Tessmer being "answered" by the Oncewill before she asks. Equally generative for emergent artifact-hunt play.
+
+**Totals: A = 45, B = 42. WINNER: A** (both are excellent and the gap is the narrowest of the five themes; A wins on relic-naming novelty, a slightly thicker recursive lore layer, and a cleaner in-fiction surface, while B's enrichment is genuinely strong and only lightly marred by procgen-flavored slugs/figures).
+
+---
+
+## Summary
+
+| Theme | A total | B total | Winner |
+|---|---|---|---|
+| the-living-marrow | 40 | 40 | B (tiebreak) |
+| first-contact-diplomacy | 44 | 41 | A |
+| bio-symbiosis-horror | 42 | 38 | A |
+| machine-successor | 44 | 36 | A |
+| time-war | 45 | 42 | A |
+
+A wins 4 of 5 themes; B takes the-living-marrow on a thematic-richness tiebreak.
+The recurring discriminator: A worlds tend to carry tighter, redundantly-enforced
+mystery spines, fully in-fiction prose, and more evocative individually-named
+artifacts; B worlds often pair a stronger live present-arc with weaker mystery-relation
+fits and visible scaffolding residue (numbered seers, templated event titles,
+archetype-as-name slugs, and in machine-successor a fell_to/active self-contradiction).
