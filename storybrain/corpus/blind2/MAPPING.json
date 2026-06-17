@@ -1,17 +1,41 @@
 {
-  "uplift-nursery-world": {
+  "the-living-marrow": {
+    "A": "hybrid2",
+    "B": "pure"
+  },
+  "first-contact-diplomacy": {
+    "A": "pure",
+    "B": "hybrid2"
+  },
+  "bio-symbiosis-horror": {
+    "A": "hybrid2",
+    "B": "pure"
+  },
+  "machine-successor": {
+    "A": "pure",
+    "B": "hybrid2"
+  },
+  "time-war": {
+    "A": "hybrid2",
+    "B": "pure"
+  },
+  "generation-ship-identity": {
+    "A": "pure",
+    "B": "hybrid2"
+  },
+  "megastructure-absent-architects": {
     "A": "pure",
     "B": "hybrid2"
   },
   "extinction-plague-vector": {
-    "A": "pure",
-    "B": "hybrid2"
+    "A": "hybrid2",
+    "B": "pure"
   },
   "crowded-trade-federation": {
-    "A": "pure",
-    "B": "hybrid2"
+    "A": "hybrid2",
+    "B": "pure"
   },
-  "generation-ship-identity": {
+  "uplift-nursery-world": {
     "A": "pure",
     "B": "hybrid2"
   }

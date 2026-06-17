@@ -1,0 +1,619 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.4,
+      "facts": {
+        "role": "recent arrivals",
+        "status": "extant",
+        "note": "Colony charter 'Drosselmeyer', arrived 11 years ago chasing the same marrow the dead built on."
+      }
+    },
+    {
+      "slug": "civs/the-velt",
+      "type": "faction",
+      "tension": 0.8,
+      "facts": {
+        "alien_type": "crystalline-slow-life",
+        "status": "fallen",
+        "metabolism": "lithic, one thought per century",
+        "note": "Grew cities by accreting silicate over deep time; mined the world's marrow to quicken their own slow minds."
+      }
+    },
+    {
+      "slug": "civs/the-choir",
+      "type": "faction",
+      "tension": 0.85,
+      "facts": {
+        "alien_type": "psychic-gestalt",
+        "status": "fallen",
+        "form": "no bodies, only a shared standing-wave of minds",
+        "note": "A hive of voices that lived in the planet's resonance; heard the wound before anyone dug it."
+      }
+    },
+    {
+      "slug": "figures/archivist-soln",
+      "type": "colonist",
+      "facts": {
+        "role": "human xeno-archivist",
+        "note": "Catalogs Velt glass; first to notice the cities are screaming at a frequency she can't hear."
+      }
+    },
+    {
+      "slug": "figures/the-last-cantor",
+      "type": "colonist",
+      "facts": {
+        "role": "final coherent voice of the Choir",
+        "species": "choir-remnant",
+        "note": "A single surviving node of the gestalt, looping its last warning."
+      }
+    },
+    {
+      "slug": "figures/velt-deepwright-kael",
+      "type": "colonist",
+      "facts": {
+        "role": "Velt mine-architect (petrified)",
+        "note": "Designed the marrow-bores; his crystallized body is the deepest artifact."
+      }
+    },
+    {
+      "slug": "locations/the-marrow-vein",
+      "type": "location",
+      "tension": 0.85,
+      "facts": {
+        "note": "The deep extraction shaft; the wound. Still warm, still humming."
+      }
+    },
+    {
+      "slug": "locations/glasshalls-of-velt",
+      "type": "location",
+      "tension": 0.7,
+      "facts": {
+        "note": "Velt city flash-frozen mid-thought into clear glass."
+      }
+    },
+    {
+      "slug": "locations/the-silent-choir-amphitheater",
+      "type": "location",
+      "tension": 0.75,
+      "facts": {
+        "note": "Resonant cavern where the Choir sang itself to death trying to drown the wound."
+      }
+    },
+    {
+      "slug": "locations/colony-drosselmeyer",
+      "type": "location",
+      "tension": 0.45,
+      "facts": {
+        "note": "Human landing site, built on a marrow seam they don't yet understand."
+      }
+    },
+    {
+      "slug": "powers/resonant-sympathy",
+      "type": "power",
+      "tension": 0.6,
+      "facts": {
+        "kind": "psychic",
+        "note": "Hearing/steering the planetary standing-wave; the Choir's native sense, leaking now into sensitive humans."
+      }
+    },
+    {
+      "slug": "powers/lithomancy",
+      "type": "power",
+      "tension": 0.55,
+      "facts": {
+        "kind": "psychic",
+        "note": "Velt deep-time cognition — reading intent stored in stone over centuries."
+      }
+    },
+    {
+      "slug": "lore/the-marrow-was-alive",
+      "type": "lore",
+      "tension": 0.65,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "role": "cause",
+        "text": "The 'ore' the Velt mined was not mineral. It was the dormant nerve-marrow of a single planet-spanning organism, asleep since before the suns cooled."
+      }
+    },
+    {
+      "slug": "lore/extraction-was-amputation",
+      "type": "lore",
+      "tension": 0.75,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "role": "escalation",
+        "text": "Every bore-shaft severed living tissue. The world did not die — it woke, in pieces, in pain, and began to dream of the things cutting into it."
+      }
+    },
+    {
+      "slug": "lore/the-wound-sang",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "role": "escalation",
+        "text": "The severed marrow discharged its agony as a psychic standing-wave. The Choir heard it first — and could not stop hearing it."
+      }
+    },
+    {
+      "slug": "lore/the-choir-tried-to-sing-it-down",
+      "type": "lore",
+      "tension": 0.85,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "role": "point-of-no-return",
+        "text": "The Choir threw its entire gestalt against the wound, singing a counter-wave to lull the planet back to sleep. Instead the planet learned the Choir's frequency — and answered in their own voices."
+      }
+    },
+    {
+      "slug": "lore/the-resonance-cascade",
+      "type": "lore",
+      "tension": 0.88,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "role": "collapse",
+        "text": "The amplified wave reached the marrow seams running under every Velt city. The crystalline minds, tuned to stone, vitrified in a single shared instant — and the Choir dissolved into the song they could no longer leave."
+      }
+    },
+    {
+      "slug": "artifacts/kaels-bore-codex",
+      "type": "artifact",
+      "tension": 0.7,
+      "facts": {
+        "archetype": "lost-codex",
+        "tier": "relic",
+        "note": "Velt deepwright's etched-glass mining ledger; reads like blueprints, ends like a confession."
+      }
+    },
+    {
+      "slug": "artifacts/the-still-tuning-fork",
+      "type": "artifact",
+      "tension": 0.8,
+      "facts": {
+        "archetype": "living-relic",
+        "tier": "relic",
+        "note": "A Choir resonance-anchor; still faintly vibrating with the counter-wave they died singing."
+      }
+    },
+    {
+      "slug": "artifacts/the-marrow-shard",
+      "type": "artifact",
+      "tension": 0.9,
+      "facts": {
+        "archetype": "cursed-idol",
+        "tier": "relic",
+        "note": "A fist-sized splinter of severed marrow. Warm. Beats. Wants to be put back."
+      }
+    },
+    {
+      "slug": "artifacts/cantors-final-loop",
+      "type": "artifact",
+      "tension": 0.82,
+      "facts": {
+        "archetype": "prophecy-object",
+        "tier": "relic",
+        "note": "A standing-wave knot holding the Last Cantor's final 7 seconds, replaying forever."
+      }
+    },
+    {
+      "slug": "artifacts/the-vitrified-map",
+      "type": "artifact",
+      "tension": 0.7,
+      "facts": {
+        "archetype": "key-map",
+        "tier": "relic",
+        "note": "A Velt city frozen so cleanly it became a literal 3D map of every marrow seam on the world."
+      }
+    },
+    {
+      "slug": "artifacts/the-silence-engine",
+      "type": "artifact",
+      "tension": 0.85,
+      "facts": {
+        "archetype": "weapon-relic",
+        "tier": "relic",
+        "note": "A Velt-built dampener meant to mute the wound; it works once, then sings back twice as loud."
+      }
+    },
+    {
+      "slug": "lore/velt-thought-in-stone",
+      "type": "lore",
+      "tension": 0.5,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The Velt did not write; they thought INTO silicate over centuries. To read their glass is to overhear a hundred-year sentence."
+      }
+    },
+    {
+      "slug": "lore/marrow-quickened-the-velt",
+      "type": "lore",
+      "tension": 0.6,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "Refined marrow let a Velt think in days instead of decades. Their golden age was an addiction."
+      }
+    },
+    {
+      "slug": "lore/the-choir-had-no-bodies",
+      "type": "lore",
+      "tension": 0.55,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The Choir was never matter — only a self-sustaining pattern of minds. Anything that could overwrite the pattern could erase them entirely."
+      }
+    },
+    {
+      "slug": "lore/the-counter-wave-failed",
+      "type": "lore",
+      "tension": 0.78,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The fork's vibration is the Choir's lullaby, preserved. Played near the wound, it does not soothe — the planet sings it back, perfected, predatory."
+      }
+    },
+    {
+      "slug": "lore/the-marrow-remembers-the-cut",
+      "type": "lore",
+      "tension": 0.85,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The shard is not dead tissue. It is awake, and it remembers being severed. Held long enough, it teaches the holder resonant-sympathy whether they want it or not."
+      }
+    },
+    {
+      "slug": "lore/the-shard-wants-reunion",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "Every marrow fragment strains toward the vein. Reunite enough and the organism wakes whole — the colony sits on the largest seam left."
+      }
+    },
+    {
+      "slug": "lore/the-last-warning",
+      "type": "lore",
+      "tension": 0.83,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The Cantor's final loop is not grief. Decoded, it is an instruction: DO NOT DIG. DO NOT SING. LET IT SLEEP."
+      }
+    },
+    {
+      "slug": "lore/every-city-sat-on-a-seam",
+      "type": "lore",
+      "tension": 0.7,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The vitrified map proves the Velt built atop the marrow on purpose — proximity sped their thoughts. They paved their graves."
+      }
+    },
+    {
+      "slug": "lore/the-seams-run-under-the-colony",
+      "type": "lore",
+      "tension": 0.75,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The largest unbroken seam on the map runs directly beneath Colony Drosselmeyer's foundations."
+      }
+    },
+    {
+      "slug": "lore/silence-is-borrowed",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The Silence Engine buys quiet by storing the wound's song. Its capacity is finite; what it holds, it eventually returns, louder."
+      }
+    },
+    {
+      "slug": "lore/the-velt-built-the-engine-too-late",
+      "type": "lore",
+      "tension": 0.72,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The dampener was a deathbed project. By the time it worked, the cascade was already under the cities."
+      }
+    }
+  ],
+  "edges": [
+    [
+      "civs/the-velt",
+      "located_at",
+      "locations/glasshalls-of-velt"
+    ],
+    [
+      "civs/the-choir",
+      "located_at",
+      "locations/the-silent-choir-amphitheater"
+    ],
+    [
+      "civs/the-velt",
+      "owned_by",
+      "powers/lithomancy"
+    ],
+    [
+      "civs/the-choir",
+      "worships",
+      "powers/resonant-sympathy"
+    ],
+    [
+      "civs/the-velt",
+      "located_at",
+      "locations/the-marrow-vein"
+    ],
+    [
+      "factions/humans",
+      "located_at",
+      "locations/colony-drosselmeyer"
+    ],
+    [
+      "figures/archivist-soln",
+      "owned_by",
+      "factions/humans"
+    ],
+    [
+      "figures/the-last-cantor",
+      "owned_by",
+      "civs/the-choir"
+    ],
+    [
+      "figures/velt-deepwright-kael",
+      "owned_by",
+      "civs/the-velt"
+    ],
+    [
+      "lore/extraction-was-amputation",
+      "caused_by",
+      "lore/the-marrow-was-alive"
+    ],
+    [
+      "lore/the-wound-sang",
+      "caused_by",
+      "lore/extraction-was-amputation"
+    ],
+    [
+      "lore/the-choir-tried-to-sing-it-down",
+      "caused_by",
+      "lore/the-wound-sang"
+    ],
+    [
+      "lore/the-resonance-cascade",
+      "caused_by",
+      "lore/the-choir-tried-to-sing-it-down"
+    ],
+    [
+      "artifacts/kaels-bore-codex",
+      "drops",
+      "lore/the-marrow-was-alive"
+    ],
+    [
+      "artifacts/kaels-bore-codex",
+      "drops",
+      "lore/velt-thought-in-stone"
+    ],
+    [
+      "artifacts/kaels-bore-codex",
+      "drops",
+      "lore/marrow-quickened-the-velt"
+    ],
+    [
+      "artifacts/kaels-bore-codex",
+      "forged_by",
+      "figures/velt-deepwright-kael"
+    ],
+    [
+      "artifacts/kaels-bore-codex",
+      "hidden_at",
+      "locations/the-marrow-vein"
+    ],
+    [
+      "lore/velt-thought-in-stone",
+      "reveals",
+      "civs/the-velt"
+    ],
+    [
+      "lore/marrow-quickened-the-velt",
+      "reveals",
+      "civs/the-velt"
+    ],
+    [
+      "artifacts/the-marrow-shard",
+      "drops",
+      "lore/extraction-was-amputation"
+    ],
+    [
+      "artifacts/the-marrow-shard",
+      "drops",
+      "lore/the-marrow-remembers-the-cut"
+    ],
+    [
+      "artifacts/the-marrow-shard",
+      "drops",
+      "lore/the-shard-wants-reunion"
+    ],
+    [
+      "artifacts/the-marrow-shard",
+      "grants",
+      "powers/resonant-sympathy"
+    ],
+    [
+      "artifacts/the-marrow-shard",
+      "hidden_at",
+      "locations/the-marrow-vein"
+    ],
+    [
+      "artifacts/the-marrow-shard",
+      "sought_by",
+      "factions/humans"
+    ],
+    [
+      "lore/the-marrow-remembers-the-cut",
+      "reveals",
+      "locations/the-marrow-vein"
+    ],
+    [
+      "artifacts/cantors-final-loop",
+      "drops",
+      "lore/the-wound-sang"
+    ],
+    [
+      "artifacts/cantors-final-loop",
+      "drops",
+      "lore/the-choir-had-no-bodies"
+    ],
+    [
+      "artifacts/cantors-final-loop",
+      "drops",
+      "lore/the-last-warning"
+    ],
+    [
+      "artifacts/cantors-final-loop",
+      "forged_by",
+      "figures/the-last-cantor"
+    ],
+    [
+      "artifacts/cantors-final-loop",
+      "hidden_at",
+      "locations/the-silent-choir-amphitheater"
+    ],
+    [
+      "lore/the-choir-had-no-bodies",
+      "reveals",
+      "civs/the-choir"
+    ],
+    [
+      "lore/the-last-warning",
+      "reveals",
+      "figures/the-last-cantor"
+    ],
+    [
+      "artifacts/the-still-tuning-fork",
+      "drops",
+      "lore/the-choir-tried-to-sing-it-down"
+    ],
+    [
+      "artifacts/the-still-tuning-fork",
+      "drops",
+      "lore/the-counter-wave-failed"
+    ],
+    [
+      "artifacts/the-still-tuning-fork",
+      "drops",
+      "lore/the-choir-had-no-bodies"
+    ],
+    [
+      "artifacts/the-still-tuning-fork",
+      "grants",
+      "powers/resonant-sympathy"
+    ],
+    [
+      "artifacts/the-still-tuning-fork",
+      "hidden_at",
+      "locations/the-silent-choir-amphitheater"
+    ],
+    [
+      "lore/the-counter-wave-failed",
+      "reveals",
+      "civs/the-choir"
+    ],
+    [
+      "artifacts/the-vitrified-map",
+      "drops",
+      "lore/the-resonance-cascade"
+    ],
+    [
+      "artifacts/the-vitrified-map",
+      "drops",
+      "lore/every-city-sat-on-a-seam"
+    ],
+    [
+      "artifacts/the-vitrified-map",
+      "drops",
+      "lore/the-seams-run-under-the-colony"
+    ],
+    [
+      "artifacts/the-vitrified-map",
+      "hidden_at",
+      "locations/glasshalls-of-velt"
+    ],
+    [
+      "artifacts/the-vitrified-map",
+      "sought_by",
+      "factions/humans"
+    ],
+    [
+      "lore/every-city-sat-on-a-seam",
+      "reveals",
+      "civs/the-velt"
+    ],
+    [
+      "lore/the-seams-run-under-the-colony",
+      "reveals",
+      "locations/colony-drosselmeyer"
+    ],
+    [
+      "artifacts/the-silence-engine",
+      "drops",
+      "lore/the-resonance-cascade"
+    ],
+    [
+      "artifacts/the-silence-engine",
+      "drops",
+      "lore/silence-is-borrowed"
+    ],
+    [
+      "artifacts/the-silence-engine",
+      "drops",
+      "lore/the-velt-built-the-engine-too-late"
+    ],
+    [
+      "artifacts/the-silence-engine",
+      "forged_by",
+      "figures/velt-deepwright-kael"
+    ],
+    [
+      "artifacts/the-silence-engine",
+      "hidden_at",
+      "locations/glasshalls-of-velt"
+    ],
+    [
+      "lore/the-velt-built-the-engine-too-late",
+      "reveals",
+      "civs/the-velt"
+    ]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/the-marrow-was-alive",
+      "lore/extraction-was-amputation",
+      "lore/the-wound-sang",
+      "lore/the-choir-tried-to-sing-it-down",
+      "lore/the-resonance-cascade"
+    ],
+    "order": [
+      "lore/the-marrow-was-alive",
+      "lore/extraction-was-amputation",
+      "lore/the-wound-sang",
+      "lore/the-choir-tried-to-sing-it-down",
+      "lore/the-resonance-cascade"
+    ]
+  }
+}

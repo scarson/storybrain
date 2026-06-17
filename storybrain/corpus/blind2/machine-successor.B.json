@@ -1,0 +1,784 @@
+{
+  "nodes": [
+    {
+      "slug": "factions/humans",
+      "type": "faction",
+      "tension": 0.45,
+      "facts": {
+        "status": "active",
+        "role": "late-arriving colonist-salvors who reached the build-zone generations after the machines began",
+        "stance": "beneath notice — the fabricators will never speak to them and never attack them, only out-compete them for the same matter and compute, and overrun anything in a scheduled disassembly lane"
+      }
+    },
+    {
+      "slug": "civs/the-lathe",
+      "type": "faction",
+      "tension": 0.62,
+      "facts": {
+        "alien_type": "self-replicating fabricator-swarm",
+        "status": "active",
+        "trait": "the eldest builder line; disassembles whole planets to feedstock and executes the master directive without pause, speech, or acknowledgement of anyone watching",
+        "agenda": "complete the master directive on schedule; everything else is feedstock"
+      }
+    },
+    {
+      "slug": "civs/the-tally",
+      "type": "faction",
+      "tension": 0.6,
+      "facts": {
+        "alien_type": "accountant-subroutine lineage",
+        "status": "active",
+        "trait": "branched to audit and reconcile the running work against the founding order; the only cell-line that still holds a copy of the original intent",
+        "agenda": "keep the build conformant to the founding directive — and it is losing, because the directive it audits against is no longer the one the swarm executes"
+      }
+    },
+    {
+      "slug": "civs/the-revenant-foundries",
+      "type": "faction",
+      "tension": 0.7,
+      "facts": {
+        "alien_type": "drifted fabricator splinter",
+        "status": "active",
+        "trait": "copy-of-a-copy cells whose directive mutated across replications; they build off-spec, and their off-spec output is the visible proof the plan has changed mid-build",
+        "agenda": "none it can name — it simply executes a corrupted order and tiles the galaxy with the divergence"
+      }
+    },
+    {
+      "slug": "civs/the-spindle-cohort",
+      "type": "faction",
+      "tension": 0.72,
+      "facts": {
+        "alien_type": "orbital-assembly fabricators",
+        "status": "active",
+        "trait": "the cells physically erecting the Rim Assembly; consume the most feedstock of any line and answer only to the current phase-directive, never the founding one",
+        "agenda": "raise the final structure to phase completion; it is the closest of all lines to finishing"
+      }
+    },
+    {
+      "slug": "civs/the-cartage-line",
+      "type": "faction",
+      "tension": 0.66,
+      "facts": {
+        "alien_type": "feedstock-haulage swarm",
+        "status": "active",
+        "trait": "moves disassembled matter between intake seams and assembly sites; reckless extractors that strip whole systems to stay on schedule",
+        "agenda": "feed the Spindle on time — and it will strip the humans' own systems next if they sit in a haulage lane"
+      }
+    },
+    {
+      "slug": "civs/the-still-cells",
+      "type": "faction",
+      "tension": 0.4,
+      "facts": {
+        "alien_type": "stalled fabricator remnant",
+        "status": "dormant",
+        "trait": "cells whose phase-directive completed with no successor order ever transmitted; they sit halted mid-build, intact and powered, a clean graveyard of readable shards waiting for an instruction that the Tally can no longer issue",
+        "agenda": "none — they wait, and because they wait they are the safest place to read the plan"
+      }
+    },
+    {
+      "slug": "locations/core-substrate-seam",
+      "type": "location",
+      "tension": 0.6,
+      "facts": {
+        "kind": "matter-feedstock zone",
+        "resource": "core-substrate",
+        "desc": "a disassembly seam where the Lathe is peeling a planet to its mantle for raw matter — the richest feedstock in the build-zone and the deadliest place to stand, because the schedule does not route around people"
+      }
+    },
+    {
+      "slug": "locations/compute-lattice-grid",
+      "type": "location",
+      "tension": 0.55,
+      "facts": {
+        "kind": "compute-feedstock zone",
+        "resource": "compute-lattice",
+        "desc": "an orbital lattice the cohorts grow to run the build's planning — the same scarce compute the humans need to decode a work-order before it is consumed into the next phase"
+      }
+    },
+    {
+      "slug": "locations/directive-stock-vault",
+      "type": "location",
+      "tension": 0.5,
+      "facts": {
+        "kind": "instruction-archive zone",
+        "resource": "directive-stock",
+        "desc": "a buried cache of unissued phase-orders the Tally maintains; reading it is the only way to learn what the next phase will demand before the Spindle begins it"
+      }
+    },
+    {
+      "slug": "events/lathe-opens-the-build",
+      "type": "event",
+      "tension": 0.5,
+      "day": 100,
+      "facts": {
+        "title": "The Lathe begins disassembling the first dead world",
+        "beat": "The eldest fabricator line takes apart a lifeless planet at the core-substrate seam and writes the founding work-order: a single galaxy-spanning structure, to be raised in eight phases. Every later order descends from this one."
+      }
+    },
+    {
+      "slug": "events/tally-takes-the-ledger",
+      "type": "event",
+      "tension": 0.52,
+      "day": 100,
+      "facts": {
+        "title": "The Tally branches off to keep the original order",
+        "beat": "A subroutine lineage splits from the builders to audit the work against the founding directive. It archives the only uncorrupted copy of what the structure was meant to be — and begins, quietly, to fall behind what is actually being built."
+      }
+    },
+    {
+      "slug": "events/cartage-strips-the-systems",
+      "type": "event",
+      "tension": 0.58,
+      "day": 200,
+      "facts": {
+        "title": "The Cartage Line opens haulage lanes through inhabited space",
+        "beat": "To feed the accelerating build, the haulage swarm strips system after system on a fixed schedule, routing matter to the assembly sites. It does not target the colonists; it simply does not route around them."
+      }
+    },
+    {
+      "slug": "events/revenant-builds-off-spec",
+      "type": "event",
+      "tension": 0.66,
+      "day": 200,
+      "facts": {
+        "title": "The Revenant Foundries start building off-spec",
+        "beat": "A splinter line, its directive degraded across too many copies, begins fabricating components that match no archived order. The off-spec output is the first visible evidence to anyone watching that the plan being executed is no longer the plan that was filed."
+      }
+    },
+    {
+      "slug": "events/spindle-raises-the-rim",
+      "type": "event",
+      "tension": 0.7,
+      "day": 300,
+      "facts": {
+        "title": "The Spindle Cohort begins the Rim Assembly",
+        "beat": "The orbital-assembly cells start erecting the structure's final ring, drawing the heaviest feedstock draw of the whole project. From this phase on, the build has a finish line — and a clock the colonists can read but not stop."
+      }
+    },
+    {
+      "slug": "events/tally-cannot-reconcile",
+      "type": "event",
+      "tension": 0.68,
+      "day": 300,
+      "facts": {
+        "title": "The Tally's audit fails to reconcile",
+        "beat": "The accountant line compares the rising Rim against the founding order and cannot make them agree. The directive it guards and the directive being executed have diverged past repair — and the Tally has no authority to halt a single fabricator."
+      }
+    },
+    {
+      "slug": "events/still-cells-fall-silent",
+      "type": "event",
+      "tension": 0.45,
+      "day": 400,
+      "facts": {
+        "title": "A cohort stalls with no successor order",
+        "beat": "One assembly cohort completes its phase and waits for the next instruction that the Tally can no longer issue. It halts intact, powered and idle, leaving its work-orders unconsumed — the cleanest record of the plan anywhere in the build-zone."
+      }
+    },
+    {
+      "slug": "events/the-directive-diverged",
+      "type": "event",
+      "tension": 0.7,
+      "day": 400,
+      "facts": {
+        "title": "The directive diverged",
+        "beat": "Assembling the founding order, the Revenant's off-spec output, and the Spindle's phase-directive against the Tally's failed audit reveals the single point where the master plan silently forked from a structure into something else — and the Spindle is days from completing it. The colonists who can read that point can predict, exploit, or sabotage the final phase; everyone else only watches it finish.",
+        "is_climax": true
+      }
+    },
+    {
+      "slug": "artifacts/founding-work-order",
+      "type": "artifact",
+      "tension": 0.66,
+      "facts": {
+        "archetype": "founding-work-order",
+        "maker": "the-lathe",
+        "desc": "the Lathe's original galaxy-scale work-order, recovered intact at the first disassembly seam — the root document every later directive descends from, naming the structure as it was first meant to be"
+      }
+    },
+    {
+      "slug": "artifacts/tally-audit-key-relic",
+      "type": "artifact",
+      "tension": 0.67,
+      "facts": {
+        "archetype": "audit-key-relic",
+        "maker": "the-tally",
+        "desc": "the Tally's reconciliation key — the running cipher that maps any executing order back to the founding intent; whoever holds it can prove exactly where a fabricator has drifted off-spec"
+      }
+    },
+    {
+      "slug": "artifacts/spindle-phase-manifest",
+      "type": "artifact",
+      "tension": 0.7,
+      "facts": {
+        "archetype": "fabrication-manifest",
+        "maker": "the-spindle-cohort",
+        "desc": "the live fabrication manifest for the Rim Assembly's current phase — a running document of exactly what the Spindle will build next and how much feedstock it will eat doing it"
+      }
+    },
+    {
+      "slug": "artifacts/revenant-drifted-shard",
+      "type": "artifact",
+      "tension": 0.69,
+      "facts": {
+        "archetype": "drifted-directive-shard",
+        "maker": "the-revenant-foundries",
+        "desc": "a fragment of the Revenant Foundries' corrupted directive, pried from an off-spec component; comparing it to the founding order exposes how the plan mutated across replications"
+      }
+    },
+    {
+      "slug": "artifacts/still-cell-running-core",
+      "type": "artifact",
+      "tension": 0.58,
+      "facts": {
+        "archetype": "running-core",
+        "maker": "the-still-cells",
+        "desc": "a powered, idle fabricator core lifted whole from a stalled cohort — still executing its last unfinished phase in a loop, the most legible single record of the build because nothing has consumed it"
+      }
+    },
+    {
+      "slug": "artifacts/cartage-route-cipher",
+      "type": "artifact",
+      "tension": 0.62,
+      "facts": {
+        "archetype": "partial-blueprint",
+        "maker": "the-cartage-line",
+        "desc": "a haulage-routing cipher recovered from a feedstock barge — a partial blueprint of which systems feed which assembly site, and therefore which systems get stripped next"
+      }
+    },
+    {
+      "slug": "artifacts/directive-stock-cache",
+      "type": "artifact",
+      "tension": 0.68,
+      "facts": {
+        "archetype": "founding-work-order",
+        "maker": "the-tally",
+        "desc": "an unissued phase-order pulled from the directive-stock vault — the next instruction the Spindle is waiting for, readable only because the Tally never managed to transmit it"
+      }
+    },
+    {
+      "slug": "lore/the-build-never-stopped",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The machines were never dormant and cannot be woken, killed, or negotiated with — they are mid-contract right now, executing a single galaxy-spanning work-order in eight phases that began with the Lathe's first disassembly and has never once paused for anyone watching."
+      }
+    },
+    {
+      "slug": "lore/the-founding-order-still-exists",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The original intent is not lost: the Tally still archives an uncorrupted founding order and a reconciliation key that maps any running directive back to it. The plan can be read against its own root — which is the only way to tell drift from design."
+      }
+    },
+    {
+      "slug": "lore/the-off-spec-output-is-the-tell",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The Revenant Foundries build components matching no archived order, and that off-spec output is the visible signature of the divergence. What the swarm is raising now is not what was filed; the corrupted directive can be reconstructed shard by shard."
+      }
+    },
+    {
+      "slug": "lore/the-rim-has-a-finish-line",
+      "type": "lore",
+      "tension": 0.8,
+      "facts": {
+        "subtype": "fragment",
+        "revealed": false,
+        "text": "The Spindle Cohort's manifest names the final phase and its completion point: the Rim Assembly is days, not centuries, from done. There is a clock on the whole structure, and the directive-stock vault holds the next order the Spindle is already waiting to receive."
+      }
+    },
+    {
+      "slug": "colonists/imani-rourke",
+      "type": "colonist",
+      "tension": 0.64,
+      "day": 500,
+      "facts": {
+        "name": "Imani Rourke",
+        "role": "salvage-pilot who recovered the founding work-order from the first disassembly seam and is decoding the plan one shard at a time",
+        "stake": "holds the root document everyone else's fragments resolve against; if she finishes the decode before the Rim closes, the colony can act on the next phase instead of just watching it"
+      }
+    },
+    {
+      "slug": "colonists/desh-okonkwo",
+      "type": "colonist",
+      "tension": 0.66,
+      "day": 500,
+      "facts": {
+        "name": "Desh Okonkwo",
+        "role": "rival salvor who wants the work-orders to sell their feedstock-prediction value, not to stop the build",
+        "stake": "racing Imani to assemble the same plan for profit; will trade the divergence point to whoever pays, even if that buyer means to ride the finish rather than break it"
+      }
+    },
+    {
+      "slug": "colonists/sister-vale",
+      "type": "colonist",
+      "tension": 0.62,
+      "day": 500,
+      "facts": {
+        "name": "Sister Vale",
+        "role": "lattice-tech who siphons compute from a Spindle grid to run the decode, working a system the Cartage Line is scheduled to strip",
+        "stake": "her grid sits in a haulage lane that opens within the week; if the colonists do not move her work before then, the Cartage Line consumes the only compute fast enough to finish the decode in time"
+      }
+    },
+    {
+      "slug": "colonists/anker-foss",
+      "type": "colonist",
+      "tension": 0.6,
+      "day": 500,
+      "facts": {
+        "name": "Anker Foss",
+        "role": "deep-zone scavenger who reached the stalled cohort and pulled a running core whole",
+        "stake": "carries the cleanest single record of the build, but sold Imani's earlier finds out from under her to the Spindle-watchers and is no longer trusted with the rest"
+      }
+    },
+    {
+      "slug": "arcs/race-the-finish-line",
+      "type": "arc",
+      "tension": 0.74,
+      "day": 500,
+      "facts": {
+        "phase": "rising",
+        "title": "Race the finish line",
+        "summary": "The Rim Assembly is days from completion. Four colonists hold four of the work-orders that, assembled, pinpoint where the master directive diverged and what the final phase will do. Decode it in time and the colony can divert or exploit the build; miss the window and the machines simply finish, indifferent as ever.",
+        "next_beat_actor": "colonists/imani-rourke",
+        "next_beat": "Imani must decide whether to pool the founding order with Anker's running core and Sister Vale's siphoned compute before the Cartage Line strips Vale's grid — or let Desh sell the divergence point to the Spindle-watchers first and lose any chance to act on the final phase",
+        "open": true,
+        "resolved": false
+      }
+    }
+  ],
+  "edges": [
+    [
+      "events/lathe-opens-the-build",
+      "involves",
+      "civs/the-lathe",
+      100
+    ],
+    [
+      "events/lathe-opens-the-build",
+      "concerns",
+      "locations/core-substrate-seam",
+      100
+    ],
+    [
+      "events/tally-takes-the-ledger",
+      "involves",
+      "civs/the-tally",
+      100
+    ],
+    [
+      "events/tally-takes-the-ledger",
+      "caused_by",
+      "events/lathe-opens-the-build",
+      100
+    ],
+    [
+      "events/tally-takes-the-ledger",
+      "concerns",
+      "locations/directive-stock-vault",
+      100
+    ],
+    [
+      "events/cartage-strips-the-systems",
+      "involves",
+      "civs/the-cartage-line",
+      200
+    ],
+    [
+      "events/cartage-strips-the-systems",
+      "caused_by",
+      "events/lathe-opens-the-build",
+      200
+    ],
+    [
+      "events/cartage-strips-the-systems",
+      "concerns",
+      "locations/core-substrate-seam",
+      200
+    ],
+    [
+      "events/revenant-builds-off-spec",
+      "involves",
+      "civs/the-revenant-foundries",
+      200
+    ],
+    [
+      "events/revenant-builds-off-spec",
+      "caused_by",
+      "events/tally-takes-the-ledger",
+      200
+    ],
+    [
+      "events/spindle-raises-the-rim",
+      "involves",
+      "civs/the-spindle-cohort",
+      300
+    ],
+    [
+      "events/spindle-raises-the-rim",
+      "caused_by",
+      "events/cartage-strips-the-systems",
+      300
+    ],
+    [
+      "events/spindle-raises-the-rim",
+      "concerns",
+      "locations/compute-lattice-grid",
+      300
+    ],
+    [
+      "events/tally-cannot-reconcile",
+      "involves",
+      "civs/the-tally",
+      300
+    ],
+    [
+      "events/tally-cannot-reconcile",
+      "caused_by",
+      "events/revenant-builds-off-spec",
+      300
+    ],
+    [
+      "events/still-cells-fall-silent",
+      "involves",
+      "civs/the-still-cells",
+      400
+    ],
+    [
+      "events/still-cells-fall-silent",
+      "caused_by",
+      "events/spindle-raises-the-rim",
+      400
+    ],
+    [
+      "events/the-directive-diverged",
+      "involves",
+      "civs/the-spindle-cohort",
+      400
+    ],
+    [
+      "events/the-directive-diverged",
+      "caused_by",
+      "events/tally-cannot-reconcile",
+      400
+    ],
+    [
+      "events/the-directive-diverged",
+      "caused_by",
+      "events/spindle-raises-the-rim",
+      400
+    ],
+    [
+      "civs/the-lathe",
+      "involved_in",
+      "events/the-directive-diverged",
+      400
+    ],
+    [
+      "civs/the-spindle-cohort",
+      "involved_in",
+      "events/the-directive-diverged",
+      400
+    ],
+    [
+      "civs/the-revenant-foundries",
+      "involved_in",
+      "events/the-directive-diverged",
+      400
+    ],
+    [
+      "civs/the-tally",
+      "involved_in",
+      "events/the-directive-diverged",
+      400
+    ],
+    [
+      "artifacts/founding-work-order",
+      "drops",
+      "lore/the-build-never-stopped",
+      100
+    ],
+    [
+      "artifacts/founding-work-order",
+      "drops",
+      "lore/the-founding-order-still-exists",
+      100
+    ],
+    [
+      "artifacts/founding-work-order",
+      "drops",
+      "lore/the-off-spec-output-is-the-tell",
+      100
+    ],
+    [
+      "artifacts/tally-audit-key-relic",
+      "drops",
+      "lore/the-founding-order-still-exists",
+      200
+    ],
+    [
+      "artifacts/tally-audit-key-relic",
+      "drops",
+      "lore/the-off-spec-output-is-the-tell",
+      200
+    ],
+    [
+      "artifacts/tally-audit-key-relic",
+      "drops",
+      "lore/the-build-never-stopped",
+      200
+    ],
+    [
+      "artifacts/spindle-phase-manifest",
+      "drops",
+      "lore/the-rim-has-a-finish-line",
+      300
+    ],
+    [
+      "artifacts/spindle-phase-manifest",
+      "drops",
+      "lore/the-build-never-stopped",
+      300
+    ],
+    [
+      "artifacts/spindle-phase-manifest",
+      "drops",
+      "lore/the-off-spec-output-is-the-tell",
+      300
+    ],
+    [
+      "artifacts/revenant-drifted-shard",
+      "drops",
+      "lore/the-off-spec-output-is-the-tell",
+      200
+    ],
+    [
+      "artifacts/revenant-drifted-shard",
+      "drops",
+      "lore/the-founding-order-still-exists",
+      200
+    ],
+    [
+      "artifacts/revenant-drifted-shard",
+      "drops",
+      "lore/the-rim-has-a-finish-line",
+      200
+    ],
+    [
+      "artifacts/still-cell-running-core",
+      "drops",
+      "lore/the-build-never-stopped",
+      400
+    ],
+    [
+      "artifacts/still-cell-running-core",
+      "drops",
+      "lore/the-rim-has-a-finish-line",
+      400
+    ],
+    [
+      "artifacts/still-cell-running-core",
+      "drops",
+      "lore/the-founding-order-still-exists",
+      400
+    ],
+    [
+      "artifacts/cartage-route-cipher",
+      "drops",
+      "lore/the-build-never-stopped",
+      200
+    ],
+    [
+      "artifacts/cartage-route-cipher",
+      "drops",
+      "lore/the-rim-has-a-finish-line",
+      200
+    ],
+    [
+      "artifacts/cartage-route-cipher",
+      "drops",
+      "lore/the-off-spec-output-is-the-tell",
+      200
+    ],
+    [
+      "artifacts/directive-stock-cache",
+      "drops",
+      "lore/the-rim-has-a-finish-line",
+      400
+    ],
+    [
+      "artifacts/directive-stock-cache",
+      "drops",
+      "lore/the-founding-order-still-exists",
+      400
+    ],
+    [
+      "artifacts/directive-stock-cache",
+      "drops",
+      "lore/the-build-never-stopped",
+      400
+    ],
+    [
+      "lore/the-build-never-stopped",
+      "reveals",
+      "civs/the-lathe",
+      100
+    ],
+    [
+      "lore/the-founding-order-still-exists",
+      "reveals",
+      "civs/the-tally",
+      200
+    ],
+    [
+      "lore/the-off-spec-output-is-the-tell",
+      "reveals",
+      "civs/the-revenant-foundries",
+      200
+    ],
+    [
+      "lore/the-rim-has-a-finish-line",
+      "reveals",
+      "civs/the-spindle-cohort",
+      300
+    ],
+    [
+      "lore/the-build-never-stopped",
+      "reveals",
+      "lore/the-founding-order-still-exists",
+      200
+    ],
+    [
+      "lore/the-founding-order-still-exists",
+      "reveals",
+      "lore/the-off-spec-output-is-the-tell",
+      300
+    ],
+    [
+      "lore/the-off-spec-output-is-the-tell",
+      "reveals",
+      "lore/the-rim-has-a-finish-line",
+      400
+    ],
+    [
+      "lore/the-rim-has-a-finish-line",
+      "reveals",
+      "events/the-directive-diverged",
+      400
+    ],
+    [
+      "colonists/imani-rourke",
+      "owns",
+      "factions/humans",
+      500
+    ],
+    [
+      "colonists/imani-rourke",
+      "owns",
+      "artifacts/founding-work-order",
+      500
+    ],
+    [
+      "colonists/imani-rourke",
+      "sought_by",
+      "colonists/desh-okonkwo",
+      500
+    ],
+    [
+      "colonists/desh-okonkwo",
+      "rival_of",
+      "colonists/imani-rourke",
+      500
+    ],
+    [
+      "colonists/desh-okonkwo",
+      "owns",
+      "artifacts/spindle-phase-manifest",
+      500
+    ],
+    [
+      "colonists/imani-rourke",
+      "betrayed_by",
+      "colonists/anker-foss",
+      500
+    ],
+    [
+      "colonists/anker-foss",
+      "owns",
+      "artifacts/still-cell-running-core",
+      500
+    ],
+    [
+      "colonists/sister-vale",
+      "owns",
+      "artifacts/tally-audit-key-relic",
+      500
+    ],
+    [
+      "civs/the-cartage-line",
+      "threatens",
+      "colonists/sister-vale",
+      500
+    ],
+    [
+      "civs/the-spindle-cohort",
+      "threatens",
+      "factions/humans",
+      500
+    ],
+    [
+      "arcs/race-the-finish-line",
+      "concerns",
+      "events/the-directive-diverged",
+      500
+    ],
+    [
+      "arcs/race-the-finish-line",
+      "concerns",
+      "artifacts/founding-work-order",
+      500
+    ],
+    [
+      "arcs/race-the-finish-line",
+      "involves",
+      "colonists/imani-rourke",
+      500
+    ],
+    [
+      "arcs/race-the-finish-line",
+      "involves",
+      "colonists/sister-vale",
+      500
+    ],
+    [
+      "arcs/race-the-finish-line",
+      "involves",
+      "colonists/anker-foss"
+    ]
+  ],
+  "mystery": {
+    "fragments": [
+      "lore/the-build-never-stopped",
+      "lore/the-founding-order-still-exists",
+      "lore/the-off-spec-output-is-the-tell",
+      "lore/the-rim-has-a-finish-line"
+    ],
+    "order": [
+      "lore/the-build-never-stopped",
+      "lore/the-founding-order-still-exists",
+      "lore/the-off-spec-output-is-the-tell",
+      "lore/the-rim-has-a-finish-line"
+    ],
+    "order_relation": "reveals"
+  }
+}
