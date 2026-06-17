@@ -127,6 +127,27 @@ Location *uncertainty* + the *rival clock* + the *curse trade-off* + the *fate
 choice* are what make it a loop rather than a fetch quest. None of this is
 substrate work — it's game design the store merely remembers.
 
+### 4.1 Artifact archetypes (various sorts — the McGuffin palette)
+
+Different artifact *shapes* drive story differently. Each is the same `artifact`
+node type with a different fact-skeleton + edge profile, so the store handles them
+uniformly while they play distinctly:
+
+| Archetype | Edge/fact profile | How it drives story |
+|---|---|---|
+| **Weapon-relic** (the Ashmark) | `grants` power, `bears` curse, `forged_by`, `sought_by` | a usable boon whose history makes you a target |
+| **Shard-set** (the Weeping Crown) | `fragment_of` a greater relic; each shard `hidden_at` + `sought_by` a rival | a multi-chapter collect-arc with a rival race |
+| **Lost codex / tablet** | `drops` many `reveals` facts, no power | pure lore engine — found to *read*, unlocks other arcs |
+| **Cursed idol** | heavy `bears` curse, weak `grants` | risk-forward: keeping it is a slow-burn threat the Director escalates |
+| **Key / map artifact** | `reveals`→`location`, `rumored_at` | unlocks the NEXT hunt site — a pointer that chains hunts |
+| **Faction heirloom** | `owned_by`→faction (history), `sought_by` original owner | diplomacy lever: return it (ally) or keep it (enemy) — a fate fork |
+| **Living/awakening relic** | facts reveal on a *timer* or after N uses, `tension` rises each reveal | grows more dangerous/important the longer you hold it |
+| **Prophecy-object** | `reveals`→a future-tagged fact/arc | seeds a *foretold* arc the Director steers toward (dramatic irony) |
+
+A world mixes these. The hunt loop (§4) + the lore-drop mechanic (§5) are
+identical across archetypes; only the fact-skeleton differs — which is exactly why
+"various sorts of artifacts" costs content, not code.
+
 ---
 
 ## 5. Lore generation & determinism (the headline — and the crux R2 fix)
