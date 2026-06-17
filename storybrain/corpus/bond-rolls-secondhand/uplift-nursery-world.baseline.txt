@@ -1,0 +1,8 @@
+=== Secondhand bonds on uplift-nursery-world.hybrid3.json (seed 7) ===
+★ midwife-tomas-reyes --heir_to--> the-gene-loom  (via the-ripening-child, kin of; the-ripening-child forged it — their people (the-gardeners); transmission 1.00)
+★ midwife-tomas-reyes --heir_to--> the-gardeners-shaping-tool  (via the-ripening-child, kin of; the-ripening-child forged it — their people (the-gardeners); transmission 1.00)
+★ midwife-tomas-reyes --heir_to--> the-attention-bell  (via the-ripening-child, kin of; the-ripening-child forged it — their people (the-gardeners); transmission 1.00)
+★ midwife-tomas-reyes --obligated_over--> terraforming-seed-of-the-tenders  (via the-loam-tender-near-hand, owes; the-loam-tender-near-hand forged it — their people (the-loam-tenders); transmission 0.60)
+★ midwife-tomas-reyes --obligated_over--> the-listening-soil-shrine  (via the-loam-tender-near-hand, owes; the-loam-tender-near-hand forged it — their people (the-loam-tenders); transmission 0.60)
+
+formed 5 secondhand bond(s). Each required a real C→P→artifact chain (unforced).

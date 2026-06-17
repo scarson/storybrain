@@ -50,3 +50,19 @@ megastructure-absent-architects, crowded-trade-federation.
 colonist → the-living-marrow, bio-symbiosis-horror, extinction-plague-vector,
 uplift-nursery-world.
 Always set `facts.skill_profile: "ship-crew" | "colonist" | "mixed"` so it's explicit.
+
+## Richer character relationships + ancestral/secondhand ties (v2)
+
+Beyond kin/rival/lover/ally/owes/grudge, use these DIRECTIONAL relationship verbs
+where they fit the cast (they power secondhand artifact bonds):
+`mentor_of`/`mentored_by`, `role_model_of`/`reveres`, `protege_of`,
+`predecessor_of`/`successor_of` (held the same post/role), `ancestor_of`/
+`descendant_of` (explicit lineage), `commands`/`served`, `estranged_from`.
+
+And seed SECONDHAND chains: give a few **forebears/mentors/predecessors/dead-lovers
+a relationship to a specific artifact** (`forged`/`owned`/`wielded`/`died_for`/
+`covets`/`sealed` → an artifact), so a living character inherits a bond THROUGH
+them (their ancestor forged it → they're heir_to it; their mentor died for it →
+they must_finish it; their rival's people made it → they spite it). The chain must
+be real (C→P social tie + P→artifact tie); never assert a secondhand bond without
+both links present.

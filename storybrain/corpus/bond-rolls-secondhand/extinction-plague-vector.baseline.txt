@@ -1,0 +1,13 @@
+=== Secondhand bonds on extinction-plague-vector.hybrid3.json (seed 7) ===
+★ mara-okonkwo --spites--> the-failed-trial-deck  (via the-sleeper-vael, rival of; the-sleeper-vael forged it — their people (the-cradlekeepers); transmission 0.70)
+★ mara-okonkwo --spites--> the-cold-glyph  (via the-sleeper-vael, rival of; the-sleeper-vael forged it — their people (the-cradlekeepers); transmission 0.70)
+★ mara-okonkwo --spites--> the-keystone-relic  (via the-sleeper-vael, rival of; the-sleeper-vael forged it — their people (the-cradlekeepers); transmission 0.70)
+★ mara-okonkwo --spites--> the-sealwrights-recipe  (via the-sleeper-vael, rival of; the-sleeper-vael forged it — their people (the-cradlekeepers); transmission 0.70)
+★ the-archivist-soren --obligated_over--> the-failed-trial-deck  (via the-sleeper-vael, ally of; the-sleeper-vael forged it — their people (the-cradlekeepers); transmission 0.50)
+★ the-archivist-soren --obligated_over--> the-cold-glyph  (via the-sleeper-vael, ally of; the-sleeper-vael forged it — their people (the-cradlekeepers); transmission 0.50)
+★ the-archivist-soren --obligated_over--> the-keystone-relic  (via the-sleeper-vael, ally of; the-sleeper-vael forged it — their people (the-cradlekeepers); transmission 0.50)
+★ the-archivist-soren --obligated_over--> the-sealwrights-recipe  (via the-sleeper-vael, ally of; the-sleeper-vael forged it — their people (the-cradlekeepers); transmission 0.50)
+★ halden-ree --spites--> the-marrow-assay  (via the-quarantined-tsenn, grudge against; the-quarantined-tsenn forged it — their people (the-stillborn-host); transmission 0.75)
+★ halden-ree --spites--> the-host-vault-key  (via the-quarantined-tsenn, grudge against; the-quarantined-tsenn forged it — their people (the-stillborn-host); transmission 0.75)
+
+formed 10 secondhand bond(s). Each required a real C→P→artifact chain (unforced).

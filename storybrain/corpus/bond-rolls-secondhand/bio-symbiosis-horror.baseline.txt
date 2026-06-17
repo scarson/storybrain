@@ -1,0 +1,6 @@
+=== Secondhand bonds on bio-symbiosis-horror.hybrid3.json (seed 7) ===
+★ lead-mira-okonkwo --inherits_the_hunt_for--> the-recruiter-symbiote-spore  (via recruit-sana-reyes, kin of; recruit-sana-reyes sought by it ; transmission 0.55)
+★ lead-mira-okonkwo --spites--> the-recruiter-symbiote-spore  (via the-first-whole-host, rival of; the-first-whole-host forged it — their people (the-grafted); transmission 0.70)
+★ lead-mira-okonkwo --spites--> the-grafted-lineage-marker  (via the-first-whole-host, rival of; the-first-whole-host forged it — their people (the-grafted); transmission 0.70)
+
+formed 3 secondhand bond(s). Each required a real C→P→artifact chain (unforced).

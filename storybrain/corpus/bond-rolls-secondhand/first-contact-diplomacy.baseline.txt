@@ -1,0 +1,5 @@
+=== Secondhand bonds on first-contact-diplomacy.hybrid3.json (seed 7) ===
+★ the-saalvane-saboteur --spites--> the-corrupted-gift  (via the-saalvane-defector-corin, grudge against; the-saalvane-defector-corin forged it — their people (the-saalvane); transmission 0.75)
+★ decoder-jonas-rhee --obligated_over--> the-corrupted-gift  (via the-saalvane-defector-corin, owes; the-saalvane-defector-corin forged it — their people (the-saalvane); transmission 0.60)
+
+formed 2 secondhand bond(s). Each required a real C→P→artifact chain (unforced).

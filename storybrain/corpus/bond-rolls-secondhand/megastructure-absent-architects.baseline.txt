@@ -1,0 +1,4 @@
+=== Secondhand bonds on megastructure-absent-architects.hybrid3.json (seed 7) ===
+  (no secondhand chains — cast lacks carrier→artifact links; needs richer relationship edges)
+
+formed 0 secondhand bond(s). Each required a real C→P→artifact chain (unforced).
