@@ -51,56 +51,35 @@ this section.
   *neutral* causal topology (abstract event kinds, no theme verbs, no forced
   fate). All theme meaning is applied by a later LLM stage. This is load-bearing —
   forcing a theme in the procedural layer measurably degrades output quality.
-- **World isolation & saves.** A save is a consistent store snapshot plus an
-  append-only journal: flush, snapshot, replay-on-load. Never snapshot a live
-  store mid-write-batch.
+- **Saves are forward context, not a phase here.** A robust save is a consistent
+  store snapshot plus an append-only journal (flush, snapshot, replay-on-load;
+  never snapshot a live store mid-write-batch). This plan does **not** build the
+  save/journal system — it is noted so the store and runtime are designed to allow
+  it later.
 
 ---
 
-## Living Document Contract
+## Keeping this document current
 
-This plan is a living document. Every executing agent MUST update it as
-execution progresses, not only at completion.
+This is a living document. Whoever implements a phase should leave it reflecting
+reality, so the next reader does not have to reconstruct state from commit
+history:
 
-- **On phase claim:** the executor MUST flip the banner to 🚧 IN PROGRESS
-  with a claim timestamp (ISO 8601 UTC) and the active branch name. The
-  banner MUST NOT include an expected-completion estimate — agents cannot
-  reliably estimate their own wall-clock, and a fabricated duration
-  becomes a stale anchor that misleads future readers. Followers
-  encountering a 🚧 banner determine liveness by observable signals (PR
-  existence, recent branch commits), not by arithmetic on expected times.
-  See Step 5's stale-claim reclaim protocol.
-- **On phase ship:** the executor MUST update that phase's **Execution
-  Status** banner with the shipped commit SHA(s) and date. If a PR is
-  open, the PR number and URL MUST appear in the top-of-plan Execution
-  Status table.
-- **On phase defer:** the executor MUST update the banner with ⏸ status
-  AND a prose description of the unblock condition + a link to the
-  likely-unblocker artifact (plan page, task, or PR whose own Execution
-  Status banner will signal completion). Prose + link is durable across
-  paraphrases and scope edits; exact-string coordination between agents
-  is not.
-- **On PR merge:** the executor MUST record the merge SHA in the banner
-  + the top-of-plan Execution Status table.
-- **On deviation from the written plan** (scope edits, structural
-  refactors, dropped tasks, reordered phases): the executor MUST
-  inline-document the deviation in the affected task AND summarize it
-  in the top-of-plan Execution Status as a "Deviations" subsection.
-  Deviation state MUST NOT live only in PR notes or status reports.
-- **On discovery** (pre-existing drift surfaced during execution, new
-  bugs found, architectural issues noted): the executor MUST add a
-  "Discoveries" subsection at the top of the plan with pointers to the
-  files/lines affected. Follow-up dispatches read this subsection to
-  avoid duplicate discovery work.
+- **When you start a phase,** flip its Execution Status banner to 🚧 IN PROGRESS.
+- **When you finish a phase,** flip the banner to ✅ DONE with the commit
+  reference, and update the Execution Status table near the top.
+- **If you defer a phase,** mark it ⏸ DEFERRED and write, in plain prose, the
+  condition that must be met before it can be picked up.
+- **If you deviate from the written plan** (drop a task, reorder, restructure),
+  note the deviation inline in the affected task and add a one-line "Deviations"
+  entry to the Execution Status table.
+- **If you discover pre-existing problems** while implementing, add a
+  "Discoveries" note near the top so later work does not re-find them.
 
-The plan SHOULD reflect reality at the end of every session that touches
-it. Anything worth putting in a status report to the user is worth
-putting in the plan.
-
-Rationale: `/writing-plans-enhanced` Step 5. Writing at ship time is
-cheap; reconstruction by downstream readers is expensive, compounds
-across dispatches, and fails silently when state is split across PR
-notes and commit messages.
+The bookkeeping above is project ceremony — adapt the exact form (commit refs,
+PR links, branch names) to your own workflow. The point is only that the document
+stays honest about what is built and what is not. Writing this at the moment of
+change is cheap; reconstructing it later is expensive.
 
 ---
 
@@ -342,10 +321,12 @@ handles them uniformly while they play distinctly. A world mixes these:
 
 ## 6. The generation pipeline (four stages)
 
-Worlds are generated offline by a four-stage pipeline. The shape is the result of
-empirical evaluation (§10): pure single-shot LLM generation, a theme-forcing
-procedural step, and a neutral procedural step were each blind-judged, and the
-configuration below won.
+Worlds are generated offline by a four-stage pipeline. This shape is a
+recommendation, not a proven optimum: in earlier exploration, single-shot LLM
+generation, a theme-forcing procedural step, and a neutral procedural step were
+compared with the blind-judge method of §10 and the configuration below came out
+ahead — but you should re-validate it with your own models and content using the
+Phase 9 harness before treating it as settled.
 
 ```
  STAGE 1  THEME SEED (LLM)
@@ -387,21 +368,33 @@ winning configuration.
 
 ```ts
 // Emits a neutral causal topology the LLM later clothes. Seeded ⇒ reproducible.
-import type { World, WorldNode, Edge } from "./schema";
+import type { World, WorldNode, Edge, OrderRelation } from "./schema";
 
 export type Templates = {
   civs: { name: string; archetype: string; trait: string; greed: number }[];
   resources: { name: string; danger: number }[];
   epochs: number;
   cascadeThreshold: number;
-  order_relation?: string;
+  order_relation?: OrderRelation;   // MUST be a valid relation — the pipeline passes only these
 };
 
-function rng(seed: number) {
-  let s = seed >>> 0;
-  return () => { s = (s + 0x6D2B79F5) >>> 0; let t = s; t = Math.imul(t ^ (t >>> 15), t | 1);
-    t ^= t + Math.imul(t ^ (t >>> 7), t | 61); return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
-}
+// NOTE: this layer emits three *neutral* structural verbs outside the §3.2 working
+// set — `involves`, `concerns`, `involved_in` — plus `caused_by` and the mystery
+// `order_relation`. Stage 3 (theme clothing) is responsible for rewriting events
+// into final form; these neutral verbs are not expected by the Director or lint.
+
+// The canonical seeded PRNG (mulberry32) lives in `src/util/rng.ts` and is shared
+// by the procedural generator AND both bond rollers — every seeded path in the
+// project MUST import this one function so determinism is uniform:
+//
+//   // src/util/rng.ts
+//   export function mulberry32(seed: number) {
+//     let s = seed >>> 0;
+//     return () => { s = (s + 0x6D2B79F5) >>> 0; let t = s; t = Math.imul(t ^ (t >>> 15), t | 1);
+//       t ^= t + Math.imul(t ^ (t >>> 7), t | 61); return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
+//   }
+import { mulberry32 } from "../util/rng";
+const rng = mulberry32;
 const slug = (t: string, n: string) => `${t}/${n}`;
 
 // NEUTRAL structural roles, not theme actions. Stage 3 renames them.
@@ -493,7 +486,17 @@ axis set:
   `social`, `construction`, `growing`, `crafting`, `combat`. Stamp
   `facts.colony_role`.
 
-Mixed casts may blend; set `skill_profile: "mixed"`.
+Mixed casts may blend; set `skill_profile: "mixed"`. **Skill levels are authored
+on a 0–20 scale** (`facts.skills` is a map like `{ engineering: 14, xeno: 6 }`),
+which is what the bond roller's `sk()` normalizer (§8.1) divides by — generated
+skills MUST stay in that range.
+
+**Social-graph density is defined once, here, so the generator and the lint
+agree:** `density = (number of colonist↔colonist relationship edges) / (number of
+colonist nodes)`. A relationship edge counts if both endpoints are `colonist`
+nodes and the verb is in the credited relationship set (§3.2 social + directional
+verbs). The Phase-4 generator targets `density ≥ 1.0`; the Phase-5 lint fails
+below it. Count each edge once (do not double-count by also counting its reverse).
 
 ## 7. The Director (you build this)
 
@@ -555,36 +558,79 @@ a rich multi-tick world with real tension stamping is the make-or-break test.
 
 ### 7.1 Director tick (reference implementation)
 
+This is the **authoritative** signature set — Phase 6 implements exactly these.
+The weights match the §7 formula term-for-term (all seven terms present). The
+**candidate list is an input**, not hardcoded: the game produces the beats it
+could fire this tick, each tagged with a `valence` (its dread/relief charge) and
+whether it `advancesArc`. `budgetValence` is the pacing target (alternate dread
+and relief across ticks).
+
 ```ts
 // One Director step over the SQLite store. Deterministic; no LLM.
-const HALF = 40, TOPK = 3, W = { cb: 0.45, char: 0.10, tens: 0.20, rep: 0.25, fix: 0.25 };
-const STAKE_VERBS = new Set(["rival_of","betrayed_by","killed_by","sought_by","owned_by","reveals","worships","forged_by"]);
+const HALF = 40, TOPK = 3;
+const W = { arc: 0.25, cb: 0.30, char: 0.10, val: 0.10, tens: 0.15, rep: 0.25, fix: 0.25 };
 
-const tens = (s: string) => (db.query("SELECT tension FROM nodes WHERE slug=?").get(s) as any)?.tension ?? 0.2;
+// Stake edges carry narratable drama. NEVER include `involves` (the Director's own
+// event bookkeeping) — counting it would snowball a target's score every tick it fires.
+const STAKE_VERBS = new Set([
+  "rival_of", "grudge_against", "betrayed_by", "killed_by", "sought_by",
+  "owned_by", "forged_by", "reveals", "worships",
+]);
+
+type Candidate = {
+  id: string;
+  kind: string;
+  faction?: string;
+  valence: number;       // [-1,1] — dread(−)/relief(+) charge the game assigns each beat kind
+  advancesArc: boolean;  // true if this beat matches an open arc's next_beat
+};
+type Arc = {
+  slug: string;
+  phase: "seed" | "rumor" | "rising" | "climax" | "resolution" | "dormant";
+  next_beat: { kind: string; faction?: string };
+  days_since_advance: number;
+};
+
+const tens = (db: any, s: string) => (db.query("SELECT tension FROM nodes WHERE slug=?").get(s) as any)?.tension ?? 0.2;
 const rec  = (d: number, today: number) => Math.pow(0.5, (today - d) / HALF);
 
-function callbackTopK(F: string, today: number) {
+function callbackTopK(db: any, F: string, today: number) {
   const inc = (db.query("SELECT src,verb,day FROM edges WHERE dst=?").all(F) as any[])
               .filter(e => STAKE_VERBS.has(e.verb));
-  const c = inc.map(e => ({ v: tens(e.src) * rec(e.day, today), col: e.src.startsWith("colonists/") ? e.src : null }))
+  const c = inc.map(e => ({ v: tens(db, e.src) * rec(e.day, today), col: e.src.startsWith("colonists/") ? e.src : null }))
                .sort((a, b) => b.v - a.v).slice(0, TOPK);
   return { cb: c.reduce((s, x) => s + x.v, 0) / TOPK, chars: new Set(c.map(x => x.col).filter(Boolean)).size };
 }
 
-function tick(history: { kind: string; faction?: string }[], today: number, factions: string[]) {
+function tick(db: any, cands: Candidate[], history: { kind: string; faction?: string }[],
+              today: number, budgetValence: number) {
   const recent = history.slice(-4);
-  const cands = [
-    ...factions.map(f => ({ id: "stir-" + f.split("/")[1], kind: "incursion", faction: f as string | undefined })),
-    { id: "discovery", kind: "discovery", faction: undefined as string | undefined },
-  ];
   const scored = cands.map(c => {
-    const F = c.faction; const { cb, chars } = F ? callbackTopK(F, today) : { cb: 0, chars: 0 };
-    const tensFit = F ? 1 - Math.abs(tens(F) - 0.7) : 0.4;
+    const F = c.faction;
+    const { cb, chars } = F ? callbackTopK(db, F, today) : { cb: 0, chars: 0 };
+    const tensFit = F ? 1 - Math.abs(tens(db, F) - 0.7) : 0.4;
+    const valFit  = 1 - Math.abs(c.valence - budgetValence) / 2;
+    const arc     = c.advancesArc ? 1 : 0;
     const rep = recent.filter(h => h.kind === c.kind).length / Math.max(recent.length, 1);
     const fix = F ? recent.filter(h => h.faction === F).length / Math.max(recent.length, 1) : 0;
-    return { ...c, r: W.cb * cb + W.char * (Math.min(chars, 3) / 3) + W.tens * tensFit - W.rep * rep - W.fix * fix };
+    const r = W.arc * arc + W.cb * cb + W.char * (Math.min(chars, 3) / 3) + W.val * valFit
+            + W.tens * tensFit - W.rep * rep - W.fix * fix;
+    return { ...c, r };
   }).sort((a, b) => b.r - a.r);
   return scored[0];   // the winning beat
+}
+
+// Arc state machine: a matching fired beat advances the phase; a stall forces resolution.
+const PHASES = ["seed", "rumor", "rising", "climax", "resolution", "dormant"] as const;
+function advanceArc(arc: Arc, fired: Candidate, stallTheta: number): Arc {
+  const matched = fired.kind === arc.next_beat.kind && fired.faction === arc.next_beat.faction;
+  if (matched) {
+    const i = PHASES.indexOf(arc.phase);
+    return { ...arc, phase: PHASES[Math.min(i + 1, PHASES.length - 1)], days_since_advance: 0 };
+  }
+  if (arc.days_since_advance > stallTheta && arc.phase !== "dormant")
+    return { ...arc, phase: "resolution", days_since_advance: 0 };  // anti-stall
+  return { ...arc, days_since_advance: arc.days_since_advance + 1 };
 }
 ```
 
@@ -688,6 +734,58 @@ function candidates(c: any, a: any, out: (s: string, v: string) => string[], soc
 }
 ```
 
+The outer driver wires the accessors (built from `world.edges`, where every edge
+is a `[src, verb, dst, day?]` tuple — `verb` at index 1, `dst` at index 2),
+applies the gate/rarity/cap dials, and assembles the returned `Bond[]`. It uses
+the same seeded `mulberry32` PRNG as the procedural generator (factor it into a
+shared util and import it everywhere a seed is consumed):
+
+```ts
+import { mulberry32 } from "../util/rng";   // the rng() factory shown in §6.1, shared
+type Bond = { char: string; rel: string; artifact: string; fit: number; why: string };
+
+export function rollFirsthand(world: { nodes: any[]; edges: any[] }, seed: number): Bond[] {
+  const r = mulberry32(seed);
+  const cast = world.nodes.filter(n => n.type === "colonist");
+  const arts = world.nodes.filter(n => n.type === "artifact");
+  const out = (s: string, v: string) => world.edges.filter(e => e[0] === s && e[1] === v).map(e => e[2]);
+  const SOCIAL_VERBS = ["kin_of","rival_of","grudge_against","owes","lover_of","ally_of","member_of"];
+  const social = (c: string) => world.edges.filter(e => e[0] === c && SOCIAL_VERBS.includes(e[1]));
+
+  const bonds: Bond[] = [];
+  const perChar = new Map<string, number>();
+  const BONDED_VERBS = ["heir_to","vendetta_over","covets","wields","decoded","operates","attuned_to","haunted_by","recognizes","denies_to"];
+
+  for (const a of arts) {
+    const existingBonders = new Set(world.edges.filter(e => e[2] === a.slug && BONDED_VERBS.includes(e[1])).map(e => e[0]));
+    // gated, scored candidate pool across the cast
+    let pool: { c: any; rel: string; fit: number; why: string; score: number }[] = [];
+    for (const c of cast) {
+      if ((perChar.get(c.slug) ?? 0) >= CAP) continue;
+      for (const cand of candidates(c, a, out, social)) {
+        if (cand.fit < THRESHOLD) continue;                       // the unforced gate
+        const dramatic = existingBonders.size > 0 ? 0.3 : 0;       // rival-claim tension bonus
+        pool.push({ c, rel: cand.rel, fit: cand.fit, why: cand.why, score: cand.fit + 0.25 * dramatic });
+      }
+    }
+    if (pool.length === 0) continue;                              // no signal → stays an item
+    if (r() > P_BOND) continue;                                   // rarity: a fitting item still may not bond
+    pool.sort((x, y) => y.score - x.score);
+    const top = pool.slice(0, 3);
+    const tot = top.reduce((s, p) => s + p.score, 0);
+    let pickPt = r() * tot, chosen = top[0];
+    for (const p of top) { pickPt -= p.score; if (pickPt <= 0) { chosen = p; break; } }
+    perChar.set(chosen.c.slug, (perChar.get(chosen.c.slug) ?? 0) + 1);
+    bonds.push({ char: chosen.c.slug, rel: chosen.rel, artifact: a.slug, fit: chosen.fit, why: chosen.why });
+  }
+  return bonds;
+}
+```
+
+> The `sk()` helper normalizes by 20 because skills are authored on a **0–20
+> scale** (see §6.2 — the generation prompt MUST emit skill levels in that range,
+> or fit scores will be wrong).
+
 > **Honest limitation & planned upgrade:** the `want` match above is keyword
 > overlap, which over-fires `covets`. Replacing it with an embedding/LLM
 > *semantic* match (computed offline, cached) makes `covets` fire only on genuine
@@ -705,7 +803,7 @@ relations — the carrier-class of `R1` × the artifact-class of `R2`:
 | **lineage** (ancestor/descendant/successor) | `heir_to` | `burdened_by` | `inherits_the_hunt_for` |
 | **legacy** (mentor/role-model/protégé/reveres) | `lives_up_to` | `must_finish` | `chases_their_mentors_dream_of` |
 | **antagonism** (rival/grudge/betrayed/estranged) | `spites` | `vindicated_by` | `denies_to` |
-| **grief** (lover) | `grieves_through` | `mourns_through` | — |
+| **grief** (lover) | `grieves_through` | `mourns_through` | `haunted_by_their_wish_for` |
 | **obligation** (owes/served/commands/ally) | `obligated_over` | `bound_by` | `owes_the_pursuit_of` |
 
 Transmission strength = `closeness(R1) × intensity(R2)`; below threshold, no bond.
@@ -767,8 +865,36 @@ const MAP: Record<string, Record<string, string>> = {
   tie:        { held: "recognizes",      fate: "marked_by",      wants: "drawn_to" },
 };
 // transmission = CLOSE[R1] * INTENS[R2]; emit MAP[carrierClass(R1)][artClass(R2)] when >= THRESHOLD.
-// Resolve P→artifact via a direct edge, P as individual maker/holder, or P's people (faction) as maker.
+
+// Resolve every artifact P is tied to, via three paths:
+//   (a) direct      P --R2--> artifact
+//   (b) P as maker  artifact --forged_by|owned_by--> P
+//   (c) P's people  artifact --forged_by|owned_by--> F, where P is in faction F
+function pArtifactTies(P: string, world: { nodes: any[]; edges: any[] }) {
+  const isArt = (s: string) => world.nodes.find(n => n.slug === s)?.type === "artifact";
+  const facts = (s: string) => world.nodes.find(n => n.slug === s)?.facts ?? {};
+  const out: { a: string; R2: string; via: string }[] = [];
+  for (const e of world.edges) {
+    if (e[0] === P && ARTREL.has(e[1]) && isArt(e[2])) out.push({ a: e[2], R2: e[1], via: "direct" });
+    if (isArt(e[0]) && (e[1] === "forged_by" || e[1] === "owned_by") && e[2] === P)
+      out.push({ a: e[0], R2: e[1] === "forged_by" ? "forged" : "owned", via: "as maker/holder" });
+  }
+  const fac = facts(P).faction;     // P's people: facts.faction (or a member_of edge)
+  if (fac) for (const e of world.edges)
+    if (isArt(e[0]) && (e[1] === "forged_by" || e[1] === "owned_by") && e[2] === fac)
+      out.push({ a: e[0], R2: e[1] === "forged_by" ? "forged" : "owned", via: `their people (${fac})` });
+  return out;
+}
+// Outer loop: for each colonist C, each social edge C --R1--> P (P a colonist),
+// each tie in pArtifactTies(P): if CLOSE[R1]*INTENS[R2] >= THRESHOLD, emit the
+// mapped relation. De-dupe on (C, rel, artifact). Seed only matters if you add
+// rarity; the base walk is fully deterministic.
 ```
+
+> **Map exhaustiveness (guard in Phase 8):** every verb in `SOCIAL` MUST have a
+> `CLOSE` entry and every verb in `ARTREL` MUST have an `INTENS` entry — a missing
+> key makes `transmission` `NaN`, which silently drops the bond and hides bugs.
+> Add a test that asserts both key sets are fully covered.
 
 ## 10. Evaluating generation quality (blind LLM-as-judge)
 
@@ -789,8 +915,9 @@ of the spec — re-run it whenever you change a stage.
   or an unreliable model run is discovered, fix the sanitizer and re-judge before
   reporting. Do not aggregate compromised runs.
 
-This method is what established the §6 pipeline ordering and the §8/§9 bond
-designs.
+This method is what the §6 pipeline ordering and the §8/§9 bond designs were
+chosen against; re-run it whenever you change a stage so the choice stays
+evidence-backed rather than assumed.
 
 ---
 
@@ -802,11 +929,16 @@ it fails for the right reason, write the minimal implementation, run it green,
 commit. Where a test is timing- or randomness-sensitive, fix it with deterministic
 seeding or synchronization — **never** by weakening or deleting the assertion.
 
-**Recommended project layout** (adapt to your conventions):
+**Recommended project layout** — file paths are adaptable to your conventions,
+but the **exported symbol names** in each phase's "Interfaces produced" block are
+a fixed contract (later phases import them by exact name; renaming `validateWorld`,
+`loadWorld`, `callbackTopK`, etc. breaks cross-phase imports). Do NOT rename or
+restructure produced interfaces while implementing a phase.
 
 ```
 src/
   schema.ts              # World/Node/Edge types, ORDER_RELATIONS, validateWorld, reconstructMystery
+  util/rng.ts            # the shared mulberry32 seeded PRNG (used by procgen + both rollers)
   store.ts               # embedded SQLite edges store + query catalog
   director.ts            # resonance scorer + tick loop + arc state machine
   generator/
@@ -850,7 +982,8 @@ string[]`.
   is not a `lore` node, or not dropped by any artifact, fails; (f) `mystery.order`
   not a permutation of `mystery.fragments` fails; (g) an invalid `order_relation`
   fails; (h) `reconstructMystery` returns only revealed fragments in declared
-  order.
+  order. The code block below is **partial** (it shows four cases) — implement a
+  failing-case assertion for every rule (a)–(h), not just the ones shown.
 
 ```ts
 import { validateWorld, reconstructMystery, type World } from "../src/schema";
@@ -969,15 +1102,20 @@ cyclic data (add a cycle fixture and assert no infinite loop / bounded depth).
 The deterministic Stage-2 generator that emits a neutral causal topology (§6.1).
 
 **Files:**
+- Create: `src/util/rng.ts` (the shared `mulberry32`, first needed here)
 - Create: `src/generator/procgen.ts`
 - Test: `tests/procgen.test.ts`
 
-**Interfaces produced:** `Templates`, `runProcgen(tpl, seed): World`.
+**Interfaces produced:** `mulberry32(seed)`, `Templates`, `runProcgen(tpl, seed): World`.
 
 - [ ] **Step 1: Write the failing test.** Assert: (a) same `(tpl, seed)` ⇒
   byte-identical output (determinism); (b) different seeds ⇒ different output; (c)
   output always has a climax node (`facts.climax === true`) even when momentum
-  stays below threshold; (d) `mystery.fragments` is non-empty and chained by the
+  stays below threshold (use a low-danger/low-greed/low-epoch template so the
+  fallback `fireClimax` fires) AND when momentum **does** cross the threshold (use
+  high danger/greed/epochs + a low `cascadeThreshold` so the momentum-triggered
+  path fires) — cover both climax paths, not just the fallback; (d)
+  `mystery.fragments` is non-empty and chained by the
   configured `order_relation`; (e) **no theme-forcing leak** — no node carries a
   `status: "fallen"` fact, no `fell_to` edge, and every event's `facts.placeholder
   === true`; (f) **do NOT call `validateWorld` on procgen output** — it will fail
@@ -1042,7 +1180,11 @@ tests can stub it deterministically).
   (import the Phase-5 lint once it exists; until then assert `validateWorld` only
   and add the `characterLint` assertion in Phase 5). Also assert the pipeline
   **rejects** a stub that returns a world failing `validateWorld` (it must throw,
-  not silently pass).
+  not silently pass). **Also assert the wiring, not just the gates:** spy on the
+  stub's inputs and assert the Stage-2 procgen output (e.g. its fragment slugs)
+  actually appears in the prompt handed to the clothing stage, and the clothing
+  output is what the character stage receives — proving the stages are chained,
+  not run independently.
 - [ ] **Step 2: Run, confirm fail.**
 - [ ] **Step 3: Write the three prompt files** per §6:
   - `seed.md`: tag set → theme parameters (honor `alien_status` exactly; psychic
@@ -1117,9 +1259,11 @@ The deterministic event-picker (§7).
 - Create: `src/director.ts`
 - Test: `tests/director.test.ts`
 
-**Interfaces produced:** `callbackTopK(db, F, today): {cb, chars}`,
-`tick(db, history, today, factions): {id, kind, faction, r}`, and an arc
-state-machine helper `advanceArc(arc, firedEvent)`.
+**Interfaces produced** (signatures are fixed by §7.1; implement exactly these):
+`callbackTopK(db, F, today): {cb, chars}`, `tick(db, cands: Candidate[], history,
+today, budgetValence): Candidate & {r}`, and the arc state-machine helper
+`advanceArc(arc: Arc, fired: Candidate, stallTheta): Arc`. The `Candidate` and
+`Arc` types are defined in §7.1.
 
 - [ ] **Step 1: Write the failing test.** Cover the load-bearing behaviors: (a)
   **top-K, not Σ-all** — a faction with 60 low-tension stake edges scores *below*
@@ -1133,37 +1277,39 @@ state-machine helper `advanceArc(arc, firedEvent)`.
 
 ```ts
 import { Database } from "bun:sqlite";
+import { loadWorld } from "../src/store";      // Phase 2 — reuse it so schemas cannot drift
 import { callbackTopK } from "../src/director";
 
 test("top-K beats a low-charge hub", () => {
   const db = new Database(":memory:");
-  db.run(`CREATE TABLE nodes(slug TEXT PRIMARY KEY,type TEXT,tension REAL,day INT,facts TEXT)`);
-  db.run(`CREATE TABLE edges(src TEXT,verb TEXT,dst TEXT,day INT,PRIMARY KEY(src,verb,dst))`);
-  // hub faction: 60 low-tension grudges
-  for (let i = 0; i < 60; i++) {
-    db.run("INSERT INTO nodes VALUES(?,?,?,?,?)", [`colonists/g${i}`,"colonist",0.1,400,"{}"]);
-    db.run("INSERT INTO edges VALUES(?,?,?,?)", [`colonists/g${i}`,"rival_of","factions/hub",400]);
+  const nodes: any[] = [
+    { slug: "factions/hub", type: "faction", tension: 0.5, day: 400 },
+    { slug: "factions/dram", type: "faction", tension: 0.5, day: 400 },
+  ];
+  const edges: any[] = [];
+  for (let i = 0; i < 60; i++) {                // hub: 60 low-tension grudges
+    nodes.push({ slug: `colonists/g${i}`, type: "colonist", tension: 0.1, day: 400 });
+    edges.push([`colonists/g${i}`, "rival_of", "factions/hub", 400]);
   }
-  // drama faction: 3 high-tension grudges
-  db.run("INSERT INTO nodes VALUES(?,?,?,?,?)", ["factions/hub","faction",0.5,400,"{}"]);
-  db.run("INSERT INTO nodes VALUES(?,?,?,?,?)", ["factions/dram","faction",0.5,400,"{}"]);
-  for (let i = 0; i < 3; i++) {
-    db.run("INSERT INTO nodes VALUES(?,?,?,?,?)", [`colonists/h${i}`,"colonist",0.95,400,"{}"]);
-    db.run("INSERT INTO edges VALUES(?,?,?,?)", [`colonists/h${i}`,"rival_of","factions/dram",400]);
+  for (let i = 0; i < 3; i++) {                 // dram: 3 high-tension grudges
+    nodes.push({ slug: `colonists/h${i}`, type: "colonist", tension: 0.95, day: 400 });
+    edges.push([`colonists/h${i}`, "rival_of", "factions/dram", 400]);
   }
+  loadWorld(db, { nodes, edges, mystery: { fragments: [], order: [] } } as any);
   expect(callbackTopK(db, "factions/dram", 400).cb).toBeGreaterThan(callbackTopK(db, "factions/hub", 400).cb);
 });
 ```
 
-> The inline DDL above MUST match Phase 2's store schema. Prefer setting the DB up
-> via Phase 2's `loadWorld` and inserting the extra stress rows on top, so the two
-> schemas cannot drift.
+Add separate tests for: (b) recency decay (an old high-tension edge contributes
+less than a fresh one); (d) an `involves` edge into a faction does **not** raise
+its `cb`; (e) `advanceArc` advances the phase on a matching `fired` beat and flips
+to `resolution` once `days_since_advance > stallTheta`.
 
 - [ ] **Step 2: Run, confirm fail.**
 - [ ] **Step 3: Implement `src/director.ts`** per §7.1 (the `STAKE_VERBS` set
   excludes `involves`; `callbackTopK` sorts by `tension·recency` and averages the
-  top K; `tick` applies the normalized weighted sum with repetition/fixation
-  penalties), plus the arc state machine of §7.
+  top K; `tick` applies the full seven-term normalized weighted sum from §7;
+  `advanceArc` is the arc state machine).
 - [ ] **Step 4: Run, confirm green.**
 - [ ] **Step 5: Commit.** `git commit -m "feat: Director resonance loop + arc state machine"`
 
@@ -1196,9 +1342,10 @@ rel, artifact, fit, why}`.
   `decoded` by a high-`xeno` colonist; a weapon → `wields` by a high-`combat`
   colonist).
 - [ ] **Step 2: Run, confirm fail.**
-- [ ] **Step 3: Implement `src/bonds/firsthand.ts`** per §8.1 (the `candidates`
-  fit function, `THRESHOLD` gate, `P_BOND` rarity roll, `CAP` per character,
-  dramatic bonus for rival claims, seeded weighted pick).
+- [ ] **Step 3: Implement `src/bonds/firsthand.ts`** = the `candidates` fit
+  function AND the `rollFirsthand` outer driver, both shown in §8.1 (the
+  `THRESHOLD` gate, `P_BOND` rarity roll, `CAP` per character, dramatic bonus for
+  rival claims, seeded weighted pick via the shared `mulberry32`).
 - [ ] **Step 4: Run, confirm green.**
 - [ ] **Step 5: Commit.** `git commit -m "feat: firsthand artifact-character bond roller"`
 
@@ -1228,7 +1375,9 @@ bond records `{char, rel, artifact, via, R1, R2, transmission}`.
   **antagonism × held ⇒ `spites`** via a rival whose *people* forged it (the
   maker-people path); (d) **unforced** — remove either link in the chain and no
   bond forms; (e) **threshold** — a low-closeness × low-intensity chain falls below
-  threshold and forms nothing; (f) determinism by seed.
+  threshold and forms nothing; (f) determinism by seed; (g) **map exhaustiveness**
+  — assert every verb in `SOCIAL` has a `CLOSE` entry and every verb in `ARTREL`
+  has an `INTENS` entry, so no chain silently produces a `NaN` transmission.
 - [ ] **Step 2: Run, confirm fail.**
 - [ ] **Step 3: Implement `src/bonds/secondhand.ts`** per §9.1: walk `C --R1--> P`
   (P a colonist), resolve P's artifact ties (direct edge, P as individual
@@ -1262,7 +1411,11 @@ worldB, llm, seed): Promise<{winner, scores, label_map}>`.
   `seed` (so a given seed maps worlds to labels deterministically but the mapping
   varies across seeds); (c) the returned `winner` is de-anonymized back to the real
   world via `label_map`; (d) `judge` never sends an unsanitized field to the
-  `llm` (spy on the stub's input and assert no `_`-prefixed key appears).
+  `llm` (spy on the stub's input and assert no `_`-prefixed key appears). Make (b)
+  and (c) a concrete **round-trip** so they cannot pass trivially: for a fixed
+  seed, have the stub pick a label, then assert `label_map` inverts that label back
+  to the specific input world you intended it to choose (not merely that "a winner
+  was returned").
 - [ ] **Step 2: Run, confirm fail.**
 - [ ] **Step 3: Implement `src/eval/judge.ts`** — recursive sanitizer, seeded label
   swap, a prompt embedding the five-dimension rubric (coherence, causal depth,
@@ -1285,6 +1438,12 @@ Wires the pieces into the live game: artifact discovery → bond roll → progre
 reveal → fate edge → Director response. This phase has the most game-specific
 surface; treat the steps as a scaffold to adapt.
 
+**Scope fence — build ONLY the three named functions below and the loop-closing
+test.** Do NOT build a UI, a real-time game loop, an entity/component system, or
+the save/journal/snapshot system (that is forward context in Global Constraints,
+not part of this plan). `tension` lives in engine memory; this phase only
+*adjusts* it through the named functions, it does not design the tension model.
+
 **Files:**
 - Create: `src/runtime/hunt.ts`
 - Test: `tests/hunt.test.ts`
@@ -1299,8 +1458,12 @@ artifactSlug)` (reveals the next latent fact), `chooseFate(db, artifactSlug, fat
   edges into the store; (b) `studyArtifact` reveals exactly the next latent fact,
   in order, and is idempotent once all are revealed; (c) `chooseFate("destroyed")`
   raises seeker-faction tension while `chooseFate("sealed")` lowers it; (d) after a
-  bond exists, a Director `tick` involving that artifact's bonded character scores
-  higher than before the bond (closing the loop).
+  bond exists and the bonded character's `tension` is raised, the **bonded
+  candidate's own resonance `r`** (read it directly from the per-candidate scores,
+  not just `tick`'s single winner) is higher than the same candidate's `r` computed
+  before the bond — closing the loop. (If you only compare `tick`'s winner, a
+  non-winning bonded candidate gives nothing to compare; score the candidate
+  explicitly.)
 - [ ] **Step 2: Run, confirm fail.**
 - [ ] **Step 3: Implement `src/runtime/hunt.ts`** using the Phase 2 store, the
   Phase 7/8 rollers, and the Phase 6 Director. `tension` adjustments are engine
@@ -1368,23 +1531,30 @@ recursive-CTE-or-simpler SQL over the Phase-2 store):
 6. `relationshipBetween(a, b)` — shortest typed path.
 7. `recentEvents(n)` — repetition/fixation input.
 8. `artifactProvenance(artifact)` — `forged_by`/`owned_by`/`lost_in`.
-9. `whoHasSkill(skill)` — a skill-stat lookup (lives in game code, not the graph).
+9. `whoHasSkill(skill)` — colonists ranked by `facts.skills.<skill>` (a JSON
+   lookup over the `nodes.facts` column; the live game may instead read its own
+   in-memory skill stats, but the store can answer it from authored facts).
 10. `rivalHuntProgress(artifact)` — the §5 race clock (engine state + `sought_by`).
 
 There is intentionally **no** contradiction-finder: structured canon (§4) makes
 intra-artifact contradictions impossible by construction, and cross-fact conflicts
 are caught by a cheap deterministic lint, not an LLM probe.
 
-## Appendix C — What is proven vs what is open
+## Appendix C — Maturity of each idea, and what is open
 
-**Demonstrated** by prototype and offline evaluation:
+The claims below summarize an earlier prototype-and-evaluation pass by the
+author. They are offered as orientation, **not** as results you can reproduce
+from this document alone — re-establish any that matter to you with the Phase 9
+harness and your own playtests.
+
+**Held up well in prototyping:**
 - The typed-edge graph answers the Director's relational questions deterministically
   and cheaply, including multi-hop traversal.
 - The four-stage pipeline (neutral procgen + theme clothing + character pass)
-  blind-beats single-shot and theme-forcing variants.
-- Both bond mechanics produce earned, unforced links across a diverse theme set,
-  with a healthy "not everything bonds" rate.
-- The Director's top-K scorer and anti-treadmill guards behave correctly under
+  blind-beat single-shot and theme-forcing variants across a diverse theme set.
+- Both bond mechanics produced earned, unforced links, with a healthy "not
+  everything bonds" rate.
+- The Director's top-K scorer and anti-treadmill guards behaved correctly under
   test.
 
 **Open — the work that decides whether the stories are fun:**
