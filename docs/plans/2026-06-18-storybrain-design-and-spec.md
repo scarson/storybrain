@@ -189,7 +189,7 @@ Edges are plain string verbs. The working set, grouped by role:
 - **Artifact spine:** `hidden_at`, `rumored_at`, `sought_by`, `guarded_by`,
   `grants` (→ power), `bears` (→ curse), `fragment_of`, `forged_by`, `owned_by`,
   `lost_in`, `drops` (→ lore), `reveals` (→ the entity a lore fact concerns),
-  `wielded`, `bonded_to`, `died_for`, `sealed`, `covets`.
+  `wielded`, `bonded_to`, `died_for`, `covets`.
 - **Player-choice fate:** `destroyed`, `sold`, `sealed`, `ignored`.
 - **Arc wiring:** `advances`, `resolves`, `worships`.
 
@@ -798,6 +798,20 @@ export function rollFirsthand(world: { nodes: any[]; edges: any[] }, seed: numbe
 > scale** (see §6.2 — the generation prompt MUST emit skill levels in that range,
 > or fit scores will be wrong).
 
+> **The curse branch is itself a signal.** "No signal → no bond" has one
+> deliberate exception: the `haunted_by` branch (signal 5) fires for a *vulnerable*
+> character (low `life_support`/`social`, or a fear/grief `want`) near any artifact
+> that `bears` a curse — so an exposed character bonds to a cursed item even with
+> no provenance/skill tie. When writing a "declines to bond" test, use an
+> **un-cursed** artifact and a character with no other tie, or the curse branch
+> will (correctly) fire.
+
+> **Testing past `P_BOND`.** Because the rarity roll (`P_BOND`) and the weighted
+> pick are seeded, a single seed is not guaranteed to fire a given bond. To assert
+> "this signal produces this relation," either sweep a handful of seeds and assert
+> at-least-one, or set `P_BOND = 1` in the test build to isolate the fit/selection
+> logic from the rarity gate.
+
 > **Honest limitation & planned upgrade:** the `want` match above is keyword
 > overlap, which over-fires `covets`. Replacing it with an embedding/LLM
 > *semantic* match (computed offline, cached) makes `covets` fire only on genuine
@@ -897,12 +911,34 @@ function pArtifactTies(P: string, world: { nodes: any[]; edges: any[] }) {
       out.push({ a: e[0], R2: e[1] === "forged_by" ? "forged" : "owned", via: `their people (${fac})` });
   return out;
 }
-// Outer loop: for each colonist C, each social edge C --R1--> P (P is any tied
-// entity — a living colonist OR, more often, a deceased `figure` forebear/mentor;
-// do NOT require P to be a colonist, or the lineage/legacy carriers can't fire),
-// each tie in pArtifactTies(P): if CLOSE[R1]*INTENS[R2] >= THRESHOLD, emit the
-// mapped relation. De-dupe on (C, rel, artifact). Seed only matters if you add
-// rarity; the base walk is fully deterministic.
+// The outer driver — for each colonist C, walk C --R1--> P (P is any tied entity:
+// a living colonist OR, more often, a deceased `figure` forebear/mentor — do NOT
+// require P to be a colonist, or the lineage/legacy carriers can't fire), then each
+// of P's artifact ties. Emit the mapped relation when transmission clears THRESHOLD.
+export type SecondhandBond =
+  { char: string; rel: string; artifact: string; via: string; R1: string; R2: string; transmission: number };
+
+export function rollSecondhand(world: { nodes: any[]; edges: any[] }, _seed: number): SecondhandBond[] {
+  const bonds: SecondhandBond[] = [];
+  const seen = new Set<string>();                                   // de-dupe on (char, rel, artifact)
+  const colonists = world.nodes.filter(n => n.type === "colonist");
+  for (const C of colonists) {
+    for (const e of world.edges) {
+      if (e[0] !== C.slug || !SOCIAL.has(e[1])) continue;          // C --R1--> P (P any node)
+      const R1 = e[1], P = e[2];
+      for (const tie of pArtifactTies(P, world)) {
+        const transmission = CLOSE[R1] * INTENS[tie.R2];           // NaN if a key is missing → guarded by the test
+        if (!(transmission >= THRESHOLD)) continue;                // also drops NaN, the unforced gate
+        const rel = MAP[carrierClass(R1)][artClass(tie.R2)];
+        const key = `${C.slug}|${rel}|${tie.a}`;
+        if (seen.has(key)) continue;
+        seen.add(key);
+        bonds.push({ char: C.slug, rel, artifact: tie.a, via: P, R1, R2: tie.R2, transmission });
+      }
+    }
+  }
+  return bonds;                                                     // base walk is fully deterministic; _seed only matters if you add rarity
+}
 ```
 
 > **Map exhaustiveness (guard in Phase 8):** every verb in `SOCIAL` MUST have a
@@ -1074,7 +1110,7 @@ row shape). All catalog functions take `db` as their first argument:
 | `freshLore(db, sinceDay, minTension)` | `{ slug: string; tension: number; day: number }[]` (lore with `facts.revealed===true`, `day >= sinceDay`, `tension >= minTension`) |
 | `arcCandidates(db)` | `{ slug: string; phase: string }[]` (arc nodes with `facts.phase ∈ {rising,climax}`; the caller applies the stall threshold from engine state) |
 | `causalChain(db, eventSlug)` | `string[]` (slugs along the `caused_by` chain, nearest cause first) |
-| `relationshipBetween(db, a, b)` | `string \| null` (shortest typed path serialized as `\|a\|verb\|b\|…`, or `null`) |
+| `relationshipBetween(db, a, b)` | `string \| null` — shortest typed path serialized **exactly** as leading-and-trailing-pipe `\|node\|verb\|node\|verb\|node\|` (e.g. `\|a\|knows\|x\|owns\|b\|`); a single-node path is `\|a\|`; no path is `null` |
 | `recentEvents(db, n)` | `{ slug: string; day: number }[]` (newest first) |
 | `artifactProvenance(db, slug)` | `{ verb: string; dst: string; day: number }[]` (`forged_by`/`owned_by`/`lost_in`) |
 | `whoHasSkill(db, skill)` | `{ slug: string; level: number }[]` (colonists ranked by `facts.skills.<skill>` desc) |
@@ -1423,11 +1459,12 @@ bond records `{char, rel, artifact, via, R1, R2, transmission}`.
   — assert every verb in `SOCIAL` has a `CLOSE` entry and every verb in `ARTREL`
   has an `INTENS` entry, so no chain silently produces a `NaN` transmission.
 - [ ] **Step 2: Run, confirm fail.**
-- [ ] **Step 3: Implement `src/bonds/secondhand.ts`** per §9.1: walk `C --R1--> P`
-  (P a colonist), resolve P's artifact ties (direct edge, P as individual
-  maker/holder via `forged_by`/`owned_by`, or P's faction as maker), compute
-  `transmission = CLOSE[R1] · INTENS[R2]`, and emit `MAP[carrierClass][artClass]`
-  when `transmission ≥ THRESHOLD`. De-dupe on `(char, rel, artifact)`.
+- [ ] **Step 3: Implement `src/bonds/secondhand.ts`** = the helper maps/functions
+  AND the `rollSecondhand` driver, both shown in full in §9.1 (`pArtifactTies`
+  resolves direct / individual-maker / faction-maker ties; the driver walks
+  `C --R1--> P` with P any tied entity, gates on `transmission ≥ THRESHOLD`, emits
+  `MAP[carrierClass][artClass]`, and de-dupes on `(char, rel, artifact)`). Export
+  `SOCIAL`, `ARTREL`, `CLOSE`, `INTENS` so the exhaustiveness test can assert them.
 - [ ] **Step 4: Run, confirm green.**
 - [ ] **Step 5: Commit.** `git commit -m "feat: secondhand inherited bond roller"`
 
