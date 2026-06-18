@@ -533,10 +533,15 @@ snowball the target's score every tick it fires.
 
 Other terms:
 
-- `tension(node)` is **engine sim-state held in game memory** (combat, mood,
-  deaths, reveals stamp it), *not* a graph field — so there is no N+1 query.
-  **How the real game stamps tension is the core game-design work and no store can
-  do it for you.** This is the single biggest open dependency.
+- `tension(node)` **originates as engine sim-state held in game memory** (combat,
+  mood, deaths, reveals stamp it) — that is where the game-design work lives, and
+  no store can derive it for you. But the Director reads it through the store
+  (`callbackTopK` selects `tension` from the `nodes` table), so the engine
+  **mirrors** the current value into the `nodes.tension` column whenever it
+  changes (e.g. `discover` in Phase 10 does `UPDATE nodes SET tension=? WHERE
+  slug=?` for the bonded character). "Not a graph field" means tension is never
+  *computed* from edges and never the subject of a join — it is a denormalized
+  scalar the engine owns and pushes down, so there is no N+1 query.
 - `arc_advance` is a single additive 0/1 term (matches an open arc's `next_beat`;
   no multiplier).
 - `valence_fit = 1 − |cand.valence − budget_valence| / 2` (alternate dread/relief).
@@ -602,10 +607,13 @@ function callbackTopK(db: any, F: string, today: number) {
   return { cb: c.reduce((s, x) => s + x.v, 0) / TOPK, chars: new Set(c.map(x => x.col).filter(Boolean)).size };
 }
 
-function tick(db: any, cands: Candidate[], history: { kind: string; faction?: string }[],
-              today: number, budgetValence: number) {
+// scoreCandidates returns EVERY candidate with its resonance `r`, sorted best-first.
+// tick is just its head. Phase 10's loop-closing test (and any UI that wants to show
+// "why this beat") reads the full array, so a non-winning candidate's `r` is available.
+function scoreCandidates(db: any, cands: Candidate[], history: { kind: string; faction?: string }[],
+                         today: number, budgetValence: number): (Candidate & { r: number })[] {
   const recent = history.slice(-4);
-  const scored = cands.map(c => {
+  return cands.map(c => {
     const F = c.faction;
     const { cb, chars } = F ? callbackTopK(db, F, today) : { cb: 0, chars: 0 };
     const tensFit = F ? 1 - Math.abs(tens(db, F) - 0.7) : 0.4;
@@ -617,7 +625,11 @@ function tick(db: any, cands: Candidate[], history: { kind: string; faction?: st
             + W.tens * tensFit - W.rep * rep - W.fix * fix;
     return { ...c, r };
   }).sort((a, b) => b.r - a.r);
-  return scored[0];   // the winning beat
+}
+
+function tick(db: any, cands: Candidate[], history: { kind: string; faction?: string }[],
+              today: number, budgetValence: number) {
+  return scoreCandidates(db, cands, history, today, budgetValence)[0];   // the winning beat
 }
 
 // Arc state machine: a matching fired beat advances the phase; a stall forces resolution.
@@ -885,7 +897,9 @@ function pArtifactTies(P: string, world: { nodes: any[]; edges: any[] }) {
       out.push({ a: e[0], R2: e[1] === "forged_by" ? "forged" : "owned", via: `their people (${fac})` });
   return out;
 }
-// Outer loop: for each colonist C, each social edge C --R1--> P (P a colonist),
+// Outer loop: for each colonist C, each social edge C --R1--> P (P is any tied
+// entity — a living colonist OR, more often, a deceased `figure` forebear/mentor;
+// do NOT require P to be a colonist, or the lineage/legacy carriers can't fire),
 // each tie in pArtifactTies(P): if CLOSE[R1]*INTENS[R2] >= THRESHOLD, emit the
 // mapped relation. De-dupe on (C, rel, artifact). Seed only matters if you add
 // rarity; the base walk is fully deterministic.
@@ -1048,11 +1062,27 @@ catalog the Director needs.
 - Create: `src/store.ts`
 - Test: `tests/store.test.ts`
 
-**Interfaces produced:** `loadWorld(db, world)`, and catalog functions:
-`openGrudges(faction)`, `ownedButSought()`, `freshLore(sinceDay, minTension)`,
-`arcCandidates()`, `causalChain(eventSlug)`, `relationshipBetween(a, b)`,
-`recentEvents(n)`, `artifactProvenance(slug)`, `whoHasSkill(skill)`,
-`rivalHuntProgress(artifactSlug)`.
+**Interfaces produced** (function names AND return shapes are a fixed contract —
+later phases and the runtime read these fields by name, so do not improvise the
+row shape). All catalog functions take `db` as their first argument:
+
+| Function | Returns |
+|---|---|
+| `loadWorld(db, world)` | `void` |
+| `openGrudges(db, faction)` | `{ src: string; verb: string; day: number }[]` |
+| `ownedButSought(db)` | `{ artifact: string; owner: string; seeker: string }[]` |
+| `freshLore(db, sinceDay, minTension)` | `{ slug: string; tension: number; day: number }[]` (lore with `facts.revealed===true`, `day >= sinceDay`, `tension >= minTension`) |
+| `arcCandidates(db)` | `{ slug: string; phase: string }[]` (arc nodes with `facts.phase ∈ {rising,climax}`; the caller applies the stall threshold from engine state) |
+| `causalChain(db, eventSlug)` | `string[]` (slugs along the `caused_by` chain, nearest cause first) |
+| `relationshipBetween(db, a, b)` | `string \| null` (shortest typed path serialized as `\|a\|verb\|b\|…`, or `null`) |
+| `recentEvents(db, n)` | `{ slug: string; day: number }[]` (newest first) |
+| `artifactProvenance(db, slug)` | `{ verb: string; dst: string; day: number }[]` (`forged_by`/`owned_by`/`lost_in`) |
+| `whoHasSkill(db, skill)` | `{ slug: string; level: number }[]` (colonists ranked by `facts.skills.<skill>` desc) |
+| `rivalHuntProgress(db, artifactSlug)` | `{ faction: string; day: number }[]` (`sought_by` edges; engine state augments the clock) |
+
+Note: `arcCandidates` reads `facts.phase` on `type:"arc"` nodes — the graph-resident
+arc node mirrors the in-memory `Arc` struct's phase (§7.1) so the store can answer
+the query; the `days_since_advance` stall check stays in engine memory.
 
 - [ ] **Step 1: Write the failing test.** Load a small fixture world into an
   in-memory DB; assert each catalog query returns the expected rows. Key cases:
@@ -1204,7 +1234,14 @@ tests can stub it deterministically).
 - [ ] **Step 4: Implement `src/generator/pipeline.ts`.** Run Stage 2, then call
   `llm` for Stages 1/3/4 in sequence, parsing JSON between stages and calling
   `validateWorld` after Stage 3 and both gates after Stage 4 — throwing with the
-  precise errors if a gate fails.
+  precise errors if a gate fails. **Inter-stage handoff contract** (fix it so two
+  implementers interoperate): each LLM stage receives a single prompt string built
+  by interpolating the prompt template with `JSON.stringify` of its input (Stage 3
+  gets the Stage-2 `World` and the Stage-1 theme params; Stage 4 gets the Stage-3
+  `World`), and each LLM stage MUST return a fenced ```` ```json ```` block holding
+  one `World` object. Parse by extracting the first JSON code block and
+  `JSON.parse`-ing it; if no parseable `World` is found, throw (do not silently
+  pass partial output downstream).
 - [ ] **Step 5: Run, confirm green.**
 - [ ] **Step 6: Commit.** `git commit -m "feat: four-stage generation pipeline + prompts"`
 
@@ -1242,6 +1279,12 @@ The second hard gate: depth and polish beyond loadability.
   `ancestor_of`, `descendant_of`, `commands`, `served`, `estranged_from`). An
   alien character = a colonist whose `facts.faction` is an alien faction (a
   `faction` node with `facts.alien_type`) or whose `facts.species === "alien"`.
+  Rule (f) **malformed-edge policy** (apply exactly this so two implementers
+  agree): every relationship verb above requires BOTH endpoints to be a person
+  (`colonist` or `figure`) — flag it otherwise; and `owned_by` requires an ownable
+  subject (`artifact`/`location`/`power`/`curse`/`lore`) — flag "X owns a faction"
+  and a person being owned. Endpoints whose node is not declared are skipped (that
+  is the validator's job, not the lint's).
 - [ ] **Step 4: Run, confirm green.**
 - [ ] **Step 5: Go back to Phase 4's test and add the `characterLint` assertion** to
   the pipeline output. Run green.
@@ -1260,8 +1303,9 @@ The deterministic event-picker (§7).
 - Test: `tests/director.test.ts`
 
 **Interfaces produced** (signatures are fixed by §7.1; implement exactly these):
-`callbackTopK(db, F, today): {cb, chars}`, `tick(db, cands: Candidate[], history,
-today, budgetValence): Candidate & {r}`, and the arc state-machine helper
+`callbackTopK(db, F, today): {cb, chars}`, `scoreCandidates(db, cands: Candidate[],
+history, today, budgetValence): (Candidate & {r})[]` (all candidates, sorted),
+`tick(...)` (its head — the winning beat), and the arc state-machine helper
 `advanceArc(arc: Arc, fired: Candidate, stallTheta): Arc`. The `Candidate` and
 `Arc` types are defined in §7.1.
 
@@ -1459,11 +1503,11 @@ artifactSlug)` (reveals the next latent fact), `chooseFate(db, artifactSlug, fat
   in order, and is idempotent once all are revealed; (c) `chooseFate("destroyed")`
   raises seeker-faction tension while `chooseFate("sealed")` lowers it; (d) after a
   bond exists and the bonded character's `tension` is raised, the **bonded
-  candidate's own resonance `r`** (read it directly from the per-candidate scores,
-  not just `tick`'s single winner) is higher than the same candidate's `r` computed
-  before the bond — closing the loop. (If you only compare `tick`'s winner, a
-  non-winning bonded candidate gives nothing to compare; score the candidate
-  explicitly.)
+  candidate's own resonance `r`** (read it from `scoreCandidates(...)` — §7.1 — by
+  finding that candidate in the returned array, NOT from `tick`'s single winner) is
+  higher than the same candidate's `r` computed before the bond raised tension —
+  closing the loop. `discover` must mirror the raised tension into `nodes.tension`
+  (see §7's tension note) so `callbackTopK` sees it.
 - [ ] **Step 2: Run, confirm fail.**
 - [ ] **Step 3: Implement `src/runtime/hunt.ts`** using the Phase 2 store, the
   Phase 7/8 rollers, and the Phase 6 Director. `tension` adjustments are engine
